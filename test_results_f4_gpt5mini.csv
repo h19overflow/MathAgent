@@ -1,0 +1,884 @@
+image_filename,ground_truth,marking_scheme,chapter_name,language,Textbook,Allocated marks,llm_answer,tokens_used,status,model
+Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0,4,"Quadratic Functions and Equations in
+One Variable",English,yes,4,"Read from the diagram: length = (x + 20) m, width = (x + 5) m.
+
+(a) Area function A(x):
+A = (x + 20)(x + 5)
+Expand: A = x^2 + 5x + 20x + 100 = x^2 + 25x + 100 (m^2)
+
+(b) If A = 250 m^2, set the function equal to 250 and write as a quadratic in standard form:
+x^2 + 25x + 100 = 250
+x^2 + 25x + 100 − 250 = 0
+x^2 + 25x − 150 = 0
+
+(If you wish to solve for x: x = [−25 ± sqrt(25^2 − 4·1·(−150))]/2
+= [−25 ± sqrt(625 + 600)]/2 = [−25 ± sqrt(1225)]/2 = [−25 ± 35]/2
+So x = 5 or x = −30. Since x must make lengths positive, x = 5 m.)
+",1274,SUCCESS,gpt-5-mini
+Chapter 1_Q2.png,"(a) A(0, –5)     (b) x = 3
+(c) B(6, –5)     (d) (3, 4)",6,"Quadratic Functions and Equations in
+One Variable",English,yes,6,"The function is f(x) = −x^2 + 6x − 5.
+
+1) Point A:
+- A lies on the y-axis so x = 0. f(0) = −0^2 + 6·0 − 5 = −5.
+- Therefore A = (0, −5).
+
+2) Axis of symmetry:
+- For ax^2 + bx + c the axis is x = −b/(2a). Here a = −1, b = 6.
+- x = −6/(2·(−1)) = 3.
+- Equation: x = 3.
+
+3) Point B:
+- AB is the horizontal line y = −5, so solve f(x) = −5:
+  −x^2 + 6x − 5 = −5 ⇒ −x^2 + 6x = 0 ⇒ x(−x + 6) = 0.
+  Solutions x = 0 (A) and x = 6.
+- Therefore B = (6, −5).
+
+4) Maximum point P (vertex):
+- x-coordinate is 3 (from axis). f(3) = −3^2 + 6·3 − 5 = −9 + 18 − 5 = 4.
+- Therefore P = (3, 4).",1708,SUCCESS,gpt-5-mini
+Chapter 1_Q3.png,20 cm,5,"Quadratic Functions and Equations in
+One Variable",English,yes,5,"Read from the diagram:
+- Triangle: base = 4y, height = y + 5.
+- Square: side = y.
+
+1) Express areas.
+- Area of triangle = 1/2 × base × height = 1/2 × 4y × (y+5) = 2y(y+5) = 2y^2 + 10y.
+- Area of square = y^2.
+
+2) Given triangle area is 39 cm^2 more than square:
+2y^2 + 10y − y^2 = 39
+y^2 + 10y − 39 = 0
+
+3) Solve the quadratic:
+Discriminant = 10^2 − 4·1·(−39) = 100 + 156 = 256, sqrt = 16.
+y = [−10 ± 16]/2 → y = (6)/2 = 3 or y = (−26)/2 = −13.
+Discard negative length, so y = 3 cm.
+
+4) Perimeters.
+- Square perimeter = 4y = 4·3 = 12 cm.
+- Triangle: base = 4y = 12 cm. Half-base = 2y = 6 cm, height = y+5 = 8 cm.
+  equal side length = sqrt((half-base)^2 + height^2) = sqrt(6^2 + 8^2) = sqrt(100) = 10 cm.
+  Triangle perimeter = 12 + 2·10 = 32 cm.
+
+5) Difference in perimeter = 32 − 12 = 20 cm.
+
+Answer: 20 cm.",1223,SUCCESS,gpt-5-mini
+Chapter 2_Q1.png,"(a) 234
+(b) 234, 336
+(c) 234, 336, 673
+(d) 234, 336, 673, 281",4,Number Bases,English,yes,4,"Rule: in base b the allowed digits are 0,1,...,b−1. A written numeral is valid in base b if every digit is < b.
+
+Digits of the four numbers:
+- 234 → digits {2,3,4}
+- 673 → digits {6,7,3}
+- 336 → digits {3,3,6}
+- 281 → digits {2,8,1}
+
+(a) Base five (digits 0–4): only 234 has all digits ≤4.
+Answer: 234
+
+(b) Base seven (digits 0–6): 234 (2,3,4) and 336 (3,3,6) are valid; 673 contains a 7 which is not allowed; 281 contains 8.
+Answer: 234, 336
+
+(c) Base eight (digits 0–7): 234, 673 (6,7,3), and 336 are valid; 281 contains 8 which is not allowed.
+Answer: 234, 673, 336
+
+(d) Base nine (digits 0–8): all digits in 234, 673, 336, 281 are ≤8, so all four are valid.
+Answer: 234, 673, 336, 281",1208,SUCCESS,gpt-5-mini
+Chapter 2_Q2.png,132 based 5,4,Number Bases,English,yes,4,"Read the total as a base-5 number: 20202_5.
+
+1) Convert 20202_5 to base 10:
+20202_5 = 2·5^4 + 0·5^3 + 2·5^2 + 0·5 + 2
+= 2·625 + 0 + 2·25 + 0 + 2
+= 1250 + 50 + 2
+= 1302 (base 10).
+
+2) January has 31 days. Average per day = 1302 ÷ 31 = 42 (base 10).
+
+3) Convert 42 (base 10) to base 5:
+42 ÷ 5 = 8 remainder 2
+8 ÷ 5 = 1 remainder 3
+1 ÷ 5 = 0 remainder 1
+So 42_{10} = 132_5.
+
+Answer: 132_5.",963,SUCCESS,gpt-5-mini
+Chapter 2_Q3.png,1600 m^2,5,Number Bases,English,yes,5,"Read the rectangle: width = 80 m, height = x m. The coloured (children's) area is the right triangle with legs 80 m and x m.
+
+Perimeter: 2(80 + x) = 3300
+Solve for x:
+80 + x = 3300/2 = 1650
+x = 1650 − 80 = 1570 m
+
+Area of the children's playground:
+Area = (1/2) × base × height = (1/2) × 80 × 1570 = 40 × 1570 = 62,800 m^2
+
+Answer: 62,800 m^2.",1405,SUCCESS,gpt-5-mini
+Chapter 3_Q1.png,"a) P(8)	 = 28
+	 = 256   b) t = 11      ",4,Logical Reasoning,English,yes,4,"Read: P(t) = 2^t gives the number of new cells produced on day t.
+
+(a) New cells on the 8th day:
+P(8) = 2^8 = 256.
+
+(b) Find t so that P(t) = 2048:
+2^t = 2048. Since 2048 = 2^11, t = 11.
+(Or t = log2 2048 = log 2048 / log 2 = 11.)
+
+Answers: (a) 256 new cells. (b) on day 11.",1099,SUCCESS,gpt-5-mini
+Chapter 3_Q2.png,"(a) 32(? + 2), 16(? + 2), 8(? + 2), 4(? + 2)
+(c) 1/4
+ (? + 2) cm",6,Logical Reasoning,English,yes,6,"Read from the diagram: the largest semicircle has radius 32 cm and each subsequent semicircle has half the radius of the previous one.
+
+(a) Perimeter of a semicircle = arc length + diameter = πr + 2r = r(π + 2).
+
+Radii of the first four semicircles: 32, 16, 8, 4 (cm).
+
+Their perimeters:
+- 1st: 32(π + 2)
+- 2nd: 16(π + 2)
+- 3rd: 8(π + 2)
+- 4th: 4(π + 2)
+
+(b) Let n = 0 denote the largest semicircle. Then r_n = 32 · (1/2)^n = 2^{5-n}. Hence
+P_n = r_n(π + 2) = 2^{5-n}(π + 2), for n = 0,1,2,3,4, ….
+(If one instead labels the largest semicircle by n = 1, the same sequence can be written as 2^{6-n}(π + 2).)
+
+(c) The 8th semicircle corresponds to n = 7 (if n = 0 is the largest). Its radius r_7 = 32·(1/2)^7 = 1/4 cm, so
+Perimeter = r_7(π + 2) = (π + 2)/4 cm.
+Numerically ≈ (3.1416 + 2)/4 ≈ 1.2854 cm.",2444,SUCCESS,gpt-5-mini
+Chapter 3_Q3.png,"(a) The pattern of the number of cylinders is 2n +1;
+n = 1, 2, 3, 4, ...
+(b) 104 720 cm3",5,Logical Reasoning,English,yes,5,"Read from the diagram: the numbers of cylinders in Box 1, 2, 3, 4 are 3, 5, 7, 9,... so the sequence increases by 2 each time.
+
+(a) Conclusion by induction:
+- Claim P(n): Box n contains 2n + 1 cylinders.
+- Base case: n = 1. Box 1 has 3 cylinders and 2(1) + 1 = 3, so P(1) is true.
+- Inductive step: Assume P(k) is true, i.e. Box k has 2k + 1 cylinders. The pattern increases by 2 for the next box, so Box (k+1) has (2k + 1) + 2 = 2k + 3 = 2(k+1) + 1 cylinders. Thus P(k) ⇒ P(k+1).
+- By mathematical induction, P(n) holds for all positive integers n: Box n contains 2n + 1 cylinders.
+
+(b) Volume in Box 8:
+- Number of cylinders in Box 8 = 2(8) + 1 = 17.
+- Volume of one cylinder = π r^2 h = π (14 cm)^2 (10 cm) = π · 196 · 10 = 1960π cm^3.
+- Total volume = 17 × 1960π = 33320π cm^3 ≈ 1.0468 × 10^5 cm^3 (≈ 104 678 cm^3).
+
+Answer: (a) Box n contains 2n + 1 cylinders. (b) Total volume = 33320π cm^3 ≈ 104 678 cm^3.",1592,SUCCESS,gpt-5-mini
+Chapter 4_Q1.png,x = 3,3,Operations on Sets,English,yes,3,"The regions shown are (left-only) 7, (J∩K only) 2, (K-only) x + 2, (K∩L only) 3, (L-only) x + 5. The union total is the sum of these regions.
+
+Set up the equation:
+7 + 2 + (x + 2) + 3 + (x + 5) = 25
+
+Combine like terms:
+(7 + 2 + 2 + 3 + 5) + x + x = 25
+19 + 2x = 25
+
+Solve for x:
+2x = 25 − 19 = 6
+x = 3
+
+Check (substitute x = 3): K-only = 5, L-only = 8, sum = 7 + 2 + 5 + 3 + 8 = 25 ✓
+
+Answer: x = 3.",958,SUCCESS,gpt-5-mini
+Chapter 4_Q2.png,39,3,Operations on Sets,English,yes,3,"The diagram labels the seven Venn regions as follows:
+- P only = 3
+- P ∩ Q (not R) = 2
+- Q only = 4k
+- P ∩ Q ∩ R = 1
+- P ∩ R (not Q) = k
+- Q ∩ R (not P) = 5
+- Outside all three = 2k
+
+Given n(Q) = n((P ∪ R)').
+
+1) Compute n(Q):
+n(Q) = Q only + (P ∩ Q) + (Q ∩ R) + (P ∩ Q ∩ R)
+     = 4k + 2 + 5 + 1
+     = 4k + 8.
+
+2) Compute n((P ∪ R)'):
+(P ∪ R)' are elements not in P or R. These are Q-only and the outside region.
+n((P ∪ R)') = Q only + outside
+             = 4k + 2k
+             = 6k.
+
+3) Set them equal and solve for k:
+4k + 8 = 6k
+8 = 2k
+k = 4.
+
+4) Compute total n(ξ):
+n(ξ) = 3 + 2 + 4k + 1 + k + 5 + 2k
+     = 11 + 7k
+Substitute k = 4:
+n(ξ) = 11 + 7·4 = 11 + 28 = 39.
+
+Answer: n(ξ) = 39.",2832,SUCCESS,gpt-5-mini
+Chapter 4_Q3.png,"(a) y = 11
+(b) 51",4,Operations on Sets,English,yes,4,"The regions (with labels) are:
+A only = 2, B only = 4, C only = 12,
+A∩C only = 5, B∩C only = 9,
+A∩B only = y − 2, A∩B∩C = y − 1.
+
+1) Compute n(B'). Since the universal set is A ∪ B ∪ C, B' consists of elements not in B:
+n(B') = A only + A∩C only + C only = 2 + 5 + 12 = 19.
+
+2) Compute n(B ∩ C). B ∩ C consists of B∩C only and the triple intersection:
+n(B ∩ C) = 9 + (y − 1) = y + 8.
+
+Given n(B') = n(B ∩ C), set them equal:
+y + 8 = 19 → y = 11.
+
+3) Now find n(A ∪ B ∪ C) by summing all seven regions:
+n(A ∪ B ∪ C) = 2 + 4 + 12 + 5 + 9 + (y − 2) + (y − 1)
+= 29 + 2y.
+With y = 11: n(A ∪ B ∪ C) = 29 + 22 = 51.
+
+Answers:
+(a) y = 11.
+(b) n(A ∪ B ∪ C) = 51.",1665,SUCCESS,gpt-5-mini
+Chapter 5_Q1.png,"(a) (i) V = {1, 2, 3, 4, 5}
+n(V) = 5
+(ii) E = {(1, 2), (1, 5), (2, 3), (2, 4), (2, 5), (3, 4),
+ (4, 5)}
+E = {e1, e2, e3, e4, e5, e6, e7}
+n(E) = 7
+(iii) 14
+(b) (i) V = {P, Q, R, S, T, U, V, W}
+n(V) = 8
+(ii) E = {(Q, P), (Q, R), (Q, W), (R, V), (S, T), (S, U),
+ (U, V), (V, W)}
+n(E) = 8
+(iii) 16
+(c) (i) V = {A, B, C, D, E, F}
+n(V) = 6
+(ii) E = {(A, B), (A, F), (B, C), (B, E), (C, D), (C, E),
+ (D, E), (E, F)}
+n(E) = 8
+(iii) 16",3,Network in Graph Theory,English,yes,3,"Three simple graphs are given. For each graph (a),(b),(c) I list the vertex set V and n(V), the edge set E and n(E), and compute the sum of the degrees (showing degree of each vertex and checking with the handshaking lemma).
+
+(a)
+- Vertices: V = {1, 2, 3, 4, 5}, so n(V) = 5.
+- Edges (labels from picture): E = {e1, e2, e3, e4, e5, e6, e7} which correspond to the pairs
+  e1 = (1,2), e2 = (1,5), e3 = (2,3), e4 = (2,4), e5 = (2,5), e6 = (3,4), e7 = (4,5).
+  Thus n(E) = 7.
+- Degrees (count incident edges at each vertex):
+  deg(1) = 2 (e1,e2)
+  deg(2) = 4 (e1,e3,e4,e5)
+  deg(3) = 2 (e3,e6)
+  deg(4) = 3 (e4,e6,e7)
+  deg(5) = 3 (e2,e5,e7)
+  Sum of degrees = 2 + 4 + 2 + 3 + 3 = 14.
+  Check: sum of degrees = 2·n(E) = 2·7 = 14 (consistent).
+
+(b)
+- Vertices: V = {P, Q, R, S, T, W, V, U}, so n(V) = 8.
+- Edges (as shown): E = {PQ, QW, QR, RV, WV, VU, ST}. Thus n(E) = 7.
+- Degrees:
+  deg(P) = 1 (PQ)
+  deg(Q) = 3 (PQ, QW, QR)
+  deg(R) = 2 (QR, RV)
+  deg(W) = 2 (QW, WV)
+  deg(V) = 3 (RV, WV, VU)
+  deg(U) = 1 (VU)
+  deg(S) = 1 (ST)
+  deg(T) = 1 (ST)
+  Sum of degrees = 1+3+2+2+3+1+1+1 = 14.
+  Check: sum of degrees = 2·n(E) = 2·7 = 14 (consistent).
+
+(c)
+- Vertices: V = {A, B, C, D, E, F}, so n(V) = 6.
+- Edges (visible in picture): E = {AB, BC, AF, FE, ED, BE, CE, CD}. Thus n(E) = 8.
+- Degrees:
+  deg(A) = 2 (AB, AF)
+  deg(B) = 3 (AB, BC, BE)
+  deg(C) = 3 (BC, CE, CD)
+  deg(D) = 2 (CD, DE)
+  deg(E) = 4 (FE, ED, BE, CE)
+  deg(F) = 2 (AF, FE)
+  Sum of degrees = 2+3+3+2+4+2 = 16.
+  Check: sum of degrees = 2·n(E) = 2·8 = 16 (consistent).",3964,SUCCESS,gpt-5-mini
+Chapter 5_Q2.png,"(a) (i) P > Q > R > S (ii) P > S
+(b) Route P > Q > S because I can save RM35 and
+the difference in time is only 9 minutes compared
+to route P > S",4,Network in Graph Theory,English,yes,4,"Read-off edges and weights from the graph (flight price and flight time in hours):
+- P -> R: RM130, 1.5 h
+- P -> Q: RM50, 1.0 h
+- P -> S: RM200, 0.8 h
+- Q -> S: RM115, 1.4 h
+- R -> S: RM65, 1.1 h
+- Q <-> R (diagonal): RM45, 3.0 h  (used as Q -> R in the route P–Q–R–S and as R -> Q if needed)
+
+Transit time at a transit airport = 45 minutes = 0.75 h (add once for each transit airport visited).
+
+Compute total cost and total time for all reasonable routes from P to S.
+
+1) P -> S (direct)
+- Cost = RM200
+- Time = flight 0.8 h
+Total time = 0.8 h
+
+2) P -> R -> S
+- Cost = RM130 + RM65 = RM195
+- Flight time = 1.5 + 1.1 = 2.6 h
+- Transit at R = 0.75 h
+Total time = 2.6 + 0.75 = 3.35 h
+
+3) P -> Q -> S
+- Cost = RM50 + RM115 = RM165
+- Flight time = 1.0 + 1.4 = 2.4 h
+- Transit at Q = 0.75 h
+Total time = 2.4 + 0.75 = 3.15 h
+
+4) P -> Q -> R -> S
+- Cost = RM50 + RM45 + RM65 = RM160
+- Flight time = 1.0 + 3.0 + 1.1 = 5.1 h
+- Transits at Q and R = 0.75 + 0.75 = 1.5 h
+Total time = 5.1 + 1.5 = 6.6 h
+
+5) P -> R -> Q -> S (longer and more expensive)
+- Cost = RM130 + RM45 + RM115 = RM290
+- Flight time = 1.5 + 3.0 + 1.4 = 5.9 h
+- Transits at R and Q = 1.5 h
+Total time = 5.9 + 1.5 = 7.4 h
+
+Conclusions
+(i) Most economical route: P -> Q -> R -> S with total cost RM160.
+(ii) Route that takes the shortest time: direct P -> S with total time 0.8 hours.",2583,SUCCESS,gpt-5-mini
+Chapter 5_Q3.png,"Route A > C > D > E because it is a safer route even
+though Lani had to cycle 300 m more",3,Network in Graph Theory,English,yes,3,"Read the directed graph: from A there are two possible directed routes to E:
+- A → B → E
+- A → C → D → E
+
+Compute the total distance of each route (convert 1.1 km = 1100 m):
+
+1) A → B → E:
+- AB = 400 m
+- BE = 1.1 km = 1100 m
+Total = 400 + 1100 = 1500 m = 1.5 km
+
+2) A → C → D → E:
+- AC = 350 m
+- CD = 800 m
+- DE = 650 m
+Total = 350 + 800 + 650 = 1800 m = 1.8 km
+
+Comparison and justification:
+- The route A → B → E is 1.5 km, which is 300 m shorter than A → C → D → E (1.8 km).
+- In addition BE is a municipal road (likely faster/safer for cycling) while AB, AC, CD and DE are housing-estate roads.
+
+Therefore the best route for Lani to cycle to school is A → B → E.",2073,SUCCESS,gpt-5-mini
+Chapter 6_Q1.png,"(a) y < –1, x >= –5, y >= 4
+5 x – 1
+(b) x >= 2, y >= 0, y < –x + 6",3,Linear Inequalities in Two Variables,English,yes,3,"I read each shaded triangle, write its boundary lines, then apply the reflection (x -> −x) to get the image inequalities.
+
+(a) Original triangle boundaries (from the picture):
+- right vertical: x = 5, so x ≤ 5 (region is to the left of x = 5),
+- top horizontal: y = −1, so y ≤ −1 (region lies at or below y = −1),
+- slanted side through (0, −1) and (5, −5): slope = (−5 − (−1))/(5 − 0) = −4/5, so line y = −(4/5)x − 1. The region is above this line, so y ≥ −(4/5)x − 1.
+
+Thus original region: y ≥ −(4/5)x − 1, y ≤ −1, x ≤ 5.
+
+Reflect in the y-axis: replace x by −x in the original inequalities:
+- x ≤ 5 becomes −x ≤ 5 → x ≥ −5,
+- y ≥ −(4/5)x − 1 becomes y ≥ −(4/5)(−x) − 1 = (4/5)x − 1,
+- y ≤ −1 stays y ≤ −1.
+
+Final image inequalities (a):
+x ≥ −5, y ≤ −1, y ≥ (4/5)x − 1.
+
+(b) Original triangle boundaries (from the picture):
+- base on the x-axis from x = −6 to x = 0, so −6 ≤ x ≤ 0,
+- bottom: y = 0 so y ≥ 0,
+- slanted top through (−6,0) and (−2,4) has slope 1, equation y = x + 6; the region lies below this line, so y ≤ x + 6.
+
+Thus original region: −6 ≤ x ≤ 0, 0 ≤ y ≤ x + 6.
+
+Reflect in the y-axis: replace x by −x:
+- −6 ≤ x ≤ 0 becomes 0 ≤ x ≤ 6,
+- 0 ≤ y stays 0 ≤ y,
+- y ≤ x + 6 becomes y ≤ (−x) + 6, i.e. y ≤ 6 − x.
+
+Final image inequalities (b):
+0 ≤ x ≤ 6, 0 ≤ y ≤ 6 − x.",5840,SUCCESS,gpt-5-mini
+Chapter 6_Q2.png,"(a) x + y <= 500 (b) x <= 3y or 3y >= x
+(c) y >= 200",4,Linear Inequalities in Two Variables,English,yes,4,"The shaded regions are bounded by the axes and straight lines. For each diagram find the line equations and give the range of x and the range of y between the bounding lines.
+
+(a) The slanted line passes through (−4,2) and the origin, so its slope is (2−0)/(−4−0)=−1/2 and its equation is y = −(1/2)x. The shaded triangle lies between x = −4 and x = 0 and between the x-axis (y = 0) and the slanted line. Thus
+-4 ≤ x ≤ 0, 0 ≤ y ≤ −(1/2)x.
+
+(b) The left slanted side is the line through (−2,0) and (0,4): slope = 2, equation y = 2x + 4. The right slanted side is the line through (0,4) and (3,0): slope = −4/3, equation y = 4 − (4/3)x. The shaded triangle lies above the x-axis and below both slanted sides, for x between −2 and 3. Thus
+−2 ≤ x ≤ 3, 0 ≤ y ≤ 2x + 4, and 0 ≤ y ≤ 4 − (4/3)x.
+(Equivalently: −2 ≤ x ≤ 3 and 0 ≤ y ≤ min(2x+4, 4 − (4/3)x).)
+
+(c) The two parallel slanted lines meet the y-axis at y = 1 and y = −2 and have slope −1/3. Their equations are y = 1 − (1/3)x (upper) and y = −2 − (1/3)x (lower). The shaded trapezoid is for 0 ≤ x ≤ 3 and between these two lines, so
+0 ≤ x ≤ 3, −2 − (1/3)x ≤ y ≤ 1 − (1/3)x.",3753,SUCCESS,gpt-5-mini
+Chapter 6_Q3.png,"(a) y <= 2, x < 3, y >= – x, y >= 0
+(b) y > –2x, y >= 2x – 8, y <= – 1/2x",4,Linear Inequalities in Two Variables,English,yes,4,"I will find inequalities for each shaded region, then reflect in the x-axis (replace y by −y) to get the image.
+
+(a) Original region:
+- Vertices: (0,0), (3,3), (3,−2), (0,−2).
+- Boundaries: x = 0 (left), x = 3 (right), y = −2 (bottom), y = x (top).
+- So the original region is given by 0 ≤ x ≤ 3 and −2 ≤ y ≤ x.
+
+Reflect in the x-axis: (x,y) → (x,−y). Replace y by −y in the inequalities:
+- 0 ≤ x ≤ 3 (unchanged),
+- −2 ≤ −y ≤ x.
+Solve −2 ≤ −y ≤ x:
+- from −2 ≤ −y we get y ≤ 2,
+- from −y ≤ x we get −x ≤ y.
+
+Final inequalities for the reflected region (a):
+x ≥ 0, x ≤ 3, −x ≤ y ≤ 2.
+(Or: 0 ≤ x ≤ 3 and −x ≤ y ≤ 2.)
+
+(b) Original region:
+- Vertices: (0,0), (2,4), (4,2).
+- Boundary lines:
+  y = 2x (through (0,0) and (2,4)),
+  y = (1/2)x (through (0,0) and (4,2)),
+  y = −x + 6 (through (2,4) and (4,2)).
+- The triangle interior satisfies (testing a point like (2,2)):
+  (1/2)x ≤ y ≤ 2x and y ≤ −x + 6 (and x ≥ 0).
+
+Reflect in the x-axis: replace y by −y in each inequality:
+- (1/2)x ≤ y becomes (1/2)x ≤ −y → y ≤ −(1/2)x,
+- y ≤ 2x becomes −y ≤ 2x → y ≥ −2x,
+- y ≤ −x + 6 becomes −y ≤ −x + 6 → y ≥ x − 6,
+- x ≥ 0 remains x ≥ 0.
+
+Final inequalities for the reflected region (b):
+x ≥ 0, y ≥ −2x, y ≤ −(1/2)x, y ≥ x − 6.
+(Any equivalent algebraic rearrangement is acceptable, e.g. 2y ≤ −x, 2x + y ≥ 0, y − x ≥ −6.)",4205,SUCCESS,gpt-5-mini
+Chapter 7_Q1.png,"(a) 3/8 ms^–2  (b) 1 200 m
+(c) Encik Merisat drives for a distance of 1.725 km in
+2.5 minutes with an average speed of 41.4 km h–1.",5,Graphs of Motion,English,yes,5,"Read from the graph: speed rises from 0 to 15 m s−1 between t = 0 and t = 40 s, is constant at 15 m s−1 from t = 40 to 120 s, then falls to 0 at t = 150 s. 2.5 minutes = 150 s.
+
+(a) Rate of change of speed for the first 20 s:
+- The acceleration is constant on 0–40 s: a = Δv/Δt = (15 − 0)/40 = 15/40 = 3/8 = 0.375 m s−2.
+- Thus for the first 20 s the rate of change = 0.375 m s−2.
+
+(b) Distance travelled at the uniform speed (flat part 40–120 s):
+- Time at uniform speed = 120 − 40 = 80 s.
+- Distance = speed × time = 15 × 80 = 1200 m.
+
+(c) Description of the journey over 2.5 minutes (150 s):
+- 0–40 s: uniformly accelerate from rest to 15 m s−1 (acceleration 0.375 m s−2).
+- 40–120 s: travel at constant speed 15 m s−1 for 80 s (distance 1200 m).
+- 120–150 s: uniformly decelerate from 15 m s−1 to rest over 30 s.
+- Total distance in 150 s = area under speed–time graph = 0.5·40·15 + 15·80 + 0.5·30·15 = 300 + 1200 + 225 = 1725 m.",1539,SUCCESS,gpt-5-mini
+Chapter 7_Q2.png,(a) 100               (b) 1.6               (c) 57.14,5,Graphs of Motion,English,yes,5,"Read-off points: the graph shows the car passing 70 km at time 0.7 h (point P). The bus passes 70 km at time t (point Q). The bus goes from 150 km at t = 0 to 0 km at t = 3.
+
+(a) First 24 minutes = 24/60 = 0.4 h. The car's first segment is from O(0,0) to P(0.7,70), so its speed on that segment is
+speed = change in distance / change in time = 70 / 0.7 = 100 km h^-1.
+Since 0.4 h < 0.7 h, the first 24 minutes lie in this segment, so the rate = 100 km h^-1.
+
+(b) Bus is linear from (0,150) to (3,0), so its equation is distance = 150 - 50 t. Set this equal to 70 to find t:
+150 - 50 t = 70 => 50 t = 80 => t = 1.6 hours.
+
+(c) The last 80 km of the car are from 70 km to 150 km. These occur between times t = 1.6 h and 3 h, so the car's speed on that final part is
+speed = (150 - 70) / (3 - 1.6) = 80 / 1.4 = 400/7 ≈ 57.14 km h^-1.
+
+Answers:
+(a) 100 km h^-1
+(b) t = 1.6 h
+(c) 400/7 km h^-1 (≈ 57.14 km h^-1)",3007,SUCCESS,gpt-5-mini
+Chapter 7_Q3.png,(a) 8 seconds (b) 17,5,Graphs of Motion,English,yes,5,"Reading the graph:
+- At t = 2 s the speed reaches 4 m/s and remains 4 m/s until t = 10 s (horizontal segment).
+- After 10 s the speed rises from 4 m/s to 10 m/s at time t.
+- The other vehicle’s speed is the straight line from O to R (0 to 10 m/s in t seconds).
+
+(a) Duration when the motorcycle travels at a uniform speed
+- The motorcycle (the one with the horizontal segment at 4 m/s) travels at a uniform speed from 2 s to 10 s.
+- Duration = 10 − 2 = 8 s.
+
+(b) Find t if the distances travelled by the car and motorcycle are equal for the period 0 to t
+- Distance = area under speed–time graph.
+
+If we take:
+- Car: piecewise (0→2 triangular, 2→10 rectangle, 10→t trapezoid).
+  - 0→2: area = 1/2 × 2 × 4 = 4 m
+  - 2→10: area = 8 × 4 = 32 m
+  - 10→t: area = ((4 + 10)/2) × (t − 10) = 7(t − 10) m
+  - Total car distance = 4 + 32 + 7(t − 10) = 36 + 7t − 70 = 7t − 34 m
+
+- Motorcycle (the one that accelerates uniformly from 0 to 10 in time t): triangle area
+  - Total motorcycle distance = 1/2 × t × 10 = 5t m
+
+Set distances equal:
+5t = 7t − 34
+=> 34 = 2t
+=> t = 17 s
+
+Answers:
+(a) 8 s
+(b) t = 17 s",4199,SUCCESS,gpt-5-mini
+Chapter 8_Q1.png,"(a) 9, 2, 3.210, 1.792
+(b) interquartile range",6,Measures of Dispersion ,English,yes,6,"The table (value : frequency) is:
+1:2, 2:5, 3:6, 4:9, 5:6, 6:2, 7:1, 10:1 (total N = 32 pupils).
+
+Step 1 — mean
+Sum x·f = 1·2 + 2·5 + 3·6 + 4·9 + 5·6 + 6·2 + 7·1 +10·1 = 125.
+Mean μ = 125 / 32 = 3.90625 hours.
+
+Step 2 — range
+Range = max − min = 10 − 1 = 9 hours.
+
+Step 3 — interquartile range (IQR)
+List cumulative positions:
+positions 1–2: value 1
+3–7: value 2
+8–13: value 3
+14–22: value 4
+23–28: value 5
+29–30: value 6
+31: value 7
+32: value 10
+
+N = 32 is even, so split into lower half positions 1–16 and upper half 17–32.
+Q1 = median of positions 1–16 = average of positions 8 and 9 = 3 and 3 → Q1 = 3.
+Q3 = median of positions 17–32 = average of positions 24 and 25 = 5 and 5 → Q3 = 5.
+IQR = Q3 − Q1 = 5 − 3 = 2 hours.
+
+Step 4 — variance and standard deviation
+Compute Σx^2·f:
+1^2·2 + 2^2·5 + 3^2·6 + 4^2·9 + 5^2·6 + 6^2·2 + 7^2·1 + 10^2·1 = 591.
+
+Population variance (using N = 32):
+σ^2 = (Σx^2·f)/N − μ^2 = 591/32 − (125/32)^2
+= 18.46875 − 15.2734375 = 3.1953125 hours^2.
+
+Standard deviation σ = sqrt(3.1953125) ≈ 1.7876 hours ≈ 1.79 hours.
+
+Summary of answers
+- Range = 9 hours
+- Interquartile range = 2 hours
+- Variance ≈ 3.20 hours^2 (≈ 3.1953)
+- Standard deviation ≈ 1.79 hours
+
+Part (b) — most appropriate measure of dispersion
+The interquartile range (IQR) is the most appropriate measure because it is robust to extreme values (the single high value 10) and describes the spread of the central 50% of pupils' revision times.",2084,SUCCESS,gpt-5-mini
+Chapter 8_Q2.png,"(a) 1.2, 0.4
+(b) 5, 3",4,Measures of Dispersion ,English,yes,4,"Question: Calculate the range and the interquartile range (IQR) of each data set.
+
+(a) Diameters (cm) with frequencies
+- Values: 6.0, 6.2, 6.4, 6.6, 6.8, 7.0, 7.2
+- Frequencies: 6, 9, 12, 18, 20, 10, 5
+
+Step 1 — total frequency:
+6 + 9 + 12 + 18 + 20 + 10 + 5 = 80
+
+Step 2 — range:
+Maximum − minimum = 7.2 − 6.0 = 1.2 cm
+
+Step 3 — cumulative frequencies:
+6.0: 6
+6.2: 6 + 9 = 15
+6.4: 15 + 12 = 27
+6.6: 27 + 18 = 45
+6.8: 45 + 20 = 65
+7.0: 65 + 10 = 75
+7.2: 75 + 5 = 80
+
+Step 4 — quartile positions (using the 25% and 75% positions):
+Quarter = 80/4 = 20, so Q1 is the 20th observation, Q3 is the 60th observation.
+- The 20th observation lies in the cumulative group reaching 27 → value = 6.4, so Q1 = 6.4 cm.
+- The 60th observation lies in the cumulative group reaching 65 → value = 6.8, so Q3 = 6.8 cm.
+
+IQR = Q3 − Q1 = 6.8 − 6.4 = 0.4 cm
+
+Answers (a):
+- Range = 1.2 cm
+- IQR = 0.4 cm
+
+(b) Ages (years) with frequencies
+- Values: 13, 14, 15, 16, 17, 18
+- Frequencies: 12, 18, 21, 20, 21, 8
+
+Step 1 — total frequency:
+12 + 18 + 21 + 20 + 21 + 8 = 100
+
+Step 2 — range:
+Maximum − minimum = 18 − 13 = 5 years
+
+Step 3 — cumulative frequencies:
+13: 12
+14: 12 + 18 = 30
+15: 30 + 21 = 51
+16: 51 + 20 = 71
+17: 71 + 21 = 92
+18: 92 + 8 = 100
+
+Step 4 — quartile positions:
+For n = 100, Q1 is the 25th observation and Q3 is the 75th observation.
+- The 25th observation lies in the cumulative group reaching 30 → value = 14, so Q1 = 14 years.
+- The 75th observation lies in the cumulative group reaching 92 → value = 17, so Q3 = 17 years.
+
+IQR = Q3 − Q1 = 17 − 14 = 3 years
+
+Answers (b):
+- Range = 5 years
+- IQR = 3 years",1911,SUCCESS,gpt-5-mini
+Chapter 8_Q3.png,"(a) Team A Team B
+mean = 61 mean = 61
+range = 22 range = 30
+variance = 78.8 variance = 155.6
+standard deviation standard deviation
+= 8.877 = 12.47
+(b) No because of the existence of outlier or extreme
+values",7,Measures of Dispersion ,English,yes,7,"The table gives:
+Team A: 48, 53, 65, 69, 70
+Team B: 45, 47, 68, 70, 75
+
+I treat the five players in each team as the whole population, so variance is calculated with divisor n (=5).
+
+Team A
+1) Mean:
+sum = 48 + 53 + 65 + 69 + 70 = 305
+mean = 305 / 5 = 61.0 kg
+
+2) Range:
+range = max − min = 70 − 48 = 22 kg
+
+3) Variance:
+deviations and squares:
+(48 − 61) = −13 → 169
+(53 − 61) = −8  → 64
+(65 − 61) = 4   → 16
+(69 − 61) = 8   → 64
+(70 − 61) = 9   → 81
+sum of squares = 169 + 64 + 16 + 64 + 81 = 394
+variance = 394 / 5 = 78.8 (kg^2)
+
+4) Standard deviation:
+sd = sqrt(78.8) ≈ 8.88 kg
+
+Team B
+1) Mean:
+sum = 45 + 47 + 68 + 70 + 75 = 305
+mean = 305 / 5 = 61.0 kg
+
+2) Range:
+range = 75 − 45 = 30 kg
+
+3) Variance:
+deviations and squares:
+(45 − 61) = −16 → 256
+(47 − 61) = −14 → 196
+(68 − 61) = 7   → 49
+(70 − 61) = 9   → 81
+(75 − 61) = 14  → 196
+sum of squares = 256 + 196 + 49 + 81 + 196 = 778
+variance = 778 / 5 = 155.6 (kg^2)
+
+4) Standard deviation:
+sd = sqrt(155.6) ≈ 12.48 kg
+
+(b) Is range appropriate?
+No, the range is not a reliable sole measure of dispersion here because it depends only on the minimum and maximum and ignores the other data. It is sensitive to extreme values/outliers. For these teams both means are equal (61.0 kg) but Team B’s larger range (30 vs 22) is driven by more extreme values; variance or standard deviation (which use all data) give a fuller picture.
+
+(c) Which team has greater dispersion from the mean?
+Team B has the greater dispersion: variance 155.6 vs 78.8 and standard deviation ≈12.48 kg vs ≈8.88 kg.",1914,SUCCESS,gpt-5-mini
+Chapter 9_Q1.png,"{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)}, 1/2",4,Probability of Combined Events,English,yes,4,"Read from the picture: Box K = {S, E, R, I}, Box L = {4, 5, 6}. One card is chosen from each box. Total ordered outcomes = 4 × 3 = 12.
+
+List all outcomes (letter, number):
+(S,4), (S,5), (S,6),
+(E,4), (E,5), (E,6),
+(R,4), (R,5), (R,6),
+(I,4), (I,5), (I,6).
+
+Event A = ""S from K"" = {(S,4),(S,5),(S,6)} (3 outcomes).
+Event B = ""multiple of 3 from L"" — multiples of 3 among {4,5,6} is {6}, so B = {(S,6),(E,6),(R,6),(I,6)} (4 outcomes).
+
+Union A ∪ B = {(S,4),(S,5),(S,6),(E,6),(R,6),(I,6)} — 6 outcomes.
+
+Probability = favorable / total = 6 / 12 = 1/2.
+
+(Alternatively using probabilities: P(A)=1/4, P(B)=1/3, P(A∩B)=P(S and 6)=1/12, so P(A∪B)=1/4+1/3−1/12=1/2.)",1242,SUCCESS,gpt-5-mini
+Chapter 9_Q2.png,230,5,Probability of Combined Events,English,yes,5,"Read and interpret the information:
+- Lucky wheel has 6 equal sectors: 2 red and 4 yellow.
+- If red: choose from Box A (20 RM50, 5 RM10).
+- If yellow: choose from Box B (10 RM50, 20 RM10).
+- 450 customers expected.
+
+Step 1 — probabilities:
+P(red) = 2/6 = 1/3.
+P(yellow) = 4/6 = 2/3.
+
+Step 2 — conditional probabilities of getting RM10:
+In A: P(RM10 | A) = 5/(20+5) = 5/25 = 1/5.
+In B: P(RM10 | B) = 20/(10+20) = 20/30 = 2/3.
+
+Step 3 — total probability a customer gets an RM10 voucher:
+P(RM10) = P(red)·P(RM10 | A) + P(yellow)·P(RM10 | B)
+= (1/3)(1/5) + (2/3)(2/3)
+= 1/15 + 4/9
+= (3 + 20) / 45
+= 23/45.
+
+Step 4 — expected number out of 450 customers:
+Expected RM10 vouchers = 450 × 23/45 = 10 × 23 = 230.
+
+Answer: The Naga Shop needs to prepare 230 RM10 vouchers.",1546,SUCCESS,gpt-5-mini
+Chapter 9_Q3.png,"(a) 7/33
+(b) 5/33",5,Probability of Combined Events,English,yes,5,"Read from the bar chart:
+- Badminton clubs: Kedah 14, Negeri Sembilan 11, F.T. Labuan 3, F.T. Putrajaya 5. Total badminton = 14 + 11 + 3 + 5 = 33.
+- Bodybuilding clubs: Kedah 6, Negeri Sembilan 2, F.T. Labuan 2, F.T. Putrajaya 2. Total bodybuilding = 6 + 2 + 2 + 2 = 12.
+
+We select one badminton club at random and one bodybuilding club at random (independent choices).
+
+(a) Probability both clubs are from Kedah:
+P(badminton from Kedah) = 14/33.
+P(bodybuilding from Kedah) = 6/12 = 1/2.
+Required probability = (14/33) * (1/2) = 14/66 = 7/33 ≈ 0.2121.
+
+(b) Interpreting ""respectively"" to mean the badminton club is from the Federal Territories (Labuan or Putrajaya) and the bodybuilding club is from Negeri Sembilan:
+Badminton in the Federal Territories = 3 + 5 = 8, so P(badminton from FT) = 8/33.
+P(bodybuilding from Negeri Sembilan) = 2/12 = 1/6.
+Required probability = (8/33) * (1/6) = 8/198 = 4/99 ≈ 0.0404.
+
+Final answers:
+(a) 7/33
+(b) 4/99",2188,SUCCESS,gpt-5-mini
+Chapter 10_Q1.png,"(a) Personal monthly financial plan for Encik Nabil
+Income and Expenditure RM
+Active income:
+Net salary
+Commissions
+3 800
+450
+Total active income 4 250
+Passive income:
+House rental 600
+Total passive income 600
+Total monthly income 4 850
+Minus fixed monthly savings 380
+Total income after deducting
+savings 4 470
+Minus cash outflow/expenses
+Fixed expenses:
+Housing loan instalments (1)
+Housing loan instalments (2)
+Insurance expenses
+800
+500
+350
+Total fixed expenses 1 650
+Variable expenses:
+Food expenses
+Utility payments
+Toll and petrol expenses
+Internet service subscription
+Eat at a luxury restaurant
+900
+150
+200
+100
+400
+Total variable expenses 1 750
+Surplus/Deficit 1 070
+(b) Encik Nabil’s personal financial plan has a surplus
+where there is a positive cash flow when the total
+income is more than the total expenses. This has
+improved Encik Nabil’s liquidity",7, Financial Management,English,yes,7,"Read from the question:
+- Monthly net salary = RM 3,800
+- Monthly commission = RM 450
+- Monthly rental income = RM 600
+- He sets aside 10% of his salary as fixed monthly savings.
+
+Monthly expenses (given):
+- Housing loan instalment (1) = RM 800
+- Housing loan instalment (2) = RM 500
+- Food expenses = RM 900
+- Utility payments = RM 150
+- Toll and petrol = RM 200
+- Internet subscription = RM 100
+- Eat at a luxury restaurant = RM 400
+- Insurance expenses = RM 350
+
+Step 1 — Calculate total monthly income
+- Income = salary + commission + rental
+- Income = 3,800 + 450 + 600 = RM 4,850
+
+Step 2 — Calculate fixed monthly savings (10% of salary)
+- Savings = 10% × 3,800 = 0.10 × 3,800 = RM 380
+
+Step 3 — Sum monthly expenses
+- Expenses = 800 + 500 + 900 + 150 + 200 + 100 + 400 + 350
+- Expenses = RM 3,400
+
+Step 4 — Total monthly outflow (expenses + fixed savings)
+- Outflow = 3,400 + 380 = RM 3,780
+
+Step 5 — Monthly surplus / deficit
+- Surplus = Income − Outflow = 4,850 − 3,780 = RM 1,070
+- Result: monthly surplus of RM 1,070
+
+Monthly personal financial plan (simple budget and suggested allocation of surplus)
+- Income: RM 4,850
+- Fixed savings (10% of salary): RM 380
+- Fixed/necessary expenses: RM 3,400
+- Monthly surplus available to allocate: RM 1,070
+
+Recommended use of the RM 1,070 surplus (example plan)
+- Build emergency fund: RM 500 per month (until target reached; target = 3–6 months of essential expenses)
+- Extra debt repayment (accelerate housing loan): RM 300 per month
+- Long‑term investment / retirement top‑up: RM 170 per month
+- Discretionary / fun money or buffer: RM 100 per month
+
+(Other sensible alternatives: put more to investments or mortgage prepayment, or increase fixed savings from 10% to 15–20% if comfortable.)
+
+Comments on surplus/deficit
+- Encik Nabil has a healthy monthly surplus of RM 1,070 after his planned 10% salary savings and paying all listed expenses.
+- He can use this surplus to: build an emergency fund (recommended first), pay down mortgage faster (reduces long‑term interest), increase retirement/investments, or increase insurance if coverage is insufficient.
+- If he wants to improve his financial safety faster, he could reduce discretionary spending (for example the RM 400 “eat at a luxury restaurant”) and redirect that money to emergency savings or debt repayment.
+- Aim: accumulate 3–6 months of essential expenses (essential ≈ expenses excluding discretionary items; using essentials ≈ RM 3,000 → emergency target ≈ RM 9,000–18,000). With RM 500 monthly to emergency fund he would reach RM 9,000 in 18 months.
+
+Summary
+- Monthly income RM 4,850; monthly outflow RM 3,780; monthly surplus RM 1,070.
+- Surplus should be prioritized to emergency fund, extra loan repayment and investments; discretionary cuts (luxury restaurant) are an easy place to free more cash if desired.",2582,SUCCESS,gpt-5-mini
+Chapter 10_Q2.png,"(a) Mrs Thong does not spend wisely because her
+total monthly savings of RM250 compared to the
+income of RM6 000 which is less than 10%.
+(b) Mrs Thong will not be able to achieve the
+investment goal of RM500 000 with monthly
+savings of RM250",6, Financial Management,English,yes,6,"The table (numbers in RM) gives Mrs Thong’s monthly net income and expenses:
+- Salary = 6 000
+- Expenses (monthly): house loan 500, car instalment 700, travel 500, rental 1 500, transport fares 900, utility bills 250, tolls 100, groceries 400, allowances for parents 600, savings 100, insurance 200.
+- Total expenses = 5 750
+- Income balance (leftover) = 250
+
+(a) Does she spend her money wisely?
+
+Step 1 — compute her saving rate:
+- Monthly savings recorded = 100
+- Savings rate = 100 ÷ 6 000 = 0.0167 = 1.67%
+
+Step 2 — compare with a common recommendation:
+- A common guideline is to save about 20% of income (20% of 6 000 = 1 200 per month).
+- Mrs Thong’s 100 per month (1.67%) is far below that.
+
+Step 3 — note other issues in the budget:
+- She has a large rental outlay (1 500) plus a house/apartment loan (500) — paying both is unusual and suggests inefficiency.
+- Transport-related costs (car instalment 700 + transport fares 900 = 1 600) are high.
+- Income balance is only 250 — very little buffer for emergencies.
+
+Conclusion (a): No. Based on the very low saving rate (1.67%), small emergency buffer and high recurring costs, she is not spending her money wisely and should reduce expenditures and increase savings.
+
+(b) Can she buy a RM500 000 property in 6 years with current spending behaviour?
+
+Interpretation: to have RM500 000 in 6 years (72 months) she would need to save:
+- Required monthly saving = 500 000 ÷ 72 ≈ 6 944.44 per month.
+
+What she currently saves at present behaviour:
+- Current recorded savings = 100 per month → in 6 years: 100 × 72 = 7 200
+- If she also were to save the current leftover income balance (250) instead of spending it, total monthly saved = 100 + 250 = 350 → in 6 years: 350 × 72 = 25 200
+
+Compare with target:
+- 7 200 is 1.44% of 500 000
+- 25 200 is 5.04% of 500 000
+
+Conclusion (b): No. With her current savings (100/month) she would only accumulate RM7 200 in 6 years; even if she redirected the leftover RM250 to savings (total 350/month) she would only reach RM25 200. Both amounts are far short of RM500 000. To reach RM500 000 in 6 years she would need to save about RM6 944 per month, which is unrealistic without a very large increase in income or drastic cuts in expenses.
+
+Practical suggestions (brief):
+- Reassess why she pays both rental and a house loan; eliminate duplication if possible.
+- Cut discretionary travel/transport costs, consider cheaper car or refinance car loan.
+- Aim to raise savings toward at least 20% of income (≈ RM1 200/month) as a start, and consider investing to earn returns if the goal is long-term (but investing still requires much higher contributions or longer time).",2410,SUCCESS,gpt-5-mini

@@ -1,0 +1,572 @@
+image_filename,ground_truth,marking_scheme,chapter_name,language,Textbook,Allocated marks,llm_answer,tokens_used,status,model
+Chapter 1_Q1.png,"No. The pizza with diameter of 30 cm is more
+worth it.",4,Variation,English,yes,4,"Read the diagram: diameters and prices are
+- small: diameter 15 cm, price RM12
+- medium: diameter 23 cm, price RM25
+- large: diameter 30 cm, price RM35
+
+Step 1 — find radii
+- small r = 15/2 = 7.5 cm
+- medium r = 23/2 = 11.5 cm
+- large r = 30/2 = 15 cm
+
+Step 2 — surface areas A = π r^2
+- small: A = π(7.5)^2 = 56.25π ≈ 176.715 cm^2
+- medium: A = π(11.5)^2 = 132.25π ≈ 415.480 cm^2
+- large: A = π(15)^2 = 225π ≈ 706.858 cm^2
+
+Step 3 — price per unit area (RM per cm^2) = price / area
+- small: 12 / (56.25π) ≈ 12 / 176.715 ≈ 0.0679 RM/cm^2
+- medium: 25 / (132.25π) ≈ 25 / 415.480 ≈ 0.0602 RM/cm^2
+- large: 35 / (225π) ≈ 35 / 706.858 ≈ 0.0496 RM/cm^2
+
+Step 4 — conclusion
+If price varied directly with surface area, the ratio price/area would be the same for all sizes. The ratios above are different, so price does not vary directly as area. The best value (lowest RM per cm^2) is the large 30 cm pizza, so the 30 cm pizza is worth buying.",1332,SUCCESS,gpt-5-mini
+Chapter 1_Q2.png,7 cm,3,Variation,English,yes,3,"Let L = k d^2 since L varies directly as d^2.
+
+1) Use the given: 3.08 = k (2.8)^2
+   (2.8)^2 = 7.84, so k = 3.08 / 7.84 = 308/784 = 77/196 = 11/28 ≈ 0.392857.
+
+2) Now set L = 19.25:
+   19.25 = (11/28) d^2
+   d^2 = 19.25 × (28/11) = (19.25·28)/11 = 539/11 = 49
+
+3) d = √49 = 7 (take positive diameter)
+
+Answer: d = 7 cm.",738,SUCCESS,gpt-5-mini
+Chapter 1_Q3.png,"(a) 154 cm2
+(b) The area of the curved surface will
+decrease.",3,Variation,English,yes,3,"Read from the statement: A varies directly as r and s, so A = k r s for some constant k.
+
+Given A = 88 when r = 3.5 and s = 8:
+k = 88 / (3.5 × 8) = 88 / 28 = 22/7.
+
+Thus A = (22/7) r s.
+
+(a) For r = 5 and s = 9.8:
+A = (22/7) × 5 × 9.8 = 154 cm².
+
+(b) With r fixed, A is directly proportional to s (A = (22/7) r s). If the slant height decreases by Δs (a negative number), the change in area is
+ΔA = (22/7) r Δs.
+In other words the area decreases in the same proportion (or by the same percentage) as the slant height. For example, if s decreases by 1 cm, A decreases by (22/7) r cm².",1169,SUCCESS,gpt-5-mini
+Chapter 2_Q1.png,"(a) 6p + 4q = 16
+95p + 110q = 300
+(b) the number of glasses of drink P = 2,
+the number of glasses of drink Q = 1",5,Matrices ,English,yes,5,"Read the table and let x = number of glasses of Drink P, y = number of glasses of Drink Q.
+
+(a) Equations from protein and calories:
+6x + 4y = 16
+95x +110y = 300
+
+(b) Solve by matrix method.
+
+Write in matrix form A v = b where
+A = [ [6, 4],
+      [95,110] ], v = [x, y]^T, b = [16, 300]^T.
+
+Compute determinant det(A) = 6·110 − 4·95 = 660 − 380 = 280.
+
+Inverse of A is (1/det(A)) times the adjugate:
+A^{-1} = (1/280) [ [110, −4],
+                   [−95,  6] ].
+
+Then v = A^{-1} b:
+x = (1/280)(110·16 + (−4)·300) = (1/280)(1760 − 1200) = 560/280 = 2.
+y = (1/280)((−95)·16 + 6·300) = (1/280)(−1520 + 1800) = 280/280 = 1.
+
+Check: protein 6·2 + 4·1 = 12 + 4 = 16 g; calories 95·2 + 110·1 = 190 + 110 = 300 kcal.
+
+Answer: Syahirah should drink 2 glasses of P and 1 glass of Q daily.",1154,SUCCESS,gpt-5-mini
+Chapter 2_Q2.png,"(a) [
+80 70
+60 75
+74 84 ]
+, [
+0.6
+0.4 ]
+(b) 76
+(c) Computer Science",4,Matrices ,English,yes,4,"Read from the tables:
+
+Table 1 (Coursework, Exam):
+Mathematics: 80, 70
+English: 60, 75
+Computer Science: 74, 84
+
+Table 2 (weights):
+Coursework 60% = 0.6
+Exam 40% = 0.4
+
+(a) Matrices
+Let A be the marks matrix (3 × 2) and w the weight column (2 × 1):
+A = [ [80, 70],
+      [60, 75],
+      [74, 84] ]
+w = [ [0.6],
+      [0.4] ]
+
+(b) Overall mark for Mathematics (first row) by matrix method
+OverallMath = [80  70] · [0.6
+                          0.4]
+= 80×0.6 + 70×0.4
+= 48 + 28
+= 76
+
+So Mathematics overall = 76.
+
+(c) Best performed subject
+Compute A·w to get all overall marks:
+
+English: 60×0.6 + 75×0.4 = 36 + 30 = 66
+Computer Science: 74×0.6 + 84×0.4 = 44.4 + 33.6 = 78
+
+Thus overall marks vector = [76, 66, 78]. The highest is 78 for Computer Science, so Computer Science is the best performed subject.",1280,SUCCESS,gpt-5-mini
+Chapter 2_Q3.png,"the price for one kilogram of papaya = RM4,
+the price for one kilogram of banana = RM5",5,Matrices ,English,yes,5,"Read the table and let
+p = price (RM) of 1 kg papaya
+b = price (RM) of 1 kg banana
+
+From the purchases:
+4p + 2b = 26
+5p + 3b = 35
+
+Write in matrix form: A x = y, where
+A = [ [4, 2],
+      [5, 3] ],   x = [ p, b ]^T,   y = [ 26, 35 ]^T.
+
+Compute det(A) = 4*3 − 2*5 = 12 − 10 = 2.
+
+Inverse of A: A^{-1} = (1/det) [ [3, −2],
+                               [−5, 4] ]
+           = (1/2) [ [3, −2],
+                     [−5, 4] ].
+
+So x = A^{-1} y = (1/2) [ [3, −2],
+                          [−5, 4] ] [ 26, 35 ]^T.
+
+Compute the product:
+First entry: (1/2)(3*26 + (−2)*35) = (1/2)(78 − 70) = (1/2)(8) = 4.
+Second entry: (1/2)(−5*26 + 4*35) = (1/2)(−130 + 140) = (1/2)(10) = 5.
+
+Therefore p = RM4 per kg (papaya) and b = RM5 per kg (banana).",1225,SUCCESS,gpt-5-mini
+Chapter 3_Q1.png,"(a) Smoker: RM330.00; Non-smoker:
+RM254.40
+(b) Smoker: RM175.20; Non-smoker:
+RM147.60",4,Insurance,English,yes,4,"The table gives the annual premium rate per RM1 000 face value. For a face value of RM120 000 we have 120 units of RM1 000.
+
+(a) 29‑year‑old man
+- Smoker: rate = RM2.75 per RM1 000.
+  Premium = 120 × 2.75 = RM330.00
+- Non‑smoker: rate = RM2.12 per RM1 000.
+  Premium = 120 × 2.12 = RM254.40
+
+(b) 30‑year‑old woman
+- Smoker: rate = RM1.46 per RM1 000.
+  Premium = 120 × 1.46 = RM175.20
+- Non‑smoker: rate = RM1.23 per RM1 000.
+  Premium = 120 × 1.23 = RM147.60
+
+Answers:
+(a) RM330.00 (smoker), RM254.40 (non‑smoker).
+(b) RM175.20 (smoker), RM147.60 (non‑smoker).",1154,SUCCESS,gpt-5-mini
+Chapter 3_Q2.png,"(a) RM50.38
+(b) (i) RM796
+(ii) RM244",5,Insurance,English,yes,5,"Question (from image):
+Premium rates per RM1 000 face value for healthy non-smoking men:
+- 35 years old: 5-year term = RM5.24, yearly renewable term = RM4.03
+- 45 years old: 5-year term = RM7.96, yearly renewable term = RM5.52
+
+(a) Rizqi (35 years) buys a yearly renewable term plan of RM150 000. Find monthly premium.
+
+Work:
+- Number of RM1 000 units = 150 000 / 1 000 = 150
+- Annual premium = rate × units = RM4.03 × 150 = RM604.50
+- Monthly premium = RM604.50 / 12 = RM50.375 ≈ RM50.38
+
+Answer (a): RM50.38 per month.
+
+(b)(i) Vincent (45 years) buys a 5-year term with face value RM100 000. Find annual premium.
+
+Work:
+- Units = 100 000 / 1 000 = 100
+- Annual premium = RM7.96 × 100 = RM796.00
+
+Answer (b)(i): RM796 per year.
+
+(b)(ii) If Vincent buys yearly renewable term (45 years) with RM100 000, find difference in annual premium compared to 5-year term.
+
+Work:
+- Yearly renewable annual premium = RM5.52 × 100 = RM552.00
+- Difference = RM796.00 − RM552.00 = RM244.00
+
+Answer (b)(ii): The 5-year term costs RM244 more per year than the yearly renewable term.",1265,SUCCESS,gpt-5-mini
+Chapter 4_Q1.png,"Road tax for motorcycle 220 cc = RM50
+Road tax for car 1 860 cc = RM310",4,Taxation,English,yes,4,"Read the diagram and table:
+- Motorcycle engine = 220 cc
+- Car engine = 1,860 cc
+
+Motorcycle road tax
+- 220 cc falls in the 201 cc – 250 cc bracket.
+- Base rate for 201–250 cc = RM 50.00
+- Therefore motorcycle road tax = RM 50.00
+
+Car road tax
+- 1,860 cc falls in the 1,801 cc – 2,000 cc bracket.
+- Base rate for 1,801–2,000 cc = RM 280.00 + RM 0.50 for each cc exceeding 1,800 cc.
+- Excess cc = 1,860 − 1,800 = 60 cc
+- Progressive charge = 60 × RM 0.50 = RM 30.00
+- Total car road tax = RM 280.00 + RM 30.00 = RM 310.00
+
+Answer:
+- Motorcycle: RM 50.00
+- Car: RM 310.00",1213,SUCCESS,gpt-5-mini
+Chapter 4_Q2.png,"Mr Subra had to pay RM712 and his wife had
+to pay RM68. Hence, the total income tax for
+Mr Subra and his wife was RM780.",5,Taxation,English,yes,5,"Question (from image)
+Encik Suhaimi earned an annual salary of RM85,700 in 2020. His wife had no income. The following reliefs to be claimed by Encik Suhaimi are:
+- Individual: RM9,000
+- Life insurance and EPF (limited to RM7,000): actually paid RM7,760 -> limited to RM7,000
+- Lifestyle (limited to RM2,500): RM2,000
+- Spouse (tax relief for spouse who has no income): RM4,000
+- Medical treatment expenses for parents (limited to RM5,000): RM1,500
+
+Calculate total income tax for Encik Suhaimi and his wife by joint assessment.
+
+Working
+1) Sum allowable reliefs
+- Individual = 9,000
+- Life insurance & EPF (capped) = 7,000
+- Lifestyle = 2,000
+- Spouse relief = 4,000
+- Parents medical = 1,500
+Total reliefs = 9,000 + 7,000 + 2,000 + 4,000 + 1,500 = 23,500
+
+2) Taxable income
+Gross income = 85,700
+Taxable income = 85,700 − 23,500 = 62,200
+
+3) Compute tax using Malaysian resident progressive rates (applicable brackets used)
+- 0% on first 5,000 = 0
+- 1% on next 15,000 (5,001–20,000) = 15,000 × 1% = 150
+- 3% on next 15,000 (20,001–35,000) = 15,000 × 3% = 450
+- 8% on next 15,000 (35,001–50,000) = 15,000 × 8% = 1,200
+- 14% on remaining (50,001–62,200) = 12,200 × 14% = 1,708
+
+Total tax = 150 + 450 + 1,200 + 1,708 = 3,508
+
+Answer
+Total income tax payable under joint assessment for Encik Suhaimi and his wife = RM3,508.",2751,SUCCESS,gpt-5-mini
+Chapter 5_Q1.png,"5/
+2",4,"Congruency, Enlargement and
+Combined Transformations",English,yes,4,"Read the diagram: small circle radius r = 3 cm. Let the enlargement (linear) scale factor be k, so the large radius is R = k·r.
+
+Area of the coloured annulus = π(R^2 − r^2) = 47.25π cm^2.
+
+Substitute R = k·r and r = 3:
+π((k·3)^2 − 3^2) = 47.25π
+Cancel π:
+9(k^2 − 1) = 47.25
+k^2 − 1 = 47.25 / 9 = 5.25
+k^2 = 6.25
+k = √6.25 = 2.5
+
+Scale factor of the enlargement = 2.5.
+
+(check: large radius = 2.5·3 = 7.5 cm; annulus area = π(7.5^2 − 3^2) = π(56.25 − 9) = 47.25π)",840,SUCCESS,gpt-5-mini
+Chapter 5_Q2.png,1 215 cm,5,"Congruency, Enlargement and
+Combined Transformations",English,yes,5,"Read from diagram: the image is formed 15 cm behind the pinhole (image distance v = 15 cm). Let object distance (distance from tree to pinhole) be u (positive to the left). For a pinhole camera the linear scale factor m = image height / object height = - v / u (minus sign because the image is inverted).
+
+Given m = -1/80, so
+- v / u = -1/80  =>  v / u = 1/80.
+
+Substitute v = 15 cm:
+15 / u = 1/80  =>  u = 15 × 80 = 1200 cm.
+
+The horizontal distance between the tree and its image is the sum of object and image distances (tree → pinhole → image):
+distance = u + v = 1200 + 15 = 1215 cm.
+
+Answer: 1215 cm.",1111,SUCCESS,gpt-5-mini
+Chapter 5_Q3.png,"(a) 1 003.96 m
+(b) 20 000 m2",3,"Congruency, Enlargement and
+Combined Transformations",English,yes,3,"Read the diagram as follows:
+- the bottom base = 320 m
+- the top is divided into three equal top segments of length 80 m (the arrow 80 m shows one top segment), so the whole top base = 3 × 80 = 240 m
+- the height (left vertical side) = 200 m
+
+(a) Perimeter
+The horizontal difference between the bottom and top bases is 320 − 240 = 80 m. The slanted right side is the hypotenuse of a right triangle with vertical leg 200 m and horizontal leg 80 m, so its length is
+slanted side = sqrt(200^2 + 80^2) = sqrt(40000 + 6400) = sqrt(46400) = 40√29 m.
+
+Perimeter = top + bottom + left side + right slanted side
+= 240 + 320 + 200 + 40√29
+= 760 + 40√29 ≈ 975.4 m.
+
+(b) Area of the land and each section
+Area of the trapezium = (1/2) × (sum of parallel sides) × height
+= (1/2) × (240 + 320) × 200
+= (1/2) × 560 × 200 = 56000 m^2.
+
+The land is divided into three congruent sections, so area of each section = 56000 / 3 = 56000/3 m^2 ≈ 18666.67 m^2.
+
+Answers:
+- Perimeter = 760 + 40√29 ≈ 975.4 m
+- Total area = 56000 m^2; each section = 56000/3 m^2 (≈ 18666.67 m^2).",6162,SUCCESS,gpt-5-mini
+Chapter 6_Q1.png,0.6613,3,"Ratios and Graphs of
+Trigonometric Functions",English,yes,3,"Read the diagram: a right triangle has hypotenuse (the wood) 8 m, horizontal adjacent side 6 m, and angle θ at the base between the wood and the horizontal.
+
+1. Let the vertical height (opposite side to θ) be h.
+2. By Pythagoras: h^2 + 6^2 = 8^2
+   h^2 + 36 = 64
+   h^2 = 28
+   h = sqrt(28) = 2√7
+3. sin θ = opposite / hypotenuse = h / 8 = (2√7) / 8 = √7 / 4
+
+Numerical value: sin θ = √7 / 4 ≈ 0.6614.",616,SUCCESS,gpt-5-mini
+Chapter 6_Q2.png,(a) y = sin x (b) 30°,4,"Ratios and Graphs of
+Trigonometric Functions",English,yes,4,"The graph has amplitude 1, midline y = 0, period 360° and passes through (0,0) rising to a maximum at 90° and a minimum at 270°. These features match y = sin x.
+
+(a) y = sin x
+
+(b) The point (m, 0.5) lies on the curve so sin m = 0.5. In degrees the solutions in [0°,360°] are
+m = 30° or m = 150°. The diagram shows the point on the small positive x near the origin, so m = 30°.",972,SUCCESS,gpt-5-mini
+Chapter 6_Q3.png,11.5 m,3,"Ratios and Graphs of
+Trigonometric Functions",English,yes,3,"Read the diagram and set up coordinates:
+- The circular formation has diameter 10 m, so radius r = 5 m. Let O be the circle center and use the usual x–y axes shown.
+- The original position is (5, 0) (point on the circle at 0°). The field boundary is 9 m to the right of that, so its equation is x = 5 + 9 = 14.
+
+The new position is obtained by rotating to 300° (which is the same as −60°). Coordinates of the new position on the circle:
+- x_new = 5 cos 300° = 5·(1/2) = 2.5
+- y_new = 5 sin 300° = 5·(−√3/2) = −(5√3)/2
+
+The shortest distance from a point to a vertical line x = 14 is the horizontal difference:
+distance = 14 − x_new = 14 − 2.5 = 11.5 m = 23/2 m.
+
+Answer: 11.5 m (23/2 m).",1490,SUCCESS,gpt-5-mini
+Chapter 7_Q1.png,"(a) Rozaidy: 25%, Wildan: 45%
+(b) Wildan’s performance is better than
+Rozaidy’s because the values of the
+median and the third quartile are higher
+than Rozaidy’s.",6,"Measures of Dispersion for
+Grouped Data",English,yes,6,"The ogive shows cumulative frequency out of 20 throws (vertical scale 0,5,10,15,20). I will read off cumulative frequencies and percentiles from the graph (values are approximate from the plot).
+
+(a) Percentage of throws exceeding 15.45 m
+
+- Read cumulative frequency at distance x = 15.45 m (vertical value of each curve at that horizontal position).
+  - Rozaiyd: cumulative ≈ 13 throws at 15.45 m.
+  - Wildan: cumulative ≈ 9 throws at 15.45 m.
+- Number of throws exceeding 15.45 m = total throws − cumulative at 15.45.
+  - Total throws = 20.
+  - Rozaiyd: 20 − 13 = 7 throws exceed 15.45 m → percentage = 7/20 = 0.35 = 35%.
+  - Wildan: 20 − 9 = 11 throws exceed 15.45 m → percentage = 11/20 = 0.55 = 55%.
+
+Answer (a): Rozaiyd ≈ 35%, Wildan ≈ 55%.
+
+(b) Compare medians and third quartiles
+
+- Median is the 50th percentile → cumulative = 10 (since 50% of 20 = 10).
+  - Read x where cumulative = 10:
+    - Rozaiyd median ≈ 14.3 m.
+    - Wildan median ≈ 14.9 m.
+- Third quartile (Q3) is the 75th percentile → cumulative = 15.
+  - Read x where cumulative = 15:
+    - Rozaiyd Q3 ≈ 15.6 m.
+    - Wildan Q3 ≈ 16.0 m.
+
+Both the median and the third quartile for Wildan are higher than Rozaiyd’s, so Wildan performed better during the training session.",1848,SUCCESS,gpt-5-mini
+Chapter 7_Q2.png,"(a) No. The distribution is not symmetrical
+as most of the blood glucose readings
+are concentrated on the right side of the
+histogram, which are higher.
+(b) Mean = 6.82, standard deviation = 1.35
+(c) The standard deviation of the blood
+glucose readings between 6.0 mmol/L
+and 8.9 mmol/L are lower because the
+dispersion of the data is smaller.",6,"Measures of Dispersion for
+Grouped Data",English,yes,6,"The question (from the histogram) and solution.
+
+Reading from the histogram:
+- Class intervals (mmol/L): 2.95–3.95, 3.95–4.95, 4.95–5.95, 5.95–6.95, 6.95–7.95, 7.95–8.95
+- Frequencies (from the bar heights): 0, 5, 10, 25, 40, 30 respectively.
+
+(a) Is the distribution symmetrical? Give your reason.
+- No. The histogram has most observations at the higher glucose levels (right side) and a long tail toward lower values (left side). That is, the distribution is not symmetric; it is negatively skewed (skewed to the left).
+
+(b) Calculate the mean and standard deviation of the blood glucose readings.
+Step 1 — midpoints of each class:
+- 2.95–3.95 midpoint = 3.45
+- 3.95–4.95 midpoint = 4.45
+- 4.95–5.95 midpoint = 5.45
+- 5.95–6.95 midpoint = 6.45
+- 6.95–7.95 midpoint = 7.45
+- 7.95–8.95 midpoint = 8.45
+
+Step 2 — compute f, x, f·x, and f·x^2:
+
+- f = [0, 5, 10, 25, 40, 30]
+- x = [3.45, 4.45, 5.45, 6.45, 7.45, 8.45]
+- f·x = [0, 22.25, 54.50, 161.25, 298.00, 253.50]  (sum = 789.50)
+- f·x^2:
+  - 0·3.45^2 = 0
+  - 5·4.45^2 = 99.0125
+  - 10·5.45^2 = 297.025
+  - 25·6.45^2 = 1040.0625
+  - 40·7.45^2 = 2220.10
+  - 30·8.45^2 = 2142.075
+  (sum f·x^2 = 5798.275)
+
+Total frequency N = 0+5+10+25+40+30 = 110.
+
+Mean:
+- mean = (sum f·x)/N = 789.50 / 110 = 7.17727...
+- mean ≈ 7.18 mmol/L (to 3 s.f.)
+
+Variance (grouped-data formula):
+- E[x^2] = (sum f·x^2)/N = 5798.275 / 110 = 52.71159...
+- variance = E[x^2] − (mean)^2 = 52.71159 − (7.17727)^2
+- (7.17727)^2 ≈ 51.5244
+- variance ≈ 52.71159 − 51.5244 = 1.1872
+- standard deviation = sqrt(variance) ≈ sqrt(1.1872) ≈ 1.09 mmol/L
+
+Answer (b): mean ≈ 7.18 mmol/L, standard deviation ≈ 1.09 mmol/L.
+
+(c) Compare the standard deviation of the readings between 6.0 mmol/L and 8.9 mmol/L with the standard deviation in (b). Justify your answer.
+
+- The interval 6.0–8.9 mmol/L corresponds to the classes 5.95–6.95, 6.95–7.95 and 7.95–8.95 (midpoints 6.45, 7.45, 8.45) with frequencies 25, 40, 30.
+- Subset N_sub = 25+40+30 = 95.
+- Sum f·x for subset = 25·6.45 + 40·7.45 + 30·8.45 = 161.25 + 298.00 + 253.50 = 712.75.
+- Mean_sub = 712.75 / 95 = 7.5026 ≈ 7.50 mmol/L.
+- Sum f·x^2 for subset = 25·6.45^2 + 40·7.45^2 + 30·8.45^2 = 1040.0625 + 2220.10 + 2142.075 = 5402.2375.
+- E[x^2]_sub = 5402.2375 / 95 = 56.86566.
+- variance_sub = 56.86566 − (7.5026)^2 ≈ 56.86566 − 56.2890 = 0.5767.
+- sd_sub = sqrt(0.5767) ≈ 0.76 mmol/L (approximately).
+
+Comparison and justification:
+- The standard deviation for the subset (≈ 0.76 mmol/L) is smaller than the overall standard deviation (≈ 1.09 mmol/L).
+- Reason: restricting to the narrower range 6.0–8.9 removes the low-value tail and the more widely spread values, so the readings in this restricted range are closer together and therefore have a smaller spread (smaller standard deviation).",4897,SUCCESS,gpt-5-mini
+Chapter 7_Q3.png,"(a) No. The distribution is not symmetrical
+as most of the blood glucose readings
+are concentrated on the right side of the
+histogram, which are higher.
+(b) Mean = 6.82, standard deviation = 1.35
+(c) The standard deviation of the blood
+glucose readings between 6.0 mmol/L
+and 8.9 mmol/L are lower because the
+dispersion of the data is smaller.",7,"Measures of Dispersion for
+Grouped Data",English,yes,7,"Step 1 — read the grouped data and take class midpoints
+- Classes and midpoints: 120–134: m1 = 127; 135–149: m2 = 142; 150–164: m3 = 157; 165–179: m4 = 172
+- Frequencies before: fB = [4, 7, 8, 6], nB = 25
+- Frequencies after: fA = [9, 8, 7, 1], nA = 25
+
+Step 2 — compute the mean (grouped data formula mean = Σ(f·m)/n)
+
+Before:
+ΣfBm = 4·127 + 7·142 + 8·157 + 6·172 = 508 + 994 + 1256 + 1032 = 3790
+mean_before = 3790 / 25 = 151.6 mmHg
+
+After:
+ΣfAm = 9·127 + 8·142 + 7·157 + 1·172 = 1143 + 1136 + 1099 + 172 = 3550
+mean_after = 3550 / 25 = 142.0 mmHg
+
+Step 3 — compute the standard deviation (use grouped-data variance formula)
+Compute Σ(f·m^2) for each case.
+
+Before:
+127^2·4 = 16129·4 = 64516
+142^2·7 = 20164·7 = 141148
+157^2·8 = 24649·8 = 197192
+172^2·6 = 29584·6 = 177504
+Σf m^2 = 580360
+
+Variance (using sample formula, divisor n−1):
+s_B^2 = [Σ(f m^2) − n·mean^2] / (n−1)
+s_B^2 = [580360 − 25·(151.6)^2] / 24 = [580360 − 574564] / 24 = 5796 / 24 = 241.5
+s_B = sqrt(241.5) ≈ 15.54 mmHg
+
+After:
+127^2·9 = 16129·9 = 145161
+142^2·8 = 20164·8 = 161312
+157^2·7 = 24649·7 = 172543
+172^2·1 = 29584·1 = 29584
+Σf m^2 = 508600
+
+s_A^2 = [508600 − 25·(142)^2] / 24 = [508600 − 504100] / 24 = 4500 / 24 = 187.5
+s_A = sqrt(187.5) ≈ 13.69 mmHg
+
+(If one uses the population divisor n instead, the standard deviations would be ≈15.23 mmHg before and ≈13.42 mmHg after. Above I used n−1.)
+
+Step 4 — conclusion (interpretation)
+- Mean before = 151.6 mmHg, mean after = 142.0 mmHg: the average systolic blood pressure fell by 9.6 mmHg after the dose.
+- Standard deviation decreased slightly (≈15.5 → 13.7 mmHg), so readings are a bit less spread out after the medicine.
+
+Conclusion: The medicine appears effective in lowering the group’s systolic blood pressure (mean decreased noticeably). A formal significance test would be needed to confirm statistical significance, but the observed drop in mean (~9.6 mmHg) indicates an effect.",2825,SUCCESS,gpt-5-mini
+Chapter 8_Q1.png,". (a) y = 1
+3 000
+x2
+ + 5                                    (b) 58",6,Mathematical Modeling,English,yes,6,"First set up a coordinate system. Let the origin x = 0 be at the midspan (the lowest point of the cable) and let y measure the vertical distance from the deck up to the cable (in metres). The cable is symmetric, so model it by a parabola of the form
+y = ax^2 + c.
+
+At the midspan (x = 0) the shortest distance from the cable to the deck is 5 m, so c = 5 and
+y = ax^2 + 5.
+
+The half-span from the midspan to a tower is 600/2 = 300 m. At x = 300 the cable is 35 m above the deck, so
+35 = a(300)^2 + 5.
+Solve for a:
+30 = a · 90000
+a = 30/90000 = 1/3000.
+
+Thus the cable arc is
+y = (1/3000) x^2 + 5  (y and x in metres), for −300 ≤ x ≤ 300.
+
+Suspender spacing:
+The half-span is 300 m. If suspenders are placed every 20 m along each side, the number of equal 20 m intervals on one side is
+300/20 = 15.
+So there are 15 suspenders on each side, giving 15 + 15 = 30 suspenders in total.
+
+(If instead a suspender is placed exactly at the midspan as well, counting that center one once yields 31 total; the standard interpretation counting even spacing out from the midspan gives 30 total.)",1946,SUCCESS,gpt-5-mini
+Chapter 8_Q2.png,"(a) A – quadratic model
+B – exponential model
+C – linear model
+(b) Exponential model. Temperature will not
+rise as shown in the quadratic model.
+Temperature will not drop below 0°C as
+shown in the linear model.",6,Mathematical Modeling,English,yes,6,"First restate the data:
+- t (s): 0, 40, 80, 120
+- T (°C): 200, 140, 100, 75
+
+(a) Identify which graph is which
+- C is the linear model (straight line).
+- A is the quadratic model (parabola that turns up at larger t).
+- B is the exponential model (smooth decay approaching a horizontal asymptote).
+
+(Reason: C is visually a straight line. A has the shape of a parabola (it flattens and then turns upward). B decays and levels off toward a horizontal asymptote, the characteristic shape of an exponential approach.)
+
+(b) Which model best describes the cooling for 0 ≤ t ≤ 250? Explain why the others do not fit.
+
+Step 1 — look at how the cooling rate changes from the data:
+- slope 0→40: (140 − 200)/(40 − 0) = −60/40 = −1.50 °C/s
+- slope 40→80: (100 − 140)/(80 − 40) = −40/40 = −1.00 °C/s
+- slope 80→120: (75 − 100)/(120 − 80) = −25/40 = −0.625 °C/s
+
+The magnitude of the cooling rate is decreasing with time (|slope| gets smaller). That is exactly what exponential (Newton’s law of cooling) predicts: the temperature falls rapidly at first, then more slowly, approaching the ambient (room) temperature asymptotically.
+
+Step 2 — why linear is bad
+- A linear model implies a constant rate of temperature change. The data show a decreasing rate, so a straight line does not match the curvature of the points.
+- If you used a linear fit based on the data (for example using the average slope from 0 to 120: (75−200)/120 ≈ −1.0417 °C/s), it would predict T(250) ≈ 200 − 1.0417·250 ≈ −60 °C, which is physically unrealistic (temperature would go well below room temperature).
+
+Step 3 — why quadratic is bad
+- A quadratic that fits the first part of the data will eventually turn upward (as seen in graph A), predicting that the sample warms again for large t. That contradicts the physics of cooling to ambient temperature and the observed monotone decrease toward a limiting temperature.
+
+Step 4 — why exponential is best
+- Exponential decay (graph B) matches the decreasing rate of cooling and approaches a horizontal asymptote (room temperature). It remains above the ambient temperature and does not go negative or start rising again, so it is the physically reasonable model for 0 ≤ t ≤ 250.
+
+Conclusion:
+- Best model for 0 ≤ t ≤ 250 is the exponential model B. Linear model C is ruled out because it gives a constant rate and predicts unrealistic negative temperatures; quadratic model A is ruled out because it eventually rises (predicts warming), which is not physically appropriate for cooling.",2201,SUCCESS,gpt-5-mini
+Chapter 8_Q3.png,(a) T = ?(6.5 × 10?3) x + 30,3,Mathematical Modeling,English,yes,3,"Read-off and reasoning:
+- Given rate of change = −6.5°C per 1000 m, so slope per metre = −6.5/1000 = −0.0065 °C/m.
+- Temperature at sea level (x = 0 m) is T(0) = 30°C, so y-intercept = 30.
+
+Form the linear function using T(x) = T(0) + (rate per m)·x:
+T(x) = 30 + (−0.0065)x = 30 − 0.0065x.
+
+Check (optional): x = 1000 → T = 30 − 6.5 = 23.5°C; x = 2000 → 30 − 13 = 17°C; x = 3000 → 30 − 19.5 = 10.5°C (matches diagram).
+
+Domain (context): 0 ≤ x ≤ 4095 m.",1268,SUCCESS,gpt-5-mini

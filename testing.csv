@@ -1,0 +1,102 @@
+﻿image_filename,ground_truth,marking_scheme,chapter_name,language,Textbook,Allocated marks,llm_answer,tokens_used,status,model
+Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x â€“ 150 = 0,4,"Quadratic Functions and Equations in
+One Variable",English,yes,4,"The question is:
+
+1.  The diagram on the right shows a piece of land with a length of (x + 20) m and a width of (x + 3) m.
+    (a) Write a function for the area, A m^2, of the land.
+    (b) If the area of the land is 250 m^2, write a quadratic equation in terms of x. Give your answer in the form of ax^2 + bx + c = 0.
+
+Solution:
+
+(a) The area of a rectangle is given by the formula: Area = length * width.
+In this case, the length is (x + 20) m and the width is (x + 3) m.
+Therefore, the area A can be expressed as:
+A = (x + 20)(x + 3)
+A = x(x + 3) + 20(x + 3)
+A = x^2 + 3x + 20x + 60
+A = x^2 + 23x + 60
+
+(b) We are given that the area of the land is 250 m^2. So, we can set up the equation:
+x^2 + 23x + 60 = 250
+To write this in the form ax^2 + bx + c = 0, we need to subtract 250 from both sides:
+x^2 + 23x + 60 - 250 = 0
+x^2 + 23x - 190 = 0
+
+Final Answer:
+(a) A = x^2 + 23x + 60
+(b) x^2 + 23x - 190 = 0
+",1743,SUCCESS,gemini-2.0-flash
+Chapter 1_Q2.png,"(a) A(0, â€“5)     (b) x = 3
+(c) B(6, â€“5)     (d) (3, 4)",6,"Quadratic Functions and Equations in
+One Variable",English,yes,6,"The diagram shows part of the graph of the quadratic function f(x) = -x^2 + 6x - 5. The straight line AB is parallel to the x-axis. Determine:
+(a) the coordinates of point A,
+(b) the equation of the axis of symmetry,
+(c) the coordinates of point B,
+(d) the coordinates of the maximum point P.
+
+Solution:
+
+(a) To find the coordinates of point A, we need to find the y-intercept of the function f(x) = -x^2 + 6x - 5. This occurs when x = 0.
+f(0) = -(0)^2 + 6(0) - 5 = -5
+So, the coordinates of point A are (0, -5).
+
+(b) The axis of symmetry of a quadratic function in the form f(x) = ax^2 + bx + c is given by the equation x = -b/(2a).
+In our case, a = -1 and b = 6.
+x = -6/(2*(-1)) = -6/(-2) = 3
+So, the equation of the axis of symmetry is x = 3.
+
+(c) Since the line AB is parallel to the x-axis, the y-coordinate of point B is the same as the y-coordinate of point A, which is -5.
+To find the x-coordinate of point B, we need to solve the equation f(x) = -5.
+-x^2 + 6x - 5 = -5
+-x^2 + 6x = 0
+x^2 - 6x = 0
+x(x - 6) = 0
+So, x = 0 or x = 6.
+Since point A has x-coordinate 0, point B must have x-coordinate 6.
+Therefore, the coordinates of point B are (6, -5).
+
+(d) The maximum point P occurs on the axis of symmetry, so the x-coordinate of P is 3.
+To find the y-coordinate, we substitute x = 3 into the function:
+f(3) = -(3)^2 + 6(3) - 5 = -9 + 18 - 5 = 4
+So, the coordinates of the maximum point P are (3, 4).
+
+Final Answer:
+(a) A(0, -5)
+(b) x = 3
+(c) B(6, -5)
+(d) P(3, 4)
+",1909,SUCCESS,gemini-2.0-flash
+Chapter 1_Q3.png,20 cm,5,"Quadratic Functions and Equations in
+One Variable",English,yes,5,"Diagram 1 shows an isosceles triangle with a base of 4y cm and a height of (y + 5) cm.
+Diagram 2 shows a square with sides of y cm.
+The area of the triangle is more than the area of the square by 39 cm^2. Calculate the difference in perimeter between both shapes.
+
+Area of triangle = (1/2) * base * height = (1/2) * 4y * (y + 5) = 2y(y + 5) = 2y^2 + 10y
+Area of square = side * side = y * y = y^2
+
+The area of triangle is more than the area of the square by 39 cm^2
+2y^2 + 10y = y^2 + 39
+2y^2 - y^2 + 10y - 39 = 0
+y^2 + 10y - 39 = 0
+y^2 + 13y - 3y - 39 = 0
+y(y + 13) - 3(y + 13) = 0
+(y - 3)(y + 13) = 0
+y = 3 or y = -13
+Since y represents the side of a square, it must be positive.
+So, y = 3 cm
+
+Perimeter of triangle:
+To find the perimeter, we need to find the length of the two equal sides.  Let's call the length of each side 's'.  We can use the Pythagorean theorem on half of the isosceles triangle.  The base of this right triangle is 2y, and the height is y + 5.
+s^2 = (2y)^2 + (y + 5)^2
+s^2 = (2*3)^2 + (3 + 5)^2
+s^2 = 6^2 + 8^2
+s^2 = 36 + 64
+s^2 = 100
+s = 10 cm
+Perimeter of triangle = 10 + 10 + 4y = 20 + 4(3) = 20 + 12 = 32 cm
+
+Perimeter of square = 4 * y = 4 * 3 = 12 cm
+
+Difference in perimeter = Perimeter of triangle - Perimeter of square = 32 - 12 = 20 cm
+
+Final Answer: The final answer is $\boxed{20}$",1897,SUCCESS,gemini-2.0-flash
