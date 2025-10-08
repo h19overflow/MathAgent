@@ -5,7 +5,7 @@ import pandas as pd
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from config import OPENAI_DEPLOYMENT_NAME, OPENAI_API_KEY
-from constant import LLM_CORRECTNESS_PROMPT, LLM_MARKING_PROMPT, GROUND_TRUTH, LLM_ANSWER, OPENAI_TOKEN_USAGE
+from constant import LLM_CORRECTNESS_PROMPT, LLM_MARKING_PROMPT, QUESTION, ANSWER, LLM_ANSWER, OPENAI_TOKEN_USAGE
 import time
 import json
 
@@ -32,13 +32,12 @@ def process_df(input_file: str):
         raise ValueError(f"Unsupported file format: {input_file}. Supported formats are .csv, .xls, .xlsx")
     
     df.columns = df.columns.str.lower()
-    if all(col in df.columns.str.lower() for col in [GROUND_TRUTH, LLM_ANSWER]):
+    if all(col in df.columns.str.lower() for col in [QUESTION, ANSWER, LLM_ANSWER]):
         return df
     else:
-        raise ValueError(f"Columns {GROUND_TRUTH}, and {LLM_ANSWER} are required in the file.")
+        raise ValueError(f"Columns {QUESTION}, {ANSWER}, and {LLM_ANSWER} are required in the file.")
     
-
-def correctness_evaluation(client: ChatOpenAI, system_message: SystemMessage, ground_truth_answer: str, generated_answer: str):
+def correctness_evaluation(client: ChatOpenAI, system_message: SystemMessage, question: str, ground_truth_answer: str, generated_answer: str):
     """
     Evaluates the correctness of LLM answers.
 
@@ -53,7 +52,7 @@ def correctness_evaluation(client: ChatOpenAI, system_message: SystemMessage, gr
         tuple: Tuple containing the correctness response and token usage.
     """
     correctness_prompt = LLM_CORRECTNESS_PROMPT.format(
-        ground_truth_answer=ground_truth_answer, ai_answer=generated_answer) 
+        ground_truth_answer=ground_truth_answer, ai_answer=generated_answer, question=question)
 
     human_message = HumanMessage(
         content=correctness_prompt
@@ -62,7 +61,7 @@ def correctness_evaluation(client: ChatOpenAI, system_message: SystemMessage, gr
     final_correctness_response = json.loads(correctness_response.content)
     return final_correctness_response, correctness_response.response_metadata[OPENAI_TOKEN_USAGE]
 
-def marking_evaluation(client: ChatOpenAI, system_message: SystemMessage, ground_truth_answer: str, generated_answer: str, marking_scheme: str):
+def marking_evaluation(client: ChatOpenAI, system_message: SystemMessage, question: str, ground_truth_answer: str, generated_answer: str):
 
     """
     Marks the LLM answers using LLM.
@@ -70,13 +69,15 @@ def marking_evaluation(client: ChatOpenAI, system_message: SystemMessage, ground
     Args:
         client (ChatOpenAI): OpenAI client.
         system_message (SystemMessage): System message.
+        question (str): Question.
         ground_truth_answer (str): Ground truth answer.
         generated_answer (str): Generated LLM answer.
 
     Returns:
         tuple: Tuple containing the marking response and token usage.
     """
-    marking_prompt = LLM_MARKING_PROMPT.format(ground_truth_answer=ground_truth_answer, ai_answer=generated_answer, marking_scheme=marking_scheme
+    marking_prompt = LLM_MARKING_PROMPT.format(
+        question=question, ground_truth_answer=ground_truth_answer, ai_answer=generated_answer
     )
 
     human_message = HumanMessage(
@@ -103,23 +104,17 @@ def llm_evaluation(df: pd.DataFrame):
     total_marking_time = 0
     try:
         for index, row in df.iterrows():
-            ground_truth_answer = row[GROUND_TRUTH]
+            question = row[QUESTION]
+            ground_truth_answer = row[ANSWER]
             generated_answer = row[LLM_ANSWER]
-            marking_scheme = row["marking_scheme"]
-            chapter_name = row["chapter_name"]
-            language = row["language"]
-            model_used = row["model"]
-            token_used = row.get("tokens_used", None)
-            allocated_mark = row.get("allocated marks", None)
-            filename = row["image_filename"]
-
+            
             print(f"Processing row {index+1} out of {len(df)}")
             start_correctness_time = time.time()
-            correctness_response, correctness_usage = correctness_evaluation(client, system_message, ground_truth_answer, generated_answer)
+            correctness_response, correctness_usage = correctness_evaluation(client, system_message, question, ground_truth_answer, generated_answer)
             correctness_time = time.time() - start_correctness_time
 
             start_marking_time = time.time()
-            marking_response, marking_usage = marking_evaluation(client, system_message, ground_truth_answer, generated_answer, marking_scheme)
+            marking_response, marking_usage = marking_evaluation(client, system_message, question, ground_truth_answer, generated_answer)
             marking_time = time.time() - start_marking_time
 
             total_correctness_time += correctness_time
@@ -127,20 +122,14 @@ def llm_evaluation(df: pd.DataFrame):
 
             if correctness_response and marking_response:
                 csv_data.append({
-                    "filename": filename,
+                    QUESTION: question,
                     "ground_truth_answer": ground_truth_answer,
                     "generated_answer": generated_answer,
                     "similarity": correctness_response[0]["similarity"],
                     "correctness_time": correctness_time,
                     "ai_marks": marking_response[0]["ai_score"],
-                    "allocated_marks": allocated_mark,
                     "marking_explanation": marking_response[0]["ai_score_explanation"],
-                    "marking_time": marking_time,
-                    "marking_scheme": marking_scheme,
-                    "chapter_name": chapter_name,
-                    "language": language,
-                    "model_used": model_used,
-                    "token_used": token_used
+                    "marking_time": marking_time
                 })
         print(f"Evaluation completed for {len(df)} rows.")
     except Exception as e:
