@@ -71,7 +71,7 @@ Follow these evaluation criteria:
 
 Here is the ground truth answer: {ground_truth_answer}
 Here is the AI response: {ai_answer}
-Here is the marking scheme: {marking_scheme}
+Here is the marking scheme limit , if the agent answers the question matchign the ground truth give it full mark. : {allocated_marks}
 
 Respond your evaluation in the following JSON format below:
 

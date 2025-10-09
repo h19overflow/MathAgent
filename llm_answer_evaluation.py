@@ -62,7 +62,7 @@ def correctness_evaluation(client: ChatOpenAI, system_message: SystemMessage, gr
     final_correctness_response = json.loads(correctness_response.content)
     return final_correctness_response, correctness_response.response_metadata[OPENAI_TOKEN_USAGE]
 
-def marking_evaluation(client: ChatOpenAI, system_message: SystemMessage, ground_truth_answer: str, generated_answer: str, marking_scheme: str):
+def marking_evaluation(client: ChatOpenAI, system_message: SystemMessage, ground_truth_answer: str, generated_answer: str, marking_scheme: str, allocated_marks: str):
 
     """
     Marks the LLM answers using LLM.
@@ -72,11 +72,17 @@ def marking_evaluation(client: ChatOpenAI, system_message: SystemMessage, ground
         system_message (SystemMessage): System message.
         ground_truth_answer (str): Ground truth answer.
         generated_answer (str): Generated LLM answer.
+        marking_scheme (str): Marking scheme.
+        allocated_marks (str): Allocated marks for the question.
 
     Returns:
         tuple: Tuple containing the marking response and token usage.
     """
-    marking_prompt = LLM_MARKING_PROMPT.format(ground_truth_answer=ground_truth_answer, ai_answer=generated_answer, marking_scheme=marking_scheme
+    marking_prompt = LLM_MARKING_PROMPT.format(
+        ground_truth_answer=ground_truth_answer, 
+        ai_answer=generated_answer, 
+        marking_scheme=marking_scheme,
+        allocated_marks=allocated_marks
     )
 
     human_message = HumanMessage(
@@ -101,8 +107,12 @@ def llm_evaluation(df: pd.DataFrame):
     )
     total_correctness_time = 0
     total_marking_time = 0
-    try:
-        for index, row in df.iterrows():
+    
+    for index, row in df.iterrows():
+        correctness_response = None
+        marking_response = None
+        
+        try:
             ground_truth_answer = row[GROUND_TRUTH]
             generated_answer = row[LLM_ANSWER]
             marking_scheme = row["marking_scheme"]
@@ -119,7 +129,7 @@ def llm_evaluation(df: pd.DataFrame):
             correctness_time = time.time() - start_correctness_time
 
             start_marking_time = time.time()
-            marking_response, marking_usage = marking_evaluation(client, system_message, ground_truth_answer, generated_answer, marking_scheme)
+            marking_response, marking_usage = marking_evaluation(client, system_message, ground_truth_answer, generated_answer, marking_scheme, str(allocated_mark))
             marking_time = time.time() - start_marking_time
 
             total_correctness_time += correctness_time
@@ -142,9 +152,10 @@ def llm_evaluation(df: pd.DataFrame):
                     "model_used": model_used,
                     "token_used": token_used
                 })
-        print(f"Evaluation completed for {len(df)} rows.")
-    except Exception as e:
-        print(f"Error processing row {index}: {e} \n Correctness Evaluation: {correctness_response} \n Marking Evaluation: {marking_response}")
+        except Exception as e:
+            print(f"Error processing row {index}: {e} \n Correctness Evaluation: {correctness_response} \n Marking Evaluation: {marking_response}")
+    
+    print(f"Evaluation completed for {len(df)} rows.")
 
     
     print(f"Total Correctness Time: {total_correctness_time}s")
