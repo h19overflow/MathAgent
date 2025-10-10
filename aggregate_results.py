@@ -24,9 +24,11 @@ def aggregate_file_pair(form4_path: str, form5_path: str, method_name: str) -> d
     df4 = pd.read_excel(form4_path)
     df5 = pd.read_excel(form5_path)
 
-    # Remove summary rows (rows with NaN filename)
+    # Remove summary rows (rows with NaN filename or filename containing 'total')
     df4 = df4.dropna(subset=['filename'])
     df5 = df5.dropna(subset=['filename'])
+    df4 = df4[~df4['filename'].str.contains('total', case=False, na=False)]
+    df5 = df5[~df5['filename'].str.contains('total', case=False, na=False)]
 
     # Combine both forms
     combined = pd.concat([df4, df5], ignore_index=True)
@@ -54,14 +56,14 @@ def main():
     # Define file pairs
     file_pairs = [
         {
-            'form4': 'QAs/gpt-5-mini_COT+StepBack/test_results_form4_gpt-5-mini_COT+StepBack_evaluation_result_2025-10-10_10-02-06.xlsx',
-            'form5': 'QAs/gpt-5-mini_COT+StepBack/test_results_form5_gpt-5-mini_COT+StepBack_evaluation_result_2025-10-10_10-20-16.xlsx',
-            'method': 'gpt-5-mini_COT+StepBack'
+            'form4': r'QAs\gemini-2.5-flash-lite-preview-09-2025\test_results_form4_gemini-2.5-flash-lite-preview-09-2025_COT+StepBack_evaluation_result_2025-10-10_11-03-14.xlsx',
+            'form5': r'QAs\gemini-2.5-flash-lite-preview-09-2025\test_results_form5_gemini-2.5-flash-lite-preview-09-2025_COT+StepBack_evaluation_result_2025-10-10_11-01-15.xlsx',
+            'method': 'gemini-2.5-flash-lite-preview-09-2025_COT+StepBack'
         },
         {
-            'form4': 'QAs/result/test_results_f4_gpt5mini_evaluation_result_2025-10-07_21-02-53.xlsx',
-            'form5': 'QAs/result/test_results_f5_gpt5mini_evaluation_result_2025-10-07_21-47-28.xlsx',
-            'method': 'gpt5mini_baseline'
+            'form4': r'QAs\result\test_results_f4_evaluation_result_2025-10-07_22-57-47.xlsx',
+            'form5': r'QAs\result\test_results_f5_evaluation_result_2025-10-07_23-24-07.xlsx',
+            'method': 'gemini-2.0-flash'
         }
     ]
 
@@ -80,7 +82,7 @@ def main():
                              'total_tokens_used']]
 
     # Save to Excel
-    output_path = 'QAs/evaluation_summary.xlsx'
+    output_path = 'QAs/evaluation_summary_gemini.xlsx'
     summary_df.to_excel(output_path, index=False)
 
     print(f"Summary saved to {output_path}")

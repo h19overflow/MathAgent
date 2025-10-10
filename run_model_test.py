@@ -119,7 +119,7 @@ async def process_test_images(input_csv: str, img_folder: str, output_csv: str, 
 async def main(form_level: str):
     base_dir = os.getcwd()
     questions_dir = os.path.join(base_dir, "QAs")
-    model_name = "flash-lite-2.5-9-preview"
+    model_name = "gemini-2.5-flash-lite-preview-09-2025"
     input_csv = os.path.join(questions_dir, f"test_questions_mathform{form_level}.csv")
     img_folder = os.path.join(questions_dir, "Soalan maths", f"form {form_level}")
     output_dir = os.path.join(questions_dir, model_name)  # Removed invalid { }

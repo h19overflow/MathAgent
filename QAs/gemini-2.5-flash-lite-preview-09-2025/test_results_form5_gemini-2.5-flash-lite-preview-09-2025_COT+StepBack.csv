@@ -1,0 +1,1979 @@
+image_filename,ground_truth,marking_scheme,chapter_name,language,Textbook,Allocated marks,llm_answer,tokens_used,status,model
+Chapter 1_Q1.png,"No. The pizza with diameter of 30 cm is more
+worth it.",,Variation,English,yes,4,"Step 0: Principle Abstraction
+The problem involves analyzing a relationship between the price (p) of a pizza and its surface area (A). Specifically, it asks if the relationship is one of direct variation, which means $p = kA$ for some constant $k$. If direct variation does not hold, the secondary task is to determine which option provides the best value, which involves comparing the ratio of price to area, or the reciprocal: area per unit price. The geometric component involves calculating the area of circles given their diameters.
+
+Step 1: Diagram Deconstruction
+The diagram provides data for three sizes of circular pizzas:
+
+Pizza 1 (Small):
+Diameter ($D_1$): $15 \text{ cm}$
+Price ($P_1$): RM $12$
+
+Pizza 2 (Medium):
+Diameter ($D_2$): $23 \text{ cm}$
+Price ($P_2$): RM $25$
+
+Pizza 3 (Large):
+Diameter ($D_3$): $30 \text{ cm}$
+Price ($P_3$): RM $35$
+
+The radius ($r$) is half the diameter ($r = D/2$). The surface area ($A$) of a circle is given by $A = \pi r^2 = \pi (D/2)^2 = \frac{\pi D^2}{4}$.
+
+Calculated Radii and Areas:
+Pizza 1: $r_1 = 15/2 = 7.5 \text{ cm}$
+$A_1 = \pi (7.5)^2 = 56.25\pi \text{ cm}^2$
+
+Pizza 2: $r_2 = 23/2 = 11.5 \text{ cm}$
+$A_2 = \pi (11.5)^2 = 132.25\pi \text{ cm}^2$
+
+Pizza 3: $r_3 = 30/2 = 15 \text{ cm}$
+$A_3 = \pi (15)^2 = 225\pi \text{ cm}^2$
+
+Step 2: Question Interpretation
+The question asks two things:
+1. Does the price ($P$) vary directly as the surface area ($A$)? (Is $P = kA$?)
+2. If not, which size of pizza is ""worth buying""? This means finding the best value, which is the lowest price per unit area, or equivalently, the highest area per unit price.
+
+Step 3: Mathematical Formulation
+Part 1: Test for Direct Variation.
+If $P$ varies directly as $A$, then the ratio $P/A$ must be a constant ($k$) for all three pizzas.
+$k = P/A = P / (\frac{\pi D^2}{4}) = \frac{4P}{\pi D^2}$
+
+Part 2: Determine Best Value.
+We need to calculate the value ratio, $V = A/P$ (Area per Ringgit), and identify the largest value. Alternatively, calculate the cost ratio, $C = P/A$ (Price per unit area), and identify the smallest value. We will calculate the cost ratio $C$.
+
+Step 4: Step-by-Step Calculation
+
+Part 1: Testing Direct Variation
+
+Calculate the constant $k$ (or $C = P/A$) for each pizza. Since $\pi$ is a common factor in the area calculation, we can compare the ratio $P/D^2$ for simplicity, as $P/A = (4/\pi) \cdot (P/D^2)$. If $P/D^2$ is constant, then $P/A$ is constant.
+
+Ratio 1 ($P_1/D_1^2$):
+$R_1 = \frac{12}{15^2} = \frac{12}{225}$
+$R_1 = \frac{4}{75} \approx 0.05333$
+
+Ratio 2 ($P_2/D_2^2$):
+$R_2 = \frac{25}{23^2} = \frac{25}{529}$
+$R_2 \approx 0.04726$
+
+Ratio 3 ($P_3/D_3^2$):
+$R_3 = \frac{35}{30^2} = \frac{35}{900} = \frac{7}{180}$
+$R_3 \approx 0.03889$
+
+Since $R_1 \neq R_2 \neq R_3$, the ratio $P/D^2$ is not constant. Therefore, the price does not vary directly as the surface area.
+
+Answer to Part 1: No, the price does not vary directly as the surface area.
+
+Part 2: Determining the Best Buy (Lowest Price per Area, $P/A$ or $P/D^2$)
+
+We compare the calculated ratios $R_1, R_2, R_3$:
+$R_1 = 4/75 \approx 0.05333$
+$R_2 = 25/529 \approx 0.04726$
+$R_3 = 7/180 \approx 0.03889$
+
+The smallest ratio $P/D^2$ corresponds to the best value.
+$R_3 < R_2 < R_1$.
+
+The smallest ratio is $R_3$, which corresponds to Pizza 3 (Diameter $30 \text{ cm}$, Price RM $35$).
+
+Alternatively, calculating Area per Ringgit ($A/P$):
+Value 1 ($A_1/P_1$): $\frac{56.25\pi}{12} = 4.6875\pi \approx 14.726 \text{ cm}^2/\text{RM}$
+Value 2 ($A_2/P_2$): $\frac{132.25\pi}{25} = 5.29\pi \approx 16.619 \text{ cm}^2/\text{RM}$
+Value 3 ($A_3/P_3$): $\frac{225\pi}{35} = \frac{45\pi}{7} \approx 6.4286\pi \approx 20.198 \text{ cm}^2/\text{RM}$
+
+Since Value 3 is the largest, Pizza 3 offers the most area per Ringgit.
+
+Step 5: Final Answer
+1. Does the price of pizza, RMp, vary directly as the surface area, A cm^2, of the pizza?
+No. Direct variation requires the ratio P/A (or P/D^2) to be constant across all sizes, which is not the case (0.05333 $\neq$ 0.04726 $\neq$ 0.03889).
+
+2. If it does not, which size of pizza is worth buying?
+The size worth buying is the one that maximizes the area per unit price (or minimizes the price per unit area). The 30 cm pizza (RM35) provides the largest area per Ringgit (approximately 20.20 cm^2/RM).
+
+The size of pizza worth buying is the 30 cm pizza priced at RM35.",2282,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 1_Q2.png,7 cm,,Variation,English,yes,3,"Step 0: Principle Abstraction
+The problem describes a relationship where one variable ($L$, the area) varies directly as the square of another variable ($d$, the diameter). This falls under the mathematical principle of Direct Variation, specifically involving a square term. The general form for this relationship is $L = k d^2$, where $k$ is the constant of proportionality.
+
+Step 1: Diagram Deconstruction
+The text and diagram provide specific instances of this relationship:
+1. Initial condition: Area $L_1 = 3.08 \text{ cm}^2$ when the diameter $d_1 = 2.8 \text{ cm}$.
+2. Target condition: Area $L_2 = 19.25 \text{ cm}^2$ when the diameter is $d_2 = d \text{ cm}$ (the unknown value).
+The geometric information (semicircles) confirms that $L$ is indeed related to $d^2$ (since the area of a full circle is $\pi r^2 = \pi (d/2)^2 = (\pi/4) d^2$, the area of a semicircle is proportional to $d^2$).
+
+Step 2: Question Interpretation
+The goal is to calculate the value of the diameter $d$ (labeled as $d_2$ in the deconstruction) corresponding to the area $L = 19.25 \text{ cm}^2$, based on the established direct variation relationship.
+
+Step 3: Mathematical Formulation
+Using the principle $L = k d^2$:
+
+First, we use the initial condition ($L_1=3.08$, $d_1=2.8$) to find the constant of proportionality, $k$:
+$$L_1 = k d_1^2$$
+$$3.08 = k (2.8)^2$$
+
+Second, we use the relationship $L = k d^2$ again with the target condition ($L_2=19.25$, $d_2=d$) and the calculated $k$:
+$$L_2 = k d_2^2$$
+$$19.25 = k d^2$$
+
+Alternatively, using the property of direct variation, the ratio of the quantities is constant:
+$$\frac{L_1}{d_1^2} = \frac{L_2}{d_2^2}$$
+$$\frac{3.08}{(2.8)^2} = \frac{19.25}{d^2}$$
+
+Step 4: Step-by-Step Calculation
+We will use the ratio method for efficiency.
+
+1. Calculate the square of the initial diameter:
+$$(2.8)^2 = 7.84$$
+
+2. Set up the proportion:
+$$\frac{3.08}{7.84} = \frac{19.25}{d^2}$$
+
+3. Solve for $d^2$:
+$$d^2 = 19.25 \times \frac{7.84}{3.08}$$
+
+4. Calculate the ratio $\frac{7.84}{3.08}$.
+To simplify, note that $3.08 \times 2 = 6.16$ and $3.08 \times 2.5 = 7.7$. Let's check the division directly:
+$$\frac{7.84}{3.08} = \frac{784}{308}$$
+Dividing both by 4:
+$$\frac{784 \div 4}{308 \div 4} = \frac{196}{77}$$
+Dividing both by 7:
+$$\frac{196 \div 7}{77 \div 7} = \frac{28}{11}$$
+We can also find $k$ first: $k = \frac{3.08}{7.84}$.
+$$k = \frac{308}{784}$$
+Dividing by 4: $k = \frac{77}{196}$.
+Dividing by 7: $k = \frac{11}{28}$.
+(Verification: $k = \frac{11}{28}$. $L_1 = \frac{11}{28} \times 7.84 = 11 \times (7.84/28) = 11 \times 0.28 = 3.08$. This confirms $k = 11/28$).
+
+5. Substitute $k$ back into the second equation $19.25 = k d^2$:
+$$19.25 = \frac{11}{28} d^2$$
+
+6. Solve for $d^2$:
+$$d^2 = 19.25 \times \frac{28}{11}$$
+
+7. Perform the multiplication/division:
+First, divide $19.25$ by $11$:
+$$\frac{19.25}{11} = 1.75$$
+(Check: $11 \times 1 = 11$. Remainder $8.25$. $11 \times 0.7 = 7.7$. Remainder $0.55$. $11 \times 0.05 = 0.55$. So, $1.75$).
+
+Now, calculate $d^2$:
+$$d^2 = 1.75 \times 28$$
+We know $1.75 = 7/4$.
+$$d^2 = \frac{7}{4} \times 28$$
+$$d^2 = 7 \times \frac{28}{4}$$
+$$d^2 = 7 \times 7$$
+$$d^2 = 49$$
+
+8. Solve for $d$:
+Since $d$ represents a physical length (diameter), it must be positive.
+$$d = \sqrt{49}$$
+$$d = 7$$
+
+Step 5: Final Answer
+The value of $d$ when $L = 19.25 \text{ cm}^2$ is $7 \text{ cm}$.
+
+$$d = 7 \text{ cm}$$",2009,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 1_Q3.png,"(a) 154 cm2
+(b) The area of the curved surface will
+decrease.",,Variation,English,yes,3,"Step 0: Principle Abstraction
+The problem involves the concept of direct variation (or joint variation) in mathematics, specifically relating the area of the curved surface of a cone (A) to its base radius (r) and slant height (s). This relationship is expressed through a proportionality constant. The problem also requires analyzing the relationship between the area and one variable when the other is held constant.
+
+Step 1: Diagram Deconstruction
+The problem describes the properties of a cone, as illustrated in the accompanying diagram, which shows the base radius $r$ and the slant height $s$.
+The relationship stated is: Area $A$ varies directly as the radius $r$ and the slant height $s$.
+Given initial conditions: $A_1 = 88 \text{ cm}^2$ when $r_1 = 3.5 \text{ cm}$ and $s_1 = 8 \text{ cm}$.
+
+Step 2: Question Interpretation
+The problem has two parts:
+(a) Calculate the new area $A_2$ when $r_2 = 5 \text{ cm}$ and $s_2 = 9.8 \text{ cm}$.
+(b) Determine the change in the area of the curved surface if the slant height $s$ decreases while the base radius $r$ is fixed.
+
+Step 3: Mathematical Formulation
+Based on the principle of direct variation stated:
+$A \propto r \cdot s$
+This can be written as an equation using a constant of proportionality, $k$:
+$A = krs$ (Equation 1)
+
+Part (a) requires using the initial conditions to find $k$, and then using $k$ with the new values.
+$k = \frac{A}{rs}$
+
+Part (b) requires analyzing the functional relationship $A = krs$ when $r$ is constant ($r = r_{fixed}$).
+$A = (kr_{fixed})s$
+Since $k$ and $r_{fixed}$ are constants, the area $A$ is directly proportional to the slant height $s$.
+
+Step 4: Step-by-Step Calculation
+
+Part (a): Calculate $A$ when $r = 5 \text{ cm}$ and $s = 9.8 \text{ cm}$.
+
+1. Determine the constant of proportionality, $k$, using the initial values:
+$A_1 = k r_1 s_1$
+$88 = k (3.5)(8)$
+$88 = k (28)$
+$k = \frac{88}{28}$
+Simplify $k$ by dividing the numerator and denominator by 4:
+$k = \frac{22}{7}$
+
+2. Calculate the new area $A_2$ using $k = 22/7$, $r_2 = 5$, and $s_2 = 9.8$:
+$A_2 = k r_2 s_2$
+$A_2 = \left(\frac{22}{7}\right) (5) (9.8)$
+$A_2 = \left(\frac{22}{7}\right) (5) \left(\frac{98}{10}\right)$
+$A_2 = \left(\frac{22}{7}\right) (5) \left(\frac{49}{5}\right)$
+
+Cancel the 5s:
+$A_2 = \left(\frac{22}{7}\right) (49)$
+
+Since $49 = 7 \times 7$:
+$A_2 = 22 \times \frac{49}{7}$
+$A_2 = 22 \times 7$
+$A_2 = 154$
+
+The value of $A$ is $154 \text{ cm}^2$.
+
+Part (b): What is the change in the area of the curved surface if the slant height decreases and the base radius is fixed?
+
+1. Analyze the relationship derived in Step 3:
+$A = (kr_{fixed})s$
+Since $k$ and $r_{fixed}$ are positive constants, $A$ is directly proportional to $s$.
+
+2. Determine the change:
+If $r$ is fixed, the area $A$ changes only as $s$ changes.
+If the slant height $s$ decreases, then since $A$ is directly proportional to $s$, the area $A$ must also decrease. The change in area will be a decrease.
+
+Step 5: Final Answer
+
+(a) The value of $A$ when $r = 5 \text{ cm}$ and $s = 9.8 \text{ cm}$ is $154 \text{ cm}^2$.
+
+(b) If the base radius ($r$) is fixed, the area of the curved surface ($A$) is directly proportional to the slant height ($s$). Therefore, if the slant height decreases, the area of the curved surface must also decrease.
+
+Final Answer Summary:
+(a) $154 \text{ cm}^2$
+(b) The area of the curved surface decreases.",1740,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 2_Q1.png,"(a) 6p + 4q = 16
+95p + 110q = 300
+(b) the number of glasses of drink P = 2,
+the number of glasses of drink Q = 1",,Matrices ,English,yes,5,"Step 0: Principle Abstraction
+The problem involves setting up and solving a system of two linear equations with two variables based on given constraints (nutrient requirements) and specific data (nutrient content per unit). Part (b) explicitly requires solving this system using the matrix method. The relevant mathematical concepts are Linear Equations and Matrix Algebra (specifically, solving $AX=B$ for $X$).
+
+Step 1: Diagram Deconstruction
+The image provides a table summarizing the nutrient content of two drinks, P and Q:
+
+| Nutrient | Drink P (per glass) | Drink Q (per glass) | Target Daily Amount |
+| :--- | :--- | :--- | :--- |
+| Protein (g) | 6 | 4 | 16 g |
+| Calories (kcal) | 95 | 110 | 300 kcal |
+
+Let $x$ be the number of glasses of Drink P consumed daily.
+Let $y$ be the number of glasses of Drink Q consumed daily.
+
+The constraints derived from the target intake are:
+Protein constraint: (Protein from P) + (Protein from Q) = Total Protein
+Calorie constraint: (Calories from P) + (Calories from Q) = Total Calories
+
+Step 2: Question Interpretation
+The question has two parts:
+(a) Form two linear equations based on the protein and calorie requirements.
+(b) Calculate the values of $x$ and $y$ (the number of glasses of P and Q) using the matrix method.
+
+Step 3: Mathematical Formulation
+
+Part (a): Forming the linear equations.
+1. Protein Equation:
+(6 grams/glass of P) * $x$ + (4 grams/glass of Q) * $y$ = 16 grams
+$6x + 4y = 16$ (Equation 1)
+
+2. Calorie Equation:
+(95 kcal/glass of P) * $x$ + (110 kcal/glass of Q) * $y$ = 300 kcal
+$95x + 110y = 300$ (Equation 2)
+
+We can simplify Equation 1 by dividing by 2:
+$3x + 2y = 8$ (Simplified Equation 1)
+
+The system of equations is:
+$3x + 2y = 8$
+$95x + 110y = 300$
+
+Part (b): Matrix Method Formulation.
+The system $AX=B$ is formulated as:
+$A = \begin{pmatrix} 3 & 2 \\ 95 & 110 \end{pmatrix}$, $X = \begin{pmatrix} x \\ y \end{pmatrix}$, $B = \begin{pmatrix} 8 \\ 300 \end{pmatrix}$
+
+We need to find $X = A^{-1}B$.
+
+Step 4: Step-by-Step Calculation
+
+Part (a) Solution:
+The two linear equations are:
+$6x + 4y = 16$ (or $3x + 2y = 8$)
+$95x + 110y = 300$
+
+Part (b) Solution (Matrix Method):
+
+1. Calculate the determinant of $A$:
+$\det(A) = (3)(110) - (2)(95)$
+$\det(A) = 330 - 190$
+$\det(A) = 140$
+
+Since $\det(A) \neq 0$, the inverse $A^{-1}$ exists.
+
+2. Calculate the inverse of $A$, $A^{-1}$:
+$A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} = \frac{1}{140} \begin{pmatrix} 110 & -2 \\ -95 & 3 \end{pmatrix}$
+
+3. Calculate $X = A^{-1}B$:
+$\begin{pmatrix} x \\ y \end{pmatrix} = \frac{1}{140} \begin{pmatrix} 110 & -2 \\ -95 & 3 \end{pmatrix} \begin{pmatrix} 8 \\ 300 \end{pmatrix}$
+
+Perform the matrix multiplication:
+$x$ calculation: $(110)(8) + (-2)(300) = 880 - 600 = 280$
+$y$ calculation: $(-95)(8) + (3)(300) = -760 + 900 = 140$
+
+So, $\begin{pmatrix} x \\ y \end{pmatrix} = \frac{1}{140} \begin{pmatrix} 280 \\ 140 \end{pmatrix}$
+
+Calculate the final values for $x$ and $y$:
+$x = \frac{280}{140} = 2$
+$y = \frac{140}{140} = 1$
+
+Verification (Optional but Recommended):
+Check against original equations:
+Protein: $6(2) + 4(1) = 12 + 4 = 16$ g (Correct)
+Calories: $95(2) + 110(1) = 190 + 110 = 300$ kcal (Correct)
+
+Step 5: Final Answer
+
+(a) The two linear equations formed are:
+Protein equation: $6x + 4y = 16$ (which simplifies to $3x + 2y = 8$)
+Calorie equation: $95x + 110y = 300$
+
+(b) The number of glasses of drink P ($x$) and drink Q ($y$) Syahirah needs to consume daily is found by solving the system using the matrix method, yielding:
+$x = 2$ glasses of Drink P
+$y = 1$ glass of Drink Q
+
+The required number of glasses are 2 glasses of Drink P and 1 glass of Drink Q.",1977,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 2_Q2.png,"(a) [
+80 70
+60 75
+74 84 ]
+, [
+0.6
+0.4 ]
+(b) 76
+(c) Computer Science",,Matrices ,English,yes,4,"Step 0: Principle Abstraction
+The overall mathematical concept involved is the application of matrix algebra, specifically matrix multiplication, to calculate weighted sums (overall scores) based on raw scores and weightings (percentages). This falls under the domain of applied linear algebra.
+
+Step 1: Diagram Deconstruction
+The problem involves two tables of data that need to be represented as matrices.
+
+Table 1 (Scores $S$): Represents the raw marks obtained in Coursework (C) and Exam (E) for three subjects (Mathematics (M), English (En), Computer Science (CS)).
+$S = \begin{pmatrix} 80 & 70 \\ 60 & 75 \\ 74 & 84 \end{pmatrix}$
+(Rows: Subjects M, En, CS; Columns: C, E)
+
+Table 2 (Weightages $W$): Represents the percentage weightage assigned to Coursework and Exam for the final semester mark.
+$W = \begin{pmatrix} 60\% \\ 40\% \end{pmatrix} = \begin{pmatrix} 0.60 \\ 0.40 \end{pmatrix}$
+(Rows: C, E; Column: Weighting)
+
+Part (a) requires representing these two tables as matrices.
+
+Part (b) requires calculating the overall mark for Mathematics using the matrix method. This means multiplying the relevant row(s) from the score matrix by the weight matrix.
+
+Part (c) requires determining the best-performed subject by calculating the overall mark for all subjects and comparing them.
+
+Step 2: Question Interpretation
+The goal is to perform three tasks:
+(a) Define the score matrix ($S$) from Table 1 and the weight matrix ($W$) from Table 2.
+(b) Calculate the final mark for Mathematics by performing matrix multiplication between the Mathematics score row and the weight matrix $W$.
+(c) Calculate the final marks for English and Computer Science as well, and then identify which subject yielded the highest final mark.
+
+Step 3: Mathematical Formulation
+(a) Matrix Representations:
+Score Matrix $S$ (3x2): $S = \begin{pmatrix} 80 & 70 \\ 60 & 75 \\ 74 & 84 \end{pmatrix}$
+Weight Matrix $W$ (2x1): $W = \begin{pmatrix} 0.60 \\ 0.40 \end{pmatrix}$
+
+(b) Overall Mark Calculation (Matrix Multiplication):
+The overall mark for a subject $i$, denoted $O_i$, is calculated by multiplying the $i$-th row of $S$ by $W$.
+For Mathematics ($O_M$): $O_M = \begin{pmatrix} 80 & 70 \end{pmatrix} \times W$
+
+(c) Best Performance Determination:
+We need to calculate $O_{En}$ and $O_{CS}$ similarly and find $\text{max}(O_M, O_{En}, O_{CS})$.
+
+Step 4: Step-by-Step Calculation
+
+(a) Representation with matrices:
+The score matrix $S$ (Table 1, Subjects $\times$ Components):
+$S = \begin{pmatrix} 80 & 70 \\ 60 & 75 \\ 74 & 84 \end{pmatrix}$
+
+The weight matrix $W$ (Components $\times$ Weight):
+$W = \begin{pmatrix} 0.60 \\ 0.40 \end{pmatrix}$
+
+(b) Calculate the overall mark for Mathematics using the matrix method:
+The row corresponding to Mathematics in $S$ is $S_M = \begin{pmatrix} 80 & 70 \end{pmatrix}$.
+$O_M = S_M W = \begin{pmatrix} 80 & 70 \end{pmatrix} \begin{pmatrix} 0.60 \\ 0.40 \end{pmatrix}$
+$O_M = (80 \times 0.60) + (70 \times 0.40)$
+$O_M = 48.0 + 28.0$
+$O_M = 76$
+
+The overall mark for Mathematics is 76.
+
+(c) Determine the best performed subject:
+We must calculate the overall marks for English ($O_{En}$) and Computer Science ($O_{CS}$).
+
+For English ($S_{En} = \begin{pmatrix} 60 & 75 \end{pmatrix}$):
+$O_{En} = \begin{pmatrix} 60 & 75 \end{pmatrix} \begin{pmatrix} 0.60 \\ 0.40 \end{pmatrix}$
+$O_{En} = (60 \times 0.60) + (75 \times 0.40)$
+$O_{En} = 36.0 + 30.0$
+$O_{En} = 66$
+
+For Computer Science ($S_{CS} = \begin{pmatrix} 74 & 84 \end{pmatrix}$):
+$O_{CS} = \begin{pmatrix} 74 & 84 \end{pmatrix} \begin{pmatrix} 0.60 \\ 0.40 \end{pmatrix}$
+$O_{CS} = (74 \times 0.60) + (84 \times 0.40)$
+$O_{CS} = 44.4 + 33.6$
+$O_{CS} = 78.0$
+
+Comparing the overall marks:
+Mathematics ($O_M$): 76
+English ($O_{En}$): 66
+Computer Science ($O_{CS}$): 78
+
+The highest mark is 78, achieved in Computer Science.
+
+Step 5: Final Answer
+
+(a) Matrix Representations:
+Score Matrix $S$:
+$S = \begin{pmatrix} 80 & 70 \\ 60 & 75 \\ 74 & 84 \end{pmatrix}$
+
+Weight Matrix $W$:
+$W = \begin{pmatrix} 0.60 \\ 0.40 \end{pmatrix}$
+
+(b) Overall mark for Mathematics:
+$O_M = \begin{pmatrix} 80 & 70 \end{pmatrix} \begin{pmatrix} 0.60 \\ 0.40 \end{pmatrix} = 48.0 + 28.0 = 76$
+
+(c) Determination of the best performed subject:
+Overall Marks: Mathematics = 76, English = 66, Computer Science = 78.
+The best performed subject is Computer Science.
+
+Computer Science = 78",2113,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 2_Q3.png,"the price for one kilogram of papaya = RM4,
+the price for one kilogram of banana = RM5",,Matrices ,English,yes,5,"Step 0: Principle Abstraction
+The high-level mathematical concept involved is solving a system of simultaneous linear equations, specifically by using the matrix method (which involves matrix algebra, including finding the inverse matrix or using Cramer's rule, although the standard matrix method usually implies $AX=B \implies X=A^{-1}B$).
+
+Step 1: Diagram Deconstruction
+The problem provides data organized in a table representing the quantities of fruits bought and the total costs paid.
+
+Key features extracted:
+1.  **Variables Definition (Assumed):**
+    Let $p$ be the price per kilogram (kg) of papaya (in RM).
+    Let $b$ be the price per kilogram (kg) of banana (in RM).
+2.  **Quantities Purchased:**
+    Puan Komala: 4 kg of papaya, 2 kg of banana.
+    Puan Lily: 5 kg of papaya, 3 kg of banana.
+3.  **Total Costs:**
+    Puan Komala paid RM26.
+    Puan Lily paid RM35.
+
+Step 2: Question Interpretation
+The goal is to calculate the prices for one kilogram of papaya ($p$) and one kilogram of banana ($b$) using the matrix method based on the provided purchase data and total costs.
+
+Step 3: Mathematical Formulation
+We formulate a system of linear equations based on the purchases:
+
+Equation 1 (Puan Komala):
+(Mass of Papaya $\times$ Price of Papaya) + (Mass of Banana $\times$ Price of Banana) = Total Cost
+$4p + 2b = 26$
+
+Equation 2 (Puan Lily):
+$5p + 3b = 35$
+
+In matrix form, $AX = B$:
+$A = \begin{pmatrix} 4 & 2 \\ 5 & 3 \end{pmatrix}$, $X = \begin{pmatrix} p \\ b \end{pmatrix}$, $B = \begin{pmatrix} 26 \\ 35 \end{pmatrix}$
+
+The solution is found by $X = A^{-1}B$.
+
+Step 4: Step-by-Step Calculation
+Part 4.1: Calculate the determinant of matrix A.
+$\det(A) = (4)(3) - (2)(5) = 12 - 10 = 2$
+
+Since $\det(A) \neq 0$, the inverse matrix $A^{-1}$ exists.
+
+Part 4.2: Calculate the inverse matrix $A^{-1}$.
+$A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} 3 & -2 \\ -5 & 4 \end{pmatrix}$
+$A^{-1} = \frac{1}{2} \begin{pmatrix} 3 & -2 \\ -5 & 4 \end{pmatrix} = \begin{pmatrix} 3/2 & -1 \\ -5/2 & 2 \end{pmatrix}$
+
+Part 4.3: Calculate $X = A^{-1}B$.
+$\begin{pmatrix} p \\ b \end{pmatrix} = \begin{pmatrix} 3/2 & -1 \\ -5/2 & 2 \end{pmatrix} \begin{pmatrix} 26 \\ 35 \end{pmatrix}$
+
+Calculate the elements of $X$:
+$p = (\frac{3}{2})(26) + (-1)(35)$
+$p = 3(13) - 35$
+$p = 39 - 35$
+$p = 4$
+
+$b = (-\frac{5}{2})(26) + (2)(35)$
+$b = -5(13) + 70$
+$b = -65 + 70$
+$b = 5$
+
+The solution is $p=4$ and $b=5$.
+
+Step 5: Final Answer
+The price for one kilogram of papaya is RM4, and the price for one kilogram of banana is RM5.
+
+Verification (Optional but recommended):
+Puan Komala: $4(4) + 2(5) = 16 + 10 = 26$ (Correct)
+Puan Lily: $5(4) + 3(5) = 20 + 15 = 35$ (Correct)
+
+The prices are:
+Price of 1 kg of papaya = RM 4
+Price of 1 kg of banana = RM 5",1612,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 3_Q1.png,"(a) Smoker: RM330.00; Non-smoker:
+RM254.40
+(b) Smoker: RM175.20; Non-smoker:
+RM147.60",,Insurance,English,yes,4,"Step 0: Principle Abstraction
+The problem involves using a given data table (a lookup table) to calculate specific monetary values (insurance premiums) based on defined parameters (age, gender, smoking status) and a given base face value. The core mathematical operation is proportion calculation, as the rates provided are per RM 1,000 of face value, and the actual face value is a multiple of RM 1,000.
+
+Step 1: Diagram Deconstruction
+The diagram is a data table presenting annual premium rates (in RM) per RM 1,000 face value.
+
+Key Information Extracted:
+1.  Face Value ($F$): RM 120,000.
+2.  Rate Basis: Rate is given per RM 1,000 face value.
+3.  Scaling Factor ($K$): $K = \frac{\text{Total Face Value}}{\text{Rate Basis}} = \frac{120,000}{1,000} = 120$.
+4.  Table Data (Rate per RM 1,000):
+    | Age | Male Non-smoker | Male Smoker | Female Non-smoker | Female Smoker |
+    |-----|-----------------|-------------|-------------------|---------------|
+    | 27  | 2.12            | 2.72        | 1.18              | 1.40          |
+    | 28  | 2.12            | 2.73        | 1.19              | 1.42          |
+    | 29  | 2.12            | 2.75        | 1.21              | 1.44          |
+    | 30  | 2.12            | 2.79        | 1.23              | 1.46          |
+
+Step 2: Question Interpretation
+The goal is to calculate the total annual premium for four specific scenarios based on the data table and the scaling factor derived from the face value (RM 120,000).
+
+Part (a) requires calculating the premium for:
+1. A 29-year-old man who smokes.
+2. A 29-year-old man who does not smoke.
+
+Part (b) requires calculating the premium for:
+1. A 30-year-old woman who smokes.
+2. A 30-year-old woman who does not smoke.
+
+Step 3: Mathematical Formulation
+The general formula for the total annual premium ($P$) is:
+$P = (\text{Rate per RM 1,000}) \times (\text{Scaling Factor } K)$
+$P = R \times 120$
+
+Step 4: Step-by-Step Calculation
+
+Part (a): Calculations for 29-year-old individuals (Male)
+
+1. Premium for a 29-year-old man who smokes:
+   From the table, for Age 29, Male, Smoker, the rate $R_a$ is RM 2.75.
+   $P_{a1} = R_a \times 120$
+   $P_{a1} = 2.75 \times 120$
+
+2. Premium for a 29-year-old man who does not smoke:
+   From the table, for Age 29, Male, Non-smoker, the rate $R_b$ is RM 2.12.
+   $P_{a2} = R_b \times 120$
+   $P_{a2} = 2.12 \times 120$
+
+Calculation for Part (a):
+1. $P_{a1} = 2.75 \times 120 = 330.00$ RM
+2. $P_{a2} = 2.12 \times 120 = 254.40$ RM
+
+Part (b): Calculations for 30-year-old individuals (Female)
+
+1. Premium for a 30-year-old woman who smokes:
+   From the table, for Age 30, Female, Smoker, the rate $R_c$ is RM 1.46.
+   $P_{b1} = R_c \times 120$
+   $P_{b1} = 1.46 \times 120$
+
+2. Premium for a 30-year-old woman who does not smoke:
+   From the table, for Age 30, Female, Non-smoker, the rate $R_d$ is RM 1.23.
+   $P_{b2} = R_d \times 120$
+   $P_{b2} = 1.23 \times 120$
+
+Calculation for Part (b):
+1. $P_{b1} = 1.46 \times 120 = 175.20$ RM
+2. $P_{b2} = 1.23 \times 120 = 147.60$ RM
+
+Step 5: Final Answer
+The calculations yield the following annual premiums based on the face value of RM 120,000:
+
+(a) Annual premiums for a 29-year-old man:
+i. Smoker: RM 330.00
+ii. Non-smoker: RM 254.40
+
+(b) Annual premiums for a 30-year-old woman:
+i. Smoker: RM 175.20
+ii. Non-smoker: RM 147.60
+
+Final Answer Summary:
+(a) The annual premium for a 29-year-old man who smokes is RM 330.00, and for a 29-year-old man who does not smoke is RM 254.40.
+(b) The annual premium for a 30-year-old woman who smokes is RM 175.20, and for a 30-year-old woman who does not smoke is RM 147.60.",2028,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 3_Q2.png,"(a) RM50.38
+(b) (i) RM796
+(ii) RM244",,Insurance,English,yes,5,"Step 0: Principle Abstraction
+The general mathematical concept involved is the application of proportionality and scaling factors (rates) to calculate total costs (premiums) based on a given base unit, which is a standard calculation in insurance mathematics. Specifically, it involves determining the total premium from a given rate per RM1,000 face value, and subsequently performing unit conversions (annual to monthly) or comparisons.
+
+Step 1: Diagram Deconstruction
+The image provides a table detailing annual premium rates per RM1,000 face value for two life insurance plans (5-year term and Yearly Renewable Term) for two age groups (35 years old and 45 years old).
+
+Key Data Points (Annual Premium Rate per RM1,000 Face Value):
+| Plan / Age | 35 years old | 45 years old |
+|---|---|---|
+| 5-year term | RM5.24 | RM7.96 |
+| Yearly Renewable Term | RM4.03 | RM5.52 |
+
+The problem involves three sub-questions:
+(a) Rizqi: 35 years old, Yearly Renewable Term, Face Value (FV) = RM150,000. Goal: Calculate *monthly* premium.
+(b)(i) Vincent: 45 years old, 5-year term, FV = RM100,000. Goal: Calculate *annual* premium.
+(b)(ii) Vincent: 45 years old, Yearly Renewable Term, FV = RM100,000. Goal: Calculate the *difference* in annual premium compared to the 5-year term.
+
+Step 2: Question Interpretation
+The goal is to calculate specific insurance premiums based on the provided rate table and face values, including conversions between annual and monthly payment schedules where required.
+
+Step 3: Mathematical Formulation
+The general formula for calculating the total annual premium (P_annual) is:
+P_annual = (Face Value / 1000) * Rate per RM1000
+
+For part (a), the monthly premium (P_monthly) is:
+P_monthly = P_annual / 12
+
+Step 4: Step-by-Step Calculation
+
+Part (a): Rizqi's Monthly Premium
+1. Identify relevant data: Age = 35, Plan = Yearly Renewable Term, Rate = RM4.03 per RM1,000, FV = RM150,000.
+2. Calculate the number of RM1,000 units:
+Units = FV / 1000 = 150,000 / 1,000 = 150 units.
+3. Calculate the total annual premium:
+P_annual (Rizqi) = Units * Rate
+P_annual (Rizqi) = 150 * RM4.03
+P_annual (Rizqi) = RM604.50
+4. Calculate the monthly premium:
+P_monthly (Rizqi) = P_annual (Rizqi) / 12
+P_monthly (Rizqi) = RM604.50 / 12
+P_monthly (Rizqi) = RM50.375
+
+Part (b)(i): Vincent's Annual Premium (5-year term)
+1. Identify relevant data: Age = 45, Plan = 5-year term, Rate = RM7.96 per RM1,000, FV = RM100,000.
+2. Calculate the number of RM1,000 units:
+Units = FV / 1000 = 100,000 / 1,000 = 100 units.
+3. Calculate the total annual premium:
+P_annual (Vincent, 5-year) = Units * Rate
+P_annual (Vincent, 5-year) = 100 * RM7.96
+P_annual (Vincent, 5-year) = RM796.00
+
+Part (b)(ii): Difference in Annual Premium
+1. Calculate the annual premium for the Yearly Renewable Term (YRT) plan for Vincent (45 years old).
+Identify relevant data: Age = 45, Plan = Yearly Renewable Term, Rate = RM5.52 per RM1,000, FV = RM100,000.
+2. Calculate the number of RM1,000 units (same as b(i)):
+Units = 100 units.
+3. Calculate the total annual premium for YRT:
+P_annual (Vincent, YRT) = Units * Rate
+P_annual (Vincent, YRT) = 100 * RM5.52
+P_annual (Vincent, YRT) = RM552.00
+4. Calculate the difference in annual premium compared to the 5-year term calculated in (b)(i):
+Difference = P_annual (Vincent, 5-year) - P_annual (Vincent, YRT)
+Difference = RM796.00 - RM552.00
+Difference = RM244.00
+
+Step 5: Final Answer
+
+(a) Rizqi's monthly premium:
+The annual premium for Rizqi (35 years old, Yearly Renewable Term, RM150,000 face value) is 150 * RM4.03 = RM604.50.
+The monthly premium is RM604.50 / 12 = RM50.375.
+
+(b) (i) Vincent's annual premium for the 5-year term:
+Vincent (45 years old, 5-year term, RM100,000 face value) has a rate of RM7.96 per RM1,000.
+Annual Premium = (100,000 / 1,000) * RM7.96 = 100 * RM7.96 = RM796.00.
+
+(b) (ii) The difference in his annual premium if he buys a yearly renewable term plan:
+Annual premium for YRT (45 years old) = (100,000 / 1,000) * RM5.52 = RM552.00.
+Difference = RM796.00 - RM552.00 = RM244.00.
+
+Final results:
+(a) RM50.375
+(b) (i) RM796.00
+(b) (ii) RM244.00",2103,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 4_Q1.png,"Road tax for motorcycle 220 cc = RM50
+Road tax for car 1 860 cc = RM310",,Taxation,English,yes,4,"Step 0: Principle Abstraction
+The general mathematical concept involved is the application of piecewise linear functions (or rules) for rate calculation based on thresholds, specifically for determining a total fee (road tax) based on the capacity (cc) of two different types of assets (motorcycle and car). This involves direct lookup and calculation using defined formulas for specific intervals.
+
+Step 1: Diagram Deconstruction
+The image provides two vehicle engine capacities and a corresponding rate table for calculating road tax.
+
+Vehicle Information:
+1. Motorcycle Engine Capacity (MC): 220 cc
+2. Car Engine Capacity (Car): 1 860 cc
+
+Road Tax Rate Table Analysis:
+
+Motorcycle Road Tax Rate:
+*   150 cc and below: Free
+*   151 cc - 200 cc: Base Rate RM 30.00
+*   201 cc - 250 cc: Base Rate RM 50.00
+
+Private Car Road Tax Rate:
+*   1 401 cc - 1 600 cc: Base Rate RM 90.00
+*   1 601 cc - 1 800 cc: Base Rate RM 200.00 + RM 0.40 for each cc exceeding 1 600 cc.
+*   1 801 cc - 2 000 cc: Base Rate RM 280.00 + RM 0.50 for each cc exceeding 1 800 cc.
+*   2 001 cc - 2 500 cc: Base Rate RM 380.00 + RM 1.00 for each cc exceeding 2 000 cc.
+
+Step 2: Question Interpretation
+The goal is to calculate the total road tax for both the motorcycle (220 cc) and the car (1 860 cc) using the provided rate table.
+
+Step 3: Mathematical Formulation
+We must calculate the tax separately for the motorcycle and the car based on their engine capacities matching the relevant bracket rules.
+
+A. Motorcycle Road Tax ($T_{MC}$):
+Capacity $C_{MC} = 220$ cc.
+This falls into the 201 cc - 250 cc bracket.
+Rule: Base Rate = RM 50.00.
+
+B. Car Road Tax ($T_{Car}$):
+Capacity $C_{Car} = 1 860$ cc.
+This falls into the 1 601 cc - 1 800 cc bracket.
+Rule: $T_{Car} = \text{Base Rate} + (\text{Progressive Rate per cc}) \times (\text{Exceeding capacity})$.
+Base Rate = RM 200.00.
+Progressive Rate = RM 0.40 per cc.
+Exceeding capacity base = 1 600 cc.
+
+Step 4: Step-by-Step Calculation
+
+A. Motorcycle Road Tax Calculation:
+Engine Capacity $C_{MC} = 220$ cc.
+Since $201 \le 220 \le 250$, the applicable rate is the base rate for the 201 cc - 250 cc bracket.
+$T_{MC} = \text{RM } 50.00$
+
+B. Car Road Tax Calculation:
+Engine Capacity $C_{Car} = 1 860$ cc.
+Since $1 601 \le 1 860 \le 1 800$ is FALSE, we check the next bracket.
+Since $1 801 \le 1 860 \le 2 000$ is TRUE, the applicable rule is: Base Rate RM 280.00 + RM 0.50 each cc exceeding 1 800 cc.
+Wait, $1 860$ cc falls into the bracket $1 601 cc - 1 800 cc$ or $1 801 cc - 2 000 cc$?
+$1 601 \le 1 860$ (True) AND $1 860 \le 1 800$ (False). Thus, it is NOT in the first progressive bracket.
+$1 801 \le 1 860$ (True) AND $1 860 \le 2 000$ (True). Thus, it IS in the second progressive bracket.
+
+Revisiting Car Brackets:
+1. 1 601 cc - 1 800 cc: RM 200.00 + RM 0.40 each cc exceeding 1 600 cc.
+2. 1 801 cc - 2 000 cc: RM 280.00 + RM 0.50 each cc exceeding 1 800 cc.
+
+Since $C_{Car} = 1 860$ cc, it belongs to the second progressive bracket (1 801 cc - 2 000 cc).
+
+Calculation for Car Tax ($T_{Car}$):
+Base Rate = RM 280.00
+Progressive Rate = RM 0.50 per cc exceeding 1 800 cc.
+Capacity exceeding 1 800 cc = $1 860 - 1 800 = 60$ cc.
+Progressive Tax Amount = $60 \times \text{RM } 0.50 = \text{RM } 30.00$.
+Total Car Road Tax ($T_{Car}$) = Base Rate + Progressive Tax Amount
+$T_{Car} = \text{RM } 280.00 + \text{RM } 30.00 = \text{RM } 310.00$
+
+C. Total Road Tax Calculation:
+Total Tax ($T_{Total}$) = $T_{MC} + T_{Car}$
+$T_{Total} = \text{RM } 50.00 + \text{RM } 310.00 = \text{RM } 360.00$
+
+Step 5: Final Answer
+The road tax for the motorcycle is RM 50.00.
+The road tax for the car is RM 310.00.
+The total road tax for both vehicles is RM 360.00.
+
+The required calculation is the road tax for both types of vehicles. We state the individual taxes and the total.
+
+Road Tax for Motorcycle (220 cc): RM 50.00
+Road Tax for Car (1 860 cc): RM 310.00
+
+Total Road Tax: RM 360.00",2144,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 4_Q2.png,"Mr Subra had to pay RM712 and his wife had
+to pay RM68. Hence, the total income tax for
+Mr Subra and his wife was RM780.",,Taxation,English,yes,5,"Step 0: Principle Abstraction
+The problem involves calculating personal income tax liability based on gross income and allowable deductions (tax reliefs), specifically utilizing the principle of joint tax assessment for a married couple where only one spouse earns income. This requires determining the total taxable income by applying statutory tax reliefs to the gross income, and then using the relevant income tax schedule (assumed to be for a Malaysian resident taxpayer for the year 2020, as the currency is RM) to find the tax payable on the combined income.
+
+Step 1: Diagram Deconstruction
+The image provides the following financial data for a joint assessment (Year of Assessment 2020):
+
+Gross Annual Salary (Encik Suhaimi): RM 85,700
+Wife's Income: RM 0
+
+Claimable Expenses/Reliefs (All claimed by Encik Suhaimi under joint assessment):
+1. Individual Relief: RM 9,000
+2. Life Insurance and EPF: Claimed RM 7,760. Limited to RM 7,000. (The allowable relief is the lower of the two values).
+3. Lifestyle Relief: Claimed RM 2,000. Limited to RM 2,500.
+4. Spouse Relief (for spouse with no income): RM 4,000
+5. Medical treatment expenses for parents: Claimed RM 1,500. Limited to RM 5,000.
+
+Step 2: Question Interpretation
+The goal is to calculate the total income tax payable for Encik Suhaimi and his wife using a joint tax assessment method for the year 2020, based on the provided gross income and specific tax reliefs, adhering to any stated limitations on those reliefs.
+
+Step 3: Mathematical Formulation
+The calculation involves three main parts:
+A. Calculate Total Gross Income (TGI).
+B. Calculate Total Allowable Tax Reliefs (TAR).
+C. Calculate Chargeable Income (CI) = TGI - TAR.
+D. Calculate Tax Payable using the Malaysian Income Tax Schedule for Resident Individuals (YA 2020).
+
+A. Total Gross Income (TGI):
+TGI = Encik Suhaimi's Salary + Wife's Income
+TGI = RM 85,700 + RM 0 = RM 85,700
+
+B. Total Allowable Tax Reliefs (TAR):
+TAR = Individual Relief + Effective Life Insurance/EPF Relief + Effective Lifestyle Relief + Spouse Relief + Effective Medical Relief for Parents.
+
+Specific Relief Calculations:
+1. Individual Relief: RM 9,000 (Fixed)
+2. Life Insurance and EPF: Minimum(RM 7,760, RM 7,000) = RM 7,000
+3. Lifestyle Relief: Minimum(RM 2,000, RM 2,500) = RM 2,000
+4. Spouse Relief: RM 4,000 (Since wife has no income)
+5. Medical Expenses for Parents: Minimum(RM 1,500, RM 5,000) = RM 1,500
+
+TAR = 9,000 + 7,000 + 2,000 + 4,000 + 1,500
+
+C. Chargeable Income (CI):
+CI = TGI - TAR
+
+D. Tax Calculation:
+Tax is calculated based on the CI using the tax brackets for Resident Individuals (YA 2020):
+(Note: Standard Statutory Reliefs for YA 2020 for married couples filing jointly were RM 9,000 (Individual) + RM 4,000 (Spouse) = RM 13,000. The table provided already lists RM 9,000 (Individual) and RM 4,000 (Spouse). We proceed using the figures provided in the table as specific reliefs claimed.)
+
+Tax Brackets (YA 2020 Resident Individual):
+RM 0 to RM 2,500 @ 0%
+RM 2,501 to RM 35,000 @ 8%
+RM 35,001 to RM 50,000 @ 14%
+RM 50,001 to RM 70,000 @ 19%
+RM 70,001 to RM 100,000 @ 21%
+Above RM 100,000 @ 24%
+
+Step 4: Step-by-Step Calculation
+
+A. Total Gross Income (TGI)
+TGI = RM 85,700
+
+B. Total Allowable Tax Reliefs (TAR)
+TAR = RM 9,000 (Individual) + RM 7,000 (Life Ins/EPF) + RM 2,000 (Lifestyle) + RM 4,000 (Spouse) + RM 1,500 (Parents Medical)
+TAR = RM 23,500
+
+C. Chargeable Income (CI)
+CI = TGI - TAR
+CI = RM 85,700 - RM 23,500
+CI = RM 62,200
+
+D. Tax Calculation on CI = RM 62,200 (Using YA 2020 Tax Rates)
+
+1. Tax on the first RM 2,500:
+Tax = RM 2,500 * 0% = RM 0
+
+2. Income taxed at 8% (from RM 2,501 up to RM 35,000):
+Taxable amount in this bracket = RM 35,000 - RM 2,500 = RM 32,500
+Tax = RM 32,500 * 0.08 = RM 2,600
+
+3. Income taxed at 14% (from RM 35,001 up to RM 50,000):
+Taxable amount in this bracket = RM 50,000 - RM 35,000 = RM 15,000
+Tax = RM 15,000 * 0.14 = RM 2,100
+
+4. Income taxed at 19% (from RM 50,001 onwards):
+Remaining Chargeable Income = CI - RM 50,000
+Remaining CI = RM 62,200 - RM 50,000 = RM 12,200
+Tax = RM 12,200 * 0.19 = RM 2,318
+
+Total Income Tax Payable = Tax (Step 1) + Tax (Step 2) + Tax (Step 3) + Tax (Step 4)
+Total Tax = RM 0 + RM 2,600 + RM 2,100 + RM 2,318
+Total Tax = RM 7,018
+
+Step 5: Final Answer
+The total income tax for Encik Suhaimi and his wife using joint tax assessment is RM 7,018.
+
+$\text{Total Income Tax Payable} = \text{RM } 7,018$",2254,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 5_Q1.png,"5/
+2",,"Congruency, Enlargement and
+Combined Transformations",English,yes,4,"Step 0: Principle Abstraction
+The problem involves geometric transformation, specifically an enlargement (dilation) centered at a point $O$, relating two circles. The core mathematical principles are the area formulas for a circle and the relationship between linear scale factors and area scale factors under enlargement. If $k$ is the linear scale factor, the area scale factor is $k^2$.
+
+Step 1: Diagram Deconstruction
+The diagram shows two concentric circles centered at $O$.
+Let $r_s$ be the radius of the small circle.
+Let $r_L$ be the radius of the large circle.
+The colored region is the annulus (the area between the two circles).
+
+Given information extracted from the text:
+1. Radius of the small circle, $r_s = 3 \text{ cm}$.
+2. Area of the colored region (Annulus Area), $A_{\text{annulus}} = 47.25\pi \text{ cm}^2$.
+3. The large circle is the image of the small circle under an enlargement centered at $O$.
+4. Let $k$ be the scale factor of the enlargement. This means $r_L = k \cdot r_s$.
+
+Step 2: Question Interpretation
+The goal is to calculate the scale factor of the enlargement, $k$, using the given initial radius and the resulting area of the shaded region.
+
+Step 3: Mathematical Formulation
+1. Area of the small circle, $A_s = \pi r_s^2$.
+2. Area of the large circle, $A_L = \pi r_L^2$.
+3. The area of the colored region (annulus) is the difference between the large and small areas:
+$A_{\text{annulus}} = A_L - A_s$.
+
+Since $r_L = k r_s$, we can express $A_L$ in terms of $A_s$:
+$A_L = \pi (k r_s)^2 = k^2 (\pi r_s^2) = k^2 A_s$.
+
+Substituting this into the annulus area equation:
+$A_{\text{annulus}} = k^2 A_s - A_s = A_s (k^2 - 1)$.
+
+We need to solve for $k$.
+
+Step 4: Step-by-Step Calculation
+
+First, calculate the area of the small circle, $A_s$:
+$r_s = 3 \text{ cm}$
+$A_s = \pi (3)^2 = 9\pi \text{ cm}^2$.
+
+Next, use the given area of the annulus to find $k^2$:
+$A_{\text{annulus}} = 47.25\pi$
+Using the formula: $A_{\text{annulus}} = A_s (k^2 - 1)$
+$47.25\pi = (9\pi) (k^2 - 1)$
+
+Divide both sides by $\pi$:
+$47.25 = 9 (k^2 - 1)$
+
+Divide both sides by 9:
+$k^2 - 1 = \frac{47.25}{9}$
+
+To calculate $47.25 / 9$:
+$47.25 / 9 = (45 + 2.25) / 9 = 45/9 + 2.25/9 = 5 + 0.25 = 5.25$.
+Alternatively, convert $47.25$ to a fraction: $47.25 = 47 \frac{1}{4} = \frac{188+1}{4} = \frac{189}{4}$.
+$\frac{189/4}{9} = \frac{189}{4 \times 9} = \frac{21 \times 9}{4 \times 9} = \frac{21}{4} = 5.25$.
+
+So,
+$k^2 - 1 = 5.25$
+
+Solve for $k^2$:
+$k^2 = 5.25 + 1$
+$k^2 = 6.25$
+
+Solve for the scale factor $k$. Since enlargement usually implies $k > 1$ for the image to be larger (which it is, as the area increased), we take the positive root:
+$k = \sqrt{6.25}$
+
+We recognize that $25^2 = 625$, so $2.5^2 = 6.25$.
+$k = 2.5$
+
+(Alternative check using radii: $r_L = k r_s = 2.5 \times 3 = 7.5 \text{ cm}$.
+$A_L = \pi (7.5)^2 = \pi (56.25)$.
+$A_{\text{annulus}} = A_L - A_s = 56.25\pi - 9\pi = (56.25 - 9)\pi = 47.25\pi$. This matches the given information.)
+
+Step 5: Final Answer
+The scale factor of the enlargement is 2.5.
+
+The scale factor of the enlargement is 2.5",1802,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 5_Q2.png,1 215 cm,,"Congruency, Enlargement and
+Combined Transformations",English,yes,5,"Step 0: Principle Abstraction
+The problem involves the formation of an image by a pinhole camera, which is governed by the principles of similar triangles in geometrical optics. The key relationship connects the object distance, image distance, and the scale factor (magnification).
+
+Step 1: Diagram Deconstruction
+The diagram illustrates a pinhole camera setup:
+1. Object: A tree located some distance away from the pinhole.
+2. Image: An inverted image formed on a screen inside the camera box.
+3. Pinhole: The aperture through which light passes.
+4. Known Dimension: The distance from the image screen (where the image is formed) to the pinhole is $15 \text{ cm}$. This represents the image distance, $v$.
+5. Given Information: The scale factor (magnification) is $m = -\frac{1}{80}$.
+
+Let $u$ be the object distance (distance from the tree to the pinhole) and $v$ be the image distance (distance from the pinhole to the image screen).
+From the diagram, the image distance is $v = 15 \text{ cm}$.
+The scale factor (magnification) $m$ for a pinhole camera is given by the ratio of the image distance to the object distance:
+$$m = \frac{v}{u}$$
+Note: In optics sign conventions, $u$ and $v$ are often taken as signed distances. If we consider the standard convention where light travels left to right, the object distance $u$ is negative (since the object is on the left side of the lens/pinhole), and the image distance $v$ is positive (since the real image is formed on the right side of the pinhole). In this setup, however, the given scale factor $m = -\frac{1}{80}$ already incorporates the inversion (the negative sign), suggesting we should relate the magnitudes or use the formula that yields the given sign. For a single pinhole forming a real, inverted image, the relationship between magnitudes is often used, but the inclusion of the negative sign in the given scale factor $m$ implies the standard magnification formula $m = v/u$ where $u$ and $v$ might be measured from the pinhole. Given the context of introductory physics problems where distances are usually positive, the magnification $m$ is defined as:
+$$m = -\frac{\text{Image Distance}}{\text{Object Distance}} \quad \text{OR} \quad m = \frac{v}{u} = \frac{\text{Image Size}}{\text{Object Size}}$$
+Since the image formed by a pinhole camera is inverted, the magnification is negative. For the distances $u$ (object distance) and $v$ (image distance), the standard relationship derived from similar triangles is:
+$$\frac{\text{Image Size}}{\text{Object Size}} = \frac{v}{u}$$
+Since the image is inverted, the magnification $m$ is:
+$$m = -\frac{v}{u}$$ (If $u$ and $v$ are treated as positive distances)
+or
+$$m = \frac{v}{u}$$ (If $u$ and $v$ carry the correct signed convention such that the negative result implies inversion).
+
+Given $m = -\frac{1}{80}$ and $v = 15 \text{ cm}$, we use the relationship $m = -v/u$ where $u$ and $v$ are the magnitudes of the distances.
+
+Step 2: Question Interpretation
+The goal is to find the horizontal distance between the tree (object) and its image (the screen). This total distance, $D$, is the sum of the object distance ($u$) and the image distance ($v$):
+$$D = u + v$$
+We are given $v = 15 \text{ cm}$ and $m = -\frac{1}{80}$. We need to first find $u$ using the magnification formula and then calculate $D$.
+
+Step 3: Mathematical Formulation
+We use the magnification formula relating the scale factor ($m$), image distance ($v$), and object distance ($u$):
+$$m = -\frac{v}{u}$$
+Substitute the known values:
+$$-\frac{1}{80} = -\frac{15 \text{ cm}}{u}$$
+We need to solve for $u$.
+
+The total horizontal distance $D$ is:
+$$D = u + v$$
+
+Step 4: Step-by-Step Calculation
+1. Solve for the object distance, $u$:
+$$-\frac{1}{80} = -\frac{15}{u}$$
+Multiply both sides by $-1$:
+$$\frac{1}{80} = \frac{15}{u}$$
+Cross-multiply:
+$$u = 15 \times 80$$
+$$u = 1200 \text{ cm}$$
+
+2. Calculate the total horizontal distance, $D$, between the tree (object) and the image screen:
+$$D = u + v$$
+$$D = 1200 \text{ cm} + 15 \text{ cm}$$
+$$D = 1215 \text{ cm}$$
+
+Step 5: Final Answer
+The horizontal distance between the tree and its image is $1215 \text{ cm}$.
+
+$$1215 \text{ cm}$$",1782,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 5_Q3.png,"(a) 1 003.96 m
+(b) 20 000 m2",,"Congruency, Enlargement and
+Combined Transformations",English,yes,3,"Step 0: Principle Abstraction
+The problem involves finding the perimeter and area of a composite geometric shape, specifically a trapezoid, and then dealing with the properties of congruent partitions of this shape. The core mathematical principles required are:
+1. Perimeter calculation for a trapezoid.
+2. Area calculation for a trapezoid.
+3. Properties related to congruent shapes (equal areas).
+4. Geometry theorems, specifically the Pythagorean theorem, to find the length of the non-parallel slanted sides, as the shape is implied to be a right trapezoid based on the right angle symbols shown on the left vertical side.
+
+Step 1: Diagram Deconstruction
+The diagram shows a large trapezoidal piece of land.
+Key features extracted:
+1. Parallel sides (bases): The top base, $a = 80 \text{ m}$. The bottom base, $b = 320 \text{ m}$.
+2. Height ($h$): The perpendicular distance between the parallel sides is given by the left vertical side, $h = 200 \text{ m}$. The right angle symbols on the left side confirm this side is perpendicular to both bases, meaning it is a right trapezoid.
+3. Division: The land is divided into three congruent sections (suggested by the internal dashed lines).
+4. Missing side length ($c$): The length of the slanted right side is unknown.
+
+Step 2: Question Interpretation
+The question asks for two specific calculations:
+(a) The perimeter, $P$, of the entire trapezoidal land in meters.
+(b) The area, $A_{section}$, in square meters, of each of the three congruent sections.
+
+Step 3: Mathematical Formulation
+
+Part (a): Perimeter Calculation
+The perimeter $P$ of the trapezoid is the sum of its four side lengths:
+$P = (\text{Top Base}) + (\text{Bottom Base}) + (\text{Left Side}) + (\text{Right Side})$
+$P = a + b + h + c$
+We know $a=80$, $b=320$, $h=200$. We need to find $c$.
+
+To find $c$, we use the structure of the right trapezoid. We can drop a perpendicular from the top-right vertex to the bottom base. This creates a right-angled triangle with the slanted side $c$ as the hypotenuse.
+The height of this triangle is $h = 200 \text{ m}$.
+The base of this triangle, $x$, is the difference between the bottom base and the top base:
+$x = b - a = 320 - 80 = 240 \text{ m}$.
+Using the Pythagorean theorem ($c^2 = h^2 + x^2$):
+$c = \sqrt{h^2 + x^2}$
+
+Part (b): Area Calculation
+The total area $A_{total}$ of the trapezoid is given by the formula:
+$A_{total} = \frac{1}{2}(a + b)h$
+Since the land is divided into three congruent sections, the area of each section, $A_{section}$, is:
+$A_{section} = \frac{A_{total}}{3}$
+
+Step 4: Step-by-Step Calculation
+
+Part (a): Perimeter Calculation
+1. Calculate the horizontal distance ($x$) that forms the base of the right triangle used to find the slanted side $c$:
+$x = 320 \text{ m} - 80 \text{ m} = 240 \text{ m}$
+
+2. Calculate the length of the slanted side ($c$) using the Pythagorean theorem, with height $h = 200 \text{ m}$:
+$c^2 = h^2 + x^2$
+$c^2 = (200)^2 + (240)^2$
+$c^2 = 40000 + 57600$
+$c^2 = 97600$
+$c = \sqrt{97600}$
+We can simplify the radical: $97600 = 1600 \times 61$.
+$c = \sqrt{1600 \times 61} = 40\sqrt{61} \text{ m}$
+(If a decimal approximation is required: $\sqrt{61} \approx 7.8102$. $c \approx 40 \times 7.8102 \approx 312.408 \text{ m}$)
+
+3. Calculate the perimeter $P$ using the four side lengths:
+$P = a + b + h + c$
+$P = 80 + 320 + 200 + 40\sqrt{61}$
+$P = 600 + 40\sqrt{61} \text{ m}$
+(Using the decimal approximation for context: $P \approx 600 + 312.408 = 912.408 \text{ m}$)
+Since the input dimensions are integers, providing the exact form is mathematically preferred unless specified otherwise.
+
+Part (b): Area Calculation
+1. Calculate the total area ($A_{total}$) of the trapezoid:
+$A_{total} = \frac{1}{2}(a + b)h$
+$A_{total} = \frac{1}{2}(80 + 320) \times 200$
+$A_{total} = \frac{1}{2}(400) \times 200$
+$A_{total} = 200 \times 200$
+$A_{total} = 40000 \text{ m}^2$
+
+2. Calculate the area of each congruent section ($A_{section}$):
+$A_{section} = \frac{A_{total}}{3}$
+$A_{section} = \frac{40000}{3} \text{ m}^2$
+(As a mixed number or decimal: $A_{section} = 13333 \frac{1}{3} \text{ m}^2$ or approximately $13333.33 \text{ m}^2$)
+
+Step 5: Final Answer
+(a) The perimeter, in m, of the land is $600 + 40\sqrt{61}$ m.
+(b) The area, in m$^2$, of each section of the land is $\frac{40000}{3}$ m$^2$.
+
+Final Answer Summary:
+(a) Perimeter: $600 + 40\sqrt{61}$ m
+(b) Area of each section: $\frac{40000}{3}$ m$^2$",2128,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 6_Q1.png,0.6613,,"Ratios and Graphs of
+Trigonometric Functions",English,yes,3,"Step 0: Principle Abstraction
+The problem involves analyzing a physical setup that forms a right-angled triangle. Therefore, the governing mathematical principle is the basic definitions of trigonometric ratios (SOH CAH TOA) applied within the context of a right triangle, which may require the Pythagorean theorem to find a missing side length.
+
+Step 1: Diagram Deconstruction
+The diagram shows a piece of wood leaning against a vertical wall, forming a right-angled triangle with the ground.
+Key features extracted:
+1.  The length of the wood is the hypotenuse ($c$): $c = 8$ m.
+2.  The horizontal distance from the wall to the base of the wood is the side adjacent to angle $\theta$ ($a$): $a = 6$ m.
+3.  The angle $\theta$ is the angle between the ground and the wood.
+4.  The wall and the ground meet at a right angle ($90^\circ$).
+5.  We need to find the length of the side opposite to angle $\theta$ ($b$, the height the wood reaches on the wall).
+
+Step 2: Question Interpretation
+The explicit goal is to calculate the value of $\sin \theta$. According to trigonometric definitions in a right triangle, $\sin \theta$ is defined as the ratio of the length of the side opposite the angle $\theta$ to the length of the hypotenuse.
+$\sin \theta = \frac{\text{Opposite}}{\text{Hypotenuse}} = \frac{b}{c}$.
+Since the hypotenuse ($c=8$ m) is known, but the opposite side ($b$) is unknown, we must first calculate $b$.
+
+Step 3: Mathematical Formulation
+We use the Pythagorean theorem to find the unknown side $b$:
+$a^2 + b^2 = c^2$
+Where $a=6$ and $c=8$.
+
+Once $b$ is found, we use the sine definition:
+$\sin \theta = \frac{b}{8}$
+
+Step 4: Step-by-Step Calculation
+1. Calculate the missing side length $b$ using the Pythagorean theorem:
+$6^2 + b^2 = 8^2$
+$36 + b^2 = 64$
+$b^2 = 64 - 36$
+$b^2 = 28$
+$b = \sqrt{28}$
+
+Simplify the radical for $b$:
+$b = \sqrt{4 \times 7} = 2\sqrt{7}$ m.
+
+2. Calculate $\sin \theta$ using the definition $\sin \theta = \frac{\text{Opposite}}{\text{Hypotenuse}}$:
+$\sin \theta = \frac{b}{c}$
+$\sin \theta = \frac{2\sqrt{7}}{8}$
+
+3. Simplify the resulting fraction:
+$\sin \theta = \frac{\sqrt{7}}{4}$
+
+Step 5: Final Answer
+The value of $\sin \theta$ is $\frac{\sqrt{7}}{4}$.
+
+$$\sin \theta = \frac{\sqrt{7}}{4}$$",1307,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 6_Q2.png,(a) y = sin x (b) 30°,,"Ratios and Graphs of
+Trigonometric Functions",English,yes,4,"Step 0: Principle Abstraction
+The high-level mathematical concept involved is the modeling and analysis of periodic phenomena using standard trigonometric functions, specifically determining the equation of a sinusoidal wave given its graph features. The general form of such a function is $y = A \sin(B(x - C)) + D$ or $y = A \cos(B(x - C)) + D$.
+
+Step 1: Diagram Deconstruction
+The diagram shows a graph of a trigonometric function $y = f(x)$ for $0^\circ \le x \le 360^\circ$.
+Key features extracted:
+1.  Amplitude ($A$): The maximum $y$-value is $1$ and the minimum $y$-value is $-1$. Thus, the Amplitude $A = \frac{\text{Max} - \text{Min}}{2} = \frac{1 - (-1)}{2} = 1$.
+2.  Vertical Shift ($D$): The midline is $D = \frac{\text{Max} + \text{Min}}{2} = \frac{1 + (-1)}{2} = 0$.
+3.  Period ($P$): The graph appears to complete one full cycle between $x=0^\circ$ and $x=360^\circ$. A standard sine or cosine cycle goes from a starting point, through equilibrium (or peak/trough), back through equilibrium, to the equivalent point in the next cycle. Observing the graph: it starts near $y=0$ (increasing), reaches a maximum, passes through $x$-intercept at $180^\circ$, reaches a minimum, and returns to $y=0$ at $360^\circ$. This confirms the period $P = 360^\circ$.
+4.  Angular Frequency ($B$): Since $P = \frac{360^\circ}{B}$, we have $360^\circ = \frac{360^\circ}{B}$, which implies $B = 1$.
+5.  Phase Shift ($C$) and Function Type: The graph appears to be a standard sine function shape, starting near the midline ($y=0$) and increasing. A standard sine function, $y = \sin(x)$, starts at $(0, 0)$ and increases. This graph appears to start exactly at $(0, 0)$, based on the general shape continuing into the labeled point $(m, 0.5)$. If it passes through $(0, 0)$, the phase shift $C=0$ for a sine function.
+6.  Labeled Point: The graph passes through $(m, 0.5)$, where $m > 0$. There is also a marked point shown near the y-axis, which is the point $(m, 0.5)$.
+
+The general form without phase shift is $y = \sin(x)$ or $y = \cos(x)$.
+If $y = \sin(x)$:
+Starts at $(0, 0)$, Maximum at $90^\circ$, X-intercept at $180^\circ$, Minimum at $270^\circ$, X-intercept at $360^\circ$.
+This matches the observed shape perfectly: Maximum at $90^\circ$ (midway between $0^\circ$ and $180^\circ$), X-intercept at $180^\circ$, Minimum at $270^\circ$, X-intercept at $360^\circ$.
+
+Step 2: Question Interpretation
+The goal is twofold:
+(a) Write the trigonometric function $y = f(x)$ that models the graph.
+(b) State the value of $m$, where the function passes through the point $(m, 0.5)$.
+
+Step 3: Mathematical Formulation
+(a) Based on $A=1$, $D=0$, $B=1$, and recognizing the standard sine shape starting at $(0, 0)$:
+The function is $y = \sin(x)$. (Since the domain is in degrees, $x$ is measured in degrees).
+
+(b) We use the function found in part (a) and substitute the point $(m, 0.5)$:
+$y = \sin(x)$
+$0.5 = \sin(m)$
+
+Step 4: Step-by-Step Calculation
+(a) Function determination:
+Amplitude $A = 1$.
+Midline $D = 0$.
+Period $P = 360^\circ$, so $B = 360/360 = 1$.
+The function passes through $(0, 0)$ and is increasing, suggesting a sine function with no phase shift ($C=0$).
+Therefore, $f(x) = 1 \cdot \sin(1 \cdot x) + 0$.
+$f(x) = \sin(x)$.
+
+(b) Finding $m$:
+We solve $\sin(m) = 0.5$ for $m$ in the domain $0^\circ < m < 360^\circ$.
+The principal value (first quadrant solution) for $\sin(m) = 0.5$ is:
+$m_1 = \arcsin(0.5) = 30^\circ$.
+
+Since $\sin(x)$ is positive in the first and second quadrants, there is a second solution:
+$m_2 = 180^\circ - m_1 = 180^\circ - 30^\circ = 150^\circ$.
+
+We must determine which value, $30^\circ$ or $150^\circ$, corresponds to the point $(m, 0.5)$ labeled on the graph.
+The point $(m, 0.5)$ is shown on the graph between $x=0^\circ$ and the first peak, which occurs at $x=90^\circ$.
+Since $0^\circ < m < 90^\circ$, we choose the smaller angle.
+$m = 30^\circ$.
+
+Step 5: Final Answer
+(a) The trigonometric function is $y = \sin(x)$.
+(b) The value of $m$ is $30^\circ$.
+
+(a) Trigonometric Function:
+$y = \sin(x)$
+
+(b) Value of $m$:
+$m = 30^\circ$",2004,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 6_Q3.png,11.5 m,,"Ratios and Graphs of
+Trigonometric Functions",English,yes,3,"Step 0: Principle Abstraction
+The problem involves modeling movement in a plane using coordinates, identifying distances, and finding the shortest path between a point and a line, which falls under the mathematical principles of Coordinate Geometry and Euclidean Distance, specifically involving circular motion definitions.
+
+Step 1: Diagram Deconstruction
+The diagram shows a coordinate system $(x, y)$ superimposed on a field.
+1. Circular Formation: The members move in a circular formation with a diameter of $D = 10 \text{ m}$. Therefore, the radius is $R = D/2 = 5 \text{ m}$. The center of rotation, $O$, is at the origin $(0, 0)$.
+2. Original Position ($P_{orig}$): The original position is given as $(5, 0)$. This point lies on the circle $x^2 + y^2 = 5^2$.
+3. Movement: The movement is rotational, tracing the circle of radius $R=5$ centered at $O(0, 0)$. The rotation shown is $300^\circ$ counterclockwise from the positive x-axis (standard polar angle convention, although the diagram implies $300^\circ$ measured clockwise from the initial position, or $300^\circ$ measured counterclockwise starting from the initial position $(5, 0)$). Given the standard representation in trigonometry, we assume the angle $\theta$ defining the new position is measured counterclockwise from the positive x-axis. Since the original position is at $0^\circ$, a $300^\circ$ counterclockwise rotation moves the position to an angle $\theta = 300^\circ$.
+4. Field Boundary: The field boundary is a vertical line segment shown on the right side of the coordinate plane. The diagram indicates a distance of $9 \text{ m}$ from the original position $(5, 0)$ to this boundary, measured horizontally along the x-axis. Since $(5, 0)$ is $5 \text{ m}$ from the y-axis, the field boundary line must be at $x = 5 + 9 = 14$. Thus, the equation of the field boundary line is $x = 14$.
+5. New Position ($P_{new}$): This position is determined by the radius $R=5$ and the angle $\theta = 300^\circ$.
+
+Step 2: Question Interpretation
+The goal is to find the shortest distance between the calculated New Position ($P_{new}$) and the field boundary line ($x=14$). The shortest distance from a point to a line is the perpendicular distance.
+
+Step 3: Mathematical Formulation
+A. Determine the coordinates of the New Position ($P_{new} = (x_{new}, y_{new})$).
+Using polar coordinates $(R, \theta)$ where $R=5$ and $\theta = 300^\circ$:
+$x_{new} = R \cos(\theta)$
+$y_{new} = R \sin(\theta)$
+
+B. Calculate the shortest distance ($d$) from $P_{new}(x_{new}, y_{new})$ to the line $x=14$.
+Since the line is vertical, the shortest distance is the absolute difference in the x-coordinates:
+$d = |14 - x_{new}|$
+
+Step 4: Step-by-Step Calculation
+A. Calculate the coordinates of $P_{new}$:
+$\theta = 300^\circ$.
+$\cos(300^\circ) = \cos(360^\circ - 60^\circ) = \cos(60^\circ) = 1/2$
+$\sin(300^\circ) = \sin(360^\circ - 60^\circ) = -\sin(60^\circ) = -\sqrt{3}/2$
+
+$x_{new} = 5 \cdot \cos(300^\circ) = 5 \cdot (1/2) = 2.5 \text{ m}$
+$y_{new} = 5 \cdot \sin(300^\circ) = 5 \cdot (-\sqrt{3}/2) = -2.5\sqrt{3} \text{ m}$
+The New Position is $P_{new} = (2.5, -2.5\sqrt{3})$.
+
+B. Calculate the shortest distance to the boundary $x=14$:
+$d = |14 - x_{new}|$
+$d = |14 - 2.5|$
+$d = |11.5|$
+$d = 11.5 \text{ m}$
+
+Step 5: Final Answer
+The shortest distance the person would have to walk from their new position to the field boundary is $11.5 \text{ m}$.
+
+The shortest distance, in m, would you walk through is $11.5$.",1681,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 7_Q1.png,"(a) Rozaidy: 25%, Wildan: 45%
+(b) Wildan’s performance is better than
+Rozaidy’s because the values of the
+median and the third quartile are higher
+than Rozaidy’s.",,"Measures of Dispersion for
+Grouped Data",English,yes,6,"Step 0: Principle Abstraction
+The problem involves the analysis of data presented graphically using cumulative frequency curves, known as ogives. The key mathematical concepts are reading and interpreting values from ogives (specifically cumulative frequency, median, and quartiles) and calculating percentages based on these graphical readings.
+
+Step 1: Diagram Deconstruction
+The diagram shows two ogives representing the distances of shot-put throws: one for Rozaidy (Pink/Magenta curve) and one for Wildan (Blue curve).
+The vertical axis represents Cumulative frequency, ranging from 0 to 20 (Total number of throws, N = 20, assuming the maximum frequency is the total number of trials).
+The horizontal axis represents Distance (m). The major markings are at 10.45, 12.45, 14.45, 16.45, 18.45, 20.45. There are 10 small squares between each major mark, meaning the distance between major marks is $12.45 - 10.45 = 2.00$ m. Therefore, each small grid square on the horizontal axis represents $2.00 / 10 = 0.20$ m.
+
+We need to determine the cumulative frequencies (CF) at specific distances and the distances corresponding to specific CF values (like quartiles).
+
+Reading the graph for specific points:
+Total Frequency (N) = 20 (The top of both curves).
+The distance of interest for part (a) is $x = 15.45$ m.
+
+For Rozaidy (Pink Curve):
+CF at $x = 15.45$ m: $15.45$ is halfway between $14.45$ and $16.45$.
+Reading the Pink curve at $x=15.45$: The CF appears to be exactly 15.
+
+For Wildan (Blue Curve):
+Reading the Blue curve at $x=15.45$: The CF appears to be exactly 12.
+
+Reading Quartiles (for part b):
+Median ($Q_2$) corresponds to $CF = N/2 = 20/2 = 10$.
+Third Quartile ($Q_3$) corresponds to $CF = 3N/4 = 3(20)/4 = 15$.
+
+Median ($Q_2$):
+Rozaidy ($Q_{2, R}$): CF = 10. Reading across to the Pink curve and down to the distance axis: $Q_{2, R} = 13.45$ m (This is one small square past 13.45, which is $12.45 + 5 \times 0.20 = 13.45$. Wait, let's re-examine the scale. $12.45$ to $14.45$ is 2.00. 5 squares is 1.00. So the middle mark is $12.45 + 1.00 = 13.45$. Reading the Pink curve at CF=10, the distance is $13.45$ m).
+Wildan ($Q_{2, W}$): CF = 10. Reading across to the Blue curve and down to the distance axis: $Q_{2, W} = 14.05$ m (This is slightly past the center mark $14.05 = 13.85 + 0.20$. Let's be precise: 1 small square past 13.85. $13.85$ is 4 squares past $12.45$. $12.45 + 4(0.20) = 13.25$. Let's re-examine the grid lines: The major marks are $10.45, 12.45, 14.45, \ldots$. The distance between them is 2.00. There are 10 small squares. So one small square is 0.20 m.
+CF=10 line intersects Wildan's curve (Blue) at a distance that looks like $14.05$ m (it is 1 small square beyond $14.05$ which would be $14.25$. Let's assume the reading is $14.05$ for now, which is approximately 1.5 squares past $13.85$. Let's use clear ticks. The tick mark just before $14.45$ is $14.25$. CF=10 for Wildan appears slightly before $14.25$, perhaps at $14.05$ or $14.15$. Let's re-evaluate the intersection point for Wildan at CF=10. It looks closer to $14.05$ or $14.10$. We'll use $14.05$ based on visual approximation relative to the grid).
+
+Third Quartile ($Q_3$): CF = 15.
+Rozaidy ($Q_{3, R}$): CF = 15. Reading across to the Pink curve and down: $Q_{3, R} = 15.45$ m (Exactly at the required point in part (a)).
+Wildan ($Q_{3, W}$): CF = 15. Reading across to the Blue curve and down: $Q_{3, W} = 15.85$ m (This is 2 small squares past $15.45$, so $15.45 + 2 \times 0.20 = 15.85$ m).
+
+Step 2: Question Interpretation
+Part (a): Calculate the percentage of throws exceeding $15.45$ m for both Rozaidy and Wildan.
+Part (b): Compare the Median ($Q_2$) and Third Quartile ($Q_3$) for both individuals to determine who performed better. (In shot-put, better performance means greater distance.)
+
+Step 3: Mathematical Formulation
+
+Part (a): Percentage exceeding $x$.
+Percentage Exceeding $x = \left( \frac{N - CF(x)}{N} \right) \times 100\%$
+Where $N = 20$.
+
+For Rozaidy ($P_R$): $CF_R(15.45) = 15$.
+$P_R = \left( \frac{20 - 15}{20} \right) \times 100\%$
+
+For Wildan ($P_W$): $CF_W(15.45) = 12$.
+$P_W = \left( \frac{20 - 12}{20} \right) \times 100\%$
+
+Part (b): Comparison using $Q_2$ and $Q_3$.
+We compare $Q_{2, R}$ vs $Q_{2, W}$ and $Q_{3, R}$ vs $Q_{3, W}$. The person with the consistently larger values (greater distance) performs better.
+
+$Q_{2, R} = 13.45$ m, $Q_{2, W} = 14.05$ m (Approximation based on reading $CF=10$).
+$Q_{3, R} = 15.45$ m, $Q_{3, W} = 15.85$ m.
+
+Step 4: Step-by-Step Calculation
+
+Part (a): Percentage calculation.
+
+For Rozaidy:
+Number of throws exceeding $15.45$ m = $N - CF_R(15.45) = 20 - 15 = 5$.
+Percentage for Rozaidy:
+$P_R = \left( \frac{5}{20} \right) \times 100\% = 0.25 \times 100\% = 25\%$
+
+For Wildan:
+Number of throws exceeding $15.45$ m = $N - CF_W(15.45) = 20 - 12 = 8$.
+Percentage for Wildan:
+$P_W = \left( \frac{8}{20} \right) \times 100\% = 0.40 \times 100\% = 40\%$
+
+Part (b): Comparison of quartiles.
+
+Reconfirming $Q_2$ readings (CF=10):
+Rozaidy ($Q_{2, R}$): CF=10 corresponds to $x=13.45$ m.
+Wildan ($Q_{2, W}$): CF=10 corresponds to $x$. Visually, this point is clearly past $14.00$ m (which would be $13.85 + 0.15$). It seems to land exactly on the line corresponding to $14.05$ m if we count grid lines carefully. Let's re-examine the grid: $12.45$ (Major tick). Next tick is $12.65$, $12.85$, $13.05$, $13.25$, $13.45$ (This is 5 squares / 1.00m span). Wait, 10 squares = 2.00 m. 1 square = 0.20 m.
+$12.45 + 1$ square $= 12.65$
+$12.45 + 5$ squares $= 12.45 + 1.00 = 13.45$.
+$13.45 + 1$ square $= 13.65$
+$13.45 + 2$ squares $= 13.85$
+$13.45 + 3$ squares $= 14.05$
+$13.45 + 4$ squares $= 14.25$
+
+Rozaidy ($Q_{2, R}$): CF=10 intersects at exactly 3 squares past $12.45$. $12.45 + 3(0.20) = 12.45 + 0.60 = 13.05$ m. (My initial reading of 13.45 was incorrect based on the visual slope). $Q_{2, R} = 13.05$ m.
+Wildan ($Q_{2, W}$): CF=10 intersects slightly after the $13.85$ mark, perhaps at $14.05$ m (3 squares past $13.45$). Let's assume $Q_{2, W} = 14.05$ m based on a careful read, recognizing Wildan's median is higher than Rozaidy's.
+
+Reconfirming $Q_3$ readings (CF=15):
+Rozaidy ($Q_{3, R}$): CF=15 intersects exactly at $15.45$ m. $Q_{3, R} = 15.45$ m.
+Wildan ($Q_{3, W}$): CF=15 intersects slightly past $15.45$ m. It appears to be 2 small squares past $15.45$. $15.45 + 2(0.20) = 15.85$ m. $Q_{3, W} = 15.85$ m.
+
+Comparison:
+Median: $Q_{2, R} = 13.05$ m, $Q_{2, W} = 14.05$ m. (Wildan's median is higher)
+Third Quartile: $Q_{3, R} = 15.45$ m, $Q_{3, W} = 15.85$ m. (Wildan's third quartile is higher)
+
+Since both the median and the third quartile (which represent central tendency and the upper half of the distribution, respectively) are greater for Wildan than for Rozaidy, Wildan's throws were generally longer.
+
+Step 5: Final Answer
+
+(a) Calculate the percentage of the throwing distances that exceeds 15.45 m obtained by Rozaidy and Wildan.
+
+For Rozaidy:
+Cumulative Frequency at 15.45 m is 15.
+Number of throws exceeding 15.45 m = $20 - 15 = 5$.
+Percentage = $(5 / 20) \times 100\% = 25\%$.
+
+For Wildan:
+Cumulative Frequency at 15.45 m is 12.
+Number of throws exceeding 15.45 m = $20 - 12 = 8$.
+Percentage = $(8 / 20) \times 100\% = 40\%$.
+
+(b) Based on the median and the third quartile of both performances, determine who perform better during the training session.
+
+From the ogive (Total Frequency N=20):
+Median ($Q_2$, CF=10):
+Rozaidy ($Q_{2, R}$): $13.05$ m
+Wildan ($Q_{2, W}$): $14.05$ m
+
+Third Quartile ($Q_3$, CF=15):
+Rozaidy ($Q_{3, R}$): $15.45$ m
+Wildan ($Q_{3, W}$): $15.85$ m
+
+Since higher distance indicates better performance in shot-put:
+Wildan has a higher median ($14.05 \text{ m} > 13.05 \text{ m}$) and a higher third quartile ($15.85 \text{ m} > 15.45 \text{ m}$).
+Therefore, Wildan performed better during the training session.
+
+Final Answer Summary:
+(a) Percentage exceeding 15.45 m: Rozaidy is 25%, Wildan is 40%.
+(b) Wildan performed better.
+
+---
+Detailed Answer Presentation:
+
+(a) Calculation of percentages exceeding 15.45 m
+
+The total number of throws, N, is the maximum cumulative frequency shown, which is 20.
+
+Reading the graph at Distance = 15.45 m:
+For Rozaidy (Pink Curve): Cumulative Frequency, $CF_R(15.45) = 15$.
+The number of throws exceeding 15.45 m is $N - CF_R = 20 - 15 = 5$.
+Percentage for Rozaidy = (Number exceeding / Total Number) $\times 100\% = (5 / 20) \times 100\% = 25\%$.
+
+For Wildan (Blue Curve): Cumulative Frequency, $CF_W(15.45) = 12$.
+The number of throws exceeding 15.45 m is $N - CF_W = 20 - 12 = 8$.
+Percentage for Wildan = (Number exceeding / Total Number) $\times 100\% = (8 / 20) \times 100\% = 40\%$.
+
+(b) Determination of better performance based on Median and Third Quartile
+
+We must determine the values for the Median ($Q_2$, corresponding to $CF = 10$) and the Third Quartile ($Q_3$, corresponding to $CF = 15$). The horizontal axis scale is $0.20$ m per grid line ($2.00 \text{ m} / 10 \text{ lines}$).
+
+Median ($Q_2$, CF = 10):
+Rozaidy ($Q_{2, R}$): Reading the graph at CF=10, the distance is $13.05$ m. (This is 3 lines past 12.45 m: $12.45 + 3 \times 0.20 = 13.05$ m).
+Wildan ($Q_{2, W}$): Reading the graph at CF=10, the distance is approximately $14.05$ m. (This is 5 lines past 13.05 m: $13.05 + 5 \times 0.20 = 14.05$ m, or 3 lines past 13.45 m).
+
+Third Quartile ($Q_3$, CF = 15):
+Rozaidy ($Q_{3, R}$): Reading the graph at CF=15, the distance is exactly $15.45$ m.
+Wildan ($Q_{3, W}$): Reading the graph at CF=15, the distance is approximately $15.85$ m. (This is 2 lines past 15.45 m: $15.45 + 2 \times 0.20 = 15.85$ m).
+
+Comparison:
+Since shot-put performance is measured by distance, a larger value indicates better performance.
+Median comparison: $Q_{2, W} (14.05 \text{ m}) > Q_{2, R} (13.05 \text{ m})$.
+Third Quartile comparison: $Q_{3, W} (15.85 \text{ m}) > Q_{3, R} (15.45 \text{ m})$.
+
+Based on both measures of central tendency and upper quartile spread, Wildan consistently achieved longer distances.
+
+Conclusion: Wildan performed better during the training session.",4572,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 7_Q2.png,"(a) No. The distribution is not symmetrical
+as most of the blood glucose readings
+are concentrated on the right side of the
+histogram, which are higher.
+(b) Mean = 6.82, standard deviation = 1.35
+(c) The standard deviation of the blood
+glucose readings between 6.0 mmol/L
+and 8.9 mmol/L are lower because the
+dispersion of the data is smaller.",,"Measures of Dispersion for
+Grouped Data",English,yes,6,"Step 0: Principle Abstraction
+The problem involves the analysis of data presented in a histogram, specifically focusing on descriptive statistics (mean, standard deviation) and the visual characteristics of the distribution (symmetry). The core mathematical concepts are the calculation of measures of central tendency and dispersion for grouped frequency data, and the qualitative assessment of data distribution shape.
+
+Step 1: Diagram Deconstruction
+The image provides a histogram titled ""Blood Glucose Readings."" The x-axis represents the Glucose level (mmol/L) grouped into class intervals. The y-axis represents the Frequency.
+
+First, we need to determine the class boundaries and the frequency ($f$) for each class. The class width ($w$) appears constant: $3.95 - 2.95 = 1.0$. The class centers ($x$) must be calculated for the mean and standard deviation.
+
+| Class Interval (Lower - Upper) | Lower Boundary | Upper Boundary | Class Center ($x$) | Frequency ($f$) |
+| :---: | :---: | :---: | :---: | :---: |
+| 2.95 to 3.95 | 2.95 | 3.95 | $(2.95 + 3.95)/2 = 3.45$ | 5 |
+| 3.95 to 4.95 | 3.95 | 4.95 | $(3.95 + 4.95)/2 = 4.45$ | 10 |
+| 4.95 to 5.95 | 4.95 | 5.95 | $(4.95 + 5.95)/2 = 5.45$ | 20 |
+| 5.95 to 6.95 | 5.95 | 6.95 | $(5.95 + 6.95)/2 = 6.45$ | 25 |
+| 6.95 to 7.95 | 6.95 | 7.95 | $(6.95 + 7.95)/2 = 7.45$ | 40 (Mode) |
+| 7.95 to 8.95 | 7.95 | 8.95 | $(7.95 + 8.95)/2 = 8.45$ | 30 |
+
+Total Frequency ($\sum f$): $N = 5 + 10 + 20 + 25 + 40 + 30 = 130$.
+
+Step 2: Question Interpretation
+The problem asks for three distinct parts:
+(a) Assess the symmetry of the distribution based on the histogram and provide a reason.
+(b) Calculate the mean ($\bar{x}$) and standard deviation ($\sigma$) of the grouped data.
+(c) Compare the standard deviation of the subset of data between $6.0 \text{ mmol/L}$ and $8.9 \text{ mmol/L}$ with the overall standard deviation calculated in (b), providing justification.
+
+Step 3: Mathematical Formulation
+
+(a) Symmetry assessment: A distribution is symmetrical if the bars on either side of the modal class (highest frequency) are roughly equal in height, resembling a normal distribution bell shape.
+
+(b) Calculation of Mean ($\bar{x}$) and Standard Deviation ($\sigma$) for grouped data:
+Mean: $\bar{x} = \frac{\sum (f \cdot x)}{\sum f}$
+Standard Deviation (Population formula assumed, standard for descriptive statistics unless sample is specified): $\sigma = \sqrt{\frac{\sum f \cdot x^2}{\sum f} - \bar{x}^2}$
+
+(c) Comparison: We need to define the new subset of data, calculate its standard deviation ($\sigma_{subset}$), and compare it to $\sigma$ from part (b).
+
+The subset is defined by readings between $6.0 \text{ mmol/L}$ and $8.9 \text{ mmol/L}$.
+The class boundaries covering this range are:
+\begin{itemize}
+    \item The class starting at 5.95 (which includes $6.0$) up to $7.95$ fully.
+    \item The last class ends at $8.95$.
+\end{itemize}
+We must interpret how the continuous data within the $5.95-6.95$ bin is treated regarding the $6.0 \text{ mmol/L}$ lower limit, and how the $7.95-8.95$ bin is treated regarding the $8.9 \text{ mmol/L}$ upper limit. Since the histogram bins are discrete, a common interpretation is to use the bins whose *centers* fall within or brackets the specified range, or to consider the relevant contiguous bins.
+
+Given the context of textbook problems on histograms, it is often implied to select the bins that primarily fall within the range, or to treat the range $6.0$ to $8.9$ as spanning the bins:
+Bin 1: [5.95, 6.95] (Frequency $f_1 = 25$)
+Bin 2: [6.95, 7.95] (Frequency $f_2 = 40$)
+Bin 3: [7.95, 8.95] (Frequency $f_3 = 30$)
+
+If we strictly interpret $6.0 < x < 8.9$:
+The bin [5.95, 6.95] contributes data from $6.0$ onwards.
+The bin [7.95, 8.95] contributes data up to $8.9$.
+
+However, for simplicity in comparison problems like this involving standard deviation (which relies on the mean), we will calculate the standard deviation using the *entire bins* that significantly overlap the required range or bracket the implied range of interest. The range $6.0 \text{ mmol/L}$ to $8.9 \text{ mmol/L}$ clearly encompasses the three rightmost bins: [5.95, 6.95], [6.95, 7.95], and [7.95, 8.95]. We will proceed by calculating the standard deviation for the data contained in these three bins.
+
+Subset data ($f_{sub}, x_{sub}$):
+\begin{itemize}
+    \item $x_1 = 6.45, f_1 = 25$
+    \item $x_2 = 7.45, f_2 = 40$
+    \item $x_3 = 8.45, f_3 = 30$
+\end{itemize}
+Total subset frequency $N_{sub} = 25 + 40 + 30 = 95$.
+
+Step 4: Step-by-Step Calculation
+
+(a) Symmetry Assessment
+The modal class (highest frequency) is [6.95, 7.95] with $f=40$.
+The frequencies to the left of the mode are 25, 20, 10, 5 (starting from the class center 6.45).
+The frequencies to the right of the mode are 30 (class center 8.45).
+The distribution leans towards higher values (the tail extends further to the right relative to the mode height). The frequency drops off much faster to the left (25 $\rightarrow$ 20 $\rightarrow$ 10 $\rightarrow$ 5) than to the right (40 $\rightarrow$ 30).
+Conclusion: The distribution is not symmetrical; it is skewed to the right (positively skewed).
+
+(b) Calculation of Mean ($\bar{x}$) and Standard Deviation ($\sigma$)
+
+Table for calculations:
+| $x$ | $f$ | $f \cdot x$ | $x^2$ | $f \cdot x^2$ |
+| :---: | :---: | :---: | :---: | :---: |
+| 3.45 | 5 | 17.25 | 11.9025 | 59.5125 |
+| 4.45 | 10 | 44.50 | 19.8025 | 198.025 |
+| 5.45 | 20 | 109.00 | 29.7025 | 594.05 |
+| 6.45 | 25 | 161.25 | 41.6025 | 1040.0625 |
+| 7.45 | 40 | 298.00 | 55.5025 | 2220.10 |
+| 8.45 | 30 | 253.50 | 71.4025 | 2142.075 |
+| **Total** | **130** | **883.50** | | **6253.825** |
+
+Total Frequency, $N = 130$.
+$\sum (f \cdot x) = 883.50$.
+$\sum (f \cdot x^2) = 6253.825$.
+
+Mean ($\bar{x}$):
+$\bar{x} = \frac{883.50}{130} \approx 6.79615$
+$\bar{x} \approx 6.80 \text{ mmol/L}$ (to 3 significant figures)
+
+Variance ($\sigma^2$):
+$\sigma^2 = \frac{\sum f \cdot x^2}{N} - \bar{x}^2$
+$\sigma^2 = \frac{6253.825}{130} - (6.79615)^2$
+$\sigma^2 = 48.006346... - 46.187816...$
+$\sigma^2 = 1.81853...$
+
+Standard Deviation ($\sigma$):
+$\sigma = \sqrt{1.81853...} \approx 1.34853...$
+$\sigma \approx 1.35 \text{ mmol/L}$ (to 3 significant figures)
+
+(c) Comparison of Standard Deviations
+
+We calculate the standard deviation for the subset covering the classes [5.95, 6.95], [6.95, 7.95], and [7.95, 8.95].
+Subset Data:
+\begin{itemize}
+    \item $x_1 = 6.45, f_1 = 25$
+    \item $x_2 = 7.45, f_2 = 40$
+    \item $x_3 = 8.45, f_3 = 30$
+\end{itemize}
+$N_{sub} = 95$.
+
+Summations for subset:
+$\sum (f_{sub} \cdot x_{sub}) = (25 \cdot 6.45) + (40 \cdot 7.45) + (30 \cdot 8.45)$
+$\sum (f_{sub} \cdot x_{sub}) = 161.25 + 298.00 + 253.50 = 712.75$
+
+$\sum (f_{sub} \cdot x_{sub}^2) = (25 \cdot 6.45^2) + (40 \cdot 7.45^2) + (30 \cdot 8.45^2)$
+$\sum (f_{sub} \cdot x_{sub}^2) = (25 \cdot 41.6025) + (40 \cdot 55.5025) + (30 \cdot 71.4025)$
+$\sum (f_{sub} \cdot x_{sub}^2) = 1040.0625 + 2220.10 + 2142.075 = 5402.2375$
+
+Subset Mean ($\bar{x}_{sub}$):
+$\bar{x}_{sub} = \frac{712.75}{95} \approx 7.50263$
+
+Subset Variance ($\sigma_{sub}^2$):
+$\sigma_{sub}^2 = \frac{5402.2375}{95} - (7.50263)^2$
+$\sigma_{sub}^2 = 56.865657... - 56.289507...$
+$\sigma_{sub}^2 = 0.57615...$
+
+Subset Standard Deviation ($\sigma_{sub}$):
+$\sigma_{sub} = \sqrt{0.57615...} \approx 0.75904...$
+$\sigma_{sub} \approx 0.759 \text{ mmol/L}$
+
+Comparison:
+Overall Standard Deviation ($\sigma$ from b): $\approx 1.35$
+Subset Standard Deviation ($\sigma_{sub}$): $\approx 0.759$
+
+Justification: The standard deviation of the subset ($\sigma_{sub} \approx 0.759$) is smaller than the overall standard deviation ($\sigma \approx 1.35$). This is because the subset data ([5.95, 8.95]) is centered around the modal class [6.95, 7.95], which represents the bulk of the data points (95 out of 130 total points). When we calculate the overall standard deviation ($\sigma$), we include the data from the lower end (2.95 to 5.95), which are further away from the overall mean ($\bar{x} \approx 6.80$), thus increasing the overall measure of spread.
+
+Step 5: Final Answer
+
+(a) Based on the histogram, the distribution is not symmetrical.
+Reason: The distribution is positively skewed (skewed to the right). The modal class is [6.95, 7.95] ($f=40$). The frequencies decrease much more gradually towards the upper boundary (30 at the next step) compared to the rapid decrease towards the lower boundary (25 at the previous step, then 20, 10, 5). This indicates a longer tail on the right side, or alternatively, the center of mass appears shifted towards the right side of the visual center, suggesting positive skewness.
+
+(b) Calculation of Mean and Standard Deviation for all readings:
+Total Frequency $N = 130$.
+Mean ($\bar{x}$):
+$\bar{x} = \frac{\sum f \cdot x}{N} = \frac{883.50}{130} \approx 6.796$
+$\bar{x} \approx 6.80 \text{ mmol/L}$ (3 s.f.)
+
+Standard Deviation ($\sigma$):
+$\sigma = \sqrt{\frac{\sum f \cdot x^2}{N} - \bar{x}^2} = \sqrt{\frac{6253.825}{130} - (6.79615...)^2}$
+$\sigma \approx \sqrt{1.81853...} \approx 1.3485$
+$\sigma \approx 1.35 \text{ mmol/L}$ (3 s.f.)
+
+(c) Comparison:
+The standard deviation for the blood glucose readings between $6.0 \text{ mmol/L}$ and $8.9 \text{ mmol/L}$ ($\sigma_{sub}$) is smaller than the standard deviation for all readings ($\sigma$).
+$\sigma_{sub} \approx 0.759 \text{ mmol/L}$
+$\sigma \approx 1.35 \text{ mmol/L}$
+
+Justification: The subset of data considered ($N_{sub}=95$) focuses on the center of the distribution (the modal region and adjacent classes). By excluding the readings in the lower tails (2.95 to 5.95, $N=35$), which are further away from the overall mean, the resulting measure of spread ($\sigma_{sub}$) is reduced compared to the overall spread ($\sigma$). Data points closer to the mean result in a smaller standard deviation.
+
+The standard deviation is approximately $1.35 \text{ mmol/L}$ for the entire dataset.",4359,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 7_Q3.png,"(a) No. The distribution is not symmetrical
+as most of the blood glucose readings
+are concentrated on the right side of the
+histogram, which are higher.
+(b) Mean = 6.82, standard deviation = 1.35
+(c) The standard deviation of the blood
+glucose readings between 6.0 mmol/L
+and 8.9 mmol/L are lower because the
+dispersion of the data is smaller.",,"Measures of Dispersion for
+Grouped Data",English,yes,7,"Step 0: Principle Abstraction
+The general mathematical concepts involved are Descriptive Statistics for grouped data, specifically the calculation of the Mean ($\bar{x}$) and the Standard Deviation ($\sigma$ or $s$). Since the data represents a frequency distribution derived from measurements on a group of patients (likely a sample), we will calculate the sample mean and sample standard deviation for both the 'Before' and 'After' measurements. A final step involves comparing these measures of central tendency to justify a conclusion about the medicine's effectiveness.
+
+Step 1: Diagram Deconstruction
+The image provides a two-way frequency table for Systolic Blood Pressure (mmHg) categorized into four class intervals:
+
+| Class Interval (mmHg) | Midpoint ($x_i$) | Frequency Before ($f_B$) | Frequency After ($f_A$) |
+|-----------------------|------------------|--------------------------|-------------------------|
+| $120 - 134$           | 127              | 4                        | 9                       |
+| $135 - 149$           | 142              | 7                        | 8                       |
+| $150 - 164$           | 157              | 8                        | 7                       |
+| $165 - 179$           | 172              | 6                        | 1                       |
+
+Calculations for Midpoints ($x_i$):
+For class $L - U$, the midpoint $x_i = (L + U) / 2$.
+1. $120 - 134$: $(120 + 134) / 2 = 254 / 2 = 127$
+2. $135 - 149$: $(135 + 149) / 2 = 284 / 2 = 142$
+3. $150 - 164$: $(150 + 164) / 2 = 314 / 2 = 157$
+4. $165 - 179$: $(165 + 179) / 2 = 344 / 2 = 172$
+
+Total Number of Patients ($N$):
+$N_B = 4 + 7 + 8 + 6 = 25$
+$N_A = 9 + 8 + 7 + 1 = 25$
+$N = 25$ for both sets of data.
+
+Step 2: Question Interpretation
+The question requires three main tasks:
+1. Calculate the Mean for the 'Before' data ($\bar{x}_B$).
+2. Calculate the Mean for the 'After' data ($\bar{x}_A$).
+3. Calculate the Standard Deviation for the 'Before' data ($s_B$).
+4. Calculate the Standard Deviation for the 'After' data ($s_A$).
+5. Determine if the medicine was effective in lowering blood pressure by comparing the means and justifying the answer.
+
+Step 3: Mathematical Formulation
+For grouped frequency data, the estimated Mean ($\bar{x}$) is calculated using the formula:
+$$\bar{x} = \frac{\sum (f \cdot x)}{\sum f} = \frac{\sum (f \cdot x)}{N}$$
+
+The sample Standard Deviation ($s$) for grouped data is calculated using the formula:
+$$s = \sqrt{\frac{\sum f \cdot x^2 - \frac{(\sum f \cdot x)^2}{N}}{N - 1}}$$
+(Note: We use $N-1$ for the sample standard deviation, as this is usually assumed in applied statistics unless the data set represents the entire population.)
+
+Step 4: Step-by-Step Calculation
+
+We will create combined tables to facilitate the calculations for both 'Before' and 'After' data sets.
+
+| $x_i$ | $f_B$ | $f_A$ | $f_B x_i$ | $f_A x_i$ | $f_B x_i^2$ | $f_A x_i^2$ |
+|-------|-------|-------|-----------|-----------|-------------|-------------|
+| 127   | 4     | 9     | 508       | 1143      | 64516       | 145047      |
+| 142   | 7     | 8     | 994       | 1136      | 141148      | 161248      |
+| 157   | 8     | 7     | 1256      | 1099      | 197192      | 172543      |
+| 172   | 6     | 1     | 1032      | 172       | 177504      | 29584       |
+| **Sum** | **$N=25$** | **$N=25$**| **$\sum f_B x_i = 3790$** | **$\sum f_A x_i = 3550$** | **$\sum f_B x_i^2 = 580360$** | **$\sum f_A x_i^2 = 508422$** |
+
+---
+**Part 1: Calculation of Means**
+
+1. Mean Before ($\bar{x}_B$):
+$$\bar{x}_B = \frac{\sum f_B x_i}{N} = \frac{3790}{25} = 151.6 \text{ mmHg}$$
+
+2. Mean After ($\bar{x}_A$):
+$$\bar{x}_A = \frac{\sum f_A x_i}{N} = \frac{3550}{25} = 142.0 \text{ mmHg}$$
+
+---
+**Part 2: Calculation of Standard Deviations (using $N-1$ for sample SD)**
+
+For $N-1 = 25 - 1 = 24$.
+
+1. Standard Deviation Before ($s_B$):
+$$s_B = \sqrt{\frac{\sum f_B x_i^2 - \frac{(\sum f_B x_i)^2}{N}}{N - 1}}$$
+$$s_B = \sqrt{\frac{580360 - \frac{(3790)^2}{25}}{24}}$$
+$$s_B = \sqrt{\frac{580360 - \frac{14364100}{25}}{24}}$$
+$$s_B = \sqrt{\frac{580360 - 574564}{24}}$$
+$$s_B = \sqrt{\frac{5796}{24}}$$
+$$s_B = \sqrt{241.5}$$
+$$s_B \approx 15.5403 \text{ mmHg}$$
+
+2. Standard Deviation After ($s_A$):
+$$s_A = \sqrt{\frac{\sum f_A x_i^2 - \frac{(\sum f_A x_i)^2}{N}}{N - 1}}$$
+$$s_A = \sqrt{\frac{508422 - \frac{(3550)^2}{25}}{24}}$$
+$$s_A = \sqrt{\frac{508422 - \frac{12602500}{25}}{24}}$$
+$$s_A = \sqrt{\frac{508422 - 504100}{24}}$$
+$$s_A = \sqrt{\frac{4322}{24}}$$
+$$s_A = \sqrt{180.0833...}$$
+$$s_A \approx 13.4209 \text{ mmHg}$$
+
+---
+**Part 3: Effectiveness Justification**
+
+We compare the means calculated:
+Mean Before ($\bar{x}_B$) = 151.6 mmHg
+Mean After ($\bar{x}_A$) = 142.0 mmHg
+
+The medicine is considered effective in lowering blood pressure if the average pressure reading decreases after taking the dose.
+
+Change in Mean = $\bar{x}_B - \bar{x}_A = 151.6 - 142.0 = 9.6$ mmHg.
+
+Since the mean blood pressure after taking the medicine (142.0 mmHg) is lower than the mean blood pressure before taking the medicine (151.6 mmHg), the data suggests the medicine was effective in lowering the blood pressure for the group on average.
+
+We also observe the variability: $s_B \approx 15.54$ mmHg and $s_A \approx 13.42$ mmHg. The standard deviation slightly decreased, indicating that the blood pressure readings became slightly less spread out after the treatment, although the primary indicator of ""lowering"" is the reduction in the mean.
+
+Step 5: Final Answer
+
+The calculated mean and standard deviation values are:
+
+Mean Blood Pressure:
+Before: $\bar{x}_B = 151.6 \text{ mmHg}$
+After: $\bar{x}_A = 142.0 \text{ mmHg}$
+
+Standard Deviation of Blood Pressure (Sample):
+Before: $s_B = \sqrt{241.5} \approx 15.54 \text{ mmHg}$
+After: $s_A = \sqrt{180.0833...} \approx 13.42 \text{ mmHg}$
+
+Justification of Effectiveness:
+The medicine appears to be effective in lowering the blood pressure of the group of patients. This is justified because the mean systolic blood pressure decreased from $151.6 \text{ mmHg}$ (Before) to $142.0 \text{ mmHg}$ (After), representing an average reduction of $9.6 \text{ mmHg}$.
+
+Boxed Results Summary:
+Mean Before: $151.6$
+Mean After: $142.0$
+SD Before: $\sqrt{241.5}$
+SD After: $\sqrt{4322/24}$ or $13.42$ (to 2 d.p.)",2960,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 8_Q1.png,". (a) y = 1
+3 000
+x2
+ + 5                                    (b) 58",,Mathematical Modeling,English,yes,6,"Step 0: Principle Abstraction
+The physical configuration of a main cable in a suspension bridge, under a uniformly distributed vertical load (the bridge deck), is mathematically modeled by a parabola. Therefore, the core mathematical principle governing part (a) is the derivation and representation of a quadratic function (parabola). Part (b) involves discrete counting based on geometric spacing, which relates to linear measurement and counting.
+
+Step 1: Diagram Deconstruction
+The diagram illustrates a suspension bridge. Key dimensional information provided is:
+1. Total span length (distance between towers): $L = 600$ m.
+2. Height of the towers (maximum cable height above the deck/lowest point): $H = 35$ m. (Assuming the towers meet the cable ends at the maximum height, this is the height difference between the tower attachment point and the lowest point of the cable).
+3. The shortest distance from the main cable to the deck is $5$ m. This shortest distance occurs at the lowest point (vertex) of the main cable, relative to the deck surface.
+
+We will set up a coordinate system to model the main cable as a parabola $y = ax^2 + c$.
+Let the origin $(0, 0)$ be the lowest point (vertex) of the main cable.
+Since the total span is $600$ m, the towers are located at $x = -300$ m and $x = 300$ m.
+The height of the cable at the towers ($x = \pm 300$) relative to the vertex is $H_{rel}$.
+The height of the cable at the towers relative to the deck is $35$ m.
+The height of the cable at the vertex relative to the deck is $5$ m.
+Therefore, the maximum relative height ($H_{rel}$) is the difference between the tower height and the vertex height above the deck: $H_{rel} = 35 \text{ m} - 5 \text{ m} = 30$ m.
+
+Key points on the parabola $y = ax^2 + c$:
+1. Vertex (Lowest Point): $(0, 0)$ in our relative coordinate system. This implies $c=0$. So, $y = ax^2$.
+2. Points at towers: $(\pm 300, 30)$.
+
+For part (b):
+The total span length is $600$ m.
+Suspender cables are $20$ m apart.
+The suspension only occurs over the span covered by the main cable, which is $600$ m long horizontally.
+
+Step 2: Question Interpretation
+(a) Determine the function $y = f(x)$ that represents the arc of the main cable, using the dimensions given and the parabolic model.
+(b) Determine the total number of suspender cables needed on *both sides* of the bridge, given they are spaced $20$ m apart.
+
+Step 3: Mathematical Formulation
+
+Part (a): Modeling the Parabola
+The general form is $y = ax^2 + c$.
+Using the vertex $(0, 0)$ (relative to the lowest point), we have $c=0$, so $y = ax^2$.
+We use the endpoint $(300, 30)$ to find $a$:
+$30 = a(300)^2$
+
+Part (b): Counting Suspender Cables
+The cables are placed at discrete intervals along the $600$ m span. Since the cables support the deck between the towers, they span the distance from the tower connection points to the vertex. We need to count the intervals across the entire $600$ m span.
+
+If $N$ is the number of intervals, the number of cables (or supports) needed is usually $N+1$ if cables are required at both ends, or $N-1$ if the end supports are the towers themselves and we count only the internal cables. However, since the question asks for the number of *suspender cables* needed, and the deck must be fully supported, we typically count the number of $20$ m segments across the span, realizing that a cable supports the deck at the beginning and end of each segment.
+
+Total span $L = 600$ m. Spacing $d = 20$ m.
+Number of segments = $L / d$.
+If we have $K$ segments, we need $K+1$ support points (cables plus towers). The question asks for the number of *suspender cables*. We assume the towers are fixed supports and we are counting the vertical cables hanging between the towers.
+
+Number of intervals $K = 600 / 20 = 30$ intervals.
+If there are 30 intervals, there are $30 - 1 = 29$ interior points where a suspender cable might be placed if cables start and end exactly at the towers.
+However, bridges often place cables at the towers as well, or the count implicitly includes the points starting from the first interval endpoint. A standard interpretation for uniform spacing $d$ over a length $L$ is that the number of intermediate points (suspender cables) is $(L/d) - 1$ if the supports are placed at the endpoints, or $(L/d) + 1$ if supports are needed at both endpoints and the spacing includes the distance from the midpoint to the tower.
+
+Let's clarify the setup: Cables run from the deck to the main cable. Since the deck spans $600$ m, and cables are $20$ m apart, we count how many $20$ m sections fit.
+If cables are at $x=0, 20, 40, ..., 580, 600$. This gives $30$ intervals and $31$ cables/points. If the towers are the endpoints, these $31$ points include the suspension points at the towers. The question asks for *suspender cables*. Typically, the cables attached directly to the towers (at $x=0$ and $x=600$ in the external coordinate system) are considered part of the main tower structure, and we count the cables hanging *between* them.
+
+Number of required internal suspender cables = (Total intervals) $- 1 = K - 1 = 30 - 1 = 29$ cables spanning the $600$ m, counting only those suspended between the towers.
+
+The question asks for the number of suspender cables needed on *both sides* of the bridge. This phrasing suggests counting all suspension points along the $600$ m deck span, excluding the towers themselves if the towers are the termination points. Since the problem does not specify which side of the tower the cables start, we assume the $600$ m span is supported by cables spaced $20$ m apart, centered on the span.
+
+If the total span is $600$ m, and spacing is $20$ m, there are $30$ sections.
+If cables are placed at $x = 20, 40, \dots, 580$, then there are $580/20 = 29$ cables.
+If the problem intends for the span to be covered entirely, $L/d$ segments implies $L/d - 1$ internal supports if the towers are the outer supports.
+Total internal suspender cables $= 29$.
+
+The phrase ""on both sides of the bridge"" likely refers to the fact that the bridge has two main cables running parallel, but since the cross-section (deck) is supported by vertical suspenders under *both* main cables, and the calculation for one side of the deck determines the structure for the other, we must clarify if the question implies the total number of vertical elements or just the count along the $600$ m length projected onto the ground. Given the typical context of such problems, it usually refers to the number of distinct vertical cables required along the length of the deck span *per side* (i.e., under one main cable). If this interpretation holds, the count is 29.
+
+If ""both sides"" means counting the number of cables under the left main cable AND the number of cables under the right main cable, the total would be $2 \times 29 = 58$, but usually, the structure is symmetrical, and the length constraint applies to one side first. We proceed with the calculation for the length $600$ m, which represents the span of the cable arc.
+
+We interpret ""number of suspender cables needed on both sides of the bridge"" as the number of discrete vertical cables suspended along the $600$ m span required for one side, multiplied by 2 if they are referring to the two sides of the bridge structure itself (which is unlikely for a single arc model). We stick to the count along the $600$ m span, which is $29$ interior points. If this count applies to the whole structure: Total internal cables = 29.
+
+Let's re-read: ""determine the number of suspender cables needed on both sides of the bridge."" This might mean the left half and the right half of the span, relative to the center.
+Span: $600$ m. Half-span: $300$ m. Spacing: $20$ m.
+Number of segments in half-span $= 300 / 20 = 15$ segments.
+For the left half (from tower to center), there are $15$ segments, requiring $15 - 1 = 14$ internal suspension points if we exclude the tower and the center point. If the center point (vertex) is supported, we need $15$ points if we start counting from the tower up to the center.
+
+If cables are placed at $x=0, 20, 40, \dots, 300$ (relative to one tower), there are $15$ intervals, requiring $16$ supports (including the tower). If we count cables suspended *between* supports, there are $15$ cables in that half.
+Total internal cables $= 2 \times 15 = 30$ cables if the center vertex is supported by a cable.
+If the vertex is supported, the total count is $30$ segments across $600$ m, implying $31$ total supports. If we exclude the two towers, $31 - 2 = 29$ internal cables. This matches $2 \times (15 - 1) + 1$ if the center is counted once, or $2 \times 15 - 1$ if the center is shared.
+
+The safest interpretation based on standard physics problems is the number of segments minus the one connecting segment endpoints, totaling the internal cables: $K - 1 = 29$. Since the structure is symmetrical, this count applies to the entire span length under one main cable. The phrase ""both sides"" likely refers to the structure supporting both halves of the deck, meaning the total required for the $600$ m span.
+
+We use the result: $K - 1 = 29$ internal cables.
+
+Step 4: Step-by-Step Calculation
+
+Part (a): Determine the function
+We established $y = ax^2$ and the point $(300, 30)$.
+$30 = a(300)^2$
+$30 = a(90000)$
+$a = \frac{30}{90000} = \frac{3}{9000} = \frac{1}{3000}$
+
+The function representing the arc of the main cable, where $x$ is the horizontal distance from the center (vertex) and $y$ is the vertical distance above the vertex:
+$y = \frac{1}{3000} x^2$
+
+Part (b): Determine the number of suspender cables
+Total span $L = 600$ m.
+Spacing $d = 20$ m.
+Number of segments $K = L / d = 600 / 20 = 30$.
+The number of support points, including the towers, is $K + 1 = 31$.
+The number of internal suspender cables (excluding the two towers) is $K - 1 = 30 - 1 = 29$.
+
+The phrase ""on both sides of the bridge"" is interpreted as the total number of suspension points required along the $600$ m length, excluding the towers which are the primary supports for the main cables, not technically ""suspender cables"" in the sense of the vertical elements supporting the deck.
+
+Number of suspender cables = 29.
+
+Step 5: Final Answer
+
+(a) The function that represents the arc of the main cable, based on setting the origin $(0,0)$ at the lowest point of the cable, is:
+$y = \frac{1}{3000} x^2$
+
+(b) If the suspender cables are $20$ m apart along the $600$ m span, the number of segments is $600/20 = 30$. The number of internal suspender cables required between the two main towers is $30 - 1 = 29$.
+
+Final Answer Summary:
+(a) $y = \frac{1}{3000} x^2$
+(b) 29",3549,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 8_Q2.png,"(a) A – quadratic model
+B – exponential model
+C – linear model
+(b) Exponential model. Temperature will not
+rise as shown in the quadratic model.
+Temperature will not drop below 0°C as
+shown in the linear model.",,Mathematical Modeling,English,yes,6,"Step 0: Principle Abstraction
+The problem involves modeling real-world data (temperature over time during cooling) using different types of mathematical functions: linear, quadratic, and exponential. The core mathematical principle is *Function Modeling and Curve Fitting*, specifically comparing the graphical representations of these three fundamental continuous functions to discrete data points representing a physical process (cooling, which typically follows an exponential decay model, often Newton's Law of Cooling).
+
+Step 1: Diagram Deconstruction
+The diagram shows a graph with time $t$ on the horizontal axis (seconds) and temperature $T$ on the vertical axis (degrees Celsius).
+Data Points provided in the table:
+(t, T): (0, 200), (40, 140), (80, 100), (120, 75).
+
+The graph displays three curves labeled A, B, and C, all starting at $T=200$ when $t=0$.
+Curve A: Appears parabolic, initially concave up (or flat near the start, but clearly curving upward later, suggesting a quadratic opening upwards or an exponential function that has crossed its asymptote).
+Curve B: Appears to be a decreasing curve, initially steeper than C, flattening out, characteristic of exponential decay.
+Curve C: Appears to be a straight line, indicating a constant rate of change.
+
+Step 2: Question Interpretation
+The problem has two parts:
+(a) Identify which graph (A, B, or C) corresponds to the linear, quadratic, and exponential models, respectively.
+(b) Determine which model best fits the data for the range $0 \leq t \leq 250$ and explain why the others fail.
+
+Step 3: Mathematical Formulation
+We must associate the properties of the function types with the graphical shapes:
+1. Linear Model: $T(t) = mt + b$. The graph is a straight line with constant slope $m$. This corresponds to Curve C.
+2. Quadratic Model: $T(t) = at^2 + bt + c$. The graph is a parabola. Since the process starts at $T=200$ and decreases, the parabola must be opening upwards ($a>0$) if it represents cooling that eventually reverses (like a pure quadratic fit), or opening downwards ($a<0$) if it models decay throughout the observed range. Looking at A, it is clearly U-shaped or concave up overall in the extended range shown (going up towards $t=250$), suggesting $a>0$. This corresponds to Curve A.
+3. Exponential Model (Cooling): $T(t) = T_a + (T_0 - T_a)e^{-kt}$, where $T_a$ is the ambient temperature. Since the cooling rate slows down as the temperature approaches ambient, the function is concave down ($T''(t) < 0$). This is characteristic of exponential decay. This corresponds to Curve B.
+
+Step 4: Step-by-Step Calculation (Verification and Analysis)
+
+Part (a): Identification based on shape characteristics.
+Linear $\rightarrow$ Curve C (Straight line, constant slope).
+Quadratic $\rightarrow$ Curve A (Parabolic shape, here concave up for the range shown).
+Exponential $\rightarrow$ Curve B (Decaying curve that flattens out, concave down, characteristic of cooling).
+
+Verification using the data points for confirmation of slopes/rates:
+Data: (0, 200), (40, 140), (80, 100), (120, 75).
+
+Rate of change (Slope approximation):
+Interval 1 (0 to 40): $(140 - 200) / 40 = -60 / 40 = -1.5$
+Interval 2 (40 to 80): $(100 - 140) / 40 = -40 / 40 = -1.0$
+Interval 3 (80 to 120): $(75 - 100) / 40 = -25 / 40 = -0.625$
+
+Since the rate of change is decreasing (from -1.5 to -1.0 to -0.625), the function must be concave down. This rules out a purely linear model (C) and a simple upward-opening quadratic model (A) over this range, confirming the exponential model (B) is the expected physical fit.
+
+Part (b): Best Fit Analysis for $0 \leq t \leq 250$.
+
+Best Fit: The physical process of cooling towards an ambient temperature is accurately modeled by exponential decay (Newton's Law of Cooling). Therefore, Model B is expected to be the best fit.
+
+Checking the fit for the data points:
+At $t=120$, the data point is $T=75$.
+Visually inspecting the graph at $t=120$:
+Curve B seems to pass very close to (120, 75).
+Curve C (Linear) passes significantly below 75 (it seems to cross the x-axis near $t=200$, suggesting a much steeper drop than observed between $t=80$ and $t=120$).
+Curve A passes significantly above 75.
+
+Why others do not fit well:
+1. Linear Model (C): A linear model implies a constant rate of cooling ($dT/dt = m$). The data clearly shows the cooling rate is slowing down (the temperature drops less in subsequent 40-second intervals), meaning the slope is increasing (becoming less negative). Thus, the straight line C cannot accurately represent the data over the entire observed range.
+2. Quadratic Model (A): The curve A shown is concave up, suggesting the rate of cooling is accelerating ($T''(t) > 0$). This would mean the material is cooling faster and faster, which contradicts the physical nature of cooling towards an ambient temperature. While a downward-opening quadratic ($a<0$) might fit the initial points better than the linear model, the curve drawn as A is U-shaped, suggesting it is unsuitable for standard cooling processes modeled over a long range. Furthermore, the visual fit of A to the point (120, 75) is poor (it is too high).
+
+Conclusion for (b): Model B (Exponential) is the best fit because physical cooling processes follow an exponential decay pattern where the rate of cooling decreases as the temperature difference with the surroundings decreases. Models A and C fail because they predict either an accelerating rate of cooling (A, as graphed) or a constant rate of cooling (C), neither of which matches the observed data trend of decreasing cooling rates.
+
+Step 5: Final Answer
+
+(a) Identification of Models:
+Linear Model corresponds to Graph C (straight line).
+Quadratic Model corresponds to Graph A (parabolic shape).
+Exponential Model corresponds to Graph B (decaying curve that flattens).
+
+(b) Best Model and Explanation:
+Model B, the exponential model, best describes the temperature of the sample for the range $0 \leq t \leq 250$.
+
+Explanation:
+Cooling processes generally follow an exponential decay, where the rate of cooling is proportional to the difference between the object's temperature and the ambient temperature (Newton's Law of Cooling). This results in a curve that is concave down, meaning the rate of temperature drop slows as time progresses.
+Graph B exhibits this characteristic decay, fitting the data points observed (e.g., passing close to (120, 75)).
+Graph C (Linear) implies a constant rate of cooling, which the data contradicts, as the temperature drops less between $t=80$ and $t=120$ than between $t=0$ and $t=40$.
+Graph A (Quadratic, as drawn) is concave up, suggesting the rate of cooling is accelerating, which is physically unrealistic for cooling toward room temperature. Furthermore, it visibly misses the data point at $t=120$ by being too high.",2357,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
+Chapter 8_Q3.png,(a) T = ?(6.5 × 10?3) x + 30,,Mathematical Modeling,English,yes,3,"Step 0: Principle Abstraction
+The problem involves modeling a physical relationship where one quantity (temperature) changes at a constant rate with respect to another quantity (altitude). This relationship describes a linear function, often referred to in meteorology as the lapse rate. The required output is an equation representing this linear relationship, which takes the general form $y = mx + c$.
+
+Step 1: Diagram Deconstruction
+The context provides several key data points that define the relationship between altitude ($x$, in meters, $m$) and temperature ($T$, in degrees Celsius, $^\circ C$).
+
+1.  Initial condition (Y-intercept): At altitude $x = 0$ m (sea level), the temperature $T = 30^\circ C$. This gives the point $(x_0, T_0) = (0, 30)$.
+2.  Rate of change (Slope information): The average rate of temperature change in the troposphere is $6.5^\circ C$ decrease per $1000$ m increase in altitude.
+3.  Verification points (These points are provided but the governing equation should be derived from the constant rate):
+    *   At $x = 1000$ m, $T = 23.5^\circ C$.
+    *   At $x = 2000$ m, $T = 17^\circ C$.
+    *   At $x = 3000$ m, $T = 10.5^\circ C$.
+
+The graph itself is a cross-section of Mount Kinabalu, showing actual measured temperatures which are *not* strictly linear, but the question specifically asks for an equation based on the *average rate* given ($6.5^\circ C$ per $1000$ m) and the sea level temperature, implying the required model is the standard linear approximation for the troposphere.
+
+Step 2: Question Interpretation
+The goal is to write an equation that expresses the temperature, $T$ ($^\circ C$), as a function of the altitude, $x$ ($m$), using the specified constant rate of change. This is finding the equation of a straight line $T = mx + c$.
+
+Step 3: Mathematical Formulation
+The general linear equation is $T = mx + c$, where:
+*   $T$ is the dependent variable (Temperature).
+*   $x$ is the independent variable (Altitude in meters).
+*   $c$ is the T-intercept (Temperature at $x=0$).
+*   $m$ is the slope (Rate of temperature change per meter).
+
+From Step 1:
+1.  The initial temperature (T-intercept) is $c = 30$.
+2.  The rate of change is a decrease of $6.5^\circ C$ for every $1000$ m increase.
+    Slope $m = \frac{\text{Change in Temperature}}{\text{Change in Altitude}} = \frac{-6.5^\circ C}{1000 \text{ m}}$.
+
+Calculate the slope $m$:
+$m = -\frac{6.5}{1000}$
+
+Step 4: Step-by-Step Calculation
+1. Calculate the slope $m$:
+$m = -\frac{6.5}{1000} = -0.0065$ (This is the temperature drop per single meter increase in altitude).
+
+2. Substitute the slope $m$ and the intercept $c$ into the linear equation $T = mx + c$:
+$T = (-0.0065)x + 30$
+
+3. (Verification using provided points, optional but recommended to show consistency):
+If $x = 1000$ m:
+$T = -0.0065(1000) + 30 = -6.5 + 30 = 23.5^\circ C$. (Matches the provided data: $1000\text{ m} = 23.5^\circ C$)
+
+If $x = 2000$ m:
+$T = -0.0065(2000) + 30 = -13 + 30 = 17^\circ C$. (Matches the provided data: $2000\text{ m} = 17^\circ C$)
+
+If $x = 3000$ m:
+$T = -0.0065(3000) + 30 = -19.5 + 30 = 10.5^\circ C$. (Matches the provided data: $3000\text{ m} = 10.5^\circ C$)
+
+The equation derived from the stated average rate and initial condition accurately models the provided sample points, confirming this is the intended linear model.
+
+Step 5: Final Answer
+The equation that expresses the temperature, $T^\circ C$, as a function of the altitude, $x$ m, based on the average atmospheric lapse rate is:
+
+$T = -0.0065x + 30$",1741,SUCCESS,gemini-2.5-flash-lite-preview-09-2025
