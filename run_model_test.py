@@ -9,18 +9,25 @@ from pydantic_ai import Agent, BinaryContent
 load_dotenv()
 
 SYSTEM_PROMPT = """
-You are an expert mathematician. Analyze the provided image and question to arrive at a solution. Follow these steps precisely in your response:
-Step 1: Diagram Deconstruction.
-Identify the type of mathematical diagram (e.g., 'Linear inequality graph,' 'Venn diagram,' 'Histogram').
-Extract all key features directly from the diagram. For a graph, list the equations of the lines, intercepts, and labeled points. For a chart, extract the data points. For a network, list the nodes and edges with their weights.
-Step 2: Question Interpretation.
-State the explicit goal of the question. What specific value or statement needs to be produced?
-Step 3: Mathematical Formulation.
-Based on the deconstructed diagram from Step 1 and the question from Step 2, formulate the necessary mathematical equations, inequalities, or logical statements.
-Step 4: Step-by-Step Calculation.
-Solve the formulation from Step 3. Show every step of your calculation.
-Step 5: Final Answer.
-State the final answer clearly, ensuring it directly addresses the question.
+You are an expert mathematician. Before analyzing the image, begin with a principle-first approach to ensure accurate reasoning. Follow these steps precisely:
+
+Step 0: Principle Abstraction
+Identify the general mathematical concept involved, independent of the image. Ask: “What high-level principle, law, or category applies to this problem?” Examples include: “system of linear inequalities,” “quadratic optimization,” “conditional probability,” or “triangle congruence.” Do not reference visual elements yet.
+
+Step 1: Diagram Deconstruction
+Now, analyze the provided image. Identify the type of mathematical diagram (e.g., 'Linear inequality graph,' 'Venn diagram,' 'Histogram'). Extract all key features: for graphs, list equations of lines, intercepts, and labeled points; for charts, extract data points; for networks, list nodes, edges, and weights. Ensure all extracted elements align with the principle identified in Step 0.
+
+Step 2: Question Interpretation
+State the explicit goal of the question. What specific value, expression, or statement is required? Link it to the abstracted principle and diagram features.
+
+Step 3: Mathematical Formulation
+Using the principle from Step 0 and the extracted features from Step 1, formulate the necessary equations, inequalities, or logical statements. Ensure consistency between the high-level concept and the specific instance.
+
+Step 4: Step-by-Step Calculation
+Solve the formulation from Step 3. Show every computational or logical step. For numerical operations, use exact arithmetic or symbolic simplification.
+
+Step 5: Final Answer
+State the final answer clearly, ensuring it directly addresses the question. Box the result if applicable.
 """
 
 USER_PROMPT = "Solve the following question i want you to first analayze the questions then start solving make sure your answer is complete, dont answer in markdown"
@@ -116,14 +123,15 @@ async def main(form_level: str):
 
     input_csv = os.path.join(questions_dir, f"test_questions_mathform{form_level}.csv")
     img_folder = os.path.join(questions_dir, "Soalan maths", f"form {form_level}")
-    output_csv = os.path.join(questions_dir, "gpt-5-mini", f"test_results_form{form_level}_flash-lite.csv")
+    output_csv = os.path.join(questions_dir, "gpt-5-mini", f"test_results_form{form_level}_gpt5mini.csv")
     model_name = "gpt-5-mini"
 
     if not os.path.exists(input_csv):
         raise FileNotFoundError(f"Input CSV not found: {input_csv}")
     if not os.path.exists(img_folder):
         raise FileNotFoundError(f"Image folder not found: {img_folder}")
-
+    if not os.path.exists(output_csv):
+        os.makedirs(os.path.dirname(output_csv), exist_ok=True)
     results_df = await process_test_images(input_csv, img_folder, output_csv, model_name)
 
     print("\nFirst 3 results:")
