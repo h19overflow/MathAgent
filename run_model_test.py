@@ -29,7 +29,6 @@ USER_PROMPT = "Solve the following question i want you to first analayze the que
 def initialize_agent(model_name: str) -> Agent:
     return Agent(model_name, system_prompt=SYSTEM_PROMPT)
 
-
 async def get_answer_from_image(agent: Agent, image_path: str) -> tuple[str, int]:
     try:
         with open(image_path, 'rb') as f:
@@ -42,13 +41,14 @@ async def get_answer_from_image(agent: Agent, image_path: str) -> tuple[str, int
 
         answer = result.output
         tokens = 0
-        if hasattr(result, 'usage') and result.usage:
-            if isinstance(result.usage, dict):
-                tokens = result.usage.get('total_tokens', 0)
-            else:
-                tokens = getattr(result.usage, 'total_tokens', 0)
+
+        # Correct way: Call .usage() method
+        if hasattr(result, 'usage'):
+            usage = result.usage()  # This returns RunUsage(input_tokens=int, output_tokens=int, requests=int)
+            tokens = usage.input_tokens + usage.output_tokens
 
         return answer, tokens
+
     except Exception as e:
         return f"Error: {e}", 0
 
@@ -111,11 +111,12 @@ async def process_test_images(input_csv: str, img_folder: str, output_csv: str, 
 
 
 async def main(form_level: str):
-    base_dir = r"C:\Users\Adonis\OneDrive\Desktop\DataScience\evaluation\QAs"
+    base_dir = os.getcwd()
+    questions_dir = f"{base_dir}\QAs"
 
-    input_csv = os.path.join(base_dir, f"test_questions_mathform{form_level}.csv")
-    img_folder = os.path.join(base_dir, "Soalan maths", f"form {form_level}")
-    output_csv = os.path.join(base_dir, "gpt-5-mini", f"test_results_form{form_level}_flash-lite.csv")
+    input_csv = os.path.join(questions_dir, f"test_questions_mathform{form_level}.csv")
+    img_folder = os.path.join(questions_dir, "Soalan maths", f"form {form_level}")
+    output_csv = os.path.join(questions_dir, "gpt-5-mini", f"test_results_form{form_level}_flash-lite.csv")
     model_name = "gpt-5-mini"
 
     if not os.path.exists(input_csv):
