@@ -116,31 +116,30 @@ async def process_test_images(input_csv: str, img_folder: str, output_csv: str, 
 
     return df
 
-
 async def main(form_level: str):
     base_dir = os.getcwd()
-    questions_dir = f"{base_dir}\QAs"
-
+    questions_dir = os.path.join(base_dir, "QAs")
+    model_name = "gpt-5-mini"
     input_csv = os.path.join(questions_dir, f"test_questions_mathform{form_level}.csv")
     img_folder = os.path.join(questions_dir, "Soalan maths", f"form {form_level}")
-    output_csv = os.path.join(questions_dir, "gpt-5-mini", f"test_results_form{form_level}_gpt5mini.csv")
-    model_name = "gpt-5-mini"
+    output_dir = os.path.join(questions_dir, model_name)  # Removed invalid { }
+    output_csv = os.path.join(output_dir, f"test_results_form{form_level}_{model_name}_COT+StepBack.csv")
 
     if not os.path.exists(input_csv):
         raise FileNotFoundError(f"Input CSV not found: {input_csv}")
     if not os.path.exists(img_folder):
         raise FileNotFoundError(f"Image folder not found: {img_folder}")
-    if not os.path.exists(output_csv):
-        os.makedirs(os.path.dirname(output_csv), exist_ok=True)
+    
+    # Ensure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+    
     results_df = await process_test_images(input_csv, img_folder, output_csv, model_name)
 
     print("\nFirst 3 results:")
     print(results_df[['image_filename', 'ground_truth', 'llm_answer', 'status']].head(3))
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--form", type=str, required=True, choices=["4", "5"], help="Form level: 4 or 5")
-
     args = parser.parse_args()
     asyncio.run(main(args.form))
