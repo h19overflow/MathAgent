@@ -1,0 +1,2841 @@
+filename,ground_truth_answer,generated_answer,similarity,correctness_time,ai_marks,allocated_marks,marking_explanation,marking_time,marking_scheme,chapter_name,language,model_used,token_used
+Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0,"This problem requires finding the area function for a rectangle and then setting up a quadratic equation based on a given area constraint.
+
+## Solving Process
+
+### Step 1: Problem Understanding
+The goal is twofold:
+(a) Write a function $A(x)$ for the area of a rectangular piece of land given its length $L = (x + 20) \text{ m}$ and width $W = (x + 5) \text{ m}$.
+(b) Write a quadratic equation in the form $ax^2 + bx + c = 0$ when the area $A = 250 \text{ m}^2$.
+
+### Step 2: Mathematical Formulation
+
+**Part (a): Area Function**
+The area $A$ of a rectangle is calculated by $A = L \times W$.
+$$A(x) = (x + 20)(x + 5)$$
+
+**Part (b): Quadratic Equation**
+We set $A(x) = 250$ and expand the expression to fit the required form $ax^2 + bx + c = 0$.
+$$(x + 20)(x + 5) = 250$$
+
+### Step 3: Solution Execution
+
+**Part (a): Write a function for the area, $A \text{ m}^2$, of the land.**
+
+We expand the expression derived in Step 2:
+$$A(x) = (x + 20)(x + 5)$$
+Using the FOIL method (First, Outer, Inner, Last):
+$$A(x) = (x \cdot x) + (x \cdot 5) + (20 \cdot x) + (20 \cdot 5)$$
+$$A(x) = x^2 + 5x + 20x + 100$$
+Combine like terms:
+$$A(x) = x^2 + 25x + 100$$
+
+**Part (b): If the area of the land is $250 \text{ m}^2$, write a quadratic equation in terms of $x$. Give your answer in the form of $ax^2 + bx + c = 0$.**
+
+Set the area function equal to 250:
+$$x^2 + 25x + 100 = 250$$
+
+To transform this into the form $ax^2 + bx + c = 0$, we subtract 250 from both sides:
+$$x^2 + 25x + 100 - 250 = 0$$
+$$x^2 + 25x - 150 = 0$$
+
+This equation is in the required form, where $a=1$, $b=25$, and $c=-150$.
+
+### Step 4: Final Answer
+
+**(a) The function for the area, $A \text{ m}^2$, of the land is:**
+$$A = x^2 + 25x + 100$$
+
+**(b) The quadratic equation when the area is $250 \text{ m}^2$, in the form $ax^2 + bx + c = 0$, is:**
+$$x^2 + 25x - 150 = 0$$",correct,25.05583930015564,4,4,"Full marks (4/4). The AI's answers exactly match the ground truth: (a) A(x) = x^2 + 25x + 100, and (b) x^2 + 25x - 150 = 0. The solution shows correct expansion of (x+20)(x+5), correctly sets A(x)=250 and rearranges to the required quadratic form. The working is mathematically correct and complete, so per the provided marking scheme it receives full credit.",7.452028036117554,,"Quadratic Functions and Equations in
+One Variable",English,gemini-2.5-flash-lite-preview-09-2025,9229
+Chapter 1_Q2.png,"(a) A(0, –5)     (b) x = 3
+(c) B(6, –5)     (d) (3, 4)","This problem requires analyzing the given quadratic function $f(x) = -x^2 + 6x - 5$ to find specific points and lines associated with its graph.
+
+The function is $f(x) = -x^2 + 6x - 5$. This is a quadratic function of the form $f(x) = ax^2 + bx + c$, where $a=-1$, $b=6$, and $c=-5$. Since $a<0$, the parabola opens downwards and has a maximum point.
+
+---
+
+### Step 1: Problem Understanding
+We need to find:
+(a) Coordinates of point $A$.
+(b) Equation of the axis of symmetry.
+(c) Coordinates of point $B$.
+(d) Coordinates of the maximum point $P$.
+
+Constraints:
+1. Function is $f(x) = -x^2 + 6x - 5$.
+2. Line $AB$ is horizontal ($y_A = y_B$).
+3. Point $A$ lies on the $y$-axis ($x_A = 0$) and on the graph/line segment $AB$. (Note: Based on standard representation where $A$ is the y-intercept when $AB$ is drawn horizontally originating from the y-axis, we assume $A$ is the y-intercept of the function unless constrained otherwise. The visual data states $A$ lies on the $f(x)$ axis, meaning $x_A=0$).
+
+---
+
+### Step 2: Mathematical Formulation and Solution Execution
+
+#### (a) Determine the coordinates of point $A$
+
+Point $A$ lies on the $y$-axis, so its x-coordinate is $x_A = 0$. Since $A$ is on the graph of $f(x)$:
+$$y_A = f(0)$$
+$$y_A = -(0)^2 + 6(0) - 5$$
+$$y_A = -5$$
+The coordinates of point $A$ are $(0, -5)$.
+
+**Result for (a): $A = (0, -5)$**
+
+#### (b) Determine the equation of the axis of symmetry
+
+The axis of symmetry for a quadratic function $f(x) = ax^2 + bx + c$ is given by the formula $x = -\frac{b}{2a}$.
+Here, $a = -1$ and $b = 6$.
+$$x = -\frac{6}{2(-1)}$$
+$$x = -\frac{6}{-2}$$
+$$x = 3$$
+The equation of the axis of symmetry is $x=3$.
+
+**Result for (b): $x = 3$**
+
+#### (d) Determine the coordinates of the maximum point $P$
+
+The maximum point $P$ (the vertex) lies on the axis of symmetry, so $x_P = 3$. We find $y_P$ by evaluating $f(3)$:
+$$y_P = f(3) = -(3)^2 + 6(3) - 5$$
+$$y_P = -9 + 18 - 5$$
+$$y_P = 9 - 5$$
+$$y_P = 4$$
+The coordinates of the maximum point $P$ are $(3, 4)$.
+
+**Result for (d): $P = (3, 4)$**
+
+*(Note: We solve (d) before (c) because (c) depends on the relationship established by the horizontal line $AB$. It is often easier to establish the line height using the vertex or intercepts, and since we need $B$ later, it makes sense to determine the defining properties of the line $AB$. Since $A$ is the y-intercept, we determine its height, $y_A = -5$. However, in many textbook problems involving a horizontal line $AB$ intersecting a parabola, $A$ and $B$ are symmetric about the axis of symmetry, and $A$ is often intended to be the point on the y-axis, which we found. We must now use the constraint that $AB$ is parallel to the $x$-axis.)*
+
+Since line $AB$ is parallel to the $x$-axis, $y_A = y_B$.
+From part (a), $y_A = -5$.
+Therefore, $y_B = -5$.
+
+**Important Re-evaluation based on standard setup:**
+If the line segment $AB$ connects two points on the parabola, $A$ and $B$, such that $AB$ is horizontal, then $A$ and $B$ must be symmetric with respect to the axis of symmetry $x=3$.
+If $A=(0, -5)$ is one endpoint, and it lies on the parabola:
+$f(0) = -5$. This is consistent.
+
+If $B=(x_B, y_B)$ is the other endpoint and $y_B = y_A = -5$, then $B$ must also satisfy $f(x_B) = -5$.
+$$-x_B^2 + 6x_B - 5 = -5$$
+$$-x_B^2 + 6x_B = 0$$
+Factor out $x_B$:
+$$x_B (-x_B + 6) = 0$$
+This yields two solutions: $x_B = 0$ or $-x_B + 6 = 0 \implies x_B = 6$.
+The solution $x_B = 0$ corresponds to point $A$.
+The solution $x_B = 6$ corresponds to point $B$.
+
+Thus, $B = (6, -5)$.
+
+*(Self-Check: The x-coordinate of $B$ (6) is symmetric to the x-coordinate of $A$ (0) around the axis of symmetry $x=3$, since $\frac{0+6}{2} = 3$. This confirms the result.)*
+
+**Result for (c): $B = (6, -5)$**
+
+---
+
+### Step 4: Final Answer Summary
+
+(a) The coordinates of point $A$:
+$$A = (0, -5)$$
+
+(b) The equation of the axis of symmetry:
+$$x = 3$$
+
+(c) The coordinates of point $B$:
+$$B = (6, -5)$$
+
+(d) The coordinates of the maximum point $P$:
+$$P = (3, 4)$$",correct,3.535435438156128,6,6,"Full marks (6) awarded. The AI's solution correctly and clearly computes all required parts: (a) A(0, -5) via f(0); (b) axis x = -b/(2a) = 3; (c) B(6, -5) by solving f(x) = -5 giving x = 0 or 6 (0 is A, so B is 6); (d) vertex P(3,4) via f(3). The final answers match the ground truth exactly and the working is mathematically correct, so no marks are deducted per the provided marking scheme.",8.291755199432373,,"Quadratic Functions and Equations in
+One Variable",English,gemini-2.5-flash-lite-preview-09-2025,13773
+Chapter 1_Q3.png,20 cm,"Here is the step-by-step solution to the problem based on the provided structured data.
+
+## Step 1: Problem Understanding
+The goal is to find the difference in perimeter between an isosceles triangle and a square, given algebraic expressions for their dimensions and a relationship between their areas.
+
+**Shapes and Dimensions:**
+1.  **Isosceles Triangle (T):** Base $b_T = 4y$, Height $h_T = y+5$.
+2.  **Square (S):** Side length $s_S = y$.
+
+**Constraint:**
+Area of Triangle ($A_T$) = Area of Square ($A_S$) + 39.
+
+**Required Output:** $|P_T - P_S|$ (The difference in perimeter).
+
+## Step 2: Mathematical Formulation
+
+### A. Area Formulas and Constraint Application
+
+1.  **Area of Triangle ($A_T$):**
+    $$A_T = \frac{1}{2} \times \text{base} \times \text{height}$$
+    $$A_T = \frac{1}{2} (4y)(y+5)$$
+    $$A_T = 2y(y+5)$$
+    $$A_T = 2y^2 + 10y$$
+
+2.  **Area of Square ($A_S$):**
+    $$A_S = \text{side}^2$$
+    $$A_S = y^2$$
+
+3.  **Applying the Area Constraint:** $A_T = A_S + 39$
+    $$2y^2 + 10y = y^2 + 39$$
+
+### B. Solving for $y$
+
+We rearrange the area equation to form a standard quadratic equation:
+$$2y^2 - y^2 + 10y - 39 = 0$$
+$$y^2 + 10y - 39 = 0$$
+
+We solve this quadratic equation by factoring. We look for two numbers that multiply to $-39$ and add up to $+10$. These numbers are $+13$ and $-3$.
+$$(y + 13)(y - 3) = 0$$
+This yields two potential solutions for $y$:
+$$y = -13 \quad \text{or} \quad y = 3$$
+
+Since $y$ represents a physical length (the side of the square and a component of the triangle's base and height), $y$ must be positive.
+Therefore, $y = 3$ cm.
+
+### C. Perimeter Formulas
+
+1.  **Perimeter of Square ($P_S$):**
+    $$P_S = 4s_S$$
+    $$P_S = 4y$$
+
+2.  **Perimeter of Triangle ($P_T$):**
+    We need the length of the equal sides ($s$). In an isosceles triangle, the height divides the base into two equal segments, $4y/2 = 2y$. Using the Pythagorean theorem on one of the right triangles formed by the height:
+    $$s^2 = h_T^2 + (\text{half base})^2$$
+    $$s^2 = (y+5)^2 + (2y)^2$$
+    $$s = \sqrt{(y+5)^2 + 4y^2}$$
+    $$P_T = \text{Base} + 2s$$
+    $$P_T = 4y + 2\sqrt{(y+5)^2 + 4y^2}$$
+
+## Step 3: Solution Execution (Calculating Dimensions and Perimeters)
+
+We use the determined value $y=3$ cm.
+
+### A. Calculate Dimensions using $y=3$
+
+1.  **Square Dimensions:**
+    Side length $s_S = y = 3$ cm.
+
+2.  **Triangle Dimensions:**
+    Base $b_T = 4y = 4(3) = 12$ cm.
+    Height $h_T = y+5 = 3+5 = 8$ cm.
+
+**(Self-Check on Areas):**
+$A_S = 3^2 = 9 \text{ cm}^2$.
+$A_T = \frac{1}{2}(12)(8) = 48 \text{ cm}^2$.
+Check constraint: $48 = 9 + 39$. (Constraint is satisfied.)
+
+### B. Calculate Perimeters
+
+1.  **Perimeter of Square ($P_S$):**
+    $$P_S = 4y = 4(3) = 12 \text{ cm}$$
+
+2.  **Perimeter of Triangle ($P_T$):**
+    First, find the length of the equal sides ($s$):
+    $$s^2 = h_T^2 + (\text{half base})^2$$
+    Half base $= 12 / 2 = 6$ cm.
+    $$s^2 = (8)^2 + (6)^2$$
+    $$s^2 = 64 + 36$$
+    $$s^2 = 100$$
+    $$s = 10 \text{ cm}$$
+
+    $$P_T = \text{Base} + 2s$$
+    $$P_T = 12 + 2(10)$$
+    $$P_T = 12 + 20$$
+    $$P_T = 32 \text{ cm}$$
+
+### C. Calculate the Difference in Perimeter
+
+The question asks for the difference in perimeter:
+$$\text{Difference} = |P_T - P_S|$$
+$$\text{Difference} = |32 - 12|$$
+$$\text{Difference} = 20 \text{ cm}$$
+
+## Step 4: Final Answer
+The difference in perimeter between the two shapes is $20 \text{ cm}$.",correct,3.1385934352874756,5,5,"The AI's final answer (20 cm) matches the ground truth. The solution correctly sets up areas (triangle = 1/2 * base * height, square = side^2), forms and solves the quadratic 2y^2+10y = y^2+39, selects the positive root y=3, computes perimeters (square 12 cm, triangle 32 cm using Pythagoras for the equal sides), and finds the absolute difference |32-12| = 20 cm. There are no algebraic or arithmetic errors, so per the provided marking instruction it receives full marks (5).",7.973602533340454,,"Quadratic Functions and Equations in
+One Variable",English,gemini-2.5-flash-lite-preview-09-2025,12986
+Chapter 2_Q1.png,"(a) 234
+(b) 234, 336
+(c) 234, 336, 673
+(d) 234, 336, 673, 281","This is a number base identification problem based on digit constraints.
+
+## Step 1: Problem Understanding
+The goal is to check each of the four given numbers (assumed to be written in Base 10 for digit analysis) against the constraints for representation in Base 5, Base 7, Base 8, and Base 9.
+
+**Numbers to test (Base 10 representation):**
+1. $N_1 = 234$
+2. $N_2 = 673$
+3. $N_3 = 336$
+4. $N_4 = 281$
+
+**Constraint:** A number is valid in Base $b$ if and only if every digit $d$ in the number satisfies $d < b$.
+
+## Step 2: Mathematical Formulation
+
+First, we determine the maximum digit present in each number:
+
+| Number | Digits | Maximum Digit ($d_{max}$) |
+| :---: | :---: | :---: |
+| $N_1 = 234$ | {2, 3, 4} | 4 |
+| $N_2 = 673$ | {6, 7, 3} | 7 |
+| $N_3 = 336$ | {3, 3, 6} | 6 |
+| $N_4 = 281$ | {2, 8, 1} | 8 |
+
+We will test these $d_{max}$ values against the required bases: $b=5, b=7, b=8, b=9$.
+
+## Step 3: Solution Execution
+
+We will systematically check each requirement (a) through (d).
+
+### (a) Base five ($b=5$)
+Constraint: $d_{max} < 5$.
+
+| Number | $d_{max}$ | Constraint ($d_{max} < 5$) | Valid? |
+| :---: | :---: | :---: | :---: |
+| $N_1 = 234$ | 4 | $4 < 5$ (True) | Yes |
+| $N_2 = 673$ | 7 | $7 < 5$ (False) | No |
+| $N_3 = 336$ | 6 | $6 < 5$ (False) | No |
+| $N_4 = 281$ | 8 | $8 < 5$ (False) | No |
+
+**Numbers in Base five:** 234
+
+---
+
+### (b) Base seven ($b=7$)
+Constraint: $d_{max} < 7$.
+
+| Number | $d_{max}$ | Constraint ($d_{max} < 7$) | Valid? |
+| :---: | :---: | :---: | :---: |
+| $N_1 = 234$ | 4 | $4 < 7$ (True) | Yes |
+| $N_2 = 673$ | 7 | $7 < 7$ (False) | No |
+| $N_3 = 336$ | 6 | $6 < 7$ (True) | Yes |
+| $N_4 = 281$ | 8 | $8 < 7$ (False) | No |
+
+**Numbers in Base seven:** 234, 336
+
+---
+
+### (c) Base eight ($b=8$)
+Constraint: $d_{max} < 8$.
+
+| Number | $d_{max}$ | Constraint ($d_{max} < 8$) | Valid? |
+| :---: | :---: | :---: | :---: |
+| $N_1 = 234$ | 4 | $4 < 8$ (True) | Yes |
+| $N_2 = 673$ | 7 | $7 < 8$ (True) | Yes |
+| $N_3 = 336$ | 6 | $6 < 8$ (True) | Yes |
+| $N_4 = 281$ | 8 | $8 < 8$ (False) | No |
+
+**Numbers in Base eight:** 234, 673, 336
+
+---
+
+### (d) Base nine ($b=9$)
+Constraint: $d_{max} < 9$.
+
+| Number | $d_{max}$ | Constraint ($d_{max} < 9$) | Valid? |
+| :---: | :---: | :---: | :---: |
+| $N_1 = 234$ | 4 | $4 < 9$ (True) | Yes |
+| $N_2 = 673$ | 7 | $7 < 9$ (True) | Yes |
+| $N_3 = 336$ | 6 | $6 < 9$ (True) | Yes |
+| $N_4 = 281$ | 8 | $8 < 9$ (True) | Yes |
+
+**Numbers in Base nine:** 234, 673, 336, 281
+
+## Step 4: Final Answer
+
+The numbers from the list $\{234, 673, 336, 281\}$ that are valid in the specified bases are:
+
+(a) **Base five:** 234
+(b) **Base seven:** 234, 336
+(c) **Base eight:** 234, 673, 336
+(d) **Base nine:** 234, 673, 336, 281",correct,4.1722893714904785,4,4,"Full marks (4) awarded. The AI correctly applied the rule that each digit must be less than the base, computed the maximum digit for each number, and identified the valid numbers for bases 5, 7, 8, and 9. Its final sets for (a)–(d) match the ground truth (minor ordering differences do not affect correctness). This meets the provided marking scheme: exact match → full mark.",8.112030267715454,,Number Bases,English,gemini-2.5-flash-lite-preview-09-2025,4715
+Chapter 2_Q2.png,132 based 5,"Here is the step-by-step solution to the problem.
+
+### Step 1: Problem Understanding
+
+**What needs to be found:** The average number of visitors to Zoo Negara per day in January, expressed in base five.
+
+**Required Calculation:** Average Daily Visitors = $\frac{\text{Total Visitors}}{\text{Number of Days in January}}$
+
+**Identified Data & Constraints:**
+1. Total Visitors ($N$): $20202_5$
+2. Number of Days in January ($D$): 31 days (contextual constraint).
+3. Final Answer Format: Base five.
+
+**Non-standard Requirement Check:** Since the input total is in base five and the output must be in base five, we must perform the division using base five arithmetic, or convert all numbers to a common base (usually base 10), calculate the result, and then convert the result back to base five. Given the nature of division in non-standard bases, converting to base 10 for the calculation is the most robust method, followed by converting the result back to base 5.
+
+### Step 2: Mathematical Formulation
+
+#### A. Convert Total Visitors ($N$) from Base Five to Base Ten
+$$N_{10} = (20202)_5 = 2 \cdot 5^4 + 0 \cdot 5^3 + 2 \cdot 5^2 + 0 \cdot 5^1 + 2 \cdot 5^0$$
+$$N_{10} = 2 \cdot 625 + 0 + 2 \cdot 25 + 0 + 2 \cdot 1$$
+$$N_{10} = 1250 + 50 + 2$$
+$$N_{10} = 1302_{10}$$
+
+#### B. Determine the Number of Days ($D$) in Base Ten
+The context states January has 31 days.
+$$D_{10} = 31_{10}$$
+
+#### C. Calculate the Average ($\bar{V}$) in Base Ten
+$$\bar{V}_{10} = \frac{N_{10}}{D_{10}} = \frac{1302}{31}$$
+
+### Step 3: Solution Execution
+
+#### A. Perform Division in Base Ten
+We perform the division $1302 \div 31$:
+$$1302 \div 31$$
+
+We can estimate: $31 \times 40 = 1240$.
+$$1302 - 1240 = 62$$
+Now divide the remainder, 62, by 31:
+$$62 \div 31 = 2$$
+Total Quotient: $40 + 2 = 42$.
+
+$$\bar{V}_{10} = 42$$
+
+#### B. Convert the Average ($\bar{V}$) from Base Ten back to Base Five
+We convert $42_{10}$ to base five by repeated division by 5 and recording the remainders:
+
+1. $42 \div 5 = 8$ remainder $2$
+2. $8 \div 5 = 1$ remainder $3$
+3. $1 \div 5 = 0$ remainder $1$
+
+Reading the remainders from bottom to top:
+$$\bar{V}_5 = 132_5$$
+
+*(Self-Check: $132_5 = 1 \cdot 5^2 + 3 \cdot 5^1 + 2 \cdot 5^0 = 25 + 15 + 2 = 42_{10}$. This matches the base ten calculation.)*
+
+### Step 4: Final Answer
+
+The total number of visitors was $20202_5$. The number of days in January is 31. The average number of visitors per day in base five is $132_5$.
+
+The average number of visitors to Zoo Negara each day in January is $\mathbf{132_5}$.",correct,3.0249810218811035,4,4,"Full mark (4) awarded. The AI correctly converted 20202_5 to decimal (1302), divided by 31 to get 42, and converted 42 back to base five as 132_5. All calculations and the final answer match the ground truth (132 base 5) and comply with the provided marking instruction to give full marks for a matching answer.",9.699836492538452,,Number Bases,English,gemini-2.5-flash-lite-preview-09-2025,4026
+Chapter 2_Q3.png,1600 m^2,"This is a geometry problem involving the perimeter and area of a rectangle, with an initial step requiring base conversion.
+
+---
+
+### Step 1: Problem Understanding
+
+**Goal:** Calculate the area of the children's playground (the top-left right-angled triangle).
+
+**Given Information:**
+1. The playground is a rectangle with side lengths $L$ and $W$.
+2. The dimensions shown are $L = 80 \text{ m}$ and $W = x \text{ m}$ (where $L$ and $W$ are the length and width of the rectangle).
+3. The perimeter ($P$) of the entire rectangular playground is given in base 4: $P = 3300_4$ metres.
+4. The children's playground is one of the two right-angled triangles formed by the diagonal, sharing sides $L=80$ and $W=x$.
+
+**Constraints Check:**
+1. The shape is a rectangle. (Used for perimeter calculation $P=2L+2W$).
+2. Perimeter conversion from base 4 to base 10 is required.
+3. The area required is that of the right-angled triangle: $A_{\text{triangle}} = \frac{1}{2} \times \text{base} \times \text{height}$.
+
+### Step 2: Mathematical Formulation
+
+#### 2a. Convert the Perimeter to Base 10
+The perimeter $P = 3300_4$ must be converted to base 10:
+$$P_{10} = (3 \times 4^3) + (3 \times 4^2) + (0 \times 4^1) + (0 \times 4^0)$$
+$$P_{10} = (3 \times 64) + (3 \times 16) + 0 + 0$$
+$$P_{10} = 192 + 48$$
+$$P_{10} = 240 \text{ metres}$$
+
+#### 2b. Use the Perimeter Formula to Find the Unknown Side ($x$)
+The perimeter of a rectangle is $P = 2L + 2W$.
+We have $P = 240 \text{ m}$, $L = 80 \text{ m}$, and $W = x \text{ m}$.
+$$240 = 2(80) + 2(x)$$
+
+#### 2c. Formulate the Area Calculation
+The children's playground is a right-angled triangle with base $b = 80 \text{ m}$ and height $h = x \text{ m}$.
+$$A_{\text{children}} = \frac{1}{2} \times b \times h$$
+$$A_{\text{children}} = \frac{1}{2} \times 80 \times x$$
+
+### Step 3: Solution Execution
+
+#### 3a. Solve for $x$
+Using the perimeter equation:
+$$240 = 2(80) + 2x$$
+$$240 = 160 + 2x$$
+Subtract 160 from both sides:
+$$240 - 160 = 2x$$
+$$80 = 2x$$
+Divide by 2:
+$$x = 40 \text{ metres}$$
+
+The dimensions of the rectangular playground are $80 \text{ m}$ by $40 \text{ m}$.
+
+#### 3b. Calculate the Area of the Children's Playground
+Using the area formula for the triangle:
+$$A_{\text{children}} = \frac{1}{2} \times 80 \times x$$
+Substitute $x=40$:
+$$A_{\text{children}} = \frac{1}{2} \times 80 \times 40$$
+$$A_{\text{children}} = 40 \times 40$$
+$$A_{\text{children}} = 1600$$
+
+The area of the children's playground is $1600$ square metres.
+
+### Step 4: Final Answer
+
+The perimeter of the playground in base 10 is $240$ metres. The unknown side length $x$ is $40$ metres.
+
+The area of the children's playground (the colored section) is $\mathbf{1600 \text{ m}^2}$.",correct,3.1554057598114014,5,5,"Full mark awarded (5/5). The AI's solution correctly converts 3300_4 to 240 (base 10), applies the perimeter formula 240 = 2(80) + 2x to find x = 40 m, and correctly computes the area of the right-angled triangle as 1/2 * 80 * 40 = 1600 m^2, which matches the ground truth.",7.611160039901733,,Number Bases,English,gemini-2.5-flash-lite-preview-09-2025,11369
+Chapter 3_Q1.png,"a) P(8)	 = 28
+	 = 256   b) t = 11      ","This is an exponential growth problem modeled by the formula $P(t) = 2^t$. We must first correctly interpret what $P(t)$ represents based on the problem description and the questions asked.
+
+### Step 1: Problem Understanding
+We need to determine:
+(a) The number of *new cells produced* on the 8th day.
+(b) The day ($t$) when the number of *new cells produced* becomes 2,048.
+
+**Interpretation of $P(t) = 2^t$:**
+Let's analyze the growth description:
+*   **Start (Day 0):** 1 cell (Cell A).
+*   **Day 1:** Two new cells are produced. Total cells = $1 + 2 = 3$.
+*   **Day 2:** The existing cells (1 original + 2 produced on Day 1) divide. The prompt states: ""Every cell will produce two other cells on subsequent days."" This interpretation is complex.
+
+Let's rely on the provided formula $P(t) = 2^t$ and the visual data/context, which strongly suggests binary splitting.
+
+**Scenario A: $P(t)$ is the TOTAL number of cells after $t$ days.**
+If $P(t) = 2^t$:
+*   Day 0: $2^0 = 1$ cell (Cell A). (Matches)
+*   Day 1: $2^1 = 2$ cells. (Contradicts the text: ""On the first day, two new cells are produced,"" implying the total should be $1+2=3$, or perhaps $P(t)$ is the total *after* division on day $t$.)
+
+**Scenario B: $P(t)$ is the number of NEW cells produced ON day $t$.**
+*   Day 1: New cells = 2. If $P(t)=2^t$, then for $t=1$, $P(1)=2^1=2$. (Matches)
+*   Day 2: The cells present at the start of Day 2 divide. If the division pattern is that the number of new cells doubles each day, then New cells on Day 2 should be $2 \times 2 = 4$. If $P(t)=2^t$, then $P(2)=2^2=4$. (Matches the visual doubling pattern).
+
+**Conclusion:** Based on the provided formula $P(t)=2^t$ and how it aligns with the doubling pattern shown visually and described for Day 1, we conclude that $P(t)$ represents the **number of new cells produced on day $t$**.
+
+---
+### Step 2: Mathematical Formulation
+
+The function describing the number of new cells produced on day $t$ is:
+$$P(t) = 2^t$$
+
+---
+### Step 3: Solution Execution
+
+#### (a) How many new cells will be produced on the 8th day?
+
+We need to calculate $P(8)$ using the formula $P(t) = 2^t$.
+$$P(8) = 2^8$$
+
+Calculation:
+$$2^1 = 2$$
+$$2^2 = 4$$
+$$2^3 = 8$$
+$$2^4 = 16$$
+$$2^5 = 32$$
+$$2^6 = 64$$
+$$2^7 = 128$$
+$$P(8) = 2^8 = 256$$
+
+**Answer for (a):** 256 new cells will be produced on the 8th day.
+
+#### (b) On which day will the number of new cells become 2,048?
+
+We need to find the value of $t$ such that $P(t) = 2048$.
+$$2^t = 2048$$
+
+We must express 2048 as a power of 2. We continue the list from part (a):
+$$2^8 = 256$$
+$$2^9 = 256 \times 2 = 512$$
+$$2^{10} = 512 \times 2 = 1024$$
+$$2^{11} = 1024 \times 2 = 2048$$
+
+Therefore, $t = 11$.
+
+**Answer for (b):** The number of new cells will become 2,048 on the 11th day.
+
+---
+### Step 4: Final Answer
+
+(a) The number of new cells produced on the 8th day is $2^8 = 256$.
+(b) The day on which the number of new cells becomes 2,048 is the 11th day, since $2^{11} = 2048$.",correct,4.361604928970337,4,4,"The AI response gives P(8) = 256 and t = 11, which exactly matches the ground truth. Calculations are correct (2^8 = 256 and 2^11 = 2048) and the interpretation of P(t) as 'new cells produced on day t' is consistent with the provided formula. The provided marking instruction states to give full mark if the agent's answers match the ground truth; the maximum mark is 4, so the full score is awarded.",7.73190712928772,,Logical Reasoning,English,gemini-2.5-flash-lite-preview-09-2025,4862
+Chapter 3_Q2.png,"(a) 32(? + 2), 16(? + 2), 8(? + 2), 4(? + 2)
+(c) 1/4
+ (? + 2) cm","This problem involves analyzing the properties (perimeter) of a sequence of nested semicircles, where the radii likely form a geometric progression.
+
+### Step 1: Problem Understanding
+
+We need to find:
+(a) The perimeters of the first four semicircles ($n=0, 1, 2, 3$), given the largest radius is $R_0 = 32$ cm.
+(b) Show that the general formula for the perimeter is $P_n = 2^{6-n}(\pi + 2)$.
+(c) Calculate the perimeter of the $8^{\text{th}}$ semicircle. Based on the indexing $n=0, 1, 2, 3$ for the first four, the $8^{\text{th}}$ semicircle corresponds to $n=7$.
+
+**Key Geometric Information:** The perimeter ($P$) of a single semicircle with radius $R$ is the sum of the arc length ($\pi R$) and the diameter ($2R$).
+$$P = \pi R + 2R = R(\pi + 2)$$
+
+**Assumption based on standard patterns:** Since the radii are not explicitly given for the subsequent semicircles, we assume the radius of each subsequent semicircle is half the radius of the previous one.
+If $R_n$ is the radius corresponding to index $n$:
+$$R_{n+1} = \frac{1}{2} R_n$$
+
+### Step 2: Mathematical Formulation
+
+**Initial Radius (n=0):** $R_0 = 32 \text{ cm}$.
+
+**Radii Sequence:**
+$R_n = R_0 \cdot \left(\frac{1}{2}\right)^n = 32 \cdot 2^{-n} = 2^5 \cdot 2^{-n} = 2^{5-n}$ cm.
+
+**Perimeter Formula for index $n$:**
+$$P_n = R_n (\pi + 2)$$
+Substituting the expression for $R_n$:
+$$P_n = 2^{5-n} (\pi + 2)$$
+
+---
+*Self-Correction/Check against Part (b) target:* The target formula in part (b) is $P_n = 2^{6-n}(\pi + 2)$.
+Our derived formula is $P_n = 2^{5-n}(\pi + 2)$.
+There is a mismatch in the exponent ($5$ vs $6$). This implies that either:
+1. The initial radius $R_0=32$ corresponds to $n=1$ instead of $n=0$, OR
+2. The stated radius $R=32$ refers to a different element in the sequence, OR
+3. The indexing starts such that $R_0$ must be $64$ for the formula to hold perfectly, OR
+4. The problem intends $n=0$ to be the **second** semicircle, or the indexing in the target formula is based on a slightly different definition for the ""first four"" ($n=0, 1, 2, 3$).
+
+Let's re-evaluate the index assignment based on the target formula $P_n = 2^{6-n}(\pi + 2)$ and the constraint $R_0 = 32$ for the largest (Green, which we assigned $n=0$).
+
+If $n=0$ yields $R=32$:
+Target $P_0 = 2^{6-0}(\pi + 2) = 2^6(\pi + 2) = 64(\pi + 2)$.
+Required Radius $R'_0$: $R'_0(\pi + 2) = 64(\pi + 2) \implies R'_0 = 64 \text{ cm}$.
+
+Since the given radius is $32 \text{ cm}$, we must adjust the indexing assumption to match the required formula in part (b). If we assume the *sequence* $n=0, 1, 2, 3, \dots$ follows the required structure:
+
+If $P_n = 2^{6-n}(\pi + 2)$, then $R_n = 2^{6-n}$.
+$R_0 = 2^6 = 64$
+$R_1 = 2^5 = 32$
+$R_2 = 2^4 = 16$
+$R_3 = 2^3 = 8$
+
+Conclusion: The largest semicircle (Radius $32 \text{ cm}$) corresponds to the index $n=1$ in the general formula provided in part (b), not $n=0$ as initially assumed based on the phrasing ""first four semicircles... $n=0, 1, 2, 3, \dots$"". We must adhere to the index definition implied by the required generalization.
+
+**Revised Indexing based on Part (b) structure:**
+We assume the radii follow $R_n = 2^{6-n}$.
+The largest radius given, $R=32$, corresponds to $n=1$.
+Therefore, the four semicircles listed ($S_1, S_2, S_3, S_4$) correspond to indices $n=1, 2, 3, 4$.
+
+We will proceed by *calculating* the perimeters using $R=32$ for the largest one, and then use the results to *prove* the formula given in part (b) is correct, adjusting the indexing interpretation to fit the required structure.
+
+Let $R_{max} = 32$. Let $P_1$ be the perimeter of the largest semicircle.
+
+If the radii halve: $R_{k+1} = R_k / 2$.
+$R_1 = 32$
+$R_2 = 16$
+$R_3 = 8$
+$R_4 = 4$
+
+---
+
+### Step 3: Solution Execution
+
+#### (a) Calculate and list the perimeters of the four semicircles, in terms of $\pi$.
+
+Perimeter formula: $P = R(\pi + 2)$.
+
+1.  **Semicircle 1 ($R_1 = 32$):**
+    $$P_1 = 32(\pi + 2) = 32\pi + 64 \text{ cm}$$
+
+2.  **Semicircle 2 ($R_2 = 16$):**
+    $$P_2 = 16(\pi + 2) = 16\pi + 32 \text{ cm}$$
+
+3.  **Semicircle 3 ($R_3 = 8$):**
+    $$P_3 = 8(\pi + 2) = 8\pi + 16 \text{ cm}$$
+
+4.  **Semicircle 4 ($R_4 = 4$):**
+    $$P_4 = 4(\pi + 2) = 4\pi + 8 \text{ cm}$$
+
+**List of Perimeters (in terms of $\pi$):**
+$32(\pi + 2), 16(\pi + 2), 8(\pi + 2), 4(\pi + 2)$.
+
+#### (b) Show that the generalisation for the perimeters of the four semicircles is $P_n = 2^{6-n}(\pi + 2)$; $n = 0, 1, 2, 3, 4, \dots$
+
+We need to relate the calculated perimeters ($P_1, P_2, P_3, P_4$) to the formula $P_n = 2^{6-n}(\pi + 2)$.
+
+The sequence of calculated perimeters corresponds to $P_k = 2^{5-k} \cdot 2 (\pi + 2) = 2^{6-k} (\pi+2)$, if we index them starting from $k=1$ for the largest one.
+
+Let's test the index $n$ provided in the formula against our calculated sequence:
+
+| Semicircle Index ($k$) | Radius ($R_k$) | Calculated Perimeter ($P_k$) | Target Formula $P_n = 2^{6-n}(\pi + 2)$ | Required $n$ |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 (Largest) | $32 = 2^5$ | $32(\pi + 2)$ | $32(\pi + 2) \implies 2^{6-n} = 32 = 2^5 \implies 6-n=5$ | $n=1$ |
+| 2 | $16 = 2^4$ | $16(\pi + 2)$ | $16(\pi + 2) \implies 2^{6-n} = 16 = 2^4 \implies 6-n=4$ | $n=2$ |
+| 3 | $8 = 2^3$ | $8(\pi + 2)$ | $8(\pi + 2) \implies 2^{6-n} = 8 = 2^3 \implies 6-n=3$ | $n=3$ |
+| 4 | $4 = 2^2$ | $4(\pi + 2)$ | $4(\pi + 2) \implies 2^{6-n} = 4 = 2^2 \implies 6-n=2$ | $n=4$ |
+
+**Showing the Generalization:**
+1. The radii follow a geometric progression: $R_k = 32 \cdot (1/2)^{k-1} = 2^5 \cdot 2^{-(k-1)} = 2^{6-k}$. (Where $k=1, 2, 3, \dots$ is the physical ordering).
+2. The perimeter $P_k$ is $R_k(\pi + 2)$.
+$$P_k = 2^{6-k}(\pi + 2)$$
+3. If we map the physical ordering $k$ to the required formula index $n$ (i.e., $n=k$), the formula holds exactly for $n=1, 2, 3, 4$.
+
+Since the problem defines the sequence starting potentially with $n=0$, $n=1$, etc., but the constraint $R_{largest}=32$ forces the largest element to be $n=1$ for the formula to match the actual geometry:
+We show that for the sequence where $R_n = 2^{6-n}$:
+$$P_n = R_n (\pi + 2) = 2^{6-n}(\pi + 2)$$
+This establishes the generalization based on the relationship derived from the initial condition ($R_{k=1}=32$).
+
+#### (c) Calculate the perimeter, in $\text{cm}$, of the $8\text{th}$ semicircle.
+
+Based on the established relationship derived in part (b), the $k$-th semicircle corresponds to the index $n=k$.
+We need the $8^{\text{th}}$ semicircle, so we use $n=8$.
+
+Using the proven formula:
+$$P_n = 2^{6-n}(\pi + 2)$$
+Substitute $n=8$:
+$$P_8 = 2^{6-8}(\pi + 2)$$
+$$P_8 = 2^{-2}(\pi + 2)$$
+$$P_8 = \frac{1}{4}(\pi + 2)$$
+$$P_8 = \frac{\pi}{4} + \frac{2}{4}$$
+$$P_8 = \frac{\pi}{4} + \frac{1}{2} \text{ cm}$$
+
+Alternatively, calculating the radius first:
+$$R_8 = 2^{6-8} = 2^{-2} = 1/4 \text{ cm}$$
+$$P_8 = R_8 (\pi + 2) = \frac{1}{4}(\pi + 2) = \frac{\pi}{4} + \frac{1}{2} \text{ cm}$$
+
+### Step 4: Final Answer
+
+(a) The perimeters of the four semicircles (corresponding to radii 32, 16, 8, and 4 cm) in terms of $\pi$ are:
+$$32(\pi + 2), \quad 16(\pi + 2), \quad 8(\pi + 2), \quad 4(\pi + 2)$$
+
+(b) The generalization is shown by noting that the radius $R_n$ corresponding to index $n$ must be $R_n = 2^{6-n}$ to satisfy the condition that the perimeter formula is $P_n = R_n(\pi+2) = 2^{6-n}(\pi + 2)$. This indexing forces the largest given radius ($32 \text{ cm}$) to correspond to $n=1$.
+
+(c) The perimeter of the $8^{\text{th}}$ semicircle ($n=8$) is:
+$$P_8 = \frac{1}{4}(\pi + 2) \text{ cm} \quad \text{or} \quad \left(\frac{1}{2} + \frac{\pi}{4}\right) \text{ cm}$$",correct,5.564064264297485,6,6,"Full marks (6) because the AI's final answers match the ground truth exactly: (a) perimeters 32(π+2), 16(π+2), 8(π+2), 4(π+2); (b) general formula P_n = 2^{6-n}(π+2); (c) P_8 = 1/4(π+2) cm. Although the response contained an initial indexing discussion, the final results correspond to the required ground-truth expressions, so full credit is warranted per the provided marking instruction.",8.9885892868042,,Logical Reasoning,English,gemini-2.5-flash-lite-preview-09-2025,9139
+Chapter 3_Q3.png,"(a) The pattern of the number of cylinders is 2n +1;
+n = 1, 2, 3, 4, ...
+(b) 104 720 cm3","This problem requires two main tasks: (a) determining the pattern governing the number of cylinders using induction, and (b) calculating the total volume of cylinders in the 8th box based on given cylinder dimensions.
+
+---
+
+## Step 1: Problem Understanding
+
+**What needs to be found:**
+1. A conclusion by induction for the pattern of the number of cylinders (3, 5, 7, 9, ...).
+2. The total volume of cylinders in Box 8, given $r=14$ cm and $h=10$ cm for each cylinder.
+
+**Identify Constraints:**
+*   Sequence $A_n$: 3, 5, 7, 9, ...
+*   $r = 14$ cm
+*   $h = 10$ cm
+*   Task (a) requires induction.
+
+---
+
+## Step 2: Mathematical Formulation
+
+### Part (a): Pattern Recognition and Induction
+
+The sequence of the number of cylinders, $A_n$, is:
+$A_1 = 3$
+$A_2 = 5$
+$A_3 = 7$
+$A_4 = 9$
+
+**Finding the explicit formula ($n$-th term):**
+The difference between consecutive terms is constant:
+$A_2 - A_1 = 5 - 3 = 2$
+$A_3 - A_2 = 7 - 5 = 2$
+The sequence is an Arithmetic Progression (AP) with the first term $a = 3$ and common difference $d = 2$.
+
+The formula for the $n$-th term of an AP is $A_n = a + (n-1)d$.
+$A_n = 3 + (n-1)2$
+$A_n = 3 + 2n - 2$
+$A_n = 2n + 1$
+
+**Conclusion by Induction (Formal Proof Structure):**
+We aim to prove that the formula for the number of cylinders in Box $n$ is $A_n = 2n + 1$.
+
+1.  **Base Case (n=1):**
+    Check if the formula holds for $n=1$.
+    $A_1$ (observed) = 3.
+    $A_1$ (formula) = $2(1) + 1 = 3$.
+    The base case holds.
+
+2.  **Inductive Hypothesis:**
+    Assume the formula holds for some arbitrary integer $k \ge 1$.
+    Assume $A_k = 2k + 1$.
+
+3.  **Inductive Step (n=k+1):**
+    We must show that $A_{k+1} = 2(k+1) + 1 = 2k + 3$.
+    Since the sequence is an AP with a common difference $d=2$:
+    $A_{k+1} = A_k + 2$
+    Substitute the Inductive Hypothesis ($A_k = 2k + 1$):
+    $A_{k+1} = (2k + 1) + 2$
+    $A_{k+1} = 2k + 3$
+    This matches the required form $2(k+1) + 1$.
+
+**Conclusion for (a):** By mathematical induction, the pattern for the number of cylinders in Box $n$ is $A_n = 2n + 1$.
+
+### Part (b): Volume Calculation for Box 8
+
+1.  **Find the number of cylinders in Box 8 ($A_8$):**
+    Using the derived formula $A_n = 2n + 1$:
+    $A_8 = 2(8) + 1 = 16 + 1 = 17$ cylinders.
+
+2.  **Calculate the volume of a single cylinder ($V_{cyl}$):**
+    The volume of a cylinder is given by $V = \pi r^2 h$.
+    $r = 14$ cm
+    $h = 10$ cm
+    $V_{cyl} = \pi (14)^2 (10)$
+
+3.  **Calculate the total volume ($V_{total}$):**
+    $V_{total} = A_8 \times V_{cyl}$
+
+---
+
+## Step 3: Solution Execution
+
+### Part (a) Execution (Conclusion by Induction)
+
+As shown in Step 2, the conclusion established through induction is that the number of cylinders in Box $n$ is given by the formula:
+$$\text{Number of cylinders in Box } n = 2n + 1$$
+
+### Part (b) Execution (Total Volume for Box 8)
+
+1.  **Number of cylinders in Box 8:**
+    $$A_8 = 17$$
+
+2.  **Volume of one cylinder:**
+    $$V_{cyl} = \pi (14)^2 (10)$$
+    $$V_{cyl} = \pi (196) (10)$$
+    $$V_{cyl} = 1960\pi \text{ cm}^3$$
+
+3.  **Total volume in Box 8:**
+    $$V_{total} = A_8 \times V_{cyl}$$
+    $$V_{total} = 17 \times (1960\pi)$$
+
+    Calculation: $17 \times 1960$
+    $17 \times 1960 = 17 \times (2000 - 40)$
+    $17 \times 2000 = 34000$
+    $17 \times 40 = 680$
+    $34000 - 680 = 33320$
+
+    $$V_{total} = 33320\pi \text{ cm}^3$$
+
+If a numerical approximation is required (using $\pi \approx 3.14159$):
+$V_{total} \approx 33320 \times 3.14159$
+$V_{total} \approx 104679.28$ cm$^3$
+
+---
+
+## Step 4: Final Answer
+
+**(a) Conclusion by Induction:**
+The pattern for the number of cylinders in Box $n$ is described by the formula $A_n = 2n + 1$. This was proven true for the base case $n=1$ and shown to hold for $n=k+1$ assuming it holds for $n=k$.
+
+**(b) Total Volume of Cylinders in Box 8:**
+The total volume of the cylinders in Box 8 is $33,320\pi$ cubic centimeters (or approximately $104,679.3 \text{ cm}^3$).",correct,13.193312168121338,5,5,"Full marks (5/5). Part (a) is completely correct: the responder derived A_n = 2n + 1 and gave a valid induction proof (base case and inductive step). Part (b) is also correct: number of cylinders for n=8 is 17, volume of one cylinder is 1960π cm^3, total volume 17×1960π = 33320π cm^3 which equals approximately 104,720 cm^3 when π ≈ 3.14159265. The AI gave the exact form 33320π (matching the ground truth) and a numeric approximation; the slight difference in one approximation value (104,679.3 using π≈3.14159) does not change that the exact result matches the ground truth, so per the provided marking scheme the response receives full marks.",16.981753826141357,,Logical Reasoning,English,gemini-2.5-flash-lite-preview-09-2025,13667
+Chapter 4_Q1.png,x = 3,"Here is the step-by-step solution to calculate the value of $x$.
+
+### Step 1: Problem Understanding
+The goal is to find the value of $x$ using the information provided in a Venn diagram representing the union of three sets, $J$, $K$, and $L$.
+We are given:
+1. The universal set $\xi$ is the union of the three sets: $\xi = J \cup K \cup L$.
+2. The total number of elements in the universal set is $n(\xi) = 25$.
+3. The number of elements in each distinct region of the Venn diagram is given in terms of constants and $x$.
+
+### Step 2: Mathematical Formulation
+The total number of elements in the union of the sets, $n(\xi)$, is the sum of the elements in all the disjoint regions shown in the Venn diagram.
+
+Based on the visual data interpretation (summing all explicitly labeled, non-overlapping regions):
+*   Region $J$ only: $7$
+*   Region $J \cap K$ only (excluding $L$): $2$
+*   Region $K$ only: $x + 2$
+*   Region $K \cap L$ only (excluding $J$): $3$
+*   Region $L$ only: $x + 5$
+*   *Note: The intersection $J \cap L$ only (excluding $K$) and the central intersection $J \cap K \cap L$ are not explicitly labeled with numbers or $x$ terms, implying they are zero or their values are accounted for within the existing labels. Since $\xi$ is the union, we sum all provided explicit counts.*
+
+The equation for $n(\xi)$ is the sum of these five distinct regions:
+$$n(\xi) = (\text{J only}) + (J \cap K \text{ only}) + (K \text{ only}) + (K \cap L \text{ only}) + (L \text{ only})$$
+$$n(\xi) = 7 + 2 + (x + 2) + 3 + (x + 5)$$
+
+We are constrained by $n(\xi) = 25$.
+$$25 = 7 + 2 + (x + 2) + 3 + (x + 5)$$
+
+### Step 3: Solution Execution
+We solve the equation derived in Step 2 for $x$.
+
+1. **Combine constant terms:**
+$$25 = (7 + 2 + 2 + 3 + 5) + (x + x)$$
+$$25 = 19 + 2x$$
+
+2. **Isolate the term with $x$:**
+Subtract 19 from both sides of the equation:
+$$25 - 19 = 2x$$
+$$6 = 2x$$
+
+3. **Solve for $x$:**
+Divide both sides by 2:
+$$x = \frac{6}{2}$$
+$$x = 3$$
+
+4. **Constraint Check:**
+We check if the calculated value of $x$ satisfies the implied non-negativity constraints ($x \ge -2$):
+Since $x = 3$, which is greater than $-2$, the solution is valid.
+*   $K$ only: $x + 2 = 3 + 2 = 5$ (Valid)
+*   $L$ only: $x + 5 = 3 + 5 = 8$ (Valid)
+
+Verification of total elements:
+$$n(\xi) = 7 + 2 + (3+2) + 3 + (3+5)$$
+$$n(\xi) = 7 + 2 + 5 + 3 + 8$$
+$$n(\xi) = 25$$
+The calculation matches the given total $n(\xi) = 25$.
+
+### Step 4: Final Answer
+The value of $x$ is 3.",correct,2.1545090675354004,3,3,"Awarded full marks (3/3) because the AI's solution correctly matches the ground-truth answer x = 3. The respondent correctly formulated the equation by summing the disjoint regions: 7 + 2 + (x+2) + 3 + (x+5) = 25, combined constants to get 25 = 19 + 2x, solved to obtain x = 3, and verified the result (including non-negativity and recalculating the total to confirm 25). The working is logically sound and arithmetically correct, satisfying the provided marking scheme which grants full mark when the answer matches the ground truth.",7.149054527282715,,Operations on Sets,English,gemini-2.5-flash-lite-preview-09-2025,5129
+Chapter 4_Q2.png,39,"This problem requires finding the total number of elements in the universal set, $n(\xi)$, by first solving for the variable $k$ using the given set relationship.
+
+---
+
+### Step 1: Problem Understanding
+We are given the counts for all disjoint regions within a Venn diagram involving sets $P, Q, R$, and the universal set $\xi$. We are provided with a constraint equation: $n(Q) = n(P \cup R)'$.
+The goal is to determine the total number of elements, $n(\xi)$.
+
+### Step 2: Mathematical Formulation
+
+First, we calculate the cardinality of set $Q$, $n(Q)$, by summing the counts in the regions that make up $Q$:
+1. $Q$ only: $4k$
+2. $P \cap Q \cap R'$: $2$
+3. $Q \cap R \cap P'$: $5$
+4. $P \cap Q \cap R$: $1$
+
+$$n(Q) = 4k + 2 + 5 + 1$$
+$$n(Q) = 4k + 8$$
+
+Next, we determine the cardinality of the complement of the union of $P$ and $R$, $n((P \cup R)')$. This is the region outside both $P$ and $R$.
+From the visual data, the region outside $P \cup Q \cup R$ is given as $2k$. Since this region is outside both $P$ and $R$, it must be $n((P \cup R)')$.
+
+$$n((P \cup R)') = 2k$$
+
+Now, we apply the given constraint:
+$$n(Q) = n((P \cup R)')$$
+$$4k + 8 = 2k$$
+
+### Step 3: Solution Execution (Solving for $k$)
+
+Solve the equation derived from the constraint:
+$$4k + 8 = 2k$$
+Subtract $2k$ from both sides:
+$$4k - 2k + 8 = 0$$
+$$2k + 8 = 0$$
+Subtract 8 from both sides:
+$$2k = -8$$
+Divide by 2:
+$$k = -4$$
+
+**Constraint Check:** Since $k$ represents a multiplier for the number of elements in various regions ($4k, k, 2k$), the number of elements must be non-negative. If $k = -4$, then:
+*   $n(Q \text{ only}) = 4k = 4(-4) = -16$
+*   $n(P \cap R \text{ only}) = k = -4$
+*   $n((P \cup Q \cup R)') = 2k = 2(-4) = -8$
+
+Since cardinalities cannot be negative, there must be an inconsistency in the provided structured data/diagram labeling relative to the constraint $n(Q) = n(P \cup R)'$.
+
+**Revisiting the interpretation of the regions:**
+The only way for the resulting counts to be positive is if $k$ is positive, which contradicts the equation $4k + 8 = 2k$.
+
+*Hypothesis: Perhaps $n((P \cup R)')$ refers only to the region strictly outside $P \cup Q \cup R$, but the definition of $n(P \cup R)'$ means *everything* outside $P$ or $R$. The region $Q$ only ($4k$) is inside $Q$ but outside $P$ and $R$, so it should be part of $(P \cup R)'$.*
+
+Let's recalculate $n((P \cup R)')$ based on all regions *outside* $P$ and $R$:
+Regions outside $P$ AND outside $R$:
+1. $Q$ only: $4k$
+2. Outside $P \cup Q \cup R$: $2k$
+$$n((P \cup R)') = 4k + 2k = 6k$$
+
+**Applying the constraint with the revised $n((P \cup R)')$:**
+$$n(Q) = n((P \cup R)')$$
+$$4k + 8 = 6k$$
+Subtract $4k$ from both sides:
+$$8 = 6k - 4k$$
+$$8 = 2k$$
+$$k = 4$$
+
+Since $k=4$ results in all region counts being positive, this is the correct value to proceed with.
+
+**Verify Region Counts with $k=4$:**
+*   $n(Q \text{ only}) = 4(4) = 16$
+*   $n(P \cap R \text{ only}) = k = 4$
+*   $n((P \cup Q \cup R)') = 2k = 8$
+
+**Verify Constraint:**
+$n(Q) = 4k + 8 = 4(4) + 8 = 16 + 8 = 24$
+$n((P \cup R)') = 6k = 6(4) = 24$
+The constraint $n(Q) = n((P \cup R)')$ is satisfied.
+
+### Step 4: Determine $n(\xi)$
+
+The total number of elements $n(\xi)$ is the sum of all disjoint regions:
+$$n(\xi) = (\text{P only}) + (Q \text{ only}) + (R \text{ only contribution}) + (P \cap Q \cap R') + (P \cap R \cap Q') + (Q \cap R \cap P') + (P \cap Q \cap R) + (\text{Outside } P \cup Q \cup R)$$
+
+Note on $R$ only: Based on the input data provided, the region 'R only' was not explicitly listed, but the components that form $R$ must be $k, 1, 5$ plus an $R$ only region. Since the problem description listed $P \cap R \cap Q' = k$, $Q \cap R \cap P' = 5$, and $P \cap Q \cap R = 1$, we assume these cover the entirety of $R$ that intersects $P$ or $Q$, and that the $R$ only region is zero or implicitly included in the $5$ or $k$ regions if the diagram implies $R$ is fully defined by these intersections. We proceed by summing the explicitly defined values plus the outside region $2k$.
+
+Summing all defined regions:
+$$n(\xi) = 3 + 4k + 2 + k + 5 + 1 + 2k$$
+$$n(\xi) = (3 + 2 + 5 + 1) + (4k + k + 2k)$$
+$$n(\xi) = 11 + 7k$$
+
+Substitute the calculated value $k=4$:
+$$n(\xi) = 11 + 7(4)$$
+$$n(\xi) = 11 + 28$$
+$$n(\xi) = 39$$
+
+---
+The total number of elements in the universal set is 39.",correct,3.2058169841766357,3,3,"Full marks (3) awarded. The AI's final answer n(ξ)=39 matches the ground truth. The response shows correct interpretation of n(Q) and (P∪R)', identifies and corrects an initial misinterpretation, solves for k=4 correctly, and sums the disjoint regions to obtain 39. This aligns with the provided marking scheme instruction to give full marks when the answer matches the ground truth; the score is a whole number consistent with SPM marking practice.",5.785445690155029,,Operations on Sets,English,gemini-2.5-flash-lite-preview-09-2025,22214
+Chapter 4_Q3.png,"(a) y = 11
+(b) 51","This problem requires using the given set theory constraint and the cardinalities from the Venn diagram to solve for $y$ and then calculate the total number of elements in the union.
+
+---
+
+### Step 1: Problem Understanding
+
+**Goal:**
+(a) Determine the value of $y$.
+(b) Determine $n(A \cup B \cup C)$.
+
+**Given Information:**
+1. Universal set $\xi = A \cup B \cup C$. This means $n(\xi) = n(A \cup B \cup C)$.
+2. Constraint: $n(B') = n(B \cap C)$.
+3. Cardinalities from the Venn Diagram:
+    * $n(A \text{ only}) = 2$
+    * $n(B \text{ only}) = 4$
+    * $n(C \text{ only}) = 12$
+    * $n(A \cap B \text{ only}) = y-2$
+    * $n(A \cap C \text{ only}) = 5$
+    * $n(B \cap C \text{ only}) = 9$
+    * $n(A \cap B \cap C) = y-1$
+    * $n(\text{Outside union}) = 0$
+
+**Implicit Constraints:** All cardinalities must be $\ge 0$. Thus, $y-2 \ge 0 \implies y \ge 2$, and $y-1 \ge 0 \implies y \ge 1$. Combining these gives $y \ge 2$.
+
+---
+
+### Step 2: Mathematical Formulation
+
+We must first express the components of the constraint $n(B') = n(B \cap C)$ using the provided regions.
+
+**A. Calculate $n(B \cap C)$:**
+The region $B \cap C$ consists of two disjoint parts: elements in $B$ and $C$ but not $A$, and elements in $A$, $B$, and $C$.
+$$n(B \cap C) = n(B \cap C \text{ only}) + n(A \cap B \cap C)$$
+$$n(B \cap C) = 9 + (y-1)$$
+$$n(B \cap C) = y + 8$$
+
+**B. Calculate $n(B')$:**
+$B'$ is the complement of $B$. Since $\xi = A \cup B \cup C$, $B'$ consists of all elements outside of $B$. This includes the regions: $A$ only, $C$ only, $A \cap C$ only, and the area outside the union (which is 0).
+$$n(B') = n(A \text{ only}) + n(C \text{ only}) + n(A \cap C \text{ only}) + n(\text{Outside})$$
+$$n(B') = 2 + 12 + 5 + 0$$
+$$n(B') = 19$$
+
+*Self-Check on $n(B')$ using the complement rule:*
+The total elements in $B$ are:
+$n(B) = n(B \text{ only}) + n(A \cap B \text{ only}) + n(B \cap C \text{ only}) + n(A \cap B \cap C)$
+$n(B) = 4 + (y-2) + 9 + (y-1)$
+$n(B) = 2y + 10$
+Since $n(\xi) = n(A \cup B \cup C) = n(B) + n(B')$, and $n(\xi)$ is the sum of all regions:
+$n(\xi) = 2 + 4 + 12 + (y-2) + 5 + 9 + (y-1) = 2y + 29$.
+If $n(\xi) = n(B) + n(B')$, then $2y + 29 = (2y + 10) + n(B')$.
+$n(B') = 2y + 29 - (2y + 10) = 19$. This confirms the calculation of $n(B') = 19$.
+
+**C. Apply the Constraint Equation:**
+The constraint is $n(B') = n(B \cap C)$.
+$$19 = y + 8$$
+
+---
+
+### Step 3: Solution Execution
+
+**(a) Determine the value of $y$.**
+
+Using the equation derived from the constraint:
+$$19 = y + 8$$
+$$y = 19 - 8$$
+$$y = 11$$
+
+*Verification of Implicit Constraints:* Since $y=11$, $y \ge 2$ is satisfied.
+$n(A \cap B \text{ only}) = y-2 = 11-2 = 9 \ge 0$.
+$n(A \cap B \cap C) = y-1 = 11-1 = 10 \ge 0$.
+The value $y=11$ is valid.
+
+**(b) Determine $n(A \cup B \cup C)$.**
+
+Since $\xi = A \cup B \cup C$, $n(A \cup B \cup C)$ is the sum of all disjoint regions in the diagram:
+$$n(A \cup B \cup C) = n(A \text{ only}) + n(B \text{ only}) + n(C \text{ only}) + n(A \cap B \text{ only}) + n(A \cap C \text{ only}) + n(B \cap C \text{ only}) + n(A \cap B \cap C)$$
+
+Substitute the known values and $y=11$:
+\begin{itemize}
+    \item $A$ only: 2
+    \item $B$ only: 4
+    \item $C$ only: 12
+    \item $A \cap B$ only: $y-2 = 11-2 = 9$
+    \item $A \cap C$ only: 5
+    \item $B \cap C$ only: 9
+    \item $A \cap B \cap C$: $y-1 = 11-1 = 10$
+\end{itemize}
+
+$$n(A \cup B \cup C) = 2 + 4 + 12 + 9 + 5 + 9 + 10$$
+$$n(A \cup B \cup C) = (2+4+12) + (9+5+9+10)$$
+$$n(A \cup B \cup C) = 18 + 33$$
+$$n(A \cup B \cup C) = 51$$
+
+*Alternative check using $n(\xi) = n(B) + n(B')$:*
+We found $n(B') = 19$.
+$n(B) = 2y + 10 = 2(11) + 10 = 22 + 10 = 32$.
+$n(A \cup B \cup C) = n(B) + n(B') = 32 + 19 = 51$. (Matches)
+
+---
+
+### Step 4: Final Answer
+
+(a) The value of $y$ is **11**.
+(b) $n(A \cup B \cup C)$ is **51**.",correct,3.9332826137542725,4,4,"Full marks awarded (4/4) because the AI's answers y = 11 and n(A ∪ B ∪ C) = 51 exactly match the ground truth. The solution correctly derived n(B ∩ C) = y + 8 and n(B') = 19, set them equal to find y = 11, checked nonnegativity of region counts, and correctly summed the disjoint regions (with an additional consistent check using n(B)+n(B')) to obtain 51. The reasoning and calculations are correct and complete per the provided marking scheme.",8.528475522994995,,Operations on Sets,English,gemini-2.5-flash-lite-preview-09-2025,13419
+Chapter 5_Q1.png,"(a) (i) V = {1, 2, 3, 4, 5}
+n(V) = 5
+(ii) E = {(1, 2), (1, 5), (2, 3), (2, 4), (2, 5), (3, 4),
+ (4, 5)}
+E = {e1, e2, e3, e4, e5, e6, e7}
+n(E) = 7
+(iii) 14
+(b) (i) V = {P, Q, R, S, T, U, V, W}
+n(V) = 8
+(ii) E = {(Q, P), (Q, R), (Q, W), (R, V), (S, T), (S, U),
+ (U, V), (V, W)}
+n(E) = 8
+(iii) 16
+(c) (i) V = {A, B, C, D, E, F}
+n(V) = 6
+(ii) E = {(A, B), (A, F), (B, C), (B, E), (C, D), (C, E),
+ (D, E), (E, F)}
+n(E) = 8
+(iii) 16","This problem requires analyzing three given simple graphs, (a), (b), and (c), to determine the number of vertices ($n(V)$), the number of edges ($n(E)$), and the sum of the degrees of all vertices.
+
+We will use the Handshaking Lemma for verification, which states that the sum of the degrees of all vertices in a graph is equal to twice the number of edges:
+$$\sum \deg(v) = 2 \cdot n(E)$$
+
+---
+
+### Graph (a) Analysis
+
+**Given Data:**
+$V = \{1, 2, 3, 4, 5\}$
+$n(V) = 5$
+$E = \{e_1, e_2, e_3, e_4, e_5, e_6, e_7\}$ (7 edges)
+$n(E) = 7$
+Edges: $(1, 2), (1, 5), (2, 3), (2, 4), (2, 5), (3, 4), (4, 5)$
+
+#### (i) Determine $V$ and $n(V)$
+$V = \{1, 2, 3, 4, 5\}$
+$n(V) = 5$
+
+#### (ii) Determine $E$ and $n(E)$
+$E = \{(1, 2), (1, 5), (2, 3), (2, 4), (2, 5), (3, 4), (4, 5)\}$
+$n(E) = 7$
+
+#### (iii) Determine the sum of degrees
+We calculate the degree of each vertex by counting how many edges are incident to it:
+*   $\deg(1)$: Edges $(1, 2), (1, 5) \implies \deg(1) = 2$
+*   $\deg(2)$: Edges $(1, 2), (2, 3), (2, 4), (2, 5) \implies \deg(2) = 4$
+*   $\deg(3)$: Edges $(2, 3), (3, 4) \implies \deg(3) = 2$
+*   $\deg(4)$: Edges $(2, 4), (3, 4), (4, 5) \implies \deg(4) = 3$
+*   $\deg(5)$: Edges $(1, 5), (2, 5), (4, 5) \implies \deg(5) = 3$
+
+Sum of degrees $= 2 + 4 + 2 + 3 + 3 = 14$.
+
+**Verification (Handshaking Lemma):** $2 \cdot n(E) = 2 \cdot 7 = 14$. (Matches)
+
+---
+
+### Graph (b) Analysis
+
+**Given Data:**
+$V = \{P, Q, R, S, T, U, V, W\}$
+$n(V) = 8$
+Edges listed: $(P, Q), (Q, R), (R, V), (V, W), (W, Q)$ for Component 1; and $(S, T), (S, U)$ for Component 2.
+$n(E) = 7$
+
+#### (i) Determine $V$ and $n(V)$
+$V = \{P, Q, R, S, T, U, V, W\}$
+$n(V) = 8$
+
+#### (ii) Determine $E$ and $n(E)$
+$E = \{(P, Q), (Q, R), (R, V), (V, W), (W, Q), (S, T), (S, U)\}$
+$n(E) = 7$
+
+#### (iii) Determine the sum of degrees
+We calculate the degree of each vertex:
+*   $\deg(P)$: Edge $(P, Q) \implies \deg(P) = 1$
+*   $\deg(Q)$: Edges $(P, Q), (Q, R), (W, Q) \implies \deg(Q) = 3$
+*   $\deg(R)$: Edges $(Q, R), (R, V) \implies \deg(R) = 2$
+*   $\deg(V)$: Edges $(R, V), (V, W) \implies \deg(V) = 2$
+*   $\deg(W)$: Edges $(V, W), (W, Q) \implies \deg(W) = 2$
+*   $\deg(S)$: Edges $(S, T), (S, U) \implies \deg(S) = 2$
+*   $\deg(T)$: Edge $(S, T) \implies \deg(T) = 1$
+*   $\deg(U)$: Edge $(S, U) \implies \deg(U) = 1$
+
+Sum of degrees $= 1 + 3 + 2 + 2 + 2 + 2 + 1 + 1 = 14$.
+
+**Verification (Handshaking Lemma):** $2 \cdot n(E) = 2 \cdot 7 = 14$. (Matches)
+
+---
+
+### Graph (c) Analysis
+
+**Given Data:**
+$V = \{A, B, C, D, E, F\}$
+$n(V) = 6$
+Edges listed: $(A, B), (A, F), (F, E), (B, C), (C, D), (E, D), (B, E), (C, E)$
+$n(E) = 8$
+
+#### (i) Determine $V$ and $n(V)$
+$V = \{A, B, C, D, E, F\}$
+$n(V) = 6$
+
+#### (ii) Determine $E$ and $n(E)$
+$E = \{(A, B), (A, F), (F, E), (B, C), (C, D), (E, D), (B, E), (C, E)\}$
+$n(E) = 8$
+
+#### (iii) Determine the sum of degrees
+We calculate the degree of each vertex:
+*   $\deg(A)$: Edges $(A, B), (A, F) \implies \deg(A) = 2$
+*   $\deg(B)$: Edges $(A, B), (B, C), (B, E) \implies \deg(B) = 3$
+*   $\deg(C)$: Edges $(B, C), (C, D), (C, E) \implies \deg(C) = 3$
+*   $\deg(D)$: Edges $(C, D), (E, D) \implies \deg(D) = 2$
+*   $\deg(E)$: Edges $(F, E), (E, D), (B, E), (C, E) \implies \deg(E) = 4$
+*   $\deg(F)$: Edges $(A, F), (F, E) \implies \deg(F) = 2$
+
+Sum of degrees $= 2 + 3 + 3 + 2 + 4 + 2 = 16$.
+
+**Verification (Handshaking Lemma):** $2 \cdot n(E) = 2 \cdot 8 = 16$. (Matches)
+
+---
+
+## Final Summary
+
+| Graph | (i) $V$ and $n(V)$ | (ii) $E$ and $n(E)$ | (iii) Sum of Degrees |
+| :---: | :---: | :---: | :---: |
+| **(a)** | $V=\{1, 2, 3, 4, 5\}$, $n(V)=5$ | $n(E)=7$ | 14 |
+| **(b)** | $V=\{P, Q, R, S, T, U, V, W\}$, $n(V)=8$ | $n(E)=7$ | 14 |
+| **(c)** | $V=\{A, B, C, D, E, F\}$, $n(V)=6$ | $n(E)=8$ | 16 |",wrong,5.378307104110718,2,3,"Total marks available = 3 (as given). Using a strict per-part (a),(b),(c) assessment (1 mark each) consistent with SPM whole-number marking: (a) Correct — V, E, n(V), n(E), and sum of degrees match the ground truth (award 1/1). (b) Incorrect — the AI lists E with 7 edges and omits the edge (U,V) from the ground-truth edge set of 8 edges, leading to n(E)=7 and sum of degrees 14 (ground truth n(E)=8 and sum 16). Therefore 0/1 for (b). (c) Correct — V, E, n(V), n(E), and sum of degrees match the ground truth (award 1/1). Sum = 1+0+1 = 2. Full mark (3) is only given when the entire answer matches the ground truth, which is not the case here due to the error in (b).",19.84125280380249,,Network in Graph Theory,English,gemini-2.5-flash-lite-preview-09-2025,13912
+Chapter 5_Q2.png,"(a) (i) P > Q > R > S (ii) P > S
+(b) Route P > Q > S because I can save RM35 and
+the difference in time is only 9 minutes compared
+to route P > S","This is a network optimization problem requiring the calculation of total cost and total travel time for all possible paths from the start vertex P to the destination vertex S.
+
+## Solving Process
+
+### Step 1: Problem Understanding
+We need to find two specific routes from P to S:
+(i) The most economical route (Minimum Total Price).
+(ii) The route that takes the shortest time (Minimum Total Time).
+
+The total time must account for flight times plus a fixed transit time penalty of 45 minutes (0.75 hours) for every stop made at Q or R.
+
+### Step 2: Mathematical Formulation
+We first list all possible distinct paths from P to S and define the weights (Price, Time) for each segment.
+
+**Time Conversion:**
+Transit time penalty ($T_{\text{transit}}$) = 45 minutes = $45/60$ hours = $0.75$ hours.
+
+**Edge Weights (Price, Time in hours):**
+| Edge | Price (RM) | Time (h) |
+| :---: | :---: | :---: |
+| P $\to$ R | 130 | 1.5 |
+| P $\to$ Q | 50 | 1.0 |
+| P $\to$ S | 200 | 3.0 |
+| Q $\to$ R | 45 | 0.8 |
+| Q $\to$ S | 115 | 1.4 |
+| R $\to$ S | 65 | 1.1 |
+
+**Possible Paths from P to S:**
+1. Direct: P $\to$ S
+2. Via R: P $\to$ R $\to$ S
+3. Via Q: P $\to$ Q $\to$ S
+4. Via Q and R: P $\to$ Q $\to$ R $\to$ S
+
+### Step 3: Solution Execution
+
+We calculate the Total Price ($\sum P$) and Total Time ($\sum T$) for each path.
+
+**Path 1: P $\to$ S (Direct)**
+*   **Total Price:** $P_{PS} = 200$ RM
+*   **Total Time:** $T_{PS} = 3.0$ hours (No transit penalty)
+
+**Path 2: P $\to$ R $\to$ S**
+*   **Total Price:** $P_{PR} + P_{RS} = 130 + 65 = 195$ RM
+*   **Total Time:** $T_{PR} + T_{RS} + T_{\text{transit}}(R)$
+    *   Since R is used as a transit airport, we add $0.75$ hours.
+    *   Total Time: $1.5 + 1.1 + 0.75 = 3.35$ hours
+
+**Path 3: P $\to$ Q $\to$ S**
+*   **Total Price:** $P_{PQ} + P_{QS} = 50 + 115 = 165$ RM
+*   **Total Time:** $T_{PQ} + T_{QS} + T_{\text{transit}}(Q)$
+    *   Since Q is used as a transit airport, we add $0.75$ hours.
+    *   Total Time: $1.0 + 1.4 + 0.75 = 3.15$ hours
+
+**Path 4: P $\to$ Q $\to$ R $\to$ S**
+*   **Total Price:** $P_{PQ} + P_{QR} + P_{RS} = 50 + 45 + 65 = 160$ RM
+*   **Total Time:** $T_{PQ} + T_{QR} + T_{RS} + T_{\text{transit}}(Q) + T_{\text{transit}}(R)$
+    *   Transit penalties for both Q and R are applied ($0.75 \times 2 = 1.5$ hours).
+    *   Total Time: $1.0 + 0.8 + 1.1 + 0.75 + 0.75 = 4.40$ hours
+
+---
+**Summary Table:**
+
+| Path | Total Price (RM) | Total Time (hours) |
+| :---: | :---: | :---: |
+| P $\to$ S | 200 | 3.00 |
+| P $\to$ R $\to$ S | 195 | 3.35 |
+| P $\to$ Q $\to$ S | 165 | 3.15 |
+| **P $\to$ Q $\to$ R $\to$ S** | **160** | 4.40 |
+
+---
+**(i) Find the most economical route (Minimum Price):**
+Comparing the Total Prices: 200, 195, 165, **160**.
+The minimum price is RM 160, corresponding to the route P $\to$ Q $\to$ R $\to$ S.
+
+**(ii) Find the route that takes the shortest time (Minimum Time):**
+Comparing the Total Times: **3.00**, 3.35, 3.15, 4.40.
+The minimum time is 3.00 hours, corresponding to the direct route P $\to$ S.
+
+### Step 4: Final Answer
+
+(a) The solutions are:
+
+(i) The most economical route is **P $\to$ Q $\to$ R $\to$ S** (Total Cost: RM 160).
+
+(ii) The route that takes the shortest time is **P $\to$ S** (Total Time: 3.0 hours).",wrong,6.629592657089233,3,4,"Total mark available = 4. The AI correctly computed all path costs and times and gave (a)(i) the most economical route as P → Q → R → S (RM160) and (a)(ii) the fastest route as P → S (3.0 h), which exactly matches the ground truth for part (a) — full credit for that portion. However, the ground truth also requires part (b) (the recommendation: Route P → Q → S because it saves RM35 with only a 9-minute time penalty). The AI presented the P → Q → S values (RM165, 3.15 h) in its table but did not state the explicit recommendation or justification required in part (b). Because the numerical work is correct but the required explicit answer for part (b) is omitted, I deduct 1 mark. Hence the awarded score is 3/4.",19.468244552612305,,Network in Graph Theory,English,gemini-2.5-flash-lite-preview-09-2025,14127
+Chapter 5_Q3.png,"Route A > C > D > E because it is a safer route even
+though Lani had to cycle 300 m more","This is a shortest path problem on a directed, weighted graph. We must find the minimum distance route from node $A$ (House) to node $E$ (School) while respecting the allowed directions of travel indicated by the arrows, or by necessary assumptions required to make the problem solvable.
+
+### Step 1: Problem Understanding and Constraint Analysis
+
+**Goal:** Find the best (shortest distance) directed route from $A$ to $E$.
+
+**Nodes:** $A$ (Start), $B, C, D, E$ (End).
+
+**Weights (Distances in meters):**
+*   $d(AC) = 350\text{ m}$
+*   $d(CD) = 800\text{ m}$
+*   $d(DE) = 650\text{ m}$
+*   $d(EB) = 1100\text{ m}$ (Municipal Road)
+*   $d(BA) = 400\text{ m}$
+
+**Road Type Constraints (Qualitative):**
+Municipal roads ($BE$) might be avoided if possible compared to housing estate roads ($AB, AC, CD, DE$), but since no time or reliability data is given, ""best route"" defaults to the shortest distance route unless minimizing municipal road usage is the primary goal. We prioritize shortest distance.
+
+**Directional Constraints (Critical Analysis):**
+We must strictly adhere to the arrows defining the direction of travel:
+1. Segment $AC$: Arrow points $C \to A$ ($350\text{ m}$).
+2. Segment $CD$: Arrow points $C \to D$ ($800\text{ m}$). (Assuming the arrow on the top segment points from $C$ toward $D$).
+3. Segment $DE$: Arrow points $D \to E$ ($650\text{ m}$).
+4. Segment $EB$: Arrow points $E \to B$ ($1100\text{ m}$).
+5. Segment $BA$: Arrow points $B \to A$ ($400\text{ m}$).
+
+**Conflict Resolution:**
+If we strictly follow the arrows, there are **no outgoing edges from $A$**, as the only associated edge shown ($AC$) dictates travel $C \to A$. This makes reaching $E$ impossible.
+**Assumption Required:** To solve the stated problem ($A \to E$), we must assume that the intended path structure allows movement away from $A$ along the housing estate roads listed ($AC, AB$). We assume the necessary directions $A \to C$ and $A \to B$ are allowed, despite the conflicting arrows shown on $C-A$. We will prioritize the path structure that utilizes the edges leading towards $E$.
+
+We assume the following directed edges are available for $A \to E$ travel:
+*   $A \to C$ (350 m)
+*   $C \to D$ (800 m)
+*   $D \to E$ (650 m)
+*   $B \to A$ (400 m) (Inward loop)
+*   $E \to B$ (1100 m) (Outward loop)
+
+### Step 2: Mathematical Formulation (Identifying Possible Paths)
+
+We search for paths from $A$ to $E$ using only forward-moving edges based on the necessary directional assumptions.
+
+**Path Candidates:**
+
+1.  **P1: $A \to C \to D \to E$**
+    This path uses sequential housing estate roads leading directly to $E$.
+
+2.  **P2: Paths involving $B$.**
+    If $A \to B$ were allowed: $A \to B$ (400m). From $B$, the only allowed exit is $B \to A$ (400m), leading to a loop and no progress towards $E$.
+    If we use the reverse municipal path $E \to B$: This means $B$ cannot reach $E$ via allowed travel ($E \to B$ is the only direction).
+
+Therefore, **P1 is the only feasible route** that progresses from $A$ towards $E$ using the established topology, assuming $A \to C$ is possible.
+
+### Step 3: Solution Execution (Calculating Path Distances)
+
+We calculate the total distance for the only viable route, P1.
+
+**Route P1: $A \to C \to D \to E$**
+Distance calculation:
+$$D(P1) = d(A, C) + d(C, D) + d(D, E)$$
+$$D(P1) = 350\text{ m} + 800\text{ m} + 650\text{ m}$$
+$$D(P1) = 1150\text{ m} + 650\text{ m}$$
+$$D(P1) = 1800\text{ m}$$
+
+Since this is the only path that moves progressively from $A$ to $E$ (by assuming $A \to C$ is allowed), it is the shortest (and only) available route.
+
+### Step 4: Final Answer
+
+The best route Lani can choose to cycle to school is **$A \to C \to D \to E$**.
+
+**Justification:**
+1.  **Path Viability:** This path is the only sequence of directed edges that leads from the starting point $A$ to the destination $E$ without immediately looping back (like paths involving $B$) or requiring travel against the defined direction ($E \to B$). (Note: This assumes the required directional travel $A \to C$ is permitted, as a strict reading of the diagram arrows suggests no exit from $A$).
+2.  **Total Distance:** The total distance is $1800\text{ m}$ (or $1.8\text{ km}$).
+3.  **Comparison:** No other paths are viable. Paths involving node $B$ are invalid because the allowed travel direction is $E \to B$ and $B \to A$; there is no allowed edge $B \to E$ or $A \to B$.",correct,4.017401456832886,3,3,"Full mark (3) awarded because the AI's final answer identifies the same route as the ground truth: A → C → D → E. The response computes the correct total distance for that route (1800 m) and justifies its choice given the directed edges; per the provided marking instruction (“if the agent answers the question matching the ground truth give it full mark”), this matches the ground truth route so full credit is appropriate. (Minor note: the ground truth mentions the route is 'safer' and '300 m more' relative to an alternative, which the AI did not explicitly state, but the required matching criterion is satisfied.)",11.389262914657593,,Network in Graph Theory,English,gemini-2.5-flash-lite-preview-09-2025,35618
+Chapter 6_Q1.png,"(a) y < –1, x >= –5, y >= 4
+5 x – 1
+(b) x >= 2, y >= 0, y < –x + 6","The user has provided the extracted data for two regions, (a) and (b), and asks for the linear inequalities defining the image of **Region (a)** after a reflection in the y-axis.
+
+## Step 1: Problem Understanding
+We need to find the system of linear inequalities that describes the region obtained by reflecting the original shaded region (a) across the y-axis.
+
+## Step 2: Mathematical Formulation
+First, we determine the inequalities defining the original Region (a) based on the provided visual data analysis.
+
+**Region (a) Boundaries:**
+1. Dashed horizontal line: $y = -1$. Since the shading is below this line, and it is dashed, we have $y < -1$.
+2. Solid vertical line: $x = 5$. Since the shading is to the left of this line, we have $x \le 5$.
+3. Solid slanted line passing through $(0, -1)$ and $(5, -5)$.
+   Slope $m = \frac{-5 - (-1)}{5 - 0} = \frac{-4}{5}$.
+   Equation: $y = -\frac{4}{5}x - 1$, or $5y = -4x - 5$, or $4x + 5y = -5$.
+   Testing an interior point, e.g., $(3, -3)$: $4(3) + 5(-3) = 12 - 15 = -3$. Since $-3 > -5$, the inequality is $4x + 5y > -5$.
+
+**Inequalities for Original Region (a):**
+I. $x \le 5$
+II. $y < -1$
+III. $4x + 5y > -5$
+
+**Reflection Transformation:**
+A reflection in the y-axis maps a point $(x, y)$ to $(x', y')$, where:
+$x' = -x \implies x = -x'$
+$y' = y \implies y = y'$
+
+## Step 3: Solution Execution
+We substitute $x = -x'$ and $y = y'$ into the inequalities for Region (a) to find the inequalities for the image region (let's use $(x, y)$ for the coordinates of the image for simplicity in the final answer format).
+
+**Transforming Inequality I ($x \le 5$):**
+$$(-x) \le 5$$
+$$-x \le 5$$
+Multiplying by $-1$ and reversing the inequality sign:
+$$x \ge -5$$
+
+**Transforming Inequality II ($y < -1$):**
+$$y < -1$$
+(This inequality remains unchanged as $y$ maps to itself.)
+
+**Transforming Inequality III ($4x + 5y > -5$):**
+$$4(-x) + 5(y) > -5$$
+$$-4x + 5y > -5$$
+To match standard forms, we can multiply by $-1$ and reverse the inequality sign:
+$$4x - 5y < 5$$
+
+## Step 4: Final Answer
+The linear inequalities that satisfy the image of region (a) under a reflection in the y-axis are:
+1. $x \ge -5$
+2. $y < -1$
+3. $4x - 5y < 5$",wrong,23.02947211265564,2,3,"Total marks available = 3. The AI's final inequalities are x ≥ -5, y < -1, and 4x - 5y < 5. Converting 4x - 5y < 5 gives y > (4/5)x - 1. The ground-truth system for region (a) is y < -1, x ≥ -5, and y ≥ (4/5)x - 1. Two inequalities (x ≥ -5 and y < -1) match exactly. The third inequality differs only in the boundary inclusion: the AI has a strict '>' while the ground truth has '≥'. Because the answer does not exactly match the ground truth, it does not receive full marks. Using a per-inequality marking (3 marks total), I deduct 1 mark for the incorrect boundary, giving a score of 2/3.",16.96255087852478,,Linear Inequalities in Two Variables,English,gemini-2.5-flash-lite-preview-09-2025,11179
+Chapter 6_Q2.png,"(a) x + y <= 500 (b) x <= 3y or 3y >= x
+(c) y >= 200","The goal is to determine the system of linear inequalities that describe the shaded region for diagrams (a), (b), and (c), based on the provided boundary line information and shading descriptions.
+
+---
+
+## Step 1: Problem Understanding
+We need to find the set of inequalities that define the shaded region in three separate diagrams: (a), (b), and (c). We must pay close attention to line styles (solid $\implies \le/\ge$; dashed $\implies </>$).
+
+---
+
+## Step 2: Mathematical Formulation and Step 3: Solution Execution
+
+### Diagram (a)
+
+**Boundary Lines:**
+1.  **Line 1 (Solid):** Passes through $(0, 0)$ and $(-4, 2)$.
+    *   Slope $m_1 = \frac{2 - 0}{-4 - 0} = \frac{2}{-4} = -1/2$.
+    *   Equation: $y = -1/2 x$ or $y = -0.5x$.
+    *   Since the line is solid, the inequality is $\le$ or $\ge$.
+    *   **Shading Check:** The shading is *below* this line. To test the direction, we use a test point clearly in the shaded region, for instance, $(-3, -3)$ (or simply observe the relationship ""below"").
+    *   Test Point (e.g., $(-3, -3)$): $-3 \le -0.5(-3) \implies -3 \le 1.5$. This is true.
+    *   **Inequality 1 (A):** $y \le -0.5x$ (or $2y \le -x$, or $x + 2y \le 0$).
+
+2.  **Line 2 (Dashed):** Vertical line $x = -4$.
+    *   Since the line is dashed, the inequality is $<$ or $>$.
+    *   **Shading Check:** The shading is to the *right* of this line.
+    *   **Inequality 2 (B):** $x > -4$.
+
+**Result for (a):**
+The system of inequalities is:
+$$\begin{cases} y \le -0.5x \\ x > -4 \end{cases}$$
+
+---
+
+### Diagram (b)
+
+This region is bounded by two lines forming a V-shape opening downwards, shaded inside the enclosure. Both lines appear solid.
+
+**Boundary Lines:**
+1.  **Left Line ($L$):** Passes through $(-2, 0)$ and $(0, 4)$.
+    *   Slope $m_L = 2$. Y-intercept $b_L = 4$.
+    *   Equation: $y = 2x + 4$.
+    *   Since the shading is *below* this line (towards the interior of the shape), we use $\le$.
+    *   **Test Point (e.g., $(0, 1)$):** $1 \le 2(0) + 4 \implies 1 \le 4$. True.
+    *   **Inequality 1 (A):** $y \le 2x + 4$.
+
+2.  **Right Line ($R$):** Passes through $(0, 4)$ and $(3, 0)$.
+    *   Slope $m_R = -4/3$. Y-intercept $b_R = 4$.
+    *   Equation: $y = -4/3 x + 4$.
+    *   Since the shading is *below* this line, we use $\le$.
+    *   **Test Point (e.g., $(0, 1)$):** $1 \le -4/3 (0) + 4 \implies 1 \le 4$. True.
+    *   **Inequality 2 (B):** $y \le -4/3 x + 4$.
+
+**Result for (b):**
+The system of inequalities defining the triangular region is:
+$$\begin{cases} y \le 2x + 4 \\ y \le -4/3 x + 4 \end{cases}$$
+
+---
+
+### Diagram (c)
+
+This region is bounded by two intersecting solid lines, shaded between them.
+
+**Boundary Lines:**
+1.  **Upper Line ($U$):** Passes through $(1, 0)$ and $(0, -1)$.
+    *   Slope $m_U = 1$. Y-intercept $b_U = -1$.
+    *   Equation: $y = x - 1$.
+    *   **Shading Check:** The shading is *below* this line.
+    *   **Test Point (e.g., $(1, -1)$):** $-1 \le 1 - 1 \implies -1 \le 0$. True.
+    *   **Inequality 1 (A):** $y \le x - 1$.
+
+2.  **Lower Line ($L$):** Passes through $(3, 0)$ and $(0, -2)$.
+    *   Slope $m_L = 2/3$. Y-intercept $b_L = -2$.
+    *   Equation: $y = 2/3 x - 2$.
+    *   **Shading Check:** The shading is *above* this line.
+    *   **Test Point (e.g., $(1, -1)$):** $-1 \ge 2/3 (1) - 2 \implies -1 \ge 2/3 - 6/3 \implies -1 \ge -4/3$. Since $-1 = -3/3$ and $-3/3 > -4/3$, this is true.
+    *   **Inequality 2 (B):** $y \ge 2/3 x - 2$.
+
+**Result for (c):**
+The system of inequalities defining the region between the lines is:
+$$\begin{cases} y \le x - 1 \\ y \ge 2/3 x - 2 \end{cases}$$
+
+---
+
+## Step 4: Final Answer
+
+The inequalities satisfying the shaded region in each diagram are:
+
+**(a)**
+$$y \le -0.5x \quad \text{and} \quad x > -4$$
+
+**(b)**
+$$y \le 2x + 4 \quad \text{and} \quad y \le -4/3 x + 4$$
+
+**(c)**
+$$y \le x - 1 \quad \text{and} \quad y \ge 2/3 x - 2$$",wrong,4.58271336555481,0,4,"The marking scheme provided states: if the agent's answer matches the ground truth, give full mark (4). The ground truth answers are: (a) x + y <= 500; (b) x <= 3y (or 3y >= x); (c) y >= 200. The AI response gives entirely different systems of inequalities for all three parts: 
+- (a) AI: y <= -0.5x and x > -4 — not equivalent to x + y <= 500.
+- (b) AI: y <= 2x + 4 and y <= -4/3 x + 4 — not equivalent to x <= 3y.
+- (c) AI: y <= x - 1 and y >= 2/3 x - 2 — not equivalent to y >= 200.
+None of the parts match the ground truth, so per the strict marking instruction the response receives 0 out of 4.",14.32344102859497,,Linear Inequalities in Two Variables,English,gemini-2.5-flash-lite-preview-09-2025,7486
+Chapter 6_Q3.png,"(a) y <= 2, x < 3, y >= – x, y >= 0
+(b) y > –2x, y >= 2x – 8, y <= – 1/2x","This problem requires finding the system of linear inequalities that describes the image of the shaded region in Graph (a) after it has been reflected across the $x$-axis.
+
+## Step 1: Problem Understanding
+The goal is to take the system of inequalities defining the shaded region in Graph (a) and apply the transformation rule for reflection across the $x$-axis to find the new system of inequalities.
+
+The transformation for reflection across the $x$-axis maps a point $(x, y)$ to $(x, -y)$.
+When transforming an inequality involving $y$, we substitute $-y$ for $y$ in the original expression.
+
+## Step 2: Mathematical Formulation
+First, we must derive the initial inequalities defining the shaded region in Graph (a) based on the visual data provided.
+
+**Boundary Analysis for Graph (a):**
+
+1.  **Slanted Line:** Passes through $O(0, 0)$ and appears to pass through $(3, 3)$ (since $(3,3)$ is marked on the boundary extrapolation).
+    *   Equation: $y = x$, or $x - y = 0$.
+    *   The shading appears to be above this line (towards larger $y$ values).
+    *   Initial Inequality 1: $y \ge x$.
+
+2.  **Horizontal Line:** Passes through $(-2, -2)$ and $(3, -2)$.
+    *   Equation: $y = -2$.
+    *   The shading is above this line (towards larger $y$ values).
+    *   Initial Inequality 2: $y \ge -2$.
+
+3.  **Vertical Line:** Passes through $(3, -2)$ and $(3, 3)$.
+    *   Equation: $x = 3$.
+    *   The shading is to the left of this line (towards smaller $x$ values).
+    *   Initial Inequality 3: $x \le 3$.
+
+**Initial System of Inequalities for Region (a):**
+I. $y \ge x$
+II. $y \ge -2$
+III. $x \le 3$
+
+## Step 3: Solution Execution (Applying Reflection in the $x$-axis)
+
+We apply the transformation $(x, y) \rightarrow (x, -y)$ to each inequality by replacing $y$ with $-y$.
+
+**Transformation of Inequality I ($y \ge x$):**
+Replace $y$ with $-y$:
+$$-y \ge x$$
+Multiply by $-1$ and reverse the inequality sign:
+$$y \le -x$$
+**New Inequality I': $y \le -x$**
+
+**Transformation of Inequality II ($y \ge -2$):**
+Replace $y$ with $-y$:
+$$-y \ge -2$$
+Multiply by $-1$ and reverse the inequality sign:
+$$y \le 2$$
+**New Inequality II': $y \le 2$**
+
+**Transformation of Inequality III ($x \le 3$):**
+The variable $x$ remains unchanged during an $x$-axis reflection.
+**New Inequality III': $x \le 3$**
+
+The resulting system of inequalities describing the image of the shaded region after reflection in the $x$-axis is:
+1. $y \le -x$
+2. $y \le 2$
+3. $x \le 3$
+
+## Step 4: Final Answer
+The linear inequalities that satisfy the image of the shaded region from Graph (a) under a reflection in the $x$-axis are:
+$$y \le -x$$
+$$y \le 2$$
+$$x \le 3$$",wrong,5.2975547313690186,0,4,"Full mark available = 4. The AI response does not match the ground truth system, so it cannot receive full marks. Comparison: Ground truth (a): y <= 2, x < 3, y >= −x, y >= 0. AI final system: y <= −x, y <= 2, x <= 3. Errors: (1) The AI gives y <= −x while the ground truth requires y >= −x (opposite direction) — major sign/direction error. (2) The AI has x <= 3 but the ground truth specifies x < 3 (non-strict vs strict inequality mismatch). (3) The AI omits y >= 0 entirely (ground truth requires y >= 0). (4) Although y <= 2 matches, the three other mismatches make the overall answer incorrect. Per the provided marking rule (only full mark if matching the ground truth), the score is 0/4.",20.233901739120483,,Linear Inequalities in Two Variables,English,gemini-2.5-flash-lite-preview-09-2025,14349
+Chapter 7_Q1.png,"(a) 3/8 ms^–2  (b) 1 200 m
+(c) Encik Merisat drives for a distance of 1.725 km in
+2.5 minutes with an average speed of 41.4 km h–1.","This is a motion problem based on interpreting a Speed-Time graph.
+
+## Step 1: Problem Understanding
+
+The goal is to analyze the journey of Encik Merisat based on the provided speed-time graph data.
+1.  **Part (a):** Calculate the rate of change of speed (acceleration) for the time interval $t=0$ to $t=20$ seconds.
+2.  **Part (b):** Calculate the distance traveled during the period of uniform speed.
+3.  **Part (c):** Describe the entire journey, which lasts $2.5$ minutes (150 seconds).
+
+## Step 2: Mathematical Formulation
+
+The graph consists of three segments:
+1.  Segment 1: $(0, 0)$ to $(40, 15)$ (Acceleration)
+2.  Segment 2: $(40, 15)$ to $(120, 15)$ (Uniform Speed)
+3.  Segment 3: $(120, 15)$ to $(150, 0)$ (Deceleration/Braking)
+
+**Key Formulas:**
+*   Rate of change of speed (Acceleration, $a$): Gradient of the speed-time graph.
+    $$a = \frac{\text{Change in Speed}}{\text{Change in Time}} = \frac{v_2 - v_1}{t_2 - t_1}$$
+*   Distance traveled: Area under the speed-time graph.
+    *   For uniform speed (rectangle): Distance = Speed $\times$ Time
+    *   For uniform acceleration/deceleration (trapezoid/triangle): Distance = Area
+
+**Constraint Conversion for Part (c):**
+$2.5$ minutes $= 2.5 \times 60 = 150$ seconds. This covers the entire journey time shown on the graph.
+
+## Step 3: Solution Execution
+
+### (a) Calculate the rate of change of speed for the first 20 seconds.
+
+The rate of change of speed is the acceleration, which is the gradient of the graph segment covering $t=0$ to $t=20$ seconds. This falls entirely within Segment 1: $(0, 0)$ to $(40, 15)$.
+
+Since the acceleration is uniform over this entire segment, we can calculate the gradient using the endpoints of Segment 1, $(t_1, v_1) = (0, 0)$ and $(t_2, v_2) = (40, 15)$.
+
+$$a = \frac{v_2 - v_1}{t_2 - t_1}$$
+$$a = \frac{15 \text{ m s}^{-1} - 0 \text{ m s}^{-1}}{40 \text{ s} - 0 \text{ s}}$$
+$$a = \frac{15}{40} \text{ m s}^{-2}$$
+$$a = \frac{3}{8} \text{ m s}^{-2}$$
+$$a = 0.375 \text{ m s}^{-2}$$
+
+The rate of change of speed for the first 20 seconds is $0.375 \text{ m s}^{-2}$.
+
+### (b) Calculate the distance, in metres, travelled at a uniform speed.
+
+Uniform speed occurs during Segment 2, which connects $(40, 15)$ to $(120, 15)$.
+The uniform speed is $v = 15 \text{ m s}^{-1}$.
+The time duration ($\Delta t$) for uniform speed is:
+$$\Delta t = t_{\text{end}} - t_{\text{start}} = 120 \text{ s} - 40 \text{ s} = 80 \text{ seconds}$$
+
+The distance traveled during this period is the area of the rectangle under Segment 2:
+$$\text{Distance} = \text{Speed} \times \text{Time}$$
+$$\text{Distance} = 15 \text{ m s}^{-1} \times 80 \text{ s}$$
+$$\text{Distance} = 1200 \text{ metres}$$
+
+The distance travelled at a uniform speed is $1200$ metres.
+
+### (c) Describe Encik Merisat's journey for the period of 2.5 minutes (150 seconds).
+
+The journey is analyzed in three phases corresponding to the three segments of the graph:
+
+**Phase 1: $t = 0$ to $t = 40$ seconds (Segment 1)**
+*   The speed increases uniformly from $0 \text{ m s}^{-1}$ to $15 \text{ m s}^{-1}$.
+*   This represents **uniform acceleration**.
+
+**Phase 2: $t = 40$ to $t = 120$ seconds (Segment 2)**
+*   The speed remains constant at $15 \text{ m s}^{-1}$.
+*   This represents **uniform speed**. (Duration: $120 - 40 = 80$ s)
+
+**Phase 3: $t = 120$ to $t = 150$ seconds (Segment 3)**
+*   The speed decreases uniformly from $15 \text{ m s}^{-1}$ to $0 \text{ m s}^{-1}$.
+*   This represents **uniform deceleration (or retardation)**, bringing the car to a stop. (Duration: $150 - 120 = 30$ s)
+
+**Overall Description:**
+Encik Merisat's journey consists of three parts: He accelerated uniformly from rest for the first 40 seconds, reaching a maximum speed of $15 \text{ m s}^{-1}$. He then maintained this speed for 80 seconds (from $t=40$ s to $t=120$ s). Finally, he decelerated uniformly for the last 30 seconds (from $t=120$ s to $t=150$ s) until he stopped at his friend's house.
+
+## Step 4: Final Answer
+
+(a) The rate of change of speed for the first 20 seconds is:
+$$a = 0.375 \text{ m s}^{-2}$$
+
+(b) The distance travelled at a uniform speed is:
+$$\text{Distance} = 1200 \text{ metres}$$
+
+(c) Encik Merisat's journey for the period of 2.5 minutes (150 seconds) involved:
+1.  Uniform acceleration from rest to $15 \text{ m s}^{-1}$ (0 to 40 s).
+2.  Travel at a constant speed of $15 \text{ m s}^{-1}$ (40 s to 120 s).
+3.  Uniform deceleration from $15 \text{ m s}^{-1}$ to rest (120 s to 150 s).",wrong,7.417443513870239,4,5,"Total marks available = 5 (default SPM-style marking). I assume marks distributed as: (a) 1 mark, (b) 1 mark, (c) 3 marks. The AI's response: (a) Correct — acceleration = 3/8 m s^-2 (1/1). (b) Correct — uniform-speed distance = 1200 m (1/1). (c) Partial credit — the AI correctly described the three phases (uniform acceleration, constant speed, uniform deceleration) and time intervals, demonstrating correct understanding and method, but it did not compute the total distance (1.725 km) nor the average speed (41.4 km h^-1) given in the ground truth. Awarded 2 out of 3 for method/description but missing final numeric results. Summing: 1 + 1 + 2 = 4/5.",23.521849393844604,,Graphs of Motion,English,gemini-2.5-flash-lite-preview-09-2025,6022
+Chapter 7_Q2.png,(a) 100               (b) 1.6               (c) 57.14,"This is a motion graph problem based on distance-time plots for a car and a tour bus. The rate of change in distance (speed) is determined by the slope of the line segment.
+
+**Goal:**
+(a) Calculate the rate of change (speed) of the car for the first 24 minutes ($0$ to $0.4$ hours).
+(b) Calculate the value of $t$, the time of intersection $Q$.
+(c) Calculate the rate of change (speed) of the car for the last $80 \text{ km}$ traveled by the car.
+
+### Step 1: Determine the Car's Path Segments and Speed Equations
+
+The Car (Magenta/Pink Line) travels from $A(0, 150)$ to $Q(t, 70)$ and then to $B(3, 0)$.
+
+**Segment 1: $A \to Q$** (Time interval $0$ to $t$)
+Points: $(x_1, y_1) = (0, 150)$ and $(x_2, y_2) = (t, 70)$.
+Speed, $S_1 = m_1 = \frac{y_2 - y_1}{x_2 - x_1} = \frac{70 - 150}{t - 0} = \frac{-80}{t}$.
+Since this is a distance-time graph, speed must be positive. The car is moving towards the origin (distance decreasing), so this is the speed during the first part of its journey.
+$S_1 = \left| \frac{-80}{t} \right| = \frac{80}{t} \text{ km/h}$.
+
+**Segment 2: $Q \to B$** (Time interval $t$ to $3$)
+Points: $(x_1, y_1) = (t, 70)$ and $(x_2, y_2) = (3, 0)$.
+Speed, $S_2 = m_2 = \frac{y_2 - y_1}{x_2 - x_1} = \frac{0 - 70}{3 - t} = \frac{-70}{3 - t}$.
+Speed is the absolute value:
+$S_2 = \left| \frac{-70}{3 - t} \right| = \frac{70}{3 - t} \text{ km/h}$ (Since $t < 3$, $3-t$ is positive).
+
+### Step 2: Solve Part (b) - Find $t$
+
+To find $t$, we need information about the Tour Bus path, which must intersect the Car path at $Q(t, 70)$.
+
+**Tour Bus Path (Green Line):** Points $O(0, 0)$, $Q(t, 70)$, $R(3, 150)$.
+Since the points $O, Q, R$ lie on the same line (the graph appears continuous for the bus, or we assume the average speed is used if it were a single line), we can calculate the slope using $O$ and $R$, or use the known points $O, Q$ and $Q, R$ to find $t$.
+
+*Self-Correction/Refinement:* In motion graphs, if a line segment is straight, the speed is constant over that interval. If the bus path is piecewise linear, we must ensure we use the correct segment intersecting $Q$. Given the problem context (both travel $150 \text{ km}$ in $3 \text{ hours}$), it is highly likely that the average speed for both vehicles over the entire journey is $150/3 = 50 \text{ km/h}$.
+
+**Method 1: Using the Bus Speed Consistency (Assuming $O, Q, R$ are collinear for simplicity, or using average speed information)**
+
+Let's calculate the average speed of the Bus over $3$ hours: $V_{\text{avg, Bus}} = 150 / 3 = 50 \text{ km/h}$.
+If the bus path $OQR$ is a single straight line, its slope must be $50$.
+Slope using $O(0, 0)$ and $R(3, 150)$ is $\frac{150 - 0}{3 - 0} = 50$.
+If the line is straight, then $Q(t, 70)$ must satisfy the equation $D = 50T$.
+$70 = 50t$
+$t = \frac{70}{50} = \frac{7}{5} = 1.4$ hours.
+
+**Check with the second segment $QR$:**
+If $t=1.4$, the slope of $QR$ should also be 50.
+Slope $QR = \frac{150 - 70}{3 - 1.4} = \frac{80}{1.6} = \frac{800}{16} = 50$.
+This confirms that the Tour Bus travels at a constant speed of $50 \text{ km/h}$ for the entire $3$ hours, and the intersection point $Q$ occurs at $t=1.4$ hours.
+
+**Answer to (b): The value of $t$ is $1.4$ hours.**
+
+### Step 3: Solve Part (a) - Car Speed for the First 24 Minutes
+
+We need the speed of the car between $T=0$ and $T=24$ minutes.
+Time conversion: $24 \text{ minutes} = \frac{24}{60} \text{ hours} = 0.4 \text{ hours}$.
+Since $t = 1.4$ hours, the interval $[0, 0.4]$ falls entirely within Segment 1 ($A \to Q$, which spans $[0, t]$).
+
+We use the speed formula $S_1$ derived in Step 1, using $t=1.4$:
+$S_1 = \frac{80}{t} \text{ km/h}$
+$S_1 = \frac{80}{1.4} = \frac{800}{14} = \frac{400}{7} \text{ km/h}$.
+
+Calculation:
+$S_1 = 400 / 7 \approx 57.1428... \text{ km/h}$.
+
+**Answer to (a): The rate of change of distance for the car for the first 24 minutes is $\frac{400}{7} \text{ km h}^{-1}$ (or approximately $57.14 \text{ km h}^{-1}$).**
+
+### Step 4: Solve Part (c) - Car Speed for the Last 80 km
+
+We need the speed of the car during the interval where it covered the final $80 \text{ km}$.
+
+The car starts at $D=150 \text{ km}$ (at $T=0$) and ends at $D=0 \text{ km}$ (at $T=3$).
+The last $80 \text{ km}$ means the car traveled from $D = 80 \text{ km}$ down to $D = 0 \text{ km}$.
+
+This corresponds to the segment $Q \to B$.
+Point $B$ is $(3, 0)$. We need to find the time $t_8$ when the distance was $80 \text{ km}$. This point $(t_8, 80)$ must lie on Segment 1 ($A \to Q$).
+
+**Find $t_8$ (Time when Car Distance = 80 km):**
+Use the equation for Segment 1 ($A \to Q$): $D = S_1 T + 150$.
+$S_1 = \frac{400}{7} \text{ km/h}$.
+$D = \frac{400}{7} T + 150$ (Wait, slope is negative for distance decreasing. Using the explicit line equation for $A(0, 150)$ to $Q(1.4, 70)$):
+$D - 150 = m_1 (T - 0)$
+$m_1 = S_1 = -\frac{80}{t} = -\frac{80}{1.4} = -\frac{400}{7} \text{ km/h}$.
+$D = -\frac{400}{7} T + 150$.
+
+Set $D = 80$:
+$80 = -\frac{400}{7} t_8 + 150$
+$\frac{400}{7} t_8 = 150 - 80$
+$\frac{400}{7} t_8 = 70$
+$t_8 = \frac{70 \times 7}{400} = \frac{490}{400} = \frac{49}{40} = 1.225$ hours.
+
+The last $80 \text{ km}$ are covered between $T = t_8 = 1.225$ hours and $T = 3$ hours.
+This time interval $[1.225, 3]$ spans across $t=1.4$.
+We must examine the segments:
+1. From $T=1.225$ to $T=1.4$ (Segment $A \to Q$, Speed $S_1$).
+2. From $T=1.4$ to $T=3$ (Segment $Q \to B$, Speed $S_2$).
+
+The question asks for the rate of change *of the car* for the last $80 \text{ km}$. Since the speed changes during this $80 \text{ km}$ journey, we must calculate the average speed over this specific distance traveled.
+
+Distance traveled in this interval: $80 \text{ km}$ (from $D=80$ to $D=0$).
+Time taken for the last $80 \text{ km}$: $\Delta T = 3 - t_8$.
+$\Delta T = 3 - 1.225 = 1.775$ hours.
+
+Average Speed for the last $80 \text{ km} = \frac{\text{Distance}}{\text{Time taken}} = \frac{80 \text{ km}}{1.775 \text{ hours}}$.
+
+Calculation:
+$1.775 = \frac{1775}{1000} = \frac{355}{200} = \frac{71}{40}$.
+Average Speed $= \frac{80}{71/40} = \frac{80 \times 40}{71} = \frac{3200}{71} \text{ km/h}$.
+
+Calculation:
+$3200 / 71 \approx 45.0704 \text{ km/h}$.
+
+*(Self-check: If the question implied the final segment $Q \to B$, which covers $70 \text{ km}$, we would use $S_2$. But it specifically asks for the last $80 \text{ km}$ of the $150 \text{ km}$ journey.)*
+
+We verify the distance covered in Segment 2 ($Q \to B$): $70 \text{ km}$.
+The distance covered in Segment 1 that contributes to the last $80 \text{ km}$ is $80 - 70 = 10 \text{ km}$.
+This $10 \text{ km}$ portion is covered between $T=t_8=1.225$ and $T=t=1.4$.
+Time taken for this $10 \text{ km}$: $1.4 - 1.225 = 0.175$ hours.
+Speed verification for this part: $10 \text{ km} / 0.175 \text{ h} = 10 / (7/40) = 400/7 \approx 57.14 \text{ km/h}$. (Matches $S_1$).
+
+Total Time taken for the last $80 \text{ km}$:
+Time for $10 \text{ km}$ (at $S_1$) + Time for $70 \text{ km}$ (at $S_2$).
+Time for $70 \text{ km}$ (Segment 2): $3 - 1.4 = 1.6$ hours. (Check: $70 / 50 = 1.4$. Hmm, $1.6 \neq 1.4$. Let's recheck the time taken for $Q \to B$ based on speed $S_2$).
+
+Speed $S_2$ (Rate of change for $Q \to B$):
+$S_2 = \frac{70}{3 - t} = \frac{70}{3 - 1.4} = \frac{70}{1.6} = \frac{700}{16} = \frac{175}{4} = 43.75 \text{ km/h}$.
+Time taken for Segment 2 ($70 \text{ km}$) = $70 / S_2 = 70 / (175/4) = 70 \times 4 / 175 = 280 / 175$.
+$280/175$ (Divide by 35) $= 8/5 = 1.6$ hours.
+Total time for Segment 2 is indeed $3 - 1.4 = 1.6$ hours. (Consistent).
+
+Total time for the last $80 \text{ km} = (\text{Time for } 10 \text{ km}) + (\text{Time for } 70 \text{ km})$
+Total time $= 0.175 \text{ hours} + 1.6 \text{ hours} = 1.775$ hours. (Consistent with $3 - 1.225$).
+
+Average Speed $= \frac{3200}{71} \text{ km/h}$.
+
+**Answer to (c): The rate of change in distance (average speed) of the car for the last 80 km is $\frac{3200}{71} \text{ km h}^{-1}$ (or approximately $45.07 \text{ km h}^{-1}$).**
+
+---
+### Summary of Results
+
+(a) Rate of change for the first 24 minutes ($0$ to $0.4$ hours):
+$$S_1 = \frac{400}{7} \text{ km h}^{-1} \approx 57.14 \text{ km h}^{-1}$$
+
+(b) Value of $t$:
+$$t = 1.4 \text{ hours}$$
+
+(c) Rate of change for the last 80 km:
+$$\text{Average Speed} = \frac{3200}{71} \text{ km h}^{-1} \approx 45.07 \text{ km h}^{-1}$$",wrong,4.640152215957642,0,5,"The provided marking rule states full marks (5) are awarded only if the agent's answers match the ground truth. The AI's answers do not match the ground truth for any part: (a) ground truth 100 vs AI ≈57.14 (incorrect); (b) ground truth 1.6 vs AI 1.4 (incorrect); (c) ground truth 57.14 vs AI ≈45.07 (incorrect). Because none of the required answers match the ground truth, the response receives 0/5 under the given marking scheme.",16.421884775161743,,Graphs of Motion,English,gemini-2.5-flash-lite-preview-09-2025,29577
+Chapter 7_Q3.png,(a) 8 seconds (b) 17,"This problem requires analyzing a speed-time graph to determine motion characteristics and solve for an unknown time variable $t$ based on equal distances traveled.
+
+---
+
+### Step 1: Problem Understanding
+
+We need to find two things:
+(a) The duration for which the motorcycle travels at a uniform speed.
+(b) The value of $t$, given that the total distance traveled by the car and the motorcycle are equal over the time interval $[0, t]$.
+
+The key mathematical concept here is that **Distance traveled is equal to the Area under the Speed-Time Graph.**
+
+---
+
+### Step 2: Mathematical Formulation
+
+We will analyze the motion of the motorcycle first for part (a), and then set up equations for the areas under both graphs for part (b).
+
+#### A. Formulating Motion for the Motorcycle ($M$)
+
+The motorcycle's motion is defined by points O(0, 0), P(2, 4), Q(10, 4), and R($t$, 10).
+
+**Part (a): Uniform Speed Duration**
+Uniform speed occurs when the speed is constant, meaning the speed-time graph segment is horizontal. This is the segment PQ.
+*   Start time for uniform speed: $t_P = 2$ seconds.
+*   End time for uniform speed: $t_Q = 10$ seconds.
+
+**Part (b): Distance Equations**
+We need the total distance traveled by the motorcycle ($D_M$) from $t=0$ to $t=t$. This area is the sum of areas of trapezoids/triangles/rectangles formed by O, P, Q, and R.
+Since R is defined as $(t, 10)$, we must assume that the motorcycle reaches the final point R at time $t$. The segment QR connects (10, 4) to ($t$, 10). For the distance to be compared up to time $t$, $t$ must be the final time point for both vehicles, so $t > 10$.
+
+$$D_M = \text{Area(OPQ} + \text{Area(QR}_{\text{up to time } t})$$
+
+However, the problem specifies comparing distances ""for the period of $t$ seconds."" This implies we must calculate the area up to the time coordinate $t$. If the motorcycle reaches its final point R at time $t$, the total distance $D_M$ is the area of the shape formed by O, P, Q, and R.
+
+The shape formed by the motorcycle's path O-P-Q-R relative to the time axis is a combination of:
+1. Triangle OP (Area $A_{OP}$): Base 2, Height 4. (Incorrect, OP is a line segment, we need the area under it).
+2. Trapezoid under PQ (Area $A_{PQ}$): Rectangle with height 4, width $10 - 2 = 8$.
+3. Trapezoid under QR (Area $A_{QR}$): From $x=10$ to $x=t$.
+
+Let's calculate the area for the defined segments up to $t$:
+$$D_M = \text{Area(OP)} + \text{Area(PQ)} + \text{Area(QR)}$$
+
+*   **Area under OP (Triangle):**
+    $$A_{OP} = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} (2)(4) = 4 \text{ m}$$
+*   **Area under PQ (Rectangle):**
+    $$A_{PQ} = \text{width} \times \text{height} = (10 - 2) \times 4 = 8 \times 4 = 32 \text{ m}$$
+*   **Area under QR (Trapezoid from $x=10$ to $x=t$):**
+    The shape under QR is a trapezoid with parallel sides (speeds) at $x=10$ and $x=t$, and height $(t-10)$.
+    Speed at $x=10$ is $v_Q = 4$. Speed at $x=t$ is $v_R = 10$.
+    $$A_{QR} = \frac{1}{2} (v_Q + v_R) \times (t - 10) = \frac{1}{2} (4 + 10)(t - 10) = \frac{1}{2} (14)(t - 10) = 7(t - 10) \text{ m}$$
+
+Total distance for the motorcycle ($D_M$):
+$$D_M = A_{OP} + A_{PQ} + A_{QR}$$
+$$D_M = 4 + 32 + 7(t - 10)$$
+$$D_M = 36 + 7t - 70$$
+$$D_M = 7t - 34$$
+
+#### B. Formulating Motion for the Car ($C$)
+
+The car follows points O(0, 0) and R($t$, 10). The car's path must also define an area up to time $t$. We need the equation for the line segment OR passing through $(0, 0)$ and $(t, 10)$.
+
+The speed of the car $v_C(x)$ is given by the line equation:
+$$v_C(x) = m x + b$$
+Since $b=0$ (passes through (0, 0)), the slope $m$ is:
+$$m = \frac{10 - 0}{t - 0} = \frac{10}{t}$$
+So, the car's speed function is:
+$$v_C(x) = \frac{10}{t} x$$
+
+Total distance for the car ($D_C$ from $t=0$ to $t=t$):
+This is the area of the triangle formed by O(0, 0), R($t$, 10), and the point $(t, 0)$ on the time axis.
+$$D_C = \text{Area of Triangle} = \frac{1}{2} \times \text{base} \times \text{height}$$
+$$D_C = \frac{1}{2} (t)(10)$$
+$$D_C = 5t$$
+
+---
+
+### Step 3: Solution Execution
+
+#### (a) Duration when the motorcycle travels at a uniform speed.
+
+The motorcycle travels at uniform speed between point P (2, 4) and point Q (10, 4).
+Duration ($\Delta t$) = Time at Q - Time at P
+$$\Delta t = 10 \text{ s} - 2 \text{ s}$$
+$$\Delta t = 8 \text{ seconds}$$
+
+#### (b) Value of $t$ when $D_C = D_M$.
+
+We equate the distances calculated in Step 2:
+$$D_C = D_M$$
+$$5t = 7t - 34$$
+
+Solve for $t$:
+$$34 = 7t - 5t$$
+$$34 = 2t$$
+$$t = \frac{34}{2}$$
+$$t = 17$$
+
+**Verification for Part (b):**
+If $t=17$ seconds:
+$D_C = 5(17) = 85$ meters.
+$D_M = 7(17) - 34 = 119 - 34 = 85$ meters.
+The distances match. Also, since $t=17 > 10$, the assumption that the motorcycle path segment QR extends to $t=17$ is valid.
+
+---
+
+### Step 4: Final Answer
+
+(a) The duration when the motorcycle travels at a uniform speed is **8 seconds**.
+
+(b) The value of $t$ for which the distances travelled are the same is **17 seconds**.",correct,4.073231935501099,5,5,"Awarded full mark (5) because the AI answer matches the ground truth exactly. The response correctly identified the motorcycle's constant-speed interval (P at t=2 to Q at t=10) giving 8 s, computed areas under the speed–time graph for motorcycle and car (D_M = 7t - 34, D_C = 5t), solved 5t = 7t - 34 to obtain t = 17, and verified the distances match. Work is mathematically correct and complete, satisfying the provided marking instruction to give full marks when the answer matches the ground truth.",6.8888702392578125,,Graphs of Motion,English,gemini-2.5-flash-lite-preview-09-2025,6905
+Chapter 8_Q1.png,"(a) 9, 2, 3.210, 1.792
+(b) interquartile range","Here is the step-by-step solution based on the provided structured data.
+
+## Step 1: Problem Understanding
+
+The goal is to analyze a frequency distribution representing the revision time (in hours) for 32 pupils.
+Part (a) requires calculating four measures of dispersion: Range, Interquartile Range (IQR), Variance ($\sigma^2$), and Standard Deviation ($\sigma$).
+Part (b) requires selecting the most appropriate measure of dispersion to describe the spread of the data.
+
+## Step 2: Mathematical Formulation and Preliminary Calculations
+
+The given data is: $N = \sum f = 32$.
+
+| Time ($x$) | Frequency ($f$) | $f \cdot x$ | $x^2$ | $f \cdot x^2$ | Cumulative Frequency (cf) |
+| :--------: | :-------------: | :---------: | :---: | :-----------: | :-----------------------: |
+| 1          | 2               | 2           | 1     | 2             | 2                         |
+| 2          | 5               | 10          | 4     | 20            | 7                         |
+| 3          | 6               | 18          | 9     | 54            | 13                        |
+| 4          | 9               | 36          | 16    | 144           | 22                        |
+| 5          | 6               | 30          | 25    | 150           | 28                        |
+| 6          | 2               | 12          | 36    | 72            | 30                        |
+| 7          | 1               | 7           | 49    | 49            | 31                        |
+| 10         | 1               | 10          | 100   | 100           | 32                        |
+| **Total**  | $\sum f = 32$   | $\sum fx = 125$ |     | $\sum fx^2 = 591$ |                           |
+
+We need the following sums for calculations:
+1. $\sum f = N = 32$
+2. $\sum fx = 125$
+3. $\sum fx^2 = 591$
+
+### Formulas Used:
+*   **Mean ($\mu$):** $\mu = \frac{\sum fx}{N}$
+*   **Range:** Maximum Value - Minimum Value
+*   **Quartiles ($Q_1, Q_2, Q_3$):** Found using cumulative frequency positions.
+    *   $Q_1$ position: $(N+1)/4$
+    *   $Q_2$ position (Median): $(N+1)/2$
+    *   $Q_3$ position: $3(N+1)/4$
+*   **Variance ($\sigma^2$):** $\sigma^2 = \frac{\sum fx^2}{N} - \left(\frac{\sum fx}{N}\right)^2$
+*   **Standard Deviation ($\sigma$):** $\sigma = \sqrt{\sigma^2}$
+*   **Interquartile Range (IQR):** $IQR = Q_3 - Q_1$
+
+---
+
+## Step 3: Solution Execution (Part a)
+
+### 1. Calculate the Mean ($\mu$) (Needed for Variance)
+
+$$\mu = \frac{\sum fx}{N} = \frac{125}{32}$$
+$$\mu = 3.90625$$
+
+### 2. Calculate the Range
+
+Minimum Value ($x_{min}$) = 1 hour
+Maximum Value ($x_{max}$) = 10 hours
+
+$$\text{Range} = x_{max} - x_{min} = 10 - 1$$
+$$\mathbf{Range = 9 \text{ hours}}$$
+
+### 3. Calculate Quartiles ($Q_1$ and $Q_3$) and IQR
+
+Total $N = 32$.
+
+**Position of $Q_1$:**
+$$P(Q_1) = \frac{N+1}{4} = \frac{32+1}{4} = \frac{33}{4} = 8.25$$
+Since the position is 8.25, $Q_1$ lies between the 8th and 9th observations.
+*   cf at $x=3$ is 13.
+*   The 8th and 9th observations both fall into the group where $x=3$.
+$$\mathbf{Q_1 = 3 \text{ hours}}$$
+
+**Position of $Q_3$:**
+$$P(Q_3) = \frac{3(N+1)}{4} = 3 \times 8.25 = 24.75$$
+Since the position is 24.75, $Q_3$ lies between the 24th and 25th observations.
+*   cf at $x=4$ is 22.
+*   cf at $x=5$ is 28.
+The 24th and 25th observations fall into the group where $x=5$.
+$$\mathbf{Q_3 = 5 \text{ hours}}$$
+
+**Interquartile Range (IQR):**
+$$IQR = Q_3 - Q_1 = 5 - 3$$
+$$\mathbf{IQR = 2 \text{ hours}}$$
+
+### 4. Calculate Variance ($\sigma^2$) and Standard Deviation ($\sigma$)
+
+$$\sigma^2 = \frac{\sum fx^2}{N} - \mu^2$$
+$$\sigma^2 = \frac{591}{32} - (3.90625)^2$$
+
+Calculate the first term:
+$$\frac{591}{32} = 18.46875$$
+
+Calculate the squared mean:
+$$(3.90625)^2 = 15.2587890625$$
+
+Calculate Variance:
+$$\sigma^2 = 18.46875 - 15.2587890625$$
+$$\mathbf{\sigma^2 = 3.2099609375}$$
+
+Rounding to 3 significant figures (or 3 decimal places for clarity):
+$$\mathbf{\sigma^2 \approx 3.210}$$
+
+**Standard Deviation ($\sigma$):**
+$$\sigma = \sqrt{3.2099609375}$$
+$$\mathbf{\sigma \approx 1.791639}$$
+
+Rounding to 3 significant figures:
+$$\mathbf{\sigma \approx 1.79 \text{ hours}}$$
+
+---
+
+## Step 4: Solution Execution (Part b)
+
+**State the most appropriate measure of dispersion.**
+
+We examine the data for skewness or the presence of outliers, as these influence the choice between the range/IQR and variance/standard deviation.
+
+1.  **Mean ($\mu$):** 3.91 hours
+2.  **Median ($Q_2$):** Position is $(32+1)/2 = 16.5$. The 16th and 17th observations fall where $x=4$ (cf=22). Thus, $Q_2 = 4$ hours.
+
+Since the Mean ($\mu \approx 3.91$) is less than the Median ($Q_2 = 4$), the distribution is slightly skewed to the left (negatively skewed).
+
+Furthermore, the data contains a clear potential outlier at $x=10$, significantly separated from the main cluster (1 to 7).
+
+*   **Range:** Highly sensitive to the outlier (10).
+*   **IQR:** Robust to outliers as it only depends on $Q_1$ and $Q_3$.
+*   **Variance/Standard Deviation:** Highly sensitive to outliers because they rely on squared deviations from the mean (which is pulled by the outlier).
+
+Because the distribution exhibits skewness and contains an extreme value (10 hours), the measure of dispersion that is least affected by this extreme value is preferred for describing the typical spread.
+
+The **Interquartile Range (IQR)** is the most appropriate measure of dispersion in the presence of outliers or skewness when comparing spread, as it is resistant to extreme values.
+
+---
+
+## Final Answer
+
+**(a) Calculate the range, interquartile range, variance and standard deviation:**
+
+| Measure | Calculation | Result |
+| :--- | :--- | :--- |
+| **Range** | $10 - 1$ | **9 hours** |
+| **$Q_1$** | 8.25th observation | 3 hours |
+| **$Q_3$** | 24.75th observation | 5 hours |
+| **Interquartile Range (IQR)** | $5 - 3$ | **2 hours** |
+| **Variance ($\sigma^2$)** | $18.46875 - (3.90625)^2$ | $\approx \mathbf{3.210}$ |
+| **Standard Deviation ($\sigma$)** | $\sqrt{\sigma^2}$ | $\approx \mathbf{1.79 \text{ hours}}$ |
+
+**(b) State the most appropriate measure of dispersion:**
+
+The **Interquartile Range (IQR)** is the most appropriate measure of dispersion because the data contains a distant outlier (10 hours), which would heavily inflate the Range and the Standard Deviation/Variance. The IQR provides a robust measure of the spread of the central 50% of the data.",correct,4.367150545120239,6,6,"Full marks awarded (6/6). The AI's answers match the ground truth: Range = 9, IQR = 2, Variance ≈ 3.210, and the chosen measure of dispersion is the interquartile range. The AI's computed standard deviation (≈1.791639, reported as 1.79) differs from the ground truth value 1.792 only by a negligible rounding amount, which is acceptable. All required values and the justification for part (b) are present and correct.",8.103844404220581,,Measures of Dispersion ,English,gemini-2.5-flash-lite-preview-09-2025,12550
+Chapter 8_Q2.png,"(a) 1.2, 0.4
+(b) 5, 3","This problem requires calculating the Range and the Interquartile Range (IQR) for two sets of grouped discrete data, (a) and (b).
+
+The formulas to be used are:
+1. **Range** = Maximum Value ($x_{\text{max}}$) - Minimum Value ($x_{\text{min}}$)
+2. **Interquartile Range (IQR)** = $Q_3 - Q_1$
+   For discrete frequency data, the position of the $k$-th quartile ($Q_k$) is found using the cumulative frequency (CF). $Q_k$ is the value $x_i$ corresponding to the smallest class such that its cumulative frequency is greater than or equal to $k N / 4$, where $N$ is the total frequency. (We will use $N$ instead of $N+1$ for position determination, as is standard practice for identifying the position $P$ in a dataset of size $N$, i.e., $P = k N / 4$).
+
+---
+
+## Part (a): Diameter Data
+
+**Data Set (a):**
+| Diameter ($x_i$) | Frequency ($f_i$) | Cumulative Frequency (CF) |
+| :---: | :---: | :---: |
+| 6.0 | 6 | 6 |
+| 6.2 | 9 | $6 + 9 = 15$ |
+| 6.4 | 12 | $15 + 12 = 27$ |
+| 6.6 | 18 | $27 + 18 = 45$ |
+| 6.8 | 20 | $45 + 20 = 65$ |
+| 7.0 | 10 | $65 + 10 = 75$ |
+| 7.2 | 5 | $75 + 5 = 80$ |
+
+Total Frequency, $N = 80$.
+Minimum Value, $x_{\text{min}} = 6.0$ cm.
+Maximum Value, $x_{\text{max}} = 7.2$ cm.
+
+### 1. Calculate the Range (a)
+
+$$\text{Range} = x_{\text{max}} - x_{\text{min}}$$
+$$\text{Range} = 7.2 - 6.0$$
+$$\text{Range} = 1.2 \text{ cm}$$
+
+### 2. Calculate the Interquartile Range (IQR) (a)
+
+We need to find $Q_1$ (25th percentile) and $Q_3$ (75th percentile).
+
+**Calculate Position for $Q_1$ (First Quartile):**
+$$P_1 = \frac{1 \times N}{4} = \frac{80}{4} = 20$$
+We look for the value $x_i$ where the CF first meets or exceeds 20.
+From the table, CF reaches 27 at $x_i = 6.4$.
+Therefore, $Q_1 = 6.4$ cm.
+
+**Calculate Position for $Q_3$ (Third Quartile):**
+$$P_3 = \frac{3 \times N}{4} = \frac{3 \times 80}{4} = 3 \times 20 = 60$$
+We look for the value $x_i$ where the CF first meets or exceeds 60.
+From the table, CF reaches 65 at $x_i = 6.8$.
+Therefore, $Q_3 = 6.8$ cm.
+
+**Calculate IQR (a):**
+$$\text{IQR} = Q_3 - Q_1$$
+$$\text{IQR} = 6.8 - 6.4$$
+$$\text{IQR} = 0.4 \text{ cm}$$
+
+---
+
+## Part (b): Age Data
+
+**Data Set (b):**
+| Age ($x_i$) | Frequency ($f_i$) | Cumulative Frequency (CF) |
+| :---: | :---: | :---: |
+| 13 | 12 | 12 |
+| 14 | 18 | $12 + 18 = 30$ |
+| 15 | 21 | $30 + 21 = 51$ |
+| 16 | 20 | $51 + 20 = 71$ |
+| 17 | 21 | $71 + 21 = 92$ |
+| 18 | 8 | $92 + 8 = 100$ |
+
+Total Frequency, $N = 100$.
+Minimum Value, $x_{\text{min}} = 13$ years.
+Maximum Value, $x_{\text{max}} = 18$ years.
+
+### 1. Calculate the Range (b)
+
+$$\text{Range} = x_{\text{max}} - x_{\text{min}}$$
+$$\text{Range} = 18 - 13$$
+$$\text{Range} = 5 \text{ years}$$
+
+### 2. Calculate the Interquartile Range (IQR) (b)
+
+**Calculate Position for $Q_1$ (First Quartile):**
+$$P_1 = \frac{1 \times N}{4} = \frac{100}{4} = 25$$
+We look for the value $x_i$ where the CF first meets or exceeds 25.
+From the table, CF reaches 30 at $x_i = 14$.
+Therefore, $Q_1 = 14$ years.
+
+**Calculate Position for $Q_3$ (Third Quartile):**
+$$P_3 = \frac{3 \times N}{4} = \frac{3 \times 100}{4} = 75$$
+We look for the value $x_i$ where the CF first meets or exceeds 75.
+From the table, CF reaches 92 at $x_i = 17$.
+Therefore, $Q_3 = 17$ years.
+
+**Calculate IQR (b):**
+$$\text{IQR} = Q_3 - Q_1$$
+$$\text{IQR} = 17 - 14$$
+$$\text{IQR} = 3 \text{ years}$$
+
+---
+
+## Final Answer
+
+**Data Set (a) (Diameter):**
+*   **Range:** $1.2$ cm
+*   **Interquartile Range (IQR):** $0.4$ cm
+
+**Data Set (b) (Age):**
+*   **Range:** $5$ years
+*   **Interquartile Range (IQR):** $3$ years",correct,6.2057883739471436,4,4,"The AI response exactly matches the ground truth values: (a) Range = 1.2, IQR = 0.4; (b) Range = 5, IQR = 3. The computations and use of cumulative frequencies to locate Q1 and Q3 are correct and show correct reasoning. Per the provided marking scheme (full marks = 4 when answers match ground truth), award full mark.",8.207273483276367,,Measures of Dispersion ,English,gemini-2.5-flash-lite-preview-09-2025,13383
+Chapter 8_Q3.png,"(a) Team A Team B
+mean = 61 mean = 61
+range = 22 range = 30
+variance = 78.8 variance = 155.6
+standard deviation standard deviation
+= 8.877 = 12.47
+(b) No because of the existence of outlier or extreme
+values","This problem requires calculating measures of central tendency (mean) and dispersion (range, variance, standard deviation) for two sets of data and then using these measures to compare the spread of the data.
+
+## Step 1: Problem Understanding
+The goal is to:
+(a) Calculate the mean ($\bar{x}$), range ($R$), variance ($\sigma^2$), and standard deviation ($\sigma$) for Team A and Team B.
+(b) Determine if the range is an appropriate measure of dispersion for this data and justify the answer.
+(c) Determine which team has a greater dispersion from the mean.
+
+Constraints confirm that all specified statistical measures must be calculated for part (a), and the comparison in part (c) should be based on dispersion relative to the mean (typically using variance or standard deviation).
+
+## Step 2: Mathematical Formulation
+
+The formulas required are:
+1. **Mean ($\bar{x}$):** $\bar{x} = \frac{\sum x}{N}$
+2. **Range ($R$):** $R = x_{\text{max}} - x_{\text{min}}$
+3. **Variance ($\sigma^2$):** $\sigma^2 = \frac{\sum (x - \bar{x})^2}{N}$ (Assuming population variance as is common in descriptive statistics unless a sample is explicitly mentioned, and since we are comparing the two teams directly.)
+4. **Standard Deviation ($\sigma$):** $\sigma = \sqrt{\sigma^2}$
+
+Data Sets:
+Team A ($x_A$): {48, 53, 65, 69, 70}, $N_A = 5$
+Team B ($x_B$): {45, 47, 68, 70, 75}, $N_B = 5$
+
+## Step 3: Solution Execution (Part a)
+
+### Calculations for Team A: {48, 53, 65, 69, 70}
+
+**1. Mean ($\bar{x}_A$):**
+$$\sum x_A = 48 + 53 + 65 + 69 + 70 = 305$$
+$$\bar{x}_A = \frac{305}{5} = 61 \text{ kg}$$
+
+**2. Range ($R_A$):**
+$$x_{\text{max}, A} = 70, \quad x_{\text{min}, A} = 48$$
+$$R_A = 70 - 48 = 22 \text{ kg}$$
+
+**3. Variance ($\sigma_A^2$):**
+First, calculate the squared deviations $\sum (x_A - \bar{x}_A)^2$:
+| $x_A$ | $x_A - \bar{x}_A$ | $(x_A - \bar{x}_A)^2$ |
+| :---: | :---------------: | :-------------------: |
+| 48    | $48 - 61 = -13$   | 169                   |
+| 53    | $53 - 61 = -8$    | 64                    |
+| 65    | $65 - 61 = 4$     | 16                    |
+| 69    | $69 - 61 = 8$     | 64                    |
+| 70    | $70 - 61 = 9$     | 81                    |
+| **Sum** | **0** | **394** |
+
+$$\sigma_A^2 = \frac{\sum (x_A - \bar{x}_A)^2}{N_A} = \frac{394}{5} = 78.8$$
+
+**4. Standard Deviation ($\sigma_A$):**
+$$\sigma_A = \sqrt{78.8} \approx 8.877 \text{ kg}$$
+
+---
+
+### Calculations for Team B: {45, 47, 68, 70, 75}
+
+**1. Mean ($\bar{x}_B$):**
+$$\sum x_B = 45 + 47 + 68 + 70 + 75 = 305$$
+$$\bar{x}_B = \frac{305}{5} = 61 \text{ kg}$$
+
+**2. Range ($R_B$):**
+$$x_{\text{max}, B} = 75, \quad x_{\text{min}, B} = 45$$
+$$R_B = 75 - 45 = 30 \text{ kg}$$
+
+**3. Variance ($\sigma_B^2$):**
+First, calculate the squared deviations $\sum (x_B - \bar{x}_B)^2$:
+| $x_B$ | $x_B - \bar{x}_B$ | $(x_B - \bar{x}_B)^2$ |
+| :---: | :---------------: | :-------------------: |
+| 45    | $45 - 61 = -16$   | 256                   |
+| 47    | $47 - 61 = -14$   | 196                   |
+| 68    | $68 - 61 = 7$     | 49                    |
+| 70    | $70 - 61 = 9$     | 81                    |
+| 75    | $75 - 61 = 14$    | 196                   |
+| **Sum** | **0** | **778** |
+
+$$\sigma_B^2 = \frac{\sum (x_B - \bar{x}_B)^2}{N_B} = \frac{778}{5} = 155.6$$
+
+**4. Standard Deviation ($\sigma_B$):**
+$$\sigma_B = \sqrt{155.6} \approx 12.474 \text{ kg}$$
+
+---
+
+### Summary for Part (a):
+
+| Measure | Team A | Team B |
+| :---: | :---: | :---: |
+| Mean ($\bar{x}$) | 61.0 kg | 61.0 kg |
+| Range ($R$) | 22.0 kg | 30.0 kg |
+| Variance ($\sigma^2$) | 78.8 | 155.6 |
+| Standard Deviation ($\sigma$) | 8.88 kg (3 s.f.) | 12.47 kg (4 s.f.) |
+
+## Step 3 (Continued): Solution Execution (Part b)
+
+**Question (b): Is the range appropriate to be used as a measure of dispersion to represent the data above? Justify your answer.**
+
+**Answer and Justification:**
+The range is generally **not** considered the most appropriate measure of dispersion, especially when comparing datasets, because it is heavily influenced by outliers or extreme values and does not take into account the distribution of the majority of the data points.
+
+For these specific datasets:
+*   Both means are 61 kg.
+*   Team A Range ($R_A$): 22 kg (from 48 to 70).
+*   Team B Range ($R_B$): 30 kg (from 45 to 75).
+
+The range suggests Team B is more spread out than Team A. However, the variance/standard deviation (which utilize all data points) gives a more robust measure of the spread around the mean. In this case, both measures align in indicating Team B is more dispersed, but the range is less reliable than the variance/standard deviation because it only uses two extreme values.
+
+*Conclusion: The range is less appropriate than the variance or standard deviation because it is sensitive only to the minimum and maximum values, ignoring the structure of the intermediate data.*
+
+## Step 3 (Continued): Solution Execution (Part c)
+
+**Question (c): Determine the mass of which team has a greater dispersion from the mean.**
+
+Dispersion from the mean is quantified by the variance ($\sigma^2$) or standard deviation ($\sigma$). A larger value indicates greater dispersion.
+
+Comparison using Variance:
+$$\sigma_A^2 = 78.8$$
+$$\sigma_B^2 = 155.6$$
+
+Since $\sigma_B^2 > \sigma_A^2$ ($155.6 > 78.8$), Team B exhibits greater dispersion from its mean.
+
+Comparison using Standard Deviation:
+$$\sigma_A \approx 8.88 \text{ kg}$$
+$$\sigma_B \approx 12.47 \text{ kg}$$
+
+Since $\sigma_B > \sigma_A$ ($12.47 > 8.88$), Team B exhibits greater dispersion from its mean.
+
+## Step 4: Final Answer
+
+**(a) Calculated Measures:**
+
+| Measure | Team A | Team B |
+| :---: | :---: | :---: |
+| Mean ($\bar{x}$) | 61.0 kg | 61.0 kg |
+| Range ($R$) | 22.0 kg | 30.0 kg |
+| Variance ($\sigma^2$) | 78.8 | 155.6 |
+| Standard Deviation ($\sigma$) | 8.88 kg (3 s.f.) | 12.47 kg (4 s.f.) |
+
+**(b) Appropriateness of Range:**
+The range is **not** the most appropriate measure of dispersion because it only considers the maximum and minimum values and ignores the distribution of the interior data points, making it highly susceptible to the presence of extreme values.
+
+**(c) Greater Dispersion:**
+**Team B** has a greater dispersion from the mean, as its variance ($\sigma_B^2 = 155.6$) and standard deviation ($\sigma_B \approx 12.47$ kg) are both larger than those for Team A ($\sigma_A^2 = 78.8$ and $\sigma_A \approx 8.88$ kg).",correct,7.795288324356079,7,7,"Full marks (7) awarded because the AI response exactly matches the ground truth. It correctly computed all required measures for both teams: mean = 61, range = 22 (A) and 30 (B), variance = 78.8 (A) and 155.6 (B), and standard deviation ≈ 8.877 (A) and ≈ 12.47 (B). It used the population variance formula as in the ground truth, showed correct intermediate squared deviations and sums, and drew the same conclusions: the range is not the most appropriate measure due to sensitivity to extreme values, and Team B has the greater dispersion. This satisfies the provided marking scheme (award full marks when answer matches the ground truth).",6.857692241668701,,Measures of Dispersion ,English,gemini-2.5-flash-lite-preview-09-2025,18640
+Chapter 9_Q1.png,"{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)}, 1/2","Here is the step-by-step solution to calculate the probability of getting a letter ""S"" from box K or a multiple of 3 from box L.
+
+---
+
+### Step 1: Problem Understanding
+
+The goal is to find the probability of Event A ($\text{""S"" from K}$) OR Event B ($\text{""multiple of 3"" from L}$) occurring when one card is drawn from Box K and one card is drawn from Box L. The solution must start by listing the entire sample space.
+
+### Step 2: Mathematical Formulation
+
+**Box K (Letters $K$):** $\{S, E, R, I\}$. Total outcomes $N_K = 4$.
+**Box L (Numbers $L$):** $\{4, 5, 6\}$. Total outcomes $N_L = 3$.
+
+**Total Sample Space ($S$):**
+The total number of possible outcomes is $|S| = N_K \times N_L = 4 \times 3 = 12$.
+
+**Listing All Possible Outcomes (as required):**
+$S = \{(S, 4), (S, 5), (S, 6), (E, 4), (E, 5), (E, 6), (R, 4), (R, 5), (R, 6), (I, 4), (I, 5), (I, 6)\}$
+
+**Defining Events:**
+
+1.  **Event A (Getting ""S"" from K):**
+    $A = \{(S, 4), (S, 5), (S, 6)\}$
+    Number of outcomes in A: $|A| = 3$.
+    Probability of A: $P(A) = \frac{|A|}{|S|} = \frac{3}{12}$.
+
+2.  **Event B (Getting a multiple of 3 from L):**
+    The multiples of 3 in $\{4, 5, 6\}$ is $\{6\}$.
+    $B = \{(S, 6), (E, 6), (R, 6), (I, 6)\}$
+    Number of outcomes in B: $|B| = 4$.
+    Probability of B: $P(B) = \frac{|B|}{|S|} = \frac{4}{12}$.
+
+3.  **Intersection ($A \cap B$):** Outcomes common to both A and B (Getting ""S"" AND getting a ""6"").
+    $A \cap B = \{(S, 6)\}$
+    Number of outcomes in $A \cap B$: $|A \cap B| = 1$.
+    Probability of $A \cap B$: $P(A \cap B) = \frac{1}{12}$.
+
+### Step 3: Solution Execution
+
+We need to calculate $P(A \text{ or } B)$, which is $P(A \cup B)$. We use the Principle of Inclusion-Exclusion:
+$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+
+**Calculation using Probabilities:**
+$$P(A \cup B) = \frac{3}{12} + \frac{4}{12} - \frac{1}{12}$$
+$$P(A \cup B) = \frac{3 + 4 - 1}{12}$$
+$$P(A \cup B) = \frac{6}{12}$$
+
+**Alternatively, using the listed outcomes for $A \cup B$:**
+$A \cup B$ consists of all outcomes that are in A, or in B, or in both.
+$A \cup B = \{(S, 4), (S, 5), (S, 6)\} \cup \{(S, 6), (E, 6), (R, 6), (I, 6)\}$
+Listing the unique outcomes:
+$A \cup B = \{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)\}$
+Number of outcomes in $A \cup B$: $|A \cup B| = 6$.
+$$P(A \cup B) = \frac{|A \cup B|}{|S|} = \frac{6}{12}$$
+
+**Simplifying the Result:**
+$$\frac{6}{12} = \frac{1}{2}$$
+
+### Step 4: Final Answer
+
+The probability of getting a letter ""S"" from box K or a multiple of 3 (which is 6) from box L is $\frac{6}{12}$, which simplifies to $\frac{1}{2}$.",correct,3.50531005859375,4,4,"Full marks awarded. The AI correctly listed the full sample space, identified Event A = {(S,4),(S,5),(S,6)} and Event B = {(S,6),(E,6),(R,6),(I,6)}, computed the intersection {(S,6)}, applied inclusion–exclusion and obtained P(A∪B)=6/12=1/2, which exactly matches the provided ground truth. The solution is complete and correct.",7.769099473953247,,Probability of Combined Events,English,gemini-2.5-flash-lite-preview-09-2025,4901
+Chapter 9_Q2.png,230,"Here is the step-by-step solution to calculate the number of RM10 vouchers the Naga Shop needs to prepare.
+
+---
+
+### Step 1: Problem Understanding
+
+The goal is to calculate the total number of RM10 vouchers expected to be given away to 450 customers, based on the outcomes of a two-stage process:
+1. Spinning a lucky wheel to determine which box (A or B) is accessed.
+2. Drawing a voucher from the selected box.
+
+We need to find the expected number of RM10 vouchers drawn across all 450 customers.
+
+### Step 2: Mathematical Formulation
+
+This problem requires calculating the probability of drawing an RM10 voucher for a single customer, and then using the total number of customers to find the expected total number of RM10 vouchers.
+
+**2.1. Probabilities of Wheel Spin Outcomes:**
+Total sectors = 6.
+$P(\text{Red}) = P(R) = \frac{\text{Number of Red sectors}}{\text{Total sectors}} = \frac{2}{6} = \frac{1}{3}$
+$P(\text{Yellow}) = P(Y) = \frac{\text{Number of Yellow sectors}}{\text{Total sectors}} = \frac{4}{6} = \frac{2}{3}$
+
+**2.2. Conditional Probabilities of Drawing an RM10 Voucher:**
+Let $V_{10}$ be the event of drawing an RM10 voucher.
+
+*   If the pointer stops in Red (Box A):
+    Total vouchers in Box A = $20 (\text{RM50}) + 5 (\text{RM10}) = 25$.
+    $P(V_{10} | R) = P(\text{Draw RM10 from A}) = \frac{\text{Number of RM10 in A}}{\text{Total in A}} = \frac{5}{25} = \frac{1}{5}$
+
+*   If the pointer stops in Yellow (Box B):
+    Total vouchers in Box B = $10 (\text{RM50}) + 20 (\text{RM10}) = 30$.
+    $P(V_{10} | Y) = P(\text{Draw RM10 from B}) = \frac{\text{Number of RM10 in B}}{\text{Total in B}} = \frac{20}{30} = \frac{2}{3}$
+
+**2.3. Total Probability of Drawing an RM10 Voucher ($P(V_{10})$):**
+We use the Law of Total Probability:
+$P(V_{10}) = P(V_{10} | R) \cdot P(R) + P(V_{10} | Y) \cdot P(Y)$
+
+### Step 3: Solution Execution
+
+**3.1. Calculate the Total Probability of receiving an RM10 voucher:**
+$$P(V_{10}) = \left(\frac{1}{5} \times \frac{1}{3}\right) + \left(\frac{2}{3} \times \frac{2}{3}\right)$$
+$$P(V_{10}) = \frac{1}{15} + \frac{4}{9}$$
+
+To add these fractions, find the Least Common Multiple (LCM) of 15 and 9, which is 45.
+$$\frac{1}{15} = \frac{1 \times 3}{15 \times 3} = \frac{3}{45}$$
+$$\frac{4}{9} = \frac{4 \times 5}{9 \times 5} = \frac{20}{45}$$
+
+$$P(V_{10}) = \frac{3}{45} + \frac{20}{45} = \frac{23}{45}$$
+
+The probability that any single customer receives an RM10 voucher is $\frac{23}{45}$.
+
+**3.2. Calculate the Expected Number of RM10 Vouchers:**
+The expected number of RM10 vouchers ($E$) for $N=450$ customers is:
+$$E = N \times P(V_{10})$$
+$$E = 450 \times \frac{23}{45}$$
+
+$$E = \frac{450}{45} \times 23$$
+Since $450 \div 45 = 10$:
+$$E = 10 \times 23$$
+$$E = 230$$
+
+### Step 4: Final Answer
+
+The expected number of RM10 vouchers the Naga Shop needs to prepare is 230.",correct,3.2472176551818848,5,5,"The ground truth answer is 230 and the provided marking instruction states to award full marks (5) if the agent's answer matches the ground truth. The AI's solution correctly computes P(R)=1/3 and P(Y)=2/3, P(V10|R)=1/5 and P(V10|Y)=2/3, applies the law of total probability to get P(V10)=23/45, and multiplies by 450 to obtain 230. The reasoning, arithmetic and final answer are correct and complete, so full marks (5) are awarded.",7.3797407150268555,,Probability of Combined Events,English,gemini-2.5-flash-lite-preview-09-2025,4776
+Chapter 9_Q3.png,"(a) 7/33
+(b) 5/33","This problem involves calculating probabilities based on selections made from categorized groups (club type and location).
+
+**Step 1: Problem Understanding**
+
+We need to calculate two probabilities based on selecting one Badminton club and one Bodybuilding club from the total pool of clubs available across the four regions (Kedah, Negeri Sembilan, FT Labuan, FT Putrajaya).
+
+*   **Total Pool:** $N_{Total} = 45$ clubs.
+*   **Total Badminton Clubs ($N_B$):** 33
+*   **Total Bodybuilding Clubs ($N_C$):** 12
+
+**Part (a):** Calculate the probability that both selected clubs are from Kedah.
+**Part (b):** Calculate the probability that one selected club is from the combined Federal Territories pool, and the other selected club is from Negeri Sembilan.
+
+**Step 2: Mathematical Formulation**
+
+The selection process involves drawing two clubs sequentially without replacement (implied, as we select 'a' club and 'a' club, suggesting two distinct selections), one being Badminton and one being Bodybuilding. However, the phrasing in Part (a) suggests we are selecting *one* Badminton club AND *one* Bodybuilding club, and we are interested in the source location of *both*.
+
+*Re-evaluating the selection process based on standard phrasing:* ""A badminton club and a bodybuilding club in the four states are selected at random."" This implies two independent selections:
+1. Select one Badminton club (out of $N_B=33$).
+2. Select one Bodybuilding club (out of $N_C=12$).
+
+The total number of ways to select one of each type is $33 \times 12 = 396$.
+
+**Data Summary for Calculations:**
+*   Kedah Badminton ($K_B$): 14
+*   Kedah Bodybuilding ($K_C$): 6
+*   Total Kedah Clubs: 20
+*   Negeri Sembilan Clubs ($NS$): 13 total
+*   Total Federal Territory (FT) Clubs ($FT$): 12 total
+
+---
+**Step 3: Solution Execution**
+
+### Part (a): Probability that both clubs selected are from Kedah.
+
+This means: (The selected Badminton club is from Kedah) AND (The selected Bodybuilding club is from Kedah).
+
+$$P(\text{Both from Kedah}) = P(\text{Badminton from Kedah}) \times P(\text{Bodybuilding from Kedah})$$
+
+1. **Probability the Badminton club is from Kedah:**
+$$P(B \text{ from } K) = \frac{\text{Number of Badminton clubs in Kedah}}{\text{Total Number of Badminton clubs}} = \frac{K_B}{N_B} = \frac{14}{33}$$
+
+2. **Probability the Bodybuilding club is from Kedah:**
+$$P(C \text{ from } K) = \frac{\text{Number of Bodybuilding clubs in Kedah}}{\text{Total Number of Bodybuilding clubs}} = \frac{K_C}{N_C} = \frac{6}{12} = \frac{1}{2}$$
+
+3. **Combined Probability:**
+$$P(\text{Both from Kedah}) = \frac{14}{33} \times \frac{1}{2} = \frac{14}{66}$$
+$$P(\text{Both from Kedah}) = \frac{7}{33}$$
+
+---
+### Part (b): Probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively.
+
+This phrasing is ambiguous. We must consider the two distinct club types selected: Badminton (B) and Bodybuilding (C). The two locations involved are Federal Territories (FT) and Negeri Sembilan (NS).
+
+We interpret ""a club is selected each from FT and NS"" as meaning:
+(One selected club is from FT) AND (The other selected club is from NS).
+
+Since we select one B and one C, this leads to two mutually exclusive scenarios:
+Scenario 1 ($S_1$): Badminton club is from FT AND Bodybuilding club is from NS.
+Scenario 2 ($S_2$): Badminton club is from NS AND Bodybuilding club is from FT.
+
+We need the data breakdown for B and C within FT and NS:
+
+*   **FT Clubs Total:** 12
+    *   FT Badminton ($FT_B$): $3 + 5 = 8$
+    *   FT Bodybuilding ($FT_C$): $2 + 2 = 4$
+*   **NS Clubs Total:** 13
+    *   NS Badminton ($NS_B$): 11
+    *   NS Bodybuilding ($NS_C$): 2
+
+**Total Counts Check:** $N_B = 33$, $N_C = 12$.
+$FT_B + NS_B + K_B + P_B = 8 + 11 + 14 + 5 = 38$ (Wait, my initial $N_B$ calculation was $14+11+3+5 = 33$. Let's recheck the raw data extraction for $N_B$):
+Kedah (14) + Negeri Sembilan (11) + Labuan (3) + Putrajaya (5) = 33. This is correct.
+$FT_B = 3 + 5 = 8$. $NS_B = 11$. $K_B = 14$. $8 + 11 + 14 = 33$. This confirms the B counts sum correctly.
+
+$FT_C = 2 + 2 = 4$. $NS_C = 2$. $K_C = 6$. $4 + 2 + 6 = 12$. This confirms the C counts sum correctly.
+
+**Calculate Probability for Scenario 1 ($S_1$): B from FT AND C from NS**
+$$P(S_1) = P(B \text{ from } FT) \times P(C \text{ from } NS)$$
+$$P(B \text{ from } FT) = \frac{FT_B}{N_B} = \frac{8}{33}$$
+$$P(C \text{ from } NS) = \frac{NS_C}{N_C} = \frac{2}{12} = \frac{1}{6}$$
+$$P(S_1) = \frac{8}{33} \times \frac{1}{6} = \frac{8}{198}$$
+
+**Calculate Probability for Scenario 2 ($S_2$): B from NS AND C from FT**
+$$P(S_2) = P(B \text{ from } NS) \times P(C \text{ from } FT)$$
+$$P(B \text{ from } NS) = \frac{NS_B}{N_B} = \frac{11}{33} = \frac{1}{3}$$
+$$P(C \text{ from } FT) = \frac{FT_C}{N_C} = \frac{4}{12} = \frac{1}{3}$$
+$$P(S_2) = \frac{1}{3} \times \frac{1}{3} = \frac{1}{9}$$
+
+**Total Probability for Part (b):**
+$$P(\text{b}) = P(S_1) + P(S_2)$$
+$$P(\text{b}) = \frac{8}{198} + \frac{1}{9}$$
+
+Simplify fractions:
+$$\frac{8}{198} = \frac{4}{99}$$
+$$\frac{1}{9} = \frac{11}{99}$$
+
+$$P(\text{b}) = \frac{4}{99} + \frac{11}{99} = \frac{15}{99}$$
+
+Simplify the final fraction by dividing the numerator and denominator by 3:
+$$P(\text{b}) = \frac{5}{33}$$
+
+**Step 4: Final Answer**
+
+(a) The probability that both clubs selected are from Kedah is:
+$$\frac{7}{33}$$
+
+(b) The probability that one club is selected from the Federal Territories and the other from Negeri Sembilan is:
+$$\frac{5}{33}$$",correct,3.425581693649292,5,5,"Full marks (5) because the AI's final answers exactly match the ground truth: (a) 7/33 and (b) 5/33. The solution uses the correct interpretation (select one Badminton and one Bodybuilding club independently), computes probabilities by using the correct counts for each region and club type, enumerates both scenarios for part (b), and simplifies fractions correctly. A minor non-impacting remark: the AI briefly mentioned a total pool of 45 clubs which it did not use in the final computation, but this does not affect correctness of the results.",7.076187610626221,,Probability of Combined Events,English,gemini-2.5-flash-lite-preview-09-2025,20771
+Chapter 10_Q1.png,"(a) Personal monthly financial plan for Encik Nabil
+Income and Expenditure RM
+Active income:
+Net salary
+Commissions
+3 800
+450
+Total active income 4 250
+Passive income:
+House rental 600
+Total passive income 600
+Total monthly income 4 850
+Minus fixed monthly savings 380
+Total income after deducting
+savings 4 470
+Minus cash outflow/expenses
+Fixed expenses:
+Housing loan instalments (1)
+Housing loan instalments (2)
+Insurance expenses
+800
+500
+350
+Total fixed expenses 1 650
+Variable expenses:
+Food expenses
+Utility payments
+Toll and petrol expenses
+Internet service subscription
+Eat at a luxury restaurant
+900
+150
+200
+100
+400
+Total variable expenses 1 750
+Surplus/Deficit 1 070
+(b) Encik Nabil’s personal financial plan has a surplus
+where there is a positive cash flow when the total
+income is more than the total expenses. This has
+improved Encik Nabil’s liquidity","This is a personal finance calculation problem requiring the creation of a budget plan and an assessment of the resulting financial balance (surplus or deficit).
+
+## Step 1: Problem Understanding
+
+**Goal:**
+(a) Create a complete monthly personal financial plan for Encik Nabil, including income, mandatory savings, and expenses.
+(b) Determine and comment on the resulting monthly surplus or deficit based on this plan.
+
+**Key Data Points:**
+*   Net Monthly Salary (S): RM 3,800
+*   Monthly Commission (C): RM 450
+*   Rental Income (R): RM 600
+*   Fixed Savings Requirement (SR): 10% of Net Salary.
+*   Expenses: List provided in the table.
+
+## Step 2: Mathematical Formulation
+
+### 2.1 Calculate Total Monthly Income ($I_{Total}$)
+
+$$I_{Total} = \text{Net Salary} + \text{Commission} + \text{Rental Income}$$
+$$I_{Total} = 3,800 + 450 + 600$$
+
+### 2.2 Calculate Fixed Monthly Savings ($S_{Fixed}$)
+
+$$S_{Fixed} = 10\% \times \text{Net Salary}$$
+$$S_{Fixed} = 0.10 \times 3,800$$
+
+### 2.3 Calculate Total Monthly Expenses ($E_{Total}$)
+
+$$E_{Total} = \sum (\text{All listed expenses})$$
+$$E_{Total} = 800 (\text{H.I. 1}) + 500 (\text{H.I. 2}) + 900 (\text{Food}) + 150 (\text{Utility}) + 200 (\text{Toll/Petrol}) + 100 (\text{Internet}) + 400 (\text{Luxury Eat}) + 350 (\text{Insurance})$$
+
+### 2.4 Calculate Surplus or Deficit ($B$)
+
+$$\text{Balance } (B) = I_{Total} - S_{Fixed} - E_{Total}$$
+*   If $B > 0$, it is a Surplus.
+*   If $B < 0$, it is a Deficit.
+
+## Step 3: Solution Execution
+
+### 3.1 Calculate Total Monthly Income
+
+$$I_{Total} = 3,800 + 450 + 600$$
+$$I_{Total} = \text{RM 4,850}$$
+
+### 3.2 Calculate Fixed Monthly Savings
+
+$$S_{Fixed} = 0.10 \times 3,800$$
+$$S_{Fixed} = \text{RM 380}$$
+
+### 3.3 Calculate Total Monthly Expenses
+
+$$E_{Total} = 800 + 500 + 900 + 150 + 200 + 100 + 400 + 350$$
+$$E_{Total} = 1,300 + 900 + 150 + 200 + 100 + 400 + 350$$
+$$E_{Total} = 2,200 + 150 + 200 + 100 + 400 + 350$$
+$$E_{Total} = 2,350 + 200 + 100 + 400 + 350$$
+$$E_{Total} = 2,550 + 100 + 400 + 350$$
+$$E_{Total} = 2,650 + 400 + 350$$
+$$E_{Total} = 3,050 + 350$$
+$$E_{Total} = \text{RM 3,400}$$
+
+### 3.4 Create the Financial Plan (Part a)
+
+| Category | Item | Amount (RM) |
+| :--- | :--- | :--- |
+| **INCOME** | Net Salary | 3,800 |
+| | Commission (Product X) | 450 |
+| | Rental Income | 600 |
+| **Total Income ($I_{Total}$)** | | **4,850** |
+| **DEDUCTIONS/SAVINGS** | Fixed Savings (10% of Salary) | 380 |
+| **Total Savings** | | **380** |
+| **EXPENSES** | Housing loan (1) | 800 |
+| | Housing loan (2) | 500 |
+| | Food expenses | 900 |
+| | Utility payments | 150 |
+| | Toll and petrol expenses | 200 |
+| | Internet service subscription | 100 |
+| | Eat at a luxury restaurant | 400 |
+| | Insurance expenses | 350 |
+| **Total Expenses ($E_{Total}$)** | | **3,400** |
+| **Total Outflow (Savings + Expenses)** | | $380 + 3,400 = \textbf{3,780}$ |
+
+### 3.5 Calculate Balance (Part b)
+
+Calculate the final balance ($B$):
+$$B = I_{Total} - (\text{Total Savings} + E_{Total})$$
+$$B = 4,850 - (380 + 3,400)$$
+$$B = 4,850 - 3,780$$
+$$B = \text{RM 1,070}$$
+
+## Step 4: Final Answer
+
+**(a) Monthly Personal Financial Plan for Encik Nabil:**
+
+| Category | Details | Amount (RM) |
+| :--- | :--- | :--- |
+| **Total Monthly Income** | Salary + Commission + Rental | **4,850** |
+| **Mandatory Savings** | 10% of Net Salary (RM 3,800) | 380 |
+| **Total Committed Expenses** | Sum of all listed expenditures | 3,400 |
+| **Total Outflow** | Savings + Expenses (380 + 3,400) | 3,780 |
+| **Balance (Surplus/Deficit)** | Income - Total Outflow | **1,070** |
+
+**(b) Comments on Surplus or Deficit:**
+
+Based on the calculated financial plan, Encik Nabil experiences a **Surplus** of **RM 1,070** per month.
+
+This indicates that Encik Nabil's total income (RM 4,850) exceeds his total mandatory commitments, which include his required fixed savings (RM 380) and all listed operational expenses (RM 3,400). The surplus of RM 1,070 can be allocated towards additional savings, investments, or discretionary spending, indicating a financially sound position based on the provided budget items.",correct,3.282517194747925,7,7,"Full mark (7) awarded because the AI response exactly matches the ground truth. All calculations are correct: total income RM4,850, fixed savings RM380, total expenses RM3,400, total outflow RM3,780 and resulting surplus RM1,070. The response also correctly identifies and explains the surplus, satisfying the provided marking instruction to give full marks when the answer matches the ground truth.",6.567407131195068,, Financial Management,English,gemini-2.5-flash-lite-preview-09-2025,9973
+Chapter 10_Q2.png,"(a) Mrs Thong does not spend wisely because her
+total monthly savings of RM250 compared to the
+income of RM6 000 which is less than 10%.
+(b) Mrs Thong will not be able to achieve the
+investment goal of RM500 000 with monthly
+savings of RM250","This problem requires analyzing Mrs. Thong's current financial situation based on the provided data to answer two distinct questions: assessing the wisdom of her spending and determining if she can meet a specific long-term financial goal.
+
+## Step 1: Problem Understanding
+
+The goal is to address two parts:
+**(a)** Assess whether Mrs. Thong spends her money wisely based on the provided financial plan.
+**(b)** Determine if Mrs. Thong can save enough money (RM 500,000) within 6 years, given her current savings rate.
+
+**Key Data Points:**
+*   Net Income: RM 6,000
+*   Total Expenses (excluding savings): RM 5,750 (This value seems inconsistent with the listed expenses if we sum them up, so we must rely on the provided summary, or recalculate.)
+*   Total Listed Budgeted Expenses (excluding Savings and Income Balance): We must use the figures provided in the table.
+*   Actual Savings: RM 100 (as listed in the 'Savings' row).
+*   Current Income Balance (Surplus): RM 250.
+
+## Step 2: Mathematical Formulation
+
+### Part (a): Spending Wisdom Assessment
+
+To assess if the spending is ""wise,"" we must compare the total expenses to the income and examine the breakdown.
+
+1.  **Verify the Summary Data:**
+    *   Sum of listed expenses (excluding Savings and Balance):
+        $500 + 700 + 500 + 1500 + 900 + 250 + 100 + 400 + 600 + 200 = \text{RM } 5,650$
+    *   The table states 'Total expenses' is RM 5,750 and 'Savings' is RM 100.
+    *   Check Income vs. Total Outflow (Expenses + Savings): $5,750 (\text{Expenses}) + 100 (\text{Savings}) = \text{RM } 5,850$.
+    *   Check against Income: $\text{Income } (6,000) - \text{Total Outflow } (5,850) = \text{RM } 150$.
+    *   The table states the 'Mrs Thong's income balance' is RM 250.
+
+    *Self-Correction/Assumption based on Data Structure:* We must trust the summary figures provided in the table, even if the individual components (Total Expenses = 5,750) seem slightly miscalculated based on the listed items (which sum to 5,650) plus savings. We will use the explicit summary values for consistency:
+    *   Income: RM 6,000
+    *   Total Expenses (excluding savings): RM 5,750
+    *   Savings: RM 100
+    *   Surplus/Balance: RM 250
+    *   Check: $5,750 + 100 + 250 = 6,100$. This is NOT equal to the income of RM 6,000.
+
+    *Revisiting the data structure:* The most logical interpretation in financial tables is:
+    $\text{Income} - \text{Total Expenses} = \text{Balance}$
+    $\text{Total Expenses} = \text{Sum of all spending categories}$
+    If we assume the 'Savings' category (RM 100) is *part* of the 'Total expenses' summary (RM 5,750), then:
+    $\text{Total Spending} = \text{RM } 5,750$
+    $\text{Balance} = 6,000 - 5,750 = \text{RM } 250$.
+    This interpretation makes the summary row consistent: Income (6,000) - Total Expenses (5,750) = Balance (250).
+    Under this assumption, the actual dedicated savings amount is RM 100, which is included within the RM 5,750 total expenses.
+
+2.  **Assessment Criteria:** Wise spending implies a healthy ratio of savings/surplus relative to income, and appropriate expense allocation.
+    *   Total committed spending (5,750) is $5750/6000 \approx 95.8\%$ of income.
+    *   Actual dedicated savings is RM 100, or $100/6000 \approx 1.67\%$ of income.
+    *   The surplus is RM 250, or $250/6000 \approx 4.17\%$ of income.
+    *   Total Funds Directed to Savings/Surplus: $100 + 250 = \text{RM } 350$ (approx 5.83% of income).
+
+### Part (b): Long-Term Goal Achievement
+
+1.  **Goal Requirements:**
+    *   Target Amount ($T$): RM 500,000
+    *   Time Frame ($Y$): 6 years
+
+2.  **Required Annual Savings ($R_{annual}$):**
+    $$R_{annual} = \frac{T}{Y}$$
+
+3.  **Current Potential Annual Savings ($S_{current}$):**
+    This is the total amount Mrs. Thong saves/keeps aside annually based on her current behavior. We use the dedicated savings amount plus the surplus.
+    $\text{Monthly Savings/Surplus} = \text{Savings (RM 100)} + \text{Balance (RM 250)} = \text{RM } 350$
+    $\text{Annual Savings} = 350 \times 12$
+
+## Step 3: Solution Execution
+
+### (a) Does Mrs Thong spend her money wisely?
+
+**Analysis of Spending Ratio:**
+Mrs. Thong allocates RM 5,750 towards expenses (including RM 100 allocated to savings) out of RM 6,000 income.
+
+Total Funds Available for Non-Essential Spending/Saving: RM 350 (Surplus + Dedicated Savings).
+This means only $350 / 6,000 \approx 5.83\%$ of her income is being actively saved or remains unbudgeted. In standard financial planning, savings should ideally be $10\%$ to $20\%$ or more of gross income.
+
+**Analysis of Specific Expenses:**
+*   Rental: RM 1,500 (25% of income)
+*   Car: RM 700 (11.7% of income)
+*   Transport Fares: RM 900 (15% of income)
+    *   The sum of housing/transport costs (Rental + Car + Transport Fares + Loan) is $1500 + 700 + 900 + 500 = \text{RM } 3,600$, which is $60\%$ of her total income. While high, this is context-dependent (e.g., high cost of living area).
+
+**Conclusion for (a):**
+Mrs. Thong is spending a very high percentage (95.8%) of her income, leaving very little margin for growth or emergencies. Her dedicated savings rate (RM 100/month) is extremely low relative to her income and expenses. Therefore, based on the low savings rate and high commitment to expenses, her spending behavior is generally **not considered wise** from a long-term financial security perspective.
+
+### (b) Will Mrs Thong be able to achieve her long-term financial goal?
+
+**1. Calculate Required Annual Savings:**
+Target ($T$): RM 500,000
+Time ($Y$): 6 years
+$$R_{annual} = \frac{\text{RM } 500,000}{6 \text{ years}}$$
+$$R_{annual} = \text{RM } 83,333.33 \text{ per year}$$
+
+**2. Calculate Current Potential Annual Savings ($S_{current}$):**
+We assume that to meet a major goal, she must redirect her current surplus (RM 250) and the dedicated savings (RM 100) towards the target.
+Monthly Savings Potential ($M_S$): $100 + 250 = \text{RM } 350$
+$$S_{current} = 350 \times 12$$
+$$S_{current} = \text{RM } 4,200 \text{ per year}$$
+
+**3. Compare Required vs. Current Savings:**
+Required Annual Savings: RM 83,333.33
+Current Potential Annual Savings: RM 4,200
+
+**4. Determine Time Needed (based on current behavior):**
+$$\text{Time Needed (Years)} = \frac{\text{Target Amount}}{\text{Current Annual Savings}}$$
+$$\text{Time Needed (Years)} = \frac{500,000}{4,200}$$
+$$\text{Time Needed (Years)} \approx 119.05 \text{ years}$$
+
+**Conclusion for (b):**
+Mrs. Thong needs to save RM 83,333.33 annually to meet her goal in 6 years. With her current saving behavior (RM 4,200 annually), it would take approximately 119 years to reach her target.
+
+Therefore, **No**, Mrs. Thong will **not** be able to achieve her long-term financial goal of RM 500,000 within 6 years with her current spending behavior, as she needs a drastic increase in her savings rate.
+
+## Step 4: Final Answer
+
+**(a) Does Mrs Thong spend her money wisely?**
+No. Her total expenses consume 95.8% of her income, and her dedicated savings rate is only RM 100 per month (1.67% of income). This leaves very little financial cushion or capacity for aggressive saving.
+
+**(b) Will Mrs Thong be able to achieve her long-term financial goal if she wishes to buy a property worth RM500 000 within 6 years with her current spending behaviour?**
+No.
+1. Required annual savings to meet the goal in 6 years: $\text{RM } 500,000 / 6 \approx \text{RM } 83,333.33$.
+2. Current annual savings potential (dedicated savings + surplus): $(\text{RM } 100 + \text{RM } 250) \times 12 = \text{RM } 4,200$.
+Since RM 4,200 is vastly less than the required RM 83,333.33, she cannot achieve the goal within 6 years under her current plan.",correct,10.066978454589844,6,6,"Full marks (6) awarded because the AI's final answers match the ground truth: (a) concluded Mrs Thong does not spend wisely (savings rate far below recommended 10%), and (b) concluded she cannot reach RM500,000 in 6 years with her current savings. The AI provided correct quantitative reasoning (percent of income saved, required annual savings versus current annual savings) to support these conclusions. Note: the response contained minor internal inconsistencies in interpreting the table (it treated RM100 savings + RM250 balance = RM350 monthly available for saving, and showed small arithmetic mismatches in the table totals), but these did not change the qualitative conclusions required by the ground truth. As the final answers align with the ground truth, full marks are given.",13.056407690048218,, Financial Management,English,gemini-2.5-flash-lite-preview-09-2025,17728
