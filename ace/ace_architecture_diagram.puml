@@ -1,0 +1,215 @@
+@startuml ACE Architecture Diagram
+
+!define RECTANGLE class
+
+title ACE (Agentic Context Engineering) - System Architecture
+
+package "ACE Framework" {
+
+    package "Data Models (models.py)" #LightYellow {
+        RECTANGLE Bullet {
+            + id: str
+            + content: str
+            + helpful_count: int
+            + harmful_count: int
+            + metadata: Dict
+            --
+            + score(): float
+        }
+
+        RECTANGLE Context {
+            + bullets: List[Bullet]
+            --
+            + add_bullet(bullet)
+            + get_bullet_by_id(id)
+            + remove_bullet(id)
+            + to_prompt_context(): str
+        }
+
+        RECTANGLE ReasoningTrace {
+            + steps: List[str]
+            + bullet_references: List[str]
+            + feedback: List[BulletFeedback]
+        }
+
+        RECTANGLE Lesson {
+            + action: str
+            + bullet_id: Optional[str]
+            + content: Optional[str]
+            + helpful_increment: int
+            + harmful_increment: int
+            + metadata: Dict
+        }
+
+        RECTANGLE BulletFeedback {
+            + bullet_id: str
+            + helpful: bool
+            + reasoning: str
+        }
+
+        RECTANGLE ReflectionOutput {
+            + new_insights: List[DeltaBullet]
+        }
+    }
+
+    package "Core Pipeline" #LightBlue {
+        RECTANGLE Generator <<generator.py>> {
+            + generate_with_context()
+            --
+            1. Filter relevant bullets
+            2. Enhance prompt with strategies
+            3. Call LLM with image
+            4. Extract bullet feedback
+            --
+            Returns: ReasoningTrace
+        }
+
+        RECTANGLE Reflector <<reflector.py>> {
+            + reflect_on_reasoning()
+            --
+            1. Process bullet feedback
+            2. Create increment lessons
+            3. Call LLM for new insights
+            4. Create add lessons
+            --
+            Returns: List[Lesson]
+        }
+
+        RECTANGLE Curator <<curator.py>> {
+            + curate_context()
+            --
+            1. Apply add lessons
+            2. Apply increment lessons
+            3. Deduplicate (if needed)
+            4. Remove harmful (if needed)
+            5. Prune to max size (if needed)
+            --
+            Returns: Updated Context
+        }
+
+        RECTANGLE Orchestrator <<orchestrator.py>> {
+            + initialize_context()
+            + run_ace_pipeline()
+            --
+            Coordinates:
+            Generate → Reflect → Curate
+        }
+    }
+
+    package "Utility Functions" #LightGreen {
+        RECTANGLE Relevance <<utils/relevance.py>> {
+            + is_relevant(bullet, query)
+            + filter_relevant_bullets()
+            --
+            Keyword-based relevance
+        }
+
+        RECTANGLE Deduplication <<utils/deduplication.py>> {
+            + calculate_similarity()
+            + deduplicate_bullets()
+            --
+            Jaccard similarity
+            Merge similar bullets
+        }
+
+        RECTANGLE Pruning <<utils/pruning.py>> {
+            + prune_bullets(max_size)
+            + remove_harmful_bullets()
+            --
+            Score-based ranking
+            Filter low-value bullets
+        }
+
+        RECTANGLE Embeddings <<utils/embeddings.py>> {
+            + get_embedding()
+            + cosine_similarity()
+            --
+            Optional: Semantic similarity
+        }
+    }
+}
+
+package "External Components" #LightGray {
+    RECTANGLE LLMAgent <<pydantic_ai.Agent>> {
+        Gemini 2.0 Flash
+        or other models
+    }
+
+    RECTANGLE TestRunner <<run_ace_test.py>> {
+        + process_test_images()
+        + main()
+        --
+        Loads CSV, runs ACE,
+        saves results
+    }
+}
+
+' Relationships
+Context "1" *-- "many" Bullet : contains
+ReasoningTrace "1" *-- "many" BulletFeedback : contains
+
+Orchestrator ..> Generator : uses
+Orchestrator ..> Reflector : uses
+Orchestrator ..> Curator : uses
+Orchestrator ..> Context : manages
+
+Generator ..> Context : reads
+Generator ..> LLMAgent : calls
+Generator ..> ReasoningTrace : produces
+
+Reflector ..> ReasoningTrace : analyzes
+Reflector ..> LLMAgent : calls
+Reflector ..> Lesson : produces
+
+Curator ..> Context : updates
+Curator ..> Lesson : consumes
+Curator ..> Deduplication : uses
+Curator ..> Pruning : uses
+
+Generator ..> Relevance : uses
+TestRunner ..> Orchestrator : orchestrates
+TestRunner ..> LLMAgent : provides
+
+note right of Context
+    **Core Insight:**
+    Context is structured as itemized
+    bullets, not monolithic text.
+
+    This enables:
+    • Localized updates
+    • Fine-grained retrieval
+    • Incremental adaptation
+    • Deterministic merging
+end note
+
+note right of Curator
+    **Grow-and-Refine:**
+
+    Lazy mode: Refine only when
+    context exceeds max_size
+
+    Eager mode: Refine after
+    every delta application
+
+    Non-LLM deterministic logic
+end note
+
+note right of Reflector
+    **Delta Extraction:**
+
+    Produces compact deltas:
+    • increment_helpful
+    • increment_harmful
+    • add (new bullet)
+
+    No full context rewrites
+end note
+
+note bottom of Generator
+    **Context-Aware Solving:**
+    Injects relevant bullets into
+    prompt, tracks which ones
+    were actually helpful
+end note
+
+@enduml

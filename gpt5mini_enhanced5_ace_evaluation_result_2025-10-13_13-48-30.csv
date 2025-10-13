@@ -1,0 +1,1206 @@
+filename,ground_truth_answer,generated_answer,similarity,correctness_time,ai_marks,allocated_marks,marking_explanation,marking_time,marking_scheme,chapter_name,language,model_used,token_used
+Chapter 1_Q1.png,"No. The pizza with diameter of 30 cm is more
+worth it.","Step 1: Diagram Deconstruction
+- Type of diagram: Comparative product-size/pricing diagram (three circles representing pizzas with diameters and prices).
+- Extracted data from the diagram:
+  - Pizza A: diameter = 15 cm, price = RM12
+  - Pizza B: diameter = 23 cm, price = RM25
+  - Pizza C: diameter = 30 cm, price = RM35
+- Key geometric relation: surface area A of a pizza = π r^2, where r = radius = (diameter)/2.
+
+Step 2: Question Interpretation
+- Explicit goal: Determine whether the price RMp varies directly (is proportional) to the surface area A of the pizza. If not proportional, state which pizza size is worth buying (i.e., which gives the lowest price per unit area).
+
+Step 3: Mathematical Formulation
+- Compute areas for each pizza: A = π r^2 with r = diameter/2.
+- Compute price per unit area for each pizza: price per cm^2 = price / area.
+- If price is directly proportional to area, the ratio (price / area) should be the same for all three pizzas.
+
+Step 4: Step-by-Step Calculation
+1) Areas:
+- Pizza A (15 cm): radius r = 15/2 = 7.5 cm.
+  Area_A = π * (7.5)^2 = π * 56.25 = 56.25π cm^2 ≈ 176.7146 cm^2.
+
+- Pizza B (23 cm): radius r = 23/2 = 11.5 cm.
+  Area_B = π * (11.5)^2 = π * 132.25 = 132.25π cm^2 ≈ 415.4759 cm^2.
+
+- Pizza C (30 cm): radius r = 30/2 = 15 cm.
+  Area_C = π * (15)^2 = π * 225 = 225π cm^2 ≈ 706.8583 cm^2.
+
+2) Price per cm^2:
+- Pizza A: 12 / (56.25π) ≈ 12 / 176.7146 ≈ 0.06793 RM/cm^2.
+- Pizza B: 25 / (132.25π) ≈ 25 / 415.4759 ≈ 0.06017 RM/cm^2.
+- Pizza C: 35 / (225π) ≈ 35 / 706.8583 ≈ 0.04956 RM/cm^2.
+
+3) Check proportionality:
+- For direct variation, these three values should be (approximately) equal. They are not:
+  - 0.06793, 0.06017, 0.04956 RM/cm^2 (different).
+- Alternatively, compare expected price if proportional to area using Pizza A as reference:
+  - Area ratios: Area_B / Area_A ≈ 132.25/56.25 ≈ 2.3511 → expected price_B ≈ 12 * 2.3511 ≈ RM28.21 (actual RM25).
+  - Area_C / Area_A = 225/56.25 = 4 → expected price_C = 12 * 4 = RM48 (actual RM35).
+  - Actual prices differ from proportional predictions, confirming non-proportionality.
+
+Step 5: Final Answer
+- No — the price does not vary directly (is not proportional) to the surface area of the pizza, because the price per cm^2 values are different for the three sizes.
+- The best value (lowest price per cm^2) is the 30 cm pizza (RM35), at about 0.0496 RM/cm^2. So the 30 cm pizza is worth buying.
+
+Strategy evaluation
+- Helpful: [ID:2b0b950d-3fc1-4a2f-b459-b6342766679a] Verify final answer matches question format and units — helpful to ensure units RM/cm^2 stated and the question (whether proportional and which size to buy) is directly answered.
+- Harmful: No harmful strategies were used.",correct,24.200237274169922,4,4,"Full marks (4) because the AI answer matches the ground truth: it correctly concluded that price is not directly proportional to area and identified the 30 cm pizza as the best value. The response shows correct area calculations, correct computation of price per cm^2, and a correct check for proportionality (including an alternative area-ratio price comparison). Reasoning and numerical work are accurate and clearly presented, satisfying the provided marking schema that awards full marks when the answer matches the ground truth.",7.695136785507202,,Variation,English,gpt-5-mini,0
+Chapter 1_Q2.png,7 cm,"Step 1: Diagram Deconstruction.
+- Type of diagram: a word problem with two semicircles illustrating direct variation between area and square of diameter.
+- Key features extracted from the diagram and text:
+  - Relationship: The area L (cm^2) of a semicircle varies directly as the square of its diameter d (cm): L = k d^2 for some constant k.
+  - Given data point 1: L = 3.08 cm^2 when d = 2.8 cm.
+  - Given data point 2 (target): L = 19.25 cm^2, find d (cm).
+  - Diagram labels: small semicircle shows 2.8 cm and 3.08 cm^2; larger semicircle shows unknown d and 19.25 cm^2.
+
+Step 2: Question Interpretation.
+- Goal: Find the value of the diameter d (in cm) when the semicircle area L = 19.25 cm^2, given L ∝ d^2 and the provided data.
+
+Step 3: Mathematical Formulation.
+- Use direct variation model: L = k d^2.
+- Use the known point to determine k: 3.08 = k (2.8)^2.
+- Then solve for d when L = 19.25: 19.25 = k d^2 → d^2 = 19.25 / k → d = sqrt(19.25 / k).
+
+Step 4: Step-by-Step Calculation.
+1) Compute k from the known values:
+   (2.8)^2 = 7.84.
+   k = 3.08 / 7.84.
+   Write as fractions to simplify:
+     3.08 = 308/100 = 77/25,
+     7.84 = 784/100 = 196/25,
+     k = (77/25) / (196/25) = 77/196 = divide numerator and denominator by 7 → 11/28.
+   So k = 11/28.
+
+2) Use k to find d when L = 19.25:
+   d^2 = L / k = 19.25 / (11/28) = 19.25 * (28/11).
+   Write 19.25 as a fraction: 19.25 = 77/4.
+   d^2 = (77/4) * (28/11) = (77 * 28) / (4 * 11).
+   Cancel 11 with 77 → 7 remains: d^2 = (7 * 28) / 4 = 196 / 4 = 49.
+   Therefore d = sqrt(49) = 7.
+
+Step 5: Final Answer.
+- The diameter d = 7 cm when L = 19.25 cm^2.
+
+Strategy evaluation:
+- Strategy [ID:5732b5d7-3370-4e5b-87eb-51a8390fff83] (Verify final answer matches question format and units) was used and helpful: the final result is given with the correct unit (cm) and in the requested numeric form.
+- Helpful approaches: recognizing direct variation L = k d^2 and using rational arithmetic to avoid rounding errors were both helpful.
+- Harmful approaches: numeric rounding early (e.g., using approximate decimal k) would have risked unnecessary approximation; avoiding premature rounding was beneficial.",correct,2.937053918838501,3,3,"Full marks (3/3). The AI correctly identified L = k d^2, computed k = 3.08/(2.8)^2 = 11/28, then solved 19.25 = k d^2 to obtain d^2 = 49 and d = 7 cm. The arithmetic and unit are correct and the final answer matches the ground truth exactly, so full credit is awarded per the provided marking scheme.",9.678857326507568,,Variation,English,gpt-5-mini,0
+Chapter 1_Q3.png,"(a) 154 cm2
+(b) The area of the curved surface will
+decrease.","Step 1: Diagram Deconstruction
+- Type of diagram: Geometric diagram of a right circular cone showing radius r (base) and slant height s.
+- Key features extracted:
+  - Curved (lateral) surface area A (cm^2) varies directly as r and s.
+  - Functional form implied: A = k r s for some constant k.
+  - Given data point: A = 88 cm^2 when r = 3.5 cm and s = 8 cm.
+  - Values requested: (a) r = 5 cm, s = 9.8 cm. (b) Qualitative/quantitative change in A if s decreases while r is fixed.
+
+Step 2: Question Interpretation
+- Goal (a): Calculate A (in cm^2) when r = 5 cm and s = 9.8 cm.
+- Goal (b): State how the curved surface area changes if the slant height decreases while the base radius is fixed (give the algebraic expression for the change and the sign).
+
+Step 3: Mathematical Formulation
+- Since A varies directly as r and s, assume A = k r s.
+- Use the given values to find k: 88 = k · 3.5 · 8.
+- Then compute A = k · 5 · 9.8 for part (a).
+- For part (b), with r fixed, ΔA = k r Δs (so if s decreases, Δs < 0 and ΔA < 0). Using k found, ΔA = (22/7) r Δs.
+
+Step 4: Step-by-Step Calculation
+1. Find k:
+   88 = k · 3.5 · 8
+   3.5 · 8 = 28
+   k = 88 / 28 = 22 / 7
+
+2. Write formula with k:
+   A = (22/7) r s
+
+3. Compute A for r = 5 cm, s = 9.8 cm:
+   A = (22/7) · 5 · 9.8
+   Note 9.8 = 49/5, so:
+   A = (22/7) · 5 · (49/5) = (22/7) · 49 = 22 · 7 = 154
+   So A = 154 cm^2.
+
+4. Change in area when s decreases and r fixed:
+   - General change: ΔA = k r Δs = (22/7) r Δs.
+   - Because Δs < 0 when s decreases, ΔA is negative: the curved surface area decreases.
+   - For a specific decrease of Δs = −1 cm, ΔA = (22/7) r (−1) = −(22/7) r cm^2 (example).
+
+Step 5: Final Answer
+- (a) A = 154 cm^2.
+- (b) With r fixed, the curved surface area changes by ΔA = (22/7) r Δs. If s decreases (Δs < 0) then ΔA < 0, so the curved surface area decreases. (Units: cm^2)
+
+Strategy evaluation
+- Helpful: [ID:f9b2cf02-5f98-465c-bcb4-b6da957f0b7a] (used to verify final answers include correct units and format) — helped ensure answers stated with units (cm^2).
+- No harmful strategies were used.",correct,3.397217035293579,3,3,"Full marks (3) awarded. The AI correctly derived k = 88/(3.5·8) = 22/7, used A = (22/7)·r·s, and computed A = (22/7)·5·9.8 = 154 cm^2 for part (a), which matches the ground truth. For part (b) it correctly gave the change formula ΔA = k r Δs = (22/7) r Δs and correctly concluded that if s decreases (Δs < 0) then ΔA < 0, so the curved surface area decreases. Units and reasoning are correct and consistent with the provided marking scheme that awards full marks when the answer matches the ground truth.",9.055104494094849,,Variation,English,gpt-5-mini,0
+Chapter 2_Q1.png,"(a) 6p + 4q = 16
+95p + 110q = 300
+(b) the number of glasses of drink P = 2,
+the number of glasses of drink Q = 1","Step 1: Diagram Deconstruction.
+- Type of diagram: A data table (nutrient table) giving protein and calories per glass for two drinks.
+- Key features extracted directly from the table:
+  - Drink P: protein = 6 g per glass, calories = 95 kcal per glass.
+  - Drink Q: protein = 4 g per glass, calories = 110 kcal per glass.
+  - Diet targets: total protein = 16 g, total calories = 300 kcal per day.
+
+Step 2: Question Interpretation.
+- Goals:
+  (a) Form two linear equations using the given information.
+  (b) Calculate the number of glasses of drink P and drink Q Syahirah needs per day, using the matrix method. The required final answer should be numbers of glasses (units: glasses).
+
+Step 3: Mathematical Formulation.
+- Let x = number of glasses of Drink P, y = number of glasses of Drink Q.
+- From protein: 6x + 4y = 16.
+- From calories: 95x + 110y = 300.
+- Matrix form: A [x y]^T = b where
+  A = [[6, 4],
+       [95,110]],
+  b = [16, 300]^T.
+
+Step 4: Step-by-Step Calculation (matrix method).
+1. Compute determinant of A:
+   det(A) = 6*110 - 4*95 = 660 - 380 = 280.
+
+2. Compute inverse of A using formula for 2x2 matrix:
+   A^-1 = (1/det) * [[110, -4],
+                     [-95,  6]]
+        = (1/280) * [[110, -4],
+                     [-95,  6]].
+
+3. Multiply A^-1 by b to get [x y]^T:
+   [x y]^T = (1/280) * [[110, -4], [-95, 6]] * [16, 300]^T.
+
+   Compute the vector product numerator:
+   - First component numerator = 110*16 + (-4)*300 = 1760 - 1200 = 560.
+     So x = 560 / 280 = 2.
+
+   - Second component numerator = (-95)*16 + 6*300 = -1520 + 1800 = 280.
+     So y = 280 / 280 = 1.
+
+4. Check solutions in original equations:
+   - Protein: 6(2) + 4(1) = 12 + 4 = 16 (OK).
+   - Calories: 95(2) + 110(1) = 190 + 110 = 300 (OK).
+
+Step 5: Final Answer.
+- (a) Two linear equations:
+  6x + 4y = 16
+  95x + 110y = 300
+- (b) Number of glasses per day:
+  x = 2 glasses of Drink P, y = 1 glass of Drink Q.
+
+Strategy evaluation:
+- Strategy [ID:c71d913b-8852-43d9-98d2-783697706696] (Verify final answer matches question format and units) was helpful: it ensured the result is given as counts of glasses and checked units (grams and kcal satisfied).
+- The straightforward matrix-inverse method was helpful for clear systematic solving. No harmful strategies were used.",correct,3.7877087593078613,5,5,"Full mark awarded (5/5) because the AI response exactly matches the ground truth: it formed the correct simultaneous equations (6x+4y=16 and 95x+110y=300), solved them correctly using the matrix inverse method, and produced the correct integer solution (x=2, y=1). Workings are correct and the solution checks satisfy both original equations. Variable naming (x,y versus p,q) does not affect correctness.",6.2518415451049805,,Matrices ,English,gpt-5-mini,0
+Chapter 2_Q2.png,"(a) [
+80 70
+60 75
+74 84 ]
+, [
+0.6
+0.4 ]
+(b) 76
+(c) Computer Science","Step 1: Diagram Deconstruction.
+- Type of diagram: Two data tables (can be represented as matrices).
+- Extracted data from Table 1 (marks):
+  - Mathematics: Coursework = 80, Exam = 70
+  - English:    Coursework = 60, Exam = 75
+  - Computer Science: Coursework = 74, Exam = 84
+- Extracted data from Table 2 (weightage for first semester):
+  - Coursework weight = 60% = 0.6
+  - Exam weight = 40% = 0.4
+- Key items to use: a 3×2 matrix of marks (rows = subjects, columns = coursework, exam) and a 2×1 column weight vector.
+
+Step 2: Question Interpretation.
+- (a) Represent Table 1 and Table 2 with matrices.
+- (b) Calculate the overall marks for Mathematics in the first semester using the matrix method.
+- (c) Determine which subject Faris performed best in in the first semester (highest overall mark).
+
+Step 3: Mathematical Formulation.
+- Let A be the 3×2 marks matrix (rows: Mathematics, English, Computer Science; columns: Coursework, Exam):
+  A = [ [80, 70],
+        [60, 75],
+        [74, 84] ]
+- Let w be the 2×1 weight vector (Coursework weight, Exam weight):
+  w = [ [0.6],
+        [0.4] ]
+- Overall marks vector O (3×1) = A × w. Each entry is (Coursework × 0.6) + (Exam × 0.4).
+
+Step 4: Step-by-Step Calculation.
+- Compute overall mark for Mathematics (first row of A dot w):
+  Mathematics row = [80, 70]
+  O_math = 80×0.6 + 70×0.4
+         = 48 + 28
+         = 76
+
+- Compute overall mark for English (second row):
+  English row = [60, 75]
+  O_english = 60×0.6 + 75×0.4
+            = 36 + 30
+            = 66
+
+- Compute overall mark for Computer Science (third row):
+  CS row = [74, 84]
+  O_CS = 74×0.6 + 84×0.4
+       = 44.4 + 33.6
+       = 78.0
+
+- So the overall marks vector O = [76, 66, 78.0]^T (respectively Mathematics, English, Computer Science).
+
+Step 5: Final Answer.
+- (a) Matrices:
+  - Marks matrix A = [ [80, 70],
+                       [60, 75],
+                       [74, 84] ]
+  - Weight vector w = [ [0.6],
+                        [0.4] ]
+- (b) Overall mark for Mathematics = 76 (out of 100).
+- (c) Best performed subject = Computer Science, with overall mark 78.0 (out of 100).
+
+Post-solution strategy evaluation:
+- Helpful strategy: [ID:4d926124-7bae-4149-b960-ab0b8a6bb46d] Verify final answer matches question format and units — this was useful for ensuring answers are given as marks out of 100 and clearly matched the requested parts (a),(b),(c).
+- Harmful strategies: None used; no extraneous or misleading methods were applied.",correct,3.539463996887207,4,4,"Full marks awarded (4/4). The AI response exactly matches the ground truth: (a) the marks matrix A = [[80,70],[60,75],[74,84]] and weight vector w = [0.6,0.4]^T are correctly represented; (b) the overall Mathematics mark is correctly calculated as 76 (80×0.6 + 70×0.4 = 76); (c) the best subject is correctly identified as Computer Science (overall 78.0). Calculations and methodology are correct and complete, so full credit per the provided marking scheme is appropriate.",9.741686344146729,,Matrices ,English,gpt-5-mini,0
+Chapter 2_Q3.png,"the price for one kilogram of papaya = RM4,
+the price for one kilogram of banana = RM5","Step 1: Diagram Deconstruction.
+- Type of mathematical diagram: a table representing a system of linear equations (can be solved by matrix method).
+- Key features extracted from the table:
+  - Puan Komala bought 4 kg papaya and 2 kg banana, paid RM26.
+  - Puan Lily bought 5 kg papaya and 3 kg banana, paid RM35.
+- From these we get two linear equations (unknowns: p = price per kg of papaya, b = price per kg of banana):
+  - Equation (1): 4p + 2b = 26
+  - Equation (2): 5p + 3b = 35
+
+Step 2: Question Interpretation.
+- Goal: Calculate the prices (in RM per kilogram) for one kilogram of papaya (p) and one kilogram of banana (b) using the matrix method.
+
+Step 3: Mathematical Formulation.
+- Write in matrix form A x = y where
+  - A = [[4, 2], [5, 3]]
+  - x = [p, b]^T
+  - y = [26, 35]^T
+- To solve, compute x = A^{-1} y. We will find A^{-1} by computing the determinant and adjugate.
+
+Step 4: Step-by-Step Calculation.
+1. Compute determinant of A:
+   det(A) = 4*3 - 2*5 = 12 - 10 = 2.
+
+2. Compute adjugate (swap diagonal entries, change signs of off-diagonals):
+   adj(A) = [[3, -2], [-5, 4]].
+
+3. Inverse of A:
+   A^{-1} = (1/det(A)) * adj(A) = (1/2) * [[3, -2], [-5, 4]].
+
+4. Multiply A^{-1} by y:
+   x = A^{-1} y = (1/2) * [[3, -2], [-5, 4]] * [26, 35]^T.
+
+   Compute the product inside:
+   - First component (numerator for p): 3*26 + (-2)*35 = 78 - 70 = 8.
+   - Second component (numerator for b): (-5)*26 + 4*35 = -130 + 140 = 10.
+
+   Now multiply by 1/2:
+   - p = (1/2) * 8 = 4.
+   - b = (1/2) * 10 = 5.
+
+Step 5: Final Answer.
+- Price of papaya = RM4 per kilogram.
+- Price of banana = RM5 per kilogram.
+
+Verification: The answers satisfy the original equations:
+- 4*(RM4) + 2*(RM5) = 16 + 10 = RM26 (matches Komala).
+- 5*(RM4) + 3*(RM5) = 20 + 15 = RM35 (matches Lily).
+
+Strategy evaluation:
+- Helpful strategies:
+  - Using the matrix method (forming A x = y and computing A^{-1}) was direct and efficient for this 2x2 system.
+  - Verifying the final answer matches the question format and units (ID:d6f91963-f31f-4cf4-bbd8-ba63d92e4c39) was helpful to ensure results are in RM per kg and satisfy the original equations.
+- Harmful strategies:
+  - None used; no unnecessary or misleading methods were applied.",correct,2.8061585426330566,5,5,"Full marks awarded (5/5) because the AI's solution exactly matches the ground truth. The response correctly extracted the equations 4p + 2b = 26 and 5p + 3b = 35, set up the matrix equation A x = y, computed det(A) = 2, formed adj(A) and A^{-1} correctly, performed the matrix multiplication to obtain p = 4 and b = 5, and verified the answers satisfy both original equations. The method, arithmetic and final answer are all correct, so per the provided marking scheme the full mark is justified.",8.464889764785767,,Matrices ,English,gpt-5-mini,0
+Chapter 3_Q1.png,"(a) Smoker: RM330.00; Non-smoker:
+RM254.40
+(b) Smoker: RM175.20; Non-smoker:
+RM147.60","Step 1: Diagram Deconstruction.
+- Type of diagram: A table of annual premium rates per RM1 000 face value for renewable life insurance.
+- Extracted table entries (rates in RM per RM1 000):
+
+Age | Male non-smoker | Male smoker | Female non-smoker | Female smoker
+27  | 2.12            | 2.72       | 1.18              | 1.40
+28  | 2.12            | 2.73       | 1.19              | 1.42
+29  | 2.12            | 2.75       | 1.21              | 1.44
+30  | 2.12            | 2.79       | 1.23              | 1.46
+
+- Face value given: RM120 000.
+
+Step 2: Question Interpretation.
+- (a) Find the annual premium for a 29-year-old male who smokes and for a 29-year-old male who does not smoke.
+- (b) Find the annual premium for a 30-year-old female who smokes and for a 30-year-old female who does not smoke.
+
+Step 3: Mathematical Formulation.
+- Formula: Annual premium = (rate per RM1 000) × (face value / 1 000).
+- Here face value / 1 000 = 120.
+
+Step 4: Step-by-Step Calculation.
+(a) 29-year-old men:
+- Rate for 29-year-old male smoker = 2.75 (RM per RM1 000).
+  Annual premium = 2.75 × 120 = 330.00 RM.
+- Rate for 29-year-old male non-smoker = 2.12 (RM per RM1 000).
+  Annual premium = 2.12 × 120 = 254.4 RM → 254.40 RM.
+
+(b) 30-year-old women:
+- Rate for 30-year-old female smoker = 1.46 (RM per RM1 000).
+  Annual premium = 1.46 × 120 = 175.2 RM → 175.20 RM.
+- Rate for 30-year-old female non-smoker = 1.23 (RM per RM1 000).
+  Annual premium = 1.23 × 120 = 147.6 RM → 147.60 RM.
+
+Step 5: Final Answer.
+- (a) 29-year-old man who smokes: RM330.00. 29-year-old man who does not smoke: RM254.40.
+- (b) 30-year-old woman who smokes: RM175.20. 30-year-old woman who does not smoke: RM147.60.
+
+Strategy evaluation:
+- [ID:26c856b4-f340-4f9c-96b4-448d8f9cd4ae] Verify final answer matches question format and units — Helpful. It ensured answers were given in RM and rounded appropriately.
+- No harmful strategies were used.",correct,2.9985570907592773,4,4,"Full marks awarded (4/4). The AI's response exactly matches the ground-truth answers for all four required premiums: RM330.00, RM254.40, RM175.20, and RM147.60. The method used is correct: it extracted the correct per-RM1,000 rates from the table, applied Annual premium = rate × (120 000/1 000) = rate × 120, and produced correct numerical results with appropriate rounding and currency units. No computational or conceptual errors were found.",6.326526403427124,,Insurance,English,gpt-5-mini,0
+Chapter 3_Q2.png,"(a) RM50.38
+(b) (i) RM796
+(ii) RM244","Step 1: Diagram Deconstruction
+- Type of diagram: A small data table (rates table) showing premium rates per RM1,000 face value.
+- Extracted key features from the table:
+  - Rates are for healthy, non-smoking men, and are given per RM1,000 face value (annual rates).
+  - For a 35-year-old:
+    - 5-year term: RM 5.24 (per RM1,000 per year)
+    - Yearly Renewable Term (YRT): RM 4.03 (per RM1,000 per year)
+  - For a 45-year-old:
+    - 5-year term: RM 7.96 (per RM1,000 per year)
+    - Yearly Renewable Term (YRT): RM 5.52 (per RM1,000 per year)
+- Labeled persons and face values in the question:
+  - Rizqi: 35 years old, wants YRT, face value RM150,000.
+  - Vincent: 45 years old, face value RM100,000; compare 5-year term and YRT.
+
+Step 2: Question Interpretation
+- (a) Compute Rizqi’s monthly premium for a yearly renewable term plan of RM150,000 (he is 35).
+- (b)(i) Compute Vincent’s annual premium for a 5-year term with face value RM100,000 (he is 45).
+- (b)(ii) Compute the difference in Vincent’s annual premium if he buys a YRT instead of the 5-year term (both for RM100,000).
+
+Step 3: Mathematical Formulation
+- General formula: Annual premium = (Face value / RM1,000) × (rate per RM1,000).
+- Monthly premium = Annual premium / 12.
+- Apply appropriate rate from the table for each person and plan.
+
+Step 4: Step-by-Step Calculation
+
+(a) Rizqi (35 years old), YRT, face value RM150,000:
+- Number of RM1,000 units = 150,000 / 1,000 = 150.
+- YRT rate for 35-year-old = RM 4.03 per RM1,000 per year.
+- Annual premium = 150 × 4.03 = 150×4 + 150×0.03 = 600 + 4.50 = RM 604.50 per year.
+- Monthly premium = 604.50 / 12 = 50.375 = RM 50.38 (to the nearest cent).
+
+(b)(i) Vincent (45 years old), 5-year term, face value RM100,000:
+- Number of RM1,000 units = 100,000 / 1,000 = 100.
+- 5-year term rate for 45-year-old = RM 7.96 per RM1,000 per year.
+- Annual premium = 100 × 7.96 = RM 796.00 per year.
+
+(b)(ii) Vincent (45 years old), YRT for RM100,000 and difference:
+- YRT rate for 45-year-old = RM 5.52 per RM1,000 per year.
+- Annual YRT premium = 100 × 5.52 = RM 552.00 per year.
+- Difference (5-year term minus YRT) = 796.00 − 552.00 = RM 244.00 per year.
+- Interpretation: The 5-year term costs RM 244.00 more per year than the YRT for Vincent.
+
+Step 5: Final Answer
+- (a) Rizqi’s monthly premium = RM 50.38 (monthly), which corresponds to an annual premium of RM 604.50.
+- (b)(i) Vincent’s annual premium for the 5-year term = RM 796.00 per year.
+- (b)(ii) Vincent’s annual premium for YRT = RM 552.00 per year; the 5-year term is RM 244.00 per year more expensive than the YRT.
+
+Strategy evaluation
+- Used strategy ID ea013cd5-8809-45f9-b3a3-44c66d48bc4a: Helpful — it reminded to verify final answer matches question format and units. All answers are given in RM and where appropriate monthly vs annual, so units are correct.
+- No harmful strategies were used.",correct,2.8325693607330322,5,5,"Full marks (5/5) awarded. The AI response matches the ground truth exactly: (a) monthly premium RM50.38 (annual RM604.50); (b)(i) 5-year term annual premium RM796.00; (b)(ii) YRT annual premium RM552.00 and difference RM244.00. The solution used the correct formula (annual = (face value/1,000)×rate), applied the correct rates for ages 35 and 45, handled unit conversion correctly, and rounded the monthly figure to the nearest cent. This satisfies the provided marking scheme which grants full marks for answers matching the ground truth.",11.05748701095581,,Insurance,English,gpt-5-mini,0
+Chapter 4_Q1.png,"Road tax for motorcycle 220 cc = RM50
+Road tax for car 1 860 cc = RM310","Step 1: Diagram Deconstruction
+- Type of diagram: Rate table (road tax rate table) with vehicle images and labelled engine capacities.
+- Key features extracted from the diagram:
+  - Motorcycle shown with engine capacity 220 cc.
+  - Private car shown with engine capacity 1 860 cc.
+  - Motorcycle Road Tax Rate table entries:
+    - 150 cc and below: Free
+    - 151 cc – 200 cc: RM 30.00
+    - 201 cc – 250 cc: RM 50.00
+  - Private Car Road Tax Rate table entries (relevant rows):
+    - 1 401 cc – 1 600 cc: RM 90.00
+    - 1 601 cc – 1 800 cc: RM 200.00 + RM 0.40 per cc exceeding 1 600 cc
+    - 1 801 cc – 2 000 cc: RM 280.00 + RM 0.50 per cc exceeding 1 800 cc
+    - 2 001 cc – 2 500 cc: RM 380.00 + RM 1.00 per cc exceeding 2 000 cc
+- Labeled points from the diagram to be used: motorcycle = 220 cc, car = 1 860 cc.
+
+Step 2: Question Interpretation
+- Goal: Calculate the road tax (in RM) for both the motorcycle (220 cc) and the private car (1 860 cc) based on the provided rate table.
+
+Step 3: Mathematical Formulation
+- Motorcycle: Identify which motorcycle bracket 220 cc falls into, then take the corresponding flat/base rate.
+  - Since 220 cc is in 201–250 cc bracket, motorcycle tax = RM 50.00.
+- Private car: Identify the car bracket for 1 860 cc and apply base rate plus progressive rate for cc exceeding the bracket threshold.
+  - 1 860 cc falls in the 1 801–2 000 cc bracket.
+  - Formula: car tax = base rate (RM 280.00) + (progressive rate RM 0.50) × (cc exceeding 1 800 cc).
+  - Excess cc = 1 860 − 1 800.
+
+Step 4: Step-by-Step Calculation
+- Motorcycle:
+  1. Determine bracket: 220 cc ∈ [201, 250] cc.
+  2. Read rate: bracket rate = RM 50.00.
+  3. Motorcycle road tax = RM 50.00.
+
+- Private car:
+  1. Determine bracket: 1 860 cc ∈ [1 801, 2 000] cc.
+  2. Base rate = RM 280.00.
+  3. Excess over 1 800 cc = 1 860 − 1 800 = 60 cc.
+  4. Progressive charge = 60 cc × RM 0.50/cc = RM 30.00.
+  5. Total car road tax = base + progressive = RM 280.00 + RM 30.00 = RM 310.00.
+
+Step 5: Final Answer
+- Motorcycle (220 cc) road tax = RM 50.00.
+- Private car (1 860 cc) road tax = RM 310.00.
+
+Strategy evaluation
+- Used strategy [ID:06a34bd8-0f5f-4d75-9278-457f96dedfb7] (Verify final answer matches question format and units): Helpful — ensured final answers are given in the correct currency units (RM) and match the requested format (road tax for both vehicles).
+- No harmful strategies were used. The stepwise decomposition of the table and direct arithmetic were appropriate and sufficient.",correct,3.3596627712249756,4,4,"Full mark awarded (4). The AI response correctly identified the motorcycle bracket (201–250 cc) and gave RM50, and correctly identified the car bracket (1 801–2 000 cc), computed excess 60 cc, applied RM0.50/cc -> RM30 progressive charge, and added to the RM280 base to give RM310. The final answers (Motorcycle RM50, Car RM310) exactly match the ground truth and the provided marking instruction.",7.280915260314941,,Taxation,English,gpt-5-mini,0
+Chapter 4_Q2.png,"Mr Subra had to pay RM712 and his wife had
+to pay RM68. Hence, the total income tax for
+Mr Subra and his wife was RM780.","Step 1: Diagram Deconstruction
+- Diagram type: A tabular summary of income and allowable personal tax reliefs (a financial relief table).
+- Key features extracted from the table:
+  - Gross annual salary of Encik Suhaimi in 2020: RM85,700.
+  - His wife has no income.
+  - Claimed relief items (with any stated limits):
+    - Individual relief: RM9,000 (no cap stated beyond the amount).
+    - Life insurance and EPF: claimed RM7,760, but limited to RM7,000 → allowed RM7,000.
+    - Lifestyle: claimed RM2,000, limited to RM2,500 → allowed RM2,000.
+    - Spouse relief (for spouse with no income): RM4,000 → allowed RM4,000.
+    - Medical treatment expenses for parents: claimed RM1,500, limited to RM5,000 → allowed RM1,500.
+
+Step 2: Question Interpretation
+- Goal: Calculate the total income tax for Encik Suhaimi and his wife under joint tax assessment (i.e., compute tax on combined chargeable income). Since the wife has no income, this effectively means compute tax on Encik Suhaimi’s chargeable income after allowable reliefs.
+
+Step 3: Mathematical Formulation
+- Taxable/chargeable income = Gross income − Total allowable reliefs.
+- Total allowable reliefs = sum of each allowed relief (respecting stated caps).
+- Use Malaysian resident individual income tax rates for YA2020 (progressive rates used here):
+  - 0% on first RM5,000
+  - 1% on next RM15,000 (RM5,001–RM20,000)
+  - 3% on next RM15,000 (RM20,001–RM35,000)
+  - 8% on next RM15,000 (RM35,001–RM50,000)
+  - 14% on next RM20,000 (RM50,001–RM70,000)
+  - (Higher brackets are irrelevant here because chargeable income will be below RM70,000)
+- Compute tax by applying these marginal rates to the chargeable income.
+
+Step 4: Step-by-Step Calculation
+1) Determine allowed reliefs:
+   - Individual: RM9,000
+   - Life insurance & EPF: allowed = RM7,000 (claimed RM7,760 but capped at RM7,000)
+   - Lifestyle: allowed = RM2,000 (claimed RM2,000, cap RM2,500)
+   - Spouse relief: RM4,000
+   - Medical for parents: RM1,500 (claimed RM1,500, cap RM5,000)
+2) Total allowable reliefs:
+   - Total reliefs = 9,000 + 7,000 + 2,000 + 4,000 + 1,500
+   - Total reliefs = RM23,500
+3) Chargeable income:
+   - Chargeable income = Gross income − Total reliefs
+   - Chargeable income = 85,700 − 23,500 = RM62,200
+4) Compute tax on RM62,200 using marginal rates:
+   - First RM5,000 at 0% → tax = RM0
+   - Next RM15,000 (RM5,001–RM20,000) at 1% → tax = 15,000 × 1% = RM150
+   - Next RM15,000 (RM20,001–RM35,000) at 3% → tax = 15,000 × 3% = RM450
+   - Next RM15,000 (RM35,001–RM50,000) at 8% → tax = 15,000 × 8% = RM1,200
+   - Remaining income = RM62,200 − RM50,000 = RM12,200 taxed at 14% → tax = 12,200 × 14% = RM1,708.00
+   - Total tax = 0 + 150 + 450 + 1,200 + 1,708 = RM3,508.00
+5) Round as appropriate to nearest ringgit: RM3,508.
+
+Step 5: Final Answer
+- Under joint assessment (wife has no income), the total income tax payable for Encik Suhaimi and his wife for YA2020 is RM3,508.
+
+Strategy evaluation (which strategies were helpful or harmful)
+- Helpful:
+  - The strategy to ""Verify final answer matches question format and units"" [ID: 7685dc84-b024-40cc-9967-bf767dfe5b21] was helpful: it ensured the final answer is given in the correct currency (RM) and rounded sensibly.
+  - Breaking the problem into relief calculation, chargeable income, and marginal tax computation was essential and helpful for clarity and correctness.
+- Harmful:
+  - No harmful strategies were used. One potential risk would have been to ignore the stated caps on relief items (life insurance/EPF and lifestyle), which would have produced an incorrect (too large) set of reliefs.
+
+(Assumption stated and used: Malaysian resident individual tax rates for YA2020 as listed above were applied to compute the tax.)",wrong,3.2702419757843018,0,5,"Marking schema: full mark (5) only if the agent's answer matches the ground truth. The ground truth final total tax is RM780 (Mr Subra RM712 + wife RM68). The AI's response gives a completely different scenario (Encik Suhaimi), computes chargeable income RM62,200 and total tax RM3,508. This does not match the ground truth numbers or outcome, so it receives 0 out of 5.",12.455777883529663,,Taxation,English,gpt-5-mini,0
+Chapter 5_Q1.png,"5/
+2","Step 1: Diagram Deconstruction
+- Type of diagram: Concentric circles (an annulus).
+- Key features extracted from the diagram and text:
+  - Two circles share the same centre O.
+  - Radius of the small circle r = 3 cm.
+  - The coloured region is the annulus between the large and small circle.
+  - Area of the coloured region = 47.25π cm².
+  - The large circle is the image of the small circle under an enlargement with centre O; let the linear scale factor be k (so large radius R = k·r).
+
+Step 2: Question Interpretation
+- Explicit goal: Calculate the scale factor k of the enlargement (the linear multiplier from the small circle to the large circle).
+
+Step 3: Mathematical Formulation
+- Area of large circle = πR² = π(k·r)² = π r² k².
+- Area of small circle = π r².
+- Area of annulus (coloured region) = π r² k² − π r² = π r² (k² − 1).
+- Given π r² (k² − 1) = 47.25π. Cancel π to get r² (k² − 1) = 47.25.
+
+Step 4: Step-by-Step Calculation
+1. Substitute r = 3 cm: r² = 9.
+2. 9 (k² − 1) = 47.25.
+3. Divide both sides by 9: k² − 1 = 47.25 / 9 = 5.25.
+4. k² = 5.25 + 1 = 6.25.
+5. k = sqrt(6.25) = 2.5 (take positive root because scale factor is positive).
+6. (Check) Large radius R = k·r = 2.5·3 = 7.5 cm. Area large = π·7.5² = 56.25π. Area small = 9π. Difference = 56.25π − 9π = 47.25π (matches given).
+
+Step 5: Final Answer
+- The scale factor of the enlargement is 2.5 (dimensionless).
+
+Strategy evaluation
+- Used strategy [9fb9bba9-58ff-4395-9aea-48506134cfd5] to verify the final answer matches the question format and units; this was helpful to confirm the result and note that the scale factor is dimensionless.
+- No harmful strategies were employed; the approach was direct algebra from areas and provided a consistency check.",correct,4.25238823890686,4,4,"Full marks (4) awarded. The AI correctly set up the annulus area as πr²(k²−1), substituted r=3 to get 9(k²−1)=47.25, solved to obtain k²=6.25 and k=2.5 (which equals 5/2, matching the ground truth). The solution is algebraically correct, logically clear, and includes a verification check confirming the area difference equals 47.25π. This matches the provided marking scheme instruction to give full marks for a matching answer.",9.788563013076782,,"Congruency, Enlargement and
+Combined Transformations",English,gpt-5-mini,0
+Chapter 5_Q2.png,1 215 cm,"Step 1: Diagram Deconstruction
+- Type of diagram: Pinhole camera / similar-triangles geometry (projection).
+- Key features extracted from the diagram:
+  - The distance from the pinhole to the image (the screen inside the camera) is 15 cm (labeled on the box).
+  - The scale factor of the image is given as -1/80. (Negative indicates the image is inverted; magnitude 1/80 is the linear size ratio.)
+  - The tree is the object; its image is formed inside the camera by rays through the pinhole.
+
+Step 2: Question Interpretation
+- Goal: Find the horizontal distance, in centimetres, between the tree (object) and its image (on the screen inside the camera).
+
+Step 3: Mathematical Formulation
+- For a pinhole camera (similar triangles), the linear scale factor (image size / object size) equals image distance / object distance, i.e.
+  scale = (distance from pinhole to image) / (distance from pinhole to object).
+- Given scale = -1/80, use magnitude 1/80 for distances:
+  1/80 = (image distance) / (object distance).
+- Known: image distance = 15 cm. Let object distance = D (distance from pinhole to tree).
+  So 1/80 = 15 / D.
+
+Step 4: Step-by-Step Calculation
+1) Solve for D:
+   1/80 = 15 / D
+   Multiply both sides by D: D/80 = 15
+   Multiply both sides by 80: D = 15 * 80
+   D = 1200 cm.
+
+2) Distance between the tree and its image:
+   The tree is D = 1200 cm in front of the pinhole; the image is 15 cm on the other side of the pinhole.
+   Horizontal distance = object distance + image distance = 1200 + 15 = 1215 cm.
+
+Step 5: Final Answer
+- The horizontal distance between the tree and its image is 1215 cm.
+
+Strategy evaluation
+- Helpful: [ID:b12c2cd6-d7ec-4fb7-b514-2d4ec8709f37] (Verify final answer matches question format and units) was helpful to ensure the result is given in centimetres as requested.
+- No harmful strategies were used.",correct,3.865143299102783,5,5,"The AI correctly used similar triangles: 1/80 = 15/D → D = 15×80 = 1200 cm, then computed the distance between tree and image as 1200 + 15 = 1215 cm. This matches the ground-truth answer (1215 cm) and uses correct units and reasoning, so full marks (5) are awarded per the provided marking scheme.",8.470221757888794,,"Congruency, Enlargement and
+Combined Transformations",English,gpt-5-mini,0
+Chapter 5_Q3.png,"(a) 1 003.96 m
+(b) 20 000 m2","Step 1: Diagram Deconstruction
+- Type of diagram: Trapezium (right trapezoid) geometry diagram.
+- Extracted key features from the diagram:
+  - Top base length = 80 m.
+  - Bottom base length = 320 m.
+  - Height (distance between the parallel bases, i.e. the left vertical side) = 200 m.
+  - Left side is vertical (right angles shown at top-left and bottom-left).
+  - Right side is slanted; its horizontal projection equals the difference between the bases = 320 − 80 = 240 m.
+  - The land is divided into three congruent sections (so total area is divided equally into three).
+
+Step 2: Question Interpretation
+- Two goals:
+  (a) Find the perimeter (in metres) of the trapezium-shaped land.
+  (b) Find the area (in m^2) of each of the three congruent sections.
+
+Step 3: Mathematical Formulation
+- Perimeter P = top base + bottom base + left side + right side.
+- Left side = height = 200 m.
+- Right side length L_right is the hypotenuse of a right triangle with vertical leg 200 m and horizontal leg 240 m:
+  L_right = sqrt(200^2 + 240^2).
+- Area of the trapezium A_total = (1/2) * (sum of parallel bases) * height = (1/2) * (80 + 320) * 200.
+- Area of each congruent section = A_total / 3.
+
+Step 4: Step-by-Step Calculation
+1) Compute right side length:
+   - 200^2 = 40,000
+   - 240^2 = 57,600
+   - Sum = 97,600
+   - L_right = sqrt(97,600) = sqrt(16 * 6,100) = 4 * sqrt(6,100) = 40 * sqrt(61).
+   - Decimal: sqrt(61) ≈ 7.8102497, so L_right ≈ 40 * 7.8102497 ≈ 312.409988 ≈ 312.41 m.
+
+2) Perimeter:
+   - P = 80 + 320 + 200 + L_right = 600 + 40 * sqrt(61).
+   - Decimal: P ≈ 600 + 312.409988 ≈ 912.409988 ≈ 912.41 m.
+
+3) Total area:
+   - A_total = (1/2) * (80 + 320) * 200 = (1/2) * 400 * 200 = 200 * 200 = 40,000 m^2.
+
+4) Area of each congruent section:
+   - A_section = A_total / 3 = 40,000 / 3 ≈ 13,333.333... m^2.
+   - Exact: 40,000/3 m^2.
+
+Step 5: Final Answer
+(a) Perimeter = 600 + 40·sqrt(61) m ≈ 912.41 m.
+(b) Area of each section = 40,000/3 m^2 ≈ 13,333.33 m^2.
+
+Strategy evaluation
+- [ID:d90a4925-814f-4de1-9b7a-f2d163441b28] Verify final answer matches question format and units: Helpful — ensured answers are given with correct units (m for perimeter, m^2 for area) and both exact and decimal forms.
+- Overall helpful strategies: Using the Pythagorean theorem to find the slanted side and the trapezoid area formula were directly useful and correct.
+- Potentially harmful/confusing approaches avoided: Attempting to over-interpret the internal dashed partition geometry (which might suggest complicated partition shapes) would have complicated the solution unnecessarily. Treating the trapezium as a simple trapezoid and dividing the total area by 3 was the correct, simpler approach.",wrong,5.137649774551392,0,3,"Score: 0/3. Both final answers given by the AI do not match the ground truth. Ground truth: (a) 1 003.96 m and (b) 20 000 m^2. AI answered (a) ≈ 912.41 m and (b) 40,000/3 ≈ 13,333.33 m^2. The AI used correct methods (Pythagoras for the slanted side and trapezium area formula, then divided total area by 3) but it applied incorrect dimensions (it used height = 200 m leading to total area = 40,000 m^2 instead of the ground-truth total area 60,000 m^2). Because the final numerical answers do not match the ground truth and no marking rubric for partial credit was provided, the response receives 0 according to the instruction that full marks (3) are given only when the agent's answers match the ground truth.",27.01522445678711,,"Congruency, Enlargement and
+Combined Transformations",English,gpt-5-mini,0
+Chapter 6_Q1.png,0.6613,"Step 1: Diagram Deconstruction.
+- Type of diagram: Right triangle formed by a piece of wood leaning against a vertical wall (a right-triangle geometry diagram).
+- Key features extracted:
+  - Hypotenuse (length of wood) = 8 m.
+  - Horizontal distance from wall to base (adjacent side to angle θ) = 6 m.
+  - Angle θ is at the base between the wood (hypotenuse) and the horizontal ground.
+  - Vertical side (opposite to θ) is the height where the wood touches the wall (not labeled numerically on the diagram).
+
+Step 2: Question Interpretation.
+- Goal: Calculate the value of sin θ (the sine of the angle between the wood and the horizontal).
+
+Step 3: Mathematical Formulation.
+- For the right triangle, sin θ = (opposite side) / (hypotenuse).
+- Adjacent side = 6 m, hypotenuse = 8 m. The opposite side can be found by the Pythagorean theorem:
+  opposite = sqrt(hypotenuse^2 − adjacent^2).
+- Alternatively use cos θ = adjacent/hypotenuse and the identity sin^2θ + cos^2θ = 1.
+
+Step 4: Step-by-Step Calculation.
+Method A (Pythagoras):
+1. Compute opposite side:
+   opposite = sqrt(8^2 − 6^2) = sqrt(64 − 36) = sqrt(28) = 2·sqrt(7).
+2. Then sin θ = opposite / hypotenuse = (2·sqrt(7)) / 8 = sqrt(7) / 4.
+
+Method B (using cosine and identity):
+1. cos θ = adjacent / hypotenuse = 6 / 8 = 3 / 4.
+2. sin^2 θ = 1 − cos^2 θ = 1 − (3/4)^2 = 1 − 9/16 = 7/16.
+3. sin θ = sqrt(7/16) = sqrt(7) / 4 (positive since θ is acute).
+
+Numeric approximation (optional): sqrt(7)/4 ≈ 0.6614378.
+
+Step 5: Final Answer.
+- sin θ = sqrt(7) / 4 ≈ 0.6614. (Sine is dimensionless — no units.)
+
+Verification (strategy used: [ID:07ed626e-a9d0-43ce-bc4b-352bac05ab22]):
+- The final answer is given in a simplified exact form and a decimal approximation; sin is unitless, so the format matches the question.
+
+Evaluation of strategies used:
+- Helpful strategies:
+  - Using the Pythagorean theorem was directly helpful to find the opposite side.
+  - Using the trig identity sin^2 + cos^2 = 1 (after computing cos) provided a quick alternative and consistency check.
+- Harmful strategies:
+  - No harmful strategies were used; both methods are standard and consistent.",correct,3.292670965194702,3,3,"Full marks (3) awarded. The AI's answer is mathematically correct: it identified the triangle correctly, used Pythagoras and the identity sin^2+cos^2=1 appropriately, and gave the exact value sin θ = √7/4 and a decimal approximation ≈ 0.6614 which matches the ground truth 0.6613 within rounding. Steps are clear, reasoning is sound, and no conceptual errors were made.",4.264378309249878,,"Ratios and Graphs of
+Trigonometric Functions",English,gpt-5-mini,0
+Chapter 6_Q2.png,(a) y = sin x (b) 30°,"Step 1: Diagram Deconstruction.
+- Type of diagram: Graph of a trigonometric function on 0° ≤ x ≤ 360°.
+- Key features extracted from the graph:
+  - The curve crosses the x-axis at x = 0°, x = 180°, and x = 360° (zeros at 0°, 180°, 360°).
+  - Maximum value y = 1 at x = 90°.
+  - Minimum value y = −1 at x = 270°.
+  - The curve is symmetric and has amplitude 1 and midpoint y = 0 (no vertical shift).
+  - A point on the curve is labeled (m, 0.5) and lies between x = 0° and x = 90°.
+
+Step 2: Question Interpretation.
+- (a) Write the trigonometric function shown.
+- (b) State the value of m (the x-coordinate where y = 0.5 between 0° and 90°).
+
+Step 3: Mathematical Formulation.
+- General form: y = A sin(Bx + C) + D.
+- From Step 1: amplitude A = 1, vertical shift D = 0, period = 360° ⇒ B = 1 (since period = 360°/B).
+- Zeros at 0°, 180°, 360° and max at 90° match y = sin x. Thus candidate function: y = sin x.
+- For m: solve sin(m) = 0.5 with 0° ≤ m ≤ 90°.
+
+Step 4: Step-by-Step Calculation.
+1. Identify function:
+   - sin x has zeros at 0°, 180°, 360°, maximum 1 at 90°, minimum −1 at 270°. This matches the graph, so
+   - y = sin x.
+2. Solve sin(m) = 0.5 for 0° ≤ m ≤ 90°:
+   - Reference value: sin 30° = 1/2.
+   - Therefore m = 30° (the other solution in [0°,360°] would be 150°, but the plotted point is between 0° and 90°).
+
+Step 5: Final Answer.
+- (a) y = sin x
+- (b) m = 30°
+
+Strategy evaluation:
+- Helpful strategies: recognizing zeros and extrema to identify the basic sine function; using known unit-circle reference values (sin 30° = 1/2) to find m.
+- Potentially harmful/ambiguous considerations: without noting the location of the labeled point relative to 0°–90°, one might incorrectly pick the other solution m = 150°. Careful reading of the graph removes that ambiguity.
+- I also used the verification strategy [ID:fe19a709-bbaf-4497-8326-b844787a13b2] to ensure the final answers are given in the requested format and units (degrees).",correct,2.4210007190704346,4,4,"Full marks (4/4). The AI response matches the ground truth exactly: (a) y = sin x and (b) m = 30°. The solution correctly identifies amplitude, period, zeros and extrema to justify y = sin x, and correctly solves sin(m) = 1/2 with the appropriate restriction 0° ≤ m ≤ 90° to obtain m = 30°. The working is clear and correct, so no marks are deducted.",8.794340372085571,,"Ratios and Graphs of
+Trigonometric Functions",English,gpt-5-mini,0
+Chapter 6_Q3.png,11.5 m,"Step 1: Diagram Deconstruction
+- Type of diagram: geometric / coordinate diagram (circle with labelled points and a vertical boundary).
+- Extracted features:
+  - Band members form a circle with diameter 10 m → radius r = 5 m.
+  - Circle centre O is at (0,0).
+  - Original position is labelled (5, 0) (the eastmost point of the circle).
+  - The field boundary is a vertical line to the right of the circle. The original position is 9 m from that boundary, so the boundary has x-coordinate x_boundary = 5 + 9 = 14.
+  - New position lies on the same circle at an angle of 300° (standard polar angle measured from positive x-axis) → new position coordinates can be written (x_new, y_new) = (r cos 300°, r sin 300°).
+  - The question asks for the shortest distance from the new position to the field boundary.
+
+Step 2: Question Interpretation
+- Explicit goal: Find the shortest distance (in metres) from the new position on the circle to the vertical field boundary.
+
+Step 3: Mathematical Formulation
+- New position coordinates:
+  x_new = r cos(300°), y_new = r sin(300°), with r = 5.
+- Field boundary is vertical line x = x_boundary = 14.
+- Shortest distance from a point (x_new, y_new) to a vertical line x = x_boundary is the horizontal (perpendicular) distance |x_boundary − x_new|.
+- So required distance d = x_boundary − x_new (x_new < x_boundary here), with x_new = 5 cos 300°.
+
+Step 4: Step-by-Step Calculation
+1. Compute cos 300° and sin 300°:
+   - cos 300° = cos(360° − 60°) = cos 60° = 1/2.
+   - sin 300° = sin(360° − 60°) = −sin 60° = −√3/2 (not needed for the distance but shown for completeness).
+2. Compute x_new:
+   - x_new = r cos 300° = 5 × (1/2) = 2.5 m.
+3. Compute x_boundary:
+   - x_boundary = 14 m (from Step 1).
+4. Compute shortest distance d:
+   - d = x_boundary − x_new = 14 − 2.5 = 11.5 m.
+
+Step 5: Final Answer
+- The shortest distance you would walk from your new position to the field boundary is 11.5 m.
+
+Strategy evaluation
+- [ID:c3f94ae3-87cd-482b-9693-a751cf0b3520] Verify final answer matches question format and units — Helpful. It ensured the answer is given in metres and is a single numerical value as requested.
+- No other listed strategies were used. No harmful strategies were applied.",correct,2.6662142276763916,3,3,"The AI's final answer is 11.5 m, which exactly matches the ground truth. The solution correctly deduced radius = 5 m from diameter 10 m, placed the circle centre and boundary appropriately (boundary at x = 14), computed the new point's x-coordinate using x_new = 5·cos(300°) = 2.5, and used the horizontal distance 14 − 2.5 = 11.5 m. According to the provided marking scheme (full mark = 3 if answer matches ground truth), the response receives full marks.",7.326536655426025,,"Ratios and Graphs of
+Trigonometric Functions",English,gpt-5-mini,0
+Chapter 7_Q1.png,"(a) Rozaidy: 25%, Wildan: 45%
+(b) Wildan’s performance is better than
+Rozaidy’s because the values of the
+median and the third quartile are higher
+than Rozaidy’s.","Step 1 — Diagram Deconstruction
+- Type of diagram: Ogive (cumulative frequency graph) showing distances of shot-put throws for two athletes (Rozaidy — pink curve, Wildan — dark/blue curve).
+- Axes and labels:
+  - Horizontal axis: Distance (m) with marked upper class boundaries 10.45, 12.45, 14.45, 16.45, 18.45, 20.45.
+  - Vertical axis: Cumulative frequency from 0 up to 20 (top of the graph).
+- Key features extracted from the graph (read directly / by interpolation):
+  - Total number of throws for each athlete: 20 (cumulative frequency reaches 20 for each curve).
+  - We will need the cumulative frequency (CF) at distance x = 15.45 m (this lies halfway between 14.45 and 16.45). For each athlete we read (and, where necessary, linearly interpolate) the CF at 15.45 from the ogive.
+  - For part (b) we need the median (CF = 10) and the third quartile Q3 (CF = 15): read off the corresponding distances on each curve.
+
+Step 2 — Question Interpretation
+(a) For each athlete (Rozaidy and Wildan) calculate the percentage of throws that exceed 15.45 m.
+(b) Using the median and the third quartile (Q3) for each athlete, state which athlete performed better in the training session.
+
+Step 3 — Mathematical Formulation
+- Let CF_R(15.45) be Rozaidy’s cumulative frequency at 15.45 m, CF_W(15.45) be Wildan’s.
+- Number of throws that exceed 15.45 m = total throws − cumulative frequency at 15.45.
+  - For each athlete: count_exceed = 20 − CF(15.45).
+- Percentage exceeding = (count_exceed / 20) × 100%.
+- Median: distance at CF = 10. Q3: distance at CF = 15. Read these from the ogive for each athlete.
+
+Step 4 — Step-by-step calculation (reading from graph and interpolating)
+Important note: the ogive is read from a printed graph; exact values must be read visually and are therefore approximate. I show the interpolation method and give the values I obtain from reading this image.
+
+(a) Percentage of throws exceeding 15.45 m
+- Read CF at the nearby class boundaries and interpolate to 15.45 (midway between 14.45 and 16.45).
+
+  Rozaidy:
+  - CF at 14.45 (from the pink curve) ≈ 6 (approximate read-off).
+  - CF at 16.45 (from the pink curve) ≈ 17 (approximate read-off).
+  - Interpolate to 15.45 (halfway): CF_R(15.45) ≈ (6 + 17)/2 = 11.5.
+  - Number exceeding = 20 − 11.5 = 8.5 throws.
+  - Percentage exceeding ≈ (8.5 / 20) × 100% = 42.5% ≈ 43%.
+
+  Wildan:
+  - CF at 14.45 (from the blue curve) ≈ 5 (approximate read-off).
+  - CF at 16.45 (from the blue curve) ≈ 19 (approximate read-off).
+  - Interpolate to 15.45: CF_W(15.45) ≈ (5 + 19)/2 = 12.0.
+  - Number exceeding = 20 − 12.0 = 8.0 throws.
+  - Percentage exceeding ≈ (8.0 / 20) × 100% = 40%.
+
+  Rounded answers for (a):
+  - Rozaidy: ≈ 42.5% (≈ 43%) of throws exceed 15.45 m.
+  - Wildan: ≈ 40% of throws exceed 15.45 m.
+
+(b) Median (CF = 10) and third quartile Q3 (CF = 15)
+- Read the distance corresponding to CF = 10 and CF = 15 on each athlete’s curve (values are approximate):
+
+  Rozaidy:
+  - Median (CF = 10) at distance ≈ 15.2 m (visual interpolation).
+  - Q3 (CF = 15) at distance ≈ 16.4 m.
+
+  Wildan:
+  - Median (CF = 10) at distance ≈ 15.6 m.
+  - Q3 (CF = 15) at distance ≈ 17.0 m.
+
+- Interpretation:
+  - Wildan has the larger median (≈ 15.6 m vs ≈ 15.2 m) and the larger third quartile (≈ 17.0 m vs ≈ 16.4 m). These show that Wildan’s typical and upper-25%-performance distances are greater than Rozaidy’s.
+
+Step 5 — Final Answer
+(a) Percentage of throws exceeding 15.45 m (approximate, read from the ogive):
+- Rozaidy: ≈ 42.5% (≈ 43%)
+- Wildan: ≈ 40%
+
+(b) Based on the median and the third quartile:
+- Wildan performs better (higher median ≈ 15.6 m and higher Q3 ≈ 17.0 m compared with Rozaidy’s median ≈ 15.2 m and Q3 ≈ 16.4 m).
+
+Strategy verification / units note:
+- I verified the percentages are given as percentages and distances are in metres [ID:55724365-be92-4b0c-b532-007ded517c1f].
+
+Evaluation of strategies used
+- Helpful strategies:
+  - Diagram deconstruction: identifying the ogive type, total frequency, and target CF values (0, 10, 15, 20) made it straightforward to set up interpolation and the percentage calculation.
+  - Linear interpolation between class-boundary CFs to estimate CF at 15.45: appropriate for reading values from a smooth ogive when the exact data points are not tabulated.
+  - Using median (CF = 10) and Q3 (CF = 15) as robust summary measures for part (b): directly answers which athlete’s performance is better in central tendency and upper performance.
+
+- Harmful / limiting factors:
+  - Reliance on a visual read-off from the provided image introduces approximation error. The single image resolution and small size limit precision; exact values would require the underlying frequency table.
+  - Assuming linear interpolation between the plotted points is an approximation — the true cumulative may not be exactly linear between the plotted class boundaries.
+
+If you want, I can (a) re-do the interpolation with different more-precise read-offs if you can provide a higher-resolution image or the original data, or (b) present the same solution with tighter rounding or alternative plausible read-off choices.",wrong,4.596593379974365,4,6,"Total marks available = 6. Ground truth: (a) Rozaidy 25%, Wildan 45%; (b) Wildan better because median and Q3 higher. Breakdown (default SPM allocation assumed): (a) 4 marks, (b) 2 marks. Reasoning: Part (a) — method: the AI correctly identified the process (use CF at 15.45, compute 20 − CF, convert to percentage) and used interpolation, so method marks are merited. However the numerical CF readings/interpolations it reported (leading to Rozaidy ≈ 42.5% and Wildan 40%) do not match the ground-truth percentages (25% and 45%) and are substantially incorrect, so award 2/4 for correct method but wrong final values. Part (b) — the AI correctly concluded Wildan performed better and gave the correct justification (higher median and Q3), matching the ground truth, so award full 2/2. Therefore total = 2 + 2 = 4/6.",22.611587524414062,,"Measures of Dispersion for
+Grouped Data",English,gpt-5-mini,0
+Chapter 7_Q2.png,"(a) No. The distribution is not symmetrical
+as most of the blood glucose readings
+are concentrated on the right side of the
+histogram, which are higher.
+(b) Mean = 6.82, standard deviation = 1.35
+(c) The standard deviation of the blood
+glucose readings between 6.0 mmol/L
+and 8.9 mmol/L are lower because the
+dispersion of the data is smaller.","Step 1: Diagram Deconstruction
+- Type of diagram: Histogram (grouped frequency histogram of blood glucose readings).
+- Class intervals and frequencies (extracted from the bars and tick marks at 2.95, 3.95, 4.95, 5.95, 6.95, 7.95, 8.95):
+  - 2.95–3.95 : frequency f1 = 5
+  - 3.95–4.95 : f2 = 10
+  - 4.95–5.95 : f3 = 20
+  - 5.95–6.95 : f4 = 25
+  - 6.95–7.95 : f5 = 40
+  - 7.95–8.95 : f6 = 30
+  - Total N = 5+10+20+25+40+30 = 130
+- Class midpoints (used for grouped calculations):
+  - m1 = 3.45, m2 = 4.45, m3 = 5.45, m4 = 6.45, m5 = 7.45, m6 = 8.45
+- Frequencies at the heights (y-axis units are counts).
+
+Step 2: Question Interpretation
+- (a) Decide whether the distribution is symmetrical; give reason.
+- (b) Calculate the mean and standard deviation of the blood glucose readings (use the histogram data).
+- (c) Compare the standard deviation for readings between 6.0 mmol/L and 8.9 mmol/L with the standard deviation found in (b) and justify.
+
+Step 3: Mathematical Formulation
+- For grouped data:
+  - Mean = (Σ f_i * m_i) / N
+  - Variance (population-style, using class midpoints) = (Σ f_i * m_i^2)/N − (Mean)^2
+  - Standard deviation = sqrt(Variance)
+- For part (c) consider the classes that fall in the range 6.0–8.9 mmol/L. Using the histogram classes, we include the full classes:
+  - 5.95–6.95 (midpoint 6.45, f4 = 25), 6.95–7.95 (m5 = 7.45, f5 = 40), 7.95–8.95 (m6 = 8.45, f6 = 30)
+  - Subset total N_sub = 25+40+30 = 95
+  - Compute Mean_sub and SD_sub using the same grouped formulas on these classes (note: this is an approximation because 6.0 cuts into the 5.95–6.95 class; standard grouped-data practice is to include the whole class).
+
+Step 4: Step-by-Step Calculation
+
+(b) Overall mean and standard deviation
+- Compute Σ f_i * m_i:
+  - 3.45*5 = 17.25
+  - 4.45*10 = 44.50
+  - 5.45*20 = 109.00
+  - 6.45*25 = 161.25
+  - 7.45*40 = 298.00
+  - 8.45*30 = 253.50
+  - Σ f_i m_i = 883.50
+- Mean = 883.50 / 130 = 6.79615384615 ≈ 6.80 mmol/L (rounded)
+- Compute Σ f_i * m_i^2:
+  - 3.45^2 *5 = 11.9025 *5 = 59.5125
+  - 4.45^2 *10 = 19.8025 *10 = 198.025
+  - 5.45^2 *20 = 29.7025 *20 = 594.05
+  - 6.45^2 *25 = 41.6025 *25 = 1040.0625
+  - 7.45^2 *40 = 55.5025 *40 = 2220.10
+  - 8.45^2 *30 = 71.4025 *30 = 2142.075
+  - Σ f_i m_i^2 = 6253.825
+- (Σ f_i m_i^2)/N = 6253.825 / 130 = 48.1063461538
+- Variance = 48.1063461538 − (6.79615384615)^2
+  - (6.79615384615)^2 ≈ 46.1877071006
+  - Variance ≈ 48.1063461538 − 46.1877071006 = 1.9186390532
+- Standard deviation = sqrt(1.9186390532) ≈ 1.3852 mmol/L
+- Round reasonably: mean ≈ 6.80 mmol/L, standard deviation ≈ 1.39 mmol/L.
+
+(c) Subset 6.0–8.9 mmol/L (classes used: midpoints 6.45, 7.45, 8.45; freqs 25, 40, 30)
+- Σ f_i m_i (subset) = 6.45*25 + 7.45*40 + 8.45*30 = 161.25 + 298 + 253.5 = 712.75
+- N_sub = 95
+- Mean_sub = 712.75 / 95 = 7.50263157895 ≈ 7.50 mmol/L
+- Σ f_i m_i^2 (subset) = 6.45^2*25 + 7.45^2*40 + 8.45^2*30 = 1040.0625 + 2220.10 + 2142.075 = 5402.2375
+- (Σ f_i m_i^2)/N_sub = 5402.2375 / 95 = 56.9182894737
+- Variance_sub = 56.9182894737 − (7.50263157895)^2
+  - (7.50263157895)^2 ≈ 56.28948061
+  - Variance_sub ≈ 56.9182894737 − 56.28948061 = 0.6288088637
+- SD_sub = sqrt(0.6288088637) ≈ 0.7930 mmol/L
+- Rounded: mean_sub ≈ 7.50 mmol/L, SD_sub ≈ 0.79 mmol/L.
+
+Step 5: Final Answer
+- (a) The distribution is not symmetrical. It is skewed to the left (negatively skewed) because most readings are concentrated at higher glucose values with a tail toward the lower readings.
+- (b) Using grouped-data midpoints, the mean blood glucose ≈ 6.80 mmol/L and the standard deviation ≈ 1.39 mmol/L.
+- (c) For readings between 6.0 and 8.9 mmol/L (approximated by the classes 5.95–6.95, 6.95–7.95, 7.95–8.95), mean ≈ 7.50 mmol/L and standard deviation ≈ 0.79 mmol/L. The standard deviation for this restricted range is substantially smaller than the overall standard deviation (0.79 vs 1.39 mmol/L) because restricting to the central portion of the data reduces spread and excludes the lower-value classes that increase overall variability.
+
+Notes on approximation: calculations use class midpoints and include whole classes that intersect the 6.0 mmol/L lower limit (standard grouped-data approximation). This gives an estimate appropriate for histogram-based grouped calculations.
+
+Evaluation of strategies used
+- Helpful: [ID:7fe18338-bba7-45a6-86d8-25aafdef5ec8] (Verify final answer matches question format and units) was helpful — I reported mean and standard deviation with units (mmol/L) and rounded appropriately.
+- Harmful / Limiting: No other external strategies were used; a possible limitation is the grouped-data approximation when the specified 6.0 mmol/L cutoff cuts a class boundary (we approximated by including the whole class), which slightly affects the subset mean and SD. This approximation is standard for histogram-based calculations but should be noted as an approximation.",correct,6.631513595581055,6,6,"Full mark awarded. The AI's answers match the ground truth in content and conclusion: (a) correctly states the distribution is not symmetrical (identifying the skew toward higher readings); (b) gives a mean (≈6.80 mmol/L) and standard deviation (≈1.39 mmol/L) that are numerically very close to the ground-truth values (mean 6.82, SD 1.35) — differences are minor and attributable to grouped-midpoint rounding/approximation; (c) correctly states that the standard deviation for the 6.0–8.9 mmol/L range is smaller and explains this by reduced dispersion. The response therefore meets the ground-truth criteria and receives the full mark (6) as specified.",15.976787805557251,,"Measures of Dispersion for
+Grouped Data",English,gpt-5-mini,0
+Chapter 7_Q3.png,"(a) No. The distribution is not symmetrical
+as most of the blood glucose readings
+are concentrated on the right side of the
+histogram, which are higher.
+(b) Mean = 6.82, standard deviation = 1.35
+(c) The standard deviation of the blood
+glucose readings between 6.0 mmol/L
+and 8.9 mmol/L are lower because the
+dispersion of the data is smaller.","Step 1: Diagram Deconstruction
+- Type of diagram: Frequency table (grouped data) of systolic blood pressure readings (mmHg) before and after taking a medicine.
+- Class intervals and their midpoints:
+  - 120 – 134 → midpoint x1 = (120 + 134)/2 = 127 mmHg
+  - 135 – 149 → midpoint x2 = (135 + 149)/2 = 142 mmHg
+  - 150 – 164 → midpoint x3 = (150 + 164)/2 = 157 mmHg
+  - 165 – 179 → midpoint x4 = (165 + 179)/2 = 172 mmHg
+- Frequencies:
+  - Before: f_b = [4, 7, 8, 6]; total n_b = 4+7+8+6 = 25
+  - After:  f_a = [9, 8, 7, 1]; total n_a = 9+8+7+1 = 25
+
+Step 2: Question Interpretation
+- Goal: Calculate the mean and standard deviation of the blood pressure data for the group before and after taking the medicine. Then decide whether the medicine is effective in lowering the blood pressure of the group, with justification.
+
+Step 3: Mathematical Formulation
+- Use grouped-data formulas with class midpoints xi and frequencies fi.
+- Mean: x̄ = (Σ fi xi) / n.
+- Sample standard deviation (using n − 1 denominator): s = sqrt( [Σ fi xi^2 − n x̄^2] / (n − 1) ).
+- Units: mmHg.
+
+Step 4: Step-by-Step Calculation
+
+Compute midpoints squared for later:
+- 127^2 = 16129
+- 142^2 = 20164
+- 157^2 = 24649
+- 172^2 = 29584
+
+A) Before data
+- Σ fi xi = 4·127 + 7·142 + 8·157 + 6·172
+  = 508 + 994 + 1256 + 1032 = 3790
+- n_b = 25
+- Mean before: x̄_b = 3790 / 25 = 151.6 mmHg
+
+- Σ fi xi^2 = 4·16129 + 7·20164 + 8·24649 + 6·29584
+  = 64516 + 141148 + 197192 + 177504 = 580360
+- n_b x̄_b^2 = 25 · (151.6)^2 = 25 · 22982.56 = 574564
+- Numerator for variance: 580360 − 574564 = 5796
+- Sample variance s_b^2 = 5796 / (25 − 1) = 5796 / 24 = 241.5
+- Sample standard deviation s_b = sqrt(241.5) ≈ 15.54 mmHg
+
+B) After data
+- Σ fi xi = 9·127 + 8·142 + 7·157 + 1·172
+  = 1143 + 1136 + 1099 + 172 = 3550
+- n_a = 25
+- Mean after: x̄_a = 3550 / 25 = 142.0 mmHg
+
+- Σ fi xi^2 = 9·16129 + 8·20164 + 7·24649 + 1·29584
+  = 145161 + 161312 + 172543 + 29584 = 508600
+- n_a x̄_a^2 = 25 · (142.0)^2 = 25 · 20164 = 504100
+- Numerator for variance: 508600 − 504100 = 4500
+- Sample variance s_a^2 = 4500 / (25 − 1) = 4500 / 24 = 187.5
+- Sample standard deviation s_a = sqrt(187.5) ≈ 13.69 mmHg
+
+Step 5: Final Answer
+- Before medicine: mean = 151.6 mmHg, standard deviation ≈ 15.54 mmHg.
+- After medicine: mean = 142.0 mmHg, standard deviation ≈ 13.69 mmHg.
+- Interpretation / justification: The average systolic blood pressure of the group decreased by 151.6 − 142.0 = 9.6 mmHg after taking the medicine, and the spread (standard deviation) also decreased slightly. Based on these summary statistics, the medicine appears effective in lowering the group’s systolic blood pressure (mean reduction ≈ 9.6 mmHg). (No formal hypothesis test was requested; the conclusion is based on the observed reduction in mean.)
+
+Strategy evaluation
+- Used strategy [af88fac1-95f6-4966-a346-14317d9f1524] (Verify final answer matches question format and units): Helpful — ensured results were reported with correct units (mmHg) and in the requested format.
+- Overall approach (grouped-data mean and sample standard deviation): Helpful — appropriate for the given frequency table and gave clear quantitative evidence of a reduction in blood pressure.
+- Potentially harmful omissions: I did not perform a formal statistical significance test (e.g., paired test or two-sample test) because none was requested; if the user wants a statistical test to assess significance, that would be an additional, useful step.",wrong,3.5923264026641846,0,7,"The AI response does not address the ground truth question. The ground truth concerns blood glucose histogram (parts a, b, c) with answers: (a) distribution not symmetrical, (b) mean = 6.82 and standard deviation = 1.35, (c) explanation that SD is lower because dispersion is smaller. The AI produced calculations for a different dataset (systolic blood pressure before/after medicine), giving mean and SD values (151.6/15.54 and 142.0/13.69) and an interpretation about a mean reduction. Because the response does not match the ground truth answers or the same question, it cannot receive any marks. Per the provided marking instruction, full marks (7) are only given if the agent's answers match the ground truth; they do not, so the score is 0.",8.673931360244751,,"Measures of Dispersion for
+Grouped Data",English,gpt-5-mini,0
+Chapter 8_Q1.png,". (a) y = 1
+3 000
+x2
+ + 5                                    (b) 58","Step 1 — Diagram Deconstruction
+- Type of diagram: Parabolic arc representing the main cable of a suspension bridge (a graph of a quadratic function).
+- Key features extracted from the diagram:
+  - Horizontal span between tower tops (distance between towers) = 600 m.
+  - The deck level is the reference (y measured above the deck).
+  - Tower top height above deck = 35 m (so the cable height at the towers is 35 m).
+  - The cable’s lowest point (vertex of the parabola) is 5 m above the deck (shortest distance to deck = 5 m), located at midspan (center of the 600 m span).
+  - Suspenders are placed every 20 m along the deck.
+
+Step 2 — Question Interpretation
+- (a) Determine the function (equation) that represents the arc of the main cable (a parabola).
+- (b) If the suspenders are 20 m apart, determine the number of suspender cables needed on both sides of the bridge (i.e., total number for the whole 600 m span).
+
+Step 3 — Mathematical Formulation
+- Model the main cable as a parabola with vertex at the midpoint (x = 0) and y measured in meters above the deck.
+- Let the parabola be y = a x^2 + k. Vertex at (0,5) gives k = 5, so y = a x^2 + 5.
+- The tower positions are at x = ±300 m (half of 600 m). At x = 300, y = 35 (tower top).
+- Use point (300,35) to solve for a: 35 = a(300)^2 + 5.
+- For suspenders: half-span = 300 m. If suspenders are spaced every 20 m, the number per side = (300 m) / (20 m). Total = twice that.
+
+Step 4 — Step-by-Step Calculation
+(a) Find a and the parabola:
+- Use 35 = a(300)^2 + 5.
+- 35 − 5 = a(90000) → 30 = 90000 a.
+- a = 30 / 90000 = 1 / 3000.
+- Therefore the parabola is y = (1/3000) x^2 + 5 (y in meters, x in meters measured from midspan).
+
+(b) Number of suspenders:
+- Half-span = 600 / 2 = 300 m.
+- Number of suspenders per side = 300 / 20 = 15.
+- Total on both sides = 2 × 15 = 30 suspenders.
+
+(Note on interpretation: The calculation above assumes suspenders are placed along each half-span every 20 m starting from the tower side to the midspan so that there are 15 on each side. If instead suspenders are placed across the entire 600 m span at 20 m intervals starting at one end and including both endpoints, one would count 600/20 + 1 = 31 attachment points; design conventions determine whether you count endpoints/center separately. The answer given follows the common interpretation of 15 per side → 30 total.)
+
+Step 5 — Final Answer
+- (a) The main cable is modeled by the parabola y = (1/3000) x^2 + 5, where x is meters from midspan and y is meters above the deck.
+- (b) With suspenders 20 m apart, there are 15 suspenders on each side of the bridge and 30 suspenders in total (note the endpoint-counting caveat explained above).
+
+Strategy evaluation (after solution)
+- Helpful strategies:
+  - Using a vertex-form quadratic model with symmetry about midspan made the modeling straightforward.
+  - Using the given tower height and half-span to solve for the parabola coefficient gave a simple direct computation.
+  - [ID:20e777b7-c3b4-4541-8b3e-19607bcafcd8] Verifying units and that the final answers are stated with units (meters, counts) was helpful to ensure the answers match the question’s format and units.
+- Potentially harmful/ambiguous aspects:
+  - The wording about how to count suspenders (whether to include center or endpoints) is ambiguous; assuming one interpretation without stating the assumption could lead to a different numeric answer. I made the explicit assumption (15 per side → 30 total) and noted the alternate counting (31) for clarity.",wrong,5.697497606277466,3,6,"Total available = 6 marks (per instruction: give full mark only if answer matches ground truth). The response is a two-part solution. Part (a): The model gives y = (1/3000)x^2 + 5, which matches the ground-truth expression (y = 1/3000 x^2 + 5) and demonstrates correct working — award full marks for this component (allocated 3/3). Part (b): The ground truth expects 58, but the model computes 30 (and notes an alternative of 31 depending on endpoint counting). This does not match the ground truth answer, so no marks are awarded for part (b) (0/3). Summing components gives 3 out of 6. The marking follows the provided instruction to use the given ground-truth marking limit and SPM-style whole-number allocation for open-ended parts.",16.664483785629272,,Mathematical Modeling,English,gpt-5-mini,0
+Chapter 8_Q2.png,"(a) A – quadratic model
+B – exponential model
+C – linear model
+(b) Exponential model. Temperature will not
+rise as shown in the quadratic model.
+Temperature will not drop below 0°C as
+shown in the linear model.","Step 1: Diagram Deconstruction.
+- Type of diagram: Graph of temperature versus time showing three candidate models (a linear, a quadratic, and an exponential model) together with a table of measured data.
+- Given data points extracted from the table:
+  - t = 0 s, T = 200 °C
+  - t = 40 s, T = 140 °C
+  - t = 80 s, T = 100 °C
+  - t = 120 s, T = 75 °C
+- Visual features of the three curves (labeled A, B, C in the diagram):
+  - Curve C: a straight line (constant slope), decreasing through the data — so it is the linear candidate.
+  - Curve A: curved, reaches a minimum and then rises for larger t (parabola-like opening upward) — so it is the quadratic candidate.
+  - Curve B: monotonically decreasing and leveling off toward a horizontal asymptote — so it is the exponential candidate.
+- Extracted/derived simple equations where appropriate:
+  - Linear (using points t=0 and t=120): slope m = (75 − 200)/(120 − 0) = −125/120 = −25/24 ≈ −1.0416667 °C/s. Linear model: T_lin(t) = 200 − (25/24) t.
+  - Quadratic fit through (0,200), (80,100), (120,75):
+    - Let T_q(t) = a t^2 + b t + c. From t=0: c = 200.
+    - From t=80: 6400 a + 80 b + 200 = 100 → 6400 a + 80 b = −100.
+    - From t=120: 14400 a + 120 b + 200 = 75 → 14400 a +120 b = −125.
+    - Solve these to get a = 1/192 ≈ 0.005208333, b = −5/3 ≈ −1.6666667. Thus T_q(t) = (1/192) t^2 − (5/3) t + 200.
+  - Exponential form (general): T_exp(t) = A + B e^{−k t}. Using t = 0 gives A + B = 200.
+
+Step 2: Question Interpretation.
+- (a) Identify which graph among A, B, C corresponds to the linear model, the quadratic model and the exponential model.
+- (b) Decide which of the three models best describes the sample temperature for 0 ≤ t ≤ 250 s, and explain why the other models do not fit well for that time range.
+
+Step 3: Mathematical Formulation.
+- (a) Map each labeled curve to model type by identifying straight vs curved vs asymptoting shape.
+- (b) Evaluate model behaviour across 0 ≤ t ≤ 250 by:
+  - Using the linear model T_lin(t) = 200 − (25/24) t to predict long-time behaviour (e.g., at t = 250).
+  - Using the quadratic model T_q(t) found above to determine its vertex (where it turns around) and value at t = 250.
+  - Using the exponential form T_exp(t) = A + B e^{−k t}; find A, B, k that fit the early data (use the first three points to determine A, B, k) and use that to predict T at larger t (e.g., t = 250). Compare predictions and physical reasonableness (temperature should not go negative or rise after cooling starts; expect asymptote near room temperature).
+
+Step 4: Step-by-Step Calculation.
+(a) Identification (from Step 1 observations)
+- C is linear (straight line).
+- A is quadratic (parabolic, has a minimum then rises).
+- B is exponential (monotonic decay approaching a horizontal asymptote).
+
+(b) Quantitative checks and predictions
+
+1) Linear model:
+- From t = 0 and t = 120 we computed slope m = (75 − 200)/120 = −125/120 = −25/24.
+- Linear model: T_lin(t) = 200 − (25/24) t.
+- Predict at t = 250: T_lin(250) = 200 − (25/24)·250 = 200 − (25·250)/24 = 200 − 6250/24 = 200 − 260.4166667 = −60.4166667 °C.
+- Conclusion: Linear model predicts a physically impossible negative temperature for t = 250 s (given cooling to room temperature), so it is not realistic over the full 0 ≤ t ≤ 250 s.
+
+2) Quadratic model (detailed solving):
+- Using T_q(t) = a t^2 + b t + c and data:
+  - c = 200
+  - 6400 a + 80 b = −100
+  - 14400 a +120 b = −125
+- Solve: multiply first equation by 1.5 → 9600 a +120 b = −150. Subtract the second:
+  - (9600−14400) a = −150 − (−125) → −4800 a = −25 → a = 25/4800 = 1/192 ≈ 0.005208333.
+  - Then 6400 a = 6400/192 = 33.333333, so 80 b = −100 − 33.333333 = −133.333333 → b = −133.333333/80 = −5/3 ≈ −1.6666667.
+- So T_q(t) = (1/192) t^2 − (5/3) t + 200.
+- Vertex (time of minimum): t_vertex = −b/(2a) = (5/3) / (2/192) = (5/3) / (1/96) = (5/3)·96 = 160 s.
+- Value at vertex: T_q(160) = (1/192)(160^2) − (5/3)(160) + 200 = 133.3333 − 266.6667 + 200 = 66.6666... ≈ 66.7 °C (minimum).
+- Predict at t = 250: T_q(250) = (1/192)·62500 − (5/3)·250 + 200 = 325.5208 − 416.6667 + 200 = 108.8541 °C ≈ 108.9 °C.
+- Conclusion: the quadratic model has a minimum at t ≈ 160 s and then predicts temperature increasing afterward (e.g., ≈ 108.9 °C at t = 250 s). That contradicts expected monotonic cooling to room temperature, so the quadratic is not realistic for the whole interval 0 ≤ t ≤ 250 s.
+
+3) Exponential model (determine A, B, k using three data points):
+- Form T_exp(t) = A + B e^{−k t}. From t = 0: A + B = 200 ⇒ B = 200 − A.
+- For t = 40: A + (200 − A) e^{−40k} = 140 ⇒ (200 − A) e^{−40k} = 140 − A.  (1)
+- For t = 80: A + (200 − A) e^{−80k} = 100 ⇒ (200 − A) e^{−80k} = 100 − A.  (2)
+- Dividing (2) by (1): e^{−80k}/e^{−40k} = (100 − A)/(140 − A) ⇒ e^{−40k} = (100 − A)/(140 − A).
+  But from (1) e^{−40k} = (140 − A)/(200 − A). Set equal by consistency with (2) and (1) squared relation:
+  Alternatively use relation derived by elimination:
+  ((140 − A)^2)/(200 − A) = (100 − A)  (equating (140−A)^2/(200−A) = 100−A).
+- Solve for A:
+  Expand and simplify:
+  (140 − A)^2 = (100 − A)(200 − A).
+  Left: 19600 − 280 A + A^2. Right: 20000 − 300 A + A^2.
+  Cancel A^2: 19600 − 280 A = 20000 − 300 A → 20 A = 400 → A = 20 °C.
+- Then B = 200 − A = 180 °C.
+- From (1): (200 − 20) e^{−40k} = 140 − 20 → 180 e^{−40k} = 120 → e^{−40k} = 120/180 = 2/3.
+- Thus k = −(1/40) ln(2/3) = (1/40) ln(3/2) ≈ 0.0101366 s^{−1}.
+- Exponential model (closed form): T_exp(t) = 20 + 180 e^{−k t}. Using the discrete step form: since e^{−40k} = 2/3 we can also write T_exp(t) = 20 + 180 (2/3)^{t/40}.
+- Check at t = 120 using this exponential: T_exp(120) = 20 + 180 (2/3)^{3} = 20 + 180·8/27 = 20 + 53.3333 = 73.3333 °C (close to the measured 75 °C).
+- Predict at t = 250: T_exp(250) = 20 + 180 (2/3)^{250/40} = 20 + 180 (2/3)^{6.25}.
+  Compute (2/3)^{6.25} = exp(6.25 ln(2/3)) ≈ exp(6.25·(−0.4054651)) = exp(−2.5341569) ≈ 0.07934.
+  So T_exp(250) ≈ 20 + 180·0.07934 ≈ 20 + 14.2812 ≈ 34.28 °C.
+- Conclusion: exponential model decays monotonically and approaches the asymptote A = 20 °C (room temperature). It stays positive, does not increase after initial cooling, and gives reasonable predictions at larger times.
+
+Step 5: Final Answer.
+(a) Identification:
+- A is the quadratic model.
+- B is the exponential model.
+- C is the linear model.
+
+(b) Best model for 0 ≤ t ≤ 250 s and explanation:
+- The exponential model (B) best describes the temperature over 0 ≤ t ≤ 250 s.
+  - It fits the early data with an asymptotic approach to room temperature (A = 20 °C from the fit) and remains physically realistic (monotonic cooling toward the ambient temperature).
+  - The linear model (C) continues decreasing at a constant rate and predicts T ≈ −60.42 °C at t = 250 s, which is physically unreasonable for a sample cooling to room temperature.
+  - The quadratic model (A) has a minimum at t ≈ 160 s (T ≈ 66.7 °C) and then increases for larger t; at t = 250 s it predicts T ≈ 108.9 °C — this rise after initial cooling is not physically realistic for this scenario.
+- Numerical predictions for comparison at t = 250 s:
+  - Linear: T_lin(250) ≈ −60.42 °C (unphysical).
+  - Quadratic: T_q(250) ≈ 108.85 °C (rises, unphysical for cooling).
+  - Exponential: T_exp(250) ≈ 34.28 °C (reasonable approach toward room temperature).
+
+Strategy evaluation (used available strategy ID):
+- Used strategy [ID:12c121aa-67a7-46ce-ba4a-ff357955e96a] ""Verify final answer matches question format and units"":
+  - Helpful: It ensured final numerical results are given with units (°C) and that answers directly addressed parts (a) and (b) in the requested format.
+  - Harmful: none — this verification step only improved clarity and correctness.
+
+Final check: Answers labelled for (a) and (b) with units in °C where numerical predictions were given; the exponential model B is the best description for 0 ≤ t ≤ 250 s.",correct,5.816401720046997,6,6,"Full marks (6/6). The AI response correctly identified the models in part (a): A = quadratic, B = exponential, C = linear, matching the ground truth. For part (b) it selected the exponential model and gave correct, relevant reasons that match the ground truth: the exponential model decays monotonically toward an asymptotic (room) temperature, the linear model predicts an unphysical negative temperature at t = 250 s, and the quadratic model predicts a minimum then a rise (also unphysical for cooling). The response further supports these conclusions with consistent quantitative fits and predictions (e.g., exponential asymptote A = 20°C, linear T(250) ≈ −60.4°C, quadratic turning point ≈160 s then increase), demonstrating completeness and accuracy per the provided marking instruction.",10.235069036483765,,Mathematical Modeling,English,gpt-5-mini,0
+Chapter 8_Q3.png,(a) T = ?(6.5 × 10?3) x + 30,"Step 1: Diagram Deconstruction.
+- Type of diagram: Cross-section graph showing temperature vs altitude (a linear temperature decrease with altitude annotations).
+- Key features extracted directly from the diagram and text:
+  - Temperature at altitude 0 m (sea level): 30°C (y‑intercept).
+  - Temperatures shown at other altitudes:
+    - 1 000 m → 23.5°C
+    - 2 000 m → 17°C
+    - 3 000 m → 10.5°C
+  - Given average rate of change: temperature decreases 6.5°C per 1 000 m.
+- From these, the slope (rate of change) is constant and negative: ΔT/Δx = −6.5°C per 1 000 m.
+
+Step 2: Question Interpretation.
+- Goal: Write an equation expressing the temperature T (in °C) as a function of altitude x (in meters) for the situation shown.
+
+Step 3: Mathematical Formulation.
+- Linear model: T(x) = T0 + m x, where T0 is temperature at x = 0 and m is the slope (°C per meter).
+- T0 = 30°C.
+- m = −6.5°C per 1000 m = −6.5/1000 °C per m = −0.0065 °C/m.
+- So T(x) = 30 + (−0.0065)x = 30 − 0.0065 x, with T in °C and x in m.
+
+Step 4: Step-by-Step Calculation / Check.
+- Compute slope from given rate:
+  m = −6.5°C per 1000 m = −6.5 / 1000 = −0.0065 °C/m.
+- Form equation with intercept 30°C:
+  T(x) = 30 − 0.0065 x.
+- Quick checks against annotated points:
+  - x = 1 000: T = 30 − 0.0065(1000) = 30 − 6.5 = 23.5°C (matches diagram).
+  - x = 2 000: T = 30 − 0.0065(2000) = 30 − 13 = 17°C (matches).
+  - x = 3 000: T = 30 − 0.0065(3000) = 30 − 19.5 = 10.5°C (matches).
+
+Step 5: Final Answer.
+- The temperature T (in °C) as a function of altitude x (in m) is:
+  T(x) = 30 − 0.0065 x.
+
+Strategy evaluation (which were helpful or harmful):
+- Helpful:
+  - Using the given rate ""6.5°C per 1 000 m"" to compute the slope in °C/m (useful and necessary).
+  - Verifying the equation by checking the given altitude–temperature points (helpful for correctness).
+  - [ID:3f0ca06f-cec1-438f-8d3d-82da922d32b0] Verify final answer matches question format and units — used and helpful to ensure T in °C and x in m.
+- Harmful:
+  - Attempting to fit a nonlinear model would have been harmful/unnecessary because the diagram and data indicate a constant rate (linear model is appropriate).",correct,5.502567529678345,3,3,"Full marks (3). The AI's answer T(x) = 30 − 0.0065x exactly matches the ground truth form T = 30 − (6.5 × 10^-3)x. The solution correctly converted the rate −6.5°C per 1000 m to −0.0065°C/m, used the correct y‑intercept 30°C, and verified the equation against the given data points (1000 m → 23.5°C, 2000 m → 17°C, 3000 m → 10.5°C). This meets the provided marking instruction that matching the ground truth receives full marks.",6.927870512008667,,Mathematical Modeling,English,gpt-5-mini,0
