@@ -1,0 +1,1685 @@
+image_filename,ground_truth,marking_scheme,chapter_name,language,Textbook,Allocated marks,llm_answer,tokens_used,status,model
+Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0,,"Quadratic Functions and Equations in
+One Variable",English,yes,4,"Step 1: Diagram Deconstruction.
+- Type of diagram: rectangular area problem (a rectangle with labeled length and width).
+- Key features extracted from the diagram:
+  - Length = (x + 20) m
+  - Width  = (x + 5) m
+  - Area A (in m^2) is the product of length and width.
+- No other points or numbers on the diagram.
+
+Step 2: Question Interpretation.
+- Part (a) asks: write a function for the area A (in m^2) of the land in terms of x.
+- Part (b) asks: if the area equals 250 m^2, write the resulting quadratic equation in x in the standard form ax^2 + bx + c = 0.
+
+Step 3: Mathematical Formulation.
+- Area function: A(x) = (length)(width) = (x + 20)(x + 5).
+- When A = 250, set (x + 20)(x + 5) = 250 and rearrange to get a quadratic equation equal to 0.
+
+Step 4: Step-by-Step Calculation.
+1) Form the area function:
+   A(x) = (x + 20)(x + 5).
+
+2) Expand the product:
+   (x + 20)(x + 5) = x·x + x·5 + 20·x + 20·5
+                    = x^2 + 5x + 20x + 100
+                    = x^2 + 25x + 100.
+
+3) For part (b), set the area equal to 250:
+   x^2 + 25x + 100 = 250.
+
+4) Subtract 250 from both sides to obtain standard quadratic form:
+   x^2 + 25x + 100 − 250 = 0
+   x^2 + 25x − 150 = 0.
+
+Step 5: Final Answer.
+- (a) Area function: A(x) = (x + 20)(x + 5) = x^2 + 25x + 100 (m^2).
+- (b) Quadratic equation when area = 250 m^2: x^2 + 25x − 150 = 0 (so a = 1, b = 25, c = −150).",1798,SUCCESS,gpt-5-mini
+Chapter 1_Q2.png,"(a) A(0, –5)     (b) x = 3
+(c) B(6, –5)     (d) (3, 4)",,"Quadratic Functions and Equations in
+One Variable",English,yes,6,"Step 1: Diagram Deconstruction
+- Type of diagram: Graph of a quadratic function (parabola).
+- Given function: f(x) = −x^2 + 6x − 5.
+- Visible features extracted from the diagram:
+  - A horizontal line AB is shown (parallel to the x-axis) and meets the parabola at A and B.
+  - Point A lies on the y-axis where the parabola meets that horizontal line.
+  - The dashed horizontal line through A and B appears below the x-axis.
+  - The vertex (maximum) point P is at the top of the parabola.
+- Useful algebraic features (from f(x)):
+  - y-intercept: f(0) = −5, so the parabola passes through (0, −5).
+  - x-intercepts (for completeness): solve −x^2 + 6x − 5 = 0 → x = 1 and x = 5, so (1,0) and (5,0).
+  - Axis of symmetry is vertical through the vertex (to be found).
+
+Step 2: Question Interpretation
+- Determine:
+  (a) coordinates of point A,
+  (b) equation of the axis of symmetry,
+  (c) coordinates of point B,
+  (d) coordinates of the maximum point P (the vertex).
+
+Step 3: Mathematical Formulation
+- A is where x = 0 so A = (0, f(0)).
+- B is the other intersection of the horizontal line through A with the parabola; that horizontal line has y = f(0) = −5, so solve f(x) = −5 for x (besides x = 0).
+- Axis of symmetry for a quadratic ax^2 + bx + c is x = −b/(2a). Here a = −1, b = 6.
+- Vertex P has x-coordinate h = −b/(2a) and y-coordinate k = f(h).
+
+Step 4: Step-by-Step Calculation
+1. Compute f(0):
+   f(0) = −(0)^2 + 6·0 − 5 = −5.
+   Thus A = (0, −5).
+
+2. Find B by solving f(x) = −5:
+   −x^2 + 6x − 5 = −5
+   ⇒ −x^2 + 6x = 0
+   ⇒ x(−x + 6) = 0
+   Solutions: x = 0 or x = 6.
+   x = 0 is point A, so the other intersection is x = 6.
+   Thus B = (6, −5).
+
+3. Axis of symmetry:
+   x = −b/(2a) = −6/(2·(−1)) = −6/(−2) = 3.
+   So the equation is x = 3.
+
+4. Vertex P:
+   h = 3. Compute k = f(3):
+   f(3) = −(3)^2 + 6·3 − 5 = −9 + 18 − 5 = 4.
+   Thus P = (3, 4).
+
+Step 5: Final Answer
+(a) A = (0, −5)
+(b) Axis of symmetry: x = 3
+(c) B = (6, −5)
+(d) Maximum point P = (3, 4)",2097,SUCCESS,gpt-5-mini
+Chapter 1_Q3.png,20 cm,,"Quadratic Functions and Equations in
+One Variable",English,yes,5,"Step 1: Diagram Deconstruction.
+- Type of diagram: Geometric shapes (an isosceles triangle and a square).
+- Diagram 1 (isosceles triangle):
+  - Base = 4y cm.
+  - Height = (y + 5) cm (drawn to the midpoint of the base).
+  - The two equal sides are congruent (isosceles).
+  - Half of the base (from midpoint to one base end) = 2y cm.
+- Diagram 2 (square):
+  - Side length = y cm.
+  - Perimeter = 4y, area = y^2.
+- Given relation: Area(triangle) is 39 cm^2 more than Area(square).
+
+Step 2: Question Interpretation.
+- Goal: Find the difference in perimeter between the triangle and the square (i.e. Perimeter(triangle) − Perimeter(square)).
+
+Step 3: Mathematical Formulation.
+- Area of triangle = (1/2) × base × height = (1/2) × 4y × (y + 5) = 2y(y + 5).
+- Area of square = y^2.
+- Given: Area(triangle) − Area(square) = 39, so 2y(y + 5) − y^2 = 39.
+- Perimeter(triangle) = base + 2 × equal side. Equal side length s = sqrt((half base)^2 + height^2) = sqrt((2y)^2 + (y+5)^2).
+- Perimeter(square) = 4y.
+- Desired: Perimeter(triangle) − 4y.
+
+Step 4: Step-by-Step Calculation.
+1) Solve the area equation:
+   2y(y + 5) − y^2 = 39
+   Expand: 2y^2 + 10y − y^2 = 39
+   Simplify: y^2 + 10y − 39 = 0
+   Solve quadratic: discriminant D = 10^2 − 4·1·(−39) = 100 + 156 = 256
+   sqrt(D) = 16
+   y = [−10 ± 16] / 2
+   Possible y = (6)/2 = 3 or y = (−26)/2 = −13. Discard negative length, so y = 3 cm.
+
+2) Compute dimensions:
+   Base = 4y = 12 cm.
+   Half base = 2y = 6 cm.
+   Height = y + 5 = 8 cm.
+   Equal side s = sqrt(6^2 + 8^2) = sqrt(36 + 64) = sqrt(100) = 10 cm.
+
+3) Perimeters:
+   Perimeter(triangle) = base + 2s = 12 + 2·10 = 12 + 20 = 32 cm.
+   Perimeter(square) = 4y = 4·3 = 12 cm.
+
+4) Difference:
+   Perimeter(triangle) − Perimeter(square) = 32 − 12 = 20 cm.
+
+Step 5: Final Answer.
+- The difference in perimeter between the triangle and the square is 20 cm.",1765,SUCCESS,gpt-5-mini
+Chapter 2_Q1.png,"(a) 234
+(b) 234, 336
+(c) 234, 336, 673
+(d) 234, 336, 673, 281",,Number Bases,English,yes,4,"Step 1: Diagram Deconstruction.
+- Type of diagram: A simple list of four numerals (not a graph or chart).
+- Extracted items (the four numbers shown): 234, 673, 336, 281.
+- Key feature for this problem: validity of a numeral in base b depends on each digit being an integer 0,1,...,b−1 (i.e., every digit must be strictly less than the base).
+
+Step 2: Question Interpretation.
+- Goal: For each given base (a) 5, (b) 7, (c) 8, (d) 9, identify which of the four listed numbers are valid numerals in that base.
+
+Step 3: Mathematical Formulation.
+- A number with decimal digits d_k...d_1d_0 is valid in base b iff each digit d_i satisfies 0 ≤ d_i ≤ b−1 (equivalently d_i < b).
+- For each of the four numbers, list its digits and check the inequality digit < b for the base in question.
+
+Step 4: Step-by-Step Calculation.
+Check digits of each number:
+- 234 has digits {2,3,4}; max digit = 4.
+- 673 has digits {6,7,3}; max digit = 7.
+- 336 has digits {3,3,6}; max digit = 6.
+- 281 has digits {2,8,1}; max digit = 8.
+
+Now test each base:
+
+(a) Base five (digits allowed 0..4):
+- 234: max digit 4 < 5 → valid.
+- 673: contains 6 and 7 ≥ 5 → not valid.
+- 336: contains 6 ≥ 5 → not valid.
+- 281: contains 8 ≥ 5 → not valid.
+Result for base 5: 234.
+
+(b) Base seven (digits allowed 0..6):
+- 234: max digit 4 < 7 → valid.
+- 673: contains digit 7 which is not < 7 → not valid.
+- 336: max digit 6 < 7 → valid.
+- 281: contains 8 ≥ 7 → not valid.
+Result for base 7: 234, 336.
+
+(c) Base eight (digits allowed 0..7):
+- 234: max digit 4 < 8 → valid.
+- 673: max digit 7 < 8 → valid (7 is allowed in base 8).
+- 336: max digit 6 < 8 → valid.
+- 281: contains digit 8 which is not < 8 → not valid.
+Result for base 8: 234, 673, 336.
+
+(d) Base nine (digits allowed 0..8):
+- 234: max digit 4 < 9 → valid.
+- 673: max digit 7 < 9 → valid.
+- 336: max digit 6 < 9 → valid.
+- 281: max digit 8 < 9 → valid (8 is allowed in base 9).
+Result for base 9: 234, 673, 336, 281 (all four).
+
+Step 5: Final Answer.
+(a) Base five: 234
+(b) Base seven: 234, 336
+(c) Base eight: 234, 673, 336
+(d) Base nine: 234, 673, 336, 281",2001,SUCCESS,gpt-5-mini
+Chapter 2_Q2.png,132 based 5,,Number Bases,English,yes,4,"Step 1: Diagram Deconstruction.
+- Type of diagram: word problem with a small illustrative picture (not mathematical graph).
+- Key features extracted from the diagram/text:
+  - Total number of visitors in January is 20202 (base 5), written 20202_5.
+  - Zoo is open every day in January.
+  - January has 31 days.
+  - We must give the average number of visitors per day in base five.
+
+Step 2: Question Interpretation.
+- Goal: Compute the average visitors per day = (total visitors) ÷ 31, and express that average in base five.
+
+Step 3: Mathematical Formulation.
+- Let N be the total in decimal. First convert 20202_5 to decimal:
+  N = 2·5^4 + 0·5^3 + 2·5^2 + 0·5^1 + 2·5^0.
+- Average (decimal) = N / 31.
+- Finally convert that average back to base 5.
+
+Step 4: Step-by-Step Calculation.
+1) Convert 20202_5 to decimal:
+   5^4 = 625, 5^2 = 25, 5^0 = 1.
+   N = 2·625 + 0·125 + 2·25 + 0·5 + 2·1
+     = 1250 + 0 + 50 + 0 + 2
+     = 1302 (decimal).
+
+2) Divide by 31:
+   Average = 1302 / 31.
+   Compute 31·40 = 1240, 31·2 = 62, so 31·42 = 1240 + 62 = 1302.
+   Therefore 1302 / 31 = 42 (decimal).
+
+3) Convert 42 (decimal) to base 5:
+   42 ÷ 5 = 8 remainder 2  → least significant digit 2
+   8 ÷ 5 = 1 remainder 3   → next digit 3
+   1 ÷ 5 = 0 remainder 1   → most significant digit 1
+   So 42_decimal = 132_5.
+
+Step 5: Final Answer.
+- The average number of visitors per day in January, expressed in base five, is 132_5. (This equals 42 in decimal.)",1857,SUCCESS,gpt-5-mini
+Chapter 2_Q3.png,1600 m^2,,Number Bases,English,yes,5,"Step 1: Diagram Deconstruction.
+- Type of diagram: Geometric figure (a rectangle) with a diagonal dividing it into two right triangles.
+- Key features extracted from the diagram:
+  - Rectangle with horizontal side 80 m (top side labeled 80 m).
+  - Vertical side labeled x m (right side).
+  - A diagonal from the bottom-left corner to the top-right corner divides the rectangle into two congruent right triangles.
+  - The coloured section is the top-left triangle (children’s playground).
+  - The perimeter of the rectangle is given as 3300_4 (the number 3300 in base 4).
+
+Step 2: Question Interpretation.
+- Goal: Find the area (in square metres) of the children’s playground (the coloured right triangle).
+
+Step 3: Mathematical Formulation.
+- Perimeter of rectangle = 2(length + height) = 2(80 + x).
+- The given perimeter 3300_4 must be converted to decimal.
+- Area of the coloured triangle = (1/2) * (length) * (height) = (1/2) * 80 * x.
+
+Step 4: Step-by-Step Calculation.
+1) Convert 3300_4 to decimal:
+   3300_4 = 3·4^3 + 3·4^2 + 0·4 + 0
+           = 3·64 + 3·16
+           = 192 + 48
+           = 240 (metres).
+
+2) Use the perimeter formula:
+   2(80 + x) = 240
+   80 + x = 120
+   x = 120 − 80
+   x = 40 (metres).
+
+3) Compute the area of the children’s playground (triangle):
+   Area = (1/2) * 80 * x
+        = 0.5 * 80 * 40
+        = 40 * 40
+        = 1600 (square metres).
+
+Step 5: Final Answer.
+- The area of the children’s playground is 1600 m^2.",1657,SUCCESS,gpt-5-mini
+Chapter 3_Q1.png,"a) P(8)	 = 28
+	 = 256   b) t = 11      ",,Logical Reasoning,English,yes,4,"Step 1: Diagram Deconstruction.
+- Type of diagram: a branching/tree diagram (binary splitting) showing cell reproduction.
+- Key features extracted from the diagram and text:
+  - Start with one original cell (Cell A).
+  - On the first day two new cells are produced from Cell A.
+  - Every cell produces two new cells on subsequent days (each cell splits into two).
+  - The number of new cells produced on day t is given by P(t) = 2^t, where t is the day number (t = 1, 2, 3, ...).
+
+Step 2: Question Interpretation.
+- (a) Find the number of new cells produced on the 8th day: compute P(8).
+- (b) Find the day t when the number of new cells equals 2,048: solve P(t) = 2,048 for t.
+
+Step 3: Mathematical Formulation.
+- Use P(t) = 2^t.
+- (a) Evaluate P(8) = 2^8.
+- (b) Solve 2^t = 2048, i.e. t = log2(2048).
+
+Step 4: Step-by-Step Calculation.
+- (a) 2^8 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 256.
+- (b) Recognize 2048 as a power of 2:
+  - 2^10 = 1024, so 2048 = 2 × 1024 = 2 × 2^10 = 2^11.
+  - Therefore 2^t = 2^11 implies t = 11.
+
+Step 5: Final Answer.
+- (a) 256 new cells will be produced on the 8th day.
+- (b) The number of new cells becomes 2,048 on day 11.",1651,SUCCESS,gpt-5-mini
+Chapter 3_Q2.png,"(a) 32(? + 2), 16(? + 2), 8(? + 2), 4(? + 2)
+(c) 1/4
+ (? + 2) cm",,Logical Reasoning,English,yes,6,"Step 1: Diagram Deconstruction.
+- Type of diagram: semicircles arranged in a geometric (halving) pattern along a common diameter.
+- Key features extracted from the diagram:
+  - The largest semicircle has radius 32 cm.
+  - Each subsequent semicircle has half the radius of the previous one (so radii form a geometric sequence 32, 16, 8, 4, ...).
+  - Perimeter of a semicircle (used here) is the curved arc length plus the straight diameter: P = (π r) + (2 r) = r(π + 2).
+
+Step 2: Question Interpretation.
+- (a) Calculate and list the perimeters of the first four semicircles, in terms of π.
+- (b) Show the general formula given in the question for the perimeters of the semicircles, which is stated as 2^{6-n}(π + 2) (the intended index starts at n = 1 for the largest semicircle; see note below).
+- (c) Calculate the perimeter, in cm, of the 8th semicircle.
+
+(Note on indexing: to match the diagram where the largest semicircle is the first term, it is natural to index semicircles by n = 1, 2, 3, ... . With that indexing r_n = 32*(1/2)^{n-1} = 2^{6-n}, so P_n = 2^{6-n}(π+2). If one used n starting at 0, the given formula would need adjustment. Below I use n = 1 for the largest semicircle.)
+
+Step 3: Mathematical Formulation.
+- Perimeter formula: P = r(π + 2).
+- Radii sequence: r1 = 32, r2 = 32*(1/2) = 16, r3 = 32*(1/2)^2 = 8, r4 = 32*(1/2)^3 = 4, and in general r_n = 32*(1/2)^{n-1} = 2^{6-n}.
+- Therefore general perimeter: P_n = r_n(π+2) = 2^{6-n}(π+2).
+
+Step 4: Step-by-Step Calculation.
+(a) First four semicircles:
+- For semicircle 1: r1 = 32, P1 = 32(π + 2) = 32π + 64.
+- For semicircle 2: r2 = 16, P2 = 16(π + 2) = 16π + 32.
+- For semicircle 3: r3 = 8,  P3 = 8(π + 2)  = 8π + 16.
+- For semicircle 4: r4 = 4,  P4 = 4(π + 2)  = 4π + 8.
+
+(b) Generalisation:
+- From r_n = 32*(1/2)^{n-1} = 2^{5}*2^{-(n-1)} = 2^{6-n}, we obtain
+  P_n = r_n(π + 2) = 2^{6-n}(π + 2), for n = 1, 2, 3, 4, ... .
+- This matches the given general form when n is interpreted to start at 1 (if the problem statement lists n = 0,1,2,... that is a small indexing slip).
+
+(c) Perimeter of the 8th semicircle:
+- r8 = 32*(1/2)^{7} = 32/128 = 1/4 cm.
+- P8 = r8(π + 2) = (1/4)(π + 2) = (π + 2)/4 cm.
+- Numerical approximation: P8 ≈ (3.14159265 + 2)/4 ≈ 5.14159265/4 ≈ 1.28539816 cm.
+
+Step 5: Final Answer.
+- (a) Perimeters of the first four semicircles (in terms of π):
+  1st: 32(π + 2) = 32π + 64
+  2nd: 16(π + 2) = 16π + 32
+  3rd: 8(π + 2)  = 8π + 16
+  4th: 4(π + 2)  = 4π + 8
+- (b) General formula (with indexing n = 1 for the largest semicircle): P_n = 2^{6-n}(π + 2), n = 1, 2, 3, ...
+- (c) Perimeter of the 8th semicircle: P8 = (π + 2)/4 cm ≈ 1.2854 cm.",3487,SUCCESS,gpt-5-mini
+Chapter 3_Q3.png,"(a) The pattern of the number of cylinders is 2n +1;
+n = 1, 2, 3, 4, ...
+(b) 104 720 cm3",,Logical Reasoning,English,yes,5,"Step 1: Diagram Deconstruction.
+- Type of diagram: a simple sequence (number pattern) illustrated by boxes showing numbers of equal cylinders.
+- Key features extracted from the diagram:
+  - Box 1 contains 3 cylinders.
+  - Box 2 contains 5 cylinders.
+  - Box 3 contains 7 cylinders.
+  - Box 4 contains 9 cylinders.
+- Observed pattern: the counts form the sequence 3, 5, 7, 9, ... (consecutive odd numbers increasing by 2). Let n denote the box number (n = 1, 2, 3, ...).
+
+Step 2: Question Interpretation.
+- Part (a) asks for a conclusion by induction for the pattern of the number of cylinders in box n (i.e., find and prove a formula for the number in box n).
+- Part (b) asks: given each cylinder has radius 14 cm and height 10 cm, calculate the total volume of the cylinders in box 8.
+
+Step 3: Mathematical Formulation.
+- From the pattern 3, 5, 7, 9, ... we conjecture the formula:
+  Number of cylinders in box n = 2n + 1, for n ≥ 1.
+- For part (b): number in box 8 = 2·8 + 1 = 17. Volume of one cylinder = π r^2 h. Total volume for box 8 = 17 · π · r^2 · h with r = 14 cm, h = 10 cm.
+
+Step 4: Step-by-Step Calculation.
+(a) Proof by induction of P(n): ""Box n contains 2n + 1 cylinders.""
+- Base case (n = 1): 2(1) + 1 = 3, and Box 1 indeed contains 3 cylinders. So P(1) is true.
+- Induction hypothesis: assume for some k ≥ 1 that Box k contains 2k + 1 cylinders.
+- Induction step: the diagram shows each successive box increases the count by 2. So
+  Box (k+1) contains (Box k count) + 2 = (2k + 1) + 2 = 2k + 3 = 2(k+1) + 1.
+  Thus P(k) ⇒ P(k+1). By induction, P(n) holds for all n ≥ 1. Conclusion: number in box n = 2n + 1.
+
+(b) Compute total volume for box 8.
+- Number of cylinders in box 8: n = 8 ⇒ N = 2·8 + 1 = 17.
+- Volume of one cylinder: V1 = π r^2 h = π · (14 cm)^2 · (10 cm) = π · 196 · 10 = 1960 π cm^3.
+- Total volume: Vtotal = 17 · V1 = 17 · 1960 π = 33320 π cm^3.
+- Numerical approximation: 33320 π ≈ 33320 · 3.14159265 ≈ 104,678 cm^3 (rounded to the nearest unit).
+
+Step 5: Final Answer.
+- (a) By induction, the number of cylinders in box n is 2n + 1 for all n ≥ 1.
+- (b) Box 8 contains 17 cylinders. The total volume is 33320 π cm^3, which is approximately 104,678 cm^3.",2365,SUCCESS,gpt-5-mini
+Chapter 4_Q1.png,x = 3,,Operations on Sets,English,yes,3,"Step 1: Diagram Deconstruction.
+- Type of diagram: Venn diagram for three sets J, K, L (pairwise overlaps shown, no triple-overlap indicated).
+- Key features extracted from the diagram (regions and their labels):
+  - J only (elements in J but not in K or L): 7
+  - J ∩ K (but not L): 2
+  - K only (elements in K but not in J or L): x + 2
+  - K ∩ L (but not J): 3
+  - L only (elements in L but not in J or K): x + 5
+- No value is shown for a three-way intersection J ∩ K ∩ L, so it is assumed to be 0.
+
+Step 2: Question Interpretation.
+- Goal: Given that ξ = J ∪ K ∪ L and n(ξ) = 25, find the value of x.
+
+Step 3: Mathematical Formulation.
+- The total number of elements in the union equals the sum of all disjoint regions shown:
+  n(ξ) = (J only) + (J∩K only) + (K only) + (K∩L only) + (L only).
+- Substitute the region labels:
+  25 = 7 + 2 + (x + 2) + 3 + (x + 5).
+
+Step 4: Step-by-Step Calculation.
+1. Write the equation:
+   25 = 7 + 2 + (x + 2) + 3 + (x + 5)
+2. Combine like terms (constants and x terms):
+   25 = x + x + (7 + 2 + 2 + 3 + 5)
+   25 = 2x + 19
+3. Solve for x:
+   2x + 19 = 25
+   2x = 25 − 19
+   2x = 6
+   x = 6 / 2
+   x = 3
+
+Step 5: Final Answer.
+- x = 3.
+- Quick check: region values become K only = x+2 = 5 and L only = x+5 = 8; total = 7 + 2 + 5 + 3 + 8 = 25, matching n(ξ).",1530,SUCCESS,gpt-5-mini
+Chapter 4_Q2.png,39,,Operations on Sets,English,yes,3,"Step 1 — Diagram Deconstruction
+- Type: Venn diagram (three-set Venn diagram inside universal set ξ).
+- Sets: P (left circle), Q (right circle), R (bottom circle).
+- Labeled regions (reading each region once):
+  - P only: 3
+  - P ∩ Q only (not R): 2
+  - Q only: 4k
+  - P ∩ R only (not Q): k
+  - Q ∩ R only (not P): 5
+  - P ∩ Q ∩ R (triple intersection): 1
+  - Outside all three (ξ \ (P ∪ Q ∪ R)): 2k
+- No other numbers shown (R-only region appears unlabeled, so assume 0).
+
+Step 2 — Question Interpretation
+- Goal: Determine n(ξ), the total number of elements in the universal set ξ.
+
+Step 3 — Mathematical Formulation
+- n(Q) is the total of regions inside Q:
+  n(Q) = (Q only) + (P ∩ Q only) + (Q ∩ R only) + (triple)
+       = 4k + 2 + 5 + 1 = 4k + 8.
+- (P ∪ R)' (the complement of P ∪ R) consists of elements not in P and not in R, i.e. those in Q only and those outside all circles:
+  n((P ∪ R)') = (Q only) + (outside all)
+               = 4k + 2k = 6k.
+- Given: n(Q) = n((P ∪ R)') ⇒ 4k + 8 = 6k.
+
+Step 4 — Step-by-Step Calculation
+1. Solve 4k + 8 = 6k:
+   4k + 8 = 6k
+   8 = 6k − 4k
+   8 = 2k
+   k = 4.
+2. Compute each region with k = 4:
+   - Q only = 4k = 16
+   - P ∩ R only = k = 4
+   - Outside all = 2k = 8
+3. Sum all regions to get n(ξ):
+   n(ξ) = P only + (P ∩ Q) + (Q only) + (P ∩ R) + (Q ∩ R) + (triple) + (outside)
+         = 3 + 2 + 16 + 4 + 5 + 1 + 8
+         = 39.
+
+Step 5 — Final Answer
+- n(ξ) = 39.",2700,SUCCESS,gpt-5-mini
+Chapter 4_Q3.png,"(a) y = 11
+(b) 51",,Operations on Sets,English,yes,4,"Step 1: Diagram Deconstruction
+- Type of diagram: Venn diagram (three sets A, B, C).
+- Regions and their labels (from the diagram):
+  - A only: 2
+  - B only: 4
+  - C only: 12
+  - A ∩ B (but not C): y − 2
+  - A ∩ C (but not B): 5
+  - B ∩ C (but not A): 9
+  - A ∩ B ∩ C (triple intersection): y − 1
+- Given statement: the universal set ξ = A ∪ B ∪ C, and n(B′) = n(B ∩ C).
+  (B′ denotes the complement of B within the universal set ξ.)
+
+Step 2: Question Interpretation
+- (a) Find the value of y.
+- (b) Find n(A ∪ B ∪ C) (the total number of elements in the universal set).
+
+Step 3: Mathematical Formulation
+- Total number in the universal set S = n(A ∪ B ∪ C) is the sum of all seven regions:
+  S = 2 + (y − 2) + 4 + 5 + 9 + 12 + (y − 1).
+- Number in B is sum of regions that lie in B:
+  n(B) = 4 + (y − 2) + 9 + (y − 1).
+- Number not in B: n(B′) = S − n(B).
+- Number in B ∩ C is the sum of the B∩C-only region and the triple region:
+  n(B ∩ C) = 9 + (y − 1).
+- Given equation: n(B′) = n(B ∩ C).
+
+Step 4: Step-by-Step Calculation
+1) Compute S algebraically:
+   S = 2 + (y − 2) + 4 + 5 + 9 + 12 + (y − 1)
+     = (2 − 2) + 4 + 5 + 9 + 12 − 1 + y + y
+     = 29 + 2y
+   So S = 2y + 29.
+
+2) Compute n(B):
+   n(B) = 4 + (y − 2) + 9 + (y − 1)
+        = (4 − 2 + 9 − 1) + 2y
+        = 10 + 2y
+   So n(B) = 2y + 10.
+
+3) Compute n(B′):
+   n(B′) = S − n(B) = (2y + 29) − (2y + 10) = 19.
+
+   Note: n(B′) is independent of y (cancels out).
+
+4) Compute n(B ∩ C):
+   n(B ∩ C) = 9 + (y − 1) = y + 8.
+
+5) Use given equality n(B′) = n(B ∩ C):
+   19 = y + 8
+   Solve for y:
+     y = 19 − 8 = 11.
+
+6) Now compute S with y = 11:
+   S = 2y + 29 = 2(11) + 29 = 22 + 29 = 51.
+
+   Or summing regions explicitly:
+   2 + (11 − 2) + 4 + 5 + 9 + 12 + (11 − 1)
+   = 2 + 9 + 4 + 5 + 9 + 12 + 10 = 51.
+
+Step 5: Final Answer
+- (a) y = 11.
+- (b) n(A ∪ B ∪ C) = 51.",2369,SUCCESS,gpt-5-mini
+Chapter 5_Q1.png,"(a) (i) V = {1, 2, 3, 4, 5}
+n(V) = 5
+(ii) E = {(1, 2), (1, 5), (2, 3), (2, 4), (2, 5), (3, 4),
+ (4, 5)}
+E = {e1, e2, e3, e4, e5, e6, e7}
+n(E) = 7
+(iii) 14
+(b) (i) V = {P, Q, R, S, T, U, V, W}
+n(V) = 8
+(ii) E = {(Q, P), (Q, R), (Q, W), (R, V), (S, T), (S, U),
+ (U, V), (V, W)}
+n(E) = 8
+(iii) 16
+(c) (i) V = {A, B, C, D, E, F}
+n(V) = 6
+(ii) E = {(A, B), (A, F), (B, C), (B, E), (C, D), (C, E),
+ (D, E), (E, F)}
+n(E) = 8
+(iii) 16",,Network in Graph Theory,English,yes,3,"Step 1: Diagram Deconstruction
+Type of diagram: three simple undirected graphs (a), (b), (c).
+
+(a) Key features extracted from the diagram:
+- Vertices: 1, 2, 3, 4, 5.
+- Edges (labels and endpoints):
+  - e1: 1—2
+  - e2: 1—5
+  - e3: 2—3
+  - e4: 2—4
+  - e5: 5—2
+  - e6: 4—3
+  - e7: 5—4
+
+Step 2: Question Interpretation
+Goal: For graph (a) determine (i) the vertex set V and n(V), (ii) the edge set E and n(E), (iii) the sum of degrees of all vertices.
+
+Step 3: Mathematical Formulation
+We will list V and E, count them, compute each vertex degree (number of incident edges), then compute sum of degrees. Use handshaking lemma: sum of degrees = 2 · n(E) to check consistency.
+
+Step 4: Step-by-Step Calculation
+- V = {1, 2, 3, 4, 5}, so n(V) = 5.
+- E = {e1, e2, e3, e4, e5, e6, e7}, so n(E) = 7.
+- Degrees:
+  - deg(1): incident edges e1, e2 → deg(1) = 2
+  - deg(2): e1, e3, e4, e5 → deg(2) = 4
+  - deg(3): e3, e6 → deg(3) = 2
+  - deg(4): e4, e6, e7 → deg(4) = 3
+  - deg(5): e2, e5, e7 → deg(5) = 3
+- Sum of degrees = 2 + 4 + 2 + 3 + 3 = 14.
+- Check: 2 · n(E) = 2 · 7 = 14, matches sum of degrees.
+
+Step 5: Final Answer for (a)
+(i) V = {1,2,3,4,5}, n(V) = 5.
+(ii) E = {e1(1–2), e2(1–5), e3(2–3), e4(2–4), e5(5–2), e6(4–3), e7(5–4)}, n(E) = 7.
+(iii) Sum of degrees = 14.
+
+------------------------------------------------------------
+
+Step 1: Diagram Deconstruction
+
+(b) Key features extracted from the diagram:
+- Vertices: P, Q, R, S, T, W, V, U (eight vertices).
+- Visible edges (endpoints):
+  - P—Q (slanted)
+  - Q—R (top horizontal)
+  - Q—W (vertical)
+  - R—V (vertical)
+  - W—V (bottom horizontal)
+  - V—U (bottom horizontal)
+  - S—T (vertical)
+
+Step 2: Question Interpretation
+Goal: For graph (b) determine (i) V and n(V), (ii) E and n(E), (iii) sum of degrees.
+
+Step 3: Mathematical Formulation
+List V, E; compute degree of each vertex; sum degrees; verify with 2·n(E).
+
+Step 4: Step-by-Step Calculation
+- V = {P, Q, R, S, T, W, V, U}, so n(V) = 8.
+- E = {PQ, QR, QW, RV, WV, VU, ST}, so n(E) = 7.
+- Degrees:
+  - deg(P) = 1 (edge PQ)
+  - deg(Q) = 3 (PQ, QR, QW)
+  - deg(R) = 2 (QR, RV)
+  - deg(S) = 1 (ST)
+  - deg(T) = 1 (ST)
+  - deg(W) = 2 (QW, WV)
+  - deg(V) = 3 (RV, WV, VU)
+  - deg(U) = 1 (VU)
+- Sum of degrees = 1 + 3 + 2 + 1 + 1 + 2 + 3 + 1 = 14.
+- Check: 2 · n(E) = 2 · 7 = 14, consistent.
+
+Step 5: Final Answer for (b)
+(i) V = {P,Q,R,S,T,W,V,U}, n(V) = 8.
+(ii) E = {PQ, QR, QW, RV, WV, VU, ST}, n(E) = 7.
+(iii) Sum of degrees = 14.
+
+------------------------------------------------------------
+
+Step 1: Diagram Deconstruction
+
+(c) Key features extracted from the diagram:
+- Vertices: A, B, C, D, E, F (six vertices).
+- Edges (visible):
+  - AB (top left horizontal)
+  - BC (top right horizontal)
+  - AF (left vertical)
+  - FE (bottom left horizontal)
+  - ED (bottom right horizontal)
+  - BE (diagonal B—E)
+  - CE (diagonal C—E)
+  - CD (slanted C—D)
+
+Step 2: Question Interpretation
+Goal: For graph (c) determine (i) V and n(V), (ii) E and n(E), (iii) sum of degrees.
+
+Step 3: Mathematical Formulation
+List V, E; compute each deg(vertex); sum degrees; check with 2·n(E).
+
+Step 4: Step-by-Step Calculation
+- V = {A, B, C, D, E, F}, so n(V) = 6.
+- E = {AB, BC, AF, FE, ED, BE, CE, CD}, so n(E) = 8.
+- Degrees:
+  - deg(A) = 2 (AB, AF)
+  - deg(B) = 3 (AB, BC, BE)
+  - deg(C) = 3 (BC, CE, CD)
+  - deg(D) = 2 (CD, DE)
+  - deg(E) = 4 (FE, DE, BE, CE)
+  - deg(F) = 2 (AF, FE)
+- Sum of degrees = 2 + 3 + 3 + 2 + 4 + 2 = 16.
+- Check: 2 · n(E) = 2 · 8 = 16, consistent.
+
+Step 5: Final Answer for (c)
+(i) V = {A,B,C,D,E,F}, n(V) = 6.
+(ii) E = {AB, BC, AF, FE, ED, BE, CE, CD}, n(E) = 8.
+(iii) Sum of degrees = 16.",4542,SUCCESS,gpt-5-mini
+Chapter 5_Q2.png,"(a) (i) P > Q > R > S (ii) P > S
+(b) Route P > Q > S because I can save RM35 and
+the difference in time is only 9 minutes compared
+to route P > S",,Network in Graph Theory,English,yes,4,"Step 1: Diagram Deconstruction
+- Type of diagram: Directed weighted graph (vertices and directed edges weighted by cost and travel time).
+- Vertices: P (start), Q (transit), R (transit), S (destination).
+- Edges with weights (cost in RM, time in hours):
+  - P -> R : RM130, 1.5 hours
+  - P -> Q : RM50, 1.0 hour
+  - P -> S : RM200, 0.8 hour
+  - Q -> S : RM115, 1.4 hours
+  - Q -> R : RM45, 3.0 hours
+  - R -> S : RM65, 1.1 hours
+- Transit time at each transit airport (Q or R) = 45 minutes = 0.75 hours. (Add 0.75 h for each intermediate transit airport visited.)
+
+Step 2: Question Interpretation
+- (a)(i) Find the most economical route from P to S (minimize total cost).
+- (a)(ii) Find the route from P to S that takes the shortest total time (including flight times and transit times).
+
+Step 3: Mathematical Formulation
+- Consider all directed routes from P to S allowed by the graph:
+  1) P -> S
+  2) P -> Q -> S
+  3) P -> R -> S
+  4) P -> Q -> R -> S
+- For each route compute:
+  - Total cost = sum of edge costs.
+  - Total time = sum of edge flight times + 0.75 h for each transit airport encountered (Q and/or R as intermediate nodes).
+
+Step 4: Step-by-Step Calculation
+1) Route P -> S
+   - Cost = RM200
+   - Time = 0.8 h
+2) Route P -> Q -> S
+   - Cost = P->Q + Q->S = 50 + 115 = RM165
+   - Time = P->Q (1.0) + transit at Q (0.75) + Q->S (1.4)
+          = 1.0 + 0.75 + 1.4 = 3.15 hours
+3) Route P -> R -> S
+   - Cost = P->R + R->S = 130 + 65 = RM195
+   - Time = P->R (1.5) + transit at R (0.75) + R->S (1.1)
+          = 1.5 + 0.75 + 1.1 = 3.35 hours
+4) Route P -> Q -> R -> S
+   - Cost = P->Q + Q->R + R->S = 50 + 45 + 65 = RM160
+   - Time = P->Q (1.0) + transit at Q (0.75) + Q->R (3.0) + transit at R (0.75) + R->S (1.1)
+          = 1.0 + 0.75 + 3.0 + 0.75 + 1.1 = 6.6 hours
+
+Summary table (cost, time):
+- P->S: RM200, 0.8 h
+- P->Q->S: RM165, 3.15 h
+- P->R->S: RM195, 3.35 h
+- P->Q->R->S: RM160, 6.6 h
+
+Step 5: Final Answer
+(a)(i) The most economical route is P -> Q -> R -> S, costing RM160.
+(a)(ii) The route that takes the shortest time is the direct flight P -> S, taking 0.8 hours.",3085,SUCCESS,gpt-5-mini
+Chapter 5_Q3.png,"Route A > C > D > E because it is a safer route even
+though Lani had to cycle 300 m more",,Network in Graph Theory,English,yes,3,"Step 1: Diagram Deconstruction
+- Type of diagram: Directed graph (road network).
+- Nodes: A (Lani’s house), B, C, D, E (school).
+- Directed edges and their labelled lengths:
+  - AB: 400 m (arrow from A down to B).
+  - AC: 350 m (arrow from A up to C).
+  - CD: 800 m (arrow from C left to D).
+  - DE: 650 m (arrow from D down to E).
+  - BE: 1.1 km = 1100 m (arrow from B left to E).
+- Additional information: BE is a municipal road; AB, AC, CD, DE are roads in the housing estates.
+
+Step 2: Question Interpretation
+- Goal: Suggest the best route for Lani to cycle from A to E and justify the choice. Implicitly this means choose the shortest and/or safest route consistent with the road types given.
+
+Step 3: Mathematical Formulation
+- Consider all directed paths from A to E following the arrows.
+- Possible directed routes from A to E:
+  1) A → B → E
+  2) A → C → D → E
+- Compute total lengths of each route and compare. Prefer the route with smaller total distance and, given road-type info, prefer a route that uses the municipal road BE (safer/smoother for cycling).
+
+Step 4: Step-by-Step Calculation
+- Convert 1.1 km to metres: 1.1 km = 1100 m.
+- Route 1 (A → B → E):
+  - Length = AB + BE = 400 m + 1100 m
+  - Length = 1500 m
+  - In kilometres: 1500 m = 1.5 km
+- Route 2 (A → C → D → E):
+  - Length = AC + CD + DE = 350 m + 800 m + 650 m
+  - Length = 1800 m
+  - In kilometres: 1800 m = 1.8 km
+- Comparison:
+  - Route 1 = 1500 m; Route 2 = 1800 m.
+  - Route 1 is 300 m shorter than Route 2.
+- Road-type consideration:
+  - Route 1 uses BE (municipal road) and AB (housing estate).
+  - Route 2 uses AC, CD, DE (all housing-estate roads).
+  - Municipal road BE is likely smoother/safer for cycling than housing-estate roads, so route 1 is preferable on non-distance grounds as well.
+
+Step 5: Final Answer
+- Best route: A → B → E.
+- Justification: A → B → E has total length 1500 m (1.5 km), which is shorter than the alternative A → C → D → E (1800 m). Additionally, A → B → E uses the municipal road BE (safer/smoother for cycling), so it is both the shortest and the preferable route.",2100,SUCCESS,gpt-5-mini
+Chapter 6_Q1.png,"(a) y < –1, x >= –5, y >= 4
+5 x – 1
+(b) x >= 2, y >= 0, y < –x + 6",,Linear Inequalities in Two Variables,English,yes,3,"Step 1: Diagram Deconstruction
+- Type of diagram: Linear-inequality graphs (shaded polygonal regions) to be reflected in the y-axis.
+- (a) Key features extracted from the diagram:
+  - Vertices (as read from the grid): (0, −1), (5, −1), (5, −5).
+  - Boundaries:
+    - vertical line x = 5 (right boundary);
+    - horizontal line y = −1 (top boundary);
+    - slanted line through (0, −1) and (5, −5). Equation: slope = (−5 − (−1))/5 = −4/5, so y = −1 − (4/5)x.
+  - Shaded region: for 0 ≤ x ≤ 5, between the slanted line (lower) and y = −1 (upper). So original inequalities:
+    - 0 ≤ x ≤ 5,
+    - −1 − (4/5)x ≤ y ≤ −1.
+- (b) Key features:
+  - Vertices: (−6, 0), (−2, 0), (−2, 4).
+  - Boundaries:
+    - left endpoint on x-axis x = −6 (base left),
+    - vertical line x = −2 (right boundary),
+    - x-axis y = 0 (bottom),
+    - slanted line through (−6, 0) and (−2, 4): slope = 1, equation y = x + 6 (top/hypotenuse).
+  - Shaded region: −6 ≤ x ≤ −2, and 0 ≤ y ≤ x + 6. Original inequalities:
+    - −6 ≤ x ≤ −2,
+    - 0 ≤ y ≤ x + 6.
+
+Step 2: Question Interpretation
+- Goal: Find the linear inequalities that describe the image (the reflected region) after reflecting each shaded region in the y-axis.
+
+Step 3: Mathematical Formulation
+- Reflection in the y-axis sends (x, y) to (−x, y). To get inequalities of the reflected region, replace x by −x in the original inequalities and then simplify.
+
+Step 4: Step-by-step Calculation
+(a)
+- Original inequalities: 0 ≤ x ≤ 5, and −1 − (4/5)x ≤ y ≤ −1.
+- Replace x by −x:
+  - 0 ≤ −x ≤ 5  => multiply all parts by −1 (reverse inequalities): 0 ≥ x ≥ −5, i.e. −5 ≤ x ≤ 0.
+  - For the slanted lower bound: −1 − (4/5)(−x) ≤ y  => −1 + (4/5)x ≤ y.
+  - Upper bound stays y ≤ −1.
+- So reflected inequalities for (a):
+  - −5 ≤ x ≤ 0,
+  - −1 + (4/5)x ≤ y ≤ −1.
+
+(b)
+- Original inequalities: −6 ≤ x ≤ −2, and 0 ≤ y ≤ x + 6.
+- Replace x by −x:
+  - −6 ≤ −x ≤ −2  => multiply by −1 (reverse): 6 ≥ x ≥ 2, i.e. 2 ≤ x ≤ 6.
+  - Upper bound: y ≤ (−x) + 6 = 6 − x.
+  - Lower bound: y ≥ 0.
+- So reflected inequalities for (b):
+  - 2 ≤ x ≤ 6,
+  - 0 ≤ y ≤ 6 − x.
+
+Step 5: Final Answer
+- (a) Reflected region inequalities:
+  - −5 ≤ x ≤ 0,
+  - −1 + (4/5)x ≤ y ≤ −1.
+- (b) Reflected region inequalities:
+  - 2 ≤ x ≤ 6,
+  - 0 ≤ y ≤ 6 − x.",4645,SUCCESS,gpt-5-mini
+Chapter 6_Q2.png,"(a) x + y <= 500 (b) x <= 3y or 3y >= x
+(c) y >= 200",,Linear Inequalities in Two Variables,English,yes,4,"Step 1: Diagram Deconstruction
+
+(a)
+- Type: Graph (region in the plane bounded by a vertical line, the x-axis and an oblique line).
+- Key visible features:
+  - A point on the oblique (magenta) line is labeled (-4, 2).
+  - The oblique line meets the x-axis at (4,0) (visible as the right x-intercept of that line).
+  - There is a vertical dashed line x = -4 (left boundary).
+  - The x-axis y = 0 is the lower boundary.
+  - The shaded region is the triangle to the right of x = -4, above the x-axis, and below the oblique line.
+
+(b)
+- Type: Graph (triangle bounded by two oblique lines and the x-axis).
+- Key features:
+  - Triangle vertices visible at (-2,0), (0,4), (3,0).
+  - Left oblique line passes through (-2,0) and (0,4).
+  - Right oblique line passes through (0,4) and (3,0).
+  - The x-axis y = 0 is the base; the shaded region is the triangle above the x-axis and below the two oblique lines.
+
+(c)
+- Type: Graph (region bounded by the y-axis and two oblique lines).
+- Key visible features (from the picture’s labeled intercepts):
+  - Two oblique (magenta) lines with y-intercepts at y = -1 (upper) and y = -2 (lower).
+  - The upper line passes through (0,-1) and the x-axis at x = 1 (so (1,0) is on the upper line).
+  - The lower line passes through (0,-2) and the x-axis at x = 3 (so (3,0) is on the lower line).
+  - The shaded region is to the right of the y-axis (x ≥ 0) and between the two oblique lines.
+
+Step 2: Question Interpretation
+
+For each diagram (a), (b), (c) write a system of inequalities whose solution set is exactly the shaded region.
+
+Step 3: Mathematical Formulation
+
+(a) Find equation of the oblique line through (-4,2) and (4,0).
+- Slope m = (0 − 2)/(4 − (−4)) = −2/8 = −1/4.
+- Line: y = (−1/4)x + b. Use (4,0): 0 = (−1/4)·4 + b ⇒ 0 = −1 + b ⇒ b = 1.
+- Line equation: y = −(1/4)x + 1.
+Boundaries:
+- vertical boundary: x = −4, interior is to the right ⇒ x ≥ −4
+- x-axis: y = 0, interior is above ⇒ y ≥ 0
+- oblique line: interior is below that line ⇒ y ≤ −(1/4)x + 1
+
+(b) Left oblique line through (−2,0) and (0,4):
+- Slope m_left = (4 − 0)/(0 − (−2)) = 4/2 = 2.
+- Equation: y = 2x + 4 (check: at x = −2 gives y = 0; at x = 0 gives y = 4).
+Right oblique line through (0,4) and (3,0):
+- Slope m_right = (0 − 4)/(3 − 0) = −4/3.
+- Equation: y = −(4/3)x + 4.
+Boundaries:
+- x-axis: y = 0, interior is above ⇒ y ≥ 0
+- interior is below both oblique sides ⇒ y ≤ 2x + 4 and y ≤ −(4/3)x + 4
+(Optionally restrict domain −2 ≤ x ≤ 3, but the three inequalities above already confine the region.)
+
+(c) Using the labeled intercepts:
+- Upper line passes through (0, −1) and (1, 0). Slope = (0 − (−1))/(1 − 0) = 1. Equation: y = x − 1.
+- Lower line passes through (0, −2) and (3, 0). Slope = (0 − (−2))/(3 − 0) = 2/3. Equation: y = (2/3)x − 2.
+Boundaries:
+- left boundary: the y-axis x = 0, interior is to the right ⇒ x ≥ 0
+- interior is between the two lines, i.e. greater than or equal to the lower line and less than or equal to the upper line:
+  (2/3)x − 2 ≤ y ≤ x − 1
+(Optionally restrict 0 ≤ x ≤ 3; with the two line inequalities and x ≥ 0 the shaded strip is correctly described.)
+
+Step 4: Step-by-Step Calculation
+
+(a)
+1. Compute slope from points (−4,2) and (4,0):
+   m = (0 − 2)/(4 − (−4)) = −2/8 = −1/4.
+2. Line through (4,0): 0 = (−1/4)·4 + b ⇒ b = 1.
+3. Line equation: y = −(1/4)x + 1.
+4. Region is: to the right of x = −4, above y = 0, and below the line.
+   So inequalities: x ≥ −4, y ≥ 0, y ≤ −(1/4)x + 1.
+
+(b)
+1. Left line slope between (−2,0) and (0,4): m = (4 − 0)/(0 + 2) = 2 ⇒ y = 2x + 4.
+2. Right line slope between (0,4) and (3,0): m = (0 − 4)/3 = −4/3 ⇒ y = −(4/3)x + 4.
+3. Region is above the x-axis and below both lines.
+   So inequalities: y ≥ 0, y ≤ 2x + 4, y ≤ −(4/3)x + 4. (Optionally −2 ≤ x ≤ 3.)
+
+(c)
+1. Upper line through (0,−1) and (1,0): slope = 1 ⇒ y = x − 1.
+2. Lower line through (0,−2) and (3,0): slope = 2/3 ⇒ y = (2/3)x − 2.
+3. Region is to the right of the y-axis and between the two lines.
+   So inequalities: x ≥ 0 and (2/3)x − 2 ≤ y ≤ x − 1. (Optionally 0 ≤ x ≤ 3.)
+
+Step 5: Final Answer
+
+(a) x ≥ −4, y ≥ 0, y ≤ −(1/4)x + 1.
+
+(b) y ≥ 0, y ≤ 2x + 4, y ≤ −(4/3)x + 4. (Optionally −2 ≤ x ≤ 3.)
+
+(c) x ≥ 0, (2/3)x − 2 ≤ y ≤ x − 1. (Optionally 0 ≤ x ≤ 3.)",9528,SUCCESS,gpt-5-mini
+Chapter 6_Q3.png,"(a) y <= 2, x < 3, y >= – x, y >= 0
+(b) y > –2x, y >= 2x – 8, y <= – 1/2x",,Linear Inequalities in Two Variables,English,yes,4,"Step 1: Diagram Deconstruction
+
+Type of diagram:
+- Both (a) and (b) are linear-inequality (graphical) regions on an x–y grid.
+
+What I can read directly from the images:
+
+(a)
+- There is a diagonal magenta line passing through the point labeled (3, 3). It looks like the line y = x (slope 1 through the origin), but from the low resolution of the image I cannot be 100% certain of its y-intercept.
+- A vertical dashed line is drawn at x = 3.
+- A point is labeled (3, −2) on that vertical dashed line.
+- The shaded region is a roughly rectangular/trapezoidal region that lies to the right of a slanted boundary near the origin (the magenta line), and has a lower y-value marked −2 (the point (3, −2) is on the lower boundary). The left part of the shaded region touches or includes the origin O and extends leftwards to about x = −2 (there is a “−2” shown near the left bottom).
+- Because the image is small/low resolution, the exact coordinates of the left and top boundaries (and whether the slanted boundary is exactly y = x or a parallel line) are ambiguous from this scan.
+
+(b)
+- The shaded region is a triangle with vertices at the labeled points O (the origin, (0,0)), (2, 4), and (4, 2).
+- The three boundary lines are:
+  1) The line through (0,0) and (2,4): slope 4/2 = 2, equation y = 2x.
+  2) The line through (0,0) and (4,2): slope 2/4 = 1/2, equation y = (1/2) x.
+  3) The line through (2,4) and (4,2): slope (2 − 4)/(4 − 2) = −1, equation y = −x + 6 (check: at x = 4, y = −4 + 6 = 2, at x = 2, y = −2 + 6 = 4).
+- The triangle is the region bounded by these three lines (the interior is between the two rays from the origin, and bounded above by y = −x + 6).
+
+Step 2: Question Interpretation
+
+- The explicit goal: For each part (a) and (b), write the linear inequalities that describe the image (the reflected shaded region) after reflecting the original shaded region across the x-axis.
+- That means: given the original region R (described by inequalities in x and y), find inequalities describing R' = { (x, y) : (x, −y) ∈ R } (the set you get by reflecting every point (x,y) of R across the x-axis).
+
+Step 3: Mathematical Formulation
+
+General rule for reflection in the x-axis:
+- If the original region R is described by inequalities involving y, then for the reflected region R' substitute y -> −y in the original inequalities. Equivalently, a point (x, y) is in the reflected region iff (x, −y) satisfies the original inequalities.
+
+(b) formulation (clear from the picture):
+- Original triangle R is given by the intersection of:
+  1) y ≤ 2x? (we must determine which side; test a point interior such as (2,2): for y = 2x at x = 2 gives 4; interior y = 2 is less than 4, so interior satisfies y ≤ 2x),
+  2) y ≥ (1/2) x (test (2,2): 2 ≥ 1 yields true),
+  3) y ≤ −x + 6 (test (2,2): 2 ≤ 4 true).
+- So original R: y ≤ 2x, y ≥ (1/2) x, y ≤ −x + 6.
+- For reflected region R' we replace y by −y in each inequality, then simplify signs to get inequalities in y:
+  1) (−y) ≤ 2x  →  y ≥ −2x
+  2) (−y) ≥ (1/2) x →  y ≤ −(1/2) x
+  3) (−y) ≤ −x + 6 →  y ≥ x − 6
+
+(a) formulation (ambiguous from the image):
+- I can describe the procedure to follow, and I can list the likely candidate lines if the slanted line is indeed y = x:
+  - If the magenta slanted line is y = x, and the region is bounded between that line and the horizontal line y = −2, and between some vertical lines x = a and x = 3 (where a looks like −2 in the picture), then the original region would be described by a system like:
+    y ≥ ? or ≤ ? (depending on whether the shaded region is above or below the slanted line),
+    y ≥ −2 or y ≤ −2,
+    a ≤ x ≤ 3.
+  - To reflect across the x-axis you would replace y with −y in those inequalities (so y ≤ 2 if original had y ≥ −2, etc.).
+- Because the left/top boundary coordinates and whether the slanted boundary is exactly y = x are not completely unambiguous from the provided low-resolution image, I do not want to give a possibly incorrect list of inequalities for (a).
+
+Step 4: Step-by-Step Calculation
+
+(b) Full step-by-step as requested:
+1) Identify the three boundary lines of the original triangle with exact equations:
+   - Line A (through (0,0) and (2,4)): slope = 2, equation y = 2x.
+   - Line B (through (0,0) and (4,2)): slope = 1/2, equation y = (1/2)x.
+   - Line C (through (2,4) and (4,2)): slope = −1, equation y = −x + 6.
+2) Determine which side of each line contains the interior. Test a known interior point, for instance (2,2):
+   - For y = 2x: at x = 2, y_line = 4. The interior point has y = 2, which is less than 4, so interior satisfies y ≤ 2x.
+   - For y = (1/2)x: at x = 2, y_line = 1. The interior point has y = 2 ≥ 1, so interior satisfies y ≥ (1/2)x.
+   - For y = −x + 6: at x = 2, y_line = 4. The interior point y = 2 ≤ 4, so interior satisfies y ≤ −x + 6.
+3) So original triangle R inequalities:
+   y ≤ 2x,
+   y ≥ (1/2)x,
+   y ≤ −x + 6.
+4) Reflect across the x-axis: for every inequality, substitute y by −y (since reflected point (x,y) corresponds to original (x,−y)).
+   - Substitute in y ≤ 2x: (−y) ≤ 2x → multiply by −1 (flip inequality): y ≥ −2x.
+   - Substitute in y ≥ (1/2)x: (−y) ≥ (1/2)x → multiply by −1: y ≤ −(1/2)x.
+   - Substitute in y ≤ −x + 6: (−y) ≤ −x + 6 → multiply by −1: y ≥ x − 6.
+5) So the reflected triangle R' is the intersection of:
+   y ≥ −2x,
+   y ≤ −(1/2)x,
+   y ≥ x − 6.
+
+(a) Because the exact coordinates/lines for the shaded region in (a) are ambiguous in the supplied image, I will not assert an incorrect system. To complete part (a) I need one clarifying piece of information:
+- Please confirm the exact bounding lines/coordinates for the original shaded region in (a). In particular:
+  1) Is the slanted magenta line exactly y = x (i.e., slope 1 passing through the origin), or is it a different line? The point (3,3) is marked on it, which suggests y = x, but please confirm.
+  2) What are the x-coordinates of the left and right vertical boundaries of the shaded region? From the picture I see a dashed vertical at x = 3 on the right and a mark near −2 on the left; are the horizontal limits x = −2 and x = 3?
+  3) What is the top and bottom y-values of the shaded region? I see the lower labeled y-value −2 on the lower boundary (point (3, −2) is marked). Is the top of the shaded region at y = 0 (the x-axis) or at some positive value?
+- If you can confirm those coordinates (or upload a higher-resolution crop of part (a)), I will produce the explicit inequalities for (a) with the same 5-step structure.
+
+Step 5: Final Answers
+
+(b) Final inequalities for the reflected image (after reflection in the x-axis):
+- y ≥ −2x
+- y ≤ −(1/2) x
+- y ≥ x − 6
+
+(a) Pending clarification (image is ambiguous). Please confirm whether the slanted line is y = x and the rectangle/trapezoid limits (left x-value, top y-value), and I will give the explicit reflected inequalities for (a) immediately.",4457,SUCCESS,gpt-5-mini
+Chapter 7_Q1.png,"(a) 3/8 ms^–2  (b) 1 200 m
+(c) Encik Merisat drives for a distance of 1.725 km in
+2.5 minutes with an average speed of 41.4 km h–1.",,Graphs of Motion,English,yes,5,"Step 1: Diagram Deconstruction
+- Type of diagram: Speed–time graph.
+- Axes: vertical axis speed (m s–1), horizontal axis time (s).
+- Key labeled points and values from the graph:
+  - At t = 0 s, v = 0 m s–1 (origin).
+  - At t = 40 s, v = 15 m s–1.
+  - From t = 40 s to t = 120 s, speed is constant at v = 15 m s–1.
+  - At t = 120 s, v = 15 m s–1.
+  - At t = 150 s, v = 0 m s–1.
+- Line segments:
+  - Rising straight line from (0,0) to (40,15).
+  - Horizontal line from (40,15) to (120,15).
+  - Falling straight line from (120,15) to (150,0).
+
+Step 2: Question Interpretation
+- (a) Find the rate of change of speed (acceleration) in m s–2 of the car for the first 20 seconds.
+- (b) Calculate the distance, in metres, travelled at the uniform speed (the constant-speed portion).
+- (c) Describe Encik Merisat’s journey over the period of 2.5 minutes (2.5 min = 150 s).
+
+Step 3: Mathematical Formulation
+- (a) Acceleration a = Δv / Δt for the initial (0 to 20 s) period. Because the initial rise is linear, the acceleration is constant and equals (15 − 0)/(40 − 0).
+- (b) Distance during the uniform-speed interval (40 s to 120 s) is d = v × Δt with v = 15 m s–1 and Δt = 120 − 40 = 80 s.
+- (c) Describe motion piecewise for 0–150 s; compute deceleration during 120–150 s as a = (0 − 15)/(150 − 120).
+
+Step 4: Step-by-Step Calculation
+(a) Acceleration for the first 20 s:
+- Since the speed increases linearly from 0 to 15 m s–1 in 40 s, acceleration a = (15 − 0) / 40 = 15 / 40 = 0.375 m s–2.
+- Check using the first 20 s: speed at 20 s = (20/40)×15 = 7.5 m s–1, so a = (7.5 − 0)/20 = 7.5/20 = 0.375 m s–2. (Same value.)
+
+(b) Distance travelled at uniform speed:
+- Duration of uniform speed = 120 − 40 = 80 s.
+- Distance d = v × t = 15 m s–1 × 80 s = 1200 m.
+
+(c) Description for 2.5 minutes (150 s) and deceleration:
+- 0–40 s: car accelerates uniformly from rest to 15 m s–1 at a = 0.375 m s–2.
+- 40–120 s: car travels at constant speed 15 m s–1 for 80 s.
+- 120–150 s: car decelerates uniformly from 15 m s–1 to rest in 30 s. Deceleration = (0 − 15) / 30 = −0.5 m s–2 (magnitude 0.5 m s–2).
+- (Optional total distance over 0–150 s by area under the graph: triangle (0–40): 0.5×40×15 = 300 m; rectangle (40–120): 80×15 = 1200 m; triangle (120–150): 0.5×30×15 = 225 m. Total = 300 + 1200 + 225 = 1725 m.)
+
+Step 5: Final Answer
+(a) Acceleration for the first 20 seconds: 0.375 m s–2.
+(b) Distance travelled at the uniform speed (40–120 s): 1200 m.
+(c) Over 2.5 minutes (150 s): accelerate uniformly from rest to 15 m s–1 in 0–40 s (a = 0.375 m s–2), travel at constant 15 m s–1 from 40–120 s, then decelerate uniformly to rest in 120–150 s (deceleration = 0.5 m s–2). Optional: total distance for the whole 150 s = 1725 m.",2950,SUCCESS,gpt-5-mini
+Chapter 7_Q2.png,(a) 100               (b) 1.6               (c) 57.14,,Graphs of Motion,English,yes,5,"Step 1: Diagram Deconstruction.
+- Type of diagram: Distance–time graph.
+- Key features extracted from the diagram:
+  - Time axis: horizontal, in hours from 0 to 3.
+  - Distance axis: vertical, in km from 0 to 150.
+  - Tour bus (magenta) is a straight line from A(0,150) to B(3,0). Its distance function is D_bus(t) = 150 − 50 t (km).
+  - Car (green) is piecewise linear:
+    - First segment from O(0,0) to P(0.7,70). So at t = 0.7 h the car has travelled 70 km.
+    - Second segment from P(0.7,70) to R(3,150). So the car covers the remaining 80 km between t = 0.7 and t = 3.
+  - Labeled points:
+    - P: (0.7, 70) on the car's first segment.
+    - Q: the intersection of car and bus (same distance at time t), with time coordinate t (unknown).
+    - Total distance travelled by each in 3 hours is 150 km (car ends at R(3,150), bus ends at B(3,0)).
+
+Step 2: Question Interpretation.
+- We must compute:
+  (a) the car’s rate of change of distance (speed) during the first 24 minutes;
+  (b) the value of t (the time when car and bus are at the same distance);
+  (c) the car’s rate of change of distance for the last 80 km of its journey.
+
+Step 3: Mathematical Formulation.
+- Convert 24 minutes to hours: 24 min = 24/60 = 0.4 h.
+- (a) For the first segment (0 ≤ t ≤ 0.7), speed = (distance change)/(time change) = 70 km / 0.7 h.
+- (b) For t > 0.7 the car’s distance is D_car(t) = 70 + s2*(t − 0.7), where s2 is the speed on the second segment. The bus distance is D_bus(t) = 150 − 50 t. At the meeting time t, D_car(t) = D_bus(t). Also s2 = (150 − 70) / (3 − 0.7) = 80 / 2.3 = 800/23 km/h.
+- (c) The rate for the last 80 km is s2 = 80 / (3 − 0.7) = 800/23 km/h.
+
+Step 4: Step-by-Step Calculation.
+(a) Speed during first 24 minutes (first segment):
+- speed1 = 70 km / 0.7 h = 100 km/h.
+- Since 0.4 h < 0.7 h, the car’s speed during the first 24 minutes is 100 km/h.
+
+(b) Find t where car and bus meet (t > 0.7):
+- Compute s2 exactly: s2 = 80 / (3 − 0.7) = 80 / 2.3 = 800/23 km/h.
+- Car distance for t > 0.7: D_car(t) = 70 + (800/23)(t − 0.7).
+- Bus distance: D_bus(t) = 150 − 50 t.
+- Equate: 70 + (800/23)(t − 0.7) = 150 − 50 t.
+- Expand left: 70 + (800/23) t − (800/23)*0.7 = 150 − 50 t.
+  Compute (800/23)*0.7 = 560/23.
+  Write 70 = 1610/23, so left constant = 1610/23 − 560/23 = 1050/23.
+- Equation: (800/23) t + 1050/23 = 150 − 50 t.
+- Multiply both sides by 23: 800 t + 1050 = 3450 − 1150 t.
+- Bring t-terms together: 800 t + 1150 t = 3450 − 1050 → 1950 t = 2400.
+- Solve: t = 2400 / 1950 = 48 / 39 = 16 / 13 hours.
+- Decimal: t = 16/13 ≈ 1.230769... h.
+
+(c) Rate for the last 80 km (second segment):
+- s2 = 80 / (3 − 0.7) = 80 / 2.3 = 800/23 km/h ≈ 34.7826 km/h.
+
+Step 5: Final Answer.
+(a) 100 km h^−1.
+(b) t = 16/13 hours ≈ 1.2308 hours.
+(c) 800/23 km h^−1 ≈ 34.78 km h^−1.",4383,SUCCESS,gpt-5-mini
+Chapter 7_Q3.png,(a) 8 seconds (b) 17,,Graphs of Motion,English,yes,5,"Step 1 — Diagram Deconstruction
+- Type of diagram: Speed–time graph for two vehicles (a car and a motorcycle).
+- Axes: vertical axis speed (m s^-1), horizontal axis time (s).
+- Key labelled points and coordinates (from the diagram):
+  - O = (0, 0).
+  - P = (2 s, 4 m s^-1).
+  - Q = (10 s, 4 m s^-1).
+  - R = (t s, 10 m s^-1) where t is an unknown time > 10 s.
+- The two speed–time curves:
+  - Motorcycle (the horizontal/piecewise curve in the diagram): 
+    - From 0 to 2 s: speed increases linearly from 0 to 4 m s^-1.
+    - From 2 to 10 s: speed is constant at 4 m s^-1.
+    - From 10 to t s: speed increases linearly from 4 to 10 m s^-1.
+  - Car (the straight line from O to R): speed increases uniformly from 0 at t=0 to 10 m s^-1 at time t (a straight line).
+- Equations/expressions implied:
+  - Car speed at time x: v_car(x) = (10/t) x  (linear from 0 to 10 over time t).
+  - Motorcycle piecewise:
+    - 0 ≤ x ≤ 2: v_m(x) = 2x  (since rises from 0 to 4 in 2 s).
+    - 2 ≤ x ≤ 10: v_m(x) = 4.
+    - 10 ≤ x ≤ t: v_m(x) increases linearly from 4 to 10.
+
+Step 2 — Question Interpretation
+(a) Find how long the motorcycle travels at a uniform (constant) speed.  
+(b) Find the value of t (total time) such that the distances travelled by the car and the motorcycle over the period 0 to t seconds are equal.
+
+Step 3 — Mathematical Formulation
+- Distance travelled = area under the speed–time graph.
+- Car distance from 0 to t: area under straight line from 0 to 10 over time t = area of triangle = (1/2) * base * height = (1/2)*t*10 = 5t.
+- Motorcycle distance from 0 to t = sum of areas of three parts:
+  1) 0 → 2 s: triangle area = (1/2)*2*4 = 4.
+  2) 2 →10 s: rectangle area = 4*(10−2)=4*8=32.
+  3) 10 → t s: trapezoid with parallel sides 4 and 10 and width (t−10): area = ((4+10)/2)*(t−10) = 7*(t−10).
+- Total motorcycle distance = 4 + 32 + 7*(t−10) = 36 + 7t −70 = 7t −34.
+- For part (b), set distances equal: 5t = 7t − 34.
+
+Step 4 — Step-by-Step Calculation
+(a) Motorcycle travels at constant speed v = 4 m s^-1 from time 2 s to 10 s. Duration = 10 − 2 = 8 seconds.
+
+(b) Equate distances:
+5t (car) = 7t − 34 (motorcycle)
+Bring terms together: 5t − 7t = −34
+−2t = −34
+t = (−34)/(−2) = 17 s
+
+Check: t = 17 s > 10 s, so the piecewise form used is valid.
+
+Step 5 — Final Answer
+(a) 8 seconds.  
+(b) t = 17 seconds.",3929,SUCCESS,gpt-5-mini
+Chapter 8_Q1.png,"(a) 9, 2, 3.210, 1.792
+(b) interquartile range",,Measures of Dispersion ,English,yes,6,"Step 1: Diagram Deconstruction
+- Type of diagram: frequency distribution table (discrete data).
+- Extracted data (time in hours t, frequency f):
+  - t = 1, f = 2
+  - t = 2, f = 5
+  - t = 3, f = 6
+  - t = 4, f = 9
+  - t = 5, f = 6
+  - t = 6, f = 2
+  - t = 7, f = 1
+  - t = 10, f = 1
+- Total number of pupils n = 2+5+6+9+6+2+1+1 = 32.
+- Cumulative positions by value:
+  - positions 1–2: value 1
+  - positions 3–7: value 2
+  - positions 8–13: value 3
+  - positions 14–22: value 4
+  - positions 23–28: value 5
+  - positions 29–30: value 6
+  - position 31: value 7
+  - position 32: value 10
+
+Step 2: Question Interpretation
+- Part (a): Calculate range, interquartile range (IQR), variance and standard deviation of the distribution.
+- Part (b): State the most appropriate measure of dispersion to show the time spent on revision by the pupils (and justify the choice).
+
+Step 3: Mathematical Formulation
+- Range = max value − min value.
+- For quartiles with n = 32 (even), take Q1 = median of first 16 values (average of 8th & 9th), Q3 = median of last 16 values (average of 17th & 18th). Then IQR = Q3 − Q1.
+- Mean (μ) = (Σ f t) / n.
+- Variance (population) σ^2 = (Σ f t^2)/n − μ^2.
+- Standard deviation σ = sqrt(σ^2).
+(We use the population formulas since the data are all pupils in the group.)
+
+Step 4: Step-by-Step Calculation
+1) Range:
+- min = 1, max = 10 → Range = 10 − 1 = 9.
+
+2) Quartiles and IQR:
+- Locate positions:
+  - 8th value = 3 (positions 8–13 are 3)
+  - 9th value = 3
+  => Q1 = (3 + 3)/2 = 3.
+  - 17th and 18th values are both in positions 14–22 (value 4)
+  => Q3 = (4 + 4)/2 = 4.
+- IQR = Q3 − Q1 = 4 − 3 = 1.
+
+3) Mean:
+- Compute Σ f t:
+  1·2 = 2
+  2·5 = 10
+  3·6 = 18
+  4·9 = 36
+  5·6 = 30
+  6·2 = 12
+  7·1 = 7
+ 10·1 = 10
+  Sum Σ f t = 2+10+18+36+30+12+7+10 = 125.
+- Mean μ = 125 / 32 = 125/32 = 3.90625.
+
+4) Variance using Σ f t^2:
+- Compute Σ f t^2:
+  1^2·2 = 2
+  2^2·5 = 20
+  3^2·6 = 54
+  4^2·9 = 144
+  5^2·6 = 150
+  6^2·2 = 72
+  7^2·1 = 49
+ 10^2·1 =100
+  Sum Σ f t^2 = 2+20+54+144+150+72+49+100 = 591.
+- σ^2 = (Σ f t^2)/n − μ^2 = 591/32 − (125/32)^2.
+  591/32 = 18.46875.
+  (125/32)^2 = 15625/1024 = 15.2587890625.
+  σ^2 = 18.46875 − 15.2587890625 = 3.2099609375.
+  (Exact rational form: σ^2 = 3287/1024 ≈ 3.2099609375.)
+- Standard deviation σ = sqrt(3.2099609375) ≈ 1.79163 ≈ 1.79 (to 2 d.p.).
+
+Step 5: Final Answer
+- Range = 9.
+- Interquartile range (IQR) = 1 (Q1 = 3, Q3 = 4).
+- Variance (population) ≈ 3.20996 (exact 3287/1024).
+- Standard deviation ≈ 1.79.
+- Part (b) (most appropriate measure of dispersion): The interquartile range is the most appropriate measure here because it is resistant to extreme values (there is a high value 10 that is an outlier). IQR summarizes the spread of the middle 50% without being affected by outliers; the standard deviation is useful if the distribution is roughly symmetric and you want a measure using all data, but IQR is preferable for this data set.",4086,SUCCESS,gpt-5-mini
+Chapter 8_Q2.png,"(a) 1.2, 0.4
+(b) 5, 3",,Measures of Dispersion ,English,yes,4,"Step 1: Diagram Deconstruction
+- Type of diagram: Frequency table (discrete data given with class/value and frequency).
+- Extracted data:
+
+(a) Diameter (cm) with frequencies (number of limes)
+- 6.0 : 6
+- 6.2 : 9
+- 6.4 : 12
+- 6.6 : 18
+- 6.8 : 20
+- 7.0 : 10
+- 7.2 : 5
+
+Total frequency n = 6+9+12+18+20+10+5 = 80.
+
+Cumulative positions:
+- 6.0 occupies positions 1–6
+- 6.2 occupies positions 7–15
+- 6.4 occupies positions 16–27
+- 6.6 occupies positions 28–45
+- 6.8 occupies positions 46–65
+- 7.0 occupies positions 66–75
+- 7.2 occupies positions 76–80
+
+(b) Age (years) with frequencies (number of participants)
+- 13 : 12
+- 14 : 18
+- 15 : 21
+- 16 : 20
+- 17 : 21
+- 18 : 8
+
+Total frequency n = 12+18+21+20+21+8 = 100.
+
+Cumulative positions:
+- 13 occupies positions 1–12
+- 14 occupies positions 13–30
+- 15 occupies positions 31–51
+- 16 occupies positions 52–71
+- 17 occupies positions 72–92
+- 18 occupies positions 93–100
+
+Step 2: Question Interpretation
+- For each dataset (a) and (b) find:
+  1) Range
+  2) Interquartile range (IQR = Q3 − Q1)
+
+Step 3: Mathematical Formulation
+- Range = maximum value − minimum value.
+- For quartiles use the position formula: Q1 at (n+1)/4-th ordered observation, Q3 at 3(n+1)/4-th observation. The value at that position (as determined from cumulative frequencies) gives the quartile value.
+- IQR = Q3 − Q1.
+
+Step 4: Step-by-Step Calculation
+
+Part (a):
+- n = 80.
+- Range = max − min = 7.2 − 6.0 = 1.2 cm.
+
+- Q1 position = (n+1)/4 = 81/4 = 20.25. Position 20.25 lies in the block 16–27 which corresponds to diameter 6.4. Therefore Q1 = 6.4 cm.
+- Q3 position = 3(n+1)/4 = 3×81/4 = 243/4 = 60.75. Position 60.75 lies in the block 46–65 which corresponds to diameter 6.8. Therefore Q3 = 6.8 cm.
+- IQR = Q3 − Q1 = 6.8 − 6.4 = 0.4 cm.
+
+Part (b):
+- n = 100.
+- Range = max − min = 18 − 13 = 5 years.
+
+- Q1 position = (n+1)/4 = 101/4 = 25.25. Position 25.25 lies in the block 13–30 which corresponds to age 14. Therefore Q1 = 14 years.
+- Q3 position = 3(n+1)/4 = 3×101/4 = 303/4 = 75.75. Position 75.75 lies in the block 72–92 which corresponds to age 17. Therefore Q3 = 17 years.
+- IQR = Q3 − Q1 = 17 − 14 = 3 years.
+
+Step 5: Final Answer
+- (a) Range = 1.2 cm. Interquartile range = 0.4 cm.
+- (b) Range = 5 years. Interquartile range = 3 years.",2552,SUCCESS,gpt-5-mini
+Chapter 8_Q3.png,"(a) Team A Team B
+mean = 61 mean = 61
+range = 22 range = 30
+variance = 78.8 variance = 155.6
+standard deviation standard deviation
+= 8.877 = 12.47
+(b) No because of the existence of outlier or extreme
+values",,Measures of Dispersion ,English,yes,7,"Step 1: Diagram Deconstruction.
+- Type of diagram: a table of data (list of masses for two teams).
+- Extracted data:
+  - Team A masses (kg): 48, 53, 65, 69, 70
+  - Team B masses (kg): 45, 47, 68, 70, 75
+- No other labels or points in the diagram.
+
+Step 2: Question Interpretation.
+- (a) Calculate mean, range, variance and standard deviation for the masses of the players in both teams.
+- (b) Decide whether the range is an appropriate measure of dispersion for these data and justify.
+- (c) Determine which team has greater dispersion from the mean.
+
+Note: I will treat each team as a complete group (population) and use the population formulas for variance and standard deviation (variance = average squared deviation = sum of squared deviations divided by n). If a sample-based answer (divide by n − 1) is required, I will note those values at the end.
+
+Step 3: Mathematical Formulation.
+- Mean: x̄ = (sum of values)/n.
+- Range: max − min.
+- Population variance: σ^2 = (1/n) Σ(xi − x̄)^2.
+- Population standard deviation: σ = sqrt(σ^2).
+- n = 5 for each team.
+
+Step 4: Step-by-Step Calculation.
+
+Team A:
+- Values: 48, 53, 65, 69, 70
+- Sum = 48 + 53 + 65 + 69 + 70 = 305
+- Mean: x̄_A = 305 / 5 = 61.0 kg
+- Range: max − min = 70 − 48 = 22 kg
+- Deviations from mean and squared deviations:
+  - 48 − 61 = −13 → (−13)^2 = 169
+  - 53 − 61 = −8  → 64
+  - 65 − 61 = 4   → 16
+  - 69 − 61 = 8   → 64
+  - 70 − 61 = 9   → 81
+- Sum of squared deviations = 169 + 64 + 16 + 64 + 81 = 394
+- Population variance: σ_A^2 = 394 / 5 = 78.8 (kg^2)
+- Population standard deviation: σ_A = sqrt(78.8) ≈ 8.876... ≈ 8.88 kg
+
+Team B:
+- Values: 45, 47, 68, 70, 75
+- Sum = 45 + 47 + 68 + 70 + 75 = 305
+- Mean: x̄_B = 305 / 5 = 61.0 kg (same mean as Team A)
+- Range: max − min = 75 − 45 = 30 kg
+- Deviations and squared deviations:
+  - 45 − 61 = −16 → 256
+  - 47 − 61 = −14 → 196
+  - 68 − 61 = 7   → 49
+  - 70 − 61 = 9   → 81
+  - 75 − 61 = 14  → 196
+- Sum of squared deviations = 256 + 196 + 49 + 81 + 196 = 778
+- Population variance: σ_B^2 = 778 / 5 = 155.6 (kg^2)
+- Population standard deviation: σ_B = sqrt(155.6) ≈ 12.478... ≈ 12.48 kg
+
+(If sample variance/SD were required instead, divide sums by n−1 = 4:
+- Team A sample variance = 394/4 = 98.5 → sample SD ≈ 9.93 kg.
+- Team B sample variance = 778/4 = 194.5 → sample SD ≈ 13.95 kg.)
+
+Step 5: Final Answer.
+(a) Using population formulas (n = 5):
+- Team A: mean = 61.0 kg; range = 22 kg; variance = 78.8 kg^2; standard deviation ≈ 8.88 kg.
+- Team B: mean = 61.0 kg; range = 30 kg; variance = 155.6 kg^2; standard deviation ≈ 12.48 kg.
+
+(b) Is range appropriate as a measure of dispersion?
+- The range is simple but not generally an appropriate sole measure of dispersion because it depends only on the two extreme values and is sensitive to outliers. It does give a quick sense of spread (here it matches the conclusion from variance/SD that Team B is more spread out), but a more robust and informative measure is the variance or standard deviation which uses all data points.
+
+(c) Which team has greater dispersion from the mean?
+- Team B has the greater dispersion (larger variance and larger standard deviation).",2653,SUCCESS,gpt-5-mini
+Chapter 9_Q1.png,"{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)}, 1/2",,Probability of Combined Events,English,yes,4,"Step 1: Diagram Deconstruction
+- Type of diagram: two-box sampling (Cartesian product) / sample-space listing of paired outcomes (one card drawn from each box).
+- Key features extracted from the diagram:
+  - Box K contains 4 letter cards: S, E, R, I.
+  - Box L contains 3 number cards: 4, 5, 6.
+  - One card is chosen at random from each box; all 4×3 = 12 paired outcomes are equally likely.
+  - Labeled points (outcomes) are ordered pairs (letter from K, number from L).
+
+Step 2: Question Interpretation
+- Goal: Calculate the probability that the draw yields a letter ""S"" from box K OR a multiple of 3 from box L.
+- Note: Among {4,5,6} the only multiple of 3 is 6. The event is the union: (K = S) ∪ (L = 6).
+
+Step 3: Mathematical Formulation
+- Sample space S = {(K,L) : K ∈ {S,E,R,I}, L ∈ {4,5,6}} with |S| = 12.
+- Event A = {(K = S) or (L = 6)}.
+- Use either direct listing or inclusion–exclusion:
+  - P(K = S) = 1/4
+  - P(L = 6) = 1/3
+  - P(K = S and L = 6) = 1/12
+  - P(A) = P(K = S) + P(L = 6) − P(both).
+
+Step 4: Step-by-Step Calculation
+- List all 12 equally likely outcomes:
+  (S,4), (S,5), (S,6),
+  (E,4), (E,5), (E,6),
+  (R,4), (R,5), (R,6),
+  (I,4), (I,5), (I,6).
+- Favorable outcomes for A = (K = S) or (L = 6):
+  (S,4), (S,5), (S,6), (E,6), (R,6), (I,6).
+  Count of favorable outcomes = 6.
+- Probability = favorable / total = 6 / 12 = 1/2.
+- Using inclusion–exclusion:
+  P(K = S) + P(L = 6) − P(both) = 1/4 + 1/3 − 1/12
+  = (3/12) + (4/12) − (1/12) = 6/12 = 1/2.
+
+Step 5: Final Answer
+- The probability of getting a letter ""S"" from box K or a multiple of 3 from box L is 1/2 (0.5).",1951,SUCCESS,gpt-5-mini
+Chapter 9_Q2.png,230,,Probability of Combined Events,English,yes,5,"Step 1: Diagram Deconstruction
+- Type of diagram: Probability model made from a spinner (random wheel) together with a two-box voucher table.
+- Spinner: 6 equal sectors, 2 red sectors and 4 yellow sectors. Thus P(red) = 2/6 = 1/3, P(yellow) = 4/6 = 2/3.
+- Table of vouchers:
+  - Box A (chosen if spinner lands red): RM50 vouchers = 20, RM10 vouchers = 5. Total in A = 20 + 5 = 25.
+  - Box B (chosen if spinner lands yellow): RM50 vouchers = 10, RM10 vouchers = 20. Total in B = 10 + 20 = 30.
+- Labeled rule: red → choose from box A; yellow → choose from box B.
+
+Step 2: Question Interpretation
+- Goal: For an estimated 450 eligible customers, calculate how many RM10 vouchers the shop needs to prepare (i.e., expected number of RM10 vouchers that will be given out).
+
+Step 3: Mathematical Formulation
+- Probability a customer gets RM10 = P(red)·P(RM10 | A) + P(yellow)·P(RM10 | B).
+- Where P(RM10 | A) = 5/25 and P(RM10 | B) = 20/30.
+- Number of RM10 vouchers needed ≈ 450 × P(a customer gets RM10).
+
+Step 4: Step-by-Step Calculation
+1. P(red) = 2/6 = 1/3.
+2. P(yellow) = 4/6 = 2/3.
+3. P(RM10 | A) = 5/25 = 1/5.
+4. P(RM10 | B) = 20/30 = 2/3.
+5. P(RM10 overall) = (1/3)*(1/5) + (2/3)*(2/3)
+   = 1/15 + 4/9.
+6. Convert to common denominator 45:
+   1/15 = 3/45, 4/9 = 20/45, so sum = 23/45.
+7. Expected number for 450 customers = 450 * (23/45)
+   = (450/45) * 23 = 10 * 23 = 230.
+
+Step 5: Final Answer
+- The Naga Shop needs to prepare 230 RM10 vouchers.",1909,SUCCESS,gpt-5-mini
+Chapter 9_Q3.png,"(a) 7/33
+(b) 5/33",,Probability of Combined Events,English,yes,5,"Step 1: Diagram Deconstruction.
+- Type of diagram: Bar chart (number of clubs by state and by sport).
+- Extracted data from the chart (number of clubs):
+  - Kedah: badminton = 14, bodybuilding = 6
+  - Negeri Sembilan: badminton = 11, bodybuilding = 2
+  - F.T. Labuan: badminton = 3, bodybuilding = 2
+  - F.T. Putrajaya: badminton = 5, bodybuilding = 2
+- Totals:
+  - Total badminton clubs = 14 + 11 + 3 + 5 = 33
+  - Total bodybuilding clubs = 6 + 2 + 2 + 2 = 12
+
+Step 2: Question Interpretation.
+- A badminton club and a bodybuilding club are chosen at random (one from all badminton clubs, one from all bodybuilding clubs). We must compute:
+  (a) Probability both selected clubs are from Kedah (i.e., badminton from Kedah AND bodybuilding from Kedah).
+  (b) Probability that the badminton club is from the Federal Territories and the bodybuilding club is from Negeri Sembilan (the phrase ""respectively"" matches the order: badminton → Federal Territories, bodybuilding → Negeri Sembilan).
+
+Step 3: Mathematical Formulation.
+- Total number of equally likely pairs = (total badminton clubs) × (total bodybuilding clubs) = 33 × 12 = 396.
+- (a) Favorable pairs = (badminton in Kedah) × (bodybuilding in Kedah) = 14 × 6.
+  Probability = (14 × 6) / 396.
+- (b) Federal Territories include F.T. Labuan and F.T. Putrajaya. Badminton clubs in Federal Territories = 3 + 5 = 8. Bodybuilding clubs in Negeri Sembilan = 2.
+  Favorable pairs = 8 × 2.
+  Probability = (8 × 2) / 396.
+
+Step 4: Step-by-Step Calculation.
+(a)
+- Favorable = 14 × 6 = 84.
+- Probability = 84 / 396.
+- Simplify: divide numerator and denominator by 12: 84/396 = 7/33.
+- Decimal approximation: 7/33 ≈ 0.2121 (≈ 21.21%).
+
+(b)
+- Badminton in Federal Territories = 3 + 5 = 8.
+- Bodybuilding in Negeri Sembilan = 2.
+- Favorable = 8 × 2 = 16.
+- Probability = 16 / 396.
+- Simplify: divide numerator and denominator by 4: 16/396 = 4/99.
+- Decimal approximation: 4/99 ≈ 0.0404 (≈ 4.04%).
+
+Step 5: Final Answer.
+(a) Probability both clubs are from Kedah = 7/33 ≈ 0.2121 (about 21.21%).  
+(b) Probability badminton is from the Federal Territories and bodybuilding from Negeri Sembilan = 4/99 ≈ 0.0404 (about 4.04%).",2587,SUCCESS,gpt-5-mini
+Chapter 10_Q1.png,"(a) Personal monthly financial plan for Encik Nabil
+Income and Expenditure RM
+Active income:
+Net salary
+Commissions
+3 800
+450
+Total active income 4 250
+Passive income:
+House rental 600
+Total passive income 600
+Total monthly income 4 850
+Minus fixed monthly savings 380
+Total income after deducting
+savings 4 470
+Minus cash outflow/expenses
+Fixed expenses:
+Housing loan instalments (1)
+Housing loan instalments (2)
+Insurance expenses
+800
+500
+350
+Total fixed expenses 1 650
+Variable expenses:
+Food expenses
+Utility payments
+Toll and petrol expenses
+Internet service subscription
+Eat at a luxury restaurant
+900
+150
+200
+100
+400
+Total variable expenses 1 750
+Surplus/Deficit 1 070
+(b) Encik Nabil’s personal financial plan has a surplus
+where there is a positive cash flow when the total
+income is more than the total expenses. This has
+improved Encik Nabil’s liquidity",, Financial Management,English,yes,7,"Step 1: Diagram Deconstruction
+- Type of diagram: Table of Monthly Expenses (a personal finance table).
+- Key figures extracted from the diagram and problem text:
+  - Monthly net salary = RM 3,800
+  - Monthly commission (part-time) = RM 450
+  - Rental income from second house = RM 600
+  - Monthly expenses (from table):
+    - Housing loan instalment (1): RM 800
+    - Housing loan instalment (2): RM 500
+    - Food expenses: RM 900
+    - Utility payments: RM 150
+    - Toll and petrol expenses: RM 200
+    - Internet service subscription: RM 100
+    - Eat at a luxury restaurant: RM 400
+    - Insurance expenses: RM 350
+  - Fixed monthly savings: 10% of his salary (10% of RM 3,800)
+
+Step 2: Question Interpretation
+- Part (a): Create a monthly personal financial plan for Encik Nabil (show income, expenses, savings, totals, and net balance).
+- Part (b): Comment on whether there will be a surplus or deficit under this plan and give relevant observations/recommendations.
+
+Step 3: Mathematical Formulation
+- Total monthly income = salary + commission + rental
+- Monthly savings = 10% × salary
+- Total monthly expenses = sum of expense items from table
+- Total monthly outflow = total monthly expenses + monthly savings
+- Net monthly balance (surplus/deficit) = total monthly income − total monthly outflow
+
+Step 4: Step-by-Step Calculation
+1) Total monthly income:
+   - Salary = RM 3,800
+   - Commission = RM 450
+   - Rental = RM 600
+   Total income = 3,800 + 450 + 600 = RM 4,850
+
+2) Monthly savings (10% of salary):
+   - 0.10 × 3,800 = RM 380
+
+3) Sum the monthly expenses:
+   - Housing loan (1) = 800
+   - Housing loan (2) = 500
+   - Food = 900
+   - Utility = 150
+   - Toll & petrol = 200
+   - Internet = 100
+   - Eat at a luxury restaurant = 400
+   - Insurance = 350
+   Total expenses = 800 + 500 + 900 + 150 + 200 + 100 + 400 + 350
+                  = RM 3,400
+
+4) Total monthly outflow:
+   - Outflow = expenses + savings = 3,400 + 380 = RM 3,780
+
+5) Net monthly balance (surplus or deficit):
+   - Net = income − outflow = 4,850 − 3,780 = RM 1,070
+   - This is a surplus of RM 1,070 per month.
+
+6) Useful percentage breakdowns (for context):
+   - Expenses as % of total income = 3,400 / 4,850 ≈ 70.10%
+   - Savings as % of total income = 380 / 4,850 ≈ 7.84%
+   - Surplus as % of total income = 1,070 / 4,850 ≈ 22.06%
+   - Housing loans combined = 1,300 / 4,850 ≈ 26.80% of total income
+   - Food = 900 / 4,850 ≈ 18.56%
+   - Luxury restaurant = 400 / 4,850 ≈ 8.25%
+
+Step 5: Final Answer
+(a) Monthly personal financial plan (summary)
+- Total monthly income: RM 4,850
+  - Salary: RM 3,800
+  - Commission: RM 450
+  - Rental: RM 600
+- Monthly savings (fixed): RM 380 (10% of salary)
+- Monthly expenses (total): RM 3,400
+  - Housing loans: RM 1,300 (800 + 500)
+  - Food: RM 900
+  - Utility: RM 150
+  - Toll & petrol: RM 200
+  - Internet: RM 100
+  - Luxury restaurant: RM 400
+  - Insurance: RM 350
+- Total outflow (expenses + savings): RM 3,780
+- Net monthly surplus: RM 1,070
+
+(b) Comments on surplus/deficit and recommendations
+- Encik Nabil will experience a monthly surplus of RM 1,070 under this plan (no deficit).
+- This surplus is a healthy buffer (≈22% of total income) and can be used to:
+  - Build an emergency fund (recommended 3–6 months of living expenses),
+  - Make extra principal payments on housing loans to reduce interest and loan term,
+  - Increase investments or retirement contributions,
+  - Increase fixed savings above 10% if he wishes to reach financial goals sooner.
+- Observations about current spending:
+  - Housing loans and food are large portions of his budget (combined housing 26.8%, food 18.6%).
+  - The discretionary expense ""eat at a luxury restaurant"" (RM 400) is a noticeable chunk (≈8.3%); reducing this could accelerate savings or debt repayment.
+- Recommendation: Keep the RM 380 automatic savings, allocate part of the RM 1,070 surplus each month to (a) an emergency fund until 3–6 months of necessary expenses are covered, (b) extra loan repayment or low-risk investments, and (c) discretionary spending/long-term goals. This will strengthen his financial position and lower interest costs over time.",3284,SUCCESS,gpt-5-mini
+Chapter 10_Q2.png,"(a) Mrs Thong does not spend wisely because her
+total monthly savings of RM250 compared to the
+income of RM6 000 which is less than 10%.
+(b) Mrs Thong will not be able to achieve the
+investment goal of RM500 000 with monthly
+savings of RM250",, Financial Management,English,yes,6,"Step 1: Diagram Deconstruction.
+- Type of diagram: A financial-plan table (budget).
+- Extracted key features and numbers (monthly, in RM):
+  - Net income: Mrs Thong’s salary = 6 000
+  - Expenses (monthly):
+    - House/apartment loan incl. maintenance = 500
+    - Car instalment = 700
+    - Travel = 500
+    - Rental = 1 500
+    - Transport fares = 900
+    - Utility bills = 250
+    - Toll payments = 100
+    - Groceries = 400
+    - Allowances for parents = 600
+    - Savings = 100
+    - Insurance = 200
+  - Total expenses = 5 750
+  - Mrs Thong’s income balance (leftover) = 250
+Notes: The table lists “Savings = 100” as part of monthly expenses; the “income balance = 250” is the remaining unallocated money each month (6 000 − 5 750 = 250).
+
+Step 2: Question Interpretation.
+- (a) Decide whether Mrs Thong spends her money wisely (i.e., evaluate her budgeting and savings behaviour).
+- (b) Determine whether, with her current spending behaviour, she can buy a property worth RM500 000 within 6 years.
+
+Step 3: Mathematical Formulation.
+- Monthly designated savings (from the table) = 100 RM.
+- Monthly unallocated balance = 250 RM.
+- Possible monthly saved amount scenarios:
+  1) If she only saves the designated “Savings” = 100 RM/month.
+  2) If she saves the entire leftover balance as well = 250 RM/month (or 250 + 100 = 350 RM if she decides to put both savings line and income balance into a savings fund — clarify below).
+- Time horizon: 6 years = 6 × 12 = 72 months.
+- Required monthly saving to reach RM500 000 in 72 months = 500 000 / 72.
+
+Step 4: Step-by-Step Calculation.
+1) Compute total months: 6 years × 12 months/year = 72 months.
+2) Scenario A — saving only the designated “Savings”:
+   - Monthly saving = 100 RM.
+   - Total saved in 72 months = 100 × 72 = 7 200 RM.
+   - Percentage of goal = (7 200 / 500 000) × 100% = 1.44%.
+3) Scenario B — saving the entire income balance (250 RM) instead of or in addition:
+   - If she saves the 250 RM leftover each month (ignoring the 100 labelled savings), total in 72 months = 250 × 72 = 18 000 RM.
+   - Percentage of goal = (18 000 / 500 000) × 100% = 3.6%.
+   - If she actually saves both the labelled 100 and the leftover 250 (i.e., saves 350 RM/month), total = 350 × 72 = 25 200 RM (5.04% of the goal).
+4) Required monthly saving to reach RM500 000 in 72 months:
+   - Required per month = 500 000 / 72 ≈ 6 944.44 RM per month.
+5) Shortfall comparisons:
+   - Compared to saving 100 RM/month: shortfall per month = 6 944.44 − 100 ≈ 6 844.44 RM.
+   - Compared to saving 250 RM/month: shortfall = 6 944.44 − 250 ≈ 6 694.44 RM.
+   - Compared to saving 350 RM/month: shortfall = 6 944.44 − 350 ≈ 6 594.44 RM.
+
+Step 5: Final Answer.
+(a) Does Mrs Thong spend her money wisely?
+- No — her savings rate is very low. She only has RM100 explicitly allocated to savings each month (1.67% of her RM6 000 income). Financially prudent advice normally recommends saving a substantially larger proportion (commonly 10%–20% of income) and building an emergency fund equivalent to 3–6 months’ expenses. Her current leftover (RM250) is small and total monthly expenses (RM5 750) leave little buffer. Therefore her current spending behaviour is not wise if her goals include major purchases or financial security.
+
+(b) Will she be able to buy a RM500 000 property in 6 years with her current spending behaviour?
+- No. With current designated savings of RM100/month she would accumulate only RM7 200 in 6 years, which is 1.44% of RM500 000. Even if she saves the entire monthly leftover RM250, she would save RM18 000 in 6 years (only 3.6% of the target). To reach RM500 000 in 72 months she would need about RM6 944.44 per month — far more than she currently saves. Thus, under her present spending behaviour she cannot achieve that goal.
+
+Brief practical note (if she wants next steps): To get closer to the goal she would need a dramatic increase in monthly savings (or large external funding, mortgage, or very high investment returns). Practical adjustments include cutting large expenses (e.g., rental, transport), increasing income, and redirecting the leftover and other expenses into savings/investments.",3427,SUCCESS,gpt-5-mini
