@@ -5,7 +5,7 @@ Role: Mimics run_model_test.py architecture with extraction → solving pattern.
 """
 
 from langchain.agents import create_agent
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage,BaseMessage,ToolMessage
 from tools import MATH_TOOLS
 from dotenv import load_dotenv
 from langgraph.errors import GraphRecursionError
@@ -13,7 +13,7 @@ import base64
 import os
 import logging
 import json
-from typing import Tuple, Union
+from typing import Tuple, List
 from datetime import datetime
 
 # Load environment variables from .env file
@@ -392,6 +392,10 @@ Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
                 # Try to get partial result if available
                 try:
                     result = e.result if hasattr(e, 'result') else {"messages": []}
+                    try:
+                        self.saveToolMessages(result.get("messages", []))
+                    except Exception as e:
+                        logger.error(f'Unable to save tool Messages:{e}')
                     save_agent_output("solver", result, error_type="RECURSION_LIMIT")
                 except Exception as save_err:
                     logger.error(f"Failed to save recursion error output: {str(save_err)}")
@@ -467,72 +471,30 @@ Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
                 "status": "ERROR",
                 "model": self.model_name,
             }
+    def saveToolMessages(self, messages : List[BaseMessage] ) -> None:
+            """
+            Save tool call messages to a log file for debugging.
 
+            Args:
+                messages: List of BaseMessage objects containing tool calls
+            """
+            toolMessages = []
+            try:
+                logger.debug(f"Saving tool messages...")
+                for message in messages:
+                    if isinstance(message, ToolMessage):
+                     for tool_call in message.tool_calls or message.content or []:
+                        logger.debug(f"Tool Call - Name: {tool_call.name}, Args: {tool_call.args}")
+                        toolMessages.append({
+                            "tool_name": tool_call.name,
+                            "args": tool_call.args
+                        })
+                if not toolMessages:
+                    logger.debug("No tool messages found to save.")
+                    return
+                with open("tool_messages_log.json", "w") as f:
+                    json.dump(toolMessages, f, indent=2)
+                logger.info(f"✓ Tool messages saved to tool_messages_log.json")
+            except Exception as e:
+                logger.error(f"Error saving tool messages: {str(e)}", exc_info=True)
 
-
-#
-# # Example usage
-# if __name__ == "__main__":
-#     # Initialize the agent
-#     agent = MathAgent()
-#
-#     # Example 1: Text-only problem (legacy mode)
-#     problem1 = """
-#     Solve the equation: 2x + 5 = 15
-#     """
-#
-#     print("Example 1: Text-Only Problem (Algebra)")
-#     print("-" * 50)
-#     print(f"Problem: {problem1}")
-#     print("\nSolution:")
-#     print(agent.solve(problem1))
-#     print("\n" + "=" * 50 + "\n")
-#
-#     # Example 2: Statistics problem
-#     problem2 = """
-#     For a grouped frequency distribution:
-#     Class: [10-20), [20-30), [30-40), [40-50)
-#     Frequency: 5, 10, 8, 3
-#
-#     Calculate:
-#     a) Σfx (sum of frequency × midpoint)
-#     b) Σfx² (sum of frequency × midpoint²)
-#     c) Variance and standard deviation
-#     """
-#
-#     print("Example 2: Statistics Problem")
-#     print("-" * 50)
-#     print(f"Problem: {problem2}")
-#     print("\nSolution:")
-#     print(agent.solve(problem2))
-#     print("\n" + "=" * 50 + "\n")
-#
-#     # Example 3: Inequality validation
-#     problem3 = """
-#     Given the inequality: x + y ≤ 5
-#
-#     a) Check if the boundary line should be solid or dashed
-#     b) Validate these points:
-#        - (1, 2)
-#        - (3, 3)
-#        - (5, 0)
-#     """
-#
-#     print("Example 3: Inequality Problem")
-#     print("-" * 50)
-#     print(f"Problem: {problem3}")
-#     print("\nSolution:")
-#     print(agent.solve(problem3))
-#     print("\n" + "=" * 50 + "\n")
-#
-#     # Example 4: Image processing (if image exists)
-#     print("Example 4: Image Processing (Two-Stage Pipeline)")
-#     print("-" * 50)
-#     test_image = "sample_math_problem.png"
-#     if os.path.exists(test_image):
-#         result = agent.process_image(test_image)
-#         print(f"Status: {result['status']}")
-#         print(f"Extracted Data:\n{result['extracted_data'][:500]}...")
-#         print(f"\nSolution:\n{result['llm_answer'][:500]}...")
-#     else:
-#         print(f"No test image found at {test_image}")

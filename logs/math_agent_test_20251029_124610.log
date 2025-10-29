@@ -799,3 +799,78 @@ The problem asks for two probabilities:
 2025-10-29 12:50:57 - __main__ - DEBUG - [process_test_images:146] - Image path: C:\Users\User\PycharmProjects\MathAgent\QAs\Soalan maths\form 4\Chapter 10_Q1.png
 2025-10-29 12:50:57 - __main__ - INFO - [process_test_images:164] -   Stage 1: Extracting structured data from image...
 2025-10-29 12:50:57 - __main__ - INFO - [process_test_images:165] -   Stage 2: Solving with mathematical tools...
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:168] - Agent.process_image returned: <class 'dict'>
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:175] - Result keys: ['extracted_data', 'llm_answer', 'tokens_used', 'status', 'model']
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:178] - Storing results in DataFrame at row 27...
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:182] -   extracted_data (first 200 chars): ---
+PROBLEM TYPE: Personal Finance
+
+QUESTION:
+Encik Nabil works as an engineer in a factory with a monthly net salary of RM3 800. He is also a part-time sales agent of product X. The monthly commissio...
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:184] -   ✓ extracted_data saved
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:188] -   llm_answer (first 200 chars): Step 1: Problem Understanding
+The problem asks us to create a monthly personal financial plan for Encik Nabil and to comment on his projected monthly surplus or deficit.
+
+The constraints are:
+- Encik ...
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:190] -   ✓ llm_answer saved
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:194] -   tokens_used: 0
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:196] -   ✓ tokens_used saved
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:200] -   status: SUCCESS
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:202] -   ✓ status saved
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:206] -   model: google_genai:gemini-2.5-flash-lite
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:208] -   ✓ model saved
+2025-10-29 12:51:04 - __main__ - INFO - [process_test_images:215] -   ✓ SUCCESS | Tokens: 0 | Running total: 0
+2025-10-29 12:51:04 - __main__ - INFO - [process_test_images:144] - 
+================================================================================
+2025-10-29 12:51:04 - __main__ - INFO - [process_test_images:145] - [29/29] Processing: Chapter 10_Q2.png
+2025-10-29 12:51:04 - __main__ - DEBUG - [process_test_images:146] - Image path: C:\Users\User\PycharmProjects\MathAgent\QAs\Soalan maths\form 4\Chapter 10_Q2.png
+2025-10-29 12:51:04 - __main__ - INFO - [process_test_images:164] -   Stage 1: Extracting structured data from image...
+2025-10-29 12:51:04 - __main__ - INFO - [process_test_images:165] -   Stage 2: Solving with mathematical tools...
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:168] - Agent.process_image returned: <class 'dict'>
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:175] - Result keys: ['extracted_data', 'llm_answer', 'tokens_used', 'status', 'model']
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:178] - Storing results in DataFrame at row 28...
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:182] -   extracted_data (first 200 chars): ---
+PROBLEM TYPE: Data Analysis
+
+QUESTION:
+The information below is Mrs Thong’s financial plan.
+
+(a) Does Mrs Thong spend her money wisely?
+(b) Will Mrs Thong be able to achieve her long-term financia...
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:184] -   ✓ extracted_data saved
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:188] -   llm_answer (first 200 chars): Step 1: Problem Understanding
+The problem asks two questions:
+(a) Whether Mrs. Thong spends her money wisely based on her financial plan.
+(b) Whether Mrs. Thong can afford a RM500,000 property in 6 ye...
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:190] -   ✓ llm_answer saved
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:194] -   tokens_used: 0
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:196] -   ✓ tokens_used saved
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:200] -   status: SUCCESS
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:202] -   ✓ status saved
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:206] -   model: google_genai:gemini-2.5-flash-lite
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:208] -   ✓ model saved
+2025-10-29 12:51:14 - __main__ - INFO - [process_test_images:215] -   ✓ SUCCESS | Tokens: 0 | Running total: 0
+2025-10-29 12:51:14 - __main__ - INFO - [process_test_images:234] - 
+================================================================================
+2025-10-29 12:51:14 - __main__ - INFO - [process_test_images:235] - Saving results to CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\langchain_results\test_results_form4_google_genai_gemini_2.5_flash_lite_langchain_agent.csv
+2025-10-29 12:51:14 - __main__ - DEBUG - [process_test_images:238] - Output directory created/verified
+2025-10-29 12:51:14 - __main__ - ERROR - [process_test_images:244] - Failed to save results to CSV: [Errno 13] Permission denied: 'C:\\Users\\User\\PycharmProjects\\MathAgent\\QAs\\langchain_results\\test_results_form4_google_genai_gemini_2.5_flash_lite_langchain_agent.csv'
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\MathAgent\langchain_solution\test_lang_agent.py", line 240, in process_test_images
+    df.to_csv(output_csv, index=False)
+  File "C:\Users\User\PycharmProjects\MathAgent\.venv\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\MathAgent\.venv\Lib\site-packages\pandas\core\generic.py", line 3989, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\MathAgent\.venv\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "C:\Users\User\PycharmProjects\MathAgent\.venv\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\User\PycharmProjects\MathAgent\.venv\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\User\\PycharmProjects\\MathAgent\\QAs\\langchain_results\\test_results_form4_google_genai_gemini_2.5_flash_lite_langchain_agent.csv'
