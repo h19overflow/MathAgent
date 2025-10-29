@@ -1,4 +1,4 @@
-﻿image_filename,ground_truth,marking_scheme,chapter_name,language,Textbook,Allocated marks
+image_filename,ground_truth,marking_scheme,chapter_name,language,Textbook,Allocated marks
 Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0,,"Quadratic Functions and Equations in
 One Variable",English,yes,4
 Chapter 1_Q2.png,"(a) A(0, –5)     (b) x = 3
@@ -14,9 +14,9 @@ Chapter 2_Q2.png,132 based 5,,Number Bases,English,yes,4
 Chapter 2_Q3.png,1600 m^2,,Number Bases,English,yes,5
 Chapter 3_Q1.png,"a) P(8)	 = 28
 	 = 256   b) t = 11      ",,Logical Reasoning,English,yes,4
-Chapter 3_Q2.png,"(a) 32(? + 2), 16(? + 2), 8(? + 2), 4(? + 2)
+Chapter 3_Q2.png,"(a) 32(π + 2), 16(π + 2), 8(π + 2), 4(π + 2)
 (c) 1/4
- (? + 2) cm",,Logical Reasoning,English,yes,6
+ (π + 2) cm",,Logical Reasoning,English,yes,6
 Chapter 3_Q3.png,"(a) The pattern of the number of cylinders is 2n +1;
 n = 1, 2, 3, 4, ...
 (b) 104 720 cm3",,Logical Reasoning,English,yes,5
@@ -49,22 +49,22 @@ the difference in time is only 9 minutes compared
 to route P > S",,Network in Graph Theory,English,yes,4
 Chapter 5_Q3.png,"Route A > C > D > E because it is a safer route even
 though Lani had to cycle 300 m more",,Network in Graph Theory,English,yes,3
-Chapter 6_Q1.png,"(a) y < –1, x >= –5, y >= 4
-5 x – 1
+Chapter 6_Q1.png,"(a) y < –1,  x >= –5,  y >= 4/5 * x – 1
 (b) x >= 2, y >= 0, y < –x + 6",,Linear Inequalities in Two Variables,English,yes,3
-Chapter 6_Q2.png,"(a) x + y <= 500 (b) x <= 3y or 3y >= x
-(c) y >= 200",,Linear Inequalities in Two Variables,English,yes,4
+Chapter 6_Q2.png,"(a) x > – 4, y <= – (1/2)* x and y >= 0
+(b) y <= 2x + 4, y <=  – (4/3) * x + 4 and y >= 0
+(c) y <= x – 1, y >= (2/3) * x – 2, x >= 0 and y <= 0",,Linear Inequalities in Two Variables,English,yes,4
 Chapter 6_Q3.png,"(a) y <= 2, x < 3, y >= – x, y >= 0
-(b) y > –2x, y >= 2x – 8, y <= – 1/2x",,Linear Inequalities in Two Variables,English,yes,4
+(b) y > –2x, y >= 2x – 8, y <= – (1/2) * x",,Linear Inequalities in Two Variables,English,yes,4
 Chapter 7_Q1.png,"(a) 3/8 ms^–2  (b) 1 200 m
 (c) Encik Merisat drives for a distance of 1.725 km in
 2.5 minutes with an average speed of 41.4 km h–1.",,Graphs of Motion,English,yes,5
 Chapter 7_Q2.png,(a) 100               (b) 1.6               (c) 57.14,,Graphs of Motion,English,yes,5
 Chapter 7_Q3.png,(a) 8 seconds (b) 17,,Graphs of Motion,English,yes,5
 Chapter 8_Q1.png,"(a) 9, 2, 3.210, 1.792
-(b) interquartile range",,"Measures of Dispersion ",English,yes,6
+(b) interquartile range",,Measures of Dispersion ,English,yes,6
 Chapter 8_Q2.png,"(a) 1.2, 0.4
-(b) 5, 3",,"Measures of Dispersion ",English,yes,4
+(b) 5, 3",,Measures of Dispersion ,English,yes,4
 Chapter 8_Q3.png,"(a) Team A Team B
 mean = 61 mean = 61
 range = 22 range = 30
@@ -72,7 +72,7 @@ variance = 78.8 variance = 155.6
 standard deviation standard deviation
 = 8.877 = 12.47
 (b) No because of the existence of outlier or extreme
-values",,"Measures of Dispersion ",English,yes,7
+values",,Measures of Dispersion ,English,yes,7
 Chapter 9_Q1.png,"{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)}, 1/2",,Probability of Combined Events,English,yes,4
 Chapter 9_Q2.png,230,,Probability of Combined Events,English,yes,5
 Chapter 9_Q3.png,"(a) 7/33
@@ -117,10 +117,10 @@ Surplus/Deficit 1 070
 (b) Encik Nabil’s personal financial plan has a surplus
 where there is a positive cash flow when the total
 income is more than the total expenses. This has
-improved Encik Nabil’s liquidity",," Financial Management",English,yes,7
+improved Encik Nabil’s liquidity",, Financial Management,English,yes,7
 Chapter 10_Q2.png,"(a) Mrs Thong does not spend wisely because her
 total monthly savings of RM250 compared to the
 income of RM6 000 which is less than 10%.
 (b) Mrs Thong will not be able to achieve the
 investment goal of RM500 000 with monthly
-savings of RM250",," Financial Management",English,yes,6
+savings of RM250",, Financial Management,English,yes,6

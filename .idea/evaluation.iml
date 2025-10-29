@@ -5,8 +5,9 @@
       <excludeFolder url="file://$MODULE_DIR$/.trunk/plugins/trunk/linters/dart/test_data/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/.trunk/plugins/trunk/linters/dart/test_data/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/.trunk/plugins/trunk/linters/dart/test_data/build" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.11 (MathAgent)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
