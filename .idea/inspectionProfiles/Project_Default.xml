@@ -1,0 +1,90 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="pypdf2" />
+          <option value="abnf" />
+          <option value="aiolimiter" />
+          <option value="asgiref" />
+          <option value="av" />
+          <option value="azure-core" />
+          <option value="azure-identity" />
+          <option value="chardet" />
+          <option value="chonkie" />
+          <option value="choreographer" />
+          <option value="chroma-hnswlib" />
+          <option value="cint" />
+          <option value="cohere" />
+          <option value="dnspython" />
+          <option value="einops" />
+          <option value="faker" />
+          <option value="fastavro" />
+          <option value="fickling" />
+          <option value="flasgger" />
+          <option value="flask-sock" />
+          <option value="google-auth-oauthlib" />
+          <option value="google-cloud-aiplatform" />
+          <option value="google-cloud-bigquery" />
+          <option value="google-cloud-core" />
+          <option value="google-cloud-pubsub" />
+          <option value="google-cloud-resource-manager" />
+          <option value="google-cloud-storage" />
+          <option value="google-crc32c" />
+          <option value="google-resumable-media" />
+          <option value="gql" />
+          <option value="grpc-google-iam-v1" />
+          <option value="intervaltree" />
+          <option value="kaitaistruct" />
+          <option value="kaleido" />
+          <option value="logistro" />
+          <option value="mistune" />
+          <option value="model2vec" />
+          <option value="msal" />
+          <option value="msal-extensions" />
+          <option value="opentelemetry-instrumentation" />
+          <option value="opentelemetry-instrumentation-asgi" />
+          <option value="opentelemetry-instrumentation-fastapi" />
+          <option value="opentelemetry-util-http" />
+          <option value="pandas-stubs" />
+          <option value="pinecone" />
+          <option value="pinecone-plugin-assistant" />
+          <option value="pinecone-plugin-interface" />
+          <option value="plotly" />
+          <option value="polyfactory" />
+          <option value="polyfile-weave" />
+          <option value="portalocker" />
+          <option value="pyjwt" />
+          <option value="pymongo" />
+          <option value="pytest-timeout" />
+          <option value="qdrant-client" />
+          <option value="qwen-vl-utils" />
+          <option value="seaborn" />
+          <option value="simple-websocket" />
+          <option value="simplejson" />
+          <option value="stdlib-list" />
+          <option value="tree-sitter" />
+          <option value="tree-sitter-c-sharp" />
+          <option value="tree-sitter-embedded-template" />
+          <option value="tree-sitter-language-pack" />
+          <option value="tree-sitter-yaml" />
+          <option value="turbopuffer" />
+          <option value="types-requests" />
+          <option value="vanna" />
+          <option value="voyageai" />
+          <option value="weave" />
+          <option value="wsproto" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
