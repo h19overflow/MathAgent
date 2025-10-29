@@ -195,20 +195,24 @@ def calculate_relative_frequency(frequencies: List[int]) -> str:
 
 
 @tool
-def calculate_median_class(frequencies: List[int], class_boundaries: List[Tuple[Union[int, float], Union[int, float]]]) -> str:
+def calculate_median_class(frequencies: List[int], class_boundaries_json: str) -> str:
     """Find the median class for grouped data.
 
     Args:
-        frequencies: List of frequencies
-        class_boundaries: List of (lower, upper) tuples for each class
+        frequencies: List of frequencies (e.g., [5, 10, 8, 3])
+        class_boundaries_json: JSON string of class boundaries. Format: '[[lower1, upper1], [lower2, upper2], ...]' or '[[10, 20], [20, 30], [30, 40]]'
 
     Returns:
         String with median class information
     """
     try:
+        import json
         total_frequency = sum(frequencies)
         if total_frequency == 0:
             return "Error: Total frequency cannot be zero"
+
+        # Parse JSON string to get list of [lower, upper] pairs
+        class_boundaries = json.loads(class_boundaries_json)
 
         # Find cumulative frequencies
         cumulative = []
@@ -223,8 +227,12 @@ def calculate_median_class(frequencies: List[int], class_boundaries: List[Tuple[
         # Find median class
         for i, cum_freq in enumerate(cumulative):
             if cum_freq >= median_pos:
-                lower, upper = class_boundaries[i]
-                return f"Median Class: [{lower}, {upper}) with cumulative frequency up to {cum_freq}"
+                if i < len(class_boundaries):
+                    boundary = class_boundaries[i]
+                    if isinstance(boundary, (list, tuple)) and len(boundary) == 2:
+                        lower, upper = boundary[0], boundary[1]
+                        return f"Median Class: [{lower}, {upper}) with cumulative frequency up to {cum_freq}"
+                return f"Error: Boundary index {i} out of range"
 
         return "Error: Could not determine median class"
     except Exception as e:

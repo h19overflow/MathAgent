@@ -1,0 +1,2765 @@
+image_filename,ground_truth,marking_scheme,chapter_name,language,Textbook,Allocated marks,extracted_data,llm_answer,tokens_used,status,model
+Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0,,"Quadratic Functions and Equations in
+One Variable",English,yes,4,"---
+PROBLEM TYPE: Algebra
+
+QUESTION:
+1. The diagram on the right shows a piece of land with a length of (x + 20) m and a width of (x + 5) m.
+(a) Write a function for the area, A m², of the land.
+(b) If the area of the land is 250 m², write a quadratic equation in terms of x. Give your answer in the form of ax² + bx + c = 0.
+
+VISUAL DATA:
+The visual element is a diagram of a piece of land showing its dimensions.
+- Length: (x + 20) m
+- Width: (x + 5) m
+
+CONSTRAINTS:
+- The area of the land is 250 m².
+- The final quadratic equation should be in the form ax² + bx + c = 0.
+---",,0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 1_Q2.png,"(a) A(0, –5)     (b) x = 3
+(c) B(6, –5)     (d) (3, 4)",,"Quadratic Functions and Equations in
+One Variable",English,yes,6,"---
+PROBLEM TYPE: Quadratic Functions Graph
+
+QUESTION:
+The diagram shows part of the graph of the quadratic function $f(x) = -x^2 + 6x - 5$. The straight line $AB$ is parallel to the x-axis. Determine
+(a) the coordinates of point A,
+(b) the equation of the axis of symmetry,
+(c) the coordinates of point B,
+(d) the coordinates of the maximum point P.
+
+VISUAL DATA:
+- The graph represents the quadratic function $f(x) = -x^2 + 6x - 5$.
+- The graph is a parabola opening downwards.
+- Point P is marked with an 'x' and is the vertex (maximum point) of the parabola.
+- Point A is marked with a solid circle on the y-axis and on the parabola.
+- Point B is marked with a solid circle on the parabola.
+- A dashed line connects A and B, and is parallel to the x-axis.
+- The origin O is labeled at the intersection of the axes.
+- The x-axis is labeled.
+- The y-axis is labeled as $f(x)$.
+
+CONSTRAINTS:
+- The straight line AB is parallel to the x-axis.
+---","Step 1: Problem Understanding
+The problem asks to determine:
+(a) The coordinates of point A.
+(b) The equation of the axis of symmetry of the parabola.
+(c) The coordinates of point B.
+(d) The coordinates of the maximum point P.
+
+The given function is $f(x) = -x^2 + 6x - 5$.
+A key constraint is that the line AB is parallel to the x-axis.
+
+Step 2: Mathematical Formulation
+(a) Point A is on the y-axis, which means its x-coordinate is 0. To find the y-coordinate, substitute x=0 into the function:
+$f(0) = -(0)^2 + 6(0) - 5 = -5$.
+So, the coordinates of point A are (0, -5).
+
+(b) The axis of symmetry for a quadratic function in the form $f(x) = ax^2 + bx + c$ is given by the formula $x = -b / (2a)$.
+In this case, a = -1 and b = 6.
+Axis of symmetry: $x = -6 / (2 * -1) = -6 / -2 = 3$.
+The equation of the axis of symmetry is $x = 3$.
+
+(c) Since the line AB is parallel to the x-axis, points A and B have the same y-coordinate. From part (a), the y-coordinate of A is -5. Therefore, the y-coordinate of B is also -5.
+To find the x-coordinate of B, set $f(x) = -5$:
+$-x^2 + 6x - 5 = -5$
+$-x^2 + 6x = 0$
+$x(-x + 6) = 0$
+This gives two possible x-values: $x = 0$ (which corresponds to point A) and $-x + 6 = 0$, so $x = 6$.
+Therefore, the coordinates of point B are (6, -5).
+
+(d) The maximum point P is the vertex of the parabola. The x-coordinate of the vertex is given by the axis of symmetry, which we found in part (b) to be $x = 3$.
+To find the y-coordinate of P, substitute $x = 3$ into the function:
+$f(3) = -(3)^2 + 6(3) - 5 = -9 + 18 - 5 = 9 - 5 = 4$.
+So, the coordinates of the maximum point P are (3, 4).
+
+Step 3: Solution Execution
+(a) Coordinates of A:
+$f(0) = -(0)^2 + 6(0) - 5 = -5$.
+A = (0, -5).
+
+(b) Equation of the axis of symmetry:
+$x = -b / (2a) = -6 / (2 * -1) = -6 / -2 = 3$.
+Axis of symmetry: $x = 3$.
+
+(c) Coordinates of B:
+Since AB is parallel to the x-axis, $y_A = y_B = -5$.
+Set $f(x) = -5$:
+$-x^2 + 6x - 5 = -5$
+$-x^2 + 6x = 0$
+$x(6 - x) = 0$
+$x = 0$ (Point A) or $x = 6$ (Point B).
+B = (6, -5).
+
+(d) Coordinates of maximum point P (vertex):
+The x-coordinate of the vertex is the axis of symmetry, $x = 3$.
+Substitute $x = 3$ into $f(x)$:
+$f(3) = -(3)^2 + 6(3) - 5 = -9 + 18 - 5 = 4$.
+P = (3, 4).
+
+All calculations are straightforward substitutions and algebraic manipulations. The constraints have been used. The results make sense in the context of a downward-opening parabola.
+
+Step 4: Final Answer
+(a) The coordinates of point A are (0, -5).
+(b) The equation of the axis of symmetry is $x = 3$.
+(c) The coordinates of point B are (6, -5).
+(d) The coordinates of the maximum point P are (3, 4).
+
+FINAL ANSWER:
+(a) The coordinates of point A are (0, -5).
+(b) The equation of the axis of symmetry is $x = 3$.
+(c) The coordinates of point B are (6, -5).
+(d) The coordinates of the maximum point P are (3, 4).",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 1_Q3.png,20 cm,,"Quadratic Functions and Equations in
+One Variable",English,yes,5,"---
+PROBLEM TYPE: Geometry
+
+QUESTION:
+Diagram 1 shows an isosceles triangle with a base of 4y cm and a height of (y + 5) cm. Diagram 2 shows a square with sides of y cm. The area of the triangle is more than the area of the square by 39 cm$^2$. Calculate the difference in perimeter between both shapes.
+
+VISUAL DATA:
+Diagram 1:
+- Shape: Isosceles triangle
+- Base: 4y cm
+- Height: (y + 5) cm
+- Markings: Double hash marks on two sides indicate they are equal.
+
+Diagram 2:
+- Shape: Square
+- Side length: y cm
+- Markings: Right angle symbols at each corner, double hash marks on adjacent sides indicate they are equal.
+
+CONSTRAINTS:
+The area of the triangle is more than the area of the square by 39 cm$^2$.
+---","Step 1: Problem Understanding
+The problem asks us to calculate the difference in the perimeters of an isosceles triangle and a square. We are given information about their dimensions in terms of a variable 'y', and a relationship between their areas.
+
+The dimensions are:
+- Isosceles triangle: base = 4y cm, height = (y + 5) cm.
+- Square: side length = y cm.
+
+The constraint is that the area of the triangle is 39 cm$^2$ more than the area of the square.
+
+Step 2: Mathematical Formulation
+First, let's express the areas of the triangle and the square in terms of 'y'.
+
+Area of an isosceles triangle = (1/2) * base * height
+Area of triangle = (1/2) * (4y) * (y + 5)
+Area of triangle = 2y * (y + 5)
+Area of triangle = 2y$^2$ + 10y
+
+Area of a square = side * side
+Area of square = y * y
+Area of square = y$^2$
+
+Now, let's use the constraint that the area of the triangle is 39 cm$^2$ more than the area of the square:
+Area of triangle = Area of square + 39
+2y$^2$ + 10y = y$^2$ + 39
+
+We need to solve this equation for 'y'. Rearranging the equation to form a standard quadratic equation:
+2y$^2$ - y$^2$ + 10y - 39 = 0
+y$^2$ + 10y - 39 = 0
+
+Next, let's express the perimeters of the triangle and the square in terms of 'y'.
+
+Perimeter of a square = 4 * side
+Perimeter of square = 4 * y
+Perimeter of square = 4y
+
+For the isosceles triangle, we know the base is 4y. The two equal sides are not given directly. We can find the length of the equal sides using the Pythagorean theorem. The height bisects the base, creating two right-angled triangles with legs of length (4y/2) = 2y and height (y + 5). Let 's' be the length of one of the equal sides.
+s$^2$ = (2y)$^2$ + (y + 5)$^2$
+s$^2$ = 4y$^2$ + (y$^2$ + 10y + 25)
+s$^2$ = 5y$^2$ + 10y + 25
+s = sqrt(5y$^2$ + 10y + 25)
+
+Perimeter of triangle = base + 2 * s
+Perimeter of triangle = 4y + 2 * sqrt(5y$^2$ + 10y + 25)
+
+The problem asks for the difference in perimeters between both shapes.
+Difference in perimeters = |Perimeter of triangle - Perimeter of square|
+Difference in perimeters = |(4y + 2 * sqrt(5y$^2$ + 10y + 25)) - 4y|
+Difference in perimeters = |2 * sqrt(5y$^2$ + 10y + 25)|
+
+Since 'y' represents a length, it must be positive. Therefore, the expression under the square root will be positive, and the perimeter difference will be positive.
+Difference in perimeters = 2 * sqrt(5y$^2$ + 10y + 25)
+
+Step 3: Solution Execution
+First, we need to solve the quadratic equation for 'y':
+y$^2$ + 10y - 39 = 0
+
+We can use the quadratic formula: y = [-b ± sqrt(b$^2$ - 4ac)] / 2a
+Here, a = 1, b = 10, c = -39.
+
+y = [-10 ± sqrt(10$^2$ - 4 * 1 * (-39))] / (2 * 1)
+y = [-10 ± sqrt(100 + 156)] / 2
+y = [-10 ± sqrt(256)] / 2
+y = [-10 ± 16] / 2
+
+Two possible values for y:
+y1 = (-10 + 16) / 2 = 6 / 2 = 3
+y2 = (-10 - 16) / 2 = -26 / 2 = -13
+
+Since 'y' represents a length, it must be positive. Therefore, y = 3.
+
+Now, let's calculate the perimeters using y = 3.
+
+Perimeter of square = 4y = 4 * 3 = 12 cm.
+
+For the isosceles triangle:
+Base = 4y = 4 * 3 = 12 cm.
+Height = y + 5 = 3 + 5 = 8 cm.
+
+To find the length of the equal sides (s):
+s$^2$ = (2y)$^2$ + (y + 5)$^2$
+s$^2$ = (2 * 3)$^2$ + (3 + 5)$^2$
+s$^2$ = 6$^2$ + 8$^2$
+s$^2$ = 36 + 64
+s$^2$ = 100
+s = sqrt(100) = 10 cm.
+
+Perimeter of triangle = base + 2 * s = 12 + 2 * 10 = 12 + 20 = 32 cm.
+
+Now, calculate the difference in perimeters:
+Difference in perimeters = Perimeter of triangle - Perimeter of square
+Difference in perimeters = 32 cm - 12 cm = 20 cm.
+
+Let's verify the areas with y=3:
+Area of triangle = 2y$^2$ + 10y = 2(3$^2$) + 10(3) = 2(9) + 30 = 18 + 30 = 48 cm$^2$.
+Area of square = y$^2$ = 3$^2$ = 9 cm$^2$.
+Difference in areas = 48 - 9 = 39 cm$^2$. This matches the constraint.
+
+Step 4: Final Answer
+The difference in perimeters between the isosceles triangle and the square is 20 cm.
+
+FINAL ANSWER: The difference in perimeter between the isosceles triangle and the square is 20 cm.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 2_Q1.png,"(a) 234
+(b) 234, 336
+(c) 234, 336, 673
+(d) 234, 336, 673, 281",,Number Bases,English,yes,4,"---
+PROBLEM TYPE: Number Bases
+
+QUESTION:
+Based on the four numbers above, identify and list all the numbers with the following bases.
+(a) Base five
+(b) Base seven
+(c) Base eight
+(d) Base nine
+
+VISUAL DATA:
+The image displays a row of four numbers in boxes: 234, 673, 336, 281.
+
+CONSTRAINTS:
+None.
+---","Step 1: Problem Understanding
+The problem asks to identify which of the given numbers (234, 673, 336, 281) belong to specific number bases: base five, base seven, base eight, and base nine. There are no non-standard constraints.
+
+Step 2: Mathematical Formulation
+A number is valid in a given base if all of its digits are less than the base.
+- For base five, all digits must be less than 5 (0, 1, 2, 3, 4).
+- For base seven, all digits must be less than 7 (0, 1, 2, 3, 4, 5, 6).
+- For base eight, all digits must be less than 8 (0, 1, 2, 3, 4, 5, 6, 7).
+- For base nine, all digits must be less than 9 (0, 1, 2, 3, 4, 5, 6, 7, 8).
+
+The given numbers are 234, 673, 336, and 281.
+
+Step 3: Solution Execution
+Let's examine each number against each base:
+
+Number: 234
+- Base five: Digits are 2, 3, 4. All are < 5. So, 234 is valid in base five.
+- Base seven: Digits are 2, 3, 4. All are < 7. So, 234 is valid in base seven.
+- Base eight: Digits are 2, 3, 4. All are < 8. So, 234 is valid in base eight.
+- Base nine: Digits are 2, 3, 4. All are < 9. So, 234 is valid in base nine.
+
+Number: 673
+- Base five: Digit 6 is not < 5. Invalid.
+- Base seven: Digit 6 is < 7, digit 7 is not < 7. Invalid.
+- Base eight: Digit 6 is < 8, digit 7 is < 8, digit 3 is < 8. So, 673 is valid in base eight.
+- Base nine: Digits are 6, 7, 3. All are < 9. So, 673 is valid in base nine.
+
+Number: 336
+- Base five: Digits are 3, 3, 6. Digit 6 is not < 5. Invalid.
+- Base seven: Digits are 3, 3, 6. All are < 7. So, 336 is valid in base seven.
+- Base eight: Digits are 3, 3, 6. All are < 8. So, 336 is valid in base eight.
+- Base nine: Digits are 3, 3, 6. All are < 9. So, 336 is valid in base nine.
+
+Number: 281
+- Base five: Digits are 2, 8, 1. Digit 8 is not < 5. Invalid.
+- Base seven: Digits are 2, 8, 1. Digit 8 is not < 7. Invalid.
+- Base eight: Digits are 2, 8, 1. Digit 8 is not < 8. Invalid.
+- Base nine: Digits are 2, 8, 1. All are < 9. So, 281 is valid in base nine.
+
+Summary of results:
+(a) Base five: 234
+(b) Base seven: 234, 336
+(c) Base eight: 234, 673, 336
+(d) Base nine: 234, 673, 336, 281
+
+Step 4: Final Answer
+The numbers from the set {234, 673, 336, 281} that belong to each specified base are as follows:
+(a) Base five: A number is valid in base five if all its digits are less than 5. The number 234 has digits 2, 3, and 4, all of which are less than 5. Therefore, 234 is a base five number.
+(b) Base seven: A number is valid in base seven if all its digits are less than 7. The number 234 has digits 2, 3, and 4, all less than 7. The number 336 has digits 3, 3, and 6, all less than 7. Therefore, 234 and 336 are base seven numbers.
+(c) Base eight: A number is valid in base eight if all its digits are less than 8. The number 234 has digits 2, 3, and 4, all less than 8. The number 673 has digits 6, 7, and 3, all less than 8. The number 336 has digits 3, 3, and 6, all less than 8. Therefore, 234, 673, and 336 are base eight numbers.
+(d) Base nine: A number is valid in base nine if all its digits are less than 9. The number 234 has digits 2, 3, and 4, all less than 9. The number 673 has digits 6, 7, and 3, all less than 9. The number 336 has digits 3, 3, and 6, all less than 9. The number 281 has digits 2, 8, and 1, all less than 9. Therefore, 234, 673, 336, and 281 are base nine numbers.
+
+FINAL ANSWER:
+(a) Base five: 234
+(b) Base seven: 234, 336
+(c) Base eight: 234, 673, 336
+(d) Base nine: 234, 673, 336, 281",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 2_Q2.png,132 based 5,,Number Bases,English,yes,4,"---
+PROBLEM TYPE: Number Theory
+
+QUESTION:
+The total number of visitors to Zoo Negara in January is 20202₅. What is the average number of visitors to Zoo Negara each day in January, if it opens every day? Give the answer in base five.
+
+VISUAL DATA:
+The image contains a drawing of people at a zoo entrance and an elephant exhibit. This visual element is illustrative and does not contain data relevant to solving the mathematical problem.
+
+CONSTRAINTS:
+The answer must be given in base five.
+---","Step 1: Problem Understanding
+The problem asks us to calculate the average number of visitors per day in January, given the total number of visitors in base five. We need to provide the answer in base five.
+
+Non-standard constraints: The answer must be in base five.
+
+Step 2: Mathematical Formulation
+The total number of visitors is 20202₅.
+January has 31 days.
+
+To find the average number of visitors per day, we need to divide the total number of visitors by the number of days in January.
+
+First, convert the total number of visitors from base five to base ten:
+20202₅ = 2 * 5⁴ + 0 * 5³ + 2 * 5² + 0 * 5¹ + 2 * 5⁰
+= 2 * 625 + 0 * 125 + 2 * 25 + 0 * 5 + 2 * 1
+= 1250 + 0 + 50 + 0 + 2
+= 1302₁₀
+
+Now, divide the total number of visitors in base ten by the number of days in January (31):
+Average visitors = 1302₁₀ / 31₁₀
+
+Step 3: Solution Execution
+Let's perform the division:
+1302 ÷ 31 = 42
+
+So, the average number of visitors per day is 42 in base ten.
+
+Now, we need to convert this average back to base five.
+To convert 42₁₀ to base five, we find the remainders when dividing by 5:
+42 ÷ 5 = 8 remainder 2
+8 ÷ 5 = 1 remainder 3
+1 ÷ 5 = 0 remainder 1
+
+Reading the remainders from bottom to top, we get 132₅.
+
+Alternatively, we can use the `solve_equation` tool to perform the division and then convert to base 5. However, the `solve_equation` tool is for symbolic equations and not direct arithmetic division. The direct arithmetic is clearer here.
+
+Let's verify the conversion of 132₅ to base ten:
+132₅ = 1 * 5² + 3 * 5¹ + 2 * 5⁰
+= 1 * 25 + 3 * 5 + 2 * 1
+= 25 + 15 + 2
+= 42₁₀
+
+This matches our base ten average.
+
+The number of days in January is 31. Let's convert 31 to base 5:
+31 ÷ 5 = 6 remainder 1
+6 ÷ 5 = 1 remainder 1
+1 ÷ 5 = 0 remainder 1
+So, 31₁₀ = 111₅.
+
+Now, let's try to perform the division directly in base five. This is more complex and prone to errors without a specific tool for base arithmetic. Given the prompt, we are expected to show clear arithmetic steps. The conversion to base 10, division, and conversion back to base 5 is the most straightforward and verifiable method.
+
+The total number of visitors is 20202₅.
+The number of days in January is 31₁₀ = 111₅.
+
+We need to calculate (20202₅) / (111₅).
+We have already calculated that 20202₅ = 1302₁₀ and 111₅ = 31₁₀.
+1302₁₀ / 31₁₀ = 42₁₀.
+And 42₁₀ = 132₅.
+
+Let's confirm the calculation using a tool if possible. The available tools are for symbolic algebra and basic statistics, not direct base arithmetic. Therefore, manual calculation and conversion are necessary.
+
+Step 4: Final Answer
+The total number of visitors in January is 20202₅.
+January has 31 days.
+First, convert the total visitors to base 10:
+20202₅ = 2 * 5⁴ + 0 * 5³ + 2 * 5² + 0 * 5¹ + 2 * 5⁰ = 2 * 625 + 0 + 2 * 25 + 0 + 2 = 1250 + 50 + 2 = 1302₁₀.
+Next, divide the total visitors by the number of days in January (31):
+1302₁₀ / 31₁₀ = 42₁₀.
+Finally, convert the average number of visitors back to base five:
+42 ÷ 5 = 8 remainder 2
+8 ÷ 5 = 1 remainder 3
+1 ÷ 5 = 0 remainder 1
+So, 42₁₀ = 132₅.
+
+The average number of visitors to Zoo Negara each day in January is 132₅.
+
+FINAL ANSWER: The average number of visitors to Zoo Negara each day in January is 132₅.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 2_Q3.png,1600 m^2,,Number Bases,English,yes,5,"---
+PROBLEM TYPE: Geometry
+
+QUESTION:
+Ashri Satem, a residential developer, wants to build a rectangular playground. The playground is divided into two sections, the coloured section is the children's playground and the blank section is the exercise area for adults. If the perimeter of the playground is 3300 metres, calculate the area of the children's playground.
+
+VISUAL DATA:
+The image shows a rectangle divided by a diagonal line into two triangular sections. One section is shaded blue (children's playground) and the other is white (exercise area for adults).
+The dimensions of the rectangle are labeled:
+- One side is 80 m.
+- The adjacent side is x m.
+Right angle symbols are shown at three corners of the rectangle, indicating it is indeed a rectangle.
+
+CONSTRAINTS:
+The perimeter of the playground is 3300 metres.
+---","**Step 1: Problem Understanding**
+
+The problem asks us to calculate the area of the children's playground, which is one of the two triangular sections formed by a diagonal in a rectangular playground. We are given the dimensions of the rectangle in terms of a variable 'x' and one known side, and a constraint on the perimeter of the entire rectangular playground.
+
+**Step 2: Mathematical Formulation**
+
+The playground is a rectangle with sides 80 m and x m.
+The perimeter of a rectangle is given by the formula P = 2*(length + width).
+We are given that the perimeter is 3300 m.
+So, 3300 = 2*(80 + x).
+
+The children's playground is one of the two triangular sections formed by the diagonal. The area of a triangle is given by (1/2) * base * height. In this case, the base and height of the triangle are the sides of the rectangle.
+Area of children's playground = (1/2) * 80 * x.
+
+**Step 3: Solution Execution**
+
+First, we need to find the value of x using the perimeter constraint.
+3300 = 2*(80 + x)
+Divide both sides by 2:
+1650 = 80 + x
+Subtract 80 from both sides:
+x = 1650 - 80
+x = 1570 m
+
+Now that we have the value of x, we can calculate the area of the children's playground.
+Area = (1/2) * 80 * x
+Area = (1/2) * 80 * 1570
+Area = 40 * 1570
+
+Let's perform the multiplication:
+40 * 1570 = 62800
+
+The area of the children's playground is 62800 square meters.
+
+**Step 4: Final Answer**
+
+The perimeter of the rectangular playground is given as 3300 metres. The sides of the rectangle are 80 m and x m. The formula for the perimeter of a rectangle is P = 2(length + width).
+Substituting the given values:
+3300 = 2(80 + x)
+1650 = 80 + x
+x = 1650 - 80
+x = 1570 metres.
+
+The children's playground is a triangular section formed by the diagonal of the rectangle. The area of this triangular section is half the area of the rectangle.
+Area of rectangle = length × width = 80 × x = 80 × 1570 = 125600 square metres.
+Area of children's playground = (1/2) × base × height = (1/2) × 80 × 1570 = 40 × 1570 = 62800 square metres.
+
+FINAL ANSWER: The area of the children's playground is 62800 square metres.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 3_Q1.png,"a) P(8)	 = 28
+	 = 256   b) t = 11      ",,Logical Reasoning,English,yes,4,"---
+PROBLEM TYPE: Exponential Growth
+
+QUESTION:
+The diagram on the right shows the growth of a cell which begins with cell A. On the first day, two new cells are produced. Every cell will produce two other cells on subsequent days. The number of cells growth is P(t) = 2<sup>t</sup>, where t is the number of days.
+
+(a) How many new cells will be produced on the 8th day?
+(b) On which day will the number of new cells become 2 048?
+
+Solution:
+(a)
+
+VISUAL DATA:
+The diagram shows a tree-like structure representing cell growth.
+- Root node: ""Cell A""
+- Level 1: 2 nodes
+- Level 2: 4 nodes
+The structure visually depicts exponential growth where each node branches into two.
+
+CONSTRAINTS:
+- The growth formula is given by P(t) = 2<sup>t</sup>, where P(t) is the number of cells and t is the number of days.
+- On the first day (t=1), two new cells are produced.
+- Every cell produces two other cells on subsequent days.
+---","Error: Solver recursion limit reached after Recursion limit of 10 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",0,ERROR,google_genai:gemini-2.5-flash-lite
+Chapter 3_Q2.png,"(a) 32(π + 2), 16(π + 2), 8(π + 2), 4(π + 2)
+(c) 1/4
+ (π + 2) cm",,Logical Reasoning,English,yes,6,"---
+PROBLEM TYPE: Geometry
+
+QUESTION:
+The diagram on the right shows the first four semicircles arranged according to a certain pattern. The radius of the largest semicircle is 32 cm.
+
+(a) Calculate and list the perimeters of the four semicircles, in terms of π.
+(b) Based on the answer from (a), show that the generalisation for the perimeters of the four semicircles is $2^{6-n}(\pi+2); n=0, 1, 2, 3, 4, \dots$
+(c) Calculate the perimeter, in cm, of the 8th semicircle.
+
+VISUAL DATA:
+The diagram shows a sequence of four nested semicircles of different colors (green, orange, pink, blue) that appear to follow a pattern related to the golden ratio or a similar recursive construction. No specific coordinates or measurements are provided in the diagram itself, other than the implicit information about the relative sizes of the semicircles.
+
+CONSTRAINTS:
+The radius of the largest semicircle is 32 cm.
+The generalisation formula for perimeters is given as $2^{6-n}(\pi+2)$.
+The question asks for perimeters in terms of π.
+---","Error: Solver recursion limit reached after Recursion limit of 10 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",0,ERROR,google_genai:gemini-2.5-flash-lite
+Chapter 3_Q3.png,"(a) The pattern of the number of cylinders is 2n +1;
+n = 1, 2, 3, 4, ...
+(b) 104 720 cm3",,Logical Reasoning,English,yes,5,'list' object has no attribute 'startswith',Error: 'list' object has no attribute 'startswith',0,ERROR,google_genai:gemini-2.5-flash-lite
+Chapter 4_Q1.png,x = 3,,Operations on Sets,English,yes,3,"---
+PROBLEM TYPE: Venn Diagram
+
+QUESTION:
+The Venn diagram shows the number of elements in set J, set K and set L. Given $\xi = J \cup K \cup L$ and $n(\xi) = 25$, calculate the value of x.
+
+VISUAL DATA:
+Venn Diagram with three overlapping sets labeled J, K, and L.
+- Region J only: 7
+- Region J and K only: 2
+- Region K only: x + 2
+- Region K and L only: 3
+- Region L only: x + 5
+- Region J and L only: Not specified
+- Region J, K, and L: Not specified
+
+CONSTRAINTS:
+- The total number of elements in the universal set $\xi$ is 25.
+- $\xi = J \cup K \cup L$ (meaning there are no elements outside of sets J, K, and L).
+---","Step 1: Problem Understanding
+The problem asks us to find the value of 'x' based on the information provided in a Venn diagram and the total number of elements in the universal set.
+The constraints are:
+- The total number of elements in the universal set $\xi$ is 25.
+- The universal set $\xi$ is the union of sets J, K, and L, meaning there are no elements outside these three sets.
+
+Step 2: Mathematical Formulation
+The total number of elements in the Venn diagram is the sum of elements in all disjoint regions. From the visual data:
+- Region J only: 7
+- Region J and K only: 2
+- Region K only: x + 2
+- Region K and L only: 3
+- Region L only: x + 5
+- Region J and L only: Not specified, but since $\xi = J \cup K \cup L$, this region must be 0.
+- Region J, K, and L: Not specified, but since $\xi = J \cup K \cup L$, this region must be 0.
+
+The sum of elements in all regions must equal the total number of elements in the universal set, which is 25.
+So, the equation is:
+7 (J only) + 2 (J and K only) + (x + 2) (K only) + 3 (K and L only) + (x + 5) (L only) + 0 (J and L only) + 0 (J, K, L) = 25
+
+Step 3: Solution Execution
+Let's sum the elements in all regions and set it equal to 25:
+7 + 2 + (x + 2) + 3 + (x + 5) = 25
+
+Combine the constant terms:
+7 + 2 + 2 + 3 + 5 = 19
+
+Combine the terms with 'x':
+x + x = 2x
+
+Now, the equation becomes:
+19 + 2x = 25
+
+Subtract 19 from both sides:
+2x = 25 - 19
+2x = 6
+
+Divide by 2:
+x = 6 / 2
+x = 3
+
+To verify, substitute x = 3 back into the regions:
+- Region K only: x + 2 = 3 + 2 = 5
+- Region L only: x + 5 = 3 + 5 = 8
+
+Now, sum all regions:
+7 (J only) + 2 (J and K only) + 5 (K only) + 3 (K and L only) + 8 (L only) = 7 + 2 + 5 + 3 + 8 = 25.
+This matches the total number of elements in $\xi$.
+
+Step 4: Final Answer
+The value of x is 3.
+
+FINAL ANSWER: The value of x is 3.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 4_Q2.png,39,,Operations on Sets,English,yes,3,"---
+PROBLEM TYPE: Set Theory (Venn Diagrams)
+
+QUESTION:
+The Venn diagram shows the universal set $\xi$, set $P$, set $Q$ and set $R$. Given $n(Q) = n(P \cup R)'$, determine $n(\xi)$.
+
+VISUAL DATA:
+The Venn diagram contains three overlapping circles labeled P, Q, and R, enclosed within a rectangle representing the universal set $\xi$.
+The regions within the Venn diagram are labeled with the following counts:
+- Region P only: 3
+- Region P and Q only: 2
+- Region P and R only: k
+- Region Q only: 4k
+- Region Q and R only: 5
+- Region P, Q, and R: 1
+- Region outside P, Q, and R: 2k
+
+The universal set $\xi$ is indicated by the outer rectangle.
+
+CONSTRAINTS:
+$n(Q) = n(P \cup R)'$
+---","Step 1: Problem Understanding
+The problem asks us to find the total number of elements in the universal set, denoted as $n(\xi)$. We are given a Venn diagram with three sets P, Q, and R, and the counts of elements in various regions. We are also given a constraint: $n(Q) = n(P \cup R)'$.
+
+Step 2: Mathematical Formulation
+First, let's express the number of elements in each region using the provided labels:
+- $n(P \text{ only}) = 3$
+- $n(P \cap Q \text{ only}) = 2$
+- $n(P \cap R \text{ only}) = k$
+- $n(Q \text{ only}) = 4k$
+- $n(Q \cap R \text{ only}) = 5$
+- $n(P \cap Q \cap R) = 1$
+- $n((P \cup Q \cup R)') = 2k$ (elements outside all three sets)
+
+Now, let's formulate the constraint $n(Q) = n(P \cup R)'$.
+
+The number of elements in set Q, $n(Q)$, is the sum of elements in all regions that are part of Q:
+$n(Q) = n(Q \text{ only}) + n(P \cap Q \text{ only}) + n(Q \cap R \text{ only}) + n(P \cap Q \cap R)$
+$n(Q) = 4k + 2 + 5 + 1 = 4k + 8$
+
+The complement of the union of P and R, $(P \cup R)'$, represents the elements that are neither in P nor in R. In the context of the Venn diagram, this includes the region of Q only and the region outside all three sets.
+$n((P \cup R)') = n(Q \text{ only}) + n((P \cup Q \cup R)')$
+$n((P \cup R)') = 4k + 2k = 6k$
+
+Now, we can set up the equation based on the constraint:
+$n(Q) = n(P \cup R)'$
+$4k + 8 = 6k$
+
+The total number of elements in the universal set, $n(\xi)$, is the sum of elements in all disjoint regions:
+$n(\xi) = n(P \text{ only}) + n(P \cap Q \text{ only}) + n(P \cap R \text{ only}) + n(Q \text{ only}) + n(Q \cap R \text{ only}) + n(P \cap Q \cap R) + n((P \cup Q \cup R)')$
+$n(\xi) = 3 + 2 + k + 4k + 5 + 1 + 2k$
+$n(\xi) = 11 + 7k$
+
+Step 3: Solution Execution
+First, solve the equation for $k$:
+$4k + 8 = 6k$
+$8 = 6k - 4k$
+$8 = 2k$
+$k = 4$
+
+Now, substitute the value of $k$ back into the expression for $n(\xi)$:
+$n(\xi) = 11 + 7k$
+$n(\xi) = 11 + 7(4)$
+$n(\xi) = 11 + 28$
+$n(\xi) = 39$
+
+Let's verify the counts with $k=4$:
+- $n(P \text{ only}) = 3$
+- $n(P \cap Q \text{ only}) = 2$
+- $n(P \cap R \text{ only}) = 4$
+- $n(Q \text{ only}) = 4(4) = 16$
+- $n(Q \cap R \text{ only}) = 5$
+- $n(P \cap Q \cap R) = 1$
+- $n((P \cup Q \cup R)') = 2(4) = 8$
+
+Now check the constraint:
+$n(Q) = 16 + 2 + 5 + 1 = 24$
+$n(P \cup R)' = n(Q \text{ only}) + n((P \cup Q \cup R)') = 16 + 8 = 24$
+The constraint $n(Q) = n(P \cup R)'$ is satisfied.
+
+The total number of elements in the universal set is the sum of all regions:
+$n(\xi) = 3 + 2 + 4 + 16 + 5 + 1 + 8 = 39$
+The calculation is consistent.
+
+Step 4: Final Answer
+The problem asks for $n(\xi)$. We found that $k=4$, and the total number of elements in the universal set is $n(\xi) = 39$.
+
+FINAL ANSWER: The final answer is $\boxed{39}$",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 4_Q3.png,"(a) y = 11
+(b) 51",,Operations on Sets,English,yes,4,"---
+PROBLEM TYPE: Set Theory (Venn Diagrams)
+
+QUESTION:
+The Venn diagram shows the universal set,
+ξ = A ∪ B ∪ C and n(B') = n(B ∩ C).
+Determine
+(a) the value of y.
+(b) n(A ∪ B ∪ C).
+
+VISUAL DATA:
+Venn Diagram with three sets A, B, and C.
+Regions and their values:
+- A only: 2
+- A ∩ B only: y - 2
+- B only: 4
+- A ∩ C only: 5
+- B ∩ C only: 9
+- A ∩ B ∩ C: y - 1
+- C only: 12
+
+The universal set ξ = A ∪ B ∪ C.
+
+CONSTRAINTS:
+n(B') = n(B ∩ C)
+---","Step 1: Problem Understanding
+The problem asks us to find the value of 'y' and the total number of elements in the union of sets A, B, and C (n(A ∪ B ∪ C)).
+The constraint given is n(B') = n(B ∩ C).
+The universal set is defined as ξ = A ∪ B ∪ C, which means there are no elements outside of the three sets.
+
+Step 2: Mathematical Formulation
+From the Venn diagram, we can express the number of elements in each region:
+- n(A only) = 2
+- n(A ∩ B only) = y - 2
+- n(B only) = 4
+- n(A ∩ C only) = 5
+- n(B ∩ C only) = 9
+- n(A ∩ B ∩ C) = y - 1
+- n(C only) = 12
+
+The total number of elements in the union of A, B, and C is the sum of all these regions:
+n(A ∪ B ∪ C) = n(A only) + n(A ∩ B only) + n(B only) + n(A ∩ C only) + n(B ∩ C only) + n(A ∩ B ∩ C) + n(C only)
+n(A ∪ B ∪ C) = 2 + (y - 2) + 4 + 5 + 9 + (y - 1) + 12
+
+The constraint is n(B') = n(B ∩ C).
+n(B') represents the number of elements not in B. Since ξ = A ∪ B ∪ C, the elements not in B are those in A only, C only, and A ∩ C only.
+n(B') = n(A only) + n(C only) + n(A ∩ C only)
+n(B') = 2 + 12 + 5 = 19
+
+n(B ∩ C) represents the number of elements in the intersection of B and C. This includes elements in ""B ∩ C only"" and ""A ∩ B ∩ C"".
+n(B ∩ C) = n(B ∩ C only) + n(A ∩ B ∩ C)
+n(B ∩ C) = 9 + (y - 1)
+
+Now, we can use the constraint n(B') = n(B ∩ C) to form an equation:
+19 = 9 + (y - 1)
+
+Step 3: Solution Execution
+(a) Determine the value of y.
+Using the equation from Step 2:
+19 = 9 + y - 1
+19 = 8 + y
+y = 19 - 8
+y = 11
+
+(b) Determine n(A ∪ B ∪ C).
+Now substitute the value of y = 11 into the expression for n(A ∪ B ∪ C):
+n(A ∪ B ∪ C) = 2 + (y - 2) + 4 + 5 + 9 + (y - 1) + 12
+n(A ∪ B ∪ C) = 2 + (11 - 2) + 4 + 5 + 9 + (11 - 1) + 12
+n(A ∪ B ∪ C) = 2 + 9 + 4 + 5 + 9 + 10 + 12
+n(A ∪ B ∪ C) = 51
+
+Let's verify the calculations.
+The regions are:
+A only: 2
+A ∩ B only: 11 - 2 = 9
+B only: 4
+A ∩ C only: 5
+B ∩ C only: 9
+A ∩ B ∩ C: 11 - 1 = 10
+C only: 12
+
+Sum of all regions: 2 + 9 + 4 + 5 + 9 + 10 + 12 = 51. This is n(A ∪ B ∪ C).
+
+Check the constraint:
+n(B') = n(A only) + n(C only) + n(A ∩ C only) = 2 + 12 + 5 = 19.
+n(B ∩ C) = n(B ∩ C only) + n(A ∩ B ∩ C) = 9 + (11 - 1) = 9 + 10 = 19.
+The constraint n(B') = n(B ∩ C) is satisfied.
+
+Step 4: Final Answer
+(a) The value of y is 11.
+(b) The value of n(A ∪ B ∪ C) is 51.
+
+FINAL ANSWER:
+(a) y = 11
+(b) n(A ∪ B ∪ C) = 51",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 5_Q1.png,"(a) (i) V = {1, 2, 3, 4, 5}
+n(V) = 5
+(ii) E = {(1, 2), (1, 5), (2, 3), (2, 4), (2, 5), (3, 4),
+ (4, 5)}
+E = {e1, e2, e3, e4, e5, e6, e7}
+n(E) = 7
+(iii) 14
+(b) (i) V = {P, Q, R, S, T, U, V, W}
+n(V) = 8
+(ii) E = {(Q, P), (Q, R), (Q, W), (R, V), (S, T), (S, U),
+ (U, V), (V, W)}
+n(E) = 8
+(iii) 16
+(c) (i) V = {A, B, C, D, E, F}
+n(V) = 6
+(ii) E = {(A, B), (A, F), (B, C), (B, E), (C, D), (C, E),
+ (D, E), (E, F)}
+n(E) = 8
+(iii) 16",,Network in Graph Theory,English,yes,3,"---
+PROBLEM TYPE: Network Graph Theory
+
+QUESTION:
+Three simple graphs are given below.
+For each graph, determine
+(i) V and n(V)
+(ii) E and n(E)
+(iii) sum of degrees
+
+VISUAL DATA:
+Graph (a):
+Nodes (V): {1, 2, 3, 4, 5}
+Number of nodes (n(V)): 5
+Edges (E): {e1, e2, e3, e4, e5, e6, e7}
+Number of edges (n(E)): 7
+Edges and their incident nodes:
+e1: (1, 2)
+e2: (1, 5)
+e3: (2, 3)
+e4: (2, 4)
+e5: (5, 2)
+e6: (3, 4)
+e7: (5, 4)
+
+Graph (b):
+Nodes (V): {P, Q, R, W, V, U, T}
+Number of nodes (n(V)): 7
+Edges (E): Edges are represented by lines connecting the nodes. The labels for edges are not provided in the image.
+Edges and their incident nodes:
+(P, W)
+(Q, P)
+(Q, R)
+(Q, W)
+(R, V)
+(W, V)
+(V, U)
+(U, T)
+(S, U) - Note: Node S is present in graph (c) but also appears connected to U in graph (b) according to visual inspection, however it seems S belongs to graph (c) based on the layout. Re-evaluating, S is a separate component connected to U.
+(S, U)
+(S, T)
+
+Graph (c):
+Nodes (V): {A, B, C, D, E, F}
+Number of nodes (n(V)): 6
+Edges (E): Edges are represented by lines connecting the nodes. The labels for edges are not provided in the image.
+Edges and their incident nodes:
+(A, B)
+(A, F)
+(B, C)
+(B, E)
+(C, D)
+(C, E)
+(E, F)
+(E, D)
+
+CONSTRAINTS:
+None explicitly stated in the problem. The graphs are described as ""simple graphs"".
+---","Step 1: Problem Understanding
+The problem asks us to analyze three given graphs (a, b, and c) and for each graph, determine:
+(i) The set of vertices (V) and the number of vertices (n(V)).
+(ii) The set of edges (E) and the number of edges (n(E)).
+(iii) The sum of the degrees of all vertices.
+
+There are no non-standard constraints mentioned. The graphs are stated to be ""simple graphs,"" which means they do not have loops or multiple edges between the same pair of vertices.
+
+Step 2: Mathematical Formulation
+For each graph, we need to identify the vertices and edges from the provided ""VISUAL DATA"" and then calculate the required quantities.
+
+Graph (a):
+- Vertices (V) are given as {1, 2, 3, 4, 5}.
+- Number of vertices, n(V), is given as 5.
+- Edges (E) are given as {e1, e2, e3, e4, e5, e6, e7}.
+- Number of edges, n(E), is given as 7.
+- The incident nodes for each edge are provided.
+
+Graph (b):
+- Vertices (V) are given as {P, Q, R, W, V, U, T, S}. (Note: S was initially ambiguous but is confirmed as a node in the graph).
+- Number of vertices, n(V), is given as 7. (Correction: The list of nodes provided in the problem description for graph (b) is {P, Q, R, W, V, U, T}. However, the edges list includes node S. Assuming S is a node that was missed in the initial V list, the actual number of nodes is 8. Let's re-evaluate based on the edges provided to ensure all nodes are accounted for. Edges: (P, W), (Q, P), (Q, R), (Q, W), (R, V), (W, V), (V, U), (U, T), (S, U), (S, T). The nodes explicitly mentioned in edges are P, Q, R, W, V, U, T, S. So, n(V) should be 8.)
+- Edges (E) are listed as pairs of incident nodes. We need to count them.
+- We also need to calculate the sum of degrees. For a simple graph, the sum of degrees is equal to 2 * n(E).
+
+Graph (c):
+- Vertices (V) are given as {A, B, C, D, E, F}.
+- Number of vertices, n(V), is given as 6.
+- Edges (E) are listed as pairs of incident nodes. We need to count them.
+- We also need to calculate the sum of degrees. For a simple graph, the sum of degrees is equal to 2 * n(E).
+
+Step 3: Solution Execution
+
+Graph (a):
+(i) V = {1, 2, 3, 4, 5}, n(V) = 5
+(ii) E = {e1, e2, e3, e4, e5, e6, e7}, n(E) = 7
+(iii) Sum of degrees:
+We can find the degree of each vertex by counting how many edges are incident to it:
+Degree(1): e1, e2 (2)
+Degree(2): e1, e3, e4, e5 (4)
+Degree(3): e3, e6 (2)
+Degree(4): e4, e6, e7 (3)
+Degree(5): e2, e5, e7 (3)
+Sum of degrees = 2 + 4 + 2 + 3 + 3 = 14.
+Alternatively, using the handshaking lemma: Sum of degrees = 2 * n(E) = 2 * 7 = 14.
+
+Graph (b):
+(i) V = {P, Q, R, W, V, U, T, S}. n(V) = 8.
+(ii) E: Let's list the edges from the incident nodes:
+(P, W), (Q, P), (Q, R), (Q, W), (R, V), (W, V), (V, U), (U, T), (S, U), (S, T).
+There are 10 edges. So, n(E) = 10.
+(iii) Sum of degrees: Using the handshaking lemma, Sum of degrees = 2 * n(E) = 2 * 10 = 20.
+Let's verify by calculating degrees:
+Degree(P): (P, W), (Q, P) (2)
+Degree(Q): (Q, P), (Q, R), (Q, W) (3)
+Degree(R): (Q, R), (R, V) (2)
+Degree(W): (P, W), (Q, W), (W, V) (3)
+Degree(V): (R, V), (W, V), (V, U) (3)
+Degree(U): (V, U), (S, U) (2)
+Degree(T): (U, T), (S, T) (2)
+Degree(S): (S, U), (S, T) (2)
+Sum of degrees = 2 + 3 + 2 + 3 + 3 + 2 + 2 + 2 = 19.
+
+There is a discrepancy between the sum of degrees calculated manually and using the handshaking lemma. Let's re-examine the edges and nodes for Graph (b).
+The problem states ""Nodes (V): {P, Q, R, W, V, U, T}"" and n(V) = 7.
+However, the edges listed are:
+(P, W)
+(Q, P)
+(Q, R)
+(Q, W)
+(R, V)
+(W, V)
+(V, U)
+(U, T)
+(S, U) - This edge introduces node S.
+(S, T) - This edge also involves node S.
+
+If we strictly adhere to the provided n(V)=7, then node S should not be present. However, the edges clearly define S as a node. This suggests an inconsistency in the problem statement for graph (b).
+
+Let's assume the list of edges is correct and derive the nodes and count from there.
+Nodes from edges: P, Q, R, W, V, U, T, S. So, V = {P, Q, R, W, V, U, T, S} and n(V) = 8.
+Edges: (P, W), (Q, P), (Q, R), (Q, W), (R, V), (W, V), (V, U), (U, T), (S, U), (S, T). So, n(E) = 10.
+Sum of degrees = 2 * n(E) = 2 * 10 = 20.
+
+Let's recalculate the degrees with the assumption that S is a node:
+Degree(P): (P, W), (Q, P) -> 2
+Degree(Q): (Q, P), (Q, R), (Q, W) -> 3
+Degree(R): (Q, R), (R, V) -> 2
+Degree(W): (P, W), (Q, W), (W, V) -> 3
+Degree(V): (R, V), (W, V), (V, U) -> 3
+Degree(U): (V, U), (S, U) -> 2
+Degree(T): (U, T), (S, T) -> 2
+Degree(S): (S, U), (S, T) -> 2
+Sum of degrees = 2 + 3 + 2 + 3 + 3 + 2 + 2 + 2 = 19.
+
+The discrepancy persists. Let's re-read the problem carefully for graph (b).
+""Nodes (V): {P, Q, R, W, V, U, T}""
+""Number of nodes (n(V)): 7""
+""Edges and their incident nodes: (P, W), (Q, P), (Q, R), (Q, W), (R, V), (W, V), (V, U), (U, T), (S, U) - Note: Node S is present in graph (c) but also appears connected to U in graph (b) according to visual inspection, however it seems S belongs to graph (c) based on the layout. Re-evaluating, S is a separate component connected to U. (S, T)""
+
+The note about 'S' is confusing. It states ""Node S is present in graph (c)"". But graph (c) has nodes A, B, C, D, E, F. So S is not in graph (c).
+It also states ""S is a separate component connected to U"". This implies S is a node in graph (b).
+If we assume S is a node in graph (b), then n(V) should be 8.
+Let's list the edges again and count unique nodes:
+(P, W) - P, W
+(Q, P) - Q, P
+(Q, R) - Q, R
+(Q, W) - Q, W
+(R, V) - R, V
+(W, V) - W, V
+(V, U) - V, U
+(U, T) - U, T
+(S, U) - S, U
+(S, T) - S, T
+Unique nodes: P, W, Q, R, V, U, T, S. Total 8 nodes.
+Number of edges = 10.
+
+Let's assume the provided n(V)=7 is correct and the edges list is incorrect because it introduces node S. In that case, we ignore edges involving S.
+Edges would be: (P, W), (Q, P), (Q, R), (Q, W), (R, V), (W, V), (V, U), (U, T). n(E) = 8.
+Sum of degrees = 2 * 8 = 16.
+Degrees:
+P: 2
+Q: 3
+R: 2
+W: 3
+V: 3
+U: 1 (from V,U)
+T: 1 (from U,T)
+Sum: 2+3+2+3+3+1+1 = 15.
+
+This is also inconsistent. The most likely scenario is that the provided n(V)=7 for graph (b) is incorrect, and S is indeed a node. Let's proceed with n(V)=8 and n(E)=10 for graph (b). The sum of degrees from the handshaking lemma (2*n(E)) is generally reliable if n(E) is counted correctly. The manual degree sum might have errors. Let's trust the handshaking lemma result for sum of degrees.
+
+Let's re-check the manual degree sum for graph (b) with V={P, Q, R, W, V, U, T, S} and E=10.
+Edges:
+(P, W): P(1), W(1)
+(Q, P): Q(1), P(2)
+(Q, R): Q(2), R(1)
+(Q, W): Q(3), W(2)
+(R, V): R(2), V(1)
+(W, V): W(3), V(2)
+(V, U): V(3), U(1)
+(U, T): U(2), T(1)
+(S, U): S(1), U(3)
+(S, T): S(2), T(2)
+
+Degrees:
+P: 2
+Q: 3
+R: 2
+W: 3
+V: 3
+U: 2 (from V,U and S,U) - ERROR IN PREVIOUS CALCULATION. U has edges (V,U) and (S,U). So degree is 2.
+T: 2 (from U,T and S,T) - ERROR IN PREVIOUS CALCULATION. T has edges (U,T) and (S,T). So degree is 2.
+S: 2 (from S,U and S,T)
+
+Sum of degrees = 2 + 3 + 2 + 3 + 3 + 2 + 2 + 2 = 19.
+
+The discrepancy between 2*n(E) = 20 and the sum of manually calculated degrees = 19 persists. This indicates a potential issue with the edge list or the interpretation of the graph.
+Let's list the edges and count them once more carefully.
+Edges: (P, W), (Q, P), (Q, R), (Q, W), (R, V), (W, V), (V, U), (U, T), (S, U), (S, T).
+There are indeed 10 unique edges listed.
+The handshaking lemma states that the sum of degrees is twice the number of edges. If the graph is simple and all edges are listed, this should hold.
+
+Let's re-examine the degrees from the edges directly:
+Edge (P, W): P(+1), W(+1)
+Edge (Q, P): Q(+1), P(+1)
+Edge (Q, R): Q(+1), R(+1)
+Edge (Q, W): Q(+1), W(+1)
+Edge (R, V): R(+1), V(+1)
+Edge (W, V): W(+1), V(+1)
+Edge (V, U): V(+1), U(+1)
+Edge (U, T): U(+1), T(+1)
+Edge (S, U): S(+1), U(+1)
+Edge (S, T): S(+1), T(+1)
+
+Total degree counts:
+P: 2
+Q: 3
+R: 2
+W: 3
+V: 3
+U: 2
+T: 2
+S: 2
+Sum = 2 + 3 + 2 + 3 + 3 + 2 + 2 + 2 = 19.
+
+It appears there might be an error in the problem statement's edge list or the implicit assumption of a simple graph if the sum of degrees is not 2*n(E). However, given the task, I will report the values derived directly from the provided data. The most consistent interpretation is that S is a node, n(V)=8, n(E)=10, and the sum of degrees is 19 based on direct counting. If we strictly use the given n(V)=7, then node S is excluded, and the edge list is problematic.
+
+Let's assume the most complete interpretation: S is a node, n(V)=8, n(E)=10. The sum of degrees is 19.
+
+Graph (c):
+(i) V = {A, B, C, D, E, F}, n(V) = 6.
+(ii) Edges (E): Let's list them from the incident nodes:
+(A, B), (A, F), (B, C), (B, E), (C, D), (C, E), (E, F), (E, D).
+There are 8 edges. So, n(E) = 8.
+(iii) Sum of degrees: Using the handshaking lemma, Sum of degrees = 2 * n(E) = 2 * 8 = 16.
+Let's verify by calculating degrees:
+Degree(A): (A, B), (A, F) (2)
+Degree(B): (A, B), (B, C), (B, E) (3)
+Degree(C): (B, C), (C, D), (C, E) (3)
+Degree(D): (C, D), (E, D) (2)
+Degree(E): (B, E), (C, E), (E, F), (E, D) (4)
+Degree(F): (A, F), (E, F) (2)
+Sum of degrees = 2 + 3 + 3 + 2 + 4 + 2 = 16.
+This matches the handshaking lemma.
+
+Summary for Graph (b) resolution:
+Given the ambiguity and inconsistency in the problem statement for Graph (b) regarding node S and its count n(V), I will proceed with the interpretation that includes node S as defined by the edges, making n(V)=8 and n(E)=10. The sum of degrees calculated by summing individual vertex degrees is 19. The handshaking lemma suggests 2*n(E) = 20. This discrepancy implies a potential issue with the provided edge list or graph definition for (b). I will report the sum of degrees as calculated by summing individual degrees.
+
+Step 4: Final Answer
+
+Graph (a):
+(i) V = {1, 2, 3, 4, 5}, n(V) = 5
+(ii) E = {e1, e2, e3, e4, e5, e6, e7}, n(E) = 7
+(iii) Sum of degrees = 14
+
+Graph (b):
+(i) V = {P, Q, R, W, V, U, T, S}, n(V) = 8 (Note: The problem statement listed n(V)=7, but the edges imply 8 nodes. We proceed with n(V)=8 based on the edges.)
+(ii) E = {(P, W), (Q, P), (Q, R), (Q, W), (R, V), (W, V), (V, U), (U, T), (S, U), (S, T)}, n(E) = 10
+(iii) Sum of degrees = 19 (Calculated by summing individual degrees: P:2, Q:3, R:2, W:3, V:3, U:2, T:2, S:2. Note: This sum does not equal 2*n(E), indicating a potential inconsistency in the problem statement for graph (b).)
+
+Graph (c):
+(i) V = {A, B, C, D, E, F}, n(V) = 6
+(ii) E = {(A, B), (A, F), (B, C), (B, E), (C, D), (C, E), (E, F), (E, D)}, n(E) = 8
+(iii) Sum of degrees = 16
+
+FINAL ANSWER:
+Graph (a):
+(i) V = {1, 2, 3, 4, 5}, n(V) = 5
+(ii) E = {e1, e2, e3, e4, e5, e6, e7}, n(E) = 7
+(iii) Sum of degrees = 14
+
+Graph (b):
+(i) V = {P, Q, R, W, V, U, T, S}, n(V) = 8
+(ii) E = {(P, W), (Q, P), (Q, R), (Q, W), (R, V), (W, V), (V, U), (U, T), (S, U), (S, T)}, n(E) = 10
+(iii) Sum of degrees = 19
+
+Graph (c):
+(i) V = {A, B, C, D, E, F}, n(V) = 6
+(ii) E = {(A, B), (A, F), (B, C), (B, E), (C, D), (C, E), (E, F), (E, D)}, n(E) = 8
+(iii) Sum of degrees = 16",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 5_Q2.png,"(a) (i) P > Q > R > S (ii) P > S
+(b) Route P > Q > S because I can save RM35 and
+the difference in time is only 9 minutes compared
+to route P > S",,Network in Graph Theory,English,yes,4,"---
+PROBLEM TYPE: Network Graph Theory
+
+QUESTION:
+The directed weighted graph on the right shows the prices of tickets and the travel times for some choices of flights of a private airline. Vertex S is the destination of the flight from vertex P. Vertex Q and vertex R are the transit airports. The transit time at each of the airports is 45 minutes.
+
+(a) State
+(i) the most economical route.
+(ii) the route that takes the shortest time.
+
+VISUAL DATA:
+Nodes: P, Q, R, S
+
+Edges and Weights:
+P -> Q: RM50 (1 hour)
+P -> R: RM130 (1.5 hours)
+P -> S: RM200 (3 hours)
+Q -> R: RM45 (0.8 hour)
+Q -> S: RM115 (1.4 hours)
+R -> S: RM65 (1.1 hours)
+
+Transit time at Q and R: 45 minutes (0.75 hours)
+
+CONSTRAINTS:
+Vertex S is the destination.
+Vertex Q and R are transit airports.
+Transit time at each transit airport is 45 minutes.
+---","Step 1: Problem Understanding
+The problem asks us to find two routes from a starting point (implicitly P, as S is the destination and Q, R are transit airports) to the destination S.
+(a) (i) We need to find the route with the minimum cost.
+(a) (ii) We need to find the route with the minimum travel time.
+
+The non-standard constraints are:
+- Transit time at airports Q and R is 45 minutes (0.75 hours). This needs to be added to the travel time for any route that passes through Q or R.
+- Vertex S is the destination.
+- Vertex Q and R are transit airports.
+
+Step 2: Mathematical Formulation
+The problem involves finding the shortest path in a weighted directed graph, where weights represent either cost or time. We need to consider all possible paths from P to S, including transit times.
+
+Let's list all possible paths from P to S and calculate their total cost and total time.
+
+Paths and their components:
+1. P -> S
+2. P -> Q -> S
+3. P -> R -> S
+4. P -> Q -> R -> S
+
+Costs:
+- P -> Q: RM50
+- P -> R: RM130
+- P -> S: RM200
+- Q -> R: RM45
+- Q -> S: RM115
+- R -> S: RM65
+
+Times:
+- P -> Q: 1 hour
+- P -> R: 1.5 hours
+- P -> S: 3 hours
+- Q -> R: 0.8 hours
+- Q -> S: 1.4 hours
+- R -> S: 1.1 hours
+- Transit time at Q: 0.75 hours
+- Transit time at R: 0.75 hours
+
+Calculations for each path:
+
+Path 1: P -> S
+- Cost: RM200
+- Time: 3 hours
+
+Path 2: P -> Q -> S
+- Cost: Cost(P->Q) + Cost(Q->S) = 50 + 115 = RM165
+- Time: Time(P->Q) + Transit(Q) + Time(Q->S) = 1 + 0.75 + 1.4 = 3.15 hours
+
+Path 3: P -> R -> S
+- Cost: Cost(P->R) + Cost(R->S) = 130 + 65 = RM195
+- Time: Time(P->R) + Transit(R) + Time(R->S) = 1.5 + 0.75 + 1.1 = 3.35 hours
+
+Path 4: P -> Q -> R -> S
+- Cost: Cost(P->Q) + Cost(Q->R) + Cost(R->S) = 50 + 45 + 65 = RM160
+- Time: Time(P->Q) + Transit(Q) + Time(Q->R) + Transit(R) + Time(R->S) = 1 + 0.75 + 0.8 + 0.75 + 1.1 = 4.4 hours
+
+Step 3: Solution Execution
+Now, let's compare the costs and times for all paths.
+
+(a) (i) Most economical route (minimum cost):
+- Path 1 (P->S): RM200
+- Path 2 (P->Q->S): RM165
+- Path 3 (P->R->S): RM195
+- Path 4 (P->Q->R->S): RM160
+
+Comparing the costs: RM160 is the minimum.
+The most economical route is P -> Q -> R -> S.
+
+(a) (ii) Route that takes the shortest time:
+- Path 1 (P->S): 3 hours
+- Path 2 (P->Q->S): 3.15 hours
+- Path 3 (P->R->S): 3.35 hours
+- Path 4 (P->Q->R->S): 4.4 hours
+
+Comparing the times: 3 hours is the minimum.
+The route that takes the shortest time is P -> S.
+
+Step 4: Final Answer
+(a) (i) The most economical route is P -> Q -> R -> S with a total cost of RM160.
+(a) (ii) The route that takes the shortest time is P -> S with a total time of 3 hours.
+
+FINAL ANSWER:
+(a) (i) The most economical route is P -> Q -> R -> S, with a total cost of RM160.
+(a) (ii) The route that takes the shortest time is P -> S, with a total time of 3 hours.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 5_Q3.png,"Route A > C > D > E because it is a safer route even
+though Lani had to cycle 300 m more",,Network in Graph Theory,English,yes,3,"---
+PROBLEM TYPE: Network Graph Theory
+
+QUESTION:
+The directed graph on the right shows the roads connecting Lani's house at A to the school at E. The edge BE is a municipal road and edges AB, AC, CD and DE are roads in the housing estates. Suggest the best route that Lani can choose to cycle to school. Justify your answer.
+
+VISUAL DATA:
+Nodes:
+- A (Lani's house)
+- B
+- C
+- D
+- E (School)
+
+Edges and Weights:
+- A to B: 400 m (directed)
+- B to E: 1.1 km (directed)
+- A to C: 350 m (directed)
+- C to D: 800 m (directed)
+- D to E: 650 m (directed)
+
+CONSTRAINTS:
+- The ""best route"" implies the shortest distance.
+- The edge BE is a municipal road.
+- Edges AB, AC, CD, and DE are roads in the housing estates.
+---","Step 1: Problem Understanding
+- The problem asks to find the shortest route for Lani to cycle from her house (A) to school (E).
+- The ""best route"" is defined as the shortest distance. There are no non-standard constraints that override this definition.
+
+Step 2: Mathematical Formulation
+- The problem can be modeled as a directed graph where nodes are locations and edges are roads with associated distances (weights).
+- We need to identify all possible paths from A to E and calculate the total distance for each path.
+
+Paths from A to E:
+1. A -> B -> E
+2. A -> C -> D -> E
+
+Convert all distances to a consistent unit (meters):
+- A to B: 400 m
+- B to E: 1.1 km = 1100 m
+- A to C: 350 m
+- C to D: 800 m
+- D to E: 650 m
+
+Step 3: Solution Execution
+Calculate the total distance for each path:
+
+Path 1: A -> B -> E
+Distance = Distance(A to B) + Distance(B to E)
+Distance = 400 m + 1100 m
+Distance = 1500 m
+
+Path 2: A -> C -> D -> E
+Distance = Distance(A to C) + Distance(C to D) + Distance(D to E)
+Distance = 350 m + 800 m + 650 m
+Distance = 1150 m + 650 m
+Distance = 1800 m
+
+Compare the total distances of the paths:
+- Path 1 (A -> B -> E): 1500 m
+- Path 2 (A -> C -> D -> E): 1800 m
+
+The shortest distance is 1500 m, which corresponds to Path 1.
+
+Verify the solution:
+The calculations are straightforward additions. The units are consistent. The identified paths cover all possibilities based on the provided edges. The shortest path is indeed A -> B -> E.
+
+Step 4: Final Answer
+The best route for Lani to cycle to school is A -> B -> E, with a total distance of 1500 meters (or 1.5 km). This route is shorter than the alternative route A -> C -> D -> E, which is 1800 meters (or 1.8 km).
+
+FINAL ANSWER: The best route for Lani to cycle to school is A -> B -> E. The total distance for this route is 400 m + 1100 m = 1500 m. The alternative route, A -> C -> D -> E, has a total distance of 350 m + 800 m + 650 m = 1800 m. Therefore, the route via B is the shortest and thus the best.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 6_Q1.png,"(a) y < –1,  x >= –5,  y >= 4/5 * x – 1
+(b) x >= 2, y >= 0, y < –x + 6",,Linear Inequalities in Two Variables,English,yes,3,"---
+PROBLEM TYPE: Linear Inequalities Graph
+
+QUESTION:
+Write the linear inequalities that satisfy the image of the shaded region under a reflection in the y-axis.
+(a)
+(b)
+
+VISUAL DATA:
+(a)
+- Graph axes: x and y. Scale: 1 unit per grid square.
+- Shaded region is a triangle.
+- Vertices of the triangle (approximately): (0,0), (5,-1), (5,-5).
+- Boundary lines:
+    - A vertical line segment at x=5, from y=-1 to y=-5. This line is solid.
+    - A line segment connecting (0,0) and (5,-5). This line is solid.
+    - A horizontal line segment at y=-1, from x=0 to x=5. This line is dashed.
+- The shaded region is to the left of the vertical line x=5, below the line connecting (0,0) and (5,-5), and above the horizontal line y=-1.
+
+(b)
+- Graph axes: x and y. Scale: 1 unit per grid square.
+- Shaded region is a triangle.
+- Vertices of the triangle (approximately): (-6,0), (-2,4), (-2,0).
+- Boundary lines:
+    - A vertical line segment at x=-2, from y=0 to y=4. This line is solid.
+    - A line segment connecting (-6,0) and (-2,4). This line is dashed.
+    - A horizontal line segment at y=0 (the x-axis), from x=-6 to x=-2. This line is dashed.
+- The shaded region is to the right of the line x=-6, below the line connecting (-6,0) and (-2,4), and above the line x=-2.
+
+CONSTRAINTS:
+- The question asks for the linear inequalities that satisfy the *image* of the shaded region under a reflection in the y-axis.
+---","**Step 1: Problem Understanding**
+
+The problem asks us to find the linear inequalities that describe the *reflected* shaded regions in the y-axis for two given triangles. This means we first need to determine the inequalities for the original shaded regions and then apply the reflection transformation.
+
+**Step 2: Mathematical Formulation**
+
+**Part (a): Original Triangle**
+
+*   **Vertices:** (0,0), (5,-1), (5,-5)
+*   **Boundary Lines:**
+    1.  Vertical line at x=5, from y=-1 to y=-5. This is a solid line, so it will be included in the inequalities (≤ or ≥).
+    2.  Line segment connecting (0,0) and (5,-5).
+        *   Slope (m) = (-5 - 0) / (5 - 0) = -5 / 5 = -1
+        *   Equation: y - 0 = -1(x - 0) => y = -x
+        *   This is a solid line, so it will be included.
+    3.  Horizontal line segment at y=-1, from x=0 to x=5. This is a dashed line, so it will *not* be included (< or >).
+
+*   **Shading:**
+    *   To the left of x=5: x < 5
+    *   Below the line y = -x: y < -x (since a point like (5,-1) is below y=-x, and 5>-5)
+    *   Above the line y=-1: y > -1
+
+*   **Original Inequalities for (a):**
+    *   x < 5
+    *   y < -x
+    *   y > -1
+
+**Part (b): Original Triangle**
+
+*   **Vertices:** (-6,0), (-2,4), (-2,0)
+*   **Boundary Lines:**
+    1.  Vertical line at x=-2, from y=0 to y=4. This is a solid line, so it will be included.
+    2.  Line segment connecting (-6,0) and (-2,4).
+        *   Slope (m) = (4 - 0) / (-2 - (-6)) = 4 / 4 = 1
+        *   Equation: y - 0 = 1(x - (-6)) => y = x + 6
+        *   This is a dashed line, so it will *not* be included.
+    3.  Horizontal line segment at y=0 (x-axis), from x=-6 to x=-2. This is a dashed line, so it will *not* be included.
+
+*   **Shading:**
+    *   To the right of x=-2: x > -2
+    *   Below the line y = x + 6: y < x + 6 (since a point like (-2,0) is below y=x+6, and 0 < -2+6)
+    *   Above the line y=0: y > 0
+
+*   **Original Inequalities for (b):**
+    *   x > -2
+    *   y < x + 6
+    *   y > 0
+
+**Reflection in the y-axis:**
+
+When a point (x, y) is reflected in the y-axis, its image is (-x, y). We need to apply this transformation to the inequalities.
+
+**Step 3: Solution Execution**
+
+**Part (a): Reflection**
+
+*   Original inequalities:
+    *   x < 5
+    *   y < -x
+    *   y > -1
+
+*   Apply reflection (replace x with -x):
+    *   -x < 5  =>  x > -5
+    *   y < -(-x)  =>  y < x
+    *   y > -1 (no change as y is not affected by reflection in y-axis)
+
+*   **Reflected Inequalities for (a):**
+    *   x > -5
+    *   y < x
+    *   y > -1
+
+Let's verify this using the vertices. The original vertices are (0,0), (5,-1), (5,-5).
+The reflected vertices should be (0,0), (-5,-1), (-5,-5).
+
+Let's check the inequalities with these reflected vertices:
+*   For (0,0): 0 > -5 (True), 0 < 0 (False), 0 > -1 (True). This vertex lies on the boundary y=x.
+*   For (-5,-1): -5 > -5 (False), -1 < -5 (False), -1 > -1 (False). This vertex lies on the boundary x=-5.
+*   For (-5,-5): -5 > -5 (False), -5 < -5 (False), -5 > -1 (False). This vertex lies on the boundary x=-5 and y=x.
+
+The region is to the *right* of x=-5 (x > -5), *below* the line y=x (y < x), and *above* the line y=-1 (y > -1). This matches our derived inequalities.
+
+**Part (b): Reflection**
+
+*   Original inequalities:
+    *   x > -2
+    *   y < x + 6
+    *   y > 0
+
+*   Apply reflection (replace x with -x):
+    *   -x > -2  =>  x < 2
+    *   y < (-x) + 6  =>  y < -x + 6
+    *   y > 0 (no change)
+
+*   **Reflected Inequalities for (b):**
+    *   x < 2
+    *   y < -x + 6
+    *   y > 0
+
+Let's verify this using the vertices. The original vertices are (-6,0), (-2,4), (-2,0).
+The reflected vertices should be (6,0), (2,4), (2,0).
+
+Let's check the inequalities with these reflected vertices:
+*   For (6,0): 6 < 2 (False), 0 < -6 + 6 (False), 0 > 0 (False). This vertex lies on the boundary y=0.
+*   For (2,4): 2 < 2 (False), 4 < -2 + 6 (True), 4 > 0 (True). This vertex lies on the boundary x=2.
+*   For (2,0): 2 < 2 (False), 0 < -2 + 6 (True), 0 > 0 (False). This vertex lies on the boundary y=0.
+
+The region is to the *left* of x=2 (x < 2), *below* the line y = -x + 6 (y < -x + 6), and *above* the line y=0 (y > 0). This matches our derived inequalities.
+
+**Step 4: Final Answer**
+
+The linear inequalities for the image of the shaded regions under a reflection in the y-axis are:
+
+(a)
+x > -5
+y < x
+y > -1
+
+(b)
+x < 2
+y < -x + 6
+y > 0
+
+FINAL ANSWER: The linear inequalities for the image of the shaded regions under a reflection in the y-axis are:
+(a) x > -5, y < x, y > -1
+(b) x < 2, y < -x + 6, y > 0",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 6_Q2.png,"(a) x > – 4, y <= – (1/2)* x and y >= 0
+(b) y <= 2x + 4, y <=  – (4/3) * x + 4 and y >= 0
+(c) y <= x – 1, y >= (2/3) * x – 2, x >= 0 and y <= 0",,Linear Inequalities in Two Variables,English,yes,4,"---
+PROBLEM TYPE: Linear Inequalities Graph
+
+QUESTION:
+Write the inequalities that satisfy the shaded region in each of the following diagrams.
+(a)
+(b)
+(c)
+
+VISUAL DATA:
+(a)
+- Line 1: Passes through (0,0) and (-4,2). It is a solid line. The shaded region is to the left of the dashed vertical line x = -4 and below the solid line.
+- Line 2: Dashed vertical line at x = -4.
+- Shaded region: To the left of the dashed line x = -4 and below the solid line passing through (0,0) and (-4,2).
+- Point labeled: (-4, 2)
+
+(b)
+- Line 1: Passes through (-2,0) and (0,4). It is a solid line.
+- Line 2: Passes through (0,4) and (3,0). It is a solid line.
+- Line 3: Passes through (0,4) and extending upwards. This line appears to be y = x + 4.
+- Line 4: Passes through (0,4) and extending upwards. This line appears to be y = -x + 4.
+- Shaded region: A triangle with vertices (-2,0), (3,0), and (0,4). The region is bounded by Line 1, Line 2, and the x-axis. However, the diagram shows shading between Line 3 and Line 4, and below the intersection point (0,4). More precisely, the shaded region is bounded by the lines passing through (-2,0) and (0,4), and (0,4) and (3,0).
+- Labeled points: (-2,0), (3,0), (0,4)
+
+(c)
+- Line 1: Passes through (0,-2) and (1,0). It is a solid line.
+- Line 2: Passes through (0,0) and (3,0). This is the x-axis.
+- Line 3: Passes through (0,0) and approximately (1,1). This line is y = x.
+- Line 4: Passes through (0,0) and approximately (-1,-1). This line is y = x.
+- Line 5: Passes through (0,0) and extending upwards. This line appears to be y=x.
+- Line 6: Passes through (0,0) and extending upwards. This line appears to be y=x.
+- Line 7: Passes through (0,0) and extending upwards. This line appears to be y=x.
+- The diagram shows two solid pink lines and a shaded region. One pink line passes through (0,-2) and (1,0). The other pink line passes through (0,0) and (3,0) which is the x-axis. The shaded region is bounded by the line passing through (0,-2) and (1,0), and the x-axis, and another line passing through the origin.
+- Let's re-examine (c). There are two solid pink lines. One passes through (0, -2) and (1, 0). The other passes through (0, 0) and (3, 0). The shaded region is bounded by these two lines and a third line which is not explicitly drawn with points but appears to be the y-axis. However, the shading is above the line through (0,-2) and (1,0), to the right of the y-axis, and below the line through (0,0) and (3,0). This interpretation seems incorrect given the visual.
+- Let's assume the pink lines are the boundaries of the shaded region.
+- Line 1: Passes through (0,-2) and (1,0).
+- Line 2: Passes through (0,0) and (3,0). This is the x-axis.
+- Line 3: Another line passing through the origin. It appears to be the line y = x.
+- Shaded region: Bounded by Line 1, Line 3 (y=x), and the x-axis. The shaded region is above Line 1, below Line 3, and to the right of the y-axis.
+
+CONSTRAINTS:
+None specified.
+---","Error: Solver recursion limit reached after Recursion limit of 10 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",0,ERROR,google_genai:gemini-2.5-flash-lite
+Chapter 6_Q3.png,"(a) y <= 2, x < 3, y >= – x, y >= 0
+(b) y > –2x, y >= 2x – 8, y <= – (1/2) * x",,Linear Inequalities in Two Variables,English,yes,4,"---
+PROBLEM TYPE: Linear Inequalities Graph
+
+QUESTION:
+Write the linear inequalities that satisfy the image of the shaded region under a reflection in the x-axis.
+(a)
+(b)
+
+VISUAL DATA:
+(a)
+Lines:
+1. Solid line passing through (0,0) and (3,3).
+   Points: (0,0), (3,3)
+2. Solid horizontal line passing through (-2, -2) and (3, -2).
+   Points: (-2,-2), (3,-2)
+3. Dashed vertical line at x=3, passing through (3,3) and (3,-2).
+   Points: (3,3), (3,-2)
+Shaded Region: The shaded region is a rectangle bounded by x=0, x=3, y=0, and y=-2. It is shaded in purple.
+
+(b)
+Lines:
+1. Solid line passing through (0,0) and (2,4).
+   Points: (0,0), (2,4)
+2. Solid line passing through (2,4) and (4,2).
+   Points: (2,4), (4,2)
+3. Solid line passing through (0,0) and (4,2).
+   Points: (0,0), (4,2)
+4. Dashed line passing through (0,0) and (1,1). This line appears to be an extension of the line y=x.
+   Points: (0,0), (1,1)
+Shaded Region: The shaded region is a triangle with vertices at (0,0), (2,4), and (4,2). It is shaded in purple.
+
+CONSTRAINTS:
+The question asks for the linear inequalities that satisfy the image of the shaded region after a reflection in the x-axis.
+---","Step 1: Problem Understanding
+The problem asks us to find the linear inequalities that represent the shaded regions in two given figures *after* these regions have been reflected across the x-axis.
+
+Step 2: Mathematical Formulation
+For each figure, we first need to determine the inequalities representing the original shaded region. Then, we will apply the transformation of reflection across the x-axis to these inequalities.
+
+Reflection across the x-axis means that a point (x, y) is transformed into (x, -y). If an inequality involves y, we replace y with -y to find the inequality for the reflected region.
+
+**(a) Figure (a)**
+
+Original Shaded Region: A rectangle bounded by x=0, x=3, y=0, and y=-2.
+The inequalities for the original shaded region are:
+1. x ≥ 0 (bounded by the solid line x=0, and shaded to the right)
+2. x ≤ 3 (bounded by the dashed line x=3, and shaded to the left)
+3. y ≤ 0 (bounded by the solid line y=0, and shaded below)
+4. y ≥ -2 (bounded by the solid line y=-2, and shaded above)
+
+Applying reflection across the x-axis:
+We replace y with -y in inequalities 3 and 4.
+1. x ≥ 0 (remains the same as it only involves x)
+2. x ≤ 3 (remains the same as it only involves x)
+3. -y ≤ 0  => y ≥ 0
+4. -y ≥ -2 => y ≤ 2
+
+So, the inequalities for the reflected region in (a) are: x ≥ 0, x ≤ 3, y ≥ 0, and y ≤ 2.
+
+**(b) Figure (b)**
+
+Original Shaded Region: A triangle with vertices at (0,0), (2,4), and (4,2).
+
+First, let's find the equations of the lines forming the boundary of the triangle.
+Line 1: Passes through (0,0) and (2,4).
+Slope (m) = (4-0)/(2-0) = 2.
+Equation: y - 0 = 2(x - 0) => y = 2x.
+To determine the inequality, we need to check the shaded region. The vertex (2,4) is part of the triangle. Let's test a point inside the triangle, for example, (2,2).
+For y = 2x, 2x - y = 0.
+Test (2,2): 2(2) - 2 = 4 - 2 = 2. Since 2 > 0, and the shaded region is below the line y=2x (e.g., point (2,2) is below y=4), the inequality is y ≤ 2x.
+
+Line 2: Passes through (2,4) and (4,2).
+Slope (m) = (2-4)/(4-2) = -2/2 = -1.
+Equation: y - 4 = -1(x - 2) => y - 4 = -x + 2 => y = -x + 6.
+Test (2,2): 2x + y = 2(2) + 2 = 4 + 2 = 6. The shaded region is below this line (e.g., point (2,2) is below y = -2+6 = 4). So, the inequality is y ≤ -x + 6.
+
+Line 3: Passes through (0,0) and (4,2).
+Slope (m) = (2-0)/(4-0) = 1/2.
+Equation: y - 0 = 1/2(x - 0) => y = 1/2 * x.
+Test (2,2): x - 2y = 4 - 2(2) = 0. The shaded region is above this line (e.g., point (2,2) is above y = 0.5*2 = 1). So, the inequality is y ≥ 1/2 * x.
+
+The inequalities for the original shaded region in (b) are:
+1. y ≤ 2x
+2. y ≤ -x + 6
+3. y ≥ 1/2 * x
+
+Applying reflection across the x-axis:
+We replace y with -y.
+1. -y ≤ 2x => y ≥ -2x
+2. -y ≤ -x + 6 => y ≥ x - 6
+3. -y ≥ 1/2 * x => y ≤ -1/2 * x
+
+So, the inequalities for the reflected region in (b) are: y ≥ -2x, y ≥ x - 6, and y ≤ -1/2 * x.
+
+Step 3: Solution Execution
+**(a) Figure (a)**
+The original inequalities are x ≥ 0, x ≤ 3, y ≤ 0, y ≥ -2.
+After reflection across the x-axis, the inequalities become:
+x ≥ 0
+x ≤ 3
+-y ≤ 0  => y ≥ 0
+-y ≥ -2 => y ≤ 2
+The resulting inequalities are: x ≥ 0, x ≤ 3, y ≥ 0, y ≤ 2.
+
+Let's verify this. The original rectangle was from x=0 to x=3 and y=-2 to y=0. Reflecting this across the x-axis means the x-values stay the same, and the y-values become their negatives. So, the new y-range will be from -(-2) to -(0), which is from y=2 to y=0. Thus, the new region is bounded by x=0, x=3, y=0, and y=2. The inequalities are indeed x ≥ 0, x ≤ 3, y ≥ 0, y ≤ 2.
+
+**(b) Figure (b)**
+The original inequalities are y ≤ 2x, y ≤ -x + 6, y ≥ 1/2 * x.
+After reflection across the x-axis, the inequalities become:
+-y ≤ 2x => y ≥ -2x
+-y ≤ -x + 6 => y ≥ x - 6
+-y ≥ 1/2 * x => y ≤ -1/2 * x
+The resulting inequalities are: y ≥ -2x, y ≥ x - 6, y ≤ -1/2 * x.
+
+Let's verify the vertices of the original triangle: (0,0), (2,4), (4,2).
+Reflecting these across the x-axis gives: (0,0), (2,-4), (4,-2).
+Now let's check if these vertices satisfy the new inequalities:
+For (0,0):
+0 ≥ -2(0) => 0 ≥ 0 (True)
+0 ≥ 0 - 6 => 0 ≥ -6 (True)
+0 ≤ -1/2(0) => 0 ≤ 0 (True)
+
+For (2,-4):
+-4 ≥ -2(2) => -4 ≥ -4 (True)
+-4 ≥ 2 - 6 => -4 ≥ -4 (True)
+-4 ≤ -1/2(2) => -4 ≤ -1 (True)
+
+For (4,-2):
+-2 ≥ -2(4) => -2 ≥ -8 (True)
+-2 ≥ 4 - 6 => -2 ≥ -2 (True)
+-2 ≤ -1/2(4) => -2 ≤ -2 (True)
+
+The vertices satisfy the new inequalities.
+
+Step 4: Final Answer
+The linear inequalities for the image of the shaded region under a reflection in the x-axis are:
+
+For (a):
+x ≥ 0
+x ≤ 3
+y ≥ 0
+y ≤ 2
+
+For (b):
+y ≥ -2x
+y ≥ x - 6
+y ≤ -1/2 * x
+
+FINAL ANSWER:
+For figure (a), the linear inequalities are:
+x ≥ 0
+x ≤ 3
+y ≥ 0
+y ≤ 2
+
+For figure (b), the linear inequalities are:
+y ≥ -2x
+y ≥ x - 6
+y ≤ -1/2 * x",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 7_Q1.png,"(a) 3/8 ms^–2  (b) 1 200 m
+(c) Encik Merisat drives for a distance of 1.725 km in
+2.5 minutes with an average speed of 41.4 km h–1.",,Graphs of Motion,English,yes,5,'list' object has no attribute 'startswith',Error: 'list' object has no attribute 'startswith',0,ERROR,google_genai:gemini-2.5-flash-lite
+Chapter 7_Q2.png,(a) 100               (b) 1.6               (c) 57.14,,Graphs of Motion,English,yes,5,"---
+PROBLEM TYPE: Motion Graph
+
+QUESTION:
+A car and a tour bus travel for 150 km in 3 hours. The distance-time graph shows the motion of the car and the tour bus. Calculate
+(a) the rate of change in distance, in km h⁻¹, of the car for the first 24 minutes.
+(b) the value of t.
+(c) the rate of change in distance, in km h⁻¹, of the car for the last 80 km.
+
+VISUAL DATA:
+The graph shows distance (km) on the y-axis and time (hours) on the x-axis.
+There are two lines plotted: one representing the tour bus (pink) and one representing the car (green).
+
+Tour bus (pink line):
+- Starts at point A (0, 150).
+- Ends at point B (3, 0).
+- Passes through point P (0.7, 70).
+- Line style: Solid.
+
+Car (green line):
+- Starts at point O (0, 0).
+- Reaches point P (0.7, 70).
+- Continues to point Q (t, 70).
+- Continues to point R (3, 150).
+- Line style: Solid.
+
+Labeled points:
+- A: (0, 150)
+- O: (0, 0)
+- P: (0.7, 70)
+- Q: (t, 70)
+- B: (3, 0)
+- R: (3, 150)
+
+Axis labels:
+- Y-axis: Distance (km)
+- X-axis: Time (hours)
+
+Scale:
+- Y-axis: Marked at 0, 70, 150.
+- X-axis: Marked at 0, 0.7, t, 3.
+
+CONSTRAINTS:
+- The total travel distance for both the car and the tour bus is 150 km.
+- The total travel time is 3 hours.
+---",,0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 7_Q3.png,(a) 8 seconds (b) 17,,Graphs of Motion,English,yes,5,"---
+PROBLEM TYPE: Motion Graph
+
+QUESTION:
+The speed-time graph shows the motion of a car and a motorcycle. Calculate
+(a) the duration when the motorcycle travels at a uniform speed.
+(b) the value of $t$, if the distances travelled by the car and the motorcycle are the same for the period of $t$ seconds.
+
+VISUAL DATA:
+Graph Type: Speed-time graph
+X-axis: Time (seconds)
+Y-axis: Speed (m s⁻¹)
+
+Lines:
+1. Motorcycle (Green line)
+   - Segment 1: From O (0, 0) to P (2, 4). Line style: Solid.
+   - Segment 2: From P (2, 4) to Q (10, 4). Line style: Solid.
+   - Segment 3: From Q (10, 4) to R (t, 10). Line style: Solid.
+2. Car (Pink line)
+   - Segment 1: From O (0, 0) to R (t, 10). Line style: Solid.
+
+Labeled Points:
+- O: (0, 0)
+- P: (2, 4)
+- Q: (10, 4)
+- R: (t, 10)
+
+Axis Scale:
+- X-axis: Marked at 0, 2, 10, t. Major grid lines at intervals of 2 seconds.
+- Y-axis: Marked at 0, 4, 10. Major grid lines at intervals of 2 m s⁻¹.
+
+CONSTRAINTS:
+- The distances travelled by the car and the motorcycle are the same for the period of $t$ seconds.
+---","Step 1: Problem Understanding
+The problem asks us to analyze the motion of a car and a motorcycle using a speed-time graph. We need to find:
+(a) The time interval during which the motorcycle travels at a constant speed.
+(b) The value of 't' when the total distances covered by the car and the motorcycle are equal.
+
+The constraint is that the distances traveled by the car and the motorcycle are the same for the period of $t$ seconds.
+
+Step 2: Mathematical Formulation
+In a speed-time graph, the distance traveled is represented by the area under the graph.
+
+Part (a): Uniform speed for the motorcycle.
+The motorcycle travels at a uniform speed when the speed-time graph is a horizontal line. Looking at the provided data for the motorcycle:
+- Segment 1: O (0, 0) to P (2, 4) - Speed is increasing.
+- Segment 2: P (2, 4) to Q (10, 4) - Speed is constant at 4 m/s.
+- Segment 3: Q (10, 4) to R (t, 10) - Speed is increasing.
+
+The duration of uniform speed is the time interval of Segment 2.
+
+Part (b): Equal distances traveled by car and motorcycle up to time $t$.
+Distance = Area under the speed-time graph.
+
+For the motorcycle:
+- Distance from 0 to 2 seconds: Area of triangle OAP = 0.5 * base * height = 0.5 * 2 * 4 = 4 m.
+- Distance from 2 to 10 seconds: Area of rectangle PQRS (where S is (10,0)) = base * height = (10 - 2) * 4 = 8 * 4 = 32 m.
+- Distance from 10 to $t$ seconds: Area of trapezoid QRTU (where U is (t,0) and T is (10,0)) = 0.5 * (sum of parallel sides) * height = 0.5 * (4 + 10) * (t - 10) = 0.5 * 14 * (t - 10) = 7(t - 10) m.
+
+Total distance for motorcycle = 4 + 32 + 7(t - 10) = 36 + 7t - 70 = 7t - 34 m.
+
+For the car:
+The car's motion is represented by the line segment from O (0, 0) to R (t, 10). This forms a triangle.
+Distance for car = Area of triangle ORV (where V is (t,0)) = 0.5 * base * height = 0.5 * t * 10 = 5t m.
+
+Constraint: Distances are equal.
+7t - 34 = 5t
+
+Step 3: Solution Execution
+Part (a):
+The motorcycle travels at a uniform speed during the segment from P (2, 4) to Q (10, 4). The duration is the difference in time values:
+Duration = 10 seconds - 2 seconds = 8 seconds.
+
+Part (b):
+We need to solve the equation derived from the constraint:
+7t - 34 = 5t
+
+Subtract 5t from both sides:
+7t - 5t - 34 = 0
+2t - 34 = 0
+
+Add 34 to both sides:
+2t = 34
+
+Divide by 2:
+t = 34 / 2
+t = 17
+
+Let's verify the distances with t = 17:
+Motorcycle distance = 7 * 17 - 34 = 119 - 34 = 85 m.
+Car distance = 5 * 17 = 85 m.
+The distances are equal.
+
+Step 4: Final Answer
+(a) The motorcycle travels at a uniform speed for 8 seconds.
+(b) The value of $t$ is 17 seconds.
+
+FINAL ANSWER: (a) The motorcycle travels at a uniform speed for 8 seconds. (b) The value of $t$ is 17 seconds.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 8_Q1.png,"(a) 9, 2, 3.210, 1.792
+(b) interquartile range",,Measures of Dispersion ,English,yes,6,"---
+PROBLEM TYPE: Statistics
+
+QUESTION:
+The table below shows the time taken, in hours, by 32 pupils to do revision in a week.
+
+| Time (hours) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 10 |
+|---|---|---|---|---|---|---|---|---|
+| Number of pupils | 2 | 5 | 6 | 9 | 6 | 2 | 1 | 1 |
+
+(a) Calculate the range, interquartile range, variance and standard deviation of the distribution.
+(b) State the most appropriate measure of dispersion to show the time spent on revision by the pupils.
+
+VISUAL DATA:
+Table:
+Time (hours) | Number of pupils
+---|---
+1 | 2
+2 | 5
+3 | 6
+4 | 9
+5 | 6
+6 | 2
+7 | 1
+10 | 1
+
+Total number of pupils = 32
+
+CONSTRAINTS:
+None
+---",,0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 8_Q2.png,"(a) 1.2, 0.4
+(b) 5, 3",,Measures of Dispersion ,English,yes,4,"---
+PROBLEM TYPE: Statistics
+
+QUESTION:
+Calculate the range and the interquartile range of each set of data.
+(a)
+Diameter (cm) | 6.0 | 6.2 | 6.4 | 6.6 | 6.8 | 7.0 | 7.2
+Number of limes | 6 | 9 | 12 | 18 | 20 | 10 | 5
+(b)
+Age (years) | 13 | 14 | 15 | 16 | 17 | 18
+Number of participants | 12 | 18 | 21 | 20 | 21 | 8
+
+VISUAL DATA:
+(a)
+Data Set: Diameter (cm) and Number of limes
+Diameter (cm): [6.0, 6.2, 6.4, 6.6, 6.8, 7.0, 7.2]
+Number of limes: [6, 9, 12, 18, 20, 10, 5]
+
+(b)
+Data Set: Age (years) and Number of participants
+Age (years): [13, 14, 15, 16, 17, 18]
+Number of participants: [12, 18, 21, 20, 21, 8]
+
+CONSTRAINTS:
+None
+---","Step 1: Problem Understanding
+The problem asks to calculate the range and interquartile range (IQR) for two different data sets.
+There are no non-standard constraints.
+
+Step 2: Mathematical Formulation
+For each data set, we need to:
+1.  Calculate the range: Range = Maximum Value - Minimum Value.
+2.  Calculate the interquartile range (IQR): IQR = Q3 - Q1, where Q3 is the third quartile and Q1 is the first quartile.
+
+To find Q1 and Q3 for grouped data, we will use the cumulative frequency and class boundaries.
+
+For data set (a):
+Diameters are the values, and the number of limes are the frequencies.
+Diameters (x): [6.0, 6.2, 6.4, 6.6, 6.8, 7.0, 7.2]
+Frequencies (f): [6, 9, 12, 18, 20, 10, 5]
+Total number of limes (N) = 6 + 9 + 12 + 18 + 20 + 10 + 5 = 80
+
+For data set (b):
+Ages are the values, and the number of participants are the frequencies.
+Ages (x): [13, 14, 15, 16, 17, 18]
+Frequencies (f): [12, 18, 21, 20, 21, 8]
+Total number of participants (N) = 12 + 18 + 21 + 20 + 21 + 8 = 100
+
+Step 3: Solution Execution
+
+Data Set (a): Diameter (cm) and Number of limes
+
+1.  **Range:**
+    *   Maximum Diameter = 7.2 cm
+    *   Minimum Diameter = 6.0 cm
+    *   Range = 7.2 - 6.0 = 1.2 cm
+
+2.  **Interquartile Range (IQR):**
+    *   Total number of limes (N) = 80
+    *   Calculate cumulative frequencies:
+        *   6
+        *   6 + 9 = 15
+        *   15 + 12 = 27
+        *   27 + 18 = 45
+        *   45 + 20 = 65
+        *   65 + 10 = 75
+        *   75 + 5 = 80
+    *   Cumulative Frequencies: [6, 15, 27, 45, 65, 75, 80]
+    *   Class boundaries: Since the data is continuous and given to one decimal place, we can assume boundaries are halfway between the upper limit of one class and the lower limit of the next.
+        *   [5.95, 6.15], [6.15, 6.35], [6.35, 6.55], [6.55, 6.75], [6.75, 6.95], [6.95, 7.15], [7.15, 7.35]
+    *   Q1 position = (N + 1) / 4 = (80 + 1) / 4 = 81 / 4 = 20.25th value.
+        *   This falls in the class with cumulative frequency 27 (Diameter 6.4).
+        *   Using the formula for Q1 in grouped data: Q1 = L + ((n/4 - CF_prev) / f) * w
+            *   L = lower boundary of the Q1 class = 6.35
+            *   n = total frequency = 80
+            *   CF_prev = cumulative frequency of the class before Q1 class = 15
+            *   f = frequency of the Q1 class = 12
+            *   w = class width = 0.2
+            *   Q1 = 6.35 + ((80/4 - 15) / 12) * 0.2
+            *   Q1 = 6.35 + ((20 - 15) / 12) * 0.2
+            *   Q1 = 6.35 + (5 / 12) * 0.2
+            *   Q1 = 6.35 + 0.0833...
+            *   Q1 = 6.4333...
+    *   Q3 position = 3 * (N + 1) / 4 = 3 * (80 + 1) / 4 = 3 * 20.25 = 60.75th value.
+        *   This falls in the class with cumulative frequency 65 (Diameter 6.8).
+        *   Using the formula for Q3 in grouped data: Q3 = L + ((3n/4 - CF_prev) / f) * w
+            *   L = lower boundary of the Q3 class = 6.75
+            *   n = total frequency = 80
+            *   CF_prev = cumulative frequency of the class before Q3 class = 45
+            *   f = frequency of the Q3 class = 20
+            *   w = class width = 0.2
+            *   Q3 = 6.75 + ((3*80/4 - 45) / 20) * 0.2
+            *   Q3 = 6.75 + ((60 - 45) / 20) * 0.2
+            *   Q3 = 6.75 + (15 / 20) * 0.2
+            *   Q3 = 6.75 + 0.75 * 0.2
+            *   Q3 = 6.75 + 0.15
+            *   Q3 = 6.90
+    *   IQR = Q3 - Q1 = 6.90 - 6.4333... = 0.4667...
+
+Data Set (b): Age (years) and Number of participants
+
+1.  **Range:**
+    *   Maximum Age = 18 years
+    *   Minimum Age = 13 years
+    *   Range = 18 - 13 = 5 years
+
+2.  **Interquartile Range (IQR):**
+    *   Total number of participants (N) = 100
+    *   Calculate cumulative frequencies:
+        *   12
+        *   12 + 18 = 30
+        *   30 + 21 = 51
+        *   51 + 20 = 71
+        *   71 + 21 = 92
+        *   92 + 8 = 100
+    *   Cumulative Frequencies: [12, 30, 51, 71, 92, 100]
+    *   Class boundaries: Since the data is discrete (ages), the boundaries are typically considered as halfway between the upper limit of one class and the lower limit of the next.
+        *   [12.5, 13.5], [13.5, 14.5], [14.5, 15.5], [15.5, 16.5], [16.5, 17.5], [17.5, 18.5]
+    *   Q1 position = (N + 1) / 4 = (100 + 1) / 4 = 101 / 4 = 25.25th value.
+        *   This falls in the class with cumulative frequency 30 (Age 14).
+        *   Q1 = L + ((n/4 - CF_prev) / f) * w
+            *   L = lower boundary of the Q1 class = 13.5
+            *   n = total frequency = 100
+            *   CF_prev = cumulative frequency of the class before Q1 class = 12
+            *   f = frequency of the Q1 class = 18
+            *   w = class width = 1
+            *   Q1 = 13.5 + ((100/4 - 12) / 18) * 1
+            *   Q1 = 13.5 + ((25 - 12) / 18) * 1
+            *   Q1 = 13.5 + (13 / 18) * 1
+            *   Q1 = 13.5 + 0.7222...
+            *   Q1 = 14.2222...
+    *   Q3 position = 3 * (N + 1) / 4 = 3 * (100 + 1) / 4 = 3 * 25.25 = 75.75th value.
+        *   This falls in the class with cumulative frequency 92 (Age 17).
+        *   Q3 = L + ((3n/4 - CF_prev) / f) * w
+            *   L = lower boundary of the Q3 class = 16.5
+            *   n = total frequency = 100
+            *   CF_prev = cumulative frequency of the class before Q3 class = 71
+            *   f = frequency of the Q3 class = 21
+            *   w = class width = 1
+            *   Q3 = 16.5 + ((3*100/4 - 71) / 21) * 1
+            *   Q3 = 16.5 + ((75 - 71) / 21) * 1
+            *   Q3 = 16.5 + (4 / 21) * 1
+            *   Q3 = 16.5 + 0.1905...
+            *   Q3 = 16.6905...
+    *   IQR = Q3 - Q1 = 16.6905... - 14.2222... = 2.4683...
+
+Step 4: Final Answer
+(a) For the diameter of limes:
+*   Range = 1.2 cm
+*   Interquartile Range (IQR) = 0.4667 cm (approximately)
+
+(b) For the age of participants:
+*   Range = 5 years
+*   Interquartile Range (IQR) = 2.4683 years (approximately)
+
+FINAL ANSWER:
+(a) Range: 1.2 cm, Interquartile Range (IQR): 0.4667 cm
+(b) Range: 5 years, Interquartile Range (IQR): 2.4683 years",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 8_Q3.png,"(a) Team A Team B
+mean = 61 mean = 61
+range = 22 range = 30
+variance = 78.8 variance = 155.6
+standard deviation standard deviation
+= 8.877 = 12.47
+(b) No because of the existence of outlier or extreme
+values",,Measures of Dispersion ,English,yes,7,"---
+PROBLEM TYPE: Statistics
+
+QUESTION:
+The table below shows the masses of players in two sepak takraw teams.
+
+(a) Calculate the mean, range, variance and standard deviation for the masses of the players in both teams.
+(b) Is the range appropriate to be used as a measure of dispersion to represent the data above? Justify your answer.
+(c) Determine the mass of which team has a greater dispersion from the mean.
+
+VISUAL DATA:
+Table:
+| Team | Mass (kg) |
+|---|---|
+| A | 48, 53, 65, 69, 70 |
+| B | 45, 47, 68, 70, 75 |
+
+CONSTRAINTS:
+None.
+---","Step 1: Problem Understanding
+- Restate what needs to be found: The problem asks to calculate the mean, range, variance, and standard deviation for the masses of players in two teams (Team A and Team B). It also asks to determine if the range is appropriate as a measure of dispersion and to identify which team has a greater dispersion from the mean.
+- Identify if there are any non-standard constraints: There are no non-standard constraints.
+
+Step 2: Mathematical Formulation
+For Team A:
+- Masses: [48, 53, 65, 69, 70]
+- Mean: Sum of masses / Number of players
+- Range: Maximum mass - Minimum mass
+- Variance: Σ(x - mean)² / n
+- Standard Deviation: √(Variance)
+
+For Team B:
+- Masses: [45, 47, 68, 70, 75]
+- Mean: Sum of masses / Number of players
+- Range: Maximum mass - Minimum mass
+- Variance: Σ(x - mean)² / n
+- Standard Deviation: √(Variance)
+
+(b) Appropriateness of Range:
+The range is a simple measure of dispersion, but it only considers the extreme values and is sensitive to outliers. It does not take into account the distribution of the rest of the data.
+
+(c) Greater Dispersion:
+This will be determined by comparing the standard deviations (or variances) of the two teams. A larger standard deviation indicates greater dispersion.
+
+Step 3: Solution Execution
+(a) Calculations for Team A:
+- Masses: [48, 53, 65, 69, 70]
+- Number of players (n): 5
+- Mean: (48 + 53 + 65 + 69 + 70) / 5 = 305 / 5 = 61 kg
+- Range: 70 - 48 = 22 kg
+- Variance: Using the tool output, Variance = 78.8
+- Standard Deviation: Using the tool output, Standard Deviation ≈ 8.88 kg
+
+Calculations for Team B:
+- Masses: [45, 47, 68, 70, 75]
+- Number of players (n): 5
+- Mean: (45 + 47 + 68 + 70 + 75) / 5 = 305 / 5 = 61 kg
+- Range: 75 - 45 = 30 kg
+- Variance: Using the tool output, Variance = 155.6
+- Standard Deviation: Using the tool output, Standard Deviation ≈ 12.47 kg
+
+(b) Appropriateness of Range:
+The range for Team A is 22 kg and for Team B is 30 kg. While the range gives a quick idea of the spread, it is not the most appropriate measure of dispersion for this data because it is heavily influenced by the extreme values and does not reflect the distribution of the other masses. For example, in Team B, the masses 45 and 75 are quite far from the rest of the data (47, 68, 70), which inflates the range.
+
+(c) Greater Dispersion:
+Comparing the standard deviations:
+- Team A: 8.88 kg
+- Team B: 12.47 kg
+Since the standard deviation of Team B (12.47 kg) is greater than that of Team A (8.88 kg), Team B has a greater dispersion from the mean. This is also supported by the variances (Team A: 78.8, Team B: 155.6) and ranges (Team A: 22 kg, Team B: 30 kg).
+
+Step 4: Final Answer
+The final answer will include the calculated statistics for both teams, the justification for the appropriateness of the range, and the determination of which team has greater dispersion.
+
+FINAL ANSWER:
+(a) For Team A:
+- Mean: 61 kg
+- Range: 22 kg
+- Variance: 78.8 kg²
+- Standard Deviation: 8.88 kg
+
+For Team B:
+- Mean: 61 kg
+- Range: 30 kg
+- Variance: 155.6 kg²
+- Standard Deviation: 12.47 kg
+
+(b) The range is not the most appropriate measure of dispersion for this data. The range only considers the minimum and maximum values and is sensitive to outliers. It does not provide information about how the other data points are distributed. For instance, in Team B, the extreme values of 45 kg and 75 kg significantly impact the range, while the other values are closer together.
+
+(c) Team B has a greater dispersion from the mean. This is indicated by its larger standard deviation (12.47 kg) compared to Team A's standard deviation (8.88 kg), as well as its larger variance (155.6 kg²) and range (30 kg) compared to Team A (variance: 78.8 kg², range: 22 kg).
+
+Final Answer: The final answer is $\boxed{\text{(a) Team A: Mean = 61 kg, Range = 22 kg, Variance = 78.8 kg², Standard Deviation = 8.88 kg. Team B: Mean = 61 kg, Range = 30 kg, Variance = 155.6 kg², Standard Deviation = 12.47 kg. (b) The range is not appropriate because it is sensitive to extreme values and does not represent the distribution of the data. (c) Team B has a greater dispersion from the mean, as indicated by its higher standard deviation and variance.}}$.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 9_Q1.png,"{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)}, 1/2",,Probability of Combined Events,English,yes,4,"---
+PROBLEM TYPE: Probability
+
+QUESTION:
+Two boxes labelled as $K$ and $L$ contain four cards labelled with the letters ""S, E, R, I"" and three cards labelled with the numbers ""4, 5, 6"" respectively. A card is chosen at random from each box.
+By listing all the possible outcomes, calculate the probability of getting a letter ""S"" from box $K$ or a multiple of 3 from box $L$.
+
+VISUAL DATA:
+Box K contains cards with letters: S, E, R, I
+Box L contains cards with numbers: 4, 5, 6
+
+CONSTRAINTS:
+None
+---","Step 1: Problem Understanding
+- We need to find the probability of drawing an ""S"" from box K OR a multiple of 3 from box L.
+- The problem requires listing all possible outcomes.
+- There are no non-standard constraints.
+
+Step 2: Mathematical Formulation
+- Box K has 4 cards: {S, E, R, I}. The total number of outcomes for box K is 4.
+- Box L has 3 cards: {4, 5, 6}. The total number of outcomes for box L is 3.
+- The total number of possible combined outcomes when choosing one card from each box is the product of the number of outcomes for each box: 4 * 3 = 12.
+
+Let A be the event of getting a letter ""S"" from box K.
+Let B be the event of getting a multiple of 3 from box L.
+
+We need to find P(A or B).
+Using the formula for the probability of the union of two events: P(A or B) = P(A) + P(B) - P(A and B).
+
+- Event A: Getting an ""S"" from box K.
+  - There is one ""S"" in box K.
+  - P(A) = (Number of ""S"" cards) / (Total cards in K) = 1/4.
+
+- Event B: Getting a multiple of 3 from box L.
+  - The multiples of 3 in box L are {6}.
+  - There is one multiple of 3 in box L.
+  - P(B) = (Number of multiples of 3) / (Total cards in L) = 1/3.
+
+- Event (A and B): Getting an ""S"" from box K AND a multiple of 3 from box L.
+  - Since the events are independent, P(A and B) = P(A) * P(B).
+  - P(A and B) = (1/4) * (1/3) = 1/12.
+
+Now, we can calculate P(A or B):
+P(A or B) = P(A) + P(B) - P(A and B)
+P(A or B) = 1/4 + 1/3 - 1/12
+
+To list all possible outcomes:
+The outcomes are pairs (card from K, card from L).
+(S, 4), (S, 5), (S, 6)
+(E, 4), (E, 5), (E, 6)
+(R, 4), (R, 5), (R, 6)
+(I, 4), (I, 5), (I, 6)
+There are 12 possible outcomes.
+
+Outcomes where ""S"" is drawn from box K:
+(S, 4), (S, 5), (S, 6) - 3 outcomes.
+
+Outcomes where a multiple of 3 is drawn from box L (which is '6'):
+(S, 6), (E, 6), (R, 6), (I, 6) - 4 outcomes.
+
+Outcomes where ""S"" is drawn from box K AND a multiple of 3 is drawn from box L:
+(S, 6) - 1 outcome.
+
+Number of favorable outcomes = (Outcomes with S) + (Outcomes with multiple of 3) - (Outcomes with both S and multiple of 3)
+Number of favorable outcomes = 3 + 4 - 1 = 6.
+
+Probability = (Number of favorable outcomes) / (Total number of outcomes) = 6 / 12 = 1/2.
+
+Step 3: Solution Execution
+Calculate P(A or B) using the formula:
+P(A) = 1/4
+P(B) = 1/3
+P(A and B) = 1/12
+
+P(A or B) = 1/4 + 1/3 - 1/12
+To add these fractions, find a common denominator, which is 12.
+1/4 = 3/12
+1/3 = 4/12
+
+P(A or B) = 3/12 + 4/12 - 1/12
+P(A or B) = (3 + 4 - 1) / 12
+P(A or B) = 6 / 12
+P(A or B) = 1/2
+
+The solution makes sense as we have accounted for the overlap (drawing 'S' and '6' simultaneously).
+
+Step 4: Final Answer
+The probability of getting a letter ""S"" from box K or a multiple of 3 from box L is 1/2.
+
+FINAL ANSWER: The final answer is $\boxed{1/2}$",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 9_Q2.png,230,,Probability of Combined Events,English,yes,5,"---
+PROBLEM TYPE: Probability and Statistics
+
+QUESTION:
+Each customer of Naga Shop who spends more than RM200 will be given a chance to spin a lucky wheel that has six similar sectors. Two of the sectors are red and the rest are yellow.
+
+If the pointer of the lucky wheel stops in the red sector, the customer has a chance to choose a cash voucher from box A. If the pointer of the lucky wheel stops in the yellow sector, the customer has a chance to choose a cash voucher from box B. The number of cash vouchers in box A and box B are shown in the table above.
+
+It is estimated that 450 customers of Naga Shop will spend more than RM200. Calculate the number of RM10 vouchers the Naga Shop needs to prepare.
+(The selected cash vouchers will be replaced with new vouchers by the shop so that the number of cash vouchers in both boxes remains the same.)
+
+VISUAL DATA:
+Lucky Wheel:
+- Total sectors: 6
+- Red sectors: 2
+- Yellow sectors: 4
+
+Table: Number of cash vouchers
+| Box | RM50 | RM10 |
+|---|---|---|
+| A | 20 | 5 |
+| B | 10 | 20 |
+
+Estimated number of customers spending more than RM200: 450
+
+CONSTRAINTS:
+The selected cash vouchers will be replaced with new vouchers by the shop so that the number of cash vouchers in both boxes remains the same.
+---","Step 1: Problem Understanding
+- The problem asks us to calculate the total number of RM10 vouchers that the Naga Shop needs to prepare.
+- A non-standard constraint is that the selected cash vouchers are replaced, meaning the number of vouchers in each box remains constant.
+
+Step 2: Mathematical Formulation
+- Probability of landing on red sector (Box A): P(Red) = Number of red sectors / Total sectors = 2 / 6 = 1/3
+- Probability of landing on yellow sector (Box B): P(Yellow) = Number of yellow sectors / Total sectors = 4 / 6 = 2/3
+- Probability of choosing an RM10 voucher from Box A: P(RM10 | Box A) = Number of RM10 vouchers in Box A / Total vouchers in Box A = 5 / (20 + 5) = 5 / 25 = 1/5
+- Probability of choosing an RM10 voucher from Box B: P(RM10 | Box B) = Number of RM10 vouchers in Box B / Total vouchers in Box B = 20 / (10 + 20) = 20 / 30 = 2/3
+- Probability of a customer getting an RM10 voucher: This can happen in two ways:
+    1. Landing on red AND choosing RM10 from Box A.
+    2. Landing on yellow AND choosing RM10 from Box B.
+- P(RM10) = P(Red) * P(RM10 | Box A) + P(Yellow) * P(RM10 | Box B)
+- P(RM10) = (1/3) * (1/5) + (2/3) * (2/3)
+- Total number of customers: 450
+
+Step 3: Solution Execution
+- Calculate the probability of getting an RM10 voucher:
+    P(RM10) = (1/3) * (1/5) + (2/3) * (2/3)
+    P(RM10) = 1/15 + 4/9
+    To add these fractions, find a common denominator, which is 45.
+    P(RM10) = (1 * 3) / (15 * 3) + (4 * 5) / (9 * 5)
+    P(RM10) = 3/45 + 20/45
+    P(RM10) = 23/45
+- Calculate the expected number of RM10 vouchers needed:
+    Expected RM10 vouchers = Total customers * P(RM10)
+    Expected RM10 vouchers = 450 * (23/45)
+    Expected RM10 vouchers = (450 / 45) * 23
+    Expected RM10 vouchers = 10 * 23
+    Expected RM10 vouchers = 230
+
+Step 4: Final Answer
+The Naga Shop needs to prepare 230 RM10 vouchers.
+
+FINAL ANSWER: The Naga Shop needs to prepare 230 RM10 vouchers.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 9_Q3.png,"(a) 7/33
+(b) 5/33",,Probability of Combined Events,English,yes,5,"---
+PROBLEM TYPE: Statistics
+
+QUESTION:
+The following bar chart shows the number of badminton clubs and bodybuilding clubs in Kedah, Negeri Sembilan, Federal Territory of Labuan and Federal Territory of Putrajaya.
+A badminton club and a bodybuilding club in the four states are selected at random. Calculate the probability that
+(a) both clubs selected are from Kedah.
+(b) a club is selected each from the Federal Territories and Negeri Sembilan respectively.
+
+VISUAL DATA:
+Bar Chart:
+Y-axis: Number of clubs
+X-axis: State
+States: Kedah, Negeri Sembilan, F.T. Labuan, F.T. Putrajaya
+
+Data for Kedah:
+Bodybuilding clubs: 6
+Badminton clubs: 14
+Total clubs: 6 + 14 = 20
+
+Data for Negeri Sembilan:
+Bodybuilding clubs: 2
+Badminton clubs: 11
+Total clubs: 2 + 11 = 13
+
+Data for F.T. Labuan:
+Bodybuilding clubs: 2
+Badminton clubs: 3
+Total clubs: 2 + 3 = 5
+
+Data for F.T. Putrajaya:
+Bodybuilding clubs: 2
+Badminton clubs: 5
+Total clubs: 2 + 5 = 7
+
+Key:
+Grey rectangle represents Badminton clubs.
+Blue rectangle represents Bodybuilding clubs.
+
+CONSTRAINTS:
+None
+---","Step 1: Problem Understanding
+The problem asks us to calculate two probabilities based on the number of badminton and bodybuilding clubs in four different states (Kedah, Negeri Sembilan, F.T. Labuan, F.T. Putrajaya).
+(a) The probability that both a badminton club and a bodybuilding club, selected randomly, are from Kedah.
+(b) The probability that one club is selected from the Federal Territories (Labuan or Putrajaya) and the other from Negeri Sembilan.
+
+There are no non-standard constraints.
+
+Step 2: Mathematical Formulation
+
+Total number of clubs in each state:
+Kedah: 20 (14 badminton, 6 bodybuilding)
+Negeri Sembilan: 13 (11 badminton, 2 bodybuilding)
+F.T. Labuan: 5 (3 badminton, 2 bodybuilding)
+F.T. Putrajaya: 7 (5 badminton, 2 bodybuilding)
+
+Total number of badminton clubs = 14 + 11 + 3 + 5 = 33
+Total number of bodybuilding clubs = 6 + 2 + 2 + 2 = 12
+Total number of all clubs = 33 + 12 = 45
+
+(a) Probability that both clubs selected are from Kedah.
+This means selecting one badminton club from Kedah AND one bodybuilding club from Kedah.
+
+Number of ways to choose 1 badminton club from Kedah = 14
+Number of ways to choose 1 bodybuilding club from Kedah = 6
+Number of ways to choose 1 badminton club from Kedah AND 1 bodybuilding club from Kedah = 14 * 6 = 84
+
+Total number of ways to choose 1 badminton club from all states = 33
+Total number of ways to choose 1 bodybuilding club from all states = 12
+Total number of ways to choose 1 badminton club AND 1 bodybuilding club from all states = 33 * 12 = 396
+
+Probability (both clubs from Kedah) = (Number of ways to choose 1 badminton and 1 bodybuilding club from Kedah) / (Total number of ways to choose 1 badminton and 1 bodybuilding club from all states)
+
+(b) Probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively.
+This part is a bit ambiguous. It states ""a club is selected each from the Federal Territories and Negeri Sembilan respectively."" This could mean:
+Case 1: One badminton club from Federal Territories and one bodybuilding club from Negeri Sembilan.
+Case 2: One bodybuilding club from Federal Territories and one badminton club from Negeri Sembilan.
+Case 3: One club (either type) from Federal Territories and one club (either type) from Negeri Sembilan.
+
+Given the phrasing ""A badminton club and a bodybuilding club in the four states are selected at random,"" it implies one of each type is selected in total. So, we need to consider the combinations that satisfy this condition.
+
+Let's assume the question means: A badminton club is selected and a bodybuilding club is selected. What is the probability that one is from the Federal Territories and the other is from Negeri Sembilan?
+
+Federal Territories (FT) = F.T. Labuan + F.T. Putrajaya
+Total clubs in FT = 5 + 7 = 12
+Badminton clubs in FT = 3 + 5 = 8
+Bodybuilding clubs in FT = 2 + 2 = 4
+
+Negeri Sembilan (NS)
+Total clubs in NS = 13
+Badminton clubs in NS = 11
+Bodybuilding clubs in NS = 2
+
+We are selecting 1 badminton club and 1 bodybuilding club.
+
+Scenario B1: Badminton club from FT, Bodybuilding club from NS.
+Number of ways = (Badminton clubs in FT) * (Bodybuilding clubs in NS) = 8 * 2 = 16
+
+Scenario B2: Badminton club from NS, Bodybuilding club from FT.
+Number of ways = (Badminton clubs in NS) * (Bodybuilding clubs in FT) = 11 * 4 = 44
+
+Total number of ways to select one club from FT and one from NS such that one is badminton and one is bodybuilding = 16 + 44 = 60
+
+Total possible ways to select 1 badminton club and 1 bodybuilding club from all states = 33 * 12 = 396.
+
+Probability (one club from FT and one from NS) = 60 / 396
+
+Let's re-read the problem carefully: ""A badminton club and a bodybuilding club in the four states are selected at random."" This implies two distinct selections are made, one for a badminton club and one for a bodybuilding club.
+
+Part (a): Probability that both clubs selected are from Kedah.
+This means the selected badminton club is from Kedah AND the selected bodybuilding club is from Kedah.
+P(Badminton from Kedah) = 14/33
+P(Bodybuilding from Kedah) = 6/12
+P(Both from Kedah) = P(Badminton from Kedah) * P(Bodybuilding from Kedah) = (14/33) * (6/12)
+
+Part (b): Probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively.
+This means one of the selected clubs (either badminton or bodybuilding) is from FT and the other selected club (the remaining type) is from NS.
+
+Let's consider the pairs of clubs selected: (Badminton Club, Bodybuilding Club).
+
+We need to find the probability that:
+(Badminton Club is from FT AND Bodybuilding Club is from NS) OR (Badminton Club is from NS AND Bodybuilding Club is from FT).
+
+P(Badminton from FT) = 8/33
+P(Bodybuilding from NS) = 2/12
+P(Badminton from FT AND Bodybuilding from NS) = (8/33) * (2/12)
+
+P(Badminton from NS) = 11/33
+P(Bodybuilding from FT) = 4/12
+P(Badminton from NS AND Bodybuilding from FT) = (11/33) * (4/12)
+
+P(one from FT and one from NS) = P(Badminton from FT AND Bodybuilding from NS) + P(Badminton from NS AND Bodybuilding from FT)
+P(one from FT and one from NS) = (8/33 * 2/12) + (11/33 * 4/12)
+
+Step 3: Solution Execution
+
+(a) Probability that both clubs selected are from Kedah.
+Number of badminton clubs in Kedah = 14
+Total number of badminton clubs = 33
+Probability of selecting a badminton club from Kedah = 14/33
+
+Number of bodybuilding clubs in Kedah = 6
+Total number of bodybuilding clubs = 12
+Probability of selecting a bodybuilding club from Kedah = 6/12
+
+Probability (both clubs from Kedah) = (14/33) * (6/12)
+= (14 * 6) / (33 * 12)
+= 84 / 396
+
+Let's simplify the fraction:
+84 / 396 = 42 / 198 = 21 / 99 = 7 / 33
+
+(b) Probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively.
+
+Federal Territories (FT) = F.T. Labuan + F.T. Putrajaya
+Badminton clubs in FT = 3 + 5 = 8
+Bodybuilding clubs in FT = 2 + 2 = 4
+Total clubs in FT = 8 + 4 = 12
+
+Negeri Sembilan (NS)
+Badminton clubs in NS = 11
+Bodybuilding clubs in NS = 2
+Total clubs in NS = 11 + 2 = 13
+
+Total badminton clubs = 33
+Total bodybuilding clubs = 12
+
+We are selecting 1 badminton club and 1 bodybuilding club.
+
+Scenario 1: Badminton club from FT, Bodybuilding club from NS.
+P(Badminton from FT) = 8/33
+P(Bodybuilding from NS) = 2/12
+P(Scenario 1) = (8/33) * (2/12) = 16 / 396
+
+Scenario 2: Badminton club from NS, Bodybuilding club from FT.
+P(Badminton from NS) = 11/33
+P(Bodybuilding from FT) = 4/12
+P(Scenario 2) = (11/33) * (4/12) = 44 / 396
+
+Total probability = P(Scenario 1) + P(Scenario 2)
+= (16 / 396) + (44 / 396)
+= 60 / 396
+
+Let's simplify the fraction:
+60 / 396 = 30 / 198 = 15 / 99 = 5 / 33
+
+Verification:
+The calculations seem straightforward and follow probability rules for independent events. The interpretation of the problem statement is crucial. Assuming ""A badminton club and a bodybuilding club... are selected at random"" means one of each type is selected.
+
+The total number of ways to select one badminton club and one bodybuilding club is indeed 33 * 12 = 396.
+
+For part (a), the number of ways to select a badminton club from Kedah (14) and a bodybuilding club from Kedah (6) is 14 * 6 = 84. So, P(a) = 84/396 = 7/33. This is consistent.
+
+For part (b), we consider the selection of one badminton club and one bodybuilding club.
+Federal Territories: 8 badminton, 4 bodybuilding. Total 12.
+Negeri Sembilan: 11 badminton, 2 bodybuilding. Total 13.
+
+We want one club from FT and one from NS. This means:
+(Badminton from FT and Bodybuilding from NS) OR (Badminton from NS and Bodybuilding from FT).
+
+Number of ways for (Badminton from FT and Bodybuilding from NS) = 8 * 2 = 16.
+Number of ways for (Badminton from NS and Bodybuilding from FT) = 11 * 4 = 44.
+
+Total favorable ways for (b) = 16 + 44 = 60.
+Total possible ways = 396.
+P(b) = 60/396 = 5/33. This is consistent.
+
+Let's use the `calculate_percentage` tool to verify the simplification of fractions, although it's not strictly necessary as manual simplification is clear.
+
+Let's confirm the simplification of 84/396.
+84 / 12 = 7
+396 / 12 = 33
+So 84/396 = 7/33.
+
+Let's confirm the simplification of 60/396.
+60 / 12 = 5
+396 / 12 = 33
+So 60/396 = 5/33.
+
+The calculations are verified.
+
+Step 4: Final Answer
+The problem asks for two probabilities.
+
+(a) The probability that both clubs selected are from Kedah.
+Total badminton clubs = 33
+Total bodybuilding clubs = 12
+Badminton clubs in Kedah = 14
+Bodybuilding clubs in Kedah = 6
+
+P(Badminton club from Kedah) = 14/33
+P(Bodybuilding club from Kedah) = 6/12
+
+P(Both clubs from Kedah) = P(Badminton from Kedah) * P(Bodybuilding from Kedah)
+P(Both clubs from Kedah) = (14/33) * (6/12) = 84/396
+
+Simplifying the fraction:
+84/396 = (12 * 7) / (12 * 33) = 7/33
+
+(b) The probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively.
+Federal Territories (FT) combined:
+Badminton clubs = 3 (Labuan) + 5 (Putrajaya) = 8
+Bodybuilding clubs = 2 (Labuan) + 2 (Putrajaya) = 4
+
+Negeri Sembilan (NS):
+Badminton clubs = 11
+Bodybuilding clubs = 2
+
+We are selecting one badminton club and one bodybuilding club.
+We want the probability that one selected club is from FT and the other is from NS.
+
+This can happen in two mutually exclusive ways:
+1. Badminton club from FT AND Bodybuilding club from NS.
+   P(Badminton from FT) = 8/33
+   P(Bodybuilding from NS) = 2/12
+   P(Case 1) = (8/33) * (2/12) = 16/396
+
+2. Badminton club from NS AND Bodybuilding club from FT.
+   P(Badminton from NS) = 11/33
+   P(Bodybuilding from FT) = 4/12
+   P(Case 2) = (11/33) * (4/12) = 44/396
+
+The total probability for (b) is the sum of probabilities of these two cases:
+P(one from FT and one from NS) = P(Case 1) + P(Case 2)
+P(one from FT and one from NS) = (16/396) + (44/396) = 60/396
+
+Simplifying the fraction:
+60/396 = (12 * 5) / (12 * 33) = 5/33
+
+FINAL ANSWER:
+(a) The probability that both clubs selected are from Kedah is 7/33.
+(b) The probability that one club is selected from the Federal Territories and the other from Negeri Sembilan is 5/33.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 10_Q1.png,"(a) Personal monthly financial plan for Encik Nabil
+Income and Expenditure RM
+Active income:
+Net salary
+Commissions
+3 800
+450
+Total active income 4 250
+Passive income:
+House rental 600
+Total passive income 600
+Total monthly income 4 850
+Minus fixed monthly savings 380
+Total income after deducting
+savings 4 470
+Minus cash outflow/expenses
+Fixed expenses:
+Housing loan instalments (1)
+Housing loan instalments (2)
+Insurance expenses
+800
+500
+350
+Total fixed expenses 1 650
+Variable expenses:
+Food expenses
+Utility payments
+Toll and petrol expenses
+Internet service subscription
+Eat at a luxury restaurant
+900
+150
+200
+100
+400
+Total variable expenses 1 750
+Surplus/Deficit 1 070
+(b) Encik Nabil’s personal financial plan has a surplus
+where there is a positive cash flow when the total
+income is more than the total expenses. This has
+improved Encik Nabil’s liquidity",, Financial Management,English,yes,7,"---
+PROBLEM TYPE: Personal Finance Planning
+
+QUESTION:
+Encik Nabil works as an engineer in a factory with a monthly net salary of RM3 800. He is also a part-time sales agent of product X. The monthly commission earned is estimated to be RM450. The rental collected from the second house is RM600 per month. His estimated monthly expenses are shown below.
+
+Encik Nabil sets aside 10% of his salary as fixed monthly savings in order to achieve his financial goals.
+(a) You are required to create a monthly personal financial plan for Encik Nabil.
+(b) Give comments on the surplus or deficit that will be experienced by Encik Nabil based on this financial plan.
+
+VISUAL DATA:
+Monthly Expenses Table:
+- Housing loan instalment (1): RM 800
+- Housing loan instalment (2): RM 500
+- Food expenses: RM 900
+- Utility payments: RM 150
+- Toll and petrol expenses: RM 200
+- Internet service subscription: RM 100
+- Eat at a luxury restaurant: RM 400
+- Insurance expenses: RM 350
+
+CONSTRAINTS:
+Encik Nabil sets aside 10% of his salary as fixed monthly savings.
+---","Step 1: Problem Understanding
+The problem asks for two things:
+(a) Create a monthly personal financial plan for Encik Nabil.
+(b) Comment on the surplus or deficit Encik Nabil will experience based on this plan.
+
+The problem provides Encik Nabil's monthly net salary, commission, rental income, and a list of monthly expenses. A key constraint is that Encik Nabil saves 10% of his salary.
+
+Step 2: Mathematical Formulation
+First, calculate Encik Nabil's total monthly income.
+Total Monthly Income = Net Salary + Commission + Rental Income
+
+Next, calculate the amount set aside for savings.
+Monthly Savings = 10% of Net Salary
+
+Then, calculate the total monthly expenses.
+Total Monthly Expenses = Sum of all listed expenses.
+
+Finally, calculate the surplus or deficit.
+Surplus/Deficit = Total Monthly Income - Monthly Savings - Total Monthly Expenses
+
+Step 3: Solution Execution
+Calculate Total Monthly Income:
+Net Salary = RM 3,800
+Commission = RM 450
+Rental Income = RM 600
+Total Monthly Income = 3800 + 450 + 600 = RM 4,850
+
+Calculate Monthly Savings:
+Monthly Savings = 10% of RM 3,800
+Monthly Savings = 0.10 * 3800 = RM 380
+
+Calculate Total Monthly Expenses:
+Housing loan instalment (1) = RM 800
+Housing loan instalment (2) = RM 500
+Food expenses = RM 900
+Utility payments = RM 150
+Toll and petrol expenses = RM 200
+Internet service subscription = RM 100
+Eat at a luxury restaurant = RM 400
+Insurance expenses = RM 350
+Total Monthly Expenses = 800 + 500 + 900 + 150 + 200 + 100 + 400 + 350 = RM 3,400
+
+Calculate Surplus/Deficit:
+Surplus/Deficit = Total Monthly Income - Monthly Savings - Total Monthly Expenses
+Surplus/Deficit = 4850 - 380 - 3400
+Surplus/Deficit = 4850 - 3780 = RM 1,070
+
+(a) Monthly Personal Financial Plan:
+Income:
+- Net Salary: RM 3,800
+- Commission: RM 450
+- Rental Income: RM 600
+- Total Income: RM 4,850
+
+Expenses:
+- Housing loan instalment (1): RM 800
+- Housing loan instalment (2): RM 500
+- Food expenses: RM 900
+- Utility payments: RM 150
+- Toll and petrol expenses: RM 200
+- Internet service subscription: RM 100
+- Eat at a luxury restaurant: RM 400
+- Insurance expenses: RM 350
+- Savings (10% of salary): RM 380
+- Total Expenses: RM 3,780
+
+(b) Surplus/Deficit:
+The calculation shows a surplus.
+Surplus = Total Income - Total Expenses
+Surplus = RM 4,850 - RM 3,780 = RM 1,070
+
+The solution makes sense as income exceeds expenses and savings.
+
+Step 4: Final Answer
+(a) Encik Nabil's monthly personal financial plan is as follows:
+
+**Income:**
+*   Net Salary: RM 3,800
+*   Commission: RM 450
+*   Rental Income: RM 600
+*   **Total Monthly Income: RM 4,850**
+
+**Expenses:**
+*   Housing loan instalment (1): RM 800
+*   Housing loan instalment (2): RM 500
+*   Food expenses: RM 900
+*   Utility payments: RM 150
+*   Toll and petrol expenses: RM 200
+*   Internet service subscription: RM 100
+*   Eat at a luxury restaurant: RM 400
+*   Insurance expenses: RM 350
+*   **Fixed Monthly Savings (10% of salary): RM 380**
+*   **Total Monthly Expenses (including savings): RM 3,780**
+
+(b) Based on this financial plan, Encik Nabil will experience a **surplus** of **RM 1,070** (RM 4,850 - RM 3,780 = RM 1,070). This indicates that his income covers all his expenses and savings, with additional funds remaining.
+
+FINAL ANSWER:
+(a) Encik Nabil's monthly personal financial plan is as follows:
+
+**Income:**
+*   Net Salary: RM 3,800
+*   Commission: RM 450
+*   Rental Income: RM 600
+*   **Total Monthly Income: RM 4,850**
+
+**Expenses:**
+*   Housing loan instalment (1): RM 800
+*   Housing loan instalment (2): RM 500
+*   Food expenses: RM 900
+*   Utility payments: RM 150
+*   Toll and petrol expenses: RM 200
+*   Internet service subscription: RM 100
+*   Eat at a luxury restaurant: RM 400
+*   Insurance expenses: RM 350
+*   **Fixed Monthly Savings (10% of salary): RM 380**
+*   **Total Monthly Expenses (including savings): RM 3,780**
+
+(b) Based on this financial plan, Encik Nabil will experience a **surplus** of **RM 1,070** (RM 4,850 - RM 3,780 = RM 1,070). This indicates that his income covers all his expenses and savings, with additional funds remaining.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+Chapter 10_Q2.png,"(a) Mrs Thong does not spend wisely because her
+total monthly savings of RM250 compared to the
+income of RM6 000 which is less than 10%.
+(b) Mrs Thong will not be able to achieve the
+investment goal of RM500 000 with monthly
+savings of RM250",, Financial Management,English,yes,6,"---
+PROBLEM TYPE: Data Analysis
+
+QUESTION:
+The information below is Mrs Thong’s financial plan.
+
+(a) Does Mrs Thong spend her money wisely?
+(b) Will Mrs Thong be able to achieve her long-term financial goal if she wishes to buy a property worth RM500 000 within 6 years with her current spending behaviour?
+
+VISUAL DATA:
+Table: Financial Plan (RM)
+
+| Category                                      | Amount (RM) |
+| :-------------------------------------------- | :---------- |
+| Net Income                                    |             |
+| Mrs Thong's salary                            | 6 000       |
+| Expenses Budget                               |             |
+| House/apartment loan, including maintenance   | 500         |
+| Car instalment                                | 700         |
+| Travel                                        | 500         |
+| Rental                                        | 1 500       |
+| Transport fares                               | 900         |
+| Utility bills                                 | 250         |
+| Toll payments                                 | 100         |
+| Groceries                                     | 400         |
+| Allowances for parents                        | 600         |
+| Savings                                       | 100         |
+| Insurance                                     | 200         |
+| Total expenses                                | 5 750       |
+| Mrs Thong's income balance                    | 250         |
+
+CONSTRAINTS:
+- Long-term financial goal: Buy a property worth RM500 000 within 6 years.
+- Current spending behaviour.
+---","Step 1: Problem Understanding
+The problem asks two questions:
+(a) Whether Mrs. Thong spends her money wisely. This requires an analysis of her spending habits in relation to her income and savings.
+(b) Whether Mrs. Thong can achieve her long-term financial goal of buying a property worth RM500,000 within 6 years, given her current spending behavior.
+
+There are no non-standard constraints; the problem is a straightforward financial analysis based on the provided table and a specific savings goal.
+
+Step 2: Mathematical Formulation
+To address part (a), I need to calculate the total expenses and compare them to her net income. I also need to assess her savings rate.
+To address part (b), I need to calculate how much she saves per year and then project her total savings over 6 years to see if it reaches RM500,000.
+
+Calculations:
+Total Expenses = RM 5,750 (given in the table)
+Net Income = RM 6,000 (given in the table)
+Mrs. Thong's income balance (savings) = Net Income - Total Expenses = RM 6,000 - RM 5,750 = RM 250 (This is also given in the table).
+
+For part (b):
+Annual Savings = Monthly Savings * 12 months
+Total Savings in 6 years = Annual Savings * 6 years
+
+Step 3: Solution Execution
+Part (a): Does Mrs. Thong spend her money wisely?
+Mrs. Thong's Net Income is RM 6,000.
+Her Total Expenses are RM 5,750.
+Her monthly savings are RM 250.
+
+To determine if she spends wisely, we can look at her savings rate. Her savings are RM 250 out of RM 6,000, which is (250/6000) * 100% = 4.17%. This is a very low savings rate. A common rule of thumb is to save at least 10-20% of income. Her expenses are also very close to her income, leaving little room for unexpected costs or faster progress towards financial goals. Therefore, based on common financial advice, her spending habits are not considered wise, as they leave minimal room for savings and investment.
+
+Part (b): Will Mrs. Thong be able to achieve her long-term financial goal?
+Goal: RM 500,000 in 6 years.
+Current Monthly Savings = RM 250
+Current Annual Savings = RM 250 * 12 = RM 3,000
+Total Savings in 6 years = RM 3,000 * 6 = RM 18,000
+
+The target amount is RM 500,000. Her projected savings in 6 years are RM 18,000.
+RM 18,000 is significantly less than RM 500,000.
+
+To reach RM 500,000 in 6 years, she would need to save RM 500,000 / 6 years = RM 83,333.33 per year.
+This translates to RM 83,333.33 / 12 months = RM 6,944.44 per month.
+This is more than her entire net income of RM 6,000.
+
+Therefore, with her current spending behaviour, Mrs. Thong will not be able to achieve her long-term financial goal.
+
+Step 4: Final Answer
+(a) Mrs. Thong's current spending habits are not considered wise. Her total expenses (RM 5,750) are very close to her net income (RM 6,000), resulting in a low monthly saving of RM 250, which is only about 4.17% of her income. A more prudent financial approach would involve higher savings.
+
+(b) Mrs. Thong will not be able to achieve her long-term financial goal of buying a property worth RM 500,000 within 6 years with her current spending behaviour. She is currently saving RM 3,000 per year, which would amount to RM 18,000 over 6 years. This is far short of her RM 500,000 goal. To achieve her goal, she would need to save approximately RM 83,333 per year, which is not feasible with her current income and expenses.
+
+FINAL ANSWER: (a) Mrs. Thong's spending habits are not considered wise as her savings rate is very low (4.17% of her income). Her expenses are almost equal to her income, leaving little room for financial growth or unexpected events. (b) With her current spending behaviour, Mrs. Thong will not be able to achieve her financial goal of buying a property worth RM 500,000 within 6 years. Her projected savings over this period would only be RM 18,000.",0,SUCCESS,google_genai:gemini-2.5-flash-lite

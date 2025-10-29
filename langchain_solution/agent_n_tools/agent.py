@@ -7,9 +7,88 @@ Role: Mimics run_model_test.py architecture with extraction → solving pattern.
 from langchain.agents import create_agent
 from langchain_core.messages import HumanMessage
 from tools import MATH_TOOLS
+from dotenv import load_dotenv
+from langgraph.errors import GraphRecursionError
 import base64
 import os
-from typing import  Tuple
+import logging
+import json
+from typing import Tuple, Union
+from datetime import datetime
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Configure logging for this module
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+
+
+def save_agent_output(stage: str, result: dict, error_type: str = None) -> str:
+    """
+    Save agent output/error to a nicely formatted file.
+
+    Args:
+        stage: "extraction" or "solver"
+        result: The result dict from agent.invoke() or error context
+        error_type: Type of error (e.g., "RECURSION_LIMIT", "EXCEPTION")
+
+    Returns:
+        Path to saved file
+    """
+    output_dir = "agent_outputs"
+    os.makedirs(output_dir, exist_ok=True)
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    error_marker = f"_{error_type}" if error_type else ""
+    filename = f"agent_output_{stage}{error_marker}_{timestamp}.json"
+    filepath = os.path.join(output_dir, filename)
+
+    output_data = {
+        "timestamp": datetime.now().isoformat(),
+        "stage": stage,
+        "error_type": error_type,
+        "messages": []
+    }
+
+    # Extract and format messages
+    if isinstance(result, dict) and "messages" in result:
+        for i, msg in enumerate(result["messages"], 1):
+            msg_dict = {
+                "index": i,
+                "type": msg.__class__.__name__,
+                "content": ""
+            }
+
+            # Handle different message types
+            if hasattr(msg, 'content'):
+                content = msg.content
+                if isinstance(content, str):
+                    msg_dict["content"] = content
+                elif isinstance(content, list):
+                    msg_dict["content"] = str(content)
+                else:
+                    msg_dict["content"] = str(content)
+            elif isinstance(msg, dict):
+                msg_dict["content"] = msg.get("content", str(msg))
+            else:
+                msg_dict["content"] = str(msg)
+
+            # Add metadata if available
+            if hasattr(msg, 'tool_calls'):
+                msg_dict["tool_calls"] = [
+                    {"tool_name": tc.name, "args": tc.args}
+                    for tc in msg.tool_calls
+                ] if msg.tool_calls else []
+
+            output_data["messages"].append(msg_dict)
+
+    # Save to file
+    with open(filepath, "w") as f:
+        json.dump(output_data, f, indent=2)
+
+    logger.info(f"✓ Agent output saved to: {filepath}")
+    return filepath
 
 
 # Extraction prompt (from run_model_test.py adapted for LangChain)
@@ -100,7 +179,12 @@ Step 3: Solution Execution
 
 Step 4: Final Answer
 - State the answer clearly
-- Ensure it addresses ALL parts of the question"""
+- Ensure it addresses ALL parts of the question
+
+IMPORTANT: After completing all steps, provide your FINAL ANSWER in this format:
+FINAL ANSWER: [Your complete answer here]
+
+Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
 
 
 class MathAgent:
@@ -117,12 +201,18 @@ class MathAgent:
     - Statistics Utils: grouped data analysis, cumulative frequency
     """
 
-    def __init__(self, model: str = "google-genai:gemini-2.5-flash-lite"):
+    def __init__(self, model: str = "google_genai:gemini-2.5-flash-lite"):
         """
         Initialize the two-stage Math Agent.
 
         Args:
-            model: The LLM model to use (default: Claude 3.5 Sonnet)
+            model: The LLM model to use as a string identifier (default: google_genai:gemini-2.5-flash-lite)
+                   Supported formats:
+                   - "anthropic:claude-3-5-sonnet-20241022" (requires ANTHROPIC_API_KEY)
+                   - "google_genai:gemini-2.5-flash-lite" (requires GOOGLE_API_KEY)
+                   - "openai:gpt-4o" (requires OPENAI_API_KEY)
+
+                   All environment variables are loaded from .env file automatically.
         """
         self.model_name = model
 
@@ -150,13 +240,25 @@ class MathAgent:
         Returns:
             Tuple of (extracted_data, token_count)
         """
+        logger.debug(f"extract_from_image called with: {image_path}")
         try:
+            # Check file exists
             if not os.path.exists(image_path):
-                return f"Error: Image not found at {image_path}", 0
+                error_msg = f"Image not found at {image_path}"
+                logger.error(error_msg)
+                return f"Error: {error_msg}", 0
+
+            logger.debug(f"✓ Image file exists")
 
             # Read and encode image
+            logger.debug(f"Reading and encoding image...")
+            file_size = os.path.getsize(image_path)
+            logger.debug(f"  File size: {file_size} bytes")
+
             with open(image_path, 'rb') as f:
                 image_data = base64.standard_b64encode(f.read()).decode('utf-8')
+
+            logger.debug(f"  ✓ Image encoded. Base64 length: {len(image_data)}")
 
             # Determine image media type
             ext = os.path.splitext(image_path)[1].lower()
@@ -168,8 +270,10 @@ class MathAgent:
                 '.webp': 'image/webp',
             }
             media_type = media_type_map.get(ext, 'image/png')
+            logger.debug(f"  Media type: {media_type}")
 
             # Create message with image
+            logger.debug(f"Creating HumanMessage with multimodal content...")
             message = HumanMessage(
                 content=[
                     {
@@ -184,22 +288,63 @@ class MathAgent:
                     }
                 ]
             )
+            logger.debug(f"  ✓ Message created with {len(message.content)} content blocks")
 
             # Invoke extraction agent
-            result = self.extraction_agent.invoke(
-                {"messages": [message]}
-            )
+            logger.info(f"Invoking extraction agent with model: {self.model_name}")
+            logger.debug(f"  Extraction agent type: {type(self.extraction_agent)}")
+
+            try:
+                result = self.extraction_agent.invoke(
+                    {"messages": [message]},
+                    config={"recursion_limit": 5}  # Low limit for extraction (no tools needed)
+                )
+                logger.debug(f"  ✓ Agent invocation completed")
+            except GraphRecursionError as e:
+                logger.error(f"✗ RECURSION LIMIT REACHED: {str(e)}", exc_info=True)
+                # Try to get partial result if available
+                try:
+                    result = e.result if hasattr(e, 'result') else {"messages": []}
+                    save_agent_output("extraction", result, error_type="RECURSION_LIMIT")
+                except Exception as save_err:
+                    logger.error(f"Failed to save recursion error output: {str(save_err)}")
+                return f"Error: Extraction recursion limit reached. {str(e)}", 0
+            except Exception as e:
+                logger.error(f"✗ Extraction error: {str(e)}", exc_info=True)
+                return f"Error extracting from image: {str(e)}", 0
+            logger.debug(f"  Result type: {type(result)}")
+            logger.debug(f"  Result keys: {list(result.keys()) if isinstance(result, dict) else 'N/A'}")
 
             # Extract the response
             extracted_data = ""
             if "messages" in result:
-                final_message = result["messages"][-1]
-                extracted_data = final_message.get("content", str(result))
+                logger.debug(f"  Processing messages from result...")
+                messages = result["messages"]
+                logger.debug(f"    Total messages: {len(messages)}")
+                final_message = messages[-1]
+                logger.debug(f"    Final message type: {type(final_message)}")
 
+                # Handle both dict and message object types
+                if hasattr(final_message, 'get'):
+                    extracted_data = final_message.get("content", str(result))
+                elif hasattr(final_message, 'content'):
+                    extracted_data = final_message.content
+                else:
+                    extracted_data = str(result)
+
+                logger.debug(f"    ✓ Extracted data length: {len(str(extracted_data))}")
+            else:
+                logger.warning(f"  'messages' key not found in result")
+                logger.debug(f"  Result: {str(result)[:500]}")
+                extracted_data = str(result)
+
+            logger.info(f"✓ Extraction successful")
             return extracted_data, 0  # Token count to be implemented
 
         except Exception as e:
-            return f"Error extracting from image: {str(e)}", 0
+            error_msg = f"Error extracting from image: {str(e)}"
+            logger.error(error_msg, exc_info=True)
+            return error_msg, 0
 
     def solve_from_extraction(self, extracted_data: str) -> Tuple[str, int]:
         """
@@ -215,42 +360,69 @@ class MathAgent:
             solve_prompt = f"""Here is the structured data extracted from a mathematical problem:
 
 {extracted_data}
-
 Using this structured data, solve the problem step-by-step following the SOLVING PROCESS:
-
 Step 1: Problem Understanding
 - Restate what needs to be found
 - Identify if there are any non-standard constraints from the problem text
-
-Step 2: Mathematical Formulation
-- Convert visual data into mathematical expressions
-- For graphs: derive line equations from coordinates
-- For inequalities: determine inequality signs from shading
-- For networks: identify relevant paths and calculate totals
-
-Step 3: Solution Execution
+Step 2: Solution Execution
 - Solve step-by-step with clear arithmetic
 - Apply any qualitative constraints before finalizing
 - Verify your solution makes sense in context
-
-Step 4: Final Answer
+Step 3: Final Answer
 - State the answer clearly
-- Ensure it addresses ALL parts of the question"""
+- Ensure it addresses ALL parts of the question
+
+IMPORTANT: After completing all steps, provide your FINAL ANSWER in this format:
+FINAL ANSWER: [Your complete answer here]
+
+Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
 
             # Invoke solver agent
-            result = self.solver_agent.invoke(
-                {"messages": [{"role": "user", "content": solve_prompt}]}
-            )
+            logger.info(f"Invoking solver agent with model: {self.model_name}")
+            logger.debug(f"  Solver agent type: {type(self.solver_agent)}")
+
+            try:
+                result = self.solver_agent.invoke(
+                    {"messages": [{"role": "user", "content": solve_prompt}]},
+                    config={"recursion_limit": 20}  # Allows multiple tool calls but prevents infinite loops
+                )
+                logger.debug(f"  ✓ Solver invocation completed")
+            except GraphRecursionError as e:
+                logger.error(f"✗ RECURSION LIMIT REACHED: {str(e)}", exc_info=True)
+                # Try to get partial result if available
+                try:
+                    result = e.result if hasattr(e, 'result') else {"messages": []}
+                    save_agent_output("solver", result, error_type="RECURSION_LIMIT")
+                except Exception as save_err:
+                    logger.error(f"Failed to save recursion error output: {str(save_err)}")
+                return f"Error: Solver recursion limit reached after {e}. Check agent_outputs/ for message history.", 0
+            except Exception as e:
+                logger.error(f"✗ Solver error: {str(e)}", exc_info=True)
+                return f"Error solving from extraction: {str(e)}", 0
 
             # Extract the response
             solution = ""
             if "messages" in result:
-                final_message = result["messages"][-1]
-                solution = final_message.get("content", str(result))
+                logger.debug(f"Processing messages from result...")
+                messages = result["messages"]
+                logger.debug(f"  Total messages: {len(messages)}")
+                final_message = messages[-1]
+                logger.debug(f"  Final message type: {type(final_message)}")
+
+                # Handle both dict and message object types
+                if hasattr(final_message, 'get'):
+                    solution = final_message.get("content", str(result))
+                elif hasattr(final_message, 'content'):
+                    solution = final_message.content
+                else:
+                    solution = str(final_message)
+
+                logger.debug(f"  ✓ Solution extracted. Length: {len(str(solution))}")
 
             return solution, 0  # Token count to be implemented
 
         except Exception as e:
+            logger.error(f"Unexpected error in solve_from_extraction: {str(e)}", exc_info=True)
             return f"Error solving from extraction: {str(e)}", 0
 
     def process_image(self, image_path: str) -> dict:

@@ -148,25 +148,33 @@ def check_boundary_line(inequality: str) -> str:
 
 
 @tool
-def validate_inequality_solution_set(inequality: str, test_points: List[Tuple[Union[int, float], Union[int, float]]]) -> str:
+def validate_inequality_solution_set(inequality: str, test_points_json: str) -> str:
     """Validate a set of test points against an inequality.
 
     Args:
         inequality: The inequality to validate (e.g., "x + y <= 5")
-        test_points: List of (x, y) tuples to test
+        test_points_json: JSON string of points list. Format: '[[x1, y1], [x2, y2], ...]' or '[[1, 2], [3, 4]]'
 
     Returns:
         String with validation results for each point
     """
     try:
+        import json
         x, y = sp.symbols('x y')
         expr = sp.sympify(inequality)
 
+        # Parse JSON string to get list of [x, y] pairs
+        test_points = json.loads(test_points_json)
+
         results = []
-        for px, py in test_points:
-            test_result = expr.subs([(x, px), (y, py)])
-            status = "✓ SATISFIES" if test_result else "✗ DOES NOT"
-            results.append(f"  ({px}, {py}): {status}")
+        for point in test_points:
+            if isinstance(point, (list, tuple)) and len(point) == 2:
+                px, py = point[0], point[1]
+                test_result = expr.subs([(x, px), (y, py)])
+                status = "✓ SATISFIES" if test_result else "✗ DOES NOT"
+                results.append(f"  ({px}, {py}): {status}")
+            else:
+                results.append(f"  Invalid point format: {point}")
 
         return f"Validation results for {inequality}:\n" + "\n".join(results)
     except Exception as e:
