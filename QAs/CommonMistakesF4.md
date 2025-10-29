@@ -1,35 +1,37 @@
-Top mistakes
-Inequality boundary/strictness errors: wrong direction, non-strict vs strict mismatch, missing required boundary, or using the wrong line for a region definition.
-
-Omission or incomplete final answers: missing a required subpart, omitting a value previously derived in the working, or failing to report final numeric results explicitly.
-
-Arithmetic/summation mistakes: correct method but incorrect totals due to addition or intermediate aggregate errors, propagating to final answers.
-
-Misinterpretation of criterion: optimizing the wrong objective (e.g., shortest vs safest) despite correct calculations.
-
-Incorrect numeric answers across parts: multiple final values not matching ground truth in a single multi-part problem.
-
-Why these happen
-Inequalities are brittle because small sign or strictness changes flip feasible regions, and mental algebra under time pressure amplifies such slips.
-
-Output omissions occur when the agent’s working and final “answer list” diverge, especially in multi-part or multi-value prompts without an explicit completeness check.
-
-Arithmetic slips arise from manual aggregation of intermediate quantities, especially when switching units or reusing partially correct sums.
-
----
-
-Possible Tools:
-Tooling to reduce errors
-Symbolic math and inequality solver: integrate a SymPy or Z3-backed tool to solve, simplify, and verify inequalities with strictness, including point-sampling checks to validate region descriptions programmatically.
-
-Base-N and exact arithmetic utilities: add deterministic base-conversion and rational arithmetic to avoid rounding drift and off-by-one digit issues in numeral systems and fraction-heavy tasks.
-
-Unit/consistency checker: use a Pint-based unit engine plus dimensional-analysis assertions for kinematics, rates, and mixed-unit problems to prevent numerics that pass algebra but fail units.
-
-Answer completeness guard: a checklist tool that parses the prompt into required subparts and verifies the final output includes a concrete value for each, matching any items discovered during working (e.g., “final list must include all validated candidates”).
-
-Objective/criterion extractor: a lightweight classifier that surfaces and locks task criteria (e.g., “safest” vs “shortest”) before computation, with a pre-submit reminder if the chosen objective and final choice are misaligned.
-
-Calculation ledger with auto-verify: execute a Python scratchpad to compute aggregates, re-run independent recomputations, and assert equality of alternative derivations before emitting final values.
-
-Final-answer schema: require structured JSON output for each subpart with fields {label, value, units, rationale_hash}, and a validator that blocks emission if any required field is missing or inconsistent with earlier derived entities.
+Out of 29 evaluated responses, 19 received full marks, while 10 responses had errors resulting in a loss of marks. The 22 total lost marks are distributed across four main categories of mistakes.
+Summary of Mistake Categories
+Mistake Category	Number of Occurrences	Total Marks Lost
+Conceptual / Methodological 	4	10
+Omission / Incomplete Answer	3	5
+Arithmetic / Calculation Error	2	4
+Misinterpretation of Question	1	3
+Total	10	22
+Detailed Breakdown of Each Category
+1. Conceptual / Methodological Error
+This was the most significant category, responsible for the largest number of lost marks. These errors occurred when the AI used an incorrect method, applied a wrong formula, or failed to correctly model the mathematical aspects of the problem, particularly in graphing inequalities.
+Number of Occurrences: 4
+Total Marks Lost: 10
+Examples:
+A score of 0/5 was given for failing to correctly calculate any values from a speed-time graph, indicating a fundamental misunderstanding of the methodology.
+Three separate instances involving graphing linear inequalities resulted in a combined loss of 5 marks (1/4, 2/3, and 3/4) due to errors like misidentifying boundary lines, using incorrect inequality directions (e.g., > vs. <), and omitting required boundary conditions.
+2. Omission / Incomplete Answer
+This category includes cases where the AI failed to provide an answer for one or more parts of a question or omitted a required value from its final answer.
+Number of Occurrences: 3
+Total Marks Lost: 5
+Examples:
+Two marks were lost for not providing an answer to part (b) of a four-mark question.
+Another two marks were lost for failing to compute the final numerical results (total distance and average speed) in the last part of a question, despite correctly describing the preceding steps.
+One mark was lost when a correct number identified during the working process was left out of the final list in the answer.
+3. Arithmetic / Calculation Error
+These errors happened when the AI's methodology was correct, but a mistake in basic calculations led to an incorrect final answer.
+Number of Occurrences: 2
+Total Marks Lost: 4
+Examples:
+A critical error in summing a list of incomes led to an incorrect financial surplus, resulting in a loss of 2 marks.
+An incorrect calculation for the sum of squares (Σfx²) in a statistics problem led to wrong values for variance and standard deviation, costing 2 marks.
+4. Misinterpretation of Question
+This error type occurred when the AI misunderstood the core objective or a specific non-mathematical condition of the problem.
+Number of Occurrences: 1
+Total Marks Lost: 3
+Example:
+In a route-planning problem, the AI found the shortest route by distance when the question asked for the "best" route, which was defined as the safest. This misinterpretation of the objective led to a score of 0/3.
