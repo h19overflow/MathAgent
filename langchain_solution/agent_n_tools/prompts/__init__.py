@@ -1,0 +1,34 @@
+"""
+Math Solver Prompts Package
+Exports domain-specific solver prompts and mapping dictionary
+"""
+
+from .algebra_equations_prompt import ALGEBRA_EQUATIONS_SOLVER_PROMPT
+from .geometry_spatial_prompt import GEOMETRY_SPATIAL_SOLVER_PROMPT
+from .discrete_math_prompt import DISCRETE_MATH_SOLVER_PROMPT
+from .statistics_prompt import STATISTICS_SOLVER_PROMPT
+from .linear_algebra_prompt import LINEAR_ALGEBRA_SOLVER_PROMPT
+from .applied_math_prompt import APPLIED_MATH_SOLVER_PROMPT
+from .general_prompt import GENERAL_SOLVER_PROMPT
+
+# Mapping dictionary: category name -> solver prompt
+SOLVER_PROMPTS = {
+    "ALGEBRA_EQUATIONS": ALGEBRA_EQUATIONS_SOLVER_PROMPT,
+    "GEOMETRY_SPATIAL": GEOMETRY_SPATIAL_SOLVER_PROMPT,
+    "DISCRETE_MATH": DISCRETE_MATH_SOLVER_PROMPT,
+    "STATISTICS": STATISTICS_SOLVER_PROMPT,
+    "LINEAR_ALGEBRA": LINEAR_ALGEBRA_SOLVER_PROMPT,
+    "APPLIED_MATH": APPLIED_MATH_SOLVER_PROMPT,
+    "GENERAL": GENERAL_SOLVER_PROMPT,
+}
+
+__all__ = [
+    "ALGEBRA_EQUATIONS_SOLVER_PROMPT",
+    "GEOMETRY_SPATIAL_SOLVER_PROMPT",
+    "DISCRETE_MATH_SOLVER_PROMPT",
+    "STATISTICS_SOLVER_PROMPT",
+    "LINEAR_ALGEBRA_SOLVER_PROMPT",
+    "APPLIED_MATH_SOLVER_PROMPT",
+    "GENERAL_SOLVER_PROMPT",
+    "SOLVER_PROMPTS",
+]

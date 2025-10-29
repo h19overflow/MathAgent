@@ -102,7 +102,11 @@ def process_test_images(
             df = pd.read_excel(input_csv)
         else:
             raise ValueError("Input file must be a CSV or Excel file.")
+
+        # Reset index to ensure sequential integer indexing (0, 1, 2, ...)
+        df = df.reset_index(drop=True)
         logger.info(f"✓ CSV loaded. Total rows: {len(df)}")
+        logger.debug(f"DataFrame index: {df.index.tolist()[:5]}... (first 5)")
     except Exception as e:
         logger.error(f"Failed to read input CSV: {str(e)}", exc_info=True)
         raise
@@ -134,62 +138,103 @@ def process_test_images(
 
     logger.info(f"Processing {len(df)} images with 2-stage pipeline (Extraction → Solving)...")
 
-    for idx, row in tqdm(df.iterrows(), total=len(df)):
+    for row_idx, row in tqdm(df.iterrows(), total=len(df)):
+        # Use iloc for explicit integer-location based indexing (more reliable than iterrows index)
+        iloc_idx = row_idx
         img_filename = row['image_filename']
         img_path = os.path.join(img_folder, img_filename)
 
         # Check if image exists
         if not os.path.exists(img_path):
             error_msg = f"Image not found at path: {img_path}"
-            logger.error(f"[{idx+1}/{len(df)}] ✗ {error_msg}")
-            df.at[idx, 'llm_answer'] = error_msg
-            df.at[idx, 'status'] = "ERROR"
-            df.at[idx, 'model'] = model_name
+            logger.error(f"[{iloc_idx+1}/{len(df)}] ✗ {error_msg}")
+            df.iloc[iloc_idx, df.columns.get_loc('llm_answer')] = error_msg
+            df.iloc[iloc_idx, df.columns.get_loc('status')] = "ERROR"
+            df.iloc[iloc_idx, df.columns.get_loc('model')] = model_name
             failed += 1
+            logger.debug(f"[{iloc_idx+1}/{len(df)}] Row {iloc_idx} marked as ERROR (image not found)")
             continue
 
         try:
+            logger.debug(f"[{iloc_idx+1}/{len(df)}] Processing {img_filename}...")
             result = agent.process_image(img_path)
 
             # Validate result structure
             required_keys = ['extracted_data', 'llm_answer', 'tokens_used', 'status', 'model']
             missing_keys = [k for k in required_keys if k not in result]
             if missing_keys:
-                logger.warning(f"[{idx+1}/{len(df)}] Result missing keys: {missing_keys}")
+                logger.warning(f"[{iloc_idx+1}/{len(df)}] Result missing keys: {missing_keys}")
 
-            # Store results
-            df.at[idx, 'extracted_data'] = result['extracted_data']
-            df.at[idx, 'llm_answer'] = result['llm_answer']
+            # Store results using iloc (safer than using at with row index from iterrows)
+            logger.debug(f"[{iloc_idx+1}/{len(df)}] Writing results to row {iloc_idx}...")
+            df.iloc[iloc_idx, df.columns.get_loc('extracted_data')] = result['extracted_data']
+            df.iloc[iloc_idx, df.columns.get_loc('llm_answer')] = result['llm_answer']
             tokens = result['tokens_used']
-            df.at[idx, 'tokens_used'] = tokens
+            df.iloc[iloc_idx, df.columns.get_loc('tokens_used')] = tokens
             status = result['status']
-            df.at[idx, 'status'] = status
-            df.at[idx, 'model'] = result['model']
+            df.iloc[iloc_idx, df.columns.get_loc('status')] = status
+            df.iloc[iloc_idx, df.columns.get_loc('model')] = result['model']
 
             total_tokens += tokens
+
+            # Verify write was successful
+            written_answer = df.iloc[iloc_idx, df.columns.get_loc('llm_answer')]
+            if written_answer == result['llm_answer']:
+                logger.debug(f"[{iloc_idx+1}/{len(df)}] ✓ Row {iloc_idx} written successfully")
+            else:
+                logger.warning(f"[{iloc_idx+1}/{len(df)}] ⚠ Row {iloc_idx} write verification failed!")
 
             # Track success/failure
             if status == "SUCCESS":
                 successful += 1
-                logger.info(f"[{idx+1}/{len(df)}] ✓ {img_filename}")
+                logger.info(f"[{iloc_idx+1}/{len(df)}] ✓ {img_filename}")
             else:
                 failed += 1
-                logger.warning(f"[{idx+1}/{len(df)}] ✗ {img_filename} - {result['llm_answer'][:100]}")
+                logger.warning(f"[{iloc_idx+1}/{len(df)}] ✗ {img_filename} - {result['llm_answer'][:100]}")
 
         except Exception as e:
-            logger.error(f"[{idx+1}/{len(df)}] Exception processing {img_filename}: {str(e)}", exc_info=True)
-            df.at[idx, 'llm_answer'] = f"Exception: {str(e)}"
-            df.at[idx, 'status'] = "ERROR"
-            df.at[idx, 'model'] = model_name
+            logger.error(f"[{iloc_idx+1}/{len(df)}] Exception processing {img_filename}: {str(e)}", exc_info=True)
+            df.iloc[iloc_idx, df.columns.get_loc('llm_answer')] = f"Exception: {str(e)}"
+            df.iloc[iloc_idx, df.columns.get_loc('status')] = "ERROR"
+            df.iloc[iloc_idx, df.columns.get_loc('model')] = model_name
             failed += 1
+            logger.debug(f"[{iloc_idx+1}/{len(df)}] Row {iloc_idx} marked as ERROR (exception)")
 
     # Save results to CSV
     logger.info(f"\n{'='*80}")
     logger.info(f"Saving results to CSV: {output_csv}")
     try:
-        os.makedirs(os.path.dirname(output_csv) if os.path.dirname(output_csv) else '.', exist_ok=True)
+        # Ensure output directory exists
+        output_dir_path = os.path.dirname(output_csv) if os.path.dirname(output_csv) else '.'
+        os.makedirs(output_dir_path, exist_ok=True)
+        logger.debug(f"Output directory ensured: {output_dir_path}")
+
+        # Validate dataframe before saving
+        rows_with_data = df['llm_answer'].notna().sum()
+        logger.info(f"DataFrame stats before save: {len(df)} total rows, {rows_with_data} with answers")
+        logger.debug(f"Sample data from row 0: {df.iloc[0][['image_filename', 'llm_answer']].to_dict() if len(df) > 0 else 'N/A'}")
+
+        # Save to CSV
         df.to_csv(output_csv, index=False)
-        logger.info(f"✓ Results saved")
+        logger.info(f"✓ Results saved to {output_csv}")
+
+        # Verify file was created
+        if not os.path.exists(output_csv):
+            raise FileNotFoundError(f"Output file was not created: {output_csv}")
+        file_size = os.path.getsize(output_csv)
+        logger.info(f"✓ File verified - Size: {file_size} bytes")
+
+        # Verify file contains expected data by reading it back
+        logger.debug(f"Verifying file contents...")
+        verify_df = pd.read_csv(output_csv)
+        verify_rows_with_data = verify_df['llm_answer'].notna().sum()
+        logger.info(f"✓ Verification: {len(verify_df)} rows loaded, {verify_rows_with_data} with answers")
+
+        if verify_rows_with_data != rows_with_data:
+            logger.warning(f"⚠ Data mismatch after save! Before: {rows_with_data}, After: {verify_rows_with_data}")
+        else:
+            logger.info(f"✓ Data integrity verified - all {rows_with_data} answers present")
+
     except Exception as e:
         logger.error(f"Failed to save results to CSV: {str(e)}", exc_info=True)
         raise

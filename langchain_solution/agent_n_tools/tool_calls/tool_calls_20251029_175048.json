@@ -1,0 +1,20 @@
+[
+  {
+    "name": "solve_venn_diagram",
+    "args": {
+      "variable": "x",
+      "regions_json": "{\"J_only\": 7, \"J_and_K_only\": 2, \"K_only\": \"x+2\", \"K_and_L_only\": 3, \"L_only\": \"x+5\"}",
+      "equation": "7 + 2 + x+2 + 3 + x+5 = 25"
+    },
+    "id": "abf1779e-a898-44b1-ad93-79c6709e8551"
+  },
+  {
+    "name": "solve_venn_diagram",
+    "args": {
+      "variable": "x",
+      "regions_json": "{\"J_only\": 7, \"J_and_K_only\": 2, \"K_only\": \"x+2\", \"K_and_L_only\": 3, \"L_only\": \"x+5\"}",
+      "equation": "7 + 2 + (x+2) + 3 + (x+5) = 25"
+    },
+    "id": "d02d409e-a70c-46f7-9392-dfa747b2270b"
+  }
+]

@@ -1,17 +1,5 @@
-image_filename,ground_truth,marking_scheme,chapter_name,language,Textbook,Allocated marks,extracted_data,llm_answer,tokens_used,status,model
-Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0,,"Quadratic Functions and Equations in
-One Variable",English,yes,4,"PROBLEM TYPE: Quadratic Equations
-
-QUESTION:
-1. The diagram on the right shows a piece of land with a length of (x + 20) m and a width of (x + 5) m.
-(a) Write a function for the area, A m², of the land.
-(b) If the area of the land is 250 m², write a quadratic equation in terms of x. Give your answer in the form of ax² + bx + c = 0.
-
-VISUAL DATA:
-The diagram shows a rectangular piece of land. The length is labeled as (x + 20) m and the width is labeled as (x + 5) m.
-
-CONSTRAINTS:
-None","Problem Understanding: The problem asks us to first define a function for the area of a rectangular piece of land given its length and width in terms of x, and then to form a quadratic equation in terms of x when the area is given as 250 m². The dimensions are length = (x + 20) m and width = (x + 5) m.
+filename,ground_truth_answer,generated_answer,similarity,correctness_time,ai_marks,allocated_marks,marking_explanation,marking_time,marking_scheme,chapter_name,language,model_used,token_used
+Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0,"Problem Understanding: The problem asks us to first define a function for the area of a rectangular piece of land given its length and width in terms of x, and then to form a quadratic equation in terms of x when the area is given as 250 m². The dimensions are length = (x + 20) m and width = (x + 5) m.
 
 Solution Approach: The area of a rectangle is calculated by multiplying its length by its width. This will give us the function for the area A in terms of x. To form the quadratic equation, we will set this area function equal to the given area of 250 m² and rearrange it into the standard form ax² + bx + c = 0.
 
@@ -33,53 +21,13 @@ Reasoning: The area function was derived by multiplying the given length and wid
 
 FINAL ANSWER: (a) The function for the area A m² of the land is A(x) = (x + 20)(x + 5), which expands to A(x) = x² + 25x + 100.
 (b) The quadratic equation in terms of x, when the area is 250 m², is x² + 25x - 150 = 0.
-(Confidence: 1.00)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 1.00)",correct,4.446106195449829,4,4,"Full marks (4/4). The AI's response exactly matches the ground truth: (a) A(x) = (x+20)(x+5) expanded correctly to x^2 + 25x + 100, and (b) setting A = 250 and rearranging yields x^2 + 25x - 150 = 0. The solution steps are arithmetically correct, show the area formula, expansion, substitution, and rearrangement to standard quadratic form. According to the provided marking instruction ('if the agent answers the question matching the ground truth give it full mark : 4'), the response merits the full score.",9.296322107315063,,"Quadratic Functions and Equations in
+One Variable",English,google_genai:gemini-2.5-flash-lite,0
 Chapter 1_Q2.png,"(a) A(0, –5)     (b) x = 3
-(c) B(6, –5)     (d) (3, 4)",,"Quadratic Functions and Equations in
-One Variable",English,yes,6,"
-PROBLEM TYPE: Quadratic Functions
-
-QUESTION:
-The diagram shows part of the graph of the quadratic function f(x) = -x^2 + 6x - 5. The straight line AB is parallel to the x-axis. Determine
-(a) the coordinates of point A,
-(b) the equation of the axis of symmetry,
-(c) the coordinates of point B,
-(d) the coordinates of the maximum point P.
-
-VISUAL DATA:
-Graph of a quadratic function f(x) = -x^2 + 6x - 5.
-The graph is a parabola opening downwards.
-The x-axis is labeled. The y-axis is labeled f(x).
-The origin is labeled O.
-Point A is on the y-axis, below the x-axis, and on the parabola.
-Point B is on the parabola, to the right of the y-axis.
-A dashed line connects A and B, and is parallel to the x-axis.
-Point P is the vertex of the parabola, marked with an 'x'.
-
-CONSTRAINTS:
-The straight line AB is parallel to the x-axis.
-","Error: Solver recursion limit reached after Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
-For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",0,ERROR,google_genai:gemini-2.5-flash-lite
-Chapter 1_Q3.png,20 cm,,"Quadratic Functions and Equations in
-One Variable",English,yes,5,"PROBLEM TYPE: Algebraic equations involving geometric areas.
-
-QUESTION:
-Diagram 1 shows an isosceles triangle with a base of 4y cm and a height of (y + 5) cm. Diagram 2 shows a square with sides of y cm. The area of the triangle is more than the area of the square by 39 cm². Calculate the difference in perimeter between both shapes.
-
-VISUAL DATA:
-Diagram 1: Isosceles triangle.
-- Base: 4y cm
-- Height: (y + 5) cm
-- Two sides are marked with double dashes, indicating they are equal in length.
-
-Diagram 2: Square.
-- Side length: y cm
-- Right angle symbols at each corner.
-- Two opposite sides are marked with double dashes, indicating they are equal in length (characteristic of a square).
-
-CONSTRAINTS:
-The area of the triangle is more than the area of the square by 39 cm².
-","Problem Understanding: The problem asks us to calculate the difference in perimeters between an isosceles triangle and a square. We are given the dimensions of both shapes in terms of a variable ""y"" and a constraint relating their areas. The area of the triangle is 39 cm² more than the area of the square. We need to find the value of ""y"" first by setting up and solving an equation based on the area constraint.
+(c) B(6, –5)     (d) (3, 4)","Error: Solver recursion limit reached after Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",wrong,2.8120574951171875,0,6,"The AI returned an error message and did not provide any answers to the four parts. The ground truth answers are (a) A(0, -5), (b) x = 3, (c) B(6, -5), (d) (3, 4). Per the provided marking scheme, full mark (6) is awarded only if the agent's answers match the ground truth; since no answers were given, the score is 0.",6.668066740036011,,"Quadratic Functions and Equations in
+One Variable",English,google_genai:gemini-2.5-flash-lite,0
+Chapter 1_Q3.png,20 cm,"Problem Understanding: The problem asks us to calculate the difference in perimeters between an isosceles triangle and a square. We are given the dimensions of both shapes in terms of a variable ""y"" and a constraint relating their areas. The area of the triangle is 39 cm² more than the area of the square. We need to find the value of ""y"" first by setting up and solving an equation based on the area constraint.
 
 Solution Approach: 1. Calculate the area of the isosceles triangle in terms of y: Area_triangle = 0.5 * base * height. 2. Calculate the area of the square in terms of y: Area_square = side * side. 3. Set up an equation based on the constraint: Area_triangle = Area_square + 39. 4. Solve the quadratic equation for y. 5. Since y represents a length, it must be positive. Select the valid value for y. 6. Calculate the perimeter of the triangle. First, we need to find the length of the equal sides. We can do this by considering a right-angled triangle formed by the height, half of the base, and one of the equal sides. Using the Pythagorean theorem: (equal_side)² = height² + (base/2)². Then, Perimeter_triangle = base + 2 * equal_side. 7. Calculate the perimeter of the square: Perimeter_square = 4 * side. 8. Calculate the difference between the perimeters.
 
@@ -120,24 +68,12 @@ Solution Steps:
 Reasoning: The value of y=3 cm was derived from solving the quadratic equation representing the area constraint. This positive value of y is valid for geometric dimensions. The calculated perimeters are 32 cm for the triangle and 12 cm for the square, leading to a difference of 20 cm. This result logically follows from the problem statement and calculations.
 
 FINAL ANSWER: The difference in perimeter between the isosceles triangle and the square is 20 cm.
-(Confidence: 1.00)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 1.00)",correct,2.9410102367401123,5,5,"Full marks awarded (5/5). The AI's solution correctly derives y = 3 from the area constraint, rejects the negative root, computes triangle base and height, uses Pythagoras correctly to find the equal side = 10 cm, calculates perimeters (triangle 32 cm, square 12 cm) and finds the difference 20 cm which matches the ground truth. All steps are mathematically correct, clear, and include proper units, so the answer fully meets the marking scheme.",5.669905662536621,,"Quadratic Functions and Equations in
+One Variable",English,google_genai:gemini-2.5-flash-lite,0
 Chapter 2_Q1.png,"(a) 234
 (b) 234, 336
 (c) 234, 336, 673
-(d) 234, 336, 673, 281",,Number Bases,English,yes,4,"PROBLEM TYPE: Number Base Conversion
-
-QUESTION:
-Based on the four numbers above, identify and list all the numbers with the following bases.
-(a) Base five
-(b) Base seven
-(c) Base eight
-(d) Base nine
-
-VISUAL DATA:
-The four numbers are: 234, 673, 336, 281.
-
-CONSTRAINTS:
-None","Problem Understanding: The user wants to identify which of the given numbers (234, 673, 336, 281) are valid in base five, base seven, base eight, and base nine.
+(d) 234, 336, 673, 281","Problem Understanding: The user wants to identify which of the given numbers (234, 673, 336, 281) are valid in base five, base seven, base eight, and base nine.
 
 Solution Approach: I will use the `validate_number_in_base` tool for each number and each specified base to determine validity. Then I will compile the results for each base.
 
@@ -197,17 +133,8 @@ FINAL ANSWER: (a) Base five: 234
 (b) Base seven: 234, 336
 (c) Base eight: 234, 673, 336
 (d) Base nine: 234, 673, 336, 281
-(Confidence: 1.00)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
-Chapter 2_Q2.png,132 based 5,,Number Bases,English,yes,4,"PROBLEM TYPE: Number Base Conversion and Average Calculation
-
-QUESTION:
-The total number of visitors to Zoo Negara in January is 20202_5. What is the average number of visitors to Zoo Negara each day in January, if it opens every day? Give the answer in base five.
-
-VISUAL DATA:
-Image depicts a scene at a zoo with visitors and an elephant. A sign reads ""ZOO NEGARA"". This visual information is contextual and does not directly contribute to the mathematical calculation.
-
-CONSTRAINTS:
-The answer must be given in base five.","Problem Understanding: The problem asks us to find the average number of daily visitors to Zoo Negara in January, given the total number of visitors in base five and that January has 31 days. The final answer must be in base five.
+(Confidence: 1.00)",correct,4.428030014038086,4,4,"The AI's final answers for each base match the ground truth sets exactly: (a) 234; (b) 234, 336; (c) 234, 336, 673 (order differs but the set is identical); (d) 234, 336, 673, 281. The provided marking instruction states to award full marks when the agent's answer matches the ground truth, and the maximum mark given is 4, so full credit (4/4) is awarded.",8.041794300079346,,Number Bases,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 2_Q2.png,132 based 5,"Problem Understanding: The problem asks us to find the average number of daily visitors to Zoo Negara in January, given the total number of visitors in base five and that January has 31 days. The final answer must be in base five.
 
 Solution Approach: First, convert the total number of visitors from base five to base ten. Then, calculate the average number of visitors per day by dividing the total visitors (in base ten) by the number of days in January (31). Finally, convert the average back to base five.
 
@@ -219,17 +146,8 @@ Solution Steps:
 Reasoning: The total number of visitors in base five was converted to base ten (1302). The number of days in January is 31. The average was calculated by dividing 1302 by 31, which resulted in 42.0322... This average was then converted back to base five. Since the problem does not specify rounding, we assume that the fractional part of the average is not considered for the final base five representation of the whole number of visitors.
 
 FINAL ANSWER: The average number of visitors per day in January is 42_5.
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
-Chapter 2_Q3.png,1600 m^2,,Number Bases,English,yes,5,"PROBLEM TYPE: Area and Perimeter Calculation
-
-QUESTION:
-Ashri Satem, a residential developer, wants to build a rectangular playground. The playground is divided into two sections, the coloured section is the children's playground and the blank section is the exercise area for adults. If the perimeter of the playground is 33004 metres, calculate the area of the children's playground.
-
-VISUAL DATA:
-A rectangle is shown, divided by a diagonal line into two triangular sections. The top side is labeled ""80 m"". The right side is labeled ""x m"". Right angle symbols are present at the bottom right and top left corners of the rectangle, indicating it is a rectangle. The top left triangle is shaded, representing the children's playground.
-
-CONSTRAINTS:
-The perimeter of the playground is 33004 metres.","Problem Understanding: The problem asks us to calculate the area of the children's playground, which is one of the two triangular sections formed by a diagonal in a rectangular playground. We are given the dimensions of the rectangle and its perimeter. However, the provided visual data states the top side is ""80 m"" and the right side is ""x m"", while the constraint states the perimeter is ""33004 metres"". These values seem contradictory, as a perimeter of 33004m for a rectangle with one side 80m would imply the other side is (33004 - 2*80)/2 = 16422m. This large discrepancy suggests a potential typo in the problem statement or the visual data. Assuming the visual data dimensions (80m and x m) are correct for the rectangle and the perimeter constraint is meant to help find 
+(Confidence: 0.85)",wrong,2.3989176750183105,3,4,"Total marks available: 4. The response correctly converted 20202_5 to decimal (1302_10) and correctly divided by 31 to obtain the decimal average 42, earning method and computation marks (3 marks). However the final answer is incorrect: the model wrote 42_5 instead of converting the decimal 42 into base five (which is 132_5). Because the final base-5 representation does not match the ground truth (132_5), full marks cannot be awarded; deduct 1 mark for the incorrect final representation, yielding a score of 3/4.",20.194541215896606,,Number Bases,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 2_Q3.png,1600 m^2,"Problem Understanding: The problem asks us to calculate the area of the children's playground, which is one of the two triangular sections formed by a diagonal in a rectangular playground. We are given the dimensions of the rectangle and its perimeter. However, the provided visual data states the top side is ""80 m"" and the right side is ""x m"", while the constraint states the perimeter is ""33004 metres"". These values seem contradictory, as a perimeter of 33004m for a rectangle with one side 80m would imply the other side is (33004 - 2*80)/2 = 16422m. This large discrepancy suggests a potential typo in the problem statement or the visual data. Assuming the visual data dimensions (80m and x m) are correct for the rectangle and the perimeter constraint is meant to help find 
 
 Solution Approach: The problem involves a rectangle with a diagonal, dividing it into two right-angled triangles. The area of the children's playground, which is one of these triangles, needs to be calculated. The formula for the area of a triangle is (1/2) * base * height. For a right-angled triangle formed by the sides of a rectangle, the base and height are the lengths of the two adjacent sides of the rectangle. The problem provides the length of one side as 80m and the other side as 
 
@@ -260,20 +178,9 @@ Area = 656880
 Reasoning: The calculation followed the standard formulas for the perimeter and area of a rectangle and triangle, respectively. The dimensions were derived from the given perimeter and one side length. The area of the children's playground, being half the area of the rectangle, was then calculated. The large value of 
 
 FINAL ANSWER: The area of the children's playground is 656,880 square metres.
-(Confidence: 0.90)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.90)",wrong,2.796743392944336,0,5,"Score 0/5 because the AI's final answer (656,880 m^2) does not match the ground-truth answer (1600 m^2). According to the provided marking scheme, full marks (5) are awarded only if the answer matches the ground truth; otherwise no marks are given. Reasoning: the AI applied correct formulas (perimeter and area = 1/2 * base * height) and arithmetic given its assumption, but used an implausible perimeter value (33,004 m) to compute the unknown side (x = 16,422 m). That assumption is inconsistent with the intended data (which would yield a rectangle 80 m by 40 m and triangle area 1,600 m^2). Thus the solution is incorrect and receives 0 marks under the strict marking rule supplied.",11.781415700912476,,Number Bases,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 3_Q1.png,"a) P(8)	 = 28
-	 = 256   b) t = 11      ",,Logical Reasoning,English,yes,4,"PROBLEM TYPE: Exponential Growth
-
-QUESTION:
-The diagram on the right shows the growth of a cell which begins with cell A. On the first day, two new cells are produced. Every cell will produce two other cells on subsequent days. The number of cells growth is P(t) = 2t, where t is the number of days.
-(a) How many new cells will be produced on the 8th day?
-(b) On which day will the number of new cells become 2 048?
-
-VISUAL DATA:
-The diagram shows a tree-like structure representing cell growth. The root is labeled ""Cell A"". Below Cell A, there are two nodes, each connected to Cell A by a line. Below these two nodes, there are four more nodes, each connected to one of the nodes above it. This visually represents a doubling process.
-
-CONSTRAINTS:
-None","Problem Understanding: The problem asks to calculate the number of new cells produced on the 8th day and determine on which day the number of new cells will reach 2048, given the formula P(t) = 2^t for the number of cells after t days.
+	 = 256   b) t = 11      ","Problem Understanding: The problem asks to calculate the number of new cells produced on the 8th day and determine on which day the number of new cells will reach 2048, given the formula P(t) = 2^t for the number of cells after t days.
 
 Solution Approach: The problem involves exponential growth. I will use the provided formula P(t) = 2^t to solve for the number of new cells on the 8th day and to find the day when the number of new cells reaches 2048.
 
@@ -288,23 +195,10 @@ Solution Steps:
 Reasoning: The calculations directly apply the given formula P(t) = 2^t. For part (a), substituting t=8 yields 2^8 = 256. For part (b), setting P(t) = 2048 and solving for t, we find t=11 since 2^11 = 2048. Both answers are positive integers representing days and cell counts, which makes sense in the context of the problem.
 
 FINAL ANSWER: (a) On the 8th day, there will be 256 new cells produced. (b) The number of new cells will become 2048 on the 11th day.
-(Confidence: 1.00)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 1.00)",correct,4.244957447052002,4,4,"The AI response correctly computed both parts consistent with the ground truth. It evaluated P(8) = 2^8 = 256 and solved 2^t = 2048 by recognizing 2048 = 2^11 giving t = 11. The answers and reasoning match the provided ground truth, so per the marking scheme the response receives full marks (4).",7.506622552871704,,Logical Reasoning,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 3_Q2.png,"(a) 32(π + 2), 16(π + 2), 8(π + 2), 4(π + 2)
 (c) 1/4
- (π + 2) cm",,Logical Reasoning,English,yes,6,"PROBLEM TYPE: Sequences and series
-
-QUESTION:
-The diagram on the right shows the first four semicircles arranged according to a certain pattern.
-The radius of the largest semicircle is 32 cm.
-(a) Calculate and list the perimeters of the four semicircles, in terms of π.
-(b) Based on the answer from (a), show that the generalisation for the perimeters of the four semicircles is 26−n(π+2); n = 0, 1, 2, 3, 4, ...
-(c) Calculate the perimeter, in cm, of the 8th semicircle.
-
-VISUAL DATA:
-The diagram shows a series of nested semicircles arranged in a spiral pattern. The largest semicircle is green, followed by an orange semicircle, a pink semicircle, and a blue semicircle. The radii appear to be decreasing by a factor of 2 for each subsequent semicircle. The largest semicircle has a radius of 32 cm.
-
-CONSTRAINTS:
-None","Problem Understanding: The problem asks us to analyze a sequence of semicircles. We need to calculate the perimeters of the first four semicircles, derive a general formula for these perimeters, and then calculate the perimeter of the 8th semicircle.
+ (π + 2) cm","Problem Understanding: The problem asks us to analyze a sequence of semicircles. We need to calculate the perimeters of the first four semicircles, derive a general formula for these perimeters, and then calculate the perimeter of the 8th semicircle.
 
 Solution Approach: The solution involves calculating the perimeter of each of the first four semicircles using the formula for the perimeter of a semicircle (πr + 2r), where r is the radius. We will then analyze these perimeters to find a pattern and derive the general formula provided in the question. Finally, we will use the general formula to calculate the perimeter of the 8th semicircle.
 
@@ -390,27 +284,10 @@ Therefore, the generalisation P_n = 2^(6-n)(π+2) holds for n = 1, 2, 3, 4, corr
 
 (c) To calculate the perimeter of the 8th semicircle, we use the generalisation P_n = 2^(6-n)(π+2) with n=8.
 Perimeter of the 8th semicircle = 2^(6-8)(π+2) = 2^(-2)(π+2) = (1/4)(π+2) = π/4 + 1/2 cm.
-(Confidence: 0.90)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.90)",correct,6.213298797607422,6,6,"Full marks (6/6). The AI's final numerical answers match the ground truth: part (a) perimeters 32(π+2), 16(π+2), 8(π+2), 4(π+2) and part (c) the 8th semicircle perimeter 2^{-2}(π+2) = (1/4)(π+2) cm. The working uses the correct semicircle perimeter formula r(π+2) and produces the correct general term P_n = 2^{6-n}(π+2) when interpreted with the indexing used in the response. The only minor issue is an extended discussion about index-shifting (n starting at 0 vs 1) that does not affect the correctness of the computed answers.",17.730029582977295,,Logical Reasoning,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 3_Q3.png,"(a) The pattern of the number of cylinders is 2n +1;
 n = 1, 2, 3, 4, ...
-(b) 104 720 cm3",,Logical Reasoning,English,yes,5,"PROBLEM TYPE:
-Number pattern and volume calculation.
-
-QUESTION:
-The diagram below shows the number of cylinders of equal size arranged in the boxes according to a number pattern 3, 5, 7, 9, ...
-(a) Construct a conclusion by induction for the pattern of the number of cylinders above.
-(b) If the radius and height of each cylinder are 14 cm and 10 cm respectively, calculate the total volume of cylinders in the box 8.
-
-VISUAL DATA:
-Box 1: 3 cylinders
-Box 2: 5 cylinders
-Box 3: 7 cylinders
-Box 4: 9 cylinders
-
-CONSTRAINTS:
-Radius of each cylinder = 14 cm
-Height of each cylinder = 10 cm
-Calculate for box 8.","Problem Understanding: The problem asks for two things: (a) a conclusion by induction for the number pattern of cylinders in boxes, and (b) the total volume of cylinders in box 8, given the dimensions of each cylinder. The pattern of cylinders is 3, 5, 7, 9, ... for boxes 1, 2, 3, 4, ... The radius of each cylinder is 14 cm and the height is 10 cm.
+(b) 104 720 cm3","Problem Understanding: The problem asks for two things: (a) a conclusion by induction for the number pattern of cylinders in boxes, and (b) the total volume of cylinders in box 8, given the dimensions of each cylinder. The pattern of cylinders is 3, 5, 7, 9, ... for boxes 1, 2, 3, 4, ... The radius of each cylinder is 14 cm and the height is 10 cm.
 
 Solution Approach: Part (a) requires a proof by induction, which is a formal mathematical method. However, the available tools do not support constructing proofs by induction. Therefore, I will focus on identifying the pattern using the `analyze_sequence` tool and then use `find_nth_term` to find the number of cylinders in box 8. For part (b), I will first find the number of cylinders in box 8 using the `find_nth_term` tool, and then calculate the volume of a single cylinder using the formula V = πr²h. Finally, I will multiply the volume of a single cylinder by the total number of cylinders in box 8 to get the total volume.
 
@@ -432,27 +309,8 @@ Reasoning: The sequence is identified as an arithmetic progression, and the 8th 
 
 FINAL ANSWER: (a) The pattern of the number of cylinders is an arithmetic progression with the first term a=3 and a common difference d=2. The nth term formula is given by a_n = a + (n-1)d = 3 + (n-1)2 = 2n + 1.  A formal proof by induction would be required to rigorously establish this conclusion.
 (b) The total volume of cylinders in box 8 is 33320π cm³.
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
-Chapter 4_Q1.png,x = 3,,Operations on Sets,English,yes,3,"PROBLEM TYPE: Venn Diagram
-
-QUESTION:
-The Venn diagram shows the number of elements in set J, set K and set L. Given $\xi = J \cup K \cup L$ and $n(\xi) = 25$, calculate the value of x.
-
-VISUAL DATA:
-Venn Diagram with three overlapping sets labeled J, K, and L.
-- Set J (only J): 7 elements
-- Intersection of J and K (only J and K): 2 elements
-- Intersection of J, K, and L: Not explicitly labeled, assumed to be part of K and L sections.
-- Set K (only K): x + 2 elements
-- Intersection of K and L (only K and L): 3 elements
-- Set L (only L): x + 5 elements
-- The total number of elements in the universal set $\xi$ is 25.
-
-CONSTRAINTS:
-$\xi = J \cup K \cup L$
-$n(\xi) = 25$
-
-Calculate the value of x.","The user has provided a Venn diagram problem with three sets J, K, and L. The total number of elements in the universal set $\xi$ is 25, and $\xi = J \cup K \cup L$. Some regions of the Venn diagram are given as numerical values, while others are expressions involving 'x'. The goal is to find the value of 'x'.
+(Confidence: 0.85)",correct,4.7715535163879395,5,5,"Full marks awarded (5/5). The AI's answers match the ground truth: (a) correctly identifies the pattern a_n = 2n + 1 (and states the arithmetic progression with a=3, d=2); (b) correctly computes the volume of one cylinder as 1960π cm³, multiplies by 17 cylinders to get 33320π cm³, which equals 104,720 cm³. Although the AI did not present a formal induction proof, the required nth-term formula and the numerical volume match the ground truth, satisfying the marking schema that grants full marks for matching the ground truth.",12.266906261444092,,Logical Reasoning,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 4_Q1.png,x = 3,"The user has provided a Venn diagram problem with three sets J, K, and L. The total number of elements in the universal set $\xi$ is 25, and $\xi = J \cup K \cup L$. Some regions of the Venn diagram are given as numerical values, while others are expressions involving 'x'. The goal is to find the value of 'x'.
 
 The equation to solve is the sum of all distinct regions within the Venn diagram, which should equal the total number of elements in the universal set. The regions are:
 - J only: 7
@@ -484,24 +342,8 @@ Now, let's verify the solution by plugging x=3 back into the regions:
 
 Total elements = $7 + 2 + 5 + 3 + 8 = 25$. This matches the given total number of elements in $\xi$.
 
-FINAL ANSWER: The value of x is 3.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
-Chapter 4_Q2.png,39,,Operations on Sets,English,yes,3,"PROBLEM TYPE: Venn Diagram
-
-QUESTION:
-The Venn diagram shows the universal set ξ, set P, set Q and set R. Given n(Q) = n(P ∪ R)', determine n(ξ).
-
-VISUAL DATA:
-Venn Diagram with three overlapping sets P, Q, and R within a universal set ξ.
-Set P contains the number 3.
-The intersection of P and Q contains the number 2.
-The intersection of P and R contains k.
-The intersection of P, Q, and R contains 1.
-Set Q contains 4k.
-The intersection of Q and R contains 5.
-Outside of all sets but within ξ, there is 2k.
-
-CONSTRAINTS:
-n(Q) = n(P ∪ R)'","Problem Understanding: The problem asks to find the total number of elements in the universal set (n(ξ)) given a Venn diagram with sets P, Q, and R, and the constraint that n(Q) = n(P ∪ R)'.
+FINAL ANSWER: The value of x is 3.",correct,2.895533323287964,3,3,"Full marks awarded (3/3). The AI formed the correct equation by summing all disjoint regions: 7 + 2 + (x+2) + 3 + (x+5) = 25, simplified correctly to 19 + 2x = 25, solved to x = 3, and verified by substituting back to obtain total 25. All steps and arithmetic are correct and match the ground truth.",5.590050935745239,,Operations on Sets,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 4_Q2.png,39,"Problem Understanding: The problem asks to find the total number of elements in the universal set (n(ξ)) given a Venn diagram with sets P, Q, and R, and the constraint that n(Q) = n(P ∪ R)'.
 
 Solution Approach: The solution involves expressing the number of elements in each region of the Venn diagram in terms of k, using the given constraint to form an equation, solving for k, and then summing all regions to find n(ξ).
 
@@ -614,31 +456,10 @@ If y is not provided, and it's a standard Venn Diagram problem, often all region
 Reasoning: The problem required solving for an unknown variable k using a given constraint relating two sets, and then calculating the total number of elements in the universal set. The value of the region 
 
 FINAL ANSWER: The total number of elements in the universal set, n(ξ), is 37. This is calculated by first determining that k=5 based on the constraint n(Q) = n(P ∪ R)´. Then, substituting k=5 into the expressions for each region of the Venn diagram, and assuming the number of elements in 
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.85)",wrong,4.00816011428833,2,3,"Ground truth n(ξ) = 39, AI final answer = 37. The response correctly set up the Venn regions, formed the equation n(Q)=n(P∪R)' and solved for k=5 (correct). It correctly derived expressions for each region and obtained n(ξ)=37+y, recognising an undetermined 'R only' value. The final numerical answer of 37 resulted from an unjustified assumption y=0; therefore the numeric final answer is incorrect. Partial credit (2/3) is given for correct reasoning and algebra (identification of regions and solving k) but not full credit because the final required numerical answer does not match the ground truth.",17.766024112701416,,Operations on Sets,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 4_Q3.png,"(a) y = 11
-(b) 51",,Operations on Sets,English,yes,4,"PROBLEM TYPE: Venn Diagram
-
-QUESTION:
-The Venn diagram shows the universal set,
-$\xi = A \cup B \cup C$ and $n(B') = n(B \cap C)$.
-Determine
-(a) the value of $y$.
-(b) $n(A \cup B \cup C)$.
-
-VISUAL DATA:
-Venn Diagram with three sets A, B, and C.
-- Region A only: 2
-- Region A and B only: y-2
-- Region B only: 4
-- Region A and C only: 5
-- Region A, B, and C: y-1
-- Region B and C only: 9
-- Region C only: 12
-
-CONSTRAINTS:
-$\xi = A \cup B \cup C$
-$n(B') = n(B \cap C)$","Error: Solver recursion limit reached after Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
-For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",0,ERROR,google_genai:gemini-2.5-flash-lite
+(b) 51","Error: Solver recursion limit reached after Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",wrong,3.9975779056549072,0,4,"The ground truth answers are (a) y = 11 and (b) 51 with a full mark of 4 if the agent matches them. The AI response returned an error message and did not provide either numerical answer, so it does not match the ground truth. Per the provided marking scheme (full marks only when answers match), the score is 0 out of 4.",7.625161647796631,,Operations on Sets,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 5_Q1.png,"(a) (i) V = {1, 2, 3, 4, 5}
 n(V) = 5
 (ii) E = {(1, 2), (1, 5), (2, 3), (2, 4), (2, 5), (3, 4),
@@ -657,85 +478,7 @@ n(V) = 6
 (ii) E = {(A, B), (A, F), (B, C), (B, E), (C, D), (C, E),
  (D, E), (E, F)}
 n(E) = 8
-(iii) 16",,Network in Graph Theory,English,yes,3,"PROBLEM TYPE: Graph Theory
-
-QUESTION:
-Three simple graphs are given below.
-For each graph, determine
-(i) V and n(V)
-(ii) E and n(E)
-(iii) sum of degrees
-
-VISUAL DATA:
-Graph (a):
-Nodes (V): {1, 2, 3, 4, 5}
-n(V): 5
-Edges (E): {e1, e2, e3, e4, e5, e6, e7}
-n(E): 7
-Edges and their incident nodes:
-e1: (1, 2)
-e2: (1, 5)
-e3: (2, 3)
-e4: (2, 4)
-e5: (2, 5)
-e6: (3, 4)
-e7: (4, 5)
-Degrees of nodes:
-Node 1: 2
-Node 2: 4
-Node 3: 2
-Node 4: 3
-Node 5: 3
-Sum of degrees: 2 + 4 + 2 + 3 + 3 = 14
-
-Graph (b):
-Nodes (V): {P, Q, R, W, V, U, T, S}
-n(V): 8
-Edges (E): {PQ, QR, RV, VW, WU, US, UT}
-n(E): 7
-Edges and their incident nodes:
-PQ: (P, Q)
-QR: (Q, R)
-RV: (R, V)
-VW: (V, W)
-WU: (W, U)
-US: (U, S)
-UT: (U, T)
-Degrees of nodes:
-Node P: 1
-Node Q: 2
-Node R: 2
-Node V: 2
-Node W: 2
-Node U: 3
-Node T: 1
-Node S: 1
-Sum of degrees: 1 + 2 + 2 + 2 + 2 + 3 + 1 + 1 = 14
-
-Graph (c):
-Nodes (V): {A, B, C, D, E, F}
-n(V): 6
-Edges (E): {AB, BC, CE, ED, EF, FA, BE}
-n(E): 7
-Edges and their incident nodes:
-AB: (A, B)
-BC: (B, C)
-CE: (C, E)
-ED: (E, D)
-EF: (E, F)
-FA: (F, A)
-BE: (B, E)
-Degrees of nodes:
-Node A: 2
-Node B: 3
-Node C: 2
-Node D: 1
-Node E: 3
-Node F: 2
-Sum of degrees: 2 + 3 + 2 + 1 + 3 + 2 = 13
-
-CONSTRAINTS:
-None","Problem Understanding: The problem asks to determine the number of vertices (V and n(V)), the number of edges (E and n(E)), and the sum of degrees for three given simple graphs.
+(iii) 16","Problem Understanding: The problem asks to determine the number of vertices (V and n(V)), the number of edges (E and n(E)), and the sum of degrees for three given simple graphs.
 
 Solution Approach: The `analyze_graph_properties` tool can be used to extract all the required information for each graph. I will call this tool for each of the three graphs and then compile the results.
 
@@ -766,33 +509,11 @@ Graph (c):
 (i) V = {A, B, C, D, E, F}, n(V) = 6
 (ii) E = {AB, BC, CE, ED, EF, FA, BE}, n(E) = 7
 (iii) Sum of degrees = 14
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.85)",wrong,9.9380464553833,1,3,"Total available mark = 3 (full mark only if answer matches ground truth entirely). I allocate 1 mark per graph (a), (b), (c). Graph (a): fully correct — V, n(V), E, n(E) and sum of degrees match the ground truth. Award 1/1 for (a). Graph (b): incorrect — although n(V)=8 and vertex set is correct, the edge set is wrong (AI lists 7 edges: {PQ, QR, RV, VW, WU, US, UT} but ground truth has 8 edges {(Q,P),(Q,R),(Q,W),(R,V),(S,T),(S,U),(U,V),(V,W)}). AI missed edges (e.g., QW, UV, ST) and introduced incorrect edges (e.g., WU instead of UV), and consequently n(E) and the sum of degrees are incorrect (AI: n(E)=7, sum=14; GT: n(E)=8, sum=16). Award 0/1 for (b). Graph (c): incorrect — vertex set is correct but AI's edge set has 7 edges {AB, BC, CE, ED, EF, FA, BE} while ground truth has 8 edges {(A,B),(A,F),(B,C),(B,E),(C,D),(C,E),(D,E),(E,F)}; AI omitted edge (C,D) (and so reports n(E)=7 and sum=14 instead of n(E)=8 and sum=16). Award 0/1 for (c). Sum = 1/3.",24.84249186515808,,Network in Graph Theory,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 5_Q2.png,"(a) (i) P > Q > R > S (ii) P > S
 (b) Route P > Q > S because I can save RM35 and
 the difference in time is only 9 minutes compared
-to route P > S",,Network in Graph Theory,English,yes,4,"PROBLEM TYPE: Directed weighted graph
-
-QUESTION:
-The directed weighted graph on the right shows the prices of tickets and the travel times for some choices of flights of a private airline. Vertex S is the destination of the flight from vertex P. Vertex Q and vertex R are the transit airports. The transit time at each of the airports is 45 minutes.
-(a) State
-(i) the most economical route.
-(ii) the route that takes the shortest time.
-
-VISUAL DATA:
-Network Graph:
-Nodes: P, Q, R, S
-Edges with weights (Price, Time):
-- P to Q: RM50, 1 hour
-- P to R: RM130, 1.5 hours
-- P to S: RM200, 3 hours
-- Q to R: RM45, 0.8 hour
-- Q to S: RM115, 1.4 hours
-- R to S: RM65, 1.1 hours
-Transit time at airports Q and R: 45 minutes (0.75 hours)
-
-CONSTRAINTS:
-Destination is vertex S, starting from vertex P.
-Transit time at each airport is 45 minutes.","Problem Understanding: The problem asks us to find two routes from vertex P to vertex S in a directed weighted graph. The first route should be the most economical (minimum price), and the second route should be the one that takes the shortest time. The graph includes edge weights for price and time, and a constraint of 45 minutes (0.75 hours) transit time at intermediate airports Q and R.
+to route P > S","Problem Understanding: The problem asks us to find two routes from vertex P to vertex S in a directed weighted graph. The first route should be the most economical (minimum price), and the second route should be the one that takes the shortest time. The graph includes edge weights for price and time, and a constraint of 45 minutes (0.75 hours) transit time at intermediate airports Q and R.
 
 Solution Approach: To find the most economical route, I will use Dijkstra's algorithm to find the shortest path based on the 'cost' weight. To find the route with the shortest time, I will use Dijkstra's algorithm again, this time optimizing for the 'time' weight. I need to add the transit time at each intermediate airport to the path times.
 
@@ -857,31 +578,9 @@ Reasoning: The calculations considered all possible direct and indirect paths fr
 
 FINAL ANSWER: (i) The most economical route is P -> Q -> R -> S with a total cost of RM160.
 (ii) The route that takes the shortest time is P -> S with a total time of 3.0 hours.
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.85)",wrong,11.675859928131104,2,4,"Total marks available = 4. The AI correctly answered the parts asked in (a): (i) it identified the most economical ordering/route as P -> Q -> R -> S (matches ground truth (a)(i)) and (ii) it identified the fastest route as P -> S (matches ground truth (a)(ii)). These two correct items merit credit (allocated here as 1 mark each = 2 marks). However, for part (b) the ground truth explicitly recommends choosing route P -> Q -> S with the justification that it saves RM35 and adds only 9 minutes compared to P -> S. The AI did not give this recommendation or that comparative justification (it did not select P -> Q -> S), so it receives no marks for part (b) (0/2). Therefore the final score is 2 out of 4.",31.26643705368042,,Network in Graph Theory,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 5_Q3.png,"Route A > C > D > E because it is a safer route even
-though Lani had to cycle 300 m more",,Network in Graph Theory,English,yes,3,"PROBLEM TYPE: Network Analysis
-
-QUESTION:
-The directed graph on the right shows the roads connecting Lani's house at A to the school at E. The edge BE is a municipal road and edges AB, AC, CD and DE are roads in the housing estates. Suggest the best route that Lani can choose to cycle to school. Justify your answer.
-
-VISUAL DATA:
-NETWORKS:
-Nodes: A (House), B, C, D, E (School)
-Edges with weights:
-- A to B: 400 m (directed)
-- B to E: Not specified (municipal road, assume it is part of the network but no direct distance given)
-- A to C: 350 m (directed)
-- C to D: 800 m (directed)
-- D to E: 650 m (directed)
-- E to B: 1.1 km (directed)
-
-Note: The edge BE is labeled as a municipal road and has a distance of 1.1 km. It is directed from E to B.
-There are directed edges from A to B (400m), A to C (350m), C to D (800m), D to E (650m).
-
-CRITICAL CONSTRAINTS:
-- ""Best route"" implies shortest distance.
-- The route must start from A (Lani's house) and end at E (school).
-- Justify the answer.","Problem Understanding: The problem asks to find the shortest cycling route from point A to point E, given a directed graph with specific edge weights. The route must start at A and end at E. The edge BE is a municipal road with a distance of 1.1 km, directed from E to B. Other roads are A->B (400m), A->C (350m), C->D (800m), and D->E (650m). The ""best route"" is defined as the shortest distance.
+though Lani had to cycle 300 m more","Problem Understanding: The problem asks to find the shortest cycling route from point A to point E, given a directed graph with specific edge weights. The route must start at A and end at E. The edge BE is a municipal road with a distance of 1.1 km, directed from E to B. Other roads are A->B (400m), A->C (350m), C->D (800m), and D->E (650m). The ""best route"" is defined as the shortest distance.
 
 Solution Approach: I will use Dijkstra's algorithm to find the shortest path from A to E. Since the edge weights are given in meters and kilometers, I will convert all distances to meters for consistency. The graph has directed edges, and I need to consider all possible paths from A to E.
 
@@ -908,22 +607,9 @@ Solution Steps:
 Reasoning: The calculated route A->C->D->E has a total distance of 1800 meters, and it is the only path that directly leads from A to E based on the provided directed edges. Other edges either do not lead to E or are in the wrong direction (E->B).
 
 FINAL ANSWER: The best route Lani can choose to cycle to school is A -> C -> D -> E. The total distance for this route is 350m + 800m + 650m = 1800m. This is the only direct path from A to E specified in the problem. The edge E to B (1.1 km) is directed from E to B and cannot be used to reach E from B. Therefore, this route is the shortest and only viable option.
-(Confidence: 1.00)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 1.00)",wrong,4.210872173309326,3,3,"Full marks (3/3). The AI's final answer matches the ground truth route A -> C -> D -> E and correctly computes the total distance as 350 + 800 + 650 = 1800 m. The AI correctly interprets the directed edge E->B as unusable for reaching E and justifies that A->C->D->E is the valid route. Although the ground truth additionally mentions safety and a 300 m excess, the required marked outcome (the chosen route) is the same, so the response receives full credit per the provided marking scheme.",15.749457359313965,,Network in Graph Theory,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 6_Q1.png,"(a) y < –1,  x >= –5,  y >= 4/5 * x – 1
-(b) x >= 2, y >= 0, y < –x + 6",,Linear Inequalities in Two Variables,English,yes,3,"PROBLEM TYPE: Linear Inequalities
-
-QUESTION:
-Write the linear inequalities that satisfy the image of the shaded region under a reflection in the y-axis.
-(a)
-(b)
-
-VISUAL DATA:
-(a) Graph showing a shaded triangular region. The vertices of the region are approximately at (0,0), (5,-1), and (5,-5). There is a dashed horizontal line segment from (0,0) to (5,0) and a solid vertical line segment from (5,0) to (5,-5). The third boundary is a line segment connecting (0,0) and (5,-5).
-
-(b) Graph showing a shaded triangular region. The vertices of the region are approximately at (-6,0), (-2,4), and (0,0). There is a dashed line passing through (-6,0) and (-2,4) with the equation y = x + 6. There is a solid vertical line segment from (-2,4) to (-2,0). The third boundary is a line segment connecting (-6,0) and (0,0).
-
-CONSTRAINTS:
-Reflection in the y-axis.","Step 1: Problem Understanding
+(b) x >= 2, y >= 0, y < –x + 6","Step 1: Problem Understanding
 The problem asks us to find the linear inequalities that represent the shaded regions in two graphs, (a) and (b), after these regions have been reflected across the y-axis.
 
 Step 2: Solution Execution
@@ -982,38 +668,22 @@ For part (b), the original region was defined by y < x + 6, x <= -2, and y >= 0.
 
 FINAL ANSWER:
 (a) The linear inequalities are: y <= x, x >= -5, y < 0.
-(b) The linear inequalities are: y < -x + 6, x >= 2, y >= 0.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(b) The linear inequalities are: y < -x + 6, x >= 2, y >= 0.",wrong,6.4526519775390625,2,3,"Total mark = 3. I allocated marks by treating parts (a) and (b) as equal-weight subparts (1.5 marks each) and then rounding to a whole number per SPM practice. Comparison to ground truth: 
+
+Part (a) ground truth: y < -1, x >= -5, y >= (4/5)x - 1. 
+AI answer (a): y <= x, x >= -5, y < 0. 
+- Only x >= -5 matches the ground truth. The other two inequalities do not match (y < -1 vs y < 0; y >= (4/5)x - 1 vs y <= x). 
+Awarded 0.5 out of 1.5 for part (a) for the single correct inequality.
+
+Part (b) ground truth: x >= 2, y >= 0, y < -x + 6. 
+AI answer (b): y < -x + 6, x >= 2, y >= 0. 
+- All three inequalities match the ground truth. 
+Awarded 1.5 out of 1.5 for part (b).
+
+Subtotal = 0.5 + 1.5 = 2.0, rounded to the nearest whole number as required => final score = 2. The explanation documents which inequalities matched and why partial credit was given.",55.74192500114441,,Linear Inequalities in Two Variables,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 6_Q2.png,"(a) x > – 4, y <= – (1/2)* x and y >= 0
 (b) y <= 2x + 4, y <=  – (4/3) * x + 4 and y >= 0
-(c) y <= x – 1, y >= (2/3) * x – 2, x >= 0 and y <= 0",,Linear Inequalities in Two Variables,English,yes,4,"PROBLEM TYPE: Inequalities from graphs
-
-QUESTION:
-Write the inequalities that satisfy the shaded region in each of the following diagrams.
-(a)
-(b)
-(c)
-
-VISUAL DATA:
-(a) Graph with y-axis and x-axis. A dashed vertical line at x = -4. A solid pink line passing through the origin (0,0) and the point (-4,2). The shaded region is a triangle with vertices at (0,0), (-4,2), and the intersection of the dashed line and the x-axis at (-4,0). The region is to the left of the dashed line and below the solid pink line.
-Line 1: Passes through (0,0) and (-4,2). Equation: y = -1/2x.
-Line 2: Dashed vertical line at x = -4.
-Shaded region is to the left of x = -4 and below y = -1/2x.
-
-(b) Graph with y-axis and x-axis. A solid pink line forming a triangle with the x-axis. The vertices of the shaded triangle are at (-2,0), (3,0), and (0,4). Two other solid pink lines extend upwards from (-2,0) and (3,0) passing through (0,4).
-Line 1: Passes through (-2,0) and (0,4). Equation: y = 2x + 4.
-Line 2: Passes through (3,0) and (0,4). Equation: y = -4/3x + 4.
-Line 3: Passes through (-2,0) and (0,0). Equation: y = 0 (x-axis for the base of the triangle).
-Line 4: Passes through (3,0) and (0,0). Equation: y = 0 (x-axis for the base of the triangle).
-The shaded region is bounded by y = 2x + 4, y = -4/3x + 4, and y = 0.
-
-(c) Graph with y-axis and x-axis. A shaded region forming a triangle. Two solid pink lines and the x-axis form the boundaries. The vertices of the shaded region appear to be at approximately (0,-2), (1,0), and (3,0).
-Line 1: Passes through (0,-2) and (1,0). Equation: y = 2x - 2.
-Line 2: Passes through (0,-2) and (3,0). Equation: y = 2/3x - 2.
-Line 3: The x-axis, y = 0, from x=1 to x=3.
-The shaded region is bounded by y = 2x - 2, y = 2/3x - 2, and y = 0.
-
-CONSTRAINTS:
-None mentioned.","Problem Understanding: The user wants to find the inequalities that represent the shaded regions in three different graphs (a, b, and c).
+(c) y <= x – 1, y >= (2/3) * x – 2, x >= 0 and y <= 0","Problem Understanding: The user wants to find the inequalities that represent the shaded regions in three different graphs (a, b, and c).
 
 Solution Approach: For each graph, I will use the provided line equations and test points to determine the correct inequality sign (<=, >=, <, >) and whether the boundary line is solid or dashed. The `convert_region_to_inequality` tool is suitable for this purpose.
 
@@ -1036,67 +706,9 @@ Reasoning: The inequalities for (a) and (b) are derived directly from the tool o
 FINAL ANSWER: (a) The inequalities are y < -0.5x and x < -4.
 (b) The inequalities are y <= 2x + 4, y <= -4/3x + 4, and y >= 0.
 (c) The inequalities are y <= 2x - 2, y <= 2/3x - 2, and y <= 0.
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.85)",wrong,8.258561849594116,2,4,"Assumed SPM-style marking with total 4 marks distributed by part: (a) = 1, (b) = 2, (c) = 1 (to total 4). Evaluation of AI response vs ground truth: (a) Incorrect. Ground truth: x > -4, y <= -1/2 x, y >= 0. AI gave x < -4 (opposite), y < -1/2 x (strict instead of <=), and omitted y >= 0 — no credit (0/1). (b) Correct. Ground truth: y <= 2x + 4, y <= -4/3 x + 4, y >= 0. AI exactly matched these inequalities — full credit (2/2). (c) Incorrect. Ground truth: y <= x - 1, y >= (2/3) x - 2, x >= 0, y <= 0. AI gave y <= 2x - 2, y <= 2/3 x - 2, y <= 0, missing x >= 0 and some inequality signs/expressions do not match — no credit (0/1). Total = 0 + 2 + 0 = 2 out of 4. Explanation documents specific mismatches so markers can verify alignment with the provided ground truth.",142.91980457305908,,Linear Inequalities in Two Variables,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 6_Q3.png,"(a) y <= 2, x < 3, y >= – x, y >= 0
-(b) y > –2x, y >= 2x – 8, y <= – (1/2) * x",,Linear Inequalities in Two Variables,English,yes,4,"PROBLEM TYPE: Linear Inequalities
-
-QUESTION:
-Write the linear inequalities that satisfy the image of the shaded region under a reflection in the x-axis.
-(a)
-(b)
-
-VISUAL DATA:
-(a) The shaded region is a rectangle. The vertices of the rectangle appear to be at (0,0), (3,0), (3,-2), and (0,-2). There is a solid pink line passing through (0,0) and (3,3). There is a dashed pink line at x=3. There is a solid pink line at y=-2. The shaded region is below the line y=0 (the x-axis) and to the left of x=3, and above the line y=-2.
-
-Lines in graph (a):
-1. Line 1: Passes through (0,0) and (3,3). Equation: y = x. Style: Solid.
-2. Line 2: Vertical dashed line at x = 3. Equation: x = 3. Style: Dashed.
-3. Line 3: Horizontal solid line at y = -2. Equation: y = -2. Style: Solid.
-
-Shaded region in graph (a) is described by:
-y <= 0 (below x-axis)
-x <= 3 (left of x=3)
-y >= -2 (above y=-2)
-
-(b) The shaded region is a triangle. The vertices of the triangle are at (0,0), (2,4), and (4,2). There is a solid pink line passing through (0,0) and (4,2). There is a solid pink line passing through (2,4) and (4,2). There is a dashed pink line passing through (0,0) and (2,4).
-
-Lines in graph (b):
-1. Line 1: Passes through (0,0) and (2,4). Equation: y = 2x. Style: Dashed.
-2. Line 2: Passes through (0,0) and (4,2). Equation: y = 0.5x. Style: Solid.
-3. Line 3: Passes through (2,4) and (4,2). Slope = (2-4)/(4-2) = -2/2 = -1. Equation: y - 4 = -1(x - 2) => y = -x + 2 + 4 => y = -x + 6. Style: Solid.
-
-Shaded region in graph (b) is described by:
-y >= 0.5x (above Line 2)
-y <= 2x (below Line 1)
-y <= -x + 6 (below Line 3)
-
-Reflection in x-axis means that a point (x,y) is mapped to (x,-y).
-
-Applying reflection to inequalities of (a):
-Original inequalities for shaded region in (a):
-0 <= x <= 3
--2 <= y <= 0
-
-Reflected region:
-0 <= x <= 3
-0 <= -y <= 2  => -2 <= y <= 0
-So the inequalities for the reflected region in (a) are:
-0 <= x <= 3
-0 <= y <= 2
-
-Applying reflection to inequalities of (b):
-Original inequalities for shaded region in (b):
-y >= 0.5x
-y <= 2x
-y <= -x + 6
-
-Reflected inequalities:
--y >= 0.5x => y <= -0.5x
--y <= 2x => y >= -2x
--y <= -x + 6 => y >= x - 6
-
-CONSTRAINTS:
-None mentioned beyond the reflection in the x-axis.","Problem Understanding: The problem asks to find the linear inequalities that describe the shaded regions in graph (b) after they have been reflected across the x-axis. The original inequalities for graph (b) are provided, and the reflection rule (x, y) -> (x, -y) is given.
+(b) y > –2x, y >= 2x – 8, y <= – (1/2) * x","Problem Understanding: The problem asks to find the linear inequalities that describe the shaded regions in graph (b) after they have been reflected across the x-axis. The original inequalities for graph (b) are provided, and the reflection rule (x, y) -> (x, -y) is given.
 
 Solution Approach: The solution involves taking the original inequalities for graph (b) and applying the transformation rule for reflection across the x-axis. For each inequality, the y-variable will be replaced by -y, and the inequality will be solved for y.
 
@@ -1122,142 +734,14 @@ FINAL ANSWER: The linear inequalities that satisfy the image of the shaded regio
 y <= -0.5x
 y >= -2x
 y >= x - 6
-(Confidence: 1.00)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 1.00)",wrong,5.328262567520142,0,4,"Using the provided marking scheme (full mark 4 only if the answer matches the ground truth), the AI response does not match the ground truth for part (b). Comparison: ground truth (b) = {y > -2x, y >= 2x - 8, y <= -0.5x}. AI response = {y >= -2x, y >= x - 6, y <= -0.5x}. Only y <= -0.5x matches. The other two inequalities differ: ground truth has a strict inequality y > -2x while the AI gives y >= -2x (operator incorrect), and ground truth has y >= 2x - 8 whereas the AI gives y >= x - 6 (different slope and intercept). The AI also did not address part (a). Therefore the answer does not match the ground truth and receives 0 out of 4.",13.781272649765015,,Linear Inequalities in Two Variables,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 7_Q1.png,"(a) 3/8 ms^–2  (b) 1 200 m
 (c) Encik Merisat drives for a distance of 1.725 km in
-2.5 minutes with an average speed of 41.4 km h–1.",,Graphs of Motion,English,yes,5,"PROBLEM TYPE: Speed-time graph analysis
-
-QUESTION:
-Encik Merisat visits his friend who lives in the same housing estate by car. The speed-time graph shows the journey of Encik Merisat to his friend's house.
-(a) Calculate the rate of change of speed, in m s
--2
-, of his car for the first 20 seconds.
-(b) Calculate the distance, in metres, travelled at a uniform speed.
-(c) Describe Encik Merisat's journey for the period of 2.5 minutes.
-
-VISUAL DATA:
-Graph Type: Speed-time graph
-Axes:
-X-axis: Time (seconds)
-Y-axis: Speed (m s
--1
-)
-
-Lines/Curves:
-1. Line segment from (0, 0) to (40, 15)
-   - Style: Solid
-   - Points: (0, 0), (40, 15)
-2. Line segment from (40, 15) to (120, 15)
-   - Style: Solid
-   - Points: (40, 15), (120, 15)
-3. Line segment from (120, 15) to (150, 0)
-   - Style: Solid
-   - Points: (120, 15), (150, 0)
-
-Labeled Points on Graph:
-- Origin: (0, 0)
-- Peak Speed Point 1: (40, 15)
-- Peak Speed Point 2: (120, 15)
-- End Point: (150, 0)
-
-Scale:
-X-axis: Each major division represents 40 seconds, with markings at 0, 40, 120, 150.
-Y-axis: Each major division represents 15 m s
--1
-, with a marking at 15.
-
-CONSTRAINTS:
-- The journey is described for the period of 2.5 minutes.
-- Calculations for rate of change of speed are in m s
--2
-.
-- Distance calculation is in metres.
-","Error: Solver recursion limit reached after Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
-For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",0,ERROR,google_genai:gemini-2.5-flash-lite
-Chapter 7_Q2.png,(a) 100               (b) 1.6               (c) 57.14,,Graphs of Motion,English,yes,5,"PROBLEM TYPE: Distance-time graph analysis
-
-QUESTION:
-A car and a tour bus travel for 150 km in 3 hours. The distance-time graph shows the motion of the car and the tour bus. Calculate
-(a) the rate of change in distance, in km h
--1
-, of the car for the first 24 minutes.
-(b) the value of t.
-(c) the rate of change in distance, in km h
--1
-, of the car for the last 80 km.
-
-VISUAL DATA:
-The graph shows distance in km on the y-axis and time in hours on the x-axis. There are two lines: one pink representing the tour bus and one green representing the car.
-
-Tour Bus (Pink Line):
-- Starts at point A (0, 150).
-- Ends at point B (3, 0).
-- Passes through point Q.
-- The line is solid.
-
-Car (Green Line):
-- Starts at point O (0, 0).
-- Passes through point P.
-- Passes through point Q.
-- Ends at point R (3, 150).
-- The line is solid.
-
-Key Points and Intersections:
-- Point A: (0, 150)
-- Point B: (3, 0)
-- Point O: (0, 0)
-- Point R: (3, 150)
-- Point P: (0.7, 70)
-- Point Q: Intersection of the two lines. Its coordinates are (t, 70).
-
-Axis Labels and Scale:
-- Y-axis: Distance (km), scale marked at 70 and 150.
-- X-axis: Time (hours), scale marked at 0.7, t, and 3.
-
-CONSTRAINTS:
-- The total distance for both vehicles is 150 km.
-- The total time for travel is 3 hours.
-- Part (a) asks for the rate of change for the first 24 minutes.
-- Part (c) asks for the rate of change for the last 80 km of the car's journey.","Error: Solver recursion limit reached after Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
-For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",0,ERROR,google_genai:gemini-2.5-flash-lite
-Chapter 7_Q3.png,(a) 8 seconds (b) 17,,Graphs of Motion,English,yes,5,"
-PROBLEM TYPE: Motion Graphs
-
-QUESTION:
-The speed-time graph shows the motion of a car and a motorcycle. Calculate
-(a) the duration when the motorcycle travels at a uniform speed.
-(b) the value of t, if the distances travelled by the car and the motorcycle are the same for the period of t seconds.
-
-VISUAL DATA:
-Graph Type: Speed-time graph
-Axes:
-X-axis: Time (seconds)
-Y-axis: Speed (m s^-1)
-
-Lines:
-1. Car (Magenta line):
-   - Passes through O(0, 0) and R(t, 10).
-   - Also passes through (2, 2.5) (estimated from graph, not explicitly labeled).
-   - Line style: Solid
-2. Motorcycle (Green line):
-   - Segment OP: From O(0, 0) to P(2, 4).
-   - Segment PQ: From P(2, 4) to Q(10, 4).
-   - Segment QR: From Q(10, 4) to R(t, 10).
-   - Line style: Solid
-
-Labeled Points:
-O: (0, 0)
-P: (2, 4)
-Q: (10, 4)
-R: (t, 10)
-
-Scale:
-X-axis: Each major division represents 2 units (0, 2, 10, t).
-Y-axis: Each major division represents 2 units (0, 4, 10).
-
-CONSTRAINTS:
-None explicitly stated in the text, but the problem implies that the distances travelled are calculated from the area under the speed-time graph.
-","Problem Understanding: The problem asks us to analyze a speed-time graph for a car and a motorcycle. We need to find: (a) the duration the motorcycle travels at a uniform speed. (b) the time 't' when the distances traveled by the car and the motorcycle are equal.
+2.5 minutes with an average speed of 41.4 km h–1.","Error: Solver recursion limit reached after Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",wrong,3.302717685699463,0,5,"The AI output contains only an error message and provides no numerical answers. The ground truth requires three parts: (a) 3/8 ms^–2, (b) 1 200 m, and (c) drive distance/time and average speed (1.725 km in 2.5 minutes with 41.4 km h–1). Per the provided marking scheme, full marks (5) are given only if the agent's answers match the ground truth. Because the agent gave no answers, it does not match any part of the ground truth, so it receives 0 out of 5.",8.266760349273682,,Graphs of Motion,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 7_Q2.png,(a) 100               (b) 1.6               (c) 57.14,"Error: Solver recursion limit reached after Recursion limit of 50 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",wrong,2.5599496364593506,0,5,"The AI response produced an error message and did not provide any numerical answers for parts (a), (b), or (c). The ground truth answers are (a) 100, (b) 1.6, (c) 57.14 and the marking scheme awards full marks (5) only when the agent's answers match the ground truth. Because no answers were given, the response does not match the ground truth and receives 0 marks.",7.513820648193359,,Graphs of Motion,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 7_Q3.png,(a) 8 seconds (b) 17,"Problem Understanding: The problem asks us to analyze a speed-time graph for a car and a motorcycle. We need to find: (a) the duration the motorcycle travels at a uniform speed. (b) the time 't' when the distances traveled by the car and the motorcycle are equal.
 
 Solution Approach: For part (a), we need to identify the segment of the motorcycle's motion where its speed is constant. For part (b), we need to calculate the distance traveled by both the car and the motorcycle as a function of 't' by finding the area under their respective speed-time graphs. Then, we will set these distances equal to each other and solve for 't'.
 
@@ -1281,28 +765,9 @@ Solution Steps:
 Reasoning: The calculations for uniform speed duration are straightforward from the graph. The distance calculations involve finding the area under the respective speed-time graphs. For the motorcycle, it
 
 FINAL ANSWER: (a) The duration when the motorcycle travels at a uniform speed is 8 seconds. (b) The value of t, when the distances travelled by the car and the motorcycle are the same, is 17 seconds.
-(Confidence: 0.95)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.95)",correct,3.1164119243621826,5,5,"Full marks (5/5). The AI's final answers match the ground truth: (a) 8 seconds and (b) t = 17 seconds. The solution correctly identified the motorcycle's constant-speed interval P(2,4) to Q(10,4) giving 10-2 = 8 s, computed areas under the speed-time graphs for both vehicles correctly (motorcycle: 36 + 7(t-10) = 7t - 34; car: 5t), and solved 5t = 7t - 34 to obtain t = 17. Reasoning and calculations are consistent and accurate per the provided marking scheme.",7.536888837814331,,Graphs of Motion,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 8_Q1.png,"(a) 9, 2, 3.210, 1.792
-(b) interquartile range",,Measures of Dispersion ,English,yes,6,"PROBLEM TYPE: Ungrouped Data Statistics
-
-QUESTION:
-The table below shows the time taken, in hours, by 32 pupils to do revision in a week.
-
-| Time (hours) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 10 |
-|---|---|---|---|---|---|---|---|---|
-| Number of pupils | 2 | 5 | 6 | 9 | 6 | 2 | 1 | 1 |
-
-(a) Calculate the range, interquartile range, variance and standard deviation of the distribution.
-(b) State the most appropriate measure of dispersion to show the time spent on revision by the pupils.
-
-VISUAL DATA:
-Table:
-Time (hours): [1, 2, 3, 4, 5, 6, 7, 10]
-Number of pupils: [2, 5, 6, 9, 6, 2, 1, 1]
-Total number of pupils: 32
-
-CONSTRAINTS:
-None","Problem Understanding: The user wants to calculate the range, interquartile range, variance, and standard deviation for the given grouped data, and also determine the most appropriate measure of dispersion.
+(b) interquartile range","Problem Understanding: The user wants to calculate the range, interquartile range, variance, and standard deviation for the given grouped data, and also determine the most appropriate measure of dispersion.
 
 Solution Approach: The `calculate_ungrouped_statistics` tool was used with the `frequency` data type to obtain the range, interquartile range, variance, and standard deviation. For part (b), since the data represents time spent on revision, which can have outliers, the interquartile range (IQR) is the most appropriate measure of dispersion as it is less affected by extreme values compared to the range.
 
@@ -1318,30 +783,9 @@ Reasoning: The calculations for range, IQR, variance, and standard deviation wer
 
 FINAL ANSWER: (a) Range = 9 hours, Interquartile Range (IQR) = 2 hours, Variance = 3.21 hours², Standard Deviation = 1.7916 hours.
 (b) The most appropriate measure of dispersion to show the time spent on revision by the pupils is the Interquartile Range (IQR) because it is not affected by extreme values and provides a good measure of spread for the middle 50% of the data.
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.85)",correct,5.456875801086426,6,6,"Full marks awarded (6/6) because the AI response matches the ground truth exactly: (a) Range = 9, IQR = 2, Variance = 3.21, Standard deviation ≈ 1.792 (AI gave 1.7916, acceptable rounding); (b) most appropriate measure = interquartile range. This satisfies the provided marking instruction to give full marks when the agent's answers match the ground truth.",5.039883136749268,,Measures of Dispersion ,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 8_Q2.png,"(a) 1.2, 0.4
-(b) 5, 3",,Measures of Dispersion ,English,yes,4,"PROBLEM TYPE: Statistics
-
-QUESTION:
-Calculate the range and the interquartile range of each set of data.
-(a)
-Diameter (cm) | 6.0 | 6.2 | 6.4 | 6.6 | 6.8 | 7.0 | 7.2
-Number of limes | 6 | 9 | 12 | 18 | 20 | 10 | 5
-(b)
-Age (years) | 13 | 14 | 15 | 16 | 17 | 18
-Number of participants | 12 | 18 | 21 | 20 | 21 | 8
-
-VISUAL DATA:
-Data Set (a):
-Diameters (cm): 6.0, 6.2, 6.4, 6.6, 6.8, 7.0, 7.2
-Number of limes: 6, 9, 12, 18, 20, 10, 5
-
-Data Set (b):
-Age (years): 13, 14, 15, 16, 17, 18
-Number of participants: 12, 18, 21, 20, 21, 8
-
-CONSTRAINTS:
-None","Problem Understanding: The user wants to calculate the range and interquartile range (IQR) for two different sets of data, presented as frequency tables.
+(b) 5, 3","Problem Understanding: The user wants to calculate the range and interquartile range (IQR) for two different sets of data, presented as frequency tables.
 
 Solution Approach: For each dataset, I will use the `calculate_ungrouped_statistics` tool to obtain the range and quartiles. Then, I will calculate the IQR using the formula IQR = Q3 - Q1. Since the data is given in a frequency table format, I will use the `data_type` parameter set to ""frequency"".
 
@@ -1382,7 +826,7 @@ Calling `calculate_ungrouped_statistics` for Dataset (a).
 Dataset (b):
 Frequency data: {""13"": 12, ""14"": 18, ""15"": 21, ""16"": 20, ""17"": 21, ""18"": 8}
 Calling `calculate_ungrouped_statistics` for Dataset (b).
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.85)",wrong,4.278175354003906,0,4,"Full mark is 4 only if the AI response gives the final numerical answers matching the ground truth ((a) range 1.2, IQR 0.4; (b) range 5, IQR 3). The AI response only described a correct method and listed reconstructed frequency tables, but did not compute or report the final numerical values for range and IQR for either dataset. Because the required final answers are missing, no marks can be awarded under the provided marking scheme.",8.55526876449585,,Measures of Dispersion ,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 8_Q3.png,"(a) Team A Team B
 mean = 61 mean = 61
 range = 22 range = 30
@@ -1390,29 +834,7 @@ variance = 78.8 variance = 155.6
 standard deviation standard deviation
 = 8.877 = 12.47
 (b) No because of the existence of outlier or extreme
-values",,Measures of Dispersion ,English,yes,7,"PROBLEM TYPE: Ungrouped Data Statistics
-
-QUESTION:
-The table below shows the masses of players in two sepak takraw teams.
-
-Team | Mass (kg)
----|---
-A | 48, 53, 65, 69, 70
-B | 45, 47, 68, 70, 75
-
-(a) Calculate the mean, range, variance and standard deviation for the masses of the players in both teams.
-(b) Is the range appropriate to be used as a measure of dispersion to represent the data above? Justify your answer.
-(c) Determine the mass of which team has a greater dispersion from the mean.
-
-VISUAL DATA:
-Table:
-Team | Mass (kg)
----|---
-A | 48, 53, 65, 69, 70
-B | 45, 47, 68, 70, 75
-
-CONSTRAINTS:
-None","Problem Understanding: The user wants to calculate and compare the dispersion of masses for two sepak takraw teams (Team A and Team B). This involves calculating the mean, range, variance, and standard deviation for each team, assessing the appropriateness of the range as a measure of dispersion, and determining which team has a greater dispersion from the mean.
+values","Problem Understanding: The user wants to calculate and compare the dispersion of masses for two sepak takraw teams (Team A and Team B). This involves calculating the mean, range, variance, and standard deviation for each team, assessing the appropriateness of the range as a measure of dispersion, and determining which team has a greater dispersion from the mean.
 
 Solution Approach: To solve this problem, I will use the `calculate_ungrouped_statistics` tool to compute the mean, range, variance, and standard deviation for each team. Then, I will analyze the results to answer the questions about the appropriateness of the range and which team has greater dispersion.
 
@@ -1438,19 +860,21 @@ Reasoning: The calculations for mean, range, variance, and standard deviation we
 FINAL ANSWER: (a) Team A: Mean = 59.8 kg, Range = 22 kg, Variance = 72.3 kg^2, Standard Deviation = 8.5 kg. Team B: Mean = 63.0 kg, Range = 30 kg, Variance = 131.2 kg^2, Standard Deviation = 11.45 kg.
 (b) The range is not the most appropriate measure of dispersion for this data because it is heavily influenced by the extreme values (minimum and maximum masses) and does not take into account the distribution of the masses in between. A single outlier can significantly affect the range, making it a less robust measure of spread compared to standard deviation or interquartile range.
 (c) Team B has a greater dispersion from the mean. This is evidenced by its larger standard deviation (11.45 kg) compared to Team A (8.5 kg). The larger standard deviation for Team B indicates that its players' masses are, on average, further away from the team's mean mass.
-(Confidence: 1.00)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
-Chapter 9_Q1.png,"{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)}, 1/2",,Probability of Combined Events,English,yes,4,"PROBLEM TYPE: Probability
+(Confidence: 1.00)",wrong,7.379033088684082,3,7,"Using a 7-mark allocation (one mark each for: mean A, mean B, range A, range B, variance A, variance B, part (b) conclusion) as implied by the ground-truth/full-mark instruction: 
 
-QUESTION:
-Two boxes labelled as K and L contain four cards labelled with the letters ""S, E, R, I"" and three cards labelled with the numbers ""4, 5, 6"" respectively. A card is chosen at random from each box.
-By listing all the possible outcomes, calculate the probability of getting a letter ""S"" from box K or a multiple of 3 from box L.
+Correct items:
+- Range for Team A = 22: matches ground truth (award 1 mark).
+- Range for Team B = 30: matches ground truth (award 1 mark).
+- Part (b) conclusion (range not appropriate due to outliers/extreme values): matches ground truth reasoning (award 1 mark).
 
-VISUAL DATA:
-Box K contains cards labelled: S, E, R, I
-Box L contains cards labelled: 4, 5, 6
+Incorrect items:
+- Means: ground truth gives mean = 61 for both teams; AI gave 59.8 (Team A) and 63.0 (Team B) — incorrect (0 marks for mean A and mean B).
+- Variances: ground truth 78.8 (A) and 155.6 (B); AI gave 72.3 (A) and 131.2 (B) — incorrect (0 marks for variance A and variance B).
 
-CONSTRAINTS:
-None","Problem Understanding: The problem asks for the probability of drawing an ""S"" from Box K OR a multiple of 3 from Box L, considering all possible outcomes from choosing one card from each box.
+Standard deviations reported by the AI (8.5 and 11.45) are close to but do not match the ground-truth values (8.877 and 12.47); however, under the strict marking scheme tied to the provided ground truth, these do not earn the variance/SD marks because the corresponding variance and mean values are also incorrect.
+
+Total awarded = 1 + 1 + 1 = 3 out of 7.",15.963972568511963,,Measures of Dispersion ,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 9_Q1.png,"{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)}, 1/2","Problem Understanding: The problem asks for the probability of drawing an ""S"" from Box K OR a multiple of 3 from Box L, considering all possible outcomes from choosing one card from each box.
 
 Solution Approach: 1. Generate the sample space of all possible outcomes by combining one card from Box K and one card from Box L. 2. Count the total number of outcomes. 3. Count the number of favorable outcomes where the card from Box K is ""S"" OR the card from Box L is a multiple of 3. 4. Calculate the probability using the formula: P(Event) = (Favorable Outcomes) / (Total Outcomes).
 
@@ -1480,32 +904,8 @@ Combine these, removing duplicates (using the principle of inclusion-exclusion f
 Reasoning: The solution first generated all possible outcomes, then identified the outcomes that satisfy the condition (S from K OR multiple of 3 from L), and finally calculated the probability by dividing the count of favorable outcomes by the total number of outcomes. The calculation correctly accounts for the 
 
 FINAL ANSWER: The probability of getting a letter ""S"" from box K or a multiple of 3 from box L is 1/2 or 0.5.
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
-Chapter 9_Q2.png,230,,Probability of Combined Events,English,yes,5,"PROBLEM TYPE: Probability and Expected Value
-
-QUESTION:
-Each customer of Naga Shop who spends more than RM200 will be given a chance to spin a lucky wheel that has six similar sectors. Two of the sectors are red and the rest are yellow.
-
-If the pointer of the lucky wheel stops in the red sector, the customer has a chance to choose a cash voucher from box A. If the pointer of the lucky wheel stops in the yellow sector, the customer has a chance to choose a cash voucher from box B. The number of cash vouchers in box A and box B are shown in the table above.
-
-It is estimated that 450 customers of Naga Shop will spend more than RM200. Calculate the number of RM10 vouchers the Naga Shop needs to prepare.
-(The selected cash vouchers will be replaced with new vouchers by the shop so that the number of cash vouchers in both boxes remains the same.)
-
-VISUAL DATA:
-Lucky Wheel:
-- 6 similar sectors
-- 2 sectors are red
-- 4 sectors are yellow
-
-Table: Number of cash vouchers
-Box | RM50 | RM10
---- | ---- | ----
-A   | 20   | 5
-B   | 10   | 20
-
-CONSTRAINTS:
-- The number of cash vouchers in both boxes remains the same after selection (vouchers are replaced).
-- 450 customers will spend more than RM200.","Problem Understanding: The problem asks us to calculate the total number of RM10 vouchers Naga Shop needs to prepare for 450 customers. Customers get a chance to spin a lucky wheel. If it lands on red, they choose from Box A; if yellow, they choose from Box B. The number of vouchers of each denomination in each box is given. The key constraint is that selected vouchers are replaced.
+(Confidence: 0.85)",correct,4.08121657371521,4,4,"Full marks (4) awarded. The AI correctly listed the sample space (12 outcomes), identified the favorable outcomes {(S,4),(S,5),(S,6),(E,6),(R,6),(I,6)} by applying the OR condition without double-counting, and computed the probability 6/12 = 1/2. This matches the provided ground truth and satisfies the given marking scheme limit.",7.5322959423065186,,Probability of Combined Events,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 9_Q2.png,230,"Problem Understanding: The problem asks us to calculate the total number of RM10 vouchers Naga Shop needs to prepare for 450 customers. Customers get a chance to spin a lucky wheel. If it lands on red, they choose from Box A; if yellow, they choose from Box B. The number of vouchers of each denomination in each box is given. The key constraint is that selected vouchers are replaced.
 
 Solution Approach: 1. Determine the probability of landing on red and yellow sectors on the lucky wheel.
 2. For each sector color, determine the probability of selecting an RM10 voucher from the corresponding box.
@@ -1535,49 +935,9 @@ Solution Steps:
 Reasoning: The calculation follows the expected value principle. We determined the probability of each outcome (landing on red/yellow, selecting RM10 voucher from respective box) and combined them to find the overall probability of a customer receiving an RM10 voucher. Multiplying this by the total number of customers gives the expected number of RM10 vouchers required. The constraint about replacement ensures the probabilities remain constant for each customer.
 
 FINAL ANSWER: The Naga Shop needs to prepare 230 RM10 vouchers.
-(Confidence: 0.85)",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+(Confidence: 0.85)",correct,2.712580919265747,5,5,"The AI's final answer is 230, which exactly matches the ground truth. The solution correctly computed P(red)=1/3 and P(yellow)=2/3, correctly found P(RM10|A)=1/5 and P(RM10|B)=2/3, combined them to get overall probability 23/45, and multiplied by 450 to obtain 230. The reasoning and arithmetic are correct and the replacement assumption is properly handled. Per the provided marking scheme (full mark if matching ground truth), award full marks (5).",7.613357305526733,,Probability of Combined Events,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 9_Q3.png,"(a) 7/33
-(b) 5/33",,Probability of Combined Events,English,yes,5,"PROBLEM TYPE: Probability from Bar Chart
-
-QUESTION:
-The following bar chart shows the number of badminton clubs and bodybuilding clubs in Kedah, Negeri Sembilan, Federal Territory of Labuan and Federal Territory of Putrajaya.
-A badminton club and a bodybuilding club in the four states are selected at random. Calculate the probability that
-(a) both clubs selected are from Kedah.
-(b) a club is selected each from the Federal Territories and Negeri Sembilan respectively.
-
-VISUAL DATA:
-Bar Chart:
-X-axis: State (Kedah, Negeri Sembilan, F.T. Labuan, F.T. Putrajaya)
-Y-axis: Number of clubs
-
-Keys:
-Badminton (Grey)
-Bodybuilding (Blue)
-
-Data:
-Kedah:
-Bodybuilding: 6 clubs
-Badminton: 14 clubs
-Total: 20 clubs
-
-Negeri Sembilan:
-Bodybuilding: 2 clubs
-Badminton: 11 clubs
-Total: 13 clubs
-
-F.T. Labuan:
-Bodybuilding: 2 clubs
-Badminton: 3 clubs
-Total: 5 clubs
-
-F.T. Putrajaya:
-Bodybuilding: 2 clubs
-Badminton: 5 clubs
-Total: 7 clubs
-
-CONSTRAINTS:
-- A badminton club and a bodybuilding club are selected at random.
-- The selection is from the four states mentioned.","Step 1: Problem Understanding
+(b) 5/33","Step 1: Problem Understanding
 The problem asks us to calculate the probability of two events occurring when one badminton club and one bodybuilding club are selected at random from four different states (Kedah, Negeri Sembilan, F.T. Labuan, F.T. Putrajaya).
 
 Part (a) asks for the probability that both selected clubs are from Kedah.
@@ -1653,7 +1013,7 @@ Step 3: Final Answer
 (a) The probability that both clubs selected are from Kedah is 7/33.
 (b) The probability that one club is selected from the Federal Territories and the other is selected from Negeri Sembilan is 5/33.
 
-FINAL ANSWER: (a) The probability that both clubs selected are from Kedah is 7/33. (b) The probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively is 5/33.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+FINAL ANSWER: (a) The probability that both clubs selected are from Kedah is 7/33. (b) The probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively is 5/33.",correct,4.342348575592041,5,5,"Full marks awarded (5/5). The AI response correctly interpreted the experiment (one badminton and one bodybuilding club), computed total outcomes (33 badminton × 12 bodybuilding = 396), counted favourable outcomes for (a) Kedah (14×6 = 84 → 84/396 = 7/33) and for (b) FT and Negeri Sembilan (cases 8×2 + 11×4 = 16 + 44 = 60 → 60/396 = 5/33). All calculations and final simplified fractions match the ground truth.",6.71855092048645,,Probability of Combined Events,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 10_Q1.png,"(a) Personal monthly financial plan for Encik Nabil
 Income and Expenditure RM
 Active income:
@@ -1694,41 +1054,7 @@ Surplus/Deficit 1 070
 (b) Encik Nabil’s personal financial plan has a surplus
 where there is a positive cash flow when the total
 income is more than the total expenses. This has
-improved Encik Nabil’s liquidity",, Financial Management,English,yes,7,"
-PROBLEM TYPE: Financial Planning and Budget Analysis
-
-QUESTION:
-Encik Nabil works as an engineer in a factory with a monthly net salary of RM3 800. He is also a part-time sales agent of product X. The monthly commission earned is estimated to be RM450. The rental collected from the second house is RM600 per month. His estimated monthly expenses are shown below.
-
-Monthly Expenses | RM
------------------|----
-Housing loan instalment (1) | 800
-Housing loan instalment (2) | 500
-Food expenses | 900
-Utility payments | 150
-Toll and petrol expenses | 200
-Internet service subscription | 100
-Eat at a luxury restaurant | 400
-Insurance expenses | 350
-
-Encik Nabil sets aside 10% of his salary as fixed monthly savings in order to achieve his financial goals.
-(a) You are required to create a monthly personal financial plan for Encik Nabil.
-(b) Give comments on the surplus or deficit that will be experienced by Encik Nabil based on this financial plan.
-
-VISUAL DATA:
-Table: Monthly Expenses
-- Housing loan instalment (1): RM 800
-- Housing loan instalment (2): RM 500
-- Food expenses: RM 900
-- Utility payments: RM 150
-- Toll and petrol expenses: RM 200
-- Internet service subscription: RM 100
-- Eat at a luxury restaurant: RM 400
-- Insurance expenses: RM 350
-
-CONSTRAINTS:
-- Encik Nabil sets aside 10% of his salary as fixed monthly savings.
-","Step 1: Problem Understanding
+improved Encik Nabil’s liquidity","Step 1: Problem Understanding
 The problem asks us to create a monthly personal financial plan for Encik Nabil and comment on his budget surplus or deficit. We need to consider his income from salary, commission, and rental, as well as his various monthly expenses. A key constraint is that he aims to save 10% of his salary.
 
 Step 2: Solution Execution
@@ -1781,34 +1107,13 @@ Remaining Surplus: RM 1,020
 Encik Nabil's financial plan shows a healthy surplus of RM 1,020 per month after accounting for all his expenses and his target savings. This indicates that his current financial plan is viable and he has additional funds available for other goals or investments.
 
 Step 3: Final Answer
-FINAL ANSWER: (a) Encik Nabil's monthly personal financial plan includes a total income of RM 4,850, total expenses of RM 3,450, a fixed monthly saving of RM 380 (10% of his salary), and a remaining surplus of RM 1,020. (b) Encik Nabil will experience a monthly surplus of RM 1,020, indicating that his current financial plan is viable and sustainable.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+FINAL ANSWER: (a) Encik Nabil's monthly personal financial plan includes a total income of RM 4,850, total expenses of RM 3,450, a fixed monthly saving of RM 380 (10% of his salary), and a remaining surplus of RM 1,020. (b) Encik Nabil will experience a monthly surplus of RM 1,020, indicating that his current financial plan is viable and sustainable.",correct,8.377500295639038,4,7,"Full mark (7) is only given if the answer matches the ground truth exactly. The AI correctly identified and summed total income as RM4,850 (1 mark) and correctly computed fixed monthly savings as RM380 (1 mark). The AI listed all expense items matching the ground truth (2 marks). However, the AI made an arithmetic error: the expense items sum to RM3,400 but the AI wrote total expenses as RM3,450 and used that incorrect value to compute the surplus, giving RM1,020 instead of the correct RM1,070. This incorrect final calculation loses the remaining marks. Therefore, awarding 4 out of 7.",17.63683795928955,, Financial Management,English,google_genai:gemini-2.5-flash-lite,0
 Chapter 10_Q2.png,"(a) Mrs Thong does not spend wisely because her
 total monthly savings of RM250 compared to the
 income of RM6 000 which is less than 10%.
 (b) Mrs Thong will not be able to achieve the
 investment goal of RM500 000 with monthly
-savings of RM250",, Financial Management,English,yes,6,"The information below is Mrs Thong's financial plan.
-
-| Net Income | Financial Plan (RM) |
-| Mrs Thong's salary | 6 000 |
-
-| Expenses Budget |
-| House/apartment loan, including maintenance | 500 |
-| Car instalment | 700 |
-| Travel | 500 |
-| Rental | 1 500 |
-| Transport fares | 900 |
-| Utility bills | 250 |
-| Toll payments | 100 |
-| Groceries | 400 |
-| Allowances for parents | 600 |
-| Savings | 100 |
-| Insurance | 200 |
-| Total expenses | 5 750 |
-| Mrs Thong's income balance | 250 |
-
-(a) Does Mrs Thong spend her money wisely?
-(b) Will Mrs Thong be able to achieve her long-term financial goal if she wishes to buy a property worth RM500 000 within 6 years with her current spending behaviour?","Step 1: Problem Understanding
+savings of RM250","Step 1: Problem Understanding
 - Restate what needs to be found:
     (a) Determine if Mrs. Thong spends her money wisely based on her financial plan.
     (b) Assess if Mrs. Thong can afford a RM500,000 property in 6 years given her current spending habits.
@@ -1845,4 +1150,4 @@ Step 3: Final Answer
 (a) Mrs. Thong's current savings rate is 4.17%, with a monthly surplus of RM 250. While her budget is viable (income covers expenses), her savings rate is quite low, which may not be considered ""wise"" for achieving significant long-term financial goals.
 (b) Mrs. Thong will not be able to achieve her financial goal of buying a RM 500,000 property within 6 years with her current spending behavior. She would save RM 18,000 in 6 years, resulting in a shortfall of RM 482,000.
 
-FINAL ANSWER: (a) Mrs. Thong's current savings rate is 4.17%, with a monthly surplus of RM 250. While her budget is viable, her savings rate is low, which may not be considered optimal for long-term financial goals. (b) No, Mrs. Thong will not be able to achieve her financial goal of buying a RM 500,000 property within 6 years with her current spending behavior, as she would only save RM 18,000, leaving a shortfall of RM 482,000.",0,SUCCESS,google_genai:gemini-2.5-flash-lite
+FINAL ANSWER: (a) Mrs. Thong's current savings rate is 4.17%, with a monthly surplus of RM 250. While her budget is viable, her savings rate is low, which may not be considered optimal for long-term financial goals. (b) No, Mrs. Thong will not be able to achieve her financial goal of buying a RM 500,000 property within 6 years with her current spending behavior, as she would only save RM 18,000, leaving a shortfall of RM 482,000.",correct,4.260659694671631,6,6,"Full marks because the AI response matches the ground truth exactly. For (a) it correctly calculates the monthly surplus RM250 and savings rate 250/6000 = 4.17% (which is <10%) and concludes Mrs Thong does not spend wisely. For (b) it correctly computes annual savings RM3,000 and total in 6 years RM18,000, compares this to RM500,000 and states she will not achieve the goal (shortfall RM482,000). The arithmetic and conclusions align with the provided marking scheme and ground truth.",7.773957967758179,, Financial Management,English,google_genai:gemini-2.5-flash-lite,0

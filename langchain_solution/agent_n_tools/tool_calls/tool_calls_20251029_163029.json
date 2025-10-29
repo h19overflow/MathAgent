@@ -1,0 +1,19 @@
+[
+  {
+    "name": "calculate_motion_gradient",
+    "args": {
+      "points_json": "[[0, 0], [40, 15]]",
+      "time_start": 0,
+      "time_end": 40
+    },
+    "id": "9f0ad460-8c27-48b7-af52-9a7b3bb03083"
+  },
+  {
+    "name": "analyze_uniform_motion",
+    "args": {
+      "time": 80,
+      "speed": 15
+    },
+    "id": "618ce54b-ac47-4ccc-b0c5-ad8c8bf90aaa"
+  }
+]

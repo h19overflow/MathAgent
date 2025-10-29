@@ -1,0 +1,72 @@
+[
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\":-5,\"y\":1}",
+      "line_point1_json": "{\"x\":0,\"y\":0}",
+      "line_point2_json": "{\"x\":-4,\"y\":2}",
+      "line_style": "solid"
+    },
+    "id": "498a9cc8-e93b-4b6e-a699-10c90ceea85a"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\":-5,\"y\":1}",
+      "line_point1_json": "{\"x\":-4,\"y\":0}",
+      "line_point2_json": "{\"x\":-4,\"y\":2}",
+      "line_style": "dashed"
+    },
+    "id": "54839b7c-717d-4c39-9184-d9354df20c34"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\":0,\"y\":1}",
+      "line_style": "solid",
+      "line_point2_json": "{\"x\":0,\"y\":4}",
+      "line_point1_json": "{\"x\":-2,\"y\":0}"
+    },
+    "id": "acf69c8b-4e4c-4a29-a97f-d17c75c5d3d8"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\":0,\"y\":1}",
+      "line_point2_json": "{\"x\":3,\"y\":0}",
+      "line_point1_json": "{\"x\":0,\"y\":4}",
+      "line_style": "solid"
+    },
+    "id": "9ecaec89-dc32-4f09-b234-9793b618f071"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\":0,\"y\":1}",
+      "line_style": "solid",
+      "line_point2_json": "{\"x\":3,\"y\":0}",
+      "line_point1_json": "{\"x\":-2,\"y\":0}"
+    },
+    "id": "fc5df130-0c92-4abb-90e6-092d90d4dfcb"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\":1.5,\"y\":0.8}",
+      "line_point2_json": "{\"x\":1,\"y\":0}",
+      "line_point1_json": "{\"x\":0,\"y\":-2}",
+      "line_style": "solid"
+    },
+    "id": "a6938b73-6dce-4c4a-9e7e-68a08d10db3a"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\":1.5,\"y\":0.8}",
+      "line_point2_json": "{\"x\":3,\"y\":1.5}",
+      "line_style": "solid",
+      "line_point1_json": "{\"x\":0,\"y\":0}"
+    },
+    "id": "e35e3cdf-7219-40cc-9df3-49b9df2f9c48"
+  }
+]

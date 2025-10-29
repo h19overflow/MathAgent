@@ -1,0 +1,9 @@
+[
+  {
+    "name": "generate_sample_space",
+    "args": {
+      "events_json": "[{\"name\": \"Box_K\", \"outcomes\": [\"S\", \"E\", \"R\", \"I\"]}, {\"name\": \"Box_L\", \"outcomes\": [\"4\", \"5\", \"6\"]}]"
+    },
+    "id": "73b78fb6-1a80-4a1b-9122-d31d4328c0bb"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "name": "solve_venn_diagram",
+    "args": {
+      "variable": "k",
+      "regions_json": "{\"P only\": 3, \"P and Q only\": 2, \"P and R only\": \"k\", \"P and Q and R\": 1, \"Q only\": \"4k\", \"Q and R only\": 5, \"R only\": \"2k\"}",
+      "equation": "4*k + 8 = 11 + 3*k"
+    },
+    "id": "a5a3b0a3-3669-4c76-a560-81ad9a3e8462"
+  }
+]

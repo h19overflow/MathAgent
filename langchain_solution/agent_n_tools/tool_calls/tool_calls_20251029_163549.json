@@ -1,0 +1,10 @@
+[
+  {
+    "name": "analyze_budget",
+    "args": {
+      "income_json": "[{\"source\": \"Salary\", \"amount\": 6000}]",
+      "expenses_json": "[{\"item\": \"House/apartment loan, including maintenance\", \"amount\": 500}, {\"item\": \"Car instalment\", \"amount\": 700}, {\"item\": \"Travel\", \"amount\": 500}, {\"item\": \"Rental\", \"amount\": 1500}, {\"item\": \"Transport fares\", \"amount\": 900}, {\"item\": \"Utility bills\", \"amount\": 250}, {\"item\": \"Toll payments\", \"amount\": 100}, {\"item\": \"Groceries\", \"amount\": 400}, {\"item\": \"Allowances for parents\", \"amount\": 600}, {\"item\": \"Savings\", \"amount\": 100}, {\"item\": \"Insurance\", \"amount\": 200}]"
+    },
+    "id": "2f36c22b-fe39-422f-8746-bf2cb6644e02"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "analyze_budget",
+    "args": {
+      "income_json": "[{\"source\": \"Salary\", \"amount\": 3800}, {\"source\": \"Commission\", \"amount\": 450}, {\"source\": \"Rental\", \"amount\": 600}]",
+      "expenses_json": "[{\"item\": \"Housing loan 1\", \"amount\": 800}, {\"item\": \"Housing loan 2\", \"amount\": 500}, {\"item\": \"Food\", \"amount\": 900}, {\"item\": \"Utilities\", \"amount\": 150}, {\"item\": \"Toll and Petrol\", \"amount\": 200}, {\"item\": \"Internet\", \"amount\": 100}, {\"item\": \"Luxury Restaurant\", \"amount\": 400}, {\"item\": \"Insurance\", \"amount\": 350}, {\"item\": \"Fixed Savings\", \"amount\": 380}]"
+    },
+    "id": "063bb27b-4a1b-4825-ab7b-2d7e360c6216"
+  }
+]

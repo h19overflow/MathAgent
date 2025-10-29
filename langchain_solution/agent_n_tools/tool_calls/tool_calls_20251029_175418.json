@@ -1,0 +1,18 @@
+[
+  {
+    "name": "analyze_budget",
+    "args": {
+      "income_json": "[{\"source\": \"Salary\", \"amount\": 3800}, {\"source\": \"Commission\", \"amount\": 450}, {\"source\": \"Rental Income\", \"amount\": 600}]",
+      "expenses_json": "{\"Housing loan instalment (1)\": 800, \"Housing loan instalment (2)\": 500, \"Food expenses\": 900, \"Utility payments\": 150, \"Toll and petrol expenses\": 200, \"Internet service subscription\": 100, \"Eat at a luxury restaurant\": 400, \"Insurance expenses\": 350}"
+    },
+    "id": "1c8b2724-d21f-44d3-ae2c-d1308b47369f"
+  },
+  {
+    "name": "analyze_budget",
+    "args": {
+      "income_json": "[{\"source\": \"Salary\", \"amount\": 3800}, {\"source\": \"Commission\", \"amount\": 450}, {\"source\": \"Rental Income\", \"amount\": 600}]",
+      "expenses_json": "{\"Housing loan instalment (1)\": 800, \"Housing loan instalment (2)\": 500, \"Food expenses\": 900, \"Utility payments\": 150, \"Toll and petrol expenses\": 200, \"Internet service subscription\": 100, \"Eat at a luxury restaurant\": 400, \"Insurance expenses\": 350}"
+    },
+    "id": "35449254-c4a2-4278-8c73-1d834fe80e35"
+  }
+]

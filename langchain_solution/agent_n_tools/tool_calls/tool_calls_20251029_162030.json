@@ -1,0 +1,20 @@
+[
+  {
+    "name": "solve_quadratic_equation",
+    "args": {
+      "a": 1,
+      "b": 10,
+      "c": -39
+    },
+    "id": "e69ed6cb-e922-4e04-a41e-44f574486b37"
+  },
+  {
+    "name": "solve_quadratic_equation",
+    "args": {
+      "c": -39,
+      "b": 10,
+      "a": 1
+    },
+    "id": "b44b3bab-2dd4-48a4-b9fb-d01814cf0af6"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\": -2, \"y\": 0}",
+      "line_point2_json": "{\"x\": -4, \"y\": 2}",
+      "line_style": "solid",
+      "line_point1_json": "{\"x\": 0, \"y\": 0}"
+    },
+    "id": "c8912d67-520c-4ed7-aadc-7bacdd747e9f"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\": -2, \"y\": 0}",
+      "line_point2_json": "{\"x\": -4, \"y\": 2}",
+      "line_point1_json": "{\"x\": 0, \"y\": 0}",
+      "line_style": "solid"
+    },
+    "id": "6ab441cc-c0c0-46ab-baa3-a770027d7911"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\": -2, \"y\": 0}",
+      "line_style": "solid",
+      "line_point1_json": "{\"x\": 0, \"y\": 0}",
+      "line_point2_json": "{\"x\": -4, \"y\": 2}"
+    },
+    "id": "b012165c-7218-4400-b736-2cf690f58bff"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\": 0, \"y\": 1}",
+      "line_point1_json": "{\"x\": -2, \"y\": 0}",
+      "line_point2_json": "{\"x\": 0, \"y\": 4}",
+      "line_style": "solid"
+    },
+    "id": "3d7155df-bab4-4066-a34c-1427b6906bb1"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\": 0, \"y\": 1}",
+      "line_point1_json": "{\"x\": 3, \"y\": 0}",
+      "line_point2_json": "{\"x\": 0, \"y\": 4}",
+      "line_style": "solid"
+    },
+    "id": "8155fcfd-63d2-4aa2-8c9f-cb2df3eb9d90"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\": 0.5, \"y\": -0.5}",
+      "line_style": "solid",
+      "line_point2_json": "{\"x\": 1, \"y\": 0}",
+      "line_point1_json": "{\"x\": 0, \"y\": -1}"
+    },
+    "id": "73f43ed9-2211-48d0-9d0b-70f0c83285ef"
+  },
+  {
+    "name": "convert_region_to_inequality",
+    "args": {
+      "test_point_json": "{\"x\": 0.5, \"y\": -0.5}",
+      "line_style": "solid",
+      "line_point1_json": "{\"x\": 0, \"y\": -2}",
+      "line_point2_json": "{\"x\": 3, \"y\": 0}"
+    },
+    "id": "bcbab4f9-29ab-43d8-8bd4-753a5a29bdf8"
+  }
+]

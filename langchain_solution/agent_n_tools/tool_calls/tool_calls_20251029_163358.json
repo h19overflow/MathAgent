@@ -1,0 +1,18 @@
+[
+  {
+    "name": "calculate_ungrouped_statistics",
+    "args": {
+      "data_json": "[48, 53, 65, 69, 70]",
+      "data_type": "raw"
+    },
+    "id": "6d1ca77e-5e36-40a6-9561-764594cc3131"
+  },
+  {
+    "name": "calculate_ungrouped_statistics",
+    "args": {
+      "data_json": "[45, 47, 68, 70, 75]",
+      "data_type": "raw"
+    },
+    "id": "dbe67886-a47b-40e2-b183-36dd263564d3"
+  }
+]

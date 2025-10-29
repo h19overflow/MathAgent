@@ -1,0 +1,52 @@
+[
+  {
+    "name": "analyze_budget",
+    "args": {
+      "income_json": "[{\"source\": \"Mrs Thong's salary\", \"amount\": 6000}]",
+      "expenses_json": "{\"House/apartment loan, including maintenance\": 500, \"Car instalment\": 700, \"Travel\": 500, \"Rental\": 1500, \"Transport fares\": 900, \"Utility bills\": 250, \"Toll payments\": 100, \"Groceries\": 400, \"Allowances for parents\": 600, \"Savings\": 100, \"Insurance\": 200}"
+    },
+    "id": "a253b85c-5cf7-4312-a5d9-4ee062234a84"
+  },
+  {
+    "name": "analyze_budget",
+    "args": {
+      "income_json": "[{\"source\": \"Mrs Thong's salary\", \"amount\": 6000}]",
+      "expenses_json": "{\"House/apartment loan, including maintenance\": 500, \"Car instalment\": 700, \"Travel\": 500, \"Rental\": 1500, \"Transport fares\": 900, \"Utility bills\": 250, \"Toll payments\": 100, \"Groceries\": 400, \"Allowances for parents\": 600, \"Savings\": 100, \"Insurance\": 200}"
+    },
+    "id": "a6431f29-c57f-48c1-8789-f5cba5c53988"
+  },
+  {
+    "name": "calculate_savings_rate",
+    "args": {
+      "income": 6000,
+      "expenses": 5650
+    },
+    "id": "1a953f8d-63e4-40a8-a84f-ecad77c375bf"
+  },
+  {
+    "name": "check_budget_viability",
+    "args": {
+      "income": 6000,
+      "min_surplus": 0,
+      "expenses": 5750
+    },
+    "id": "8c25e5fd-a59e-4a6a-88f5-bf97aab35715"
+  },
+  {
+    "name": "calculate_savings_rate",
+    "args": {
+      "income": 6000,
+      "expenses": 5750
+    },
+    "id": "7a1ee78e-5537-4f02-81df-fa51f893db10"
+  },
+  {
+    "name": "check_budget_viability",
+    "args": {
+      "income": 6000,
+      "expenses": 5750,
+      "min_surplus": 500000
+    },
+    "id": "11fff0aa-edd7-41b0-a0eb-7317d17d7928"
+  }
+]

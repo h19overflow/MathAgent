@@ -1,0 +1,20 @@
+[
+  {
+    "name": "solve_venn_diagram",
+    "args": {
+      "variable": "k",
+      "regions_json": "{\"P_only\": 3, \"Q_only\": \"4*k\", \"P_and_Q_not_R\": 2, \"P_and_R_not_Q\": \"k\", \"Q_and_R_not_P\": 5, \"P_and_Q_and_R\": 1, \"neither\": \"2*k\"}",
+      "equation": "4*k + 2 + 5 + 1 = 4*k + 2*k"
+    },
+    "id": "70727106-c788-4870-8b6a-1eca48fd6b34"
+  },
+  {
+    "name": "solve_venn_diagram",
+    "args": {
+      "variable": "k",
+      "equation": "4*k + 8 = 6*k",
+      "regions_json": "{\"P_only\": 3, \"Q_only\": \"4*k\", \"P_and_Q_not_R\": 2, \"P_and_R_not_Q\": \"k\", \"Q_and_R_not_P\": 5, \"P_and_Q_and_R\": 1, \"neither\": \"2*k\"}"
+    },
+    "id": "cc077ec5-3be3-43ab-8c32-92336574e82b"
+  }
+]

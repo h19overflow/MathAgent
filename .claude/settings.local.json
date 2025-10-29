@@ -4,7 +4,9 @@
       "Bash(python:*)",
       "Bash(uv add:*)",
       "mcp__docs-langchain__SearchDocsByLangChain",
-      "Bash(tree /F \"C:\\Users\\User\\PycharmProjects\\MathAgent\\langchain_solution\\agent_n_tools\")"
+      "Bash(tree /F \"C:\\Users\\User\\PycharmProjects\\MathAgent\\langchain_solution\\agent_n_tools\")",
+      "Bash(cat:*)",
+      "Bash(python3:*)"
     ],
     "deny": [],
     "ask": []

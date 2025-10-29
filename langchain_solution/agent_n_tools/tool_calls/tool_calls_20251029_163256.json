@@ -1,0 +1,10 @@
+[
+  {
+    "name": "calculate_ungrouped_statistics",
+    "args": {
+      "data_json": "{\"1\": 2, \"2\": 5, \"3\": 6, \"4\": 9, \"5\": 6, \"6\": 2, \"7\": 1, \"10\": 1}",
+      "data_type": "frequency"
+    },
+    "id": "470b391f-7ac8-4d6b-a883-3175201b5eb0"
+  }
+]

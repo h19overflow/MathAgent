@@ -1,0 +1,18 @@
+[
+  {
+    "name": "calculate_probability",
+    "args": {
+      "total_outcomes": 6,
+      "favorable_outcomes": 2
+    },
+    "id": "b102b294-c8d0-4cd8-80fa-073971f0b95c"
+  },
+  {
+    "name": "calculate_probability",
+    "args": {
+      "total_outcomes": 6,
+      "favorable_outcomes": 4
+    },
+    "id": "12b436dc-f9b3-4524-816f-8ddc5ec534a1"
+  }
+]

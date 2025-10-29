@@ -1,0 +1,95 @@
+2025-10-29 16:19:21 - __main__ - INFO - [<module>:47] - ================================================================================
+2025-10-29 16:19:21 - __main__ - INFO - [<module>:48] - LangChain Math Agent Test Runner Started
+2025-10-29 16:19:21 - __main__ - INFO - [<module>:49] - Log file: logs\math_agent_test_20251029_161921.log
+2025-10-29 16:19:21 - __main__ - INFO - [<module>:50] - ================================================================================
+2025-10-29 16:19:24 - __main__ - INFO - [main:219] - 
+================================================================================
+2025-10-29 16:19:24 - __main__ - INFO - [main:220] - MAIN: Starting test configuration
+2025-10-29 16:19:24 - __main__ - INFO - [main:221] - ================================================================================
+2025-10-29 16:19:24 - __main__ - INFO - [main:225] - Base directory: C:\Users\User\PycharmProjects\MathAgent
+2025-10-29 16:19:24 - __main__ - INFO - [main:231] - Model selection priority:
+2025-10-29 16:19:24 - __main__ - INFO - [main:233] -   1. ✓ Using provided argument: google_genai:gemini-2.5-flash
+2025-10-29 16:19:24 - __main__ - INFO - [main:246] - Final model choice: google_genai:gemini-2.5-flash
+2025-10-29 16:19:24 - __main__ - INFO - [main:249] - 
+API Key status:
+2025-10-29 16:19:24 - __main__ - INFO - [main:253] -   GOOGLE_API_KEY: ✓ Set
+2025-10-29 16:19:24 - __main__ - INFO - [main:270] - 
+File paths:
+2025-10-29 16:19:24 - __main__ - INFO - [main:272] -   Input CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\test_questions_mathform4.csv
+2025-10-29 16:19:24 - __main__ - INFO - [main:275] -   Image folder: C:\Users\User\PycharmProjects\MathAgent\QAs\Soalan maths\form 4
+2025-10-29 16:19:24 - __main__ - INFO - [main:283] -   Output CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\langchain_results\test_results_form4_google_genai_gemini_2.5_flash_langchain_agent.csv
+2025-10-29 16:19:24 - __main__ - INFO - [main:286] - 
+Validating input files:
+2025-10-29 16:19:24 - __main__ - INFO - [main:290] -   ✓ Input CSV exists
+2025-10-29 16:19:24 - __main__ - INFO - [main:295] -   ✓ Image folder exists
+2025-10-29 16:19:24 - __main__ - INFO - [main:300] -   ✓ Found 29 images in folder
+2025-10-29 16:19:24 - __main__ - INFO - [main:305] - 
+Creating output directory:
+2025-10-29 16:19:24 - __main__ - INFO - [main:308] -   ✓ Output directory ready: C:\Users\User\PycharmProjects\MathAgent\QAs\langchain_results
+2025-10-29 16:19:24 - __main__ - INFO - [main:313] - 
+================================================================================
+2025-10-29 16:19:24 - __main__ - INFO - [main:314] - Configuration complete. Starting image processing...
+2025-10-29 16:19:24 - __main__ - INFO - [main:315] - ================================================================================
+
+2025-10-29 16:19:24 - __main__ - INFO - [process_test_images:90] - Starting process_test_images
+2025-10-29 16:19:24 - __main__ - INFO - [process_test_images:91] -   Input CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\test_questions_mathform4.csv
+2025-10-29 16:19:24 - __main__ - INFO - [process_test_images:92] -   Image folder: C:\Users\User\PycharmProjects\MathAgent\QAs\Soalan maths\form 4
+2025-10-29 16:19:24 - __main__ - INFO - [process_test_images:93] -   Output CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\langchain_results\test_results_form4_google_genai_gemini_2.5_flash_langchain_agent.csv
+2025-10-29 16:19:24 - __main__ - INFO - [process_test_images:94] -   Model: google_genai:gemini-2.5-flash
+2025-10-29 16:19:24 - __main__ - INFO - [process_test_images:97] - Reading input CSV from C:\Users\User\PycharmProjects\MathAgent\QAs\test_questions_mathform4.csv...
+2025-10-29 16:19:24 - __main__ - INFO - [process_test_images:105] - ✓ CSV loaded. Total rows: 29
+2025-10-29 16:19:24 - __main__ - INFO - [initialize_math_agent:62] - Initializing MathAgent with model: google_genai:gemini-2.5-flash
+2025-10-29 16:19:26 - __main__ - INFO - [process_test_images:135] - Processing 29 images with 2-stage pipeline (Extraction → Solving)...
+2025-10-29 16:19:39 - __main__ - INFO - [process_test_images:174] - [1/29] ✓ Chapter 1_Q1.png
+2025-10-29 16:20:02 - __main__ - INFO - [process_test_images:174] - [2/29] ✓ Chapter 1_Q2.png
+2025-10-29 16:20:30 - __main__ - INFO - [process_test_images:174] - [3/29] ✓ Chapter 1_Q3.png
+2025-10-29 16:21:06 - __main__ - WARNING - [process_test_images:177] - [4/29] ✗ Chapter 2_Q1.png - Error: Solver recursion limit reached after Recursion limit of 50 reached without hitting a stop con
+2025-10-29 16:21:20 - __main__ - INFO - [process_test_images:174] - [5/29] ✓ Chapter 2_Q2.png
+2025-10-29 16:21:42 - __main__ - INFO - [process_test_images:174] - [6/29] ✓ Chapter 2_Q3.png
+2025-10-29 16:22:53 - __main__ - INFO - [process_test_images:174] - [7/29] ✓ Chapter 3_Q1.png
+2025-10-29 16:23:10 - __main__ - INFO - [process_test_images:174] - [8/29] ✓ Chapter 3_Q2.png
+2025-10-29 16:23:22 - __main__ - INFO - [process_test_images:174] - [9/29] ✓ Chapter 3_Q3.png
+2025-10-29 16:23:51 - __main__ - INFO - [process_test_images:174] - [10/29] ✓ Chapter 4_Q1.png
+2025-10-29 16:24:37 - __main__ - INFO - [process_test_images:174] - [11/29] ✓ Chapter 4_Q2.png
+2025-10-29 16:24:54 - __main__ - INFO - [process_test_images:174] - [12/29] ✓ Chapter 4_Q3.png
+2025-10-29 16:25:26 - __main__ - INFO - [process_test_images:174] - [13/29] ✓ Chapter 5_Q1.png
+2025-10-29 16:25:54 - __main__ - INFO - [process_test_images:174] - [14/29] ✓ Chapter 5_Q2.png
+2025-10-29 16:26:22 - __main__ - INFO - [process_test_images:174] - [15/29] ✓ Chapter 5_Q3.png
+2025-10-29 16:27:19 - __main__ - INFO - [process_test_images:174] - [16/29] ✓ Chapter 6_Q1.png
+2025-10-29 16:29:00 - __main__ - INFO - [process_test_images:174] - [17/29] ✓ Chapter 6_Q2.png
+2025-10-29 16:29:57 - __main__ - INFO - [process_test_images:174] - [18/29] ✓ Chapter 6_Q3.png
+2025-10-29 16:30:29 - __main__ - INFO - [process_test_images:174] - [19/29] ✓ Chapter 7_Q1.png
+2025-10-29 16:32:20 - __main__ - INFO - [process_test_images:174] - [20/29] ✓ Chapter 7_Q2.png
+2025-10-29 16:32:44 - __main__ - INFO - [process_test_images:174] - [21/29] ✓ Chapter 7_Q3.png
+2025-10-29 16:32:56 - __main__ - INFO - [process_test_images:174] - [22/29] ✓ Chapter 8_Q1.png
+2025-10-29 16:33:15 - __main__ - INFO - [process_test_images:174] - [23/29] ✓ Chapter 8_Q2.png
+2025-10-29 16:33:58 - __main__ - INFO - [process_test_images:174] - [24/29] ✓ Chapter 8_Q3.png
+2025-10-29 16:34:16 - __main__ - INFO - [process_test_images:174] - [25/29] ✓ Chapter 9_Q1.png
+2025-10-29 16:34:42 - __main__ - INFO - [process_test_images:174] - [26/29] ✓ Chapter 9_Q2.png
+2025-10-29 16:35:00 - __main__ - INFO - [process_test_images:174] - [27/29] ✓ Chapter 9_Q3.png
+2025-10-29 16:35:19 - __main__ - INFO - [process_test_images:174] - [28/29] ✓ Chapter 10_Q1.png
+2025-10-29 16:35:49 - __main__ - INFO - [process_test_images:174] - [29/29] ✓ Chapter 10_Q2.png
+2025-10-29 16:35:49 - __main__ - INFO - [process_test_images:187] - 
+================================================================================
+2025-10-29 16:35:49 - __main__ - INFO - [process_test_images:188] - Saving results to CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\langchain_results\test_results_form4_google_genai_gemini_2.5_flash_langchain_agent.csv
+2025-10-29 16:35:49 - __main__ - INFO - [process_test_images:192] - ✓ Results saved
+2025-10-29 16:35:49 - __main__ - INFO - [process_test_images:212] - 
+================================================================================
+TEST SUMMARY - 2-STAGE LANGCHAIN PIPELINE
+================================================================================
+Total images processed: 29
+Successful: 28
+Errors: 1
+Success rate: 96.6%
+Total tokens used: 0
+Results saved to: C:\Users\User\PycharmProjects\MathAgent\QAs\langchain_results\test_results_form4_google_genai_gemini_2.5_flash_langchain_agent.csv
+Log file: logs\math_agent_test_20251029_161921.log
+================================================================================
+
+2025-10-29 16:35:49 - __main__ - INFO - [main:321] - 
+First 3 results:
+2025-10-29 16:35:49 - __main__ - INFO - [main:323] - 
+     image_filename                                                   ground_truth   status                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              llm_answer
+0  Chapter 1_Q1.png  (a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0  SUCCESS                                                                                                                                                                                                                                                                                                               [{'type': 'text', 'text': 'FINAL ANSWER:\n(a) The function for the area, A m², of the land is A = x² + 25x + 100.\n(b) The quadratic equation in terms of x, given the area is 250 m², is x² + 25x - 150 = 0.', 'extras': {'signature': 'Cs0JAdHtim+MYQNzXQ+EwWtA0YvKGtOWb4FJtwKpp+ORpUq2CIAdXUjg09EEzAvH/s18VsOnGRGkDbfVd4JhFgvNYadHtOcqGNRv0U4YVB0aWE9Ga2li/d+sMQPP0oHwLUpn0YAoMpHgZipxtojOfwjOPL2cJWb5DlD8Rb1wR+SVi0xAqo3/qcLD79vpMwIUpLiJD/i2qt9QfQwv23HXsFwtXZHr+2DiBdESnmjPdQqS9igSJl4aFpcl8sQxBSe9WgbHqq8CVM/NOf/Neh9FfsypFhRwU3x96v40YsT6xnHpGTA8GHEsjDpd9SBYGcGcc3x+PrrCi8zbVUw6W6rBvu4sPM8oSlTTDe+aZy/VvCictbUqcwL2cld1g0+qvxDcBZOtGWTR/qYSQHhXMSKWyOymN0kY7AtA0p1mE9/yymhMJ+Un+52kMsMk6NwPzr+xm3juLue02ViETbcm44JGPhQJ53WT7ISL6BfyZpn1R/N3U1Zpo9hGRYQcs52ge3DEkt96k7Y/QjM8yQKLdZ7wK3DH9MHRAVIIl+KRZh64lMol4DJkBEJRuVuh+9S0uKYH6eXTKsJtFFDzEiIdJ62jFSbxOx1vK1AWW82xAfOxuZKJmEu+aQxThQ9VfUQOz7R4idaLIio4Fd9pem08rxG7SrnAUfW2lhWACkV/Xw9bBb4ijpB+vUo5VYS5BA68C2XdPGRyFUcEI1jjyk8Kyc8ikaJMb2KxYhry6N13olTf1cduY5A/oPCzAFPRHGWcjY960VVgB16CDeTgpS8UFicMHq5d+fLWnpO8QP+Xg5aXidSJlmc7immvIK6lpSQFer6Fb7tXeEYSbAFmdiCgVyqqrEZkbDoGhlWyf0z72cDbYUVFOJtuqeZ2ZGJH+m19M6msMex4wOdVMJT3wK8RDybZbZUBYuZ9NoTe3GkE0mBYXvx/cXidjNmq4xoZJ9mNTBX+J0m2utfdUlRZR8FEqP8fE0tU47Zse9mkwFoBlksUh7koyvg1LKvgh+WuFx5t72pTJwIguozqGEPXPUxA4mHJrE4iI5INOyJLn5YQI2eMZZtLTHbOntjsJKAwkZbdfZ84vLKkZz57+efbQZ6Qnye27NhIpxsVuNhtCfejkEeNW81qH3kLLG2VHVV83rgt7CzaNyThaZSOECho+nbU+3Fbb3PMdaGklVetVhvkjMSBL810lXmgTaPKePfUlXFwrdxOtm6pSGiJo1uGkG2blaGFcwbrsb/iHv5LlvxuXX+NibO/3B43clFG7YxDlTu3x6YRcscmjt1QhUg9kD6ZACSfg498m/PbEQoWJ0y2deqzMfxJUSUvuUeg0sMtNzKsMInQ4EvIB/tcywAGqpbmFmG8EolDm6kGJiR2q5TXrf4kdDHcPG8+kH+u46888TlYB07OVfwSVMmbxG0/VIcpU+VU4Zu1X15IRgFFE30EsHZ7h073MulId0ymF26A7uFj93smADbKeCAteqEEBiV9rKz6pE1iROclt4q36Vz0EOPtKd/aW4gb3hmZmbsCuCAsm0uTTnWXF1dvbfliLfKffQXfEZrGoLICS6R9iv5k9MGDsgNnGkOCsXeNiRuDll+C+3+iDk+sIEStPj4r0ye3Jl/8DAO/KwdAmhFSeWVPEdmZo4E='}}]
+1  Chapter 1_Q2.png        (a) A(0, –5)     (b) x = 3\n(c) B(6, –5)     (d) (3, 4)  SUCCESS              [{'type': 'text', 'text': 'FINAL ANSWER:\n(a) The coordinates of point A are (0, -5).\n(b) The equation of the axis of symmetry is x = 3.\n(c) The coordinates of point B are (6, -5).\n(d) The coordinates of the maximum point P are (3, 4).', 'extras': {'signature': 'Co0LAdHtim81QffkwkCVYmoAIJAqobzdOW5qiZpeZGZ6QbQjsY6WPjqOoEVAuOnAuI6weEOIBBa1wUDxJ/9ukchRpwech+2/k4/b4z8LoL5dd/1Ql2M7pThPuHelY6p64cbzKYSEO/qP1oenccsEyiJFydEZ+6AcyZLTQNPPpRzS6d0YWvX/m6Mq/PFFzgClQ+mT7ilti8Ff2dzcb55F7enGIHTmSK1G+z0MeHX1dqjvM2xmF3qmV8F9SQENnGEkNlNOBUac3Y/7JF1Fdh0AkQgG59nZownR6uNy2Zm6ts3VQ7nWUCK/wkdEk+nTDpEztcX9QdFMxa5CeQe1xkL/VJd3a+xnVh9fti7eGbU42lweUn6d+P/zKLXpCTGl/lriIzPPq28Hmv0dLsPzBUpmU1iMyjRB2IzkuHdt9Wm9gwhwkcWi8S7MH90JcdiLs1CHDzfXMM4c6PQ5G8ekPTCdcHttU3kHVRiicrz/uuRwpA593btvIKqP4q11BTidsJysUh9+kN9gmzeTiFFdPUfGvcVN559SCwkP37FozbS0rHUW3X5/g83TR67nsz4JeCmQhfvgaXI1iSBlk7k9jQBDm+cVoj8lMqPw3u1LnsXXURg42tv9Nm3VP3Rx/muPRKR5dFTAGrxndc6LUfIkVtpIVsBpwMU7tA+kQAjRxPIL7CTnYR0c2HaxK3+p4ny+DBxgNXl8TvpNzwH4D/HmxV9pajm4E+D981S+JwtCT74tBZBNDtQJOsFnHMsnkmmAeMY8rwIO6PlPHHimaqLLYivIh9hrhRPW5KhoR/MXAkNjTQRs8V7qTGYibrYnysJz3bAWgDOePX64f63Uq1YXWjtJNUm30bjb6Dqup6A90emAOs1Sc1ItXSSctnD/3WuEiro3HVMEEtqZZHyeUEemWwu0UGGSQXd9zAOYsPZ4WxeNe2BO0JkllYkKzkPT/hJSMH2T4Et9pXrvN3UzkRNQNQnua3n0VCGsYj7I+fl1eU337886oeOhMqLdaId5V7Yd7TZGfQw3zE7h0cKXxvOzEwb2zVh2ie4Bi83f0PsiXSeL8A3MQNvhvrEvhYij7xkQcLfgQl9ToYkweOyXQvM3vaQaRjiEi4uof4cdUfQE6GdbHPmyKRggO52XDQp+Hl/CKZFtxw6cmRHCFNMUKlmylK4mU1Aqn+ULX8fbh+GBKfSdpXA+BVJX2ujyEEnnHoKnNq/HImfDdnZlrKlFYnFBooLqVg3zuiq2FrTKJa2Z8z0MOFQzOM3lV6XMG2MAPpgMJb1GtCDrfG85li4bbOrG8XFKYIaEN7YWEGbByYSnKxG+ykKL3ODpRE0dwJ3VxlELBTK/mK73uSZenmaJ6+jPwDAOmvXAJXZyw+RrOFlVtroDoCIRBaKRigbt3sb0yT1R+fq2kEtfbhe4P5QUXlxnWYLkeyWI8Tiws+hlcHcm6i+uXvfExHBKsYcU2hXegJixOMC76FPdTVzpGhB4nfJogLGlrMkdiqa5mZ/JNFDCyjdAP+07hlLaZJ6up6K9/buPbrMurDbUwLQJ8O7S5IPxlh9ou+CQYx+Y1GvgQMp+ekrD3/iU50AN1DRzuBeidxa0Gk0OftxFlMgqWA6tpz8hc8xDlIdIWjMZMyzC4Z92CnTrpZuBTWpLnHQoOa9MgxWgxSsX4JbZpb3QYkDQVozr5AnJxfgJrpE0UzwB6TgBkblbS+qy+F9Z7GUsWGy5p+A9erG1DlKCpoes3wH5TgVAApDbEK5WKSohVqq4TpNqYXBuGSopT3q2tvewPz6lPRHNBvojSOn1C1Axe4FX6lYJPPjWG1vK+/8eJ+FoTIH5Jr5zb1+a40UAM3yB/uSbAoK7yXcE8kaPiTw8iOc9qjQH3KbHshNN5rnbVmI3MElL/8+SpKs='}}]
+2  Chapter 1_Q3.png                                                          20 cm  SUCCESS  [{'type': 'text', 'text': 'FINAL ANSWER: The difference in perimeter between the triangle and the square is 20 cm.', 'extras': {'signature': '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'}}]
