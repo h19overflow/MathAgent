@@ -1,0 +1,59 @@
+2025-10-29 15:18:34 - __main__ - INFO - [<module>:47] - ================================================================================
+2025-10-29 15:18:34 - __main__ - INFO - [<module>:48] - LangChain Math Agent Test Runner Started
+2025-10-29 15:18:34 - __main__ - INFO - [<module>:49] - Log file: logs\math_agent_test_20251029_151834.log
+2025-10-29 15:18:34 - __main__ - INFO - [<module>:50] - ================================================================================
+2025-10-29 15:18:37 - __main__ - INFO - [main:219] - 
+================================================================================
+2025-10-29 15:18:37 - __main__ - INFO - [main:220] - MAIN: Starting test configuration
+2025-10-29 15:18:37 - __main__ - INFO - [main:221] - ================================================================================
+2025-10-29 15:18:37 - __main__ - INFO - [main:225] - Base directory: C:\Users\User\PycharmProjects\MathAgent
+2025-10-29 15:18:37 - __main__ - INFO - [main:231] - Model selection priority:
+2025-10-29 15:18:37 - __main__ - INFO - [main:233] -   1. ✓ Using provided argument: google_genai:gemini-2.5-flash-lite
+2025-10-29 15:18:37 - __main__ - INFO - [main:246] - Final model choice: google_genai:gemini-2.5-flash-lite
+2025-10-29 15:18:37 - __main__ - INFO - [main:249] - 
+API Key status:
+2025-10-29 15:18:37 - __main__ - INFO - [main:253] -   GOOGLE_API_KEY: ✓ Set
+2025-10-29 15:18:37 - __main__ - INFO - [main:270] - 
+File paths:
+2025-10-29 15:18:37 - __main__ - INFO - [main:272] -   Input CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\test_questions_mathform4.csv
+2025-10-29 15:18:37 - __main__ - INFO - [main:275] -   Image folder: C:\Users\User\PycharmProjects\MathAgent\QAs\Soalan maths\form 4
+2025-10-29 15:18:37 - __main__ - INFO - [main:283] -   Output CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\langchain_results\test_results_form4_google_genai_gemini_2.5_flash_lite_langchain_agent.csv
+2025-10-29 15:18:37 - __main__ - INFO - [main:286] - 
+Validating input files:
+2025-10-29 15:18:37 - __main__ - INFO - [main:290] -   ✓ Input CSV exists
+2025-10-29 15:18:37 - __main__ - INFO - [main:295] -   ✓ Image folder exists
+2025-10-29 15:18:37 - __main__ - INFO - [main:300] -   ✓ Found 29 images in folder
+2025-10-29 15:18:37 - __main__ - INFO - [main:305] - 
+Creating output directory:
+2025-10-29 15:18:37 - __main__ - INFO - [main:308] -   ✓ Output directory ready: C:\Users\User\PycharmProjects\MathAgent\QAs\langchain_results
+2025-10-29 15:18:37 - __main__ - INFO - [main:313] - 
+================================================================================
+2025-10-29 15:18:37 - __main__ - INFO - [main:314] - Configuration complete. Starting image processing...
+2025-10-29 15:18:37 - __main__ - INFO - [main:315] - ================================================================================
+
+2025-10-29 15:18:37 - __main__ - INFO - [process_test_images:90] - Starting process_test_images
+2025-10-29 15:18:37 - __main__ - INFO - [process_test_images:91] -   Input CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\test_questions_mathform4.csv
+2025-10-29 15:18:37 - __main__ - INFO - [process_test_images:92] -   Image folder: C:\Users\User\PycharmProjects\MathAgent\QAs\Soalan maths\form 4
+2025-10-29 15:18:37 - __main__ - INFO - [process_test_images:93] -   Output CSV: C:\Users\User\PycharmProjects\MathAgent\QAs\langchain_results\test_results_form4_google_genai_gemini_2.5_flash_lite_langchain_agent.csv
+2025-10-29 15:18:37 - __main__ - INFO - [process_test_images:94] -   Model: google_genai:gemini-2.5-flash-lite
+2025-10-29 15:18:37 - __main__ - INFO - [process_test_images:97] - Reading input CSV from C:\Users\User\PycharmProjects\MathAgent\QAs\test_questions_mathform4.csv...
+2025-10-29 15:18:37 - __main__ - INFO - [process_test_images:105] - ✓ CSV loaded. Total rows: 29
+2025-10-29 15:18:37 - __main__ - INFO - [initialize_math_agent:62] - Initializing MathAgent with model: google_genai:gemini-2.5-flash-lite
+2025-10-29 15:18:39 - __main__ - INFO - [process_test_images:135] - Processing 29 images with 2-stage pipeline (Extraction → Solving)...
+2025-10-29 15:18:46 - __main__ - WARNING - [process_test_images:177] - [1/29] ✗ Chapter 1_Q1.png - Error solving from extraction: Expected dict response, got <class 'NoneType'>
+2025-10-29 15:18:53 - __main__ - WARNING - [process_test_images:177] - [2/29] ✗ Chapter 1_Q2.png - Error solving from extraction: Expected dict response, got <class 'NoneType'>
+2025-10-29 15:18:57 - __main__ - WARNING - [process_test_images:177] - [3/29] ✗ Chapter 1_Q3.png - Error solving from extraction: Model selected invalid tools: ['default_api']
+2025-10-29 15:19:01 - __main__ - WARNING - [process_test_images:177] - [4/29] ✗ Chapter 2_Q1.png - Error solving from extraction: Model selected invalid tools: ['math_interpreter']
+2025-10-29 15:19:07 - __main__ - WARNING - [process_test_images:177] - [5/29] ✗ Chapter 2_Q2.png - Error solving from extraction: Model selected invalid tools: ['solver']
+2025-10-29 15:19:12 - __main__ - WARNING - [process_test_images:177] - [6/29] ✗ Chapter 2_Q3.png - Error solving from extraction: Expected dict response, got <class 'NoneType'>
+2025-10-29 15:19:18 - __main__ - WARNING - [process_test_images:177] - [7/29] ✗ Chapter 3_Q1.png - Error solving from extraction: Expected dict response, got <class 'NoneType'>
+2025-10-29 15:19:22 - __main__ - WARNING - [process_test_images:177] - [8/29] ✗ Chapter 3_Q2.png - Error solving from extraction: Model selected invalid tools: ['default_api']
+2025-10-29 15:19:30 - __main__ - WARNING - [process_test_images:177] - [9/29] ✗ Chapter 3_Q3.png - Error solving from extraction: Expected dict response, got <class 'NoneType'>
+2025-10-29 15:19:33 - __main__ - WARNING - [process_test_images:177] - [10/29] ✗ Chapter 4_Q1.png - Error solving from extraction: Model selected invalid tools: ['default_api.solve_math']
+2025-10-29 15:19:38 - __main__ - WARNING - [process_test_images:177] - [11/29] ✗ Chapter 4_Q2.png - Error solving from extraction: Model selected invalid tools: ['default_api']
+2025-10-29 15:19:43 - __main__ - WARNING - [process_test_images:177] - [12/29] ✗ Chapter 4_Q3.png - Error solving from extraction: Model selected invalid tools: ['tool1']
+2025-10-29 15:19:51 - __main__ - WARNING - [process_test_images:177] - [13/29] ✗ Chapter 5_Q1.png - Error solving from extraction: Expected dict response, got <class 'NoneType'>
+2025-10-29 15:19:58 - __main__ - WARNING - [process_test_images:177] - [14/29] ✗ Chapter 5_Q2.png - Error solving from extraction: Expected dict response, got <class 'NoneType'>
+2025-10-29 15:20:28 - __main__ - WARNING - [process_test_images:177] - [15/29] ✗ Chapter 5_Q3.png - Error: 'list' object has no attribute 'startswith'
+2025-10-29 15:20:34 - __main__ - WARNING - [process_test_images:177] - [16/29] ✗ Chapter 6_Q1.png - Error solving from extraction: Model selected invalid tools: ['linear_inequalities_graph.solve']
+2025-10-29 15:20:47 - __main__ - WARNING - [process_test_images:177] - [17/29] ✗ Chapter 6_Q2.png - Error solving from extraction: Expected dict response, got <class 'NoneType'>

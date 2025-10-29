@@ -1,0 +1,2290 @@
+filename,ground_truth_answer,generated_answer,similarity,correctness_time,ai_marks,allocated_marks,marking_explanation,marking_time,marking_scheme,chapter_name,language,model_used,token_used
+Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0,"Step 1: Problem Understanding
+- The problem asks us to first define a function for the area of a rectangular piece of land given its length and width in terms of x.
+- Secondly, it asks us to form a quadratic equation in the standard form ax² + bx + c = 0, given that the area of the land is 250 m².
+- There are no non-standard constraints.
+
+Step 2: Solution Execution
+Part (a): Write a function for the area, A m², of the land.
+The length of the land is (x + 20) m.
+The width of the land is (x + 5) m.
+The area of a rectangle is given by the formula: Area = Length × Width.
+So, the function for the area A is:
+A(x) = (x + 20) * (x + 5)
+
+To expand this expression, we use the distributive property (FOIL method):
+A(x) = x*(x + 5) + 20*(x + 5)
+A(x) = x² + 5x + 20x + 100
+A(x) = x² + 25x + 100
+
+Part (b): If the area of the land is 250 m², write a quadratic equation in terms of x. Give your answer in the form of ax² + bx + c = 0.
+We are given that the area A = 250 m².
+Using the area function from part (a):
+x² + 25x + 100 = 250
+
+To get the quadratic equation in the form ax² + bx + c = 0, we need to move all terms to one side of the equation:
+x² + 25x + 100 - 250 = 0
+x² + 25x - 150 = 0
+
+This is the quadratic equation in the required form, where a = 1, b = 25, and c = -150.
+
+Step 3: Final Answer
+The problem asks for two things: the function for the area and the quadratic equation when the area is 250 m².
+
+Part (a): The function for the area A m² of the land is A(x) = x² + 25x + 100.
+Part (b): The quadratic equation in terms of x, when the area is 250 m², is x² + 25x - 150 = 0.
+
+FINAL ANSWER:
+The function for the area, A m², of the land is A(x) = x² + 25x + 100.
+The quadratic equation in terms of x, when the area is 250 m², is x² + 25x - 150 = 0.",correct,4.561610460281372,4,4,"Full marks awarded (4/4). The AI response matches the ground truth exactly: part (a) expands A(x) = (x+20)(x+5) correctly to x^2 + 25x + 100, and part (b) correctly sets x^2 + 25x + 100 = 250 and rearranges to x^2 + 25x - 150 = 0 with a = 1, b = 25, c = -150. Algebraic steps are correct and there are no errors. The provided marking instruction states that an answer matching the ground truth receives full marks.",8.248195171356201,,"Quadratic Functions and Equations in
+One Variable",English,google_genai:gemini-2.5-flash-lite,0
+Chapter 1_Q2.png,"(a) A(0, –5)     (b) x = 3
+(c) B(6, –5)     (d) (3, 4)","Step 1: Problem Understanding
+The problem asks to determine:
+(a) The coordinates of point $A$.
+(b) The equation of the axis of symmetry of the parabola.
+(c) The coordinates of point $B$.
+(d) The coordinates of the maximum point $P$.
+
+The function of the parabola is given as $f(x) = -x^2 + 6x - 5$.
+The line segment $AB$ is parallel to the x-axis, which means points $A$ and $B$ have the same y-coordinate.
+Point $A$ is on the y-axis.
+Point $B$ is on the parabola.
+Point $P$ is the maximum point (vertex) of the parabola.
+
+Step 2: Solution Execution
+
+(a) Coordinates of point $A$:
+Point $A$ is on the y-axis, so its x-coordinate is 0.
+From the visual data, point $A$ appears to be at (0, -5). Let's verify this with the function.
+When $x=0$, $f(0) = -(0)^2 + 6(0) - 5 = -5$.
+So, the coordinates of point $A$ are (0, -5).
+
+(b) Equation of the axis of symmetry:
+For a quadratic function in the form $f(x) = ax^2 + bx + c$, the axis of symmetry is given by the formula $x = -b / (2a)$.
+In this case, $a = -1$, $b = 6$, and $c = -5$.
+Axis of symmetry: $x = -(6) / (2 * -1) = -6 / -2 = 3$.
+The equation of the axis of symmetry is $x = 3$.
+
+(c) Coordinates of point $B$:
+Point $B$ lies on the parabola and has the same y-coordinate as point $A$, which is -5.
+So, we need to find the x-coordinate(s) where $f(x) = -5$.
+$-x^2 + 6x - 5 = -5$
+$-x^2 + 6x = 0$
+$x^2 - 6x = 0$
+Factor out $x$:
+$x(x - 6) = 0$
+This gives two possible x-values: $x = 0$ and $x = 6$.
+$x = 0$ corresponds to point $A$ (since $A$ is on the y-axis).
+Therefore, the x-coordinate of point $B$ is 6.
+The coordinates of point $B$ are (6, -5).
+The visual estimation of (5, -5) was close but not exact.
+
+(d) Coordinates of the maximum point $P$:
+The maximum point $P$ is the vertex of the parabola. The x-coordinate of the vertex is given by the axis of symmetry, which we found to be $x = 3$.
+To find the y-coordinate, substitute $x = 3$ into the function $f(x) = -x^2 + 6x - 5$.
+$f(3) = -(3)^2 + 6(3) - 5$
+$f(3) = -9 + 18 - 5$
+$f(3) = 9 - 5$
+$f(3) = 4$.
+The coordinates of the maximum point $P$ are (3, 4).
+This matches the visual estimation.
+
+Step 3: Final Answer
+(a) The coordinates of point $A$ are (0, -5).
+(b) The equation of the axis of symmetry is $x = 3$.
+(c) The coordinates of point $B$ are (6, -5).
+(d) The coordinates of the maximum point $P$ are (3, 4).
+
+FINAL ANSWER:
+(a) The coordinates of point A are (0, -5).
+(b) The equation of the axis of symmetry is $x = 3$.
+(c) The coordinates of point B are (6, -5).
+(d) The coordinates of the maximum point P are (3, 4).",correct,3.0805439949035645,6,6,"All four parts are correct and the working shown is mathematically sound. (a) f(0) = -5 so A(0, -5). (b) Axis: x = -b/(2a) = -6/(2·-1) = 3. (c) Solve f(x) = -5 ⇒ -x^2+6x-5=-5 ⇒ x(x-6)=0, giving x=0 (A) and x=6, hence B(6, -5). (d) Vertex at x=3, f(3)=4, so P(3,4). Per the provided marking scheme (full marks if matching ground truth), award 6/6.",6.819638967514038,,"Quadratic Functions and Equations in
+One Variable",English,google_genai:gemini-2.5-flash-lite,0
+Chapter 1_Q3.png,20 cm,"Step 1: Problem Understanding
+The problem asks us to calculate the difference in perimeter between an isosceles triangle and a square. We are given information about their dimensions in terms of a variable 'y', and a relationship between their areas.
+
+The area of the isosceles triangle is given by:
+Area_triangle = (1/2) * base * height
+Area_triangle = (1/2) * (4y) * (y + 5)
+Area_triangle = 2y * (y + 5)
+Area_triangle = 2y² + 10y
+
+The area of the square is given by:
+Area_square = side²
+Area_square = y²
+
+The constraint is that the area of the triangle is more than the area of the square by 39 cm².
+Area_triangle = Area_square + 39
+2y² + 10y = y² + 39
+
+We need to solve for 'y' first using this equation.
+
+Once 'y' is found, we can calculate the dimensions of both shapes:
+Triangle:
+Base = 4y
+Height = y + 5
+The two equal sides of the isosceles triangle can be found using the Pythagorean theorem. The height bisects the base, creating two right-angled triangles with legs (4y/2) = 2y and (y + 5), and the hypotenuse being one of the equal sides.
+Equal side² = (2y)² + (y + 5)²
+Equal side² = 4y² + (y² + 10y + 25)
+Equal side² = 5y² + 10y + 25
+Equal side = sqrt(5y² + 10y + 25)
+
+Perimeter_triangle = Base + 2 * Equal side
+Perimeter_triangle = 4y + 2 * sqrt(5y² + 10y + 25)
+
+Square:
+Side = y
+Perimeter_square = 4 * Side
+Perimeter_square = 4y
+
+Finally, we need to calculate the difference in perimeter:
+Difference in Perimeter = |Perimeter_triangle - Perimeter_square|
+
+Step 2: Solution Execution
+
+First, let's solve the equation for 'y':
+2y² + 10y = y² + 39
+Subtract y² from both sides:
+y² + 10y = 39
+Subtract 39 from both sides:
+y² + 10y - 39 = 0
+
+We can solve this quadratic equation by factoring or using the quadratic formula. Let's try factoring. We need two numbers that multiply to -39 and add to 10. These numbers are 13 and -3.
+(y + 13)(y - 3) = 0
+So, y = -13 or y = 3.
+Since 'y' represents a length, it must be positive. Therefore, y = 3 cm.
+
+Now, let's find the dimensions and perimeters:
+
+Triangle:
+Base = 4y = 4 * 3 = 12 cm
+Height = y + 5 = 3 + 5 = 8 cm
+Equal side = sqrt(5y² + 10y + 25) = sqrt(5*(3)² + 10*3 + 25)
+Equal side = sqrt(5*9 + 30 + 25)
+Equal side = sqrt(45 + 30 + 25)
+Equal side = sqrt(100)
+Equal side = 10 cm
+
+Perimeter_triangle = Base + 2 * Equal side
+Perimeter_triangle = 12 + 2 * 10
+Perimeter_triangle = 12 + 20
+Perimeter_triangle = 32 cm
+
+Square:
+Side = y = 3 cm
+Perimeter_square = 4 * Side
+Perimeter_square = 4 * 3
+Perimeter_square = 12 cm
+
+Difference in Perimeter:
+Difference in Perimeter = |Perimeter_triangle - Perimeter_square|
+Difference in Perimeter = |32 - 12|
+Difference in Perimeter = 20 cm
+
+Let's verify the areas:
+Area_triangle = (1/2) * base * height = (1/2) * 12 * 8 = 6 * 8 = 48 cm²
+Area_square = side² = 3² = 9 cm²
+Area_triangle - Area_square = 48 - 9 = 39 cm². This matches the constraint.
+
+Step 3: Final Answer
+The difference in perimeter between the isosceles triangle and the square is 20 cm.
+
+FINAL ANSWER: The difference in perimeter between the isosceles triangle and the square is 20 cm.",correct,2.5983495712280273,5,5,"Full mark awarded (5/5). The AI correctly set up and solved the area equation to find y = 3, computed the triangle and square perimeters accurately, and obtained the difference 20 cm which matches the ground truth. The solution steps, computations (including verification of areas), and final answer are correct and clearly presented.",7.037732124328613,,"Quadratic Functions and Equations in
+One Variable",English,google_genai:gemini-2.5-flash-lite,0
+Chapter 2_Q1.png,"(a) 234
+(b) 234, 336
+(c) 234, 336, 673
+(d) 234, 336, 673, 281","Step 1: Problem Understanding
+The problem asks to identify which of the given numbers (234, 673, 336, 281) belong to specific number bases: base five, base seven, base eight, and base nine. A number belongs to a certain base if all of its digits are less than the base.
+
+There are no non-standard constraints.
+
+Step 2: Solution Execution
+We need to check each number against each base.
+
+The given numbers are: 234, 673, 336, 281.
+
+(a) Base five: Digits must be less than 5 (0, 1, 2, 3, 4).
+- 234: All digits (2, 3, 4) are less than 5. So, 234 is a base five number.
+- 673: Digit 6 and 7 are not less than 5. So, 673 is not a base five number.
+- 336: Digit 6 is not less than 5. So, 336 is not a base five number.
+- 281: Digit 8 is not less than 5. So, 281 is not a base five number.
+
+(b) Base seven: Digits must be less than 7 (0, 1, 2, 3, 4, 5, 6).
+- 234: All digits (2, 3, 4) are less than 7. So, 234 is a base seven number.
+- 673: Digit 7 is not less than 7. So, 673 is not a base seven number.
+- 336: All digits (3, 3, 6) are less than 7. So, 336 is a base seven number.
+- 281: Digit 8 is not less than 7. So, 281 is not a base seven number.
+
+(c) Base eight: Digits must be less than 8 (0, 1, 2, 3, 4, 5, 6, 7).
+- 234: All digits (2, 3, 4) are less than 8. So, 234 is a base eight number.
+- 673: All digits (6, 7, 3) are less than 8. So, 673 is a base eight number.
+- 336: All digits (3, 3, 6) are less than 8. So, 336 is a base eight number.
+- 281: Digit 8 is not less than 8. So, 281 is not a base eight number.
+
+(d) Base nine: Digits must be less than 9 (0, 1, 2, 3, 4, 5, 6, 7, 8).
+- 234: All digits (2, 3, 4) are less than 9. So, 234 is a base nine number.
+- 673: All digits (6, 7, 3) are less than 9. So, 673 is a base nine number.
+- 336: All digits (3, 3, 6) are less than 9. So, 336 is a base nine number.
+- 281: All digits (2, 8, 1) are less than 9. So, 281 is a base nine number.
+
+The solution makes sense as the criteria for each base has been applied correctly to each digit of each number.
+
+Step 3: Final Answer
+(a) Base five: 234
+(b) Base seven: 234, 336
+(c) Base eight: 234, 673, 336
+(d) Base nine: 234, 673, 336, 281
+
+FINAL ANSWER:
+(a) Base five: 234
+(b) Base seven: 234, 336
+(c) Base eight: 234, 673, 336
+(d) Base nine: 234, 673, 336, 281",correct,4.092978239059448,4,4,"The AI response matches the ground truth exactly for parts (a)–(d): it correctly identifies 234 for base five; 234 and 336 for base seven; 234, 673, 336 for base eight; and 234, 673, 336, 281 for base nine. Per the provided marking scheme (full mark = 4 if answers match the ground truth), award full marks.",8.00350546836853,,Number Bases,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 2_Q2.png,132 based 5,"Step 1: Problem Understanding
+- The problem asks for the average number of visitors per day in January, given the total number of visitors in base five.
+- The answer must be in base five.
+- January has 31 days.
+
+Step 2: Solution Execution
+- The total number of visitors in January is 20202₅.
+- The number of days in January is 31. To perform calculations in base five, we need to convert 31 to base five.
+  - 31 ÷ 5 = 6 remainder 1
+  - 6 ÷ 5 = 1 remainder 1
+  - 1 ÷ 5 = 0 remainder 1
+  So, 31₁₀ = 111₅.
+
+- To find the average number of visitors per day, we need to divide the total number of visitors by the number of days. Both numbers should be in the same base for division.
+- We need to calculate 20202₅ ÷ 111₅.
+
+Let's perform base five division:
+        ______
+111₅ | 20202₅
+
+1. How many times does 111₅ go into 202₅? It doesn't.
+2. How many times does 111₅ go into 2020₅?
+   Let's try multiplying 111₅ by some numbers in base five:
+   111₅ * 1₅ = 111₅
+   111₅ * 2₅ = 222₅
+   111₅ * 3₅ = 333₅
+   111₅ * 4₅ = 444₅
+
+   Let's try to estimate. 111₅ is a bit more than 100₅. 2020₅ is roughly 2000₅. 2000 / 100 = 20.
+   Let's try 111₅ * 10₅ = 1110₅
+   Let's try 111₅ * 20₅ = 2220₅. This is too high.
+
+   Let's try to do it more systematically.
+   How many times does 111₅ go into 2020₅?
+   Let's try 15.
+   111₅ * 15₅ = 111₅ * (10₅ + 5₅) = 1110₅ + 111₅ * 5₅.
+   111₅ * 5₅ = 111₅ * 10₅ = 1110₅.
+   So, 111₅ * 15₅ = 1110₅ + 1110₅ = 2220₅. Still too high.
+
+   Let's try 111₅ * 14₅.
+   111₅ * 14₅ = 111₅ * (10₅ + 4₅) = 1110₅ + (111₅ * 4₅)
+   111₅ * 4₅ = 444₅
+   1110₅ + 444₅ = 1554₅.
+
+   This is not directly helping with long division. Let's perform long division.
+
+        1  _  _  _
+      _______
+111₅ | 20202₅
+      -111
+      ----
+        410
+
+   Now, how many times does 111₅ go into 410₅?
+   Let's try 3₅.
+   111₅ * 3₅ = 333₅.
+   410₅ - 333₅ = ?
+     410
+    -333
+    ----
+      22  (Borrow from the '1'. 1 becomes 0, 0 becomes 5. 5-3=2. Then 0-3 needs borrow. Borrow from 4. 4 becomes 3. 0 becomes 5. 5+0=5. 5-3=2. Then 3-3=0.)
+   So, 410₅ - 333₅ = 22₅.
+
+        13 _ _
+      _______
+111₅ | 20202₅
+      -111
+      ----
+        410
+       -333
+       ----
+         222
+
+   Now, how many times does 111₅ go into 222₅?
+   111₅ * 2₅ = 222₅.
+
+        132
+      _______
+111₅ | 20202₅
+      -111
+      ----
+        410
+       -333
+       ----
+         222
+        -222
+        ----
+           0
+
+- The result of the division is 132₅.
+- This means the average number of visitors per day is 132₅.
+
+- Verification:
+  - Convert 132₅ to base 10: (1 * 5²) + (3 * 5¹) + (2 * 5⁰) = 25 + 15 + 2 = 42.
+  - Convert 31 days to base 10: 31.
+  - Convert 20202₅ to base 10: (2 * 5⁴) + (0 * 5³) + (2 * 5²) + (0 * 5¹) + (2 * 5⁰) = (2 * 625) + 0 + (2 * 25) + 0 + 2 = 1250 + 50 + 2 = 1302.
+  - Now, in base 10, calculate the average: 1302 visitors / 31 days = 42 visitors/day.
+  - This matches our base 10 conversion of 132₅.
+
+Step 3: Final Answer
+- The average number of visitors to Zoo Negara each day in January is 132₅.
+
+FINAL ANSWER: The average number of visitors to Zoo Negara each day in January is 132₅.",correct,4.538042306900024,4,4,"Full marks (4/4) awarded. The AI's solution correctly computes 20202_5 ÷ 111_5 = 132_5 using valid base-5 long division. Conversions are correct: 20202_5 = 1302_10, 31 = 31_10 (111_5), and 132_5 = 42_10, and 1302 ÷ 31 = 42, which matches 132_5. The final answer matches the ground truth. Steps and verification are consistent and mathematically correct, so full credit is given per the provided marking instruction.",9.607382535934448,,Number Bases,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 2_Q3.png,1600 m^2,"Step 1: Problem Understanding
+The problem asks us to calculate the area of the children's playground, which is one of the two triangular sections formed by a diagonal in a rectangular playground.
+The perimeter of the rectangular playground is given in base 4, which is a non-standard constraint that needs to be handled.
+
+Step 2: Solution Execution
+First, convert the perimeter from base 4 to base 10.
+3300₄ = 3 * 4³ + 3 * 4² + 0 * 4¹ + 0 * 4⁰
+= 3 * 64 + 3 * 16 + 0 + 0
+= 192 + 48
+= 240 metres
+
+The perimeter of a rectangle is given by the formula P = 2(l + w).
+We are given that the perimeter is 240 m.
+One side is labeled ""80 m"", let's assume this is the length (l).
+So, 240 = 2(80 + w)
+120 = 80 + w
+w = 120 - 80
+w = 40 m
+
+The adjacent side is labeled ""x m"", so x = 40 m.
+The dimensions of the rectangular playground are 80 m and 40 m.
+
+The playground is divided by a diagonal into two triangular sections. The area of the children's playground is the area of one of these triangles. The area of a triangle is given by (1/2) * base * height. In this case, the base and height of the triangle are the length and width of the rectangle.
+
+Area of the children's playground = (1/2) * length * width
+Area = (1/2) * 80 m * 40 m
+Area = (1/2) * 3200 m²
+Area = 1600 m²
+
+Step 3: Final Answer
+The area of the children's playground is 1600 square meters.
+
+FINAL ANSWER: The area of the children's playground is 1600 m².",correct,2.8201379776000977,5,5,"Full marks (5) awarded. The AI's answer matches the ground truth value 1600 m². Reasoning is correct: it correctly converted 3300₄ to 240 (3·64 + 3·16 = 240), used P = 2(l + w) to find w = 40 m given one side 80 m, determined rectangle dimensions 80 m × 40 m, and computed the triangle area as (1/2)·80·40 = 1600 m². All arithmetic and steps are valid and lead to the ground-truth result.",9.26122784614563,,Number Bases,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 3_Q1.png,"a) P(8)	 = 28
+	 = 256   b) t = 11      ","Error: Solver recursion limit reached after Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",wrong,2.8678855895996094,0,4,"The AI output is an error message and does not provide the required numerical answers. Per the provided marking scheme (full mark 4 only if the agent's answers match the ground truth), no credit can be given. This is an open-ended question evaluated under SPM-style whole-number marking; since the response contains no correct values for parts (a) and (b), score = 0/4.",20.40663242340088,,Logical Reasoning,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 3_Q2.png,"(a) 32(π + 2), 16(π + 2), 8(π + 2), 4(π + 2)
+(c) 1/4
+ (π + 2) cm","Step 1: Problem Understanding
+The problem asks us to analyze a series of nested semicircles. We need to:
+(a) Calculate the perimeters of the first four semicircles in terms of $\pi$.
+(b) Show that the general formula for the perimeters of these semicircles is $2^{6-n}(\pi + 2)$ for $n = 0, 1, 2, 3, 4, \ldots$.
+(c) Calculate the perimeter of the 8th semicircle.
+
+The constraints are:
+- Perimeters must be in terms of $\pi$.
+- The generalisation formula needs to be shown.
+- The final answer for the 8th semicircle should be in cm.
+
+The visual data indicates that the radius of the largest (1st) semicircle is 32 cm, and each subsequent semicircle's diameter is the radius of the previous one.
+
+Step 2: Solution Execution
+
+Part (a): Calculate the perimeters of the first four semicircles.
+
+The radius of the 1st semicircle (green) is $R_1 = 32$ cm.
+The perimeter of a semicircle is given by $\pi r + 2r$, where $r$ is the radius.
+
+Perimeter of 1st semicircle:
+$P_1 = \pi R_1 + 2R_1 = \pi(32) + 2(32) = 32(\pi + 2)$ cm.
+
+The diameter of the 2nd semicircle (orange) is equal to the radius of the 1st semicircle.
+Diameter $D_2 = R_1 = 32$ cm.
+Radius $R_2 = D_2 / 2 = 32 / 2 = 16$ cm.
+
+Perimeter of 2nd semicircle:
+$P_2 = \pi R_2 + 2R_2 = \pi(16) + 2(16) = 16(\pi + 2)$ cm.
+
+The diameter of the 3rd semicircle (pink) is equal to the radius of the 2nd semicircle.
+Diameter $D_3 = R_2 = 16$ cm.
+Radius $R_3 = D_3 / 2 = 16 / 2 = 8$ cm.
+
+Perimeter of 3rd semicircle:
+$P_3 = \pi R_3 + 2R_3 = \pi(8) + 2(8) = 8(\pi + 2)$ cm.
+
+The diameter of the 4th semicircle (blue) is equal to the radius of the 3rd semicircle.
+Diameter $D_4 = R_3 = 8$ cm.
+Radius $R_4 = D_4 / 2 = 8 / 2 = 4$ cm.
+
+Perimeter of 4th semicircle:
+$P_4 = \pi R_4 + 2R_4 = \pi(4) + 2(4) = 4(\pi + 2)$ cm.
+
+List of perimeters for the first four semicircles:
+$P_1 = 32(\pi + 2)$ cm
+$P_2 = 16(\pi + 2)$ cm
+$P_3 = 8(\pi + 2)$ cm
+$P_4 = 4(\pi + 2)$ cm
+
+Part (b): Show that the generalisation for the perimeters is $2^{6-n}(\pi + 2)$; $n = 0, 1, 2, 3, 4, \ldots$.
+
+The radii of the semicircles form a geometric progression: $32, 16, 8, 4, \ldots$.
+The first term is $a = 32$. The common ratio is $r = 1/2$.
+The $n$-th term of a geometric progression is given by $a \cdot r^{n-1}$.
+So, the radius of the $n$-th semicircle is $R_n = 32 \cdot (1/2)^{n-1}$.
+
+The perimeter of the $n$-th semicircle is $P_n = R_n(\pi + 2)$.
+Substituting the expression for $R_n$:
+$P_n = 32 \cdot (1/2)^{n-1} (\pi + 2)$
+$P_n = 2^5 \cdot (2^{-1})^{n-1} (\pi + 2)$
+$P_n = 2^5 \cdot 2^{-(n-1)} (\pi + 2)$
+$P_n = 2^5 \cdot 2^{-n+1} (\pi + 2)$
+$P_n = 2^{5-n+1} (\pi + 2)$
+$P_n = 2^{6-n} (\pi + 2)$
+
+This formula is valid for $n = 1, 2, 3, \ldots$.
+The problem states the formula is for $n = 0, 1, 2, 3, 4, \ldots$. Let's check for $n=0$.
+If $n=0$, the formula gives $2^{6-0}(\pi + 2) = 2^6(\pi + 2) = 64(\pi + 2)$. This would correspond to a radius of 64 cm, which is not the largest semicircle in the diagram.
+
+Let's re-evaluate the indexing. If we consider the largest semicircle as $n=0$, then:
+For $n=0$: Radius $R_0 = 32$. Perimeter $P_0 = 32(\pi+2)$.
+Formula: $2^{6-0}(\pi+2) = 64(\pi+2)$. This does not match.
+
+Let's assume the problem implies that the given formula $2^{6-n}(\pi + 2)$ is correct and we need to show it holds for the pattern observed. The pattern of radii is $32, 16, 8, 4, \ldots$.
+The perimeters are $32(\pi+2), 16(\pi+2), 8(\pi+2), 4(\pi+2), \ldots$.
+
+Let's test the given formula $2^{6-n}(\pi + 2)$ with different values of $n$ to see if it matches the perimeters:
+If $n=2$: $2^{6-2}(\pi+2) = 2^4(\pi+2) = 16(\pi+2)$. This matches $P_2$.
+If $n=3$: $2^{6-3}(\pi+2) = 2^3(\pi+2) = 8(\pi+2)$. This matches $P_3$.
+If $n=4$: $2^{6-4}(\pi+2) = 2^2(\pi+2) = 4(\pi+2)$. This matches $P_4$.
+If $n=5$: $2^{6-5}(\pi+2) = 2^1(\pi+2) = 2(\pi+2)$. This would be the perimeter of the 5th semicircle.
+
+It appears the formula given in the problem statement is indexed such that the first semicircle corresponds to $n=2$. Let's verify this assumption.
+
+If $n=2$, radius should be 32. Formula for radius $R_n = 2^{6-n}$.
+For $n=2$, $R_2 = 2^{6-2} = 2^4 = 16$. This is the radius of the 2nd semicircle, not the 1st.
+
+There seems to be a discrepancy in the problem statement's generalisation formula's indexing. Let's derive the formula based on the radii we found and then match it to the given generalisation.
+
+The radii are $R_1=32$, $R_2=16$, $R_3=8$, $R_4=4$.
+This can be written as $R_n = 32 \times (1/2)^{n-1} = 2^5 \times 2^{-(n-1)} = 2^{5-n+1} = 2^{6-n}$.
+So, the radius of the $n$-th semicircle is $R_n = 2^{6-n}$.
+
+The perimeter of the $n$-th semicircle is $P_n = R_n(\pi + 2) = 2^{6-n}(\pi + 2)$.
+This formula works for $n=1, 2, 3, 4, \ldots$.
+
+Let's check the given generalisation $2^{6-n}(\pi + 2)$ with $n = 0, 1, 2, 3, 4, \ldots$.
+If $n=0$, $P_0 = 2^{6-0}(\pi+2) = 64(\pi+2)$. This would be for a semicircle with radius 64.
+If $n=1$, $P_1 = 2^{6-1}(\pi+2) = 2^5(\pi+2) = 32(\pi+2)$. This is the perimeter of the 1st semicircle.
+If $n=2$, $P_2 = 2^{6-2}(\pi+2) = 2^4(\pi+2) = 16(\pi+2)$. This is the perimeter of the 2nd semicircle.
+If $n=3$, $P_3 = 2^{6-3}(\pi+2) = 2^3(\pi+2) = 8(\pi+2)$. This is the perimeter of the 3rd semicircle.
+If $n=4$, $P_4 = 2^{6-4}(\pi+2) = 2^2(\pi+2) = 4(\pi+2)$. This is the perimeter of the 4th semicircle.
+
+So, the generalisation $2^{6-n}(\pi + 2)$ is correct if we start the index $n$ from $n=1$ for the first semicircle. However, the problem statement says $n = 0, 1, 2, 3, 4, \ldots$. This implies that $n=0$ should correspond to some initial state, and perhaps the first semicircle in the diagram is not the $n=0$ term.
+
+Given the wording ""generalisation for the perimeters of the four semicircles is $2^{6-n}(\pi + 2)$; $n = 0, 1, 2, 3, 4, \ldots$"", it suggests that the formula itself is what we need to prove. The perimeters we calculated are:
+$P_1 = 32(\pi+2) = 2^5(\pi+2)$
+$P_2 = 16(\pi+2) = 2^4(\pi+2)$
+$P_3 = 8(\pi+2) = 2^3(\pi+2)$
+$P_4 = 4(\pi+2) = 2^2(\pi+2)$
+
+We derived that the radius of the $k$-th semicircle is $R_k = 32 \cdot (1/2)^{k-1} = 2^5 \cdot 2^{-(k-1)} = 2^{6-k}$.
+The perimeter of the $k$-th semicircle is $P_k = R_k(\pi+2) = 2^{6-k}(\pi+2)$.
+
+If we are to match this to the given formula $2^{6-n}(\pi+2)$, where $n$ starts from 0, it implies that the $k$-th semicircle in our sequence corresponds to $n = k-1$.
+Let's check this:
+For $k=1$ (1st semicircle), $n=1-1=0$. The formula gives $2^{6-0}(\pi+2) = 64(\pi+2)$. This is NOT $P_1$.
+
+There's a strong indication that the problem statement's generalisation formula has an indexing issue. However, I must follow the problem statement. Let's assume the formula provided is the correct one and see if we can ""show"" it based on the pattern.
+
+The radii are $32, 16, 8, 4$.
+The perimeters are $32(\pi+2), 16(\pi+2), 8(\pi+2), 4(\pi+2)$.
+
+Let's assume the formula $P_n = 2^{6-n}(\pi + 2)$ is correct, and we need to show it matches the pattern for *some* indexing.
+
+If we let the first semicircle (radius 32) correspond to $n=1$:
+$P_1 = 2^{6-1}(\pi+2) = 2^5(\pi+2) = 32(\pi+2)$. Matches.
+$P_2 = 2^{6-2}(\pi+2) = 2^4(\pi+2) = 16(\pi+2)$. Matches.
+$P_3 = 2^{6-3}(\pi+2) = 2^3(\pi+2) = 8(\pi+2)$. Matches.
+$P_4 = 2^{6-4}(\pi+2) = 2^2(\pi+2) = 4(\pi+2)$. Matches.
+
+So, the formula $2^{6-n}(\pi + 2)$ correctly describes the perimeters if $n$ starts from 1.
+The problem states $n = 0, 1, 2, 3, 4, \ldots$.
+This means the problem intends for $n=0$ to refer to some preceding state or the formula is meant to be interpreted with a shift in index.
+
+To ""show"" the generalisation, we can state that the radius of the $k$-th semicircle is $R_k = 32 \cdot (1/2)^{k-1} = 2^{6-k}$.
+The perimeter of the $k$-th semicircle is $P_k = R_k(\pi+2) = 2^{6-k}(\pi+2)$.
+If we let $n = k-1$, then $k = n+1$.
+Substituting $k = n+1$ into the perimeter formula:
+$P_{n+1} = 2^{6-(n+1)}(\pi+2) = 2^{6-n-1}(\pi+2) = 2^{5-n}(\pi+2)$.
+
+This doesn't match the given $2^{6-n}(\pi+2)$.
+
+Let's try assuming the formula $2^{6-n}(\pi+2)$ is correct as given and we need to verify it.
+The perimeters are $32(\pi+2), 16(\pi+2), 8(\pi+2), 4(\pi+2)$.
+We can write these as:
+$2^5(\pi+2)$
+$2^4(\pi+2)$
+$2^3(\pi+2)$
+$2^2(\pi+2)$
+
+We need to show this sequence matches $2^{6-n}(\pi+2)$ for $n = 0, 1, 2, 3, \ldots$.
+Let's try to map the terms:
+If $2^{6-n}(\pi+2)$ corresponds to the 1st term $2^5(\pi+2)$:
+$6-n = 5 \implies n = 1$.
+So, if $n=1$, we get the 1st perimeter.
+
+If $n=2$, we get $2^{6-2}(\pi+2) = 2^4(\pi+2)$, which is the 2nd perimeter.
+If $n=3$, we get $2^{6-3}(\pi+2) = 2^3(\pi+2)$, which is the 3rd perimeter.
+If $n=4$, we get $2^{6-4}(\pi+2) = 2^2(\pi+2)$, which is the 4th perimeter.
+
+This shows that the formula $2^{6-n}(\pi+2)$ correctly describes the perimeters of the semicircles if $n$ starts from 1. The problem statement specifies $n = 0, 1, 2, 3, 4, \ldots$. This implies that $n=0$ might be an initial condition or a reference point not directly shown in the first four semicircles. However, the question asks to show the generalisation for ""the four semicircles"".
+
+Let's proceed by showing the derivation and noting the indexing.
+The radius of the first semicircle is $R_1 = 32$.
+The radius of the second semicircle is $R_2 = 32/2 = 16$.
+The radius of the third semicircle is $R_3 = 16/2 = 8$.
+The radius of the fourth semicircle is $R_4 = 8/2 = 4$.
+In general, the radius of the $k$-th semicircle is $R_k = 32 \cdot (1/2)^{k-1} = 2^5 \cdot 2^{-(k-1)} = 2^{6-k}$.
+The perimeter of the $k$-th semicircle is $P_k = (\pi R_k) + 2R_k = R_k(\pi+2) = 2^{6-k}(\pi+2)$.
+
+To match the given formula $2^{6-n}(\pi+2)$ with $n=0, 1, 2, 3, \ldots$, we can set $k = n+1$.
+Then, $P_{n+1} = 2^{6-(n+1)}(\pi+2) = 2^{5-n}(\pi+2)$. This is still not matching.
+
+Let's assume the problem meant that the formula is $2^{5-n}(\pi+2)$ for $n=0, 1, 2, 3$ for the first four semicircles.
+For $n=0$: $2^{5-0}(\pi+2) = 32(\pi+2)$. (1st semicircle)
+For $n=1$: $2^{5-1}(\pi+2) = 16(\pi+2)$. (2nd semicircle)
+For $n=2$: $2^{5-2}(\pi+2) = 8(\pi+2)$. (3rd semicircle)
+For $n=3$: $2^{5-3}(\pi+2) = 4(\pi+2)$. (4th semicircle)
+This fits perfectly if the formula was $2^{5-n}(\pi+2)$ for $n=0, 1, 2, 3$.
+
+However, the problem statement is explicit: $2^{6-n}(\pi + 2)$; $n = 0, 1, 2, 3, 4, \ldots$.
+Let's assume the sequence of perimeters is indexed starting from $n=0$.
+Perimeter of 1st semicircle (radius 32): $32(\pi+2)$.
+Perimeter of 2nd semicircle (radius 16): $16(\pi+2)$.
+Perimeter of 3rd semicircle (radius 8): $8(\pi+2)$.
+Perimeter of 4th semicircle (radius 4): $4(\pi+2)$.
+
+We need to show that $P_n = 2^{6-n}(\pi+2)$ for $n = 0, 1, 2, 3, \ldots$.
+Let's assume the first term in the problem's generalization corresponds to $n=1$.
+$P_1 = 2^{6-1}(\pi+2) = 2^5(\pi+2) = 32(\pi+2)$. This matches our 1st semicircle.
+$P_2 = 2^{6-2}(\pi+2) = 2^4(\pi+2) = 16(\pi+2)$. This matches our 2nd semicircle.
+$P_3 = 2^{6-3}(\pi+2) = 2^3(\pi+2) = 8(\pi+2)$. This matches our 3rd semicircle.
+$P_4 = 2^{6-4}(\pi+2) = 2^2(\pi+2) = 4(\pi+2)$. This matches our 4th semicircle.
+
+So, the formula $2^{6-n}(\pi+2)$ correctly represents the perimeter of the $n$-th semicircle, provided that $n$ starts from 1. The problem statement says $n = 0, 1, 2, 3, 4, \ldots$. This means that the $n=0$ term would be $2^{6-0}(\pi+2) = 64(\pi+2)$, which is not among the first four semicircles.
+
+To fulfill the requirement of ""showing"" the generalisation, I will state the derived formula for the $k$-th term and then show how it relates to the given formula by adjusting the index.
+
+Derived radius for $k$-th semicircle: $R_k = 2^{6-k}$.
+Derived perimeter for $k$-th semicircle: $P_k = 2^{6-k}(\pi+2)$.
+
+The problem gives the generalisation $G_n = 2^{6-n}(\pi+2)$ for $n = 0, 1, 2, 3, \ldots$.
+To match our derived $P_k$ with $G_n$, we can set $k=n+1$.
+Then $P_{n+1} = 2^{6-(n+1)}(\pi+2) = 2^{5-n}(\pi+2)$. This does not match $G_n$.
+
+Let's try setting $k=n$. Then $P_n = 2^{6-n}(\pi+2)$. This matches the form of $G_n$.
+However, our $P_n$ is for $n=1, 2, 3, 4, \ldots$.
+The problem's $G_n$ is for $n=0, 1, 2, 3, \ldots$.
+If we set $P_n = G_n$, then $n$ in $P_n$ should start from 1, and $n$ in $G_n$ should start from 1 as well to match the perimeters of the first four semicircles.
+
+Let's assume the problem meant to say that the sequence of perimeters is $P_n = 2^{6-n}(\pi+2)$ where $n$ corresponds to the semicircle number, starting from $n=1$.
+$P_1 = 2^{6-1}(\pi+2) = 32(\pi+2)$
+$P_2 = 2^{6-2}(\pi+2) = 16(\pi+2)$
+$P_3 = 2^{6-3}(\pi+2) = 8(\pi+2)$
+$P_4 = 2^{6-4}(\pi+2) = 4(\pi+2)$
+This matches the calculated perimeters.
+
+If we strictly adhere to $n=0, 1, 2, 3, \ldots$, then the formula given is $2^{6-n}(\pi+2)$.
+Let's check the values for these $n$:
+$n=0: 2^6(\pi+2) = 64(\pi+2)$
+$n=1: 2^5(\pi+2) = 32(\pi+2)$
+$n=2: 2^4(\pi+2) = 16(\pi+2)$
+$n=3: 2^3(\pi+2) = 8(\pi+2)$
+$n=4: 2^2(\pi+2) = 4(\pi+2)$
+
+This sequence $64(\pi+2), 32(\pi+2), 16(\pi+2), 8(\pi+2), 4(\pi+2), \ldots$ is a geometric progression with first term $64(\pi+2)$ and common ratio $1/2$.
+The perimeters we calculated are $32(\pi+2), 16(\pi+2), 8(\pi+2), 4(\pi+2), \ldots$.
+This means the formula $2^{6-n}(\pi+2)$ for $n=0, 1, 2, 3, \ldots$ correctly generates the sequence of perimeters if we consider the first semicircle in the diagram to correspond to $n=1$ in the formula.
+
+To show the generalisation:
+The radius of the first semicircle is $R_1 = 32$.
+The radius of the $k$-th semicircle is $R_k = 32 \cdot (1/2)^{k-1} = 2^5 \cdot 2^{-(k-1)} = 2^{6-k}$.
+The perimeter of the $k$-th semicircle is $P_k = R_k(\pi+2) = 2^{6-k}(\pi+2)$.
+The problem states the generalisation is $2^{6-n}(\pi+2)$ for $n = 0, 1, 2, 3, \ldots$.
+If we align the index such that the first semicircle corresponds to $n=1$, then $P_1 = 2^{6-1}(\pi+2) = 32(\pi+2)$, which is correct.
+The second semicircle corresponds to $n=2$, $P_2 = 2^{6-2}(\pi+2) = 16(\pi+2)$, correct.
+The third semicircle corresponds to $n=3$, $P_3 = 2^{6-3}(\pi+2) = 8(\pi+2)$, correct.
+The fourth semicircle corresponds to $n=4$, $P_4 = 2^{6-4}(\pi+2) = 4(\pi+2)$, correct.
+Thus, the formula $2^{6-n}(\pi+2)$ holds for $n=1, 2, 3, 4$. The problem statement implies this formula is valid for $n=0, 1, 2, 3, \ldots$. This means that $n=0$ would refer to a hypothetical semicircle with radius $2^{6-0}=64$, which precedes the largest semicircle shown.
+
+Part (c): Calculate the perimeter of the 8th semicircle.
+
+Using the generalisation formula $P_n = 2^{6-n}(\pi+2)$, and assuming the 8th semicircle corresponds to $n=8$:
+$P_8 = 2^{6-8}(\pi+2)$
+$P_8 = 2^{-2}(\pi+2)$
+$P_8 = \frac{1}{4}(\pi+2)$ cm.
+
+Let's double-check the radius of the 8th semicircle.
+$R_8 = 32 \cdot (1/2)^{8-1} = 32 \cdot (1/2)^7 = 2^5 \cdot 2^{-7} = 2^{-2} = 1/4$.
+Perimeter $P_8 = R_8(\pi+2) = (1/4)(\pi+2)$.
+
+This seems correct. However, the problem states the generalisation is for $n = 0, 1, 2, 3, 4, \ldots$.
+If the 1st semicircle is $n=1$, then the 8th semicircle is $n=8$.
+If the problem implies that the indexing for the formula starts at $n=0$ for the first semicircle, then the formula should be adjusted. But the problem says ""generalisation for the perimeters of the four semicircles is $2^{6-n}(\pi + 2)$"". This strongly suggests that the given formula is correct and the indexing needs to be understood.
+
+Based on our verification in part (b), the formula $2^{6-n}(\pi+2)$ gives the perimeter of the $n$-th semicircle if $n$ starts from 1.
+So, for the 8th semicircle, we use $n=8$.
+
+$P_8 = 2^{6-8}(\pi+2) = 2^{-2}(\pi+2) = \frac{1}{4}(\pi+2)$ cm.
+
+Let's consider the possibility that the problem intends for the sequence to be indexed starting from $n=0$.
+If $n=0$ corresponds to the 1st semicircle (radius 32), then the formula would need to be adjusted.
+The sequence of radii is $32, 16, 8, 4, \ldots$.
+If $n=0$, radius should be 32.
+If $n=1$, radius should be 16.
+If $n=2$, radius should be 8.
+If $n=3$, radius should be 4.
+The radius of the $n$-th term (starting from $n=0$) is $R_n = 32 \cdot (1/2)^n = 2^5 \cdot 2^{-n} = 2^{5-n}$.
+The perimeter would be $P_n = R_n(\pi+2) = 2^{5-n}(\pi+2)$.
+
+However, the problem explicitly states the generalisation is $2^{6-n}(\pi+2)$.
+This means the problem's indexing for the formula is likely $n=1$ for the 1st semicircle.
+Let's re-read: ""generalisation for the perimeters of the four semicircles is $2^{6-n}(\pi + 2)$; $n = 0, 1, 2, 3, 4, \ldots$.""
+This is a contradiction if we assume the ""four semicircles"" are indexed $n=0, 1, 2, 3$.
+If $n=0$, perimeter is $2^6(\pi+2) = 64(\pi+2)$.
+If $n=1$, perimeter is $2^5(\pi+2) = 32(\pi+2)$.
+If $n=2$, perimeter is $2^4(\pi+2) = 16(\pi+2)$.
+If $n=3$, perimeter is $2^3(\pi+2) = 8(\pi+2)$.
+If $n=4$, perimeter is $2^2(\pi+2) = 4(\pi+2)$.
+
+This sequence $64, 32, 16, 8, 4, \ldots$ is generated by the formula.
+The actual perimeters of the four semicircles are $32, 16, 8, 4, \ldots$.
+This means the formula $2^{6-n}(\pi+2)$ matches the perimeters of the semicircles when $n$ takes values $1, 2, 3, 4$.
+
+Therefore, to find the perimeter of the 8th semicircle, we should use $n=8$ in the formula $2^{6-n}(\pi+2)$.
+$P_8 = 2^{6-8}(\pi+2) = 2^{-2}(\pi+2) = \frac{1}{4}(\pi+2)$ cm.
+
+Step 3: Final Answer
+(a) The perimeters of the four semicircles are:
+1st: $32(\pi + 2)$ cm
+2nd: $16(\pi + 2)$ cm
+3rd: $8(\pi + 2)$ cm
+4th: $4(\pi + 2)$ cm
+
+(b) The radius of the $k$-th semicircle is $R_k = 32 \cdot (1/2)^{k-1} = 2^{6-k}$.
+The perimeter of the $k$-th semicircle is $P_k = R_k(\pi+2) = 2^{6-k}(\pi+2)$.
+The problem states the generalisation is $2^{6-n}(\pi+2)$ for $n = 0, 1, 2, 3, \ldots$.
+By setting $k=n$, we see that the formula matches the form of the perimeter $P_n = 2^{6-n}(\pi+2)$.
+When $n=1$, $P_1 = 2^{6-1}(\pi+2) = 32(\pi+2)$, matching the 1st semicircle.
+When $n=2$, $P_2 = 2^{6-2}(\pi+2) = 16(\pi+2)$, matching the 2nd semicircle.
+When $n=3$, $P_3 = 2^{6-3}(\pi+2) = 8(\pi+2)$, matching the 3rd semicircle.
+When $n=4$, $P_4 = 2^{6-4}(\pi+2) = 4(\pi+2)$, matching the 4th semicircle.
+Thus, the formula $2^{6-n}(\pi+2)$ correctly describes the perimeter of the $n$-th semicircle, where $n$ starts from 1. The problem statement's range $n = 0, 1, 2, 3, \ldots$ implies that $n=0$ would correspond to a hypothetical preceding term.
+
+(c) To calculate the perimeter of the 8th semicircle, we use $n=8$ in the generalisation formula:
+$P_8 = 2^{6-8}(\pi+2) = 2^{-2}(\pi+2) = \frac{1}{4}(\pi+2)$ cm.
+
+The perimeter of the 8th semicircle is $\frac{\pi+2}{4}$ cm.
+
+Final check of calculations:
+Radii: 32, 16, 8, 4, 2, 1, 1/2, 1/4.
+Perimeters: $32(\pi+2), 16(\pi+2), 8(\pi+2), 4(\pi+2), 2(\pi+2), 1(\pi+2), \frac{1}{2}(\pi+2), \frac{1}{4}(\pi+2)$.
+The 8th term is indeed $\frac{1}{4}(\pi+2)$.
+
+The generalisation formula $2^{6-n}(\pi+2)$ with $n=1, 2, 3, \ldots$ generates these perimeters.
+The problem statement's inclusion of $n=0$ is slightly confusing but doesn't alter the calculation for the 8th term if we assume the formula correctly models the sequence starting from the first semicircle.
+
+Final answer is in cm and in terms of $\pi$.
+
+Final Answer:
+(a) The perimeters of the first four semicircles are:
+1st semicircle: $32(\pi + 2)$ cm
+2nd semicircle: $16(\pi + 2)$ cm
+3rd semicircle: $8(\pi + 2)$ cm
+4th semicircle: $4(\pi + 2)$ cm
+
+(b) The radius of the $k$-th semicircle is $R_k = 32 \cdot (1/2)^{k-1} = 2^{6-k}$. The perimeter of the $k$-th semicircle is $P_k = R_k(\pi+2) = 2^{6-k}(\pi+2)$. The given generalisation formula is $2^{6-n}(\pi+2)$ for $n = 0, 1, 2, 3, \ldots$. By aligning the index such that $k=n$, the formula $2^{6-n}(\pi+2)$ correctly generates the perimeters for $n=1, 2, 3, 4$, corresponding to the first four semicircles. For $n=1$, $P_1 = 2^{6-1}(\pi+2) = 32(\pi+2)$. For $n=2$, $P_2 = 2^{6-2}(\pi+2) = 16(\pi+2)$. For $n=3$, $P_3 = 2^{6-3}(\pi+2) = 8(\pi+2)$. For $n=4$, $P_4 = 2^{6-4}(\pi+2) = 4(\pi+2)$. This shows the formula holds for the given semicircles when $n$ starts from 1.
+
+(c) The perimeter of the 8th semicircle is calculated using the generalisation formula with $n=8$:
+$P_8 = 2^{6-8}(\pi+2) = 2^{-2}(\pi+2) = \frac{1}{4}(\pi+2)$ cm.
+
+FINAL ANSWER:
+(a) The perimeters of the four semicircles are: 1st: $32(\pi + 2)$ cm, 2nd: $16(\pi + 2)$ cm, 3rd: $8(\pi + 2)$ cm, 4th: $4(\pi + 2)$ cm.
+(b) The radius of the $k$-th semicircle is $R_k = 2^{6-k}$. The perimeter is $P_k = R_k(\pi+2) = 2^{6-k}(\pi+2)$. The generalisation formula $2^{6-n}(\pi+2)$ matches this form. For $n=1$, $P_1 = 2^{6-1}(\pi+2) = 32(\pi+2)$. For $n=2$, $P_2 = 2^{6-2}(\pi+2) = 16(\pi+2)$. For $n=3$, $P_3 = 2^{6-3}(\pi+2) = 8(\pi+2)$. For $n=4$, $P_4 = 2^{6-4}(\pi+2) = 4(\pi+2)$. Thus, the formula $2^{6-n}(\pi+2)$ correctly describes the perimeter of the $n$-th semicircle when $n$ starts from 1.
+(c) The perimeter of the 8th semicircle is $\frac{1}{4}(\pi+2)$ cm.",correct,4.57364559173584,6,6,"Full marks awarded (6/6). The AI's answers match the ground truth: part (a) perimeters are 32(π+2), 16(π+2), 8(π+2), 4(π+2); part (b) the general formula P_n = 2^{6-n}(π+2) is correctly derived for the indexing used; part (c) the 8th perimeter is (1/4)(π+2) cm. Although the response discusses an indexing ambiguity (n starting at 0 vs 1), the computed perimeters and the general formula as applied to the given semicircles agree with the ground truth, so full marks are appropriate.",11.43522596359253,,Logical Reasoning,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 3_Q3.png,"(a) The pattern of the number of cylinders is 2n +1;
+n = 1, 2, 3, 4, ...
+(b) 104 720 cm3",Error: 'list' object has no attribute 'startswith',wrong,3.9212400913238525,0,5,"The AI response did not provide answers to either part (a) or (b); it returned an error message: ""Error: 'list' object has no attribute 'startswith'"". Under the provided marking scheme (full mark = 5 only when the agent's answers match the ground truth), and following SPM open-ended marking rules, no credit can be awarded. Therefore score = 0/5.",7.9665610790252686,,Logical Reasoning,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 4_Q1.png,x = 3,"Step 1: Problem Understanding
+The problem asks us to find the value of 'x' based on the information provided in a Venn diagram and the total number of elements in the universal set $\xi$.
+The universal set is defined as the union of sets J, K, and L ($\xi = J \cup K \cup L$), and its total number of elements is given as 25 ($n(\xi) = 25$).
+The Venn diagram provides the number of elements in various regions:
+- J only: 7
+- J and K only: 2
+- K only: $x + 2$
+- K and L only: 3
+- L only: $x + 5$
+- Regions J and L only, and J, K, and L are not explicitly given, implying they are either 0 or already accounted for in the given regions. Since $\xi = J \cup K \cup L$, there are no elements outside these three sets.
+
+Step 2: Solution Execution
+The total number of elements in the universal set $\xi$ is the sum of the elements in all disjoint regions within the Venn diagram.
+Given $\xi = J \cup K \cup L$, we sum the elements of all the regions:
+$n(\xi) =$ (J only) + (J and K only) + (K only) + (K and L only) + (L only) + (J and L only) + (J, K, and L)
+
+From the visual data and the problem statement, we assume the unstated regions are 0.
+So, $n(\xi) = 7 + 2 + (x + 2) + 3 + (x + 5) + 0 + 0$.
+
+We are given that $n(\xi) = 25$.
+Therefore, we can set up the equation:
+$25 = 7 + 2 + (x + 2) + 3 + (x + 5)$
+
+Now, we solve for x:
+Combine the constant terms:
+$7 + 2 + 2 + 3 + 5 = 19$
+
+Combine the terms with x:
+$x + x = 2x$
+
+So the equation becomes:
+$25 = 19 + 2x$
+
+Subtract 19 from both sides:
+$25 - 19 = 2x$
+$6 = 2x$
+
+Divide by 2:
+$x = \frac{6}{2}$
+$x = 3$
+
+To verify the solution:
+If $x = 3$, then:
+- K only = $x + 2 = 3 + 2 = 5$
+- L only = $x + 5 = 3 + 5 = 8$
+
+The sum of all regions is:
+$7 (\text{J only}) + 2 (\text{J and K only}) + 5 (\text{K only}) + 3 (\text{K and L only}) + 8 (\text{L only})$
+$= 7 + 2 + 5 + 3 + 8 = 25$
+
+This matches the given $n(\xi) = 25$. The solution is consistent.
+
+Step 3: Final Answer
+The value of x is calculated by summing all the disjoint regions in the Venn diagram and equating it to the total number of elements in the universal set, $n(\xi) = 25$.
+The equation formed is $7 + 2 + (x + 2) + 3 + (x + 5) = 25$.
+Simplifying this equation gives $19 + 2x = 25$.
+Solving for x, we get $2x = 6$, which means $x = 3$.
+
+FINAL ANSWER: The value of x is 3.",correct,2.5977745056152344,3,3,"Full marks (3) awarded. The AI correctly set up the equation 7 + 2 + (x+2) + 3 + (x+5) = 25, combined like terms to get 19 + 2x = 25, solved 2x = 6 to obtain x = 3, and verified the solution by summing the regions to 25. The reasoning, algebra and final answer match the ground truth.",5.948315382003784,,Operations on Sets,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 4_Q2.png,39,"Step 1: Problem Understanding
+The problem asks to find the total number of elements in the universal set, denoted as $n(\xi)$.
+We are given a Venn diagram with three sets P, Q, and R, and the number of elements in various regions in terms of a variable 'k'.
+We are also given a constraint: $n(Q) = n(P \cup R)'$.
+
+Step 2: Solution Execution
+
+First, let's express the number of elements in each region based on the provided visual data:
+- $n(P \cap Q \cap R) = 1$
+- $n(P \cap Q \cap R') = 2$
+- $n(P \cap R \cap Q') = k$
+- $n(Q \cap R \cap P') = 5$
+- $n(P \cap Q' \cap R') = 3$
+- $n(Q \cap P' \cap R') = 4k$
+- $n(R \cap P' \cap Q') = 5$
+- $n(P' \cap Q' \cap R') = 2k$
+
+Now, let's calculate the number of elements in set Q, $n(Q)$:
+$n(Q) = n(Q \cap P' \cap R') + n(Q \cap P \cap R') + n(Q \cap R \cap P') + n(P \cap Q \cap R)$
+$n(Q) = 4k + 2 + 5 + 1 = 4k + 8$
+
+Next, let's find the number of elements in the union of P and R, $n(P \cup R)$.
+The elements in $P \cup R$ are those in P only, R only, P and Q only, P and R only, Q and R only, and P, Q, and R.
+$n(P \cup R) = n(P \cap Q' \cap R') + n(R \cap P' \cap Q') + n(P \cap Q \cap R') + n(P \cap R \cap Q') + n(Q \cap R \cap P') + n(P \cap Q \cap R)$
+$n(P \cup R) = 3 + 5 + 2 + k + 5 + 1 = k + 16$
+
+Now, let's find the number of elements outside the union of P and R, $n((P \cup R)')$:
+This is the number of elements in the universal set minus the number of elements in $P \cup R$.
+$n((P \cup R)') = n(\xi) - n(P \cup R)$
+We also know that the region outside P, Q, and R is $n(P' \cap Q' \cap R') = 2k$.
+The elements outside $P \cup R$ are those in Q only, and those outside P, Q, and R.
+$n((P \cup R)') = n(Q \cap P' \cap R') + n(P' \cap Q' \cap R')$
+$n((P \cup R)') = 4k + 2k = 6k$
+
+Now, let's use the given constraint: $n(Q) = n(P \cup R)'$.
+Substitute the expressions we found:
+$4k + 8 = 6k$
+
+Solve for k:
+$8 = 6k - 4k$
+$8 = 2k$
+$k = 4$
+
+Now that we have the value of k, we can find the number of elements in each region:
+- $n(P \cap Q \cap R) = 1$
+- $n(P \cap Q \cap R') = 2$
+- $n(P \cap R \cap Q') = k = 4$
+- $n(Q \cap R \cap P') = 5$
+- $n(P \cap Q' \cap R') = 3$
+- $n(Q \cap P' \cap R') = 4k = 4(4) = 16$
+- $n(R \cap P' \cap Q') = 5$
+- $n(P' \cap Q' \cap R') = 2k = 2(4) = 8$
+
+Finally, calculate the total number of elements in the universal set, $n(\xi)$, by summing all the disjoint regions:
+$n(\xi) = n(P \cap Q \cap R) + n(P \cap Q \cap R') + n(P \cap R \cap Q') + n(Q \cap R \cap P') + n(P \cap Q' \cap R') + n(Q \cap P' \cap R') + n(R \cap P' \cap Q') + n(P' \cap Q' \cap R')$
+$n(\xi) = 1 + 2 + 4 + 5 + 3 + 16 + 5 + 8$
+$n(\xi) = 44$
+
+Let's verify the constraint:
+$n(Q) = 4k + 8 = 4(4) + 8 = 16 + 8 = 24$
+$n((P \cup R)') = 6k = 6(4) = 24$
+The constraint $n(Q) = n(P \cup R)'$ is satisfied.
+
+Step 3: Final Answer
+The problem asks for the value of $n(\xi)$. We have calculated $n(\xi)$ by summing the number of elements in all disjoint regions of the Venn diagram after finding the value of $k$ using the given constraint.
+
+The value of $k$ is 4.
+The number of elements in each region are:
+- P only: 3
+- P and Q only: 2
+- P and R only: 4
+- Q and R only: 5
+- Q only: 16
+- R only: 5
+- P, Q, and R: 1
+- Outside P, Q, R: 8
+
+Summing these values: $3 + 2 + 4 + 5 + 16 + 5 + 1 + 8 = 44$.
+
+FINAL ANSWER: The final answer is $\boxed{44}$",wrong,2.2162904739379883,0,3,"The ground truth answer is 39 while the AI's final answer is 44, so the response does not match the ground truth. The provided marking scheme states that a full mark (3) is given only when the agent's answer matches the ground truth; therefore, per the strict instructions, the score is 0 out of 3. (The AI's working is internally consistent leading to k = 4 and total 44, but because it does not equal the ground truth 39, no marks are awarded under the given scheme.)",22.185171127319336,,Operations on Sets,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 4_Q3.png,"(a) y = 11
+(b) 51","Step 1: Problem Understanding
+The problem asks us to find the value of 'y' and the total number of elements in the union of sets A, B, and C (n(A ∪ B ∪ C)).
+The given constraints are:
+1. ξ = A ∪ B ∪ C, which means the universal set is the union of the three sets.
+2. n(B') = n(B ∩ C), which means the number of elements not in B is equal to the number of elements in the intersection of B and C.
+
+Step 2: Solution Execution
+
+First, let's express the number of elements in each region of the Venn diagram:
+- n(A only) = 2
+- n(A ∩ B only) = y - 2
+- n(B only) = 4
+- n(A ∩ C only) = 5
+- n(A ∩ B ∩ C) = y - 1
+- n(B ∩ C only) = 9
+- n(C only) = 12
+
+Now, let's use the constraint n(B') = n(B ∩ C).
+The number of elements in B' (not in B) is the sum of elements in regions that are outside of B. In this Venn diagram, these are:
+n(B') = n(A only) + n(A ∩ C only) + n(C only)
+n(B') = 2 + 5 + 12 = 19
+
+The number of elements in the intersection of B and C, n(B ∩ C), includes the region where B and C overlap, which is composed of two parts: ""B ∩ C only"" and ""A ∩ B ∩ C"".
+n(B ∩ C) = n(B ∩ C only) + n(A ∩ B ∩ C)
+n(B ∩ C) = 9 + (y - 1) = y + 8
+
+Now, we apply the constraint n(B') = n(B ∩ C):
+19 = y + 8
+y = 19 - 8
+y = 11
+
+(a) The value of y is 11.
+
+Now, let's find n(A ∪ B ∪ C). Since ξ = A ∪ B ∪ C, we need to sum up the number of elements in all regions of the Venn diagram.
+n(A ∪ B ∪ C) = n(A only) + n(A ∩ B only) + n(B only) + n(A ∩ C only) + n(A ∩ B ∩ C) + n(B ∩ C only) + n(C only)
+
+Substitute the values, including y = 11:
+n(A ∪ B ∪ C) = 2 + (11 - 2) + 4 + 5 + (11 - 1) + 9 + 12
+n(A ∪ B ∪ C) = 2 + 9 + 4 + 5 + 10 + 9 + 12
+n(A ∪ B ∪ C) = 51
+
+(b) n(A ∪ B ∪ C) = 51.
+
+Let's verify the values:
+n(A ∩ B only) = y - 2 = 11 - 2 = 9
+n(A ∩ B ∩ C) = y - 1 = 11 - 1 = 10
+
+The regions are:
+A only: 2
+A ∩ B only: 9
+B only: 4
+A ∩ C only: 5
+A ∩ B ∩ C: 10
+B ∩ C only: 9
+C only: 12
+
+n(B') = 2 + 5 + 12 = 19
+n(B ∩ C) = n(B ∩ C only) + n(A ∩ B ∩ C) = 9 + 10 = 19
+The constraint n(B') = n(B ∩ C) holds true.
+
+n(A ∪ B ∪ C) = 2 + 9 + 4 + 5 + 10 + 9 + 12 = 51.
+
+Step 3: Final Answer
+(a) The value of y is 11.
+(b) The value of n(A ∪ B ∪ C) is 51.
+
+FINAL ANSWER: (a) The value of y is 11. (b) The value of n(A ∪ B ∪ C) is 51.",correct,3.7402117252349854,4,4,"Full marks awarded (4/4). The AI response matches the ground truth answers exactly: (a) y = 11 and (b) n(A ∪ B ∪ C) = 51. The solution correctly interprets the constraint n(B') = n(B ∩ C), computes n(B') = 2 + 5 + 12 = 19, sets 19 = y + 8 to obtain y = 11, and then correctly sums all Venn regions with y substituted to get 51. The reasoning and arithmetic are correct and consistent with the provided marking instruction to give full marks when the answer matches the ground truth.",13.86551308631897,,Operations on Sets,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 5_Q1.png,"(a) (i) V = {1, 2, 3, 4, 5}
+n(V) = 5
+(ii) E = {(1, 2), (1, 5), (2, 3), (2, 4), (2, 5), (3, 4),
+ (4, 5)}
+E = {e1, e2, e3, e4, e5, e6, e7}
+n(E) = 7
+(iii) 14
+(b) (i) V = {P, Q, R, S, T, U, V, W}
+n(V) = 8
+(ii) E = {(Q, P), (Q, R), (Q, W), (R, V), (S, T), (S, U),
+ (U, V), (V, W)}
+n(E) = 8
+(iii) 16
+(c) (i) V = {A, B, C, D, E, F}
+n(V) = 6
+(ii) E = {(A, B), (A, F), (B, C), (B, E), (C, D), (C, E),
+ (D, E), (E, F)}
+n(E) = 8
+(iii) 16","Step 1: Problem Understanding
+The problem asks us to analyze three given graphs (a, b, and c) and for each graph, determine:
+(i) The set of vertices (V) and the number of vertices (n(V)).
+(ii) The set of edges (E) and the number of edges (n(E)).
+(iii) The sum of the degrees of all vertices.
+
+There are no non-standard constraints mentioned in the problem.
+
+Step 2: Solution Execution
+
+Graph (a):
+(i) V and n(V):
+The problem statement explicitly provides:
+V = {1, 2, 3, 4, 5}
+n(V) = 5
+
+(ii) E and n(E):
+The problem statement explicitly provides:
+E = {e1, e2, e3, e4, e5, e6, e7}
+n(E) = 7
+
+(iii) Sum of degrees:
+The degree of a vertex is the number of edges incident to it. We can list the degrees for each vertex:
+- Degree of vertex 1: connected to 2, 5 (degree = 2)
+- Degree of vertex 2: connected to 1, 3, 4, 5 (degree = 4)
+- Degree of vertex 3: connected to 2, 4 (degree = 2)
+- Degree of vertex 4: connected to 2, 3, 5 (degree = 3)
+- Degree of vertex 5: connected to 1, 2, 4 (degree = 3)
+
+Sum of degrees = 2 + 4 + 2 + 3 + 3 = 14.
+
+Alternatively, by the handshaking lemma, the sum of degrees is equal to 2 * n(E).
+Sum of degrees = 2 * 7 = 14.
+
+Graph (b):
+(i) V and n(V):
+The problem statement explicitly provides:
+V = {P, Q, R, W, V, U, T}
+n(V) = 7
+
+(ii) E and n(E):
+The problem statement explicitly provides:
+E = {PQ, QR, RV, VU, UW, WP, SU, ST}
+n(E) = 9
+
+(iii) Sum of degrees:
+Let's list the degrees for each vertex:
+- Degree of P: connected to Q, W (degree = 2)
+- Degree of Q: connected to P, R (degree = 2)
+- Degree of R: connected to Q, V (degree = 2)
+- Degree of W: connected to U, P (degree = 2)
+- Degree of V: connected to R, U (degree = 2)
+- Degree of U: connected to V, W, S (degree = 3)
+- Degree of T: connected to S (degree = 1)
+- Degree of S: connected to U, T (degree = 2)
+
+Sum of degrees = 2 + 2 + 2 + 2 + 2 + 3 + 1 + 2 = 16.
+
+Using the handshaking lemma:
+Sum of degrees = 2 * n(E) = 2 * 9 = 18.
+
+Let's re-examine the edges and incident nodes for Graph (b):
+Edges (E): {PQ, QR, RV, VU, UW, WP, SU, ST}
+Edges and their incident nodes:
+PQ: (P, Q)
+QR: (Q, R)
+RV: (R, V)
+VU: (V, U)
+UW: (U, W)
+WP: (W, P)
+SU: (S, U)
+ST: (S, T)
+
+Let's recount the degrees based on these edges:
+- P: connected to Q, W (degree = 2)
+- Q: connected to P, R (degree = 2)
+- R: connected to Q, V (degree = 2)
+- V: connected to R, U (degree = 2)
+- U: connected to V, W, S (degree = 3)
+- W: connected to U, P (degree = 2)
+- S: connected to U, T (degree = 2)
+- T: connected to S (degree = 1)
+
+Sum of degrees = 2 + 2 + 2 + 2 + 3 + 2 + 2 + 1 = 16.
+
+There seems to be a discrepancy. Let's re-read the problem carefully. The problem states ""Edges (E): {PQ, QR, RV, VU, UW, WP, SU, ST}"" and ""Number of edges (n(E)): 9"". However, the list provided only contains 8 edges. Assuming the list of edges is correct and the count is wrong:
+If n(E) = 8, then sum of degrees = 2 * 8 = 16. This matches our manual calculation.
+If n(E) = 9, there must be one more edge. Let's assume there's a typo in the problem and n(E) should be 8.
+
+Let's proceed with the assumption that n(E) = 8 and the list of edges is correct.
+V = {P, Q, R, W, V, U, T}
+n(V) = 7
+E = {PQ, QR, RV, VU, UW, WP, SU, ST}
+n(E) = 8
+Sum of degrees = 16.
+
+Graph (c):
+(i) V and n(V):
+The problem statement explicitly provides:
+V = {A, B, C, D, E, F}
+n(V) = 6
+
+(ii) E and n(E):
+The problem statement explicitly provides:
+E = {AB, BC, CE, ED, FA, AE, CD}
+n(E) = 7
+
+(iii) Sum of degrees:
+Let's list the degrees for each vertex:
+- Degree of A: connected to B, F, E (degree = 3)
+- Degree of B: connected to A, C (degree = 2)
+- Degree of C: connected to B, E, D (degree = 3)
+- Degree of D: connected to E, C (degree = 2)
+- Degree of E: connected to C, D, A (degree = 3)
+- Degree of F: connected to A (degree = 1)
+
+Sum of degrees = 3 + 2 + 3 + 2 + 3 + 1 = 14.
+
+Using the handshaking lemma:
+Sum of degrees = 2 * n(E) = 2 * 7 = 14.
+This matches our manual calculation.
+
+Verification:
+The problem provides the sets of nodes and edges, and their counts. The main task is to calculate the sum of degrees. We've done this by listing the degrees of each vertex and summing them up. We also used the handshaking lemma (sum of degrees = 2 * number of edges) as a verification method.
+
+For Graph (a), the counts and the sum of degrees match.
+For Graph (b), there is a discrepancy between the stated number of edges (9) and the listed edges (8). Assuming the listed edges are correct, the sum of degrees is 16. If we assume the number of edges (9) is correct, then there's a missing edge and our sum of degrees would be incorrect. Given the explicit listing of edges, it's more likely that n(E) is a typo. We will proceed with n(E) = 8 for Graph (b).
+For Graph (c), the counts and the sum of degrees match.
+
+Final check of calculations:
+Graph (a):
+V={1,2,3,4,5}, n(V)=5
+E={e1,e2,e3,e4,e5,e6,e7}, n(E)=7
+Degrees: deg(1)=2, deg(2)=4, deg(3)=2, deg(4)=3, deg(5)=3. Sum = 2+4+2+3+3 = 14.
+2*n(E) = 2*7 = 14. Consistent.
+
+Graph (b):
+V={P,Q,R,W,V,U,T}, n(V)=7
+E={PQ, QR, RV, VU, UW, WP, SU, ST}, n(E)=8 (assuming typo in problem statement)
+Degrees: deg(P)=2, deg(Q)=2, deg(R)=2, deg(V)=2, deg(U)=3, deg(W)=2, deg(S)=2, deg(T)=1. Sum = 2+2+2+2+3+2+2+1 = 16.
+2*n(E) = 2*8 = 16. Consistent with the assumption.
+
+Graph (c):
+V={A,B,C,D,E,F}, n(V)=6
+E={AB, BC, CE, ED, FA, AE, CD}, n(E)=7
+Degrees: deg(A)=3, deg(B)=2, deg(C)=3, deg(D)=2, deg(E)=3, deg(F)=1. Sum = 3+2+3+2+3+1 = 14.
+2*n(E) = 2*7 = 14. Consistent.
+
+Step 3: Final Answer
+The solution requires providing the values for V, n(V), E, n(E), and the sum of degrees for each of the three graphs.
+
+Graph (a):
+(i) V = {1, 2, 3, 4, 5}, n(V) = 5
+(ii) E = {e1, e2, e3, e4, e5, e6, e7}, n(E) = 7
+(iii) Sum of degrees = 14
+
+Graph (b):
+(i) V = {P, Q, R, W, V, U, T}, n(V) = 7
+(ii) E = {PQ, QR, RV, VU, UW, WP, SU, ST}, n(E) = 8 (Note: The problem statement listed 9 edges, but only 8 were provided in the list. We assume the list is correct and n(E)=8.)
+(iii) Sum of degrees = 16
+
+Graph (c):
+(i) V = {A, B, C, D, E, F}, n(V) = 6
+(ii) E = {AB, BC, CE, ED, FA, AE, CD}, n(E) = 7
+(iii) Sum of degrees = 14
+
+FINAL ANSWER:
+Graph (a):
+(i) V = {1, 2, 3, 4, 5}, n(V) = 5
+(ii) E = {e1, e2, e3, e4, e5, e6, e7}, n(E) = 7
+(iii) Sum of degrees = 14
+
+Graph (b):
+(i) V = {P, Q, R, W, V, U, T}, n(V) = 7
+(ii) E = {PQ, QR, RV, VU, UW, WP, SU, ST}, n(E) = 8
+(iii) Sum of degrees = 16
+
+Graph (c):
+(i) V = {A, B, C, D, E, F}, n(V) = 6
+(ii) E = {AB, BC, CE, ED, FA, AE, CD}, n(E) = 7
+(iii) Sum of degrees = 14",wrong,15.788260459899902,1,3,"Total mark = 3. Marking (1 mark per graph, must match ground truth):
+- Graph (a): Correct. V, n(V), E, n(E) and sum of degrees = 14 match the ground truth. Award 1/1.
+- Graph (b): Incorrect. Ground truth V = {P,Q,R,S,T,U,V,W} (n(V)=8) and E = {(Q,P),(Q,R),(Q,W),(R,V),(S,T),(S,U),(U,V),(V,W)} with n(E)=8 and sum degrees 16. The AI produced an inconsistent vertex set (omitted S in its V listing), different edge list, and originally mis-stated n(E)=9 then assumed n(E)=8. It does not match the ground truth. Award 0/1.
+- Graph (c): Incorrect. Ground truth has n(E)=8 and sum of degrees = 16. The AI listed only 7 edges and gave sum of degrees = 14, which does not match the ground truth. Award 0/1.
+Final score = 1 out of 3.",31.822447538375854,,Network in Graph Theory,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 5_Q2.png,"(a) (i) P > Q > R > S (ii) P > S
+(b) Route P > Q > S because I can save RM35 and
+the difference in time is only 9 minutes compared
+to route P > S","Step 1: Problem Understanding
+The problem asks us to find two specific routes in a directed weighted graph:
+(a) (i) The most economical route from P to S.
+(a) (ii) The route that takes the shortest time from P to S.
+
+The graph represents flight options with associated costs (RM) and travel times (hours). We are given the nodes (P, Q, R, S) and the edges with their costs and times. There's also a constraint of a 45-minute (0.75 hours) transit time at each transit airport (Q and R).
+
+Non-standard constraints:
+- Transit time at Q and R must be added to the total time for routes passing through these airports.
+- S is the final destination, so routes must end at S.
+
+Step 2: Solution Execution
+
+Part (a) (i): Most economical route
+
+We need to consider all possible routes from P to S and their total costs. The possible routes are:
+1. P -> S (Direct flight)
+2. P -> Q -> S
+3. P -> R -> S
+4. P -> Q -> R -> S
+5. P -> R -> Q -> S (This route is not possible as there is no edge from R to Q)
+
+Let's calculate the cost for each valid route:
+
+Route 1: P -> S
+Cost = RM200
+
+Route 2: P -> Q -> S
+Cost = Cost(P -> Q) + Cost(Q -> S)
+Cost = RM50 + RM115 = RM165
+
+Route 3: P -> R -> S
+Cost = Cost(P -> R) + Cost(R -> S)
+Cost = RM130 + RM65 = RM195
+
+Route 4: P -> Q -> R -> S
+Cost = Cost(P -> Q) + Transit Time at Q + Cost(Q -> R) + Transit Time at R + Cost(R -> S)
+Cost = RM50 + RM45 (transit at Q) + RM45 + RM45 (transit at R) + RM65
+Cost = RM50 + RM45 + RM45 + RM45 + RM65 = RM250
+
+Comparing the costs:
+- P -> S: RM200
+- P -> Q -> S: RM165
+- P -> R -> S: RM195
+- P -> Q -> R -> S: RM250
+
+The most economical route is P -> Q -> S with a cost of RM165.
+
+Part (a) (ii): Route that takes the shortest time
+
+We need to consider all possible routes from P to S and their total travel times, including transit times.
+
+Route 1: P -> S
+Time = 1 hour (direct flight time)
+
+Route 2: P -> Q -> S
+Time = Time(P -> Q) + Transit Time at Q + Time(Q -> S)
+Time = 1 hour + 0.75 hours + 1.4 hours = 3.15 hours
+
+Route 3: P -> R -> S
+Time = Time(P -> R) + Transit Time at R + Time(R -> S)
+Time = 1.5 hours + 0.75 hours + 1.1 hours = 3.35 hours
+
+Route 4: P -> Q -> R -> S
+Time = Time(P -> Q) + Transit Time at Q + Time(Q -> R) + Transit Time at R + Time(R -> S)
+Time = 1 hour + 0.75 hours + 0.8 hours + 0.75 hours + 1.1 hours = 4.4 hours
+
+Comparing the times:
+- P -> S: 1 hour
+- P -> Q -> S: 3.15 hours
+- P -> R -> S: 3.35 hours
+- P -> Q -> R -> S: 4.4 hours
+
+The route that takes the shortest time is P -> S with a time of 1 hour.
+
+Step 3: Final Answer
+The problem asks for two things: the most economical route and the route that takes the shortest time.
+
+(a) (i) The most economical route is P -> Q -> S, with a total cost of RM165.
+(a) (ii) The route that takes the shortest time is P -> S, with a total time of 1 hour.
+
+The calculations are clear and consider all given routes and constraints.
+
+FINAL ANSWER:
+(a) (i) The most economical route is P -> Q -> S with a cost of RM165.
+(a) (ii) The route that takes the shortest time is P -> S with a time of 1 hour.",wrong,6.512194633483887,2,4,"Total marks = 4. The AI correctly identified (a)(i) the most economical route P -> Q -> S and (a)(ii) the fastest route P -> S, matching the ground truth for parts (a). These parts merit partial credit (2/4). However, the ground truth includes part (b) (route choice justification: save RM35 and only 9 minutes difference compared to P -> S), which the AI did not answer — omission of part (b) loses the remaining marks. Additionally, the AI made calculation mistakes in its cost breakdown (it incorrectly treated transit times as monetary amounts in one route), though its final (a) answers were correct. Because the response did not fully match the complete ground truth (missing part (b) and containing calculation errors), award 2 out of 4.",14.300039529800415,,Network in Graph Theory,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 5_Q3.png,"Route A > C > D > E because it is a safer route even
+though Lani had to cycle 300 m more","Step 1: Problem Understanding
+- Restate what needs to be found: The problem asks for the best route for Lani to cycle from her house (A) to school (E), which is defined as the shortest distance.
+- Identify if there are any non-standard constraints from the problem text: There are no non-standard constraints. The problem explicitly states that ""best route"" means ""shortest distance."" The information about municipal roads and housing estate roads does not impose any additional constraints on route selection, only describes the existing edges.
+
+Step 2: Solution Execution
+The problem involves finding the shortest path in a directed graph. The nodes are A, B, C, D, and E, and the edges with their weights (distances) are given. We need to consider all possible paths from A to E and calculate their total distances.
+
+First, let's ensure all distances are in the same unit (meters).
+- A to B: 400 m
+- B to E: 1.1 km = 1100 m
+- A to C: 350 m
+- C to D: 800 m
+- D to E: 650 m
+
+Now, let's list the possible paths from A to E and calculate their distances:
+
+Path 1: A -> B -> E
+Distance = (A to B) + (B to E)
+Distance = 400 m + 1100 m
+Distance = 1500 m
+
+Path 2: A -> C -> D -> E
+Distance = (A to C) + (C to D) + (D to E)
+Distance = 350 m + 800 m + 650 m
+Distance = 1800 m
+
+Comparing the distances of the two possible paths:
+- Path 1 (A -> B -> E): 1500 m
+- Path 2 (A -> C -> D -> E): 1800 m
+
+The shortest distance is 1500 m, which corresponds to Path 1.
+
+Step 3: Final Answer
+The best route for Lani to cycle to school is the one with the shortest distance. There are two possible routes from Lani's house (A) to school (E):
+1. Via B: A -> B -> E
+2. Via C and D: A -> C -> D -> E
+
+Calculating the distance for each route:
+Route 1: A -> B -> E
+Distance = 400 m (A to B) + 1100 m (B to E) = 1500 m
+
+Route 2: A -> C -> D -> E
+Distance = 350 m (A to C) + 800 m (C to D) + 650 m (D to E) = 1800 m
+
+Comparing the two distances, 1500 m is shorter than 1800 m.
+
+Therefore, the best route Lani can choose is A -> B -> E.
+
+FINAL ANSWER: The best route Lani can choose to cycle to school is A -> B -> E, as it has the shortest distance of 1500 meters. The alternative route A -> C -> D -> E is longer, with a distance of 1800 meters.",wrong,3.387117385864258,0,3,"Score 0/3 because the AI's final answer (A -> B -> E, 1500 m) does not match the ground truth answer (A -> C -> D -> E because it is safer, despite being 300 m longer). The AI correctly computed distances but applied a different criterion ('shortest distance') than the ground truth (safety). Per the provided marking instruction—give full marks only if the agent's answer matches the ground truth—the response receives 0 marks.",9.978328227996826,,Network in Graph Theory,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 6_Q1.png,"(a) y < –1,  x >= –5,  y >= 4/5 * x – 1
+(b) x >= 2, y >= 0, y < –x + 6","Step 1: Problem Understanding
+The problem asks us to find the linear inequalities that describe the shaded regions after they are reflected across the y-axis. We are given visual descriptions of two shaded triangular regions, (a) and (b), and their corresponding lines and vertices. The key constraint is that we need to describe the *reflected* regions.
+
+Step 2: Solution Execution
+
+Part (a):
+First, let's determine the inequalities for the original shaded region in (a).
+The vertices are (0, -1), (5, -1), and (5, -5).
+
+1.  **Vertical line x = 5:** This line is solid and the shaded region is to the left of it. So, the inequality is `x <= 5`.
+
+2.  **Horizontal line y = -1:** This line is solid and the shaded region is below it. So, the inequality is `y <= -1`.
+
+3.  **Line segment connecting (5, -5) and (0, -1):**
+    *   We need to find the equation of the line passing through these two points.
+    *   Slope (m) = (-1 - (-5)) / (0 - 5) = 4 / -5 = -4/5.
+    *   Using the point-slope form with (0, -1): y - (-1) = (-4/5)(x - 0) => y + 1 = -4/5 * x => y = -4/5 * x - 1.
+    *   To determine the inequality, let's test a point within the shaded region, for example, (4, -2).
+    *   -2 vs. (-4/5 * 4 - 1) = -2 vs. (-16/5 - 1) = -2 vs. (-3.2 - 1) = -2 vs. -4.2.
+    *   Since -2 > -4.2, the inequality is `y >= -4/5 * x - 1`.
+
+So, the original inequalities for region (a) are:
+x <= 5
+y <= -1
+y >= -4/5 * x - 1
+
+Now, let's reflect these inequalities across the y-axis. When reflecting across the y-axis, an x-coordinate `x` becomes `-x`.
+
+1.  `x <= 5` becomes `-x <= 5`, which simplifies to `x >= -5`.
+2.  `y <= -1` remains `y <= -1` (y-coordinates are not affected by reflection across the y-axis).
+3.  `y >= -4/5 * x - 1` becomes `y >= -4/5 * (-x) - 1`, which simplifies to `y >= 4/5 * x - 1`.
+
+The inequalities for the reflected region of (a) are:
+x >= -5
+y <= -1
+y >= 4/5 * x - 1
+
+Part (b):
+First, let's determine the inequalities for the original shaded region in (b).
+The vertices are approximately (-6, 0), (-2, 0), and (-2, 4).
+
+1.  **Vertical line x = -2:** This line is solid and the shaded region is to the left of it. So, the inequality is `x <= -2`.
+
+2.  **Horizontal line y = 0:** This line is dashed and the shaded region is above it. So, the inequality is `y > 0`.
+
+3.  **Line segment connecting (-6, 0) and (-2, 4):**
+    *   We need to find the equation of the line passing through these two points.
+    *   Slope (m) = (4 - 0) / (-2 - (-6)) = 4 / 4 = 1.
+    *   Using the point-slope form with (-2, 4): y - 4 = 1(x - (-2)) => y - 4 = x + 2 => y = x + 6.
+    *   To determine the inequality, let's test a point within the shaded region, for example, (-3, 1).
+    *   1 vs. (-3 + 6) = 1 vs. 3.
+    *   Since 1 < 3, the inequality is `y < x + 6`.
+
+The original inequalities for region (b) are:
+x <= -2
+y > 0
+y < x + 6
+
+Now, let's reflect these inequalities across the y-axis.
+
+1.  `x <= -2` becomes `-x <= -2`, which simplifies to `x >= 2`.
+2.  `y > 0` remains `y > 0`.
+3.  `y < x + 6` becomes `y < (-x) + 6`, which simplifies to `y < -x + 6`.
+
+The inequalities for the reflected region of (b) are:
+x >= 2
+y > 0
+y < -x + 6
+
+Step 3: Final Answer
+The problem asks for the linear inequalities that satisfy the image of the shaded regions under a reflection in the y-axis.
+
+For part (a), the original region is bounded by x <= 5, y <= -1, and y >= -4/5 * x - 1.
+After reflection in the y-axis, the inequalities become:
+x >= -5
+y <= -1
+y >= 4/5 * x - 1
+
+For part (b), the original region is bounded by x <= -2, y > 0, and y < x + 6.
+After reflection in the y-axis, the inequalities become:
+x >= 2
+y > 0
+y < -x + 6
+
+FINAL ANSWER:
+For the reflection of region (a):
+x >= -5
+y <= -1
+y >= (4/5)x - 1
+
+For the reflection of region (b):
+x >= 2
+y > 0
+y < -x + 6",wrong,6.30051326751709,2,3,"Full mark (3) is only given for an exact match to the ground truth. The AI's work is mostly correct: reflection reasoning, the x-inequalities (x >= -5 and x >= 2) and the sloped-line inequalities (y >= 4/5 x - 1 and y < -x + 6) match the ground truth. However, the AI mishandled the boundary (strict vs non-strict) inequalities: for part (a) it gave y <= -1 while the ground truth requires y < -1; for part (b) it gave y > 0 while the ground truth requires y >= 0. These two boundary-direction errors prevent an exact match, so I deduct one mark and award 2 out of 3.",14.55717921257019,,Linear Inequalities in Two Variables,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 6_Q2.png,"(a) x > – 4, y <= – (1/2)* x and y >= 0
+(b) y <= 2x + 4, y <=  – (4/3) * x + 4 and y >= 0
+(c) y <= x – 1, y >= (2/3) * x – 2, x >= 0 and y <= 0","Step 1: Problem Understanding
+The problem asks us to determine the linear inequalities that correspond to the shaded regions in three different diagrams (a, b, and c). We are provided with descriptions of the lines (including their equations or points they pass through) and the location of the shaded regions relative to these lines. There are no non-standard constraints.
+
+Step 2: Solution Execution
+
+**(a)**
+
+*   **Lines:**
+    1.  Solid line: `y = -1/2 * x`
+    2.  Dashed vertical line: `x = -4`
+*   **Shaded Region:** Below the solid line and to the right of the dashed line.
+
+*   **Inequality for the solid line:** Since the line is solid, the inequality will include ""or equal to"". The shaded region is *below* the line `y = -1/2 * x`, so the inequality is `y <= -1/2 * x`.
+
+*   **Inequality for the dashed line:** Since the line is dashed, the inequality will be strict. The shaded region is to the *right* of the vertical line `x = -4`, so the inequality is `x > -4`.
+
+*   **Combined Inequalities (a):**
+    *   `y <= -1/2 * x`
+    *   `x > -4`
+
+**(b)**
+
+*   **Lines:**
+    1.  Solid line: `y = 2x + 4` (passing through (-2,0) and (0,4))
+    2.  Solid line: `y = -4/3 * x + 4` (passing through (0,4) and (3,0))
+    3.  Line with positive slope through (0,4): `y = mx + 4` where `m > 0`.
+    4.  Line with negative slope through (0,4): `y = mx + 4` where `m < 0`.
+
+*   **Shaded Region:** Below the first two solid lines and above the x-axis. The diagram implies the shaded region is a triangle with vertices at (0,4), (3,0) and the intersection of `y=2x+4` and the x-axis, which is (-2,0).
+
+*   **Inequality for the first solid line:** The shaded region is *below* `y = 2x + 4`. Since the line is solid, `y <= 2x + 4`.
+
+*   **Inequality for the second solid line:** The shaded region is *below* `y = -4/3 * x + 4`. Since the line is solid, `y <= -4/3 * x + 4`.
+
+*   **Inequality for the x-axis:** The shaded region is *above* the x-axis, which is `y = 0`. Since the boundary is implied to be part of the region (the vertices are on the x-axis), the inequality is `y >= 0`.
+
+*   **Combined Inequalities (b):**
+    *   `y <= 2x + 4`
+    *   `y <= -4/3 * x + 4`
+    *   `y >= 0`
+
+**(c)**
+
+*   **Lines:**
+    1.  Solid line: `y = 2x - 2` (passing through (0,-2) and (1,0))
+    2.  Solid line: `y = x` (assumed to pass through (0,0) and (1,1))
+    3.  Solid line: `y = 2x` (assumed to pass through (0,0) and (1,2))
+
+*   **Shaded Region:** Bounded by the three solid lines. Between line 1 and line 2, and to the left of line 3. This forms a triangular region.
+
+*   **Inequality for line 1:** The shaded region is *above* the line `y = 2x - 2`. Since the line is solid, `y >= 2x - 2`.
+
+*   **Inequality for line 2:** The shaded region is *below* the line `y = x`. Since the line is solid, `y <= x`.
+
+*   **Inequality for line 3:** The shaded region is to the *left* of the line `y = 2x`. Since the line is solid, `y <= 2x`.
+
+*   **Combined Inequalities (c):**
+    *   `y >= 2x - 2`
+    *   `y <= x`
+    *   `y <= 2x`
+
+Step 3: Final Answer
+The inequalities satisfying the shaded regions are as follows:
+
+(a)
+*   `y <= -1/2 * x`
+*   `x > -4`
+
+(b)
+*   `y <= 2x + 4`
+*   `y <= -4/3 * x + 4`
+*   `y >= 0`
+
+(c)
+*   `y >= 2x - 2`
+*   `y <= x`
+*   `y <= 2x`
+
+FINAL ANSWER: The inequalities satisfying the shaded regions are:
+(a) `y <= -1/2 * x` and `x > -4`
+(b) `y <= 2x + 4`, `y <= -4/3 * x + 4`, and `y >= 0`
+(c) `y >= 2x - 2`, `y <= x`, and `y <= 2x`",wrong,5.1291539669036865,1,4,"Full mark (4) is only awarded for an answer that exactly matches the provided ground truth. I awarded 1 mark because the AI answer correctly matched part (b) but failed parts (a) and (c). Details: (a) Ground truth: x > -4, y <= -1/2 x and y >= 0. AI gave x > -4 and y <= -1/2 x but omitted the required y >= 0 (missing inequality) — incorrect/incomplete. (b) Matches exactly: y <= 2x + 4, y <= -4/3 x + 4, and y >= 0 — full credit for this part. (c) Ground truth: y <= x - 1, y >= (2/3) x - 2, x >= 0 and y <= 0. AI gave y >= 2x - 2, y <= x and y <= 2x, which do not match the required inequalities (wrong expressions and missing/incorrect x,y boundary conditions). Therefore only part (b) is correct, giving 1 out of 4.",17.1329448223114,,Linear Inequalities in Two Variables,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 6_Q3.png,"(a) y <= 2, x < 3, y >= – x, y >= 0
+(b) y > –2x, y >= 2x – 8, y <= – (1/2) * x","Step 1: Problem Understanding
+The problem asks us to find the linear inequalities that represent the image of two shaded regions after they are reflected across the x-axis. We are given the visual data for the original shaded regions in (a) and (b). The constraint is that we need to find the inequalities for the *reflected* regions.
+
+Step 2: Solution Execution
+
+Part (a):
+First, let's determine the inequalities for the original shaded region in (a).
+The region is bounded by:
+1. The line passing through (0,0) and (3,3). The equation of this line is y = x. Since the region is below this line, we have y <= x.
+2. The horizontal line passing through (-2,-2) and (0,-2). The equation of this line is y = -2. Since the region is above this line, we have y >= -2.
+3. The vertical line passing through (3,-2) and (3,3). The equation of this line is x = 3. Since the region is to the left of this line, we have x <= 3.
+4. The y-axis (x=0) is also a boundary. Since the region is to the right of the y-axis, we have x >= 0.
+
+So, the inequalities for the original shaded region in (a) are:
+y <= x
+y >= -2
+x <= 3
+x >= 0
+
+Now, we need to reflect this region across the x-axis. When a point (x, y) is reflected across the x-axis, its new coordinates are (x, -y). We apply this transformation to the inequalities:
+1. y <= x becomes -y <= x, which simplifies to y >= -x.
+2. y >= -2 becomes -y >= -2, which simplifies to y <= 2.
+3. x <= 3 remains x <= 3.
+4. x >= 0 remains x >= 0.
+
+The inequalities for the reflected region in (a) are:
+y >= -x
+y <= 2
+x <= 3
+x >= 0
+
+Part (b):
+Now, let's determine the inequalities for the original shaded region in (b).
+The vertices of the triangle are (0,0), (2,4), and (4,2).
+1. The line passing through (0,0) and (2,4) has the equation y = 2x. The shaded region is below this line, so y <= 2x.
+2. The line passing through (0,0) and (4,2) has the equation y = (2/4)x = (1/2)x. The shaded region is above this line, so y >= (1/2)x.
+3. The line passing through (2,4) and (4,2). The slope is (2-4)/(4-2) = -2/2 = -1. Using point-slope form: y - 4 = -1(x - 2) => y - 4 = -x + 2 => y = -x + 6. The shaded region is below this line, so y <= -x + 6.
+
+So, the inequalities for the original shaded region in (b) are:
+y <= 2x
+y >= x/2
+y <= -x + 6
+
+Now, we reflect this region across the x-axis. Applying the transformation (x, y) -> (x, -y) to the inequalities:
+1. y <= 2x becomes -y <= 2x, which simplifies to y >= -2x.
+2. y >= x/2 becomes -y >= x/2, which simplifies to y <= -x/2.
+3. y <= -x + 6 becomes -y <= -x + 6, which simplifies to y >= x - 6.
+
+The inequalities for the reflected region in (b) are:
+y >= -2x
+y <= -x/2
+y >= x - 6
+
+Step 3: Final Answer
+The linear inequalities for the image of the shaded region under a reflection in the x-axis are:
+
+For part (a):
+y >= -x
+y <= 2
+x <= 3
+x >= 0
+
+For part (b):
+y >= -2x
+y <= -x/2
+y >= x - 6
+
+FINAL ANSWER:
+(a) The linear inequalities for the reflected region are: y >= -x, y <= 2, x <= 3, and x >= 0.
+(b) The linear inequalities for the reflected region are: y >= -2x, y <= -x/2, and y >= x - 6.",wrong,8.788467645645142,1,4,"Full mark is 4 only if the AI answer exactly matches the ground truth. The AI response does not match, so partial credit is given under SPM-style whole-number marking. Detailed comparison: Part (a) ground truth: y <= 2, x < 3, y >= -x, y >= 0. AI gave y >= -x and y <= 2 (both correct). AI gave x <= 3 instead of x < 3 (loss of strict inequality) and incorrectly gave x >= 0 instead of y >= 0 (wrong variable). Thus 2 of 4 items partially correct but with one significant error (wrong variable) and one minor strictness error — allocated 1 mark for part (a). Part (b) ground truth: y > -2x, y >= 2x - 8, y <= -1/2 x. AI gave y >= -2x (non-strict instead of strict), y <= -x/2 (correct), and y >= x - 6 (incorrect — wrong line). Only one inequality is correct and one fails strictness; the third is wrong, so no mark awarded for part (b). Summing gives 1 out of 4.",26.156506776809692,,Linear Inequalities in Two Variables,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 7_Q1.png,"(a) 3/8 ms^–2  (b) 1 200 m
+(c) Encik Merisat drives for a distance of 1.725 km in
+2.5 minutes with an average speed of 41.4 km h–1.","Step 1: Problem Understanding
+The problem asks us to analyze a speed-time graph of a car journey. We need to:
+(a) Calculate the rate of change of speed (acceleration) for the first 20 seconds.
+(b) Calculate the distance traveled at a constant speed.
+(c) Describe the entire journey over 2.5 minutes (150 seconds).
+
+There are no non-standard constraints; the problem is a direct application of interpreting speed-time graphs.
+
+Step 2: Solution Execution
+
+Part (a): Calculate the rate of change of speed for the first 20 seconds.
+The rate of change of speed is acceleration, which is the gradient of the speed-time graph.
+The first segment of the graph is from (0, 0) to (40, 15).
+The constraint specifies the first 20 seconds. Since this falls within the first segment (0-40s), we can use the gradient of this segment.
+
+Gradient = (change in speed) / (change in time)
+Gradient = (15 m/s - 0 m/s) / (40 s - 0 s)
+Gradient = 15 m/s / 40 s
+Gradient = 0.375 m/s²
+
+The rate of change of speed for the first 20 seconds is the same as the rate of change of speed for the first 40 seconds because the speed is increasing linearly.
+
+Part (b): Calculate the distance travelled at a uniform speed.
+Uniform speed occurs when the speed is constant, which is represented by a horizontal line segment on the speed-time graph. This is the segment from (40, 15) to (120, 15).
+The distance traveled is the area under the speed-time graph. For a horizontal line segment, this area is a rectangle.
+
+Distance = Speed × Time
+The uniform speed is 15 m/s.
+The time duration of uniform speed is from 40 s to 120 s.
+Time duration = 120 s - 40 s = 80 s.
+
+Distance = 15 m/s × 80 s
+Distance = 1200 metres.
+
+Part (c): Describe Encik Merisat's journey for the period of 2.5 minutes.
+2.5 minutes is equal to 2.5 * 60 = 150 seconds. We need to describe the journey from t=0 to t=150 seconds.
+
+Segment 1: From (0, 0) to (40, 15)
+- Time: 0 to 40 seconds.
+- Speed: Increases linearly from 0 m/s to 15 m/s.
+- Description: Encik Merisat starts from rest and accelerates his car for 40 seconds, reaching a speed of 15 m/s.
+
+Segment 2: From (40, 15) to (120, 15)
+- Time: 40 to 120 seconds.
+- Speed: Remains constant at 15 m/s.
+- Description: Encik Merisat travels at a constant speed of 15 m/s for 80 seconds (120 s - 40 s).
+
+Segment 3: From (120, 15) to (150, 0)
+- Time: 120 to 150 seconds.
+- Speed: Decreases linearly from 15 m/s to 0 m/s.
+- Description: Encik Merisat decelerates his car for 30 seconds (150 s - 120 s), coming to a complete stop.
+
+Overall Journey Description (0 to 150 seconds):
+Encik Merisat's journey begins from rest. He accelerates for the first 40 seconds, reaching a speed of 15 m/s. He then maintains this speed for the next 80 seconds. Finally, he decelerates for the last 30 seconds of his journey, coming to a stop.
+
+Step 3: Final Answer
+
+The final answer will be presented in the requested format.
+
+FINAL ANSWER:
+(a) The rate of change of speed for the first 20 seconds is the acceleration during the first segment of the journey.
+Rate of change of speed = (Change in Speed) / (Change in Time)
+= (15 m/s - 0 m/s) / (40 s - 0 s)
+= 15 m/s / 40 s
+= 0.375 m/s²
+
+(b) The distance travelled at a uniform speed occurs during the second segment of the graph, where the speed is constant at 15 m/s from 40 seconds to 120 seconds.
+Time duration at uniform speed = 120 s - 40 s = 80 s
+Distance = Uniform Speed × Time duration
+Distance = 15 m/s × 80 s
+Distance = 1200 metres
+
+(c) Encik Merisat's journey for the period of 2.5 minutes (150 seconds) can be described as follows:
+- From 0 to 40 seconds: He starts from rest and accelerates uniformly to a speed of 15 m/s.
+- From 40 to 120 seconds: He travels at a constant speed of 15 m/s.
+- From 120 to 150 seconds: He decelerates uniformly from 15 m/s to rest (0 m/s).",wrong,5.289018392562866,3,5,"Total marks = 5 (as given). I allocate marks by subpart as follows: (a) 1 mark, (b) 1 mark, (c) 3 marks (typical SPM-style split for multi-step final part). Evaluation of the AI response: (a) Correct: AI gave 0.375 m/s² which equals 3/8 m/s² from the ground truth — award 1/1. (b) Correct: AI gave 1 200 m (1200 m) — award 1/1. (c) Partially correct: AI correctly described the three motion phases and times for the 2.5 min (150 s) journey but did not compute the total distance (1.725 km or 1725 m) nor the average speed (41.4 km h⁻¹) given in the ground truth. Because the numerical computations requested in (c) are missing, I award 1 out of 3 for correct qualitative description only. Summing: 1 + 1 + 1 = 3 out of 5.",22.44776701927185,,Graphs of Motion,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 7_Q2.png,(a) 100               (b) 1.6               (c) 57.14,,wrong,3.1498446464538574,0,5,"Total mark available: 5. Ground truth answers: (a) 100, (b) 1.6, (c) 57.14. AI response: ""nan"" (not a numeric answer) — it does not match any of the required numeric answers. Under the provided marking rule (full mark only if answers match the ground truth) and SPM whole-number scoring, no credit is awarded. Score = 0/5.",7.441471099853516,,Graphs of Motion,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 7_Q3.png,(a) 8 seconds (b) 17,"Step 1: Problem Understanding
+The problem asks us to analyze a speed-time graph for a car and a motorcycle. We need to find:
+(a) The duration for which the motorcycle travels at a uniform speed.
+(b) The value of $t$ when the distances traveled by the car and the motorcycle are equal over the time period of $t$ seconds.
+
+There are no non-standard constraints mentioned.
+
+Step 2: Solution Execution
+
+Part (a): Duration of uniform speed for the motorcycle.
+Uniform speed is represented by a horizontal line segment on a speed-time graph.
+Looking at the graph segments for the motorcycle:
+- Segment OP: From (0, 0) to (2, 4). This is not uniform speed as speed changes from 0 to 4 m/s.
+- Segment PQ: From (2, 4) to (10, 4). The speed is constant at 4 m/s. This represents uniform speed.
+- Segment QR: From (10, 4) to ($t$, 10). This is not uniform speed as speed changes from 4 to 10 m/s.
+
+The duration of uniform speed for the motorcycle is the time duration of segment PQ.
+Duration = Time at Q - Time at P = 10 seconds - 2 seconds = 8 seconds.
+
+Part (b): Value of $t$ when distances are equal.
+The distance traveled is the area under the speed-time graph.
+
+Distance traveled by the motorcycle in $t$ seconds:
+This is the area under the green line segments OP, PQ, and QR.
+Area of triangle OP = 0.5 * base * height = 0.5 * 2 * 4 = 4 m
+Area of rectangle PQ = base * height = (10 - 2) * 4 = 8 * 4 = 32 m
+Area of trapezoid QR = 0.5 * (sum of parallel sides) * height
+The parallel sides are the speeds at t=10 (which is 4 m/s) and at t=$t$ (which is 10 m/s). The height of the trapezoid is the time interval, which is $t - 10$.
+Area of trapezoid QR = 0.5 * (4 + 10) * ($t$ - 10) = 0.5 * 14 * ($t$ - 10) = 7 * ($t$ - 10) = 7$t$ - 70 m.
+
+Total distance traveled by the motorcycle = Area OP + Area PQ + Area QR
+Total distance (motorcycle) = 4 + 32 + (7$t$ - 70) = 36 + 7$t$ - 70 = 7$t$ - 34 m.
+
+Distance traveled by the car in $t$ seconds:
+The car's motion is represented by the pink line segment OR, from (0, 0) to ($t$, 10). This is a straight line passing through the origin, meaning the car accelerates uniformly from rest to a speed of 10 m/s at time $t$.
+The area under this line is a triangle.
+Area of triangle OR = 0.5 * base * height = 0.5 * $t$ * 10 = 5$t$ m.
+
+According to the constraint, the distances traveled by the car and the motorcycle are the same for the period of $t$ seconds.
+So, Total distance (car) = Total distance (motorcycle)
+5$t$ = 7$t$ - 34
+
+Now, we solve for $t$:
+34 = 7$t$ - 5$t$
+34 = 2$t$
+$t$ = 34 / 2
+$t$ = 17 seconds.
+
+Let's verify the distances at $t=17$:
+Distance (car) = 5 * 17 = 85 m.
+Distance (motorcycle) = 7 * 17 - 34 = 119 - 34 = 85 m.
+The distances are equal, so our value of $t$ is correct.
+
+Step 3: Final Answer
+(a) The motorcycle travels at a uniform speed during the time interval from $t=2$ seconds to $t=10$ seconds. The duration is $10 - 2 = 8$ seconds.
+(b) The value of $t$ when the distances traveled by the car and the motorcycle are the same is 17 seconds.
+
+FINAL ANSWER: (a) The motorcycle travels at a uniform speed for 8 seconds. (b) The value of $t$ is 17 seconds.",correct,3.2049875259399414,5,5,"Full marks (5) awarded. The AI's answers match the ground truth: (a) uniform duration 8 s and (b) t = 17 s. The solution correctly identifies the constant-speed interval (2 to 10 s), computes areas under the speed–time graph for both vehicles (motorcycle: triangle + rectangle + trapezoid → 7t - 34; car: triangle → 5t), sets them equal, solves 5t = 7t - 34 to get t = 17, and verifies distances (85 m each). Work is mathematically correct and complete, so it meets the marking scheme requirement for full marks.",6.35595440864563,,Graphs of Motion,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 8_Q1.png,"(a) 9, 2, 3.210, 1.792
+(b) interquartile range",,wrong,2.920342206954956,0,6,"The ground-truth answer required (a) 9, 2, 3.210, 1.792 and (b) 'interquartile range'. The AI response was 'nan', which does not match any part of the expected answers. Per the provided marking scheme (full mark 6 only if answers match exactly) and SPM-style whole-number scoring, no marks are awarded.",4.926020860671997,,Measures of Dispersion ,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 8_Q2.png,"(a) 1.2, 0.4
+(b) 5, 3",,wrong,2.929922580718994,0,4,"The model's response was 'nan', which does not match any part of the ground truth answers: (a) 1.2, 0.4 and (b) 5, 3. The provided marking scheme grants full marks (4) only if the agent's answers match the ground truth. As the response is incorrect/non-numeric and yields no correct components, under the SPM-style whole-number marking rules and the strict instructions given, the score is 0.",5.990158796310425,,Measures of Dispersion ,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 8_Q3.png,"(a) Team A Team B
+mean = 61 mean = 61
+range = 22 range = 30
+variance = 78.8 variance = 155.6
+standard deviation standard deviation
+= 8.877 = 12.47
+(b) No because of the existence of outlier or extreme
+values","**Step 1: Problem Understanding**
+
+The problem asks us to perform a statistical analysis on the masses of players from two sepak takraw teams, Team A and Team B. Specifically, we need to:
+(a) Calculate the mean, range, variance, and standard deviation for each team.
+(b) Determine if the range is an appropriate measure of dispersion for this data and justify the answer.
+(c) Compare the dispersion of the two teams from their respective means and identify which team has a greater dispersion.
+
+There are no non-standard constraints mentioned in the problem.
+
+**Step 2: Solution Execution**
+
+**Part (a): Calculate the mean, range, variance, and standard deviation for each team.**
+
+**Team A:**
+Masses: 48, 53, 65, 69, 70
+
+*   **Mean:**
+    Sum of masses = 48 + 53 + 65 + 69 + 70 = 305
+    Number of players = 5
+    Mean (Team A) = 305 / 5 = 61 kg
+
+*   **Range:**
+    Range (Team A) = Maximum mass - Minimum mass = 70 - 48 = 22 kg
+
+*   **Variance:**
+    First, calculate the squared differences from the mean:
+    (48 - 61)² = (-13)² = 169
+    (53 - 61)² = (-8)² = 64
+    (65 - 61)² = (4)² = 16
+    (69 - 61)² = (8)² = 64
+    (70 - 61)² = (9)² = 81
+    Sum of squared differences = 169 + 64 + 16 + 64 + 81 = 394
+    Variance (Team A) = Sum of squared differences / Number of players = 394 / 5 = 78.8 kg²
+
+*   **Standard Deviation:**
+    Standard Deviation (Team A) = √Variance = √78.8 ≈ 8.877 kg
+
+**Team B:**
+Masses: 45, 47, 68, 70, 75
+
+*   **Mean:**
+    Sum of masses = 45 + 47 + 68 + 70 + 75 = 305
+    Number of players = 5
+    Mean (Team B) = 305 / 5 = 61 kg
+
+*   **Range:**
+    Range (Team B) = Maximum mass - Minimum mass = 75 - 45 = 30 kg
+
+*   **Variance:**
+    First, calculate the squared differences from the mean:
+    (45 - 61)² = (-16)² = 256
+    (47 - 61)² = (-14)² = 196
+    (68 - 61)² = (7)² = 49
+    (70 - 61)² = (9)² = 81
+    (75 - 61)² = (14)² = 196
+    Sum of squared differences = 256 + 196 + 49 + 81 + 196 = 778
+    Variance (Team B) = Sum of squared differences / Number of players = 778 / 5 = 155.6 kg²
+
+*   **Standard Deviation:**
+    Standard Deviation (Team B) = √Variance = √155.6 ≈ 12.474 kg
+
+**Part (b): Is the range appropriate to be used as a measure of dispersion to represent the data above? Justify your answer.**
+
+The range is generally not considered the most appropriate measure of dispersion for a dataset, especially when there are outliers or when we want to understand the spread of the majority of the data. The range only considers the two extreme values (maximum and minimum) and ignores all other data points.
+
+In this case, for Team A, the range is 22 kg, and for Team B, it's 30 kg. While this gives a quick idea of the total spread, it doesn't tell us how the masses are distributed within that range. For instance, Team B has a larger range, suggesting more spread, but it's primarily due to the extreme values of 45 kg and 75 kg. The other values (47, 68, 70) are closer to the mean.
+
+Therefore, the range is not the most appropriate measure because it is sensitive to extreme values and does not provide information about the distribution of the data points within the range. Measures like variance or standard deviation are preferred as they consider all data points.
+
+**Part (c): Determine the mass of which team has a greater dispersion from the mean.**
+
+We can compare the standard deviations of the two teams to determine which has a greater dispersion from the mean.
+
+*   Standard Deviation (Team A) ≈ 8.877 kg
+*   Standard Deviation (Team B) ≈ 12.474 kg
+
+Since the standard deviation of Team B (≈ 12.474 kg) is greater than that of Team A (≈ 8.877 kg), Team B has a greater dispersion from the mean.
+
+Alternatively, we can compare the variances:
+*   Variance (Team A) = 78.8 kg²
+*   Variance (Team B) = 155.6 kg²
+
+Team B has a larger variance, indicating greater dispersion.
+
+We can also see this by observing the ranges:
+*   Range (Team A) = 22 kg
+*   Range (Team B) = 30 kg
+
+Team B has a larger range, which also suggests greater dispersion.
+
+**Step 3: Final Answer**
+
+**(a) Calculations for Team A:**
+*   Mean: 61 kg
+*   Range: 22 kg
+*   Variance: 78.8 kg²
+*   Standard Deviation: ≈ 8.877 kg
+
+**Calculations for Team B:**
+*   Mean: 61 kg
+*   Range: 30 kg
+*   Variance: 155.6 kg²
+*   Standard Deviation: ≈ 12.474 kg
+
+**(b) Appropriateness of Range:**
+The range is not the most appropriate measure of dispersion for this data because it only considers the extreme values (minimum and maximum) and ignores the distribution of the other data points. It is also sensitive to outliers.
+
+**(c) Greater Dispersion:**
+Team B has a greater dispersion from the mean, as indicated by its larger standard deviation (≈ 12.474 kg) and range (30 kg) compared to Team A (standard deviation ≈ 8.877 kg, range 22 kg).
+
+FINAL ANSWER:
+(a) Team A: Mean = 61 kg, Range = 22 kg, Variance = 78.8 kg², Standard Deviation ≈ 8.877 kg. Team B: Mean = 61 kg, Range = 30 kg, Variance = 155.6 kg², Standard Deviation ≈ 12.474 kg.
+(b) No, the range is not appropriate because it only uses the extreme values and does not account for the distribution of all data points, making it sensitive to outliers.
+(c) Team B has a greater dispersion from the mean.",correct,3.8901150226593018,7,7,"Full marks (7/7) awarded because the AI response exactly matches the ground truth solution and adheres to the required answers: Team A mean 61, range 22, variance 78.8, SD ≈ 8.877; Team B mean 61, range 30, variance 155.6, SD ≈ 12.47. The AI correctly computed all values, gave the correct justification in (b) that range is inappropriate due to sensitivity to extremes/outliers, and correctly identified Team B as having greater dispersion in (c). Rounding differences (12.474 vs 12.47) are trivial and do not affect correctness. Therefore, per the provided marking schema, the response receives full credit.",6.101290702819824,,Measures of Dispersion ,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 9_Q1.png,"{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)}, 1/2","Step 1: Problem Understanding
+The problem asks us to calculate the probability of two independent events occurring: drawing the letter ""S"" from Box K, or drawing a multiple of 3 from Box L. We need to list all possible outcomes to determine the probabilities. There are no non-standard constraints.
+
+Step 2: Solution Execution
+
+First, let's list the possible outcomes for each box.
+
+Box K: {S, E, R, I}
+The total number of outcomes for Box K is 4.
+
+Box L: {4, 5, 6}
+The total number of outcomes for Box L is 3.
+
+Now, let's list all possible combined outcomes when a card is chosen from each box. Each outcome is a pair (Card from Box K, Card from Box L).
+The total number of possible outcomes is the product of the number of outcomes for each box: 4 * 3 = 12.
+
+The possible outcomes are:
+(S, 4), (S, 5), (S, 6)
+(E, 4), (E, 5), (E, 6)
+(R, 4), (R, 5), (R, 6)
+(I, 4), (I, 5), (I, 6)
+
+Now, let's identify the favorable outcomes for the event ""getting a letter 'S' from box K or a multiple of 3 from box L"".
+
+Event A: Getting a letter ""S"" from Box K.
+The outcomes where 'S' is drawn from Box K are:
+(S, 4), (S, 5), (S, 6)
+There are 3 such outcomes.
+The probability of Event A, P(A), is the number of favorable outcomes divided by the total number of outcomes: P(A) = 3/12 = 1/4.
+
+Event B: Getting a multiple of 3 from Box L.
+The multiples of 3 in Box L are {6}.
+The outcomes where a multiple of 3 is drawn from Box L are:
+(S, 6), (E, 6), (R, 6), (I, 6)
+There are 4 such outcomes.
+The probability of Event B, P(B), is the number of favorable outcomes divided by the total number of outcomes: P(B) = 4/12 = 1/3.
+
+We are looking for the probability of ""Event A or Event B"". Using the formula for the probability of the union of two events: P(A or B) = P(A) + P(B) - P(A and B).
+
+We need to find the probability of both events happening simultaneously (P(A and B)), which means getting an ""S"" from Box K AND a multiple of 3 from Box L.
+The outcome that satisfies both conditions is (S, 6).
+There is only 1 such outcome.
+The probability of Event A and Event B, P(A and B), is 1/12.
+
+Now, we can calculate P(A or B):
+P(A or B) = P(A) + P(B) - P(A and B)
+P(A or B) = (3/12) + (4/12) - (1/12)
+P(A or B) = (3 + 4 - 1) / 12
+P(A or B) = 6 / 12
+P(A or B) = 1/2
+
+Let's verify by listing the favorable outcomes directly from the combined list:
+Outcomes with ""S"" from Box K: (S, 4), (S, 5), (S, 6)
+Outcomes with a multiple of 3 from Box L: (S, 6), (E, 6), (R, 6), (I, 6)
+
+The outcomes that satisfy ""S from K OR a multiple of 3 from L"" are the union of these two sets:
+(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)
+There are 6 favorable outcomes.
+The total number of possible outcomes is 12.
+The probability is 6/12 = 1/2.
+
+The solution makes sense in context as we have considered all possible outcomes and the specific conditions for the favorable outcomes.
+
+Step 3: Final Answer
+The probability of getting a letter ""S"" from box K or a multiple of 3 from box L is 1/2.
+
+FINAL ANSWER: The final answer is 1/2",correct,3.499622344970703,4,4,"Full marks awarded (4/4). The AI's solution correctly enumerated the sample space (12 outcomes), identified favorable outcomes, computed P(A)=3/12, P(B)=4/12, P(A∩B)=1/12, used P(A∪B)=P(A)+P(B)-P(A∩B) and obtained 6/12 = 1/2, which matches the ground truth. The reasoning and final answer are complete and error-free, satisfying the marking instruction that matching the ground truth receives full marks.",5.0777037143707275,,Probability of Combined Events,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 9_Q2.png,230,"Step 1: Problem Understanding
+- Restate what needs to be found: The problem asks to calculate the total number of RM10 cash vouchers the Naga Shop needs to prepare.
+- Identify if there are any non-standard constraints from the problem text: The constraint is that the selected cash vouchers are replaced, meaning the stock in boxes A and B remains constant.
+
+Step 2: Solution Execution
+The problem involves calculating the expected number of RM10 vouchers based on probabilities from the lucky wheel and the contents of the boxes.
+
+First, calculate the probabilities of landing on red or yellow sectors on the lucky wheel:
+- Probability of landing on red (Box A): P(Red) = Number of red sectors / Total sectors = 2 / 6 = 1/3
+- Probability of landing on yellow (Box B): P(Yellow) = Number of yellow sectors / Total sectors = 4 / 6 = 2/3
+
+Next, determine the probability of selecting an RM10 voucher from each box:
+- In Box A, there are 5 RM10 vouchers and a total of 20 + 5 = 25 vouchers.
+- Probability of choosing RM10 from Box A: P(RM10 | Box A) = Number of RM10 vouchers in A / Total vouchers in A = 5 / 25 = 1/5
+
+- In Box B, there are 20 RM10 vouchers and a total of 10 + 20 = 30 vouchers.
+- Probability of choosing RM10 from Box B: P(RM10 | Box B) = Number of RM10 vouchers in B / Total vouchers in B = 20 / 30 = 2/3
+
+Now, calculate the overall probability of a customer receiving an RM10 voucher. This can happen in two mutually exclusive ways:
+1. Landing on red AND choosing RM10 from Box A.
+2. Landing on yellow AND choosing RM10 from Box B.
+
+- Probability of (Red AND RM10 from A) = P(Red) * P(RM10 | Box A) = (1/3) * (1/5) = 1/15
+- Probability of (Yellow AND RM10 from B) = P(Yellow) * P(RM10 | Box B) = (2/3) * (2/3) = 4/9
+
+The total probability of a customer receiving an RM10 voucher is the sum of these probabilities:
+P(RM10 voucher) = P(Red AND RM10 from A) + P(Yellow AND RM10 from B)
+P(RM10 voucher) = 1/15 + 4/9
+
+To add these fractions, find a common denominator, which is 45:
+P(RM10 voucher) = (1 * 3) / (15 * 3) + (4 * 5) / (9 * 5)
+P(RM10 voucher) = 3/45 + 20/45
+P(RM10 voucher) = 23/45
+
+Finally, calculate the expected number of RM10 vouchers needed for 450 customers:
+Expected number of RM10 vouchers = Total customers * P(RM10 voucher)
+Expected number of RM10 vouchers = 450 * (23/45)
+
+Expected number of RM10 vouchers = (450 / 45) * 23
+Expected number of RM10 vouchers = 10 * 23
+Expected number of RM10 vouchers = 230
+
+The constraint that vouchers are replaced means the probabilities and counts in the boxes remain constant for each customer's turn. The calculation is based on expected values, so it makes sense.
+
+Step 3: Final Answer
+The Naga Shop needs to prepare 230 RM10 vouchers.
+
+FINAL ANSWER: The Naga Shop needs to prepare 230 RM10 vouchers.",correct,2.611905813217163,5,5,"Full marks awarded (5/5) because the AI response matches the ground truth answer (230) and shows correct, complete working. The solution correctly computed P(Red)=1/3 and P(Yellow)=2/3, conditional probabilities P(RM10|A)=1/5 and P(RM10|B)=2/3, then used the law of total probability to get P(RM10)=1/15+4/9=23/45 and multiplied by 450 to obtain 230. The replacement assumption was noted and used appropriately. No errors or omissions that affect the final result.",7.015131711959839,,Probability of Combined Events,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 9_Q3.png,"(a) 7/33
+(b) 5/33","Step 1: Problem Understanding
+The problem asks us to calculate two probabilities related to the selection of one badminton club and one bodybuilding club from four different locations (Kedah, Negeri Sembilan, F.T. Labuan, F.T. Putrajaya).
+
+The specific probabilities to calculate are:
+(a) The probability that both selected clubs are from Kedah.
+(b) The probability that one club is selected from the Federal Territories and the other from Negeri Sembilan.
+
+Non-standard constraints:
+- A badminton club and a bodybuilding club are selected at random. This means we are not selecting two clubs of the same type.
+- The selections are from four specific locations.
+
+Step 2: Solution Execution
+
+First, let's list the total number of badminton and bodybuilding clubs in each location, and the total number of clubs overall.
+
+Kedah:
+Badminton: 14
+Bodybuilding: 6
+Total in Kedah: 20
+
+Negeri Sembilan:
+Badminton: 11
+Bodybuilding: 2
+Total in Negeri Sembilan: 13
+
+F.T. Labuan:
+Badminton: 3
+Bodybuilding: 2
+Total in F.T. Labuan: 5
+
+F.T. Putrajaya:
+Badminton: 5
+Bodybuilding: 2
+Total in F.T. Putrajaya: 7
+
+Total Badminton clubs = 14 + 11 + 3 + 5 = 33
+Total Bodybuilding clubs = 6 + 2 + 2 + 2 = 12
+Total clubs = 33 + 12 = 45
+
+Total clubs in Federal Territories (F.T. Labuan + F.T. Putrajaya) = 5 + 7 = 12
+
+The problem states ""A badminton club and a bodybuilding club ... are selected at random."" This implies that the selection process involves picking one badminton club and one bodybuilding club. However, the question phrasing ""both clubs selected are from Kedah"" suggests that we are selecting two clubs in total, and then checking their type and origin. Given the provided totals (total badminton, total bodybuilding, total clubs), it's more likely that we are selecting two clubs from the total pool of 45 clubs, and then determining the probability based on their type and location. Let's assume we are selecting two clubs from the total of 45.
+
+Let's re-read the constraint: ""A badminton club and a bodybuilding club in the four states are selected at random."" This is a bit ambiguous. It could mean:
+Interpretation 1: We select one badminton club from the 33 available, AND one bodybuilding club from the 12 available.
+Interpretation 2: We select two clubs from the total of 45, and we are interested in the cases where one is badminton and the other is bodybuilding.
+
+Let's consider Interpretation 1, as it seems more aligned with the phrasing ""A badminton club and a bodybuilding club... are selected"".
+
+Total number of ways to select 1 badminton club from 33 = 33
+Total number of ways to select 1 bodybuilding club from 12 = 12
+Total number of ways to select 1 badminton club AND 1 bodybuilding club = 33 * 12 = 396
+
+(a) Probability that both clubs selected are from Kedah.
+This means we select 1 badminton club from Kedah AND 1 bodybuilding club from Kedah.
+Number of badminton clubs in Kedah = 14
+Number of bodybuilding clubs in Kedah = 6
+Number of ways to select 1 badminton club from Kedah = 14
+Number of ways to select 1 bodybuilding club from Kedah = 6
+Number of ways to select 1 badminton club from Kedah AND 1 bodybuilding club from Kedah = 14 * 6 = 84
+
+The probability that both clubs selected are from Kedah is the number of successful outcomes divided by the total number of possible outcomes.
+P(both from Kedah) = (Number of ways to select 1 badminton from Kedah AND 1 bodybuilding from Kedah) / (Total number of ways to select 1 badminton AND 1 bodybuilding)
+P(both from Kedah) = 84 / 396
+
+Let's simplify this fraction.
+84 / 396 = 42 / 198 = 21 / 99 = 7 / 33
+
+(b) Probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively.
+This means we select one club from the Federal Territories and one club from Negeri Sembilan. The constraint ""A badminton club and a bodybuilding club"" still applies. This means the pair of selected clubs must consist of one badminton and one bodybuilding club.
+
+There are two scenarios for this part:
+Scenario 1: Badminton club from Federal Territories, Bodybuilding club from Negeri Sembilan.
+Number of badminton clubs in Federal Territories = 3 (F.T. Labuan) + 5 (F.T. Putrajaya) = 8
+Number of bodybuilding clubs in Negeri Sembilan = 2
+Number of ways for Scenario 1 = 8 * 2 = 16
+
+Scenario 2: Bodybuilding club from Federal Territories, Badminton club from Negeri Sembilan.
+Number of bodybuilding clubs in Federal Territories = 2 (F.T. Labuan) + 2 (F.T. Putrajaya) = 4
+Number of badminton clubs in Negeri Sembilan = 11
+Number of ways for Scenario 2 = 4 * 11 = 44
+
+Total number of ways to select one club from Federal Territories and one from Negeri Sembilan, where one is badminton and the other is bodybuilding = Number of ways for Scenario 1 + Number of ways for Scenario 2
+Total successful outcomes = 16 + 44 = 60
+
+The probability is the total successful outcomes divided by the total possible outcomes (which is 396, from the initial calculation of selecting one badminton and one bodybuilding club).
+
+P(one from FT and one from NS) = 60 / 396
+
+Let's simplify this fraction.
+60 / 396 = 30 / 198 = 15 / 99 = 5 / 33
+
+Let's double check the interpretation of the problem. If the problem meant selecting two clubs from the total of 45 clubs:
+
+Total ways to select 2 clubs from 45 = C(45, 2) = (45 * 44) / (2 * 1) = 45 * 22 = 990
+
+(a) Both clubs selected are from Kedah.
+Number of clubs in Kedah = 20.
+Ways to select 2 clubs from Kedah = C(20, 2) = (20 * 19) / (2 * 1) = 10 * 19 = 190.
+Probability = 190 / 990 = 19 / 99.
+
+This interpretation doesn't fit the constraint ""A badminton club and a bodybuilding club"". The constraint is very specific.
+
+Let's re-evaluate the wording: ""A badminton club and a bodybuilding club in the four states are selected at random."" This implies that the sample space is the set of all possible pairs where one is a badminton club and the other is a bodybuilding club.
+
+Total number of Badminton clubs = 33
+Total number of Bodybuilding clubs = 12
+Total number of pairs (1 Badminton, 1 Bodybuilding) = 33 * 12 = 396. This is our denominator.
+
+Part (a): Both clubs selected are from Kedah.
+This means we select 1 Badminton club from Kedah AND 1 Bodybuilding club from Kedah.
+Number of Badminton clubs in Kedah = 14
+Number of Bodybuilding clubs in Kedah = 6
+Number of favorable pairs = 14 * 6 = 84.
+Probability (a) = 84 / 396.
+Simplifying: 84/396 = 42/198 = 21/99 = 7/33.
+
+Part (b): A club is selected each from the Federal Territories and Negeri Sembilan respectively.
+This means one club is from FT, and the other is from NS. And the pair must be (1 Badminton, 1 Bodybuilding).
+
+Case 1: Badminton from FT, Bodybuilding from NS.
+Number of Badminton clubs in FT = 3 (Labuan) + 5 (Putrajaya) = 8.
+Number of Bodybuilding clubs in NS = 2.
+Number of pairs = 8 * 2 = 16.
+
+Case 2: Bodybuilding from FT, Badminton from NS.
+Number of Bodybuilding clubs in FT = 2 (Labuan) + 2 (Putrajaya) = 4.
+Number of Badminton clubs in NS = 11.
+Number of pairs = 4 * 11 = 44.
+
+Total favorable pairs for part (b) = 16 + 44 = 60.
+Probability (b) = 60 / 396.
+Simplifying: 60/396 = 30/198 = 15/99 = 5/33.
+
+The calculations seem correct based on the interpretation that we are forming pairs of (1 Badminton club, 1 Bodybuilding club).
+
+Let's verify the numbers.
+Total Badminton clubs = 14 (Kedah) + 11 (NS) + 3 (FTL) + 5 (FT P) = 33. Correct.
+Total Bodybuilding clubs = 6 (Kedah) + 2 (NS) + 2 (FTL) + 2 (FT P) = 12. Correct.
+Total pairs = 33 * 12 = 396. Correct.
+
+For (a):
+Kedah Badminton = 14
+Kedah Bodybuilding = 6
+Favorable pairs = 14 * 6 = 84.
+P(a) = 84/396 = 7/33. Correct.
+
+For (b):
+FT total clubs = 5 (FTL) + 7 (FT P) = 12.
+FT Badminton = 3 + 5 = 8.
+FT Bodybuilding = 2 + 2 = 4.
+NS total clubs = 13.
+NS Badminton = 11.
+NS Bodybuilding = 2.
+
+Case 1: Badminton from FT, Bodybuilding from NS.
+Pairs = 8 * 2 = 16.
+
+Case 2: Bodybuilding from FT, Badminton from NS.
+Pairs = 4 * 11 = 44.
+
+Total favorable pairs = 16 + 44 = 60.
+P(b) = 60/396 = 5/33. Correct.
+
+The results seem consistent and the calculations are straightforward.
+The problem statement is specific about selecting ""A badminton club and a bodybuilding club"". This means the sample space is restricted to pairs of (one badminton, one bodybuilding).
+
+Step 3: Final Answer
+The problem asks for two probabilities:
+(a) The probability that both selected clubs are from Kedah.
+(b) The probability that one club is selected from the Federal Territories and the other from Negeri Sembilan.
+
+We are given that a badminton club and a bodybuilding club are selected at random.
+Total number of badminton clubs = 33.
+Total number of bodybuilding clubs = 12.
+The total number of possible pairs of (1 badminton club, 1 bodybuilding club) is 33 * 12 = 396. This is our sample space.
+
+(a) Probability that both clubs selected are from Kedah:
+Number of badminton clubs in Kedah = 14.
+Number of bodybuilding clubs in Kedah = 6.
+Number of pairs where both clubs are from Kedah = 14 * 6 = 84.
+The probability is the number of favorable outcomes divided by the total number of outcomes:
+P(both from Kedah) = 84 / 396.
+Simplifying the fraction: 84/396 = 7/33.
+
+(b) Probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively:
+This means one club is from the Federal Territories (FT) and the other is from Negeri Sembilan (NS). The pair must consist of one badminton and one bodybuilding club.
+
+We consider two cases:
+Case 1: A badminton club is selected from FT, and a bodybuilding club is selected from NS.
+Number of badminton clubs in FT = (Badminton in F.T. Labuan) + (Badminton in F.T. Putrajaya) = 3 + 5 = 8.
+Number of bodybuilding clubs in NS = 2.
+Number of pairs in Case 1 = 8 * 2 = 16.
+
+Case 2: A bodybuilding club is selected from FT, and a badminton club is selected from NS.
+Number of bodybuilding clubs in FT = (Bodybuilding in F.T. Labuan) + (Bodybuilding in F.T. Putrajaya) = 2 + 2 = 4.
+Number of badminton clubs in NS = 11.
+Number of pairs in Case 2 = 4 * 11 = 44.
+
+The total number of favorable outcomes for part (b) is the sum of outcomes from Case 1 and Case 2: 16 + 44 = 60.
+The probability is the number of favorable outcomes divided by the total number of outcomes:
+P(one from FT and one from NS) = 60 / 396.
+Simplifying the fraction: 60/396 = 5/33.
+
+FINAL ANSWER:
+(a) The probability that both clubs selected are from Kedah is 7/33.
+(b) The probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively is 5/33.",correct,2.329998016357422,5,5,"The AI's final answers exactly match the ground truth: (a) 7/33 and (b) 5/33. The working is correct: it correctly interprets the sample space as pairs of (1 badminton, 1 bodybuilding), computes total pairs (33*12 = 396), counts favourable pairs for Kedah (14*6 = 84 -> 84/396 = 7/33) and for FT vs Negeri Sembilan (8*2 + 4*11 = 60 -> 60/396 = 5/33), and simplifies fractions properly. The solution addresses the problem ambiguity and justifies the chosen interpretation. Per the provided marking scheme (full marks = 5 when answers match the ground truth), the response receives full marks.",12.727298498153687,,Probability of Combined Events,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 10_Q1.png,"(a) Personal monthly financial plan for Encik Nabil
+Income and Expenditure RM
+Active income:
+Net salary
+Commissions
+3 800
+450
+Total active income 4 250
+Passive income:
+House rental 600
+Total passive income 600
+Total monthly income 4 850
+Minus fixed monthly savings 380
+Total income after deducting
+savings 4 470
+Minus cash outflow/expenses
+Fixed expenses:
+Housing loan instalments (1)
+Housing loan instalments (2)
+Insurance expenses
+800
+500
+350
+Total fixed expenses 1 650
+Variable expenses:
+Food expenses
+Utility payments
+Toll and petrol expenses
+Internet service subscription
+Eat at a luxury restaurant
+900
+150
+200
+100
+400
+Total variable expenses 1 750
+Surplus/Deficit 1 070
+(b) Encik Nabil’s personal financial plan has a surplus
+where there is a positive cash flow when the total
+income is more than the total expenses. This has
+improved Encik Nabil’s liquidity","Step 1: Problem Understanding
+The problem asks for two things:
+(a) A monthly personal financial plan for Encik Nabil.
+(b) Comments on the surplus or deficit Encik Nabil will experience based on the plan.
+
+The constraints are:
+- Encik Nabil's net salary is RM 3,800 per month.
+- His estimated monthly commission is RM 450.
+- His monthly rental income is RM 600.
+- His fixed monthly savings are 10% of his salary.
+- A list of monthly expenses is provided.
+
+Step 2: Solution Execution
+
+First, calculate Encik Nabil's total monthly income.
+Total Monthly Income = Net Salary + Commission + Rental Income
+Total Monthly Income = RM 3,800 + RM 450 + RM 600
+Total Monthly Income = RM 4,850
+
+Next, calculate the amount set aside for fixed monthly savings.
+Fixed Monthly Savings = 10% of Net Salary
+Fixed Monthly Savings = 0.10 * RM 3,800
+Fixed Monthly Savings = RM 380
+
+Now, list all the monthly expenses and calculate the total monthly expenses.
+Housing loan instalment (1): RM 800
+Housing loan instalment (2): RM 500
+Food expenses: RM 900
+Utility payments: RM 150
+Toll and petrol expenses: RM 200
+Internet service subscription: RM 100
+Eat at a luxury restaurant: RM 400
+Insurance expenses: RM 350
+Total Monthly Expenses = RM 800 + RM 500 + RM 900 + RM 150 + RM 200 + RM 100 + RM 400 + RM 350
+Total Monthly Expenses = RM 3,400
+
+(a) Create a monthly personal financial plan for Encik Nabil.
+The financial plan should show income, savings, expenses, and the remaining balance.
+
+Monthly Financial Plan:
+
+Income:
+- Net Salary: RM 3,800
+- Commission: RM 450
+- Rental Income: RM 600
+Total Income: RM 4,850
+
+Deductions/Savings:
+- Fixed Monthly Savings (10% of Salary): RM 380
+
+Expenses:
+- Housing loan instalment (1): RM 800
+- Housing loan instalment (2): RM 500
+- Food expenses: RM 900
+- Utility payments: RM 150
+- Toll and petrol expenses: RM 200
+- Internet service subscription: RM 100
+- Eat at a luxury restaurant: RM 400
+- Insurance expenses: RM 350
+Total Expenses: RM 3,400
+
+Total Outgoings (Savings + Expenses): RM 380 + RM 3,400 = RM 3,780
+
+(b) Give comments on the surplus or deficit that will be experienced by Encik Nabil based on this financial plan.
+
+Calculate the surplus or deficit:
+Surplus/Deficit = Total Income - Total Outgoings
+Surplus/Deficit = RM 4,850 - RM 3,780
+Surplus/Deficit = RM 1,070
+
+Verification:
+Total Income = RM 4,850
+Total Savings = RM 380
+Total Expenses = RM 3,400
+Total Deductions = Total Savings + Total Expenses = RM 380 + RM 3,400 = RM 3,780
+Remaining Balance = Total Income - Total Deductions = RM 4,850 - RM 3,780 = RM 1,070
+
+The calculation shows a surplus. The solution makes sense in context as income exceeds expenses and savings.
+
+Step 3: Final Answer
+(a) Monthly Personal Financial Plan for Encik Nabil:
+
+Income:
+- Net Salary: RM 3,800
+- Commission: RM 450
+- Rental Income: RM 600
+Total Monthly Income: RM 4,850
+
+Savings:
+- Fixed Monthly Savings (10% of Salary): RM 380
+
+Expenses:
+- Housing loan instalment (1): RM 800
+- Housing loan instalment (2): RM 500
+- Food expenses: RM 900
+- Utility payments: RM 150
+- Toll and petrol expenses: RM 200
+- Internet service subscription: RM 100
+- Eat at a luxury restaurant: RM 400
+- Insurance expenses: RM 350
+Total Monthly Expenses: RM 3,400
+
+Total Outgoings (Savings + Expenses): RM 380 + RM 3,400 = RM 3,780
+
+(b) Comments on Surplus or Deficit:
+Encik Nabil will experience a monthly surplus of RM 1,070 (Total Income RM 4,850 - Total Outgoings RM 3,780). This indicates that his current financial plan is sustainable, with his income exceeding his planned savings and expenses.
+
+FINAL ANSWER:
+(a) Monthly Personal Financial Plan for Encik Nabil:
+
+Income:
+- Net Salary: RM 3,800
+- Commission: RM 450
+- Rental Income: RM 600
+Total Monthly Income: RM 4,850
+
+Savings:
+- Fixed Monthly Savings (10% of Salary): RM 380
+
+Expenses:
+- Housing loan instalment (1): RM 800
+- Housing loan instalment (2): RM 500
+- Food expenses: RM 900
+- Utility payments: RM 150
+- Toll and petrol expenses: RM 200
+- Internet service subscription: RM 100
+- Eat at a luxury restaurant: RM 400
+- Insurance expenses: RM 350
+Total Monthly Expenses: RM 3,400
+
+Total Outgoings (Savings + Expenses): RM 380 + RM 3,400 = RM 3,780
+
+(b) Comments on Surplus or Deficit:
+Encik Nabil will experience a monthly surplus of RM 1,070. This is calculated as Total Monthly Income (RM 4,850) minus Total Outgoings (RM 3,780). This surplus indicates a healthy financial situation where his income covers all his planned savings and expenses, leaving a positive balance.",correct,3.3613059520721436,7,7,"Full marks (7) awarded. The AI response exactly matches the ground truth: correct total income (RM 4,850), fixed savings (RM 380), itemised expenses totaling RM 3,400, total outgoings RM 3,780, and surplus RM 1,070. As per the provided marking scheme, matching the ground truth receives full marks.",5.849060297012329,, Financial Management,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 10_Q2.png,"(a) Mrs Thong does not spend wisely because her
+total monthly savings of RM250 compared to the
+income of RM6 000 which is less than 10%.
+(b) Mrs Thong will not be able to achieve the
+investment goal of RM500 000 with monthly
+savings of RM250",,wrong,3.362966299057007,0,6,"The AI response is 'nan' and provides no attempt to answer either part (a) or (b). The ground truth requires: (a) judgement that Mrs Thong does not spend wisely because RM250 is less than 10% of RM6,000, and (b) that RM250 monthly savings cannot achieve RM500,000. Because the response contains no correct content or working matching the ground truth, it receives 0 out of the maximum 6 marks.",9.232415199279785,, Financial Management,English,google_genai:gemini-2.5-flash-lite,0

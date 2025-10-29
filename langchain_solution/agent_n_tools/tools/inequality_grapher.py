@@ -179,3 +179,75 @@ def validate_inequality_solution_set(inequality: str, test_points_json: str) -> 
         return f"Validation results for {inequality}:\n" + "\n".join(results)
     except Exception as e:
         return f"Error validating solution set: {str(e)}"
+
+
+@tool
+def convert_region_to_inequality(line_point1_json: str, line_point2_json: str,
+                                 test_point_json: str, line_style: str = "solid") -> str:
+    """
+    Determines the inequality represented by a line and shaded region.
+
+    Converts a graphical region (from Cartesian plane) to linear inequality form.
+
+    Args:
+        line_point1_json: JSON dict of first point on boundary line.
+                         Format: '{"x": -4, "y": 0}'
+        line_point2_json: JSON dict of second point on boundary line.
+                         Format: '{"x": 0, "y": 2}'
+        test_point_json: JSON dict of a point inside the shaded region.
+                        Format: '{"x": -2, "y": 0}'
+        line_style: "solid" for ≤ or ≥, "dashed" for < or > (default: "solid")
+
+    Returns:
+        String with JSON-formatted inequality
+
+    Example:
+        convert_region_to_inequality('{"x":-4,"y":0}', '{"x":0,"y":2}', '{"x":-2,"y":0}', 'dashed')
+    """
+    try:
+        import json
+
+        p1 = json.loads(line_point1_json)
+        p2 = json.loads(line_point2_json)
+        test_point = json.loads(test_point_json)
+
+        x1, y1 = p1['x'], p1['y']
+        x2, y2 = p2['x'], p2['y']
+        x_test, y_test = test_point['x'], test_point['y']
+
+        # Calculate line equation: y = mx + c
+        if abs(x2 - x1) < 1e-10:
+            # Vertical line: x = constant
+            line_eq = f"x = {x1}"
+            # Test which side
+            if x_test > x1:
+                inequality = f"x > {x1}" if line_style == "dashed" else f"x >= {x1}"
+            else:
+                inequality = f"x < {x1}" if line_style == "dashed" else f"x <= {x1}"
+        else:
+            # Calculate slope and intercept
+            m = (y2 - y1) / (x2 - x1)
+            c = y1 - m * x1
+
+            line_eq = f"y = {round(m, 4)}x + {round(c, 4)}"
+
+            # Test which side of the line the region is on
+            y_on_line = m * x_test + c
+
+            if y_test > y_on_line:
+                # Region is above the line
+                inequality = f"y > {round(m, 4)}x + {round(c, 4)}" if line_style == "dashed" else f"y >= {round(m, 4)}x + {round(c, 4)}"
+            else:
+                # Region is below the line
+                inequality = f"y < {round(m, 4)}x + {round(c, 4)}" if line_style == "dashed" else f"y <= {round(m, 4)}x + {round(c, 4)}"
+
+        result = {
+            "line_equation": line_eq,
+            "inequality": inequality,
+            "line_style": line_style
+        }
+
+        return json.dumps(result, indent=2)
+
+    except Exception as e:
+        return f"Error converting region to inequality: {str(e)}"

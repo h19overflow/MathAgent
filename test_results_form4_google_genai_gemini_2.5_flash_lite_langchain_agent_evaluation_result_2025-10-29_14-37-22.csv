@@ -1,0 +1,2112 @@
+filename,ground_truth_answer,generated_answer,similarity,correctness_time,ai_marks,allocated_marks,marking_explanation,marking_time,marking_scheme,chapter_name,language,model_used,token_used
+Chapter 1_Q1.png,(a) A = x2 + 25x + 100                 (b) x2 + 25x – 150 = 0,"Step 1: Problem Understanding
+The problem asks us to:
+1. Write a function for the area (A) of a rectangular piece of land in terms of x, given its length as (x + 20) m and width as (x + 5) m.
+2. Formulate a quadratic equation in the form ax² + bx + c = 0, given that the area of the land is 250 m².
+
+There are no non-standard constraints.
+
+Step 2: Solution Execution
+
+Part (a): Write a function for the area, A m², of the land.
+The area of a rectangle is given by the formula: Area = Length × Width.
+Given:
+Length = (x + 20) m
+Width = (x + 5) m
+
+So, the area A can be expressed as:
+A = (x + 20)(x + 5)
+
+To expand this expression, we use the distributive property (or FOIL method):
+A = x(x + 5) + 20(x + 5)
+A = x² + 5x + 20x + 100
+A = x² + 25x + 100
+
+The function for the area is A(x) = x² + 25x + 100.
+
+Part (b): If the area of the land is 250 m², write a quadratic equation in terms of x.
+
+We are given that the area A = 250 m². We can set the area function equal to 250:
+x² + 25x + 100 = 250
+
+To get the equation in the form ax² + bx + c = 0, we need to move all terms to one side:
+x² + 25x + 100 - 250 = 0
+x² + 25x - 150 = 0
+
+This is the quadratic equation in the required form, where a = 1, b = 25, and c = -150.
+
+Step 3: Final Answer
+The final answer is:
+(a) The function for the area, A m², of the land is A(x) = x² + 25x + 100.
+(b) The quadratic equation in terms of x, when the area is 250 m², is x² + 25x - 150 = 0.
+
+FINAL ANSWER: (a) The function for the area is A(x) = x² + 25x + 100. (b) The quadratic equation is x² + 25x - 150 = 0.",correct,8.368539810180664,4,4,"Full marks awarded (4/4) because the AI response exactly matches the provided ground truth for both parts: (a) A = x^2 + 25x + 100 and (b) x^2 + 25x - 150 = 0. The algebraic expansion and rearrangement to obtain the quadratic equation are correct and clearly shown, so the solution meets the marking scheme requirement of giving full credit when the answer matches the ground truth.",8.961638927459717,,"Quadratic Functions and Equations in
+One Variable",English,google_genai:gemini-2.5-flash-lite,0
+Chapter 1_Q2.png,"(a) A(0, –5)     (b) x = 3
+(c) B(6, –5)     (d) (3, 4)","Step 1: Problem Understanding
+The problem asks to find:
+(a) The coordinates of point A.
+(b) The equation of the axis of symmetry.
+(c) The coordinates of point B.
+(d) The coordinates of the maximum point P.
+
+The given quadratic function is $f(x) = -x^2 + 6x - 5$.
+The line AB is parallel to the x-axis.
+Point A is on the y-axis and the line AB.
+Point B is on the curve and the line AB.
+Point P is the maximum point of the curve.
+
+From the visual data, we have estimations for the coordinates of A, B, and P, which can be used for verification.
+
+Step 2: Solution Execution
+
+(a) Coordinates of point A:
+Point A is on the y-axis, which means its x-coordinate is 0.
+Point A is also on the line AB, which is parallel to the x-axis. This means that the y-coordinate of A is the same as the y-coordinate of B.
+From the visual data, Point A appears to be at (0, -5). Let's assume this is correct for now and verify it with point B later.
+If A is at (0, -5), then the y-coordinate of B must also be -5.
+
+(b) Equation of the axis of symmetry:
+For a quadratic function in the form $f(x) = ax^2 + bx + c$, the axis of symmetry is given by $x = -b / (2a)$.
+In this case, $a = -1$, $b = 6$, and $c = -5$.
+Axis of symmetry: $x = -(6) / (2 * -1) = -6 / -2 = 3$.
+The equation of the axis of symmetry is $x = 3$.
+
+(c) Coordinates of point B:
+Point B lies on the curve $f(x) = -x^2 + 6x - 5$ and on the line AB, which is parallel to the x-axis.
+Since A appears to be at (0, -5) and AB is horizontal, the y-coordinate of B is -5.
+We set $f(x) = -5$ to find the x-coordinate of B:
+$-x^2 + 6x - 5 = -5$
+$-x^2 + 6x = 0$
+$x(-x + 6) = 0$
+This gives two possible x-values: $x = 0$ or $x = 6$.
+$x=0$ corresponds to point A (since A is on the y-axis).
+Therefore, the x-coordinate of point B is 6.
+The coordinates of point B are (6, -5).
+
+Let's verify the visual data for point B. It was estimated at (5, -5), but our calculation gives (6, -5). The calculation is more reliable.
+
+Now we can confirm the y-coordinate of A. Since A is on the y-axis and on the line AB, and B is at (6, -5), the line AB must be y = -5. Thus, A is at (0, -5). This matches the visual estimation.
+
+(d) Coordinates of the maximum point P:
+The maximum point of a quadratic function occurs at its vertex. The x-coordinate of the vertex is the same as the axis of symmetry, which we found to be $x = 3$.
+To find the y-coordinate of the maximum point, we substitute $x = 3$ into the function $f(x)$:
+$f(3) = -(3)^2 + 6(3) - 5$
+$f(3) = -9 + 18 - 5$
+$f(3) = 9 - 5$
+$f(3) = 4$.
+The coordinates of the maximum point P are (3, 4).
+This matches the visual estimation for point P.
+
+Step 3: Final Answer
+(a) The coordinates of point A are (0, -5).
+(b) The equation of the axis of symmetry is $x = 3$.
+(c) The coordinates of point B are (6, -5).
+(d) The coordinates of the maximum point P are (3, 4).
+
+FINAL ANSWER:
+(a) The coordinates of point A are (0, -5).
+(b) The equation of the axis of symmetry is $x = 3$.
+(c) The coordinates of point B are (6, -5).
+(d) The coordinates of the maximum point P are (3, 4).",correct,3.750364065170288,6,6,"All four parts of the AI response match the ground truth exactly: (a) A(0, -5), (b) axis x = 3, (c) B(6, -5), (d) vertex P(3, 4). The solution uses correct methods: axis from -b/(2a), solving f(x) = -5 to find B (x = 0 or 6, choosing 6 for B), and substituting x = 3 into f(x) to get y = 4. No arithmetic or reasoning errors were found. Per the provided marking scheme, a fully matching answer receives full mark (6).",8.090446710586548,,"Quadratic Functions and Equations in
+One Variable",English,google_genai:gemini-2.5-flash-lite,0
+Chapter 1_Q3.png,20 cm,"Step 1: Problem Understanding
+The problem asks us to calculate the difference in perimeter between an isosceles triangle and a square. We are given information about their dimensions in terms of a variable 'y', and a relationship between their areas.
+
+The dimensions are:
+- Isosceles triangle: base = 4y cm, height = (y + 5) cm.
+- Square: side length = y cm.
+
+The constraint is that the area of the triangle is 39 cm² more than the area of the square.
+
+Step 2: Solution Execution
+
+First, let's find the area of the triangle and the square in terms of 'y'.
+
+Area of triangle = (1/2) * base * height
+Area of triangle = (1/2) * (4y) * (y + 5)
+Area of triangle = 2y * (y + 5)
+Area of triangle = 2y² + 10y
+
+Area of square = side * side
+Area of square = y * y
+Area of square = y²
+
+Now, let's use the constraint that the area of the triangle is 39 cm² more than the area of the square:
+Area of triangle = Area of square + 39
+2y² + 10y = y² + 39
+
+Rearrange the equation to solve for 'y':
+2y² - y² + 10y - 39 = 0
+y² + 10y - 39 = 0
+
+We can solve this quadratic equation for 'y' by factoring. We need two numbers that multiply to -39 and add to 10. These numbers are 13 and -3.
+(y + 13)(y - 3) = 0
+
+This gives two possible values for 'y':
+y + 13 = 0  => y = -13
+y - 3 = 0   => y = 3
+
+Since 'y' represents a length, it cannot be negative. Therefore, y = 3 cm.
+
+Now we can find the dimensions of the triangle and the square:
+
+Isosceles triangle:
+Base = 4y = 4 * 3 = 12 cm
+Height = y + 5 = 3 + 5 = 8 cm
+
+To calculate the perimeter of the triangle, we need the length of the two equal sides. We can use the Pythagorean theorem. The height of an isosceles triangle bisects the base. So, we have a right-angled triangle with height = 8 cm, and half of the base = 12/2 = 6 cm.
+Let 's' be the length of one of the equal sides.
+s² = height² + (base/2)²
+s² = 8² + 6²
+s² = 64 + 36
+s² = 100
+s = √100
+s = 10 cm
+
+Perimeter of triangle = base + 2 * (equal side)
+Perimeter of triangle = 12 + 2 * 10
+Perimeter of triangle = 12 + 20
+Perimeter of triangle = 32 cm
+
+Square:
+Side length = y = 3 cm
+
+Perimeter of square = 4 * side
+Perimeter of square = 4 * 3
+Perimeter of square = 12 cm
+
+Finally, calculate the difference in perimeter between both shapes:
+Difference in perimeter = Perimeter of triangle - Perimeter of square
+Difference in perimeter = 32 cm - 12 cm
+Difference in perimeter = 20 cm
+
+Let's verify the areas:
+Area of triangle = (1/2) * 12 * 8 = 48 cm²
+Area of square = 3 * 3 = 9 cm²
+Area of triangle - Area of square = 48 - 9 = 39 cm². This matches the constraint.
+
+Step 3: Final Answer
+The difference in perimeter between the isosceles triangle and the square is 20 cm.
+
+FINAL ANSWER: The difference in perimeter between the isosceles triangle and the square is 20 cm.",correct,2.547203302383423,5,5,"Awarded full mark (5) because the AI's final answer equals the ground truth (20 cm). The solution correctly set up the area equations, derived and solved the quadratic, rejected the negative root, computed the triangle's equal side via Pythagoras, calculated both perimeters, and correctly found their difference as 20 cm. All intermediate arithmetic and a final verification of areas are correct, so full marks per the provided marking instruction.",9.03799819946289,,"Quadratic Functions and Equations in
+One Variable",English,google_genai:gemini-2.5-flash-lite,0
+Chapter 2_Q1.png,"(a) 234
+(b) 234, 336
+(c) 234, 336, 673
+(d) 234, 336, 673, 281","Step 1: Problem Understanding
+The user wants me to identify which of the given numbers (234, 673, 336, 281) belong to specific number bases: base five, base seven, base eight, and base nine. A number belongs to a specific base if all of its digits are less than the base.
+
+Step 2: Solution Execution
+I need to examine each number and its digits to see if they are valid for each specified base.
+
+Number: 234
+- Digits: 2, 3, 4
+- Base five: All digits (2, 3, 4) are less than 5. So, 234 is valid in base five.
+- Base seven: All digits (2, 3, 4) are less than 7. So, 234 is valid in base seven.
+- Base eight: All digits (2, 3, 4) are less than 8. So, 234 is valid in base eight.
+- Base nine: All digits (2, 3, 4) are less than 9. So, 234 is valid in base nine.
+
+Number: 673
+- Digits: 6, 7, 3
+- Base five: Digit 6 and 7 are not less than 5. So, 673 is NOT valid in base five.
+- Base seven: Digit 7 is not less than 7. So, 673 is NOT valid in base seven.
+- Base eight: Digit 7 is not less than 8. So, 673 is NOT valid in base eight.
+- Base nine: All digits (6, 7, 3) are less than 9. So, 673 is valid in base nine.
+
+Number: 336
+- Digits: 3, 3, 6
+- Base five: Digit 6 is not less than 5. So, 336 is NOT valid in base five.
+- Base seven: All digits (3, 3, 6) are less than 7. So, 336 is valid in base seven.
+- Base eight: All digits (3, 3, 6) are less than 8. So, 336 is valid in base eight.
+- Base nine: All digits (3, 3, 6) are less than 9. So, 336 is valid in base nine.
+
+Number: 281
+- Digits: 2, 8, 1
+- Base five: Digit 8 is not less than 5. So, 281 is NOT valid in base five.
+- Base seven: Digit 8 is not less than 7. So, 281 is NOT valid in base seven.
+- Base eight: Digit 8 is not less than 8. So, 281 is NOT valid in base eight.
+- Base nine: All digits (2, 8, 1) are less than 9. So, 281 is valid in base nine.
+
+Summary:
+(a) Base five: 234
+(b) Base seven: 234, 336
+(c) Base eight: 234, 336
+(d) Base nine: 234, 673, 336, 281
+
+Step 3: Final Answer
+The numbers are: 234, 673, 336, 281.
+A number is valid in a given base if all of its digits are strictly less than the base.
+
+(a) Base five: The digits must be less than 5.
+- 234: Digits are 2, 3, 4. All are < 5. Valid.
+- 673: Digit 6 and 7 are not < 5. Invalid.
+- 336: Digit 6 is not < 5. Invalid.
+- 281: Digit 8 is not < 5. Invalid.
+Numbers in base five: 234
+
+(b) Base seven: The digits must be less than 7.
+- 234: Digits are 2, 3, 4. All are < 7. Valid.
+- 673: Digit 7 is not < 7. Invalid.
+- 336: Digits are 3, 3, 6. All are < 7. Valid.
+- 281: Digit 8 is not < 7. Invalid.
+Numbers in base seven: 234, 336
+
+(c) Base eight: The digits must be less than 8.
+- 234: Digits are 2, 3, 4. All are < 8. Valid.
+- 673: Digit 7 is not < 8. Invalid.
+- 336: Digits are 3, 3, 6. All are < 8. Valid.
+- 281: Digit 8 is not < 8. Invalid.
+Numbers in base eight: 234, 336
+
+(d) Base nine: The digits must be less than 9.
+- 234: Digits are 2, 3, 4. All are < 9. Valid.
+- 673: Digits are 6, 7, 3. All are < 9. Valid.
+- 336: Digits are 3, 3, 6. All are < 9. Valid.
+- 281: Digits are 2, 8, 1. All are < 9. Valid.
+Numbers in base nine: 234, 673, 336, 281
+
+FINAL ANSWER:
+(a) Base five: 234
+(b) Base seven: 234, 336
+(c) Base eight: 234, 336
+(d) Base nine: 234, 673, 336, 281",wrong,6.3843772411346436,3,4,"Total mark = 4. I awarded 1 mark for each correct part (a)–(d). The AI's answers for (a) 234, (b) 234, 336, and (d) 234, 336, 673, 281 match the ground truth, so those three parts receive full marks. Part (c) is incorrect: the AI omitted 673 from base eight, incorrectly claiming '7 is not < 8'. In fact 7 < 8, so 673 should be included in (c). Therefore the AI loses 1 mark, giving a total of 3/4.",14.319686889648438,,Number Bases,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 2_Q2.png,132 based 5,"Step 1: Problem Understanding
+The problem asks us to calculate the average number of visitors per day in January, given the total number of visitors in base five and that the zoo is open every day in January. The answer must also be in base five.
+
+Non-standard constraints:
+- The total number of visitors is given in base five.
+- The answer must be in base five.
+
+Step 2: Solution Execution
+First, we need to determine the number of days in January. January has 31 days.
+
+Next, we need to convert the total number of visitors from base five to base ten.
+20202₅ = 2 * 5⁴ + 0 * 5³ + 2 * 5² + 0 * 5¹ + 2 * 5⁰
+= 2 * 625 + 0 * 125 + 2 * 25 + 0 * 5 + 2 * 1
+= 1250 + 0 + 50 + 0 + 2
+= 1302₁₀
+
+Now, we calculate the average number of visitors per day in base ten.
+Average = Total visitors / Number of days
+Average = 1302 / 31
+
+Let's perform the division:
+1302 ÷ 31 = 42
+
+So, the average number of visitors per day is 42 in base ten.
+
+Finally, we need to convert the average number of visitors from base ten back to base five.
+To convert 42₁₀ to base five, we find the remainders when dividing by 5:
+42 ÷ 5 = 8 remainder 2
+8 ÷ 5 = 1 remainder 3
+1 ÷ 5 = 0 remainder 1
+
+Reading the remainders from bottom to top, we get 132₅.
+
+Let's verify the conversion:
+132₅ = 1 * 5² + 3 * 5¹ + 2 * 5⁰
+= 1 * 25 + 3 * 5 + 2 * 1
+= 25 + 15 + 2
+= 42₁₀
+
+The calculation seems correct. The average number of visitors per day is 132₅.
+
+Step 3: Final Answer
+The total number of visitors in January is 20202₅. January has 31 days.
+First, convert the total visitors to base 10:
+20202₅ = 2 * 5⁴ + 0 * 5³ + 2 * 5² + 0 * 5¹ + 2 * 5⁰ = 2 * 625 + 0 + 2 * 25 + 0 + 2 * 1 = 1250 + 50 + 2 = 1302₁₀.
+The number of days in January is 31.
+Now, calculate the average number of visitors per day in base 10:
+Average = 1302₁₀ / 31 = 42₁₀.
+Finally, convert the average number of visitors back to base 5:
+42₁₀ = 1 * 5² + 3 * 5¹ + 2 * 5⁰ = 25 + 15 + 2 = 42₁₀.
+So, 42₁₀ = 132₅.
+
+FINAL ANSWER: The average number of visitors to Zoo Negara each day in January is 132₅.",correct,3.636586904525757,4,4,"Full marks awarded (4/4). The AI converted 20202₅ correctly to 1302₁₀, divided by 31 to get 42₁₀, and converted 42₁₀ back to base five as 132₅, which exactly matches the ground truth answer. The solution steps and arithmetic are correct and the final answer is presented in the required base-five format.",6.213940620422363,,Number Bases,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 2_Q3.png,1600 m^2,"Step 1: Problem Understanding
+- The problem asks to calculate the area of the children's playground, which is the top-left triangular section of a rectangular playground.
+- The playground is rectangular, with one side labeled ""80 m"" and the adjacent side labeled ""x m"".
+- The perimeter of the playground is given as 33004 meters.
+- The children's playground is the triangle formed by the top side, the left side, and the diagonal.
+
+Step 2: Solution Execution
+The problem states that the perimeter of the playground is 33004 meters. The playground is rectangular. Let the sides of the rectangle be length (l) and width (w).
+From the visual data, one side is 80 m and the other is x m. So, let l = 80 m and w = x m.
+The formula for the perimeter of a rectangle is P = 2(l + w).
+We are given P = 33004 m.
+So, 33004 = 2(80 + x).
+Divide both sides by 2:
+33004 / 2 = 80 + x
+16502 = 80 + x
+Subtract 80 from both sides to find x:
+x = 16502 - 80
+x = 16422 m
+
+The area of the children's playground is the area of the triangle formed by the top side and the left side. In a rectangle, the sides are perpendicular. The top side is given as 80 m, and the left side is x m (which we found to be 16422 m).
+The area of a triangle is given by the formula A = (1/2) * base * height.
+In this case, the base can be considered the top side (80 m) and the height can be considered the left side (16422 m).
+Area of children's playground = (1/2) * 80 m * 16422 m
+Area = 40 m * 16422 m
+Area = 656880 square meters.
+
+Let's verify the constraints. The perimeter is 2 * (80 + 16422) = 2 * 16502 = 33004 m. This matches the given constraint.
+
+Step 3: Final Answer
+The area of the children's playground is calculated by first finding the unknown side 'x' using the given perimeter, and then applying the formula for the area of a triangle.
+
+Perimeter = 33004 m
+Let the sides of the rectangle be 80 m and x m.
+Perimeter = 2 * (80 + x)
+33004 = 2 * (80 + x)
+16502 = 80 + x
+x = 16502 - 80
+x = 16422 m
+
+The children's playground is a triangle with base 80 m and height x = 16422 m.
+Area of children's playground = (1/2) * base * height
+Area = (1/2) * 80 m * 16422 m
+Area = 40 m * 16422 m
+Area = 656880 square meters.
+
+FINAL ANSWER: The area of the children's playground is 656880 square meters.",wrong,4.538402080535889,0,5,"The model's final answer (656880 m^2) does not match the ground-truth area (1600 m^2). The marking instruction states to award full marks (5) only when the answer matches the ground truth; otherwise, award accordingly. Because the response is incorrect, it receives 0 out of 5. The model correctly applied formulas (perimeter and triangle area) but used an incorrect interpretation/value (yielding x = 16422 m) or misread the given data, producing a result that is not consistent with the ground-truth answer.",11.490269660949707,,Number Bases,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 3_Q1.png,"a) P(8)	 = 28
+	 = 256   b) t = 11      ",Error: 'list' object has no attribute 'startswith',wrong,3.5069262981414795,0,4,"The AI output is a runtime error message and does not provide any of the required numerical answers (ground truth: a) P(8)=28 and =256, b) t=11). Per the provided marking scheme (full mark 4 only if answers match the ground truth), the response does not match and receives 0/4. No working or correct values are given, so no partial credit is applicable.",6.665247201919556,,Logical Reasoning,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 3_Q2.png,"(a) 32(π + 2), 16(π + 2), 8(π + 2), 4(π + 2)
+(c) 1/4
+ (π + 2) cm","Error: Solver recursion limit reached after Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",wrong,2.4966182708740234,0,6,"The AI response produced an error message and did not provide any of the required numerical answers. The ground truth requires (a) 32(π + 2), 16(π + 2), 8(π + 2), 4(π + 2) and (c) (1/4)(π + 2) cm; per the provided marking scheme, full marks (6) are only given when the agent's answers match the ground truth. Because no answers were given, the response does not match the ground truth and receives 0 marks.",5.749195575714111,,Logical Reasoning,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 3_Q3.png,"(a) The pattern of the number of cylinders is 2n +1;
+n = 1, 2, 3, 4, ...
+(b) 104 720 cm3",,wrong,2.6495769023895264,0,5,"The AI response was ""nan"", which does not match either part of the ground truth (part (a) pattern 2n+1 and part (b) 104720 cm3). The provided marking instruction states full marks (5) only if the answer matches the ground truth; since the response gives no correct content, it receives 0 out of 5. (Open-ended SPM-style marking requires a whole-number score; no partial credit is possible from the given response.)",7.124002456665039,,Logical Reasoning,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 4_Q1.png,x = 3,"Step 1: Problem Understanding
+The problem asks us to find the value of $x$ given a Venn diagram representing sets $J$, $K$, and $L$. We are given that the total number of elements in the universal set $\xi$, which is the union of $J$, $K$, and $L$, is 25. The Venn diagram provides the number of elements in various regions, some of which are expressed in terms of $x$.
+
+There are no non-standard constraints. The problem is a straightforward application of set theory principles.
+
+Step 2: Solution Execution
+
+The total number of elements in the union of the sets $J$, $K$, and $L$ is the sum of the elements in all the disjoint regions within these sets.
+The regions are:
+- Elements in J only: 7
+- Elements in J and K only: 2
+- Elements in K only: $x + 2$
+- Elements in K and L only: 3
+- Elements in L only: $x + 5$
+- Elements in J and L only: 0 (not specified, assumed to be 0)
+- Elements in J, K, and L: 0 (not specified, assumed to be 0)
+
+The problem states that $\xi = J \cup K \cup L$ and $n(\xi) = 25$. This means the sum of all elements in the distinct regions of the Venn diagram must equal 25.
+
+So, we can write the equation:
+$7 + 2 + (x + 2) + 3 + (x + 5) = 25$
+
+Now, let's solve for $x$:
+Combine the constant terms:
+$7 + 2 + 2 + 3 + 5 = 19$
+
+Combine the terms with $x$:
+$x + x = 2x$
+
+So the equation becomes:
+$19 + 2x = 25$
+
+Subtract 19 from both sides:
+$2x = 25 - 19$
+$2x = 6$
+
+Divide by 2:
+$x = \frac{6}{2}$
+$x = 3$
+
+Now, let's verify the solution by plugging $x=3$ back into the regions:
+- J only: 7
+- J and K only: 2
+- K only: $3 + 2 = 5$
+- K and L only: 3
+- L only: $3 + 5 = 8$
+
+Sum of all regions = $7 + 2 + 5 + 3 + 8 = 25$. This matches the given $n(\xi) = 25$.
+The values for each region are non-negative, which is consistent with the number of elements.
+
+Step 3: Final Answer
+The value of $x$ is 3.
+
+FINAL ANSWER: The final answer is $\boxed{3}$",correct,2.5021684169769287,3,3,"Full marks (3/3). The AI-derived answer x = 3 matches the ground truth. The response correctly formed the equation 7 + 2 + (x+2) + 3 + (x+5) = 25, combined like terms to get 2x + 19 = 25, solved to find x = 3, and verified by substitution that the region totals sum to 25. The solver made a reasonable implicit assumption that unspecified intersection regions are zero; the verification shows non-negative region counts and consistency with the given total, so full credit is warranted under the provided marking scheme.",6.157609462738037,,Operations on Sets,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 4_Q2.png,39,"Step 1: Problem Understanding
+The problem asks to find the total number of elements in the universal set, denoted as $n(\xi)$. We are given a Venn diagram with three sets P, Q, and R, and some cardinalities of disjoint regions are provided as numbers or expressions involving $k$. A key condition is given: $n(Q) = n(P \cup R)'$. We need to use this condition to find the value of $k$ and then calculate $n(\xi)$.
+
+Step 2: Solution Execution
+First, we express $n(Q)$ and $n(P \cup R)'$ in terms of $k$ using the information from the Venn diagram.
+
+The regions within set Q are:
+- $n(P \cap Q \cap R) = 1$
+- $n(P \cap Q \cap R') = 2$
+- $n(P' \cap Q \cap R) = 5$
+- $n(P' \cap Q \cap R') = 4k$
+
+So, $n(Q) = 1 + 2 + 5 + 4k = 8 + 4k$.
+
+The region $(P \cup R)'$ represents the elements that are neither in P nor in R. From the Venn diagram, these regions are:
+- $n(P' \cap Q \cap R') = 4k$ (elements in Q only)
+- $n(P' \cap Q' \cap R') = 2k$ (elements outside all sets)
+
+So, $n(P \cup R)' = 4k + 2k = 6k$.
+
+Now, we use the given condition $n(Q) = n(P \cup R)'$:
+$8 + 4k = 6k$
+Subtract $4k$ from both sides:
+$8 = 2k$
+Divide by 2:
+$k = 4$
+
+Now that we have the value of $k$, we can find the cardinality of each disjoint region within the universal set $\xi$:
+- $n(P \cap Q \cap R) = 1$
+- $n(P \cap Q \cap R') = 2$
+- $n(P \cap Q' \cap R) = k = 4$
+- $n(P' \cap Q \cap R) = 5$
+- $n(P \cap Q' \cap R') = 3$
+- $n(P' \cap Q \cap R') = 4k = 4 \times 4 = 16$
+- $n(P' \cap Q' \cap R')$ = 2k = 2 \times 4 = 8$
+
+The region for R only, $n(P' \cap Q' \cap R)$, is not explicitly given a value in the diagram. However, the problem asks to determine $n(\xi)$, implying a unique solution. In a standard Venn diagram representation where all regions are accounted for, if a region is not labeled, its cardinality is considered zero. Therefore, we assume $n(P' \cap Q' \cap R) = 0$.
+
+The universal set $\xi$ is the sum of the cardinalities of all disjoint regions:
+$n(\xi) = n(P \cap Q \cap R) + n(P \cap Q \cap R') + n(P \cap Q' \cap R) + n(P' \cap Q \cap R) + n(P \cap Q' \cap R') + n(P' \cap Q \cap R') + n(P' \cap Q' \cap R) + n(P' \cap Q' \cap R')$
+$n(\xi) = 1 + 2 + 4 + 5 + 3 + 16 + 0 + 8$
+
+Let's sum these values:
+$n(\xi) = (1 + 2 + 4 + 5) + (3 + 16 + 0 + 8)$
+$n(\xi) = 12 + 27$
+$n(\xi) = 39$
+
+To verify, let's check the condition $n(Q) = n(P \cup R)'$ with $k=4$ and $n(R \text{ only}) = 0$:
+$n(Q) = 1 + 2 + 5 + 4k = 8 + 4(4) = 8 + 16 = 24$.
+$n(P \cup R)' = n(P' \cap R') = n(P' \cap Q \cap R') + n(P' \cap Q' \cap R') = 4k + 2k = 6k = 6(4) = 24$.
+The condition holds true.
+
+Step 3: Final Answer
+The value of $k$ is 4. The cardinalities of the disjoint regions are 1, 2, 4, 5, 3, 16, 0, and 8. The total number of elements in the universal set $\xi$ is the sum of these cardinalities.
+
+FINAL ANSWER: The total number of elements in the universal set, $n(\xi)$, is 39.",correct,1.696148157119751,3,3,"Full marks awarded. The AI correctly set up n(Q)=8+4k and n((P∪R)')=6k, solved 8+4k=6k to get k=4, computed all region values (including 4k=16 and 2k=8), and summed the disjoint regions to obtain n(ξ)=39, which matches the ground truth. The minor implicit assumption that the unlabeled region is zero does not affect the final total and the provided marking scheme states full marks when the answer matches the ground truth.",5.559686899185181,,Operations on Sets,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 4_Q3.png,"(a) y = 11
+(b) 51","Step 1: Problem Understanding
+The problem asks us to find the value of 'y' and the total number of elements in the union of sets A, B, and C (n(A ∪ B ∪ C)).
+The constraint given is n(B') = n(B ∩ C).
+The visual data provides the number of elements in each region of the Venn diagram in terms of constants and 'y'.
+The universal set is defined as ξ = A ∪ B ∪ C, which means there are no elements outside the three sets.
+
+Step 2: Solution Execution
+
+First, let's express the number of elements in each region and in set B and B ∩ C.
+- Region A only: 2
+- Region A and B only: y - 2
+- Region B only: 4
+- Region A and C only: 5
+- Region A, B, and C: y - 1
+- Region B and C only: 9
+- Region C only: 12
+
+Now, let's calculate n(B) and n(B ∩ C).
+n(B) is the sum of elements in regions that are part of B:
+n(B) = (Region B only) + (Region A and B only) + (Region B and C only) + (Region A, B, and C)
+n(B) = 4 + (y - 2) + 9 + (y - 1)
+n(B) = 4 + y - 2 + 9 + y - 1
+n(B) = 2y + 10
+
+n(B ∩ C) is the sum of elements in the intersection of B and C:
+n(B ∩ C) = (Region B and C only) + (Region A, B, and C)
+n(B ∩ C) = 9 + (y - 1)
+n(B ∩ C) = y + 8
+
+Now, let's consider the constraint n(B') = n(B ∩ C).
+Since the universal set is ξ = A ∪ B ∪ C, the total number of elements is n(A ∪ B ∪ C).
+n(B') represents the number of elements not in B.
+n(B') = n(A ∪ B ∪ C) - n(B)
+
+Let's first calculate n(A ∪ B ∪ C) by summing all the regions:
+n(A ∪ B ∪ C) = (Region A only) + (Region B only) + (Region C only) + (Region A and B only) + (Region A and C only) + (Region B and C only) + (Region A, B, and C)
+n(A ∪ B ∪ C) = 2 + 4 + 12 + (y - 2) + 5 + 9 + (y - 1)
+n(A ∪ B ∪ C) = 2 + 4 + 12 + y - 2 + 5 + 9 + y - 1
+n(A ∪ B ∪ C) = 29 + 2y
+
+Now, substitute this into the expression for n(B'):
+n(B') = (29 + 2y) - (2y + 10)
+n(B') = 29 + 2y - 2y - 10
+n(B') = 19
+
+Now, apply the constraint n(B') = n(B ∩ C):
+19 = y + 8
+
+Solve for y:
+y = 19 - 8
+y = 11
+
+(a) The value of y is 11.
+
+Now, let's find n(A ∪ B ∪ C) using the value of y.
+n(A ∪ B ∪ C) = 29 + 2y
+n(A ∪ B ∪ C) = 29 + 2(11)
+n(A ∪ B ∪ C) = 29 + 22
+n(A ∪ B ∪ C) = 51
+
+(b) n(A ∪ B ∪ C) = 51.
+
+Let's verify the values of each region:
+Region A only: 2
+Region A and B only: y - 2 = 11 - 2 = 9
+Region B only: 4
+Region A and C only: 5
+Region A, B, and C: y - 1 = 11 - 1 = 10
+Region B and C only: 9
+Region C only: 12
+
+n(B) = 4 + 9 + 9 + 10 = 32
+n(B ∩ C) = 9 + 10 = 19
+n(A ∪ B ∪ C) = 2 + 9 + 4 + 5 + 10 + 9 + 12 = 51
+n(B') = n(A ∪ B ∪ C) - n(B) = 51 - 32 = 19
+
+The constraint n(B') = n(B ∩ C) holds true as 19 = 19.
+All region values are non-negative (y-2 = 9 and y-1 = 10).
+
+Step 3: Final Answer
+(a) The value of y is 11.
+(b) The value of n(A ∪ B ∪ C) is 51.
+
+FINAL ANSWER: (a) y = 11, (b) n(A ∪ B ∪ C) = 51",correct,2.8408169746398926,4,4,"Full marks (4/4). The AI's final answers y = 11 and n(A ∪ B ∪ C) = 51 exactly match the ground truth. The solution correctly computed each Venn region, formed n(B) and n(B ∩ C), used n(B') = n(A ∪ B ∪ C) - n(B), solved for y, substituted back to get the union size, and verified the constraint and non-negativity of regions. Arithmetic and reasoning are correct, so award full marks per the provided marking scheme.",6.902499198913574,,Operations on Sets,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 5_Q1.png,"(a) (i) V = {1, 2, 3, 4, 5}
+n(V) = 5
+(ii) E = {(1, 2), (1, 5), (2, 3), (2, 4), (2, 5), (3, 4),
+ (4, 5)}
+E = {e1, e2, e3, e4, e5, e6, e7}
+n(E) = 7
+(iii) 14
+(b) (i) V = {P, Q, R, S, T, U, V, W}
+n(V) = 8
+(ii) E = {(Q, P), (Q, R), (Q, W), (R, V), (S, T), (S, U),
+ (U, V), (V, W)}
+n(E) = 8
+(iii) 16
+(c) (i) V = {A, B, C, D, E, F}
+n(V) = 6
+(ii) E = {(A, B), (A, F), (B, C), (B, E), (C, D), (C, E),
+ (D, E), (E, F)}
+n(E) = 8
+(iii) 16","Step 1: Problem Understanding
+The problem asks us to analyze three given graphs and for each graph, determine:
+(i) The set of vertices (V) and the number of vertices (n(V)).
+(ii) The set of edges (E) and the number of edges (n(E)).
+(iii) The sum of the degrees of all vertices.
+
+There are no non-standard constraints mentioned in the problem.
+
+Step 2: Solution Execution
+
+We will analyze each graph separately.
+
+**Graph (a):**
+
+(i) Vertices (V) and number of vertices (n(V)):
+The problem statement explicitly provides:
+V = {1, 2, 3, 4, 5}
+n(V) = 5
+
+(ii) Edges (E) and number of edges (n(E)):
+The problem statement explicitly provides:
+E = {e1, e2, e3, e4, e5, e6, e7}
+n(E) = 7
+
+(iii) Sum of degrees:
+The sum of the degrees of the vertices in any graph is equal to twice the number of edges. This is known as the Handshaking Lemma.
+Sum of degrees = 2 * n(E)
+Sum of degrees = 2 * 7 = 14
+
+Let's verify by calculating degrees of each vertex:
+Degree of vertex 1: connected to 2, 5 (degree = 2)
+Degree of vertex 2: connected to 1, 3, 4, 5 (degree = 4)
+Degree of vertex 3: connected to 2, 4 (degree = 2)
+Degree of vertex 4: connected to 2, 3, 5 (degree = 3)
+Degree of vertex 5: connected to 1, 2, 4 (degree = 3)
+Sum of degrees = 2 + 4 + 2 + 3 + 3 = 14. This matches the Handshaking Lemma.
+
+**Graph (b):**
+
+(i) Vertices (V) and number of vertices (n(V)):
+The problem statement explicitly provides:
+V = {P, Q, R, W, V, U, T, S} (Note: 'S' was missing in the initial list but implied by edge SP and SU)
+n(V) = 8 (Corrected based on the edges provided)
+
+(ii) Edges (E) and number of edges (n(E)):
+The problem statement explicitly provides:
+E = {PQ, QR, RV, VW, WU, UT, SP, SU}
+n(E) = 8
+
+(iii) Sum of degrees:
+Using the Handshaking Lemma:
+Sum of degrees = 2 * n(E)
+Sum of degrees = 2 * 8 = 16
+
+Let's verify by calculating degrees of each vertex:
+Degree of P: connected to Q, S (degree = 2)
+Degree of Q: connected to P, R (degree = 2)
+Degree of R: connected to Q, V (degree = 2)
+Degree of W: connected to V, U (degree = 2)
+Degree of V: connected to R, W (degree = 2)
+Degree of U: connected to W, T, S (degree = 3)
+Degree of T: connected to U (degree = 1)
+Degree of S: connected to P, U (degree = 2)
+Sum of degrees = 2 + 2 + 2 + 2 + 2 + 3 + 1 + 2 = 16. This matches the Handshaking Lemma.
+
+**Graph (c):**
+
+(i) Vertices (V) and number of vertices (n(V)):
+The problem statement explicitly provides:
+V = {A, B, C, D, E, F}
+n(V) = 6
+
+(ii) Edges (E) and number of edges (n(E)):
+The problem statement explicitly provides:
+E = {AB, BC, CD, DE, EF, FA, BE, CE}
+n(E) = 8
+
+(iii) Sum of degrees:
+Using the Handshaking Lemma:
+Sum of degrees = 2 * n(E)
+Sum of degrees = 2 * 8 = 16
+
+Let's verify by calculating degrees of each vertex:
+Degree of A: connected to B, F (degree = 2)
+Degree of B: connected to A, C, E (degree = 3)
+Degree of C: connected to B, D, E (degree = 3)
+Degree of D: connected to C, E (degree = 2)
+Degree of E: connected to D, F, B, C (degree = 4)
+Degree of F: connected to E, A (degree = 2)
+Sum of degrees = 2 + 3 + 3 + 2 + 4 + 2 = 16. This matches the Handshaking Lemma.
+
+Step 3: Final Answer
+The results for each graph are as follows:
+
+**Graph (a):**
+(i) V = {1, 2, 3, 4, 5}, n(V) = 5
+(ii) E = {e1, e2, e3, e4, e5, e6, e7}, n(E) = 7
+(iii) Sum of degrees = 14
+
+**Graph (b):**
+(i) V = {P, Q, R, W, V, U, T, S}, n(V) = 8
+(ii) E = {PQ, QR, RV, VW, WU, UT, SP, SU}, n(E) = 8
+(iii) Sum of degrees = 16
+
+**Graph (c):**
+(i) V = {A, B, C, D, E, F}, n(V) = 6
+(ii) E = {AB, BC, CD, DE, EF, FA, BE, CE}, n(E) = 8
+(iii) Sum of degrees = 16
+
+FINAL ANSWER:
+Graph (a):
+(i) V = {1, 2, 3, 4, 5}, n(V) = 5
+(ii) E = {e1, e2, e3, e4, e5, e6, e7}, n(E) = 7
+(iii) Sum of degrees = 14
+
+Graph (b):
+(i) V = {P, Q, R, W, V, U, T, S}, n(V) = 8
+(ii) E = {PQ, QR, RV, VW, WU, UT, SP, SU}, n(E) = 8
+(iii) Sum of degrees = 16
+
+Graph (c):
+(i) V = {A, B, C, D, E, F}, n(V) = 6
+(ii) E = {AB, BC, CD, DE, EF, FA, BE, CE}, n(E) = 8
+(iii) Sum of degrees = 16",wrong,5.677566766738892,2,3,"Total mark = 3. Full marks given only if the response matches the ground truth exactly. The AI response matches the ground truth for Graph (a) (V, E, n(E) and sum of degrees all correct) and for Graph (c) (V, E, n(E) and sum of degrees all correct) — these justify 2 marks. Graph (b) is incorrect: although n(V)=8 and the final sum of degrees =16, the listed edge set does not match the ground truth. Ground truth edges: {(Q,P),(Q,R),(Q,W),(R,V),(S,T),(S,U),(U,V),(V,W)}. AI edges: {PQ, QR, RV, VW, WU, UT, SP, SU} — AI omitted (Q,W) and (U,V) and (S,T), and incorrectly included (W,U), (U,T), (S,P). Because Graph (b) does not match the ground truth edge set, the solution is not fully correct and full mark cannot be awarded. Score = 2/3.",21.410043239593506,,Network in Graph Theory,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 5_Q2.png,"(a) (i) P > Q > R > S (ii) P > S
+(b) Route P > Q > S because I can save RM35 and
+the difference in time is only 9 minutes compared
+to route P > S","Step 1: Problem Understanding
+The problem asks us to find two routes from vertex P to vertex S in a directed weighted graph.
+(a) (i) The most economical route: This means finding the path with the minimum total cost.
+(a) (ii) The route that takes the shortest time: This means finding the path with the minimum total travel time.
+
+The graph has nodes P, Q, R, and S. P is the origin, and S is the destination. Q and R are transit airports.
+The weights on the edges represent (Cost, Time).
+There's a fixed transit time of 45 minutes (0.75 hours) at each transit airport (Q and R).
+
+Non-standard constraints: The transit time at Q and R is a fixed value that needs to be added to the path if these nodes are used as transit points.
+
+Step 2: Solution Execution
+
+First, let's list all possible routes from P to S and calculate their total cost and time, including transit times.
+
+Possible routes:
+1. P -> S
+2. P -> Q -> S
+3. P -> R -> S
+4. P -> Q -> R -> S
+5. P -> R -> Q -> S (This route is not possible because there is no direct edge from R to Q.)
+
+Let's analyze the valid routes:
+
+Route 1: P -> S
+Cost: RM200
+Time: 3 hours
+
+Route 2: P -> Q -> S
+Cost: Cost(P->Q) + Transit_Time(Q) + Cost(Q->S)
+Cost: RM50 + RM0 (no cost for transit) + RM115 = RM165
+Time: Time(P->Q) + Transit_Time(Q) + Time(Q->S)
+Time: 1 hour + 0.75 hours + 1.4 hours = 3.15 hours
+
+Route 3: P -> R -> S
+Cost: Cost(P->R) + Transit_Time(R) + Cost(R->S)
+Cost: RM130 + RM0 (no cost for transit) + RM65 = RM195
+Time: Time(P->R) + Transit_Time(R) + Time(R->S)
+Time: 1.5 hours + 0.75 hours + 1.1 hours = 3.35 hours
+
+Route 4: P -> Q -> R -> S
+Cost: Cost(P->Q) + Transit_Time(Q) + Cost(Q->R) + Transit_Time(R) + Cost(R->S)
+Cost: RM50 + RM0 + RM45 + RM0 + RM65 = RM160
+Time: Time(P->Q) + Transit_Time(Q) + Time(Q->R) + Transit_Time(R) + Time(R->S)
+Time: 1 hour + 0.75 hours + 0.8 hours + 0.75 hours + 1.1 hours = 4.4 hours
+
+Now let's summarize the costs and times for each valid route:
+
+Route       | Total Cost | Total Time
+------------|------------|-----------
+P -> S      | RM200      | 3.00 hours
+P -> Q -> S | RM165      | 3.15 hours
+P -> R -> S | RM195      | 3.35 hours
+P -> Q -> R -> S | RM160      | 4.40 hours
+
+(a) (i) Most economical route:
+Comparing the total costs: RM200, RM165, RM195, RM160.
+The minimum cost is RM160, which corresponds to the route P -> Q -> R -> S.
+
+(a) (ii) Route that takes the shortest time:
+Comparing the total times: 3.00 hours, 3.15 hours, 3.35 hours, 4.40 hours.
+The minimum time is 3.00 hours, which corresponds to the route P -> S.
+
+Step 3: Final Answer
+The problem asks for two things: the most economical route and the route that takes the shortest time.
+
+For the most economical route, we compare the total costs of all possible paths, including transit times.
+- P -> S: RM200
+- P -> Q -> S: RM50 (P->Q) + RM115 (Q->S) = RM165 (transit time at Q is free)
+- P -> R -> S: RM130 (P->R) + RM65 (R->S) = RM195 (transit time at R is free)
+- P -> Q -> R -> S: RM50 (P->Q) + RM45 (Q->R) + RM65 (R->S) = RM160 (transit times at Q and R are free)
+
+The most economical route is P -> Q -> R -> S with a total cost of RM160.
+
+For the route that takes the shortest time, we compare the total travel times of all possible paths, including transit times.
+- P -> S: 3 hours
+- P -> Q -> S: 1 hour (P->Q) + 1.4 hours (Q->S) + 0.75 hours (transit at Q) = 3.15 hours
+- P -> R -> S: 1.5 hours (P->R) + 1.1 hours (R->S) + 0.75 hours (transit at R) = 3.35 hours
+- P -> Q -> R -> S: 1 hour (P->Q) + 0.8 hours (Q->R) + 1.1 hours (R->S) + 0.75 hours (transit at Q) + 0.75 hours (transit at R) = 4.4 hours
+
+The route that takes the shortest time is P -> S with a total time of 3 hours.
+
+FINAL ANSWER:
+(a) (i) The most economical route is P -> Q -> R -> S, with a total cost of RM160.
+(a) (ii) The route that takes the shortest time is P -> S, with a total time of 3 hours.",wrong,7.766005039215088,2,4,"Out of 4 marks total (ground-truth rule: full mark 4 if answer matches ground truth), the AI correctly answered both parts of (a): most economical route = P -> Q -> R -> S (RM160) and shortest-time route = P -> S (3.00 h), with correct cost/time calculations. However, it failed to provide part (b) — the recommended route (P -> Q -> S) with the explanation that it saves RM35 and only costs an extra 9 minutes compared to P -> S. Because part (a) is correct but part (b) is missing, award partial credit: 2 out of 4 (SPM-style whole-number marking).",8.834911346435547,,Network in Graph Theory,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 5_Q3.png,"Route A > C > D > E because it is a safer route even
+though Lani had to cycle 300 m more","Step 1: Problem Understanding
+- Restate what needs to be found: The problem asks for the shortest route from Lani's house (A) to school (E) in a directed graph.
+- Identify if there are any non-standard constraints from the problem text: The only constraint is that the ""best route"" means the shortest distance.
+
+Step 2: Solution Execution
+The problem involves finding the shortest path in a directed graph with given edge weights (distances). The units of the edge weights are in meters (m) and kilometers (km). First, I need to convert all distances to a common unit, for example, meters.
+
+Edge weights in meters:
+- A to B: 400 m
+- B to E: 1.1 km = 1100 m
+- A to C: 350 m
+- C to D: 800 m
+- D to E: 650 m
+
+Now, let's identify all possible paths from A to E and calculate their total distances:
+
+Path 1: A -> B -> E
+Distance = (A to B) + (B to E)
+Distance = 400 m + 1100 m
+Distance = 1500 m
+
+Path 2: A -> C -> D -> E
+Distance = (A to C) + (C to D) + (D to E)
+Distance = 350 m + 800 m + 650 m
+Distance = 1800 m
+
+Comparing the distances of the two paths:
+- Path 1 (A -> B -> E): 1500 m
+- Path 2 (A -> C -> D -> E): 1800 m
+
+The shortest distance is 1500 m, which corresponds to Path 1.
+
+- Apply any qualitative constraints before finalizing: The constraint is to find the shortest distance, which has been done.
+- Verify your solution makes sense in context: The calculated distances are reasonable for cycling routes within a housing estate and a municipal road. The shortest path identified is logical given the edge weights.
+
+Step 3: Final Answer
+The problem asks for the best route (shortest distance) and justification.
+
+The possible routes from Lani's house (A) to school (E) are:
+1. A -> B -> E
+2. A -> C -> D -> E
+
+Converting all distances to meters:
+- A to B: 400 m
+- B to E: 1.1 km = 1100 m
+- A to C: 350 m
+- C to D: 800 m
+- D to E: 650 m
+
+Calculating the total distance for each route:
+1. Route A -> B -> E: 400 m + 1100 m = 1500 m
+2. Route A -> C -> D -> E: 350 m + 800 m + 650 m = 1800 m
+
+Comparing the two routes, the shortest distance is 1500 m.
+
+Therefore, the best route Lani can choose is A -> B -> E.
+
+Justification: This route is the shortest with a total distance of 1500 meters, compared to the other route (A -> C -> D -> E) which has a total distance of 1800 meters.
+
+FINAL ANSWER: The best route Lani can choose to cycle to school is A -> B -> E. This is because it is the shortest route, with a total distance of 1500 meters (400 m from A to B + 1100 m from B to E). The alternative route A -> C -> D -> E has a total distance of 1800 meters (350 m from A to C + 800 m from C to D + 650 m from D to E).",wrong,2.1210503578186035,0,3,"The ground truth answer is Route A -> C -> D -> E (safer route despite being 300 m longer). The AI answered A -> B -> E (shortest distance 1500 m). This does not match the ground truth. The provided marking scheme states: if the agent's answer matches the ground truth, give full mark (3). Because the AI's answer does not match, it receives 0 marks.",5.579957723617554,,Network in Graph Theory,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 6_Q1.png,"(a) y < –1,  x >= –5,  y >= 4/5 * x – 1
+(b) x >= 2, y >= 0, y < –x + 6","Step 1: Problem Understanding
+The problem asks us to find the linear inequalities that describe the regions shown in two separate graphs, *after* these regions have been reflected across the y-axis.
+
+The non-standard constraint is that we need to work with the reflected image of the shaded regions, not the original ones.
+
+Step 2: Solution Execution
+
+Part (a): Original Shaded Region and Reflection
+
+1.  **Analyze the original shaded region in (a):**
+    *   Line 1: Vertical line segment from (5, -1) to (5, -5). This is the line $x = 5$. Since the shaded region is to the left of this line and the line is solid, the inequality is $x \le 5$.
+    *   Line 2: Horizontal line segment from (0, -1) to (5, -1). This is the line $y = -1$. Since the shaded region is below this line and the line is dashed, the inequality is $y < -1$.
+    *   Line 3: Line segment connecting (0, 0) and (5, -5). The slope is $(-5 - 0) / (5 - 0) = -1$. The equation of the line is $y - 0 = -1(x - 0)$, which simplifies to $y = -x$. Since the shaded region is above this line and the line is solid, the inequality is $y \ge -x$.
+
+    So, the original inequalities for the shaded region in (a) are:
+    $x \le 5$
+    $y < -1$
+    $y \ge -x$
+
+2.  **Reflect the region across the y-axis:**
+    When a point $(x, y)$ is reflected across the y-axis, its new coordinates are $(-x, y)$. We need to transform the inequalities accordingly.
+    *   For $x \le 5$: The new x-coordinate is $-x$. So, $-x \le 5$, which means $x \ge -5$.
+    *   For $y < -1$: The y-coordinate remains unchanged. So, $y < -1$.
+    *   For $y \ge -x$: The new x-coordinate is $-x$. So, $y \ge -(-x)$, which means $y \ge x$.
+
+    The inequalities for the reflected region in (a) are:
+    $x \ge -5$
+    $y < -1$
+    $y \ge x$
+
+Part (b): Original Shaded Region and Reflection
+
+1.  **Analyze the original shaded region in (b):**
+    *   Line 1: Vertical line segment from (-2, 4) extending downwards. This is the line $x = -2$. Since the shaded region is to the left of this line and the line is solid, the inequality is $x \le -2$.
+    *   Line 2: Dashed line passing through (-6, 0) and (-2, 4). The slope is $(4 - 0) / (-2 - (-6)) = 4 / 4 = 1$. The equation of the line is $y - 0 = 1(x - (-6))$, which simplifies to $y = x + 6$. Since the shaded region is below this line and the line is dashed, the inequality is $y < x + 6$.
+    *   Line 3: Solid line segment from (-2, 4) to the x-axis at approximately (-2, 0). This is part of the line $y = 0$ (the x-axis). Since the shaded region is above this line and the line is solid, the inequality is $y \ge 0$.
+
+    So, the original inequalities for the shaded region in (b) are:
+    $x \le -2$
+    $y < x + 6$
+    $y \ge 0$
+
+2.  **Reflect the region across the y-axis:**
+    Again, a point $(x, y)$ reflects to $(-x, y)$.
+    *   For $x \le -2$: The new x-coordinate is $-x$. So, $-x \le -2$, which means $x \ge 2$.
+    *   For $y < x + 6$: The new x-coordinate is $-x$. So, $y < (-x) + 6$, which means $y < -x + 6$.
+    *   For $y \ge 0$: The y-coordinate remains unchanged. So, $y \ge 0$.
+
+    The inequalities for the reflected region in (b) are:
+    $x \ge 2$
+    $y < -x + 6$
+    $y \ge 0$
+
+Step 3: Final Answer
+The problem asks for the linear inequalities that satisfy the image of the shaded region under a reflection in the y-axis for both (a) and (b).
+
+For (a), the original region is defined by $x \le 5$, $y < -1$, and $y \ge -x$. Reflecting across the y-axis transforms these inequalities to $x \ge -5$, $y < -1$, and $y \ge x$.
+
+For (b), the original region is defined by $x \le -2$, $y < x + 6$, and $y \ge 0$. Reflecting across the y-axis transforms these inequalities to $x \ge 2$, $y < -x + 6$, and $y \ge 0$.
+
+FINAL ANSWER:
+For (a), the inequalities describing the reflected region are:
+$x \ge -5$
+$y < -1$
+$y \ge x$
+
+For (b), the inequalities describing the reflected region are:
+$x \ge 2$
+$y < -x + 6$
+$y \ge 0$",wrong,3.9653987884521484,0,3,"The provided marking schema states full mark (3) only if the agent's answer matches the ground truth exactly. The AI response does not match exactly: for part (a) the ground truth third inequality is y >= (4/5)x - 1, but the AI gave y >= x (incorrect). The AI did match all inequalities in part (b), and matched two of three in part (a), but because the schema requires an exact match for full credit, the overall score is 0.",9.793147087097168,,Linear Inequalities in Two Variables,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 6_Q2.png,"(a) x > – 4, y <= – (1/2)* x and y >= 0
+(b) y <= 2x + 4, y <=  – (4/3) * x + 4 and y >= 0
+(c) y <= x – 1, y >= (2/3) * x – 2, x >= 0 and y <= 0",,wrong,3.026312828063965,0,4,"The AI response is 'nan' and does not provide any of the required inequality systems for parts (a), (b) or (c). Per the provided marking scheme (full mark = 4 only if the answer matches the ground truth), this non-answer receives 0 out of 4. No partial credit is possible because no correct expressions or working are given.",7.120166540145874,,Linear Inequalities in Two Variables,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 6_Q3.png,"(a) y <= 2, x < 3, y >= – x, y >= 0
+(b) y > –2x, y >= 2x – 8, y <= – (1/2) * x","Error: Solver recursion limit reached after Recursion limit of 20 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT. Check agent_outputs/ for message history.",wrong,2.7368783950805664,0,4,"The AI response produced an error message and did not provide any mathematical inequalities or reasoning for parts (a) or (b). The ground-truth marking instruction states: if the agent's answers match the ground truth, award full mark (4). Because there is no answer to compare with the ground truth, no credit can be given. Under the provided marking scheme (SPM-style whole-number marks) the correct award is 0 out of 4.",3.821554660797119,,Linear Inequalities in Two Variables,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 7_Q1.png,"(a) 3/8 ms^–2  (b) 1 200 m
+(c) Encik Merisat drives for a distance of 1.725 km in
+2.5 minutes with an average speed of 41.4 km h–1.","Step 1: Problem Understanding
+The problem asks us to analyze a speed-time graph of Encik Merisat's car journey. We need to:
+(a) Calculate the rate of change of speed (acceleration) for the first 20 seconds.
+(b) Calculate the distance traveled at a uniform speed.
+(c) Describe the journey over a period of 2.5 minutes.
+
+Non-standard constraints: The journey is within the same housing estate to a friend's house, implying a relatively short distance and moderate speeds, which is consistent with the graph. The time for part (c) is given in minutes and needs to be converted to seconds to match the graph's x-axis.
+
+Step 2: Solution Execution
+
+Part (a): Calculate the rate of change of speed for the first 20 seconds.
+The rate of change of speed is acceleration, which is the gradient of the speed-time graph.
+The first segment of the graph is from (0, 0) to (40, 15).
+The gradient (acceleration) is calculated as:
+$a = \frac{\Delta v}{\Delta t} = \frac{v_2 - v_1}{t_2 - t_1}$
+
+Using the points (0, 0) and (40, 15):
+$a = \frac{15 \text{ m s}^{-1} - 0 \text{ m s}^{-1}}{40 \text{ s} - 0 \text{ s}} = \frac{15}{40} \text{ m s}^{-2}$
+
+Now, let's simplify the fraction:
+$\frac{15}{40} = \frac{3 \times 5}{8 \times 5} = \frac{3}{8}$
+
+To express this as a decimal:
+$\frac{3}{8} = 0.375$
+
+So, the rate of change of speed for the first 20 seconds is 0.375 m s⁻². Since the line segment is straight, the acceleration is constant throughout the first 40 seconds, including the first 20 seconds.
+
+Part (b): Calculate the distance traveled at a uniform speed.
+Uniform speed occurs when the speed is constant. This is represented by the horizontal line segment on the speed-time graph.
+This segment is from (40, 15) to (120, 15).
+The uniform speed is 15 m s⁻¹.
+The duration of this uniform speed is:
+$\Delta t = 120 \text{ s} - 40 \text{ s} = 80 \text{ s}$
+
+The distance traveled at a uniform speed is given by:
+Distance = Speed × Time
+Distance = $15 \text{ m s}^{-1} \times 80 \text{ s}$
+
+Let's calculate the distance:
+$15 \times 80 = 1200$
+
+So, the distance traveled at a uniform speed is 1200 metres.
+
+Part (c): Describe Encik Merisat's journey for the period of 2.5 minutes.
+First, convert 2.5 minutes to seconds:
+$2.5 \text{ minutes} \times 60 \text{ seconds/minute} = 150 \text{ seconds}$
+
+Now, let's describe the journey in three phases based on the graph segments up to 150 seconds:
+
+Phase 1: From t = 0 s to t = 40 s
+The car starts from rest (0 m s⁻¹) and accelerates uniformly to a speed of 15 m s⁻¹ over 40 seconds. The rate of change of speed (acceleration) is 0.375 m s⁻².
+
+Phase 2: From t = 40 s to t = 120 s
+The car travels at a constant speed of 15 m s⁻¹ for 80 seconds (from 40 s to 120 s).
+
+Phase 3: From t = 120 s to t = 150 s
+The car decelerates uniformly from a speed of 15 m s⁻¹ to 0 m s⁻¹ over 30 seconds (from 120 s to 150 s). The car comes to a stop at the friend's house.
+
+The total duration of the journey described by the graph is 150 seconds, which is exactly 2.5 minutes. Therefore, the description covers the entire journey to the friend's house.
+
+Step 3: Final Answer
+The answers to each part are as follows:
+
+(a) The rate of change of speed for the first 20 seconds is 0.375 m s⁻².
+(b) The distance traveled at a uniform speed is 1200 metres.
+(c) Encik Merisat's journey for the period of 2.5 minutes (150 seconds) can be described as follows:
+    - He started from rest and accelerated uniformly for the first 40 seconds, reaching a speed of 15 m s⁻¹.
+    - He then maintained a constant speed of 15 m s⁻¹ for the next 80 seconds (from 40 s to 120 s).
+    - Finally, he decelerated uniformly for the last 30 seconds (from 120 s to 150 s), coming to a complete stop at his friend's house.
+
+FINAL ANSWER:
+(a) The rate of change of speed for the first 20 seconds is 0.375 m s⁻².
+(b) The distance travelled at a uniform speed is 1200 metres.
+(c) Encik Merisat's journey for the period of 2.5 minutes (150 seconds) involved:
+    - Uniform acceleration from 0 to 15 m s⁻¹ over the first 40 seconds.
+    - Constant speed of 15 m s⁻¹ for the next 80 seconds (from 40 s to 120 s).
+    - Uniform deceleration from 15 m s⁻¹ to 0 m s⁻¹ over the final 30 seconds (from 120 s to 150 s), bringing the car to a stop.",correct,6.209052562713623,2,5,"Total marks = 5. I allocated marks per part as (a)=1, (b)=1, (c)=3. The AI got (a) correct: acceleration 3/8 m s^-2 (stated as 0.375 m s^-2) — full credit for (a). The AI got (b) correct: 1 200 m — full credit for (b). The AI failed to match the ground truth for (c): the ground truth gives a numerical result (distance 1.725 km and average speed 41.4 km h^-1). The AI only described the motion phases up to 150 s and did not compute the required distance and average speed, so no credit for (c). Therefore score = 1+1+0 = 2 out of 5.",14.51132321357727,,Graphs of Motion,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 7_Q2.png,(a) 100               (b) 1.6               (c) 57.14,"Step 1: Problem Understanding
+The problem asks us to analyze a distance-time graph for a car and a tour bus. We need to calculate:
+(a) The rate of change in distance (speed) of the car for the first 24 minutes.
+(b) The value of 't', which represents the time when the car reaches 70 km.
+(c) The rate of change in distance (speed) of the car for the last 80 km.
+
+Non-standard constraints: The problem provides visual data in the form of a graph description and specific points, which we need to interpret mathematically.
+
+Step 2: Solution Execution
+
+Part (a): Rate of change in distance of the car for the first 24 minutes.
+The rate of change in distance is the speed. For the car, the motion is represented by the green line from O to R. The points on this line are O(0, 0) and R(3, 150).
+The first 24 minutes need to be converted to hours: 24 minutes / 60 minutes/hour = 0.4 hours.
+We need to find the speed of the car between time 0 and 0.4 hours. Since the line is straight, the rate of change is constant. We can use the coordinates of O(0, 0) and P(0.7, 70) to calculate the speed as it's within the first 0.4 hours. However, the point P is given as (0.7, 70) for the car, which is the same time it reaches 70km. Let's use the points O(0,0) and Q(t, 70) to calculate the speed of the car. Wait, Q is defined as (t, 70) for the car and P is (0.7, 70) for the tour bus.
+
+Let's re-examine the points for the car: O(0,0) and R(3, 150). The speed of the car is the slope of the line OR.
+Speed of car = (Change in Distance) / (Change in Time) = (150 km - 0 km) / (3 hours - 0 hours) = 150 km / 3 hours = 50 km/h.
+Since the car's motion is a straight line from (0,0) to (3,150), its speed is constant throughout the journey. Therefore, the rate of change in distance for the first 24 minutes (0.4 hours) is 50 km/h.
+
+Part (b): The value of t.
+The point Q is on the car's path and has coordinates (t, 70). This means at time 't' hours, the car has traveled 70 km.
+We can use the equation of the line for the car, which passes through (0,0) and (3,150).
+The slope (speed) of the car is 50 km/h (as calculated above).
+The equation of the line is distance = speed × time.
+So, distance = 50 * time.
+We are given that at time 't', the distance is 70 km.
+70 = 50 * t
+t = 70 / 50
+t = 7/5
+t = 1.4 hours.
+
+Let's verify this using the point P for the tour bus which is (0.7, 70). This means at 0.7 hours, the tour bus reached 70km. The car reaches 70km at time 't'. The point Q is labeled on the car's path. The coordinate of Q is given as (t, 70).
+
+Let's re-evaluate the problem. The question states ""Intersection Points: - P: (0.7, 70) - Q: (t, 70)"". This implies P is the intersection of the tour bus and the car at (0.7, 70). And Q is also a point on the car's path at (t, 70). This is contradictory if P and Q are different points. However, looking at the graph description, P is on the tour bus line (A to B) and Q is on the car line (O to R). They are labeled as intersection points. This means P and Q are the same point.
+So, P = Q = (0.7, 70).
+If P is on the tour bus line and Q is on the car line, and P and Q are the same point, then this is the point where the car and the tour bus meet.
+The problem states P is (0.7, 70) and Q is (t, 70). If P and Q are the same point, then t = 0.7 hours.
+
+Let's confirm if P(0.7, 70) lies on the tour bus line from A(0, 150) to B(3, 0).
+Slope of AB = (0 - 150) / (3 - 0) = -150 / 3 = -50 km/h.
+Equation of line AB: distance - 150 = -50 * (time - 0) => distance = -50 * time + 150.
+At time = 0.7 hours, distance = -50 * 0.7 + 150 = -35 + 150 = 115 km.
+This means P(0.7, 70) is NOT on the tour bus line. There is a contradiction in the problem statement's ""Intersection Points"" section.
+
+Let's assume P(0.7, 70) is a point on the *car's* path, and Q(t, 70) is also a point on the *car's* path.
+If P(0.7, 70) is on the car's path, then its speed is 70 km / 0.7 hours = 100 km/h.
+However, the car's path is from O(0,0) to R(3,150). The speed of the car is (150-0)/(3-0) = 50 km/h.
+This means P(0.7, 70) is not on the car's path as described by O(0,0) and R(3,150).
+
+Let's assume the ""Intersection Points"" section is providing points that lie on the respective lines, and Q is specifically a point on the car's line.
+Car's line passes through O(0,0) and R(3,150). Its equation is distance = 50 * time.
+Point Q is given as (t, 70) and lies on the car's path.
+So, 70 = 50 * t.
+t = 70 / 50 = 1.4 hours.
+This value of t is consistent with the car's overall motion.
+
+Now, let's consider P(0.7, 70) as a point on the tour bus line.
+Tour bus line passes through A(0, 150) and B(3, 0). Its equation is distance = -50 * time + 150.
+At time = 0.7 hours, distance = -50 * 0.7 + 150 = -35 + 150 = 115 km.
+This contradicts P being (0.7, 70).
+
+There seems to be a significant inconsistency in the provided ""VISUAL DATA"", specifically with the points P and Q and their stated coordinates and relationship to the lines.
+
+Let's proceed by assuming the fundamental description of the car's motion (O to R) and the tour bus's motion (A to B) are correct, and re-interpret the points P and Q.
+
+Re-interpretation:
+- Car: Line from O(0,0) to R(3,150). Speed = 50 km/h. Equation: d = 50t.
+- Tour Bus: Line from A(0,150) to B(3,0). Speed = -50 km/h. Equation: d = -50t + 150.
+
+Now consider the given points:
+- P: (0.7, 70) - This point is stated to be on the tour bus line. Let's check if it is.
+  For tour bus: d = -50 * 0.7 + 150 = -35 + 150 = 115 km. So, P(0.7, 70) is NOT on the tour bus line.
+- Q: (t, 70) - This point is stated to be on the car line.
+  For car: d = 50 * t. If d = 70, then 70 = 50 * t, which gives t = 1.4 hours. So, Q is (1.4, 70).
+
+Given the inconsistencies, I will proceed with the most mathematically consistent interpretation based on the defined lines for the car and tour bus.
+
+(a) Rate of change in distance of the car for the first 24 minutes.
+The car's path is a straight line from (0,0) to (3,150). The rate of change (speed) is constant.
+Speed = (150 km - 0 km) / (3 hours - 0 hours) = 150 / 3 = 50 km/h.
+This speed applies to the entire journey, including the first 24 minutes (0.4 hours).
+
+(b) The value of t.
+The point Q is on the car's path and has coordinates (t, 70). The car's path is described by the equation d = 50t.
+Substituting the coordinates of Q: 70 = 50 * t.
+t = 70 / 50 = 1.4 hours.
+
+(c) The rate of change in distance, in km h⁻¹, of the car for the last 80 km.
+The car travels a total of 150 km. The last 80 km means the distance traveled from (150 - 80) km = 70 km to 150 km.
+We already know the car's speed is constant at 50 km/h. The rate of change in distance (speed) is the same for all parts of its journey.
+Therefore, the rate of change in distance for the last 80 km is 50 km/h.
+
+Let's double-check if the problem implies different segments of motion for the car. The line O to R is a single straight line, implying constant speed. The phrasing ""rate of change in distance ... for the last 80 km"" might be misleading if the speed is constant.
+
+Let's confirm the time taken for the last 80 km.
+The car reaches 70 km at t = 1.4 hours.
+The car reaches 150 km at t = 3 hours.
+The time taken to cover the distance from 70 km to 150 km (which is 80 km) is 3 hours - 1.4 hours = 1.6 hours.
+The speed for this segment is 80 km / 1.6 hours = 50 km/h.
+This confirms the speed is constant.
+
+Summary of findings:
+(a) Speed of car for the first 24 minutes = 50 km/h.
+(b) Value of t = 1.4 hours.
+(c) Speed of car for the last 80 km = 50 km/h.
+
+The inconsistencies with points P and Q in the ""Intersection Points"" section of the visual data are noted, but the solution relies on the fundamental definition of the car's motion from O(0,0) to R(3,150).
+
+Step 3: Final Answer
+(a) The rate of change in distance of the car for the first 24 minutes is its speed. The car's path is a straight line from (0 km, 0 h) to (150 km, 3 h). The speed is calculated as the slope of this line:
+Speed = (150 km - 0 km) / (3 h - 0 h) = 150 km / 3 h = 50 km/h.
+
+(b) The point Q (t, 70) lies on the car's path. The equation for the car's motion is distance = 50 * time.
+Substituting the coordinates of Q:
+70 = 50 * t
+t = 70 / 50
+t = 1.4 hours.
+
+(c) The rate of change in distance of the car for the last 80 km is its speed during that segment. Since the car's distance-time graph is a single straight line from O to R, its speed is constant throughout the journey.
+Therefore, the rate of change in distance for the last 80 km is also 50 km/h.
+
+FINAL ANSWER:
+(a) The rate of change in distance of the car for the first 24 minutes is 50 km h⁻¹.
+(b) The value of t is 1.4 hours.
+(c) The rate of change in distance of the car for the last 80 km is 50 km h⁻¹.",wrong,3.144941568374634,0,5,"Total marks available = 5 with full marks awarded only if the answers match the ground truth. The AI's responses do not match any of the ground-truth values, so no marks are awarded. Comparison to ground truth: (a) ground truth = 100, AI = 50 (incorrect); (b) ground truth = 1.6, AI = 1.4 (incorrect); (c) ground truth = 57.14, AI = 50 (incorrect). The AI also contains internal contradictions in interpreting points P and Q and makes incorrect use of the given graph data. Therefore, following the provided marking instruction (full marks only if matching ground truth) and SPM-style whole-number marking, the score is 0/5.",10.249701738357544,,Graphs of Motion,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 7_Q3.png,(a) 8 seconds (b) 17,"Step 1: Problem Understanding
+The problem asks us to analyze a speed-time graph for a car and a motorcycle.
+(a) We need to find the duration for which the motorcycle travels at a uniform speed.
+(b) We need to find the value of 't' given that the distances traveled by the car and the motorcycle are equal over a period of 't' seconds.
+
+There are no non-standard constraints mentioned beyond the given information.
+
+Step 2: Solution Execution
+
+Part (a): Duration of uniform speed for the motorcycle.
+Uniform speed is represented by a horizontal line segment on a speed-time graph.
+Looking at the motorcycle's speed-time graph:
+- Segment O to P: Speed changes from 0 to 4 m/s over 2 seconds (acceleration).
+- Segment P to Q: Speed is constant at 4 m/s from time 2s to 10s. This is a period of uniform speed.
+- Segment Q to R: Speed changes from 4 m/s to 10 m/s over (t-10) seconds (acceleration).
+
+The duration of uniform speed for the motorcycle is the time interval of segment PQ.
+Duration = Time at Q - Time at P = 10 seconds - 2 seconds = 8 seconds.
+
+Part (b): Value of t when distances are equal.
+The distance traveled is the area under the speed-time graph.
+
+Distance traveled by the motorcycle:
+This is the area under the green line. We can divide this into three parts corresponding to the segments OP, PQ, and QR.
+- Area under OP: This is a triangle with base 2 and height 4. Area = (1/2) * base * height = (1/2) * 2 * 4 = 4.
+- Area under PQ: This is a rectangle with base (10 - 2) = 8 and height 4. Area = base * height = 8 * 4 = 32.
+- Area under QR: This is a trapezoid with parallel sides of length 4 (at t=10) and 10 (at t=t), and height (t - 10). Area = (1/2) * (sum of parallel sides) * height = (1/2) * (4 + 10) * (t - 10) = (1/2) * 14 * (t - 10) = 7 * (t - 10) = 7t - 70.
+
+Total distance traveled by the motorcycle = Area(OP) + Area(PQ) + Area(QR)
+Distance_motorcycle = 4 + 32 + (7t - 70) = 36 + 7t - 70 = 7t - 34.
+
+Distance traveled by the car:
+This is the area under the pink line, which is a straight line from (0, 0) to (t, 10). This forms a triangle.
+The base of the triangle is 't' and the height is 10.
+Distance_car = (1/2) * base * height = (1/2) * t * 10 = 5t.
+
+According to the constraint, the distances traveled are the same:
+Distance_motorcycle = Distance_car
+7t - 34 = 5t
+
+Now, we solve for t:
+7t - 5t = 34
+2t = 34
+t = 34 / 2
+t = 17
+
+Let's verify the distances with t=17:
+Distance_car = 5 * 17 = 85.
+Distance_motorcycle = 7 * 17 - 34 = 119 - 34 = 85.
+The distances are indeed the same.
+
+Also, we need to ensure that the point R (t, 10) is consistent with the motorcycle's motion.
+For the motorcycle, the segment QR goes from (10, 4) to (t, 10).
+The slope of this segment is (10 - 4) / (t - 10) = 6 / (t - 10).
+If t = 17, the slope is 6 / (17 - 10) = 6 / 7.
+The car's line OR goes from (0, 0) to (t, 10).
+The slope of this segment is (10 - 0) / (t - 0) = 10 / t.
+If t = 17, the slope is 10 / 17.
+The problem statement implies that the point R is common to both lines, which means the lines OR (car) and QR (motorcycle) should meet at R. The setup of the problem provides R as (t, 10) for both.
+
+The question implies that the car's journey ends at time t and the motorcycle's journey also has a point at (t, 10). The distances are compared for the period of t seconds.
+
+Step 3: Final Answer
+(a) The motorcycle travels at a uniform speed during the time interval from t=2 seconds to t=10 seconds. The duration is 10 - 2 = 8 seconds.
+(b) The distance traveled by the motorcycle is the area under its speed-time graph, which is 4 (triangle OP) + 32 (rectangle PQ) + 7(t-10) (trapezoid QR) = 36 + 7t - 70 = 7t - 34.
+The distance traveled by the car is the area under its speed-time graph, which is a triangle with base t and height 10. Area = (1/2) * t * 10 = 5t.
+Given that the distances are equal:
+7t - 34 = 5t
+2t = 34
+t = 17 seconds.
+
+FINAL ANSWER: (a) The motorcycle travels at a uniform speed for 8 seconds. (b) The value of t is 17 seconds.",correct,3.5161795616149902,5,5,"The AI's response gives the correct final answers (a) 8 s and (b) 17 s, which match the ground truth. The solution shows correct reasoning: identification of the uniform-speed interval (2 to 10 s → 8 s), correct decomposition of areas under the motorcycle's speed-time graph (triangle + rectangle + trapezoid) giving distance 7t - 34, correct area for the car (5t), and correct algebra solving 7t - 34 = 5t to obtain t = 17. Calculations and a verification check are provided and are correct. Per the provided marking instruction (full mark if matching ground truth), the full mark of 5 is awarded.",6.465787410736084,,Graphs of Motion,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 8_Q1.png,"(a) 9, 2, 3.210, 1.792
+(b) interquartile range","## Step 1: Problem Understanding
+
+The problem asks us to calculate the range, interquartile range, variance, and standard deviation for a given distribution of pupil revision times. We also need to determine the most appropriate measure of dispersion.
+
+## Step 2: Solution Execution
+
+The provided data is:
+Time (hours): [1, 2, 3, 4, 5, 6, 7, 10]
+Number of pupils: [2, 5, 6, 9, 6, 2, 1, 1]
+Total number of pupils: 32
+
+**Part (a): Calculate the range, interquartile range, variance, and standard deviation.**
+
+**Range:**
+The range is the difference between the maximum and minimum values.
+Maximum time = 10 hours
+Minimum time = 1 hour
+Range = 10 - 1 = 9 hours
+
+**Interquartile Range (IQR):**
+First, we need to find the positions of Q1 and Q3.
+Total number of pupils (N) = 32.
+Q1 position = (N + 1) / 4 = (32 + 1) / 4 = 33 / 4 = 8.25th value
+Q3 position = 3 * (N + 1) / 4 = 3 * (32 + 1) / 4 = 99 / 4 = 24.75th value
+
+To find Q1 and Q3, we need the cumulative frequencies:
+Time | Frequency | Cumulative Frequency
+-----|-----------|---------------------
+1    | 2         | 2
+2    | 5         | 7
+3    | 6         | 13
+4    | 9         | 22
+5    | 6         | 28
+6    | 2         | 30
+7    | 1         | 31
+10   | 1         | 32
+
+Q1: The 8.25th value falls into the group with cumulative frequency 13, which corresponds to 3 hours. So, Q1 = 3 hours.
+Q3: The 24.75th value falls into the group with cumulative frequency 28, which corresponds to 5 hours. So, Q3 = 5 hours.
+
+Interquartile Range (IQR) = Q3 - Q1 = 5 - 3 = 2 hours.
+
+**Variance and Standard Deviation:**
+We will use the formulas for grouped data as we have frequencies for each time value.
+We need Σfx and Σfx².
+From the previous tool calls:
+Σfx = 125
+Σf = 32
+Σfx² = 591
+
+Variance (σ²) = (Σfx² / Σf) - (Σfx / Σf)²
+Variance = (591 / 32) - (125 / 32)²
+Variance = 18.46875 - (3.90625)²
+Variance = 18.46875 - 15.2587890625
+Variance = 3.2099609375
+
+The tool `calculate_grouped_variance` outputted 3.21, which is consistent.
+
+Standard Deviation (σ) = √Variance
+Standard Deviation = √3.2099609375
+Standard Deviation ≈ 1.7916365
+
+The tool `calculate_grouped_standard_deviation` outputted 1.79, which is consistent.
+
+**Part (b): State the most appropriate measure of dispersion.**
+
+The distribution is slightly skewed. The median class is [3.5, 4.5) and the mean is 125/32 = 3.90625. Since the mean is slightly higher than the median class, the distribution is slightly positively skewed.
+
+For skewed distributions, the interquartile range (IQR) is generally a more robust measure of dispersion than the range or standard deviation, as it is less affected by outliers.
+
+## Step 3: Final Answer
+
+FINAL ANSWER:
+(a)
+Range: 9 hours
+Interquartile Range (IQR): 2 hours
+Variance: 3.21 hours²
+Standard Deviation: 1.79 hours
+
+(b)
+The most appropriate measure of dispersion to show the time spent on revision by the pupils is the Interquartile Range (IQR) because the distribution is slightly skewed.",correct,2.3551268577575684,6,6,"Full mark (6) awarded. The AI's answers match the ground truth: Range = 9, IQR = 2, Variance ≈ 3.21 (computed 3.20996...), Standard deviation ≈ 1.792 (computed 1.7916365, rounded to 1.79). The method and intermediate calculations (cumulative frequencies, Σfx = 125, Σfx² = 591, N = 32, variance formula) are correct and the conclusion in part (b) that the interquartile range is the most appropriate measure of dispersion for a slightly skewed distribution is also correct. The minor rounding differences are acceptable under standard marking.",7.76005744934082,,Measures of Dispersion ,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 8_Q2.png,"(a) 1.2, 0.4
+(b) 5, 3","Step 1: Problem Understanding
+The problem asks to calculate the range and the interquartile range (IQR) for two different sets of grouped data.
+There are no non-standard constraints.
+
+Step 2: Solution Execution
+
+**Part (a): Diameter of limes**
+
+First, I need to calculate the range. The range is the difference between the maximum and minimum values. In this grouped data, the minimum diameter is 6.0 cm and the maximum diameter is 7.2 cm.
+
+Range = Maximum value - Minimum value
+Range = 7.2 cm - 6.0 cm = 1.2 cm
+
+Next, I need to calculate the interquartile range (IQR). The IQR is the difference between the third quartile (Q3) and the first quartile (Q1). To find the quartiles for grouped data, I first need to determine the class boundaries and cumulative frequencies.
+
+Class boundaries are typically the midpoints between the upper limit of one class and the lower limit of the next. Assuming the given diameters are the midpoints of the classes:
+Midpoints (Diameter): [6.0, 6.2, 6.4, 6.6, 6.8, 7.0, 7.2]
+Frequencies (Number of limes): [6, 9, 12, 18, 20, 10, 5]
+
+Total number of limes (N) = 6 + 9 + 12 + 18 + 20 + 10 + 5 = 80
+
+Cumulative Frequencies:
+6
+6 + 9 = 15
+15 + 12 = 27
+27 + 18 = 45
+45 + 20 = 65
+65 + 10 = 75
+75 + 5 = 80
+
+Now, let's determine the class boundaries. Since the data is given as discrete values (e.g., 6.0, 6.2), we can assume the intervals are centered around these values. A common approach is to use boundaries halfway between the given values.
+For example, between 6.0 and 6.2, the boundary would be 6.1. Between 6.2 and 6.4, the boundary would be 6.3, and so on.
+The lower boundary of the first class would be 6.0 - (6.2-6.0)/2 = 5.9.
+The upper boundary of the last class would be 7.2 + (7.2-7.0)/2 = 7.3.
+
+Class Boundaries: [5.9, 6.1], [6.1, 6.3], [6.3, 6.5], [6.5, 6.7], [6.7, 6.9], [6.9, 7.1], [7.1, 7.3]
+
+To find Q1, we look for the (N/4)th value. N/4 = 80/4 = 20.
+The 20th value falls into the class with cumulative frequency 27, which is the class with midpoint 6.4.
+Q1 = L + ((N/4 - CF_prev) / f) * w
+where L is the lower boundary of the median class, N is the total frequency, CF_prev is the cumulative frequency of the class before the median class, f is the frequency of the median class, and w is the class width.
+
+For Q1:
+The 20th value falls in the class [6.3, 6.5].
+L = 6.3
+N = 80
+N/4 = 20
+CF_prev = 15 (cumulative frequency before the class containing Q1)
+f = 12 (frequency of the class containing Q1)
+w = 0.2 (class width, e.g., 6.5 - 6.3)
+
+Q1 = 6.3 + ((20 - 15) / 12) * 0.2
+Q1 = 6.3 + (5 / 12) * 0.2
+Q1 = 6.3 + 0.4167 * 0.2
+Q1 = 6.3 + 0.0833
+Q1 = 6.3833
+
+To find Q3, we look for the (3N/4)th value. 3N/4 = 3 * 80 / 4 = 60.
+The 60th value falls into the class with cumulative frequency 65, which is the class with midpoint 6.8.
+
+For Q3:
+The 60th value falls in the class [6.7, 6.9].
+L = 6.7
+N = 80
+3N/4 = 60
+CF_prev = 45 (cumulative frequency before the class containing Q3)
+f = 20 (frequency of the class containing Q3)
+w = 0.2 (class width)
+
+Q3 = 6.7 + ((60 - 45) / 20) * 0.2
+Q3 = 6.7 + (15 / 20) * 0.2
+Q3 = 6.7 + 0.75 * 0.2
+Q3 = 6.7 + 0.15
+Q3 = 6.85
+
+IQR = Q3 - Q1
+IQR = 6.85 - 6.3833
+IQR = 0.4667
+
+Let's use the tool to verify the IQR calculation. I will use `calculate_median_class` to find Q1 and Q3. The tool requires class boundaries.
+Class boundaries: [[5.9, 6.1], [6.1, 6.3], [6.3, 6.5], [6.5, 6.7], [6.7, 6.9], [6.9, 7.1], [7.1, 7.3]]
+Frequencies: [6, 9, 12, 18, 20, 10, 5]
+
+To find Q1, we need the 20th value (N/4).
+To find Q3, we need the 60th value (3N/4).
+
+Let's use the `calculate_median_class` to find the class for Q1 and Q3.
+For Q1 (20th value):
+The 20th value falls in the class [6.3, 6.5] because cumulative frequencies are 6, 15, 27.
+L = 6.3, N = 80, N/4 = 20, CF_prev = 15, f = 12, w = 0.2
+Q1 = 6.3 + ((20 - 15) / 12) * 0.2 = 6.3 + (5/12) * 0.2 = 6.3 + 0.0833 = 6.3833
+
+For Q3 (60th value):
+The 60th value falls in the class [6.7, 6.9] because cumulative frequencies are 45, 65.
+L = 6.7, N = 80, 3N/4 = 60, CF_prev = 45, f = 20, w = 0.2
+Q3 = 6.7 + ((60 - 45) / 20) * 0.2 = 6.7 + (15/20) * 0.2 = 6.7 + 0.15 = 6.85
+
+IQR = Q3 - Q1 = 6.85 - 6.3833 = 0.4667
+
+**Part (b): Age of participants**
+
+First, calculate the range.
+Minimum age = 13 years
+Maximum age = 18 years
+
+Range = Maximum value - Minimum value
+Range = 18 - 13 = 5 years
+
+Next, calculate the IQR.
+Midpoints (Age): [13, 14, 15, 16, 17, 18]
+Frequencies (Number of participants): [12, 18, 21, 20, 21, 8]
+
+Total number of participants (N) = 12 + 18 + 21 + 20 + 21 + 8 = 100
+
+Cumulative Frequencies:
+12
+12 + 18 = 30
+30 + 21 = 51
+51 + 20 = 71
+71 + 21 = 92
+92 + 8 = 100
+
+Class Boundaries:
+Lower boundary of first class = 13 - (14-13)/2 = 12.5
+Upper boundary of last class = 18 + (18-17)/2 = 18.5
+Class Boundaries: [12.5, 13.5], [13.5, 14.5], [14.5, 15.5], [15.5, 16.5], [16.5, 17.5], [17.5, 18.5]
+Class width (w) = 1
+
+To find Q1, we look for the (N/4)th value. N/4 = 100/4 = 25.
+The 25th value falls into the class with cumulative frequency 30, which is the class with midpoint 14.
+
+For Q1:
+The 25th value falls in the class [13.5, 14.5].
+L = 13.5
+N = 100
+N/4 = 25
+CF_prev = 12 (cumulative frequency before the class containing Q1)
+f = 18 (frequency of the class containing Q1)
+w = 1 (class width)
+
+Q1 = 13.5 + ((25 - 12) / 18) * 1
+Q1 = 13.5 + (13 / 18) * 1
+Q1 = 13.5 + 0.7222
+Q1 = 14.2222
+
+To find Q3, we look for the (3N/4)th value. 3N/4 = 3 * 100 / 4 = 75.
+The 75th value falls into the class with cumulative frequency 92, which is the class with midpoint 17.
+
+For Q3:
+The 75th value falls in the class [16.5, 17.5].
+L = 16.5
+N = 100
+3N/4 = 75
+CF_prev = 71 (cumulative frequency before the class containing Q3)
+f = 21 (frequency of the class containing Q3)
+w = 1 (class width)
+
+Q3 = 16.5 + ((75 - 71) / 21) * 1
+Q3 = 16.5 + (4 / 21) * 1
+Q3 = 16.5 + 0.1905
+Q3 = 16.6905
+
+IQR = Q3 - Q1
+IQR = 16.6905 - 14.2222
+IQR = 2.4683
+
+Let's use the tool to verify.
+For part (b):
+Frequencies: [12, 18, 21, 20, 21, 8]
+Class Boundaries: [[12.5, 13.5], [13.5, 14.5], [14.5, 15.5], [15.5, 16.5], [16.5, 17.5], [17.5, 18.5]]
+
+For Q1 (25th value):
+The 25th value falls in the class [13.5, 14.5].
+L = 13.5, N = 100, N/4 = 25, CF_prev = 12, f = 18, w = 1
+Q1 = 13.5 + ((25 - 12) / 18) * 1 = 13.5 + 13/18 = 13.5 + 0.7222 = 14.2222
+
+For Q3 (75th value):
+The 75th value falls in the class [16.5, 17.5].
+L = 16.5, N = 100, 3N/4 = 75, CF_prev = 71, f = 21, w = 1
+Q3 = 16.5 + ((75 - 71) / 21) * 1 = 16.5 + 4/21 = 16.5 + 0.1905 = 16.6905
+
+IQR = Q3 - Q1 = 16.6905 - 14.2222 = 2.4683
+
+Step 3: Final Answer
+The calculations for range and IQR for both datasets have been performed.
+
+For part (a):
+Range = 1.2 cm
+IQR = 0.4667 cm
+
+For part (b):
+Range = 5 years
+IQR = 2.4683 years
+
+FINAL ANSWER:
+(a) For the limes:
+Range = 1.2 cm
+Interquartile Range (IQR) = 0.4667 cm
+
+(b) For the participants:
+Range = 5 years
+Interquartile Range (IQR) = 2.4683 years",wrong,4.480918884277344,2,4,"Total marks = 4. The provided marking instruction gives full marks (4) only if the AI's answers match the ground truth exactly. Using SPM-style marking with equal weighting for the four required items (part (a) range, part (a) IQR, part (b) range, part (b) IQR), I award 1 mark for each correct item. Breakdown: (a) Range = 1.2 (correct) → 1 mark. (a) IQR = 0.4667 (AI) vs ground truth 0.4 → incorrect → 0 marks. (b) Range = 5 (correct) → 1 mark. (b) IQR = 2.4683 (AI) vs ground truth 3 → incorrect → 0 marks. Sum = 1+0+1+0 = 2/4.",10.498707294464111,,Measures of Dispersion ,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 8_Q3.png,"(a) Team A Team B
+mean = 61 mean = 61
+range = 22 range = 30
+variance = 78.8 variance = 155.6
+standard deviation standard deviation
+= 8.877 = 12.47
+(b) No because of the existence of outlier or extreme
+values","Step 1: Problem Understanding
+The problem asks us to perform several statistical calculations for two teams, A and B, based on the masses of their players. Specifically, we need to calculate the mean, range, variance, and standard deviation for each team. We also need to assess the appropriateness of the range as a measure of dispersion and determine which team has a greater dispersion from the mean.
+
+There are no non-standard constraints mentioned in the problem.
+
+Step 2: Solution Execution
+
+**Part (a): Calculate the mean, range, variance and standard deviation for the masses of the players in both teams.**
+
+**Team A:**
+Masses: 48, 53, 65, 69, 70
+
+*   **Mean:**
+    Sum of masses = 48 + 53 + 65 + 69 + 70 = 305
+    Number of players = 5
+    Mean (A) = 305 / 5 = 61 kg
+
+*   **Range:**
+    Range (A) = Maximum mass - Minimum mass = 70 - 48 = 22 kg
+
+*   **Variance:**
+    First, calculate the squared differences from the mean:
+    (48 - 61)² = (-13)² = 169
+    (53 - 61)² = (-8)² = 64
+    (65 - 61)² = (4)² = 16
+    (69 - 61)² = (8)² = 64
+    (70 - 61)² = (9)² = 81
+    Sum of squared differences = 169 + 64 + 16 + 64 + 81 = 394
+    Variance (A) = Sum of squared differences / Number of players = 394 / 5 = 78.8 kg²
+
+*   **Standard Deviation:**
+    Standard Deviation (A) = √Variance (A) = √78.8 ≈ 8.877 kg
+
+**Team B:**
+Masses: 45, 47, 68, 70, 75
+
+*   **Mean:**
+    Sum of masses = 45 + 47 + 68 + 70 + 75 = 305
+    Number of players = 5
+    Mean (B) = 305 / 5 = 61 kg
+
+*   **Range:**
+    Range (B) = Maximum mass - Minimum mass = 75 - 45 = 30 kg
+
+*   **Variance:**
+    First, calculate the squared differences from the mean:
+    (45 - 61)² = (-16)² = 256
+    (47 - 61)² = (-14)² = 196
+    (68 - 61)² = (7)² = 49
+    (70 - 61)² = (9)² = 81
+    (75 - 61)² = (14)² = 196
+    Sum of squared differences = 256 + 196 + 49 + 81 + 196 = 778
+    Variance (B) = Sum of squared differences / Number of players = 778 / 5 = 155.6 kg²
+
+*   **Standard Deviation:**
+    Standard Deviation (B) = √Variance (B) = √155.6 ≈ 12.474 kg
+
+**Part (b): Is the range appropriate to be used as a measure of dispersion to represent the data above? Justify your answer.**
+
+The range is generally not considered the most appropriate measure of dispersion for a dataset, especially when there are extreme values. In this case, the range for Team A is 22 kg and for Team B is 30 kg. While the range gives a quick idea of the spread, it only considers the two extreme values (minimum and maximum) and ignores all other data points. A single outlier can significantly affect the range, making it a poor representation of the overall dispersion of the data. For instance, if one player's mass was drastically different in either team, the range would change significantly, even if the rest of the data remained the same. Therefore, measures like variance or standard deviation, which consider all data points, are usually preferred.
+
+**Part (c): Determine the mass of which team has a greater dispersion from the mean.**
+
+To determine which team has a greater dispersion from the mean, we should compare their standard deviations (or variances, as the comparison will be the same).
+
+*   Standard Deviation (A) ≈ 8.877 kg
+*   Standard Deviation (B) ≈ 12.474 kg
+
+Since the standard deviation of Team B (≈ 12.474 kg) is greater than the standard deviation of Team A (≈ 8.877 kg), Team B has a greater dispersion from the mean.
+
+Alternatively, comparing variances:
+*   Variance (A) = 78.8 kg²
+*   Variance (B) = 155.6 kg²
+
+Variance (B) is greater than Variance (A), indicating Team B has greater dispersion.
+
+Step 3: Final Answer
+The final answer is:
+
+**(a) Team A:**
+*   Mean: 61 kg
+*   Range: 22 kg
+*   Variance: 78.8 kg²
+*   Standard Deviation: ≈ 8.877 kg
+
+**Team B:**
+*   Mean: 61 kg
+*   Range: 30 kg
+*   Variance: 155.6 kg²
+*   Standard Deviation: ≈ 12.474 kg
+
+**(b)** The range is not appropriate to be used as the sole measure of dispersion because it only considers the extreme values (minimum and maximum) and ignores the distribution of the rest of the data. A single outlier can heavily influence the range.
+
+**(c)** Team B has a greater dispersion from the mean, as indicated by its larger standard deviation (≈ 12.474 kg) compared to Team A (≈ 8.877 kg).",correct,3.456451654434204,7,7,"Full marks (7/7). The AI's response exactly matches the ground truth: means for both teams = 61, ranges 22 and 30, variances 78.8 and 155.6, and standard deviations ≈8.877 and ≈12.474 (rounded consistently with the ground truth). The explanation in part (b) correctly states that range is not an appropriate sole measure of dispersion due to sensitivity to outliers, and part (c) correctly identifies Team B as having greater dispersion. All calculations and justifications align with the provided marking scheme, so full credit is awarded.",9.131641626358032,,Measures of Dispersion ,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 9_Q1.png,"{(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)}, 1/2","Step 1: Problem Understanding
+- The problem asks for the probability of drawing a letter ""S"" from Box K OR a multiple of 3 from Box L.
+- We need to list all possible outcomes when choosing one card from each box.
+- There are no non-standard constraints.
+
+Step 2: Solution Execution
+
+First, let's list all possible outcomes.
+Box K has letters: S, E, R, I (4 possibilities)
+Box L has numbers: 4, 5, 6 (3 possibilities)
+
+The total number of possible outcomes when choosing one card from each box is the product of the number of possibilities for each box: 4 * 3 = 12.
+
+Let's list all possible pairs of outcomes (Letter from Box K, Number from Box L):
+(S, 4), (S, 5), (S, 6)
+(E, 4), (E, 5), (E, 6)
+(R, 4), (R, 5), (R, 6)
+(I, 4), (I, 5), (I, 6)
+
+Now, let's identify the favorable outcomes for the event ""getting a letter 'S' from box K OR a multiple of 3 from box L"".
+
+Event A: Getting a letter ""S"" from Box K.
+The outcomes where 'S' is chosen from Box K are: (S, 4), (S, 5), (S, 6).
+There are 3 outcomes for Event A.
+
+Event B: Getting a multiple of 3 from Box L.
+The multiples of 3 in Box L are {6}.
+The outcomes where a multiple of 3 is chosen from Box L are: (S, 6), (E, 6), (R, 6), (I, 6).
+There are 4 outcomes for Event B.
+
+We are looking for the probability of A OR B, which is P(A ∪ B).
+The formula for P(A ∪ B) is P(A) + P(B) - P(A ∩ B).
+
+Let's find the outcomes that are in both Event A and Event B (A ∩ B). This means getting 'S' from Box K AND a multiple of 3 from Box L.
+The only outcome that satisfies both conditions is (S, 6).
+So, there is 1 outcome for (A ∩ B).
+
+Now we can calculate the probabilities:
+Total possible outcomes = 12
+
+P(A) = (Number of outcomes in A) / (Total outcomes) = 3 / 12
+P(B) = (Number of outcomes in B) / (Total outcomes) = 4 / 12
+P(A ∩ B) = (Number of outcomes in A ∩ B) / (Total outcomes) = 1 / 12
+
+Now, apply the formula for P(A ∪ B):
+P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+P(A ∪ B) = (3/12) + (4/12) - (1/12)
+P(A ∪ B) = (3 + 4 - 1) / 12
+P(A ∪ B) = 6 / 12
+P(A ∪ B) = 1/2
+
+Alternatively, we can count the number of unique favorable outcomes directly from the listed pairs:
+Favorable outcomes are those with 'S' from Box K OR a multiple of 3 from Box L.
+From Event A: (S, 4), (S, 5), (S, 6)
+From Event B: (S, 6), (E, 6), (R, 6), (I, 6)
+
+Combining these and removing duplicates:
+(S, 4), (S, 5), (S, 6), (E, 6), (R, 6), (I, 6)
+There are 6 unique favorable outcomes.
+
+Probability = (Number of unique favorable outcomes) / (Total possible outcomes)
+Probability = 6 / 12
+Probability = 1/2
+
+The solution makes sense in context as we have accounted for all possibilities and used the principle of inclusion-exclusion correctly.
+
+Step 3: Final Answer
+The probability of getting a letter ""S"" from box K or a multiple of 3 from box L is 1/2.
+
+FINAL ANSWER: The probability of getting a letter ""S"" from box K or a multiple of 3 from box L is 1/2.",correct,3.4835262298583984,4,4,"The AI's solution correctly listed the sample space (12 outcomes), identified the favorable outcomes {(S,4),(S,5),(S,6),(E,6),(R,6),(I,6)} (6 outcomes), applied inclusion–exclusion or direct counting, and obtained the probability 6/12 = 1/2 which exactly matches the ground truth. Per the provided marking instruction (full mark = 4 when answer matches ground truth), the response receives full marks.",6.382620811462402,,Probability of Combined Events,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 9_Q2.png,230,"Step 1: Problem Understanding
+- The problem asks us to calculate the total number of RM10 vouchers the Naga Shop needs to prepare.
+- The constraints mention that selected cash vouchers are replaced, meaning the number of vouchers in each box remains constant.
+
+Step 2: Solution Execution
+The problem involves calculating the expected number of RM10 vouchers based on probabilities from the lucky wheel and the contents of the boxes.
+
+First, let's determine the probabilities associated with the lucky wheel:
+- Probability of landing on red (P(Red)) = Number of red sectors / Total sectors = 2 / 6 = 1/3
+- Probability of landing on yellow (P(Yellow)) = Number of yellow sectors / Total sectors = 4 / 6 = 2/3
+
+Next, let's determine the probabilities of selecting an RM10 voucher from each box:
+- Probability of selecting an RM10 voucher from Box A (P(RM10 | A)) = Number of RM10 vouchers in Box A / Total vouchers in Box A = 5 / (20 + 5) = 5 / 25 = 1/5
+- Probability of selecting an RM10 voucher from Box B (P(RM10 | B)) = Number of RM10 vouchers in Box B / Total vouchers in Box B = 20 / (10 + 20) = 20 / 30 = 2/3
+
+Now, we need to find the overall probability of a customer receiving an RM10 voucher. This can happen in two mutually exclusive ways:
+1. The wheel lands on red AND an RM10 voucher is chosen from Box A.
+2. The wheel lands on yellow AND an RM10 voucher is chosen from Box B.
+
+The probability of the first case is:
+P(Red and RM10 from A) = P(Red) * P(RM10 | A) = (1/3) * (1/5) = 1/15
+
+The probability of the second case is:
+P(Yellow and RM10 from B) = P(Yellow) * P(RM10 | B) = (2/3) * (2/3) = 4/9
+
+The total probability of a customer receiving an RM10 voucher is the sum of these probabilities:
+P(RM10) = P(Red and RM10 from A) + P(Yellow and RM10 from B)
+P(RM10) = 1/15 + 4/9
+
+To add these fractions, we find a common denominator, which is 45:
+P(RM10) = (1 * 3) / (15 * 3) + (4 * 5) / (9 * 5)
+P(RM10) = 3/45 + 20/45
+P(RM10) = 23/45
+
+Finally, we need to calculate the expected number of RM10 vouchers needed for 450 customers.
+Expected number of RM10 vouchers = Total customers * P(RM10)
+Expected number of RM10 vouchers = 450 * (23/45)
+
+Expected number of RM10 vouchers = (450 / 45) * 23
+Expected number of RM10 vouchers = 10 * 23
+Expected number of RM10 vouchers = 230
+
+The solution makes sense in context as it uses probabilities to estimate the number of vouchers required.
+
+Step 3: Final Answer
+The Naga Shop needs to prepare 230 RM10 vouchers.
+
+FINAL ANSWER: The Naga Shop needs to prepare 230 RM10 vouchers.",correct,3.267678737640381,5,5,"The AI's answer matches the ground truth (230) exactly and follows correct probabilistic reasoning. It correctly computed P(Red)=1/3, P(Yellow)=2/3, P(RM10|A)=1/5, P(RM10|B)=2/3, combined the mutually exclusive cases P=1/15+4/9=23/45, and multiplied by 450 to obtain 230. No computational or reasoning errors were found, so full marks (5/5) are awarded per the provided marking scheme.",5.884425640106201,,Probability of Combined Events,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 9_Q3.png,"(a) 7/33
+(b) 5/33","Step 1: Problem Understanding
+The problem asks us to calculate two probabilities related to the random selection of one badminton club and one bodybuilding club from four different locations (Kedah, Negeri Sembilan, F.T. Labuan, F.T. Putrajaya).
+
+The specific probabilities to calculate are:
+(a) The probability that both selected clubs are from Kedah.
+(b) The probability that one club is selected from the Federal Territories (Labuan or Putrajaya) and the other from Negeri Sembilan.
+
+There are no non-standard constraints beyond the explicit ones provided. The selection is random, and one club of each type (badminton and bodybuilding) is selected.
+
+Step 2: Solution Execution
+
+First, let's list the total number of clubs for each type in each location:
+- Kedah: 14 Badminton, 6 Bodybuilding. Total = 20.
+- Negeri Sembilan: 11 Badminton, 2 Bodybuilding. Total = 13.
+- F.T. Labuan: 3 Badminton, 2 Bodybuilding. Total = 5.
+- F.T. Putrajaya: 5 Badminton, 2 Bodybuilding. Total = 7.
+
+Total number of badminton clubs = 14 + 11 + 3 + 5 = 33
+Total number of bodybuilding clubs = 6 + 2 + 2 + 2 = 12
+Total number of clubs across all locations = 20 + 13 + 5 + 7 = 45
+
+The problem states ""A badminton club and a bodybuilding club in the four states are selected at random."" This implies that we are selecting one badminton club from the total pool of badminton clubs AND one bodybuilding club from the total pool of bodybuilding clubs.
+
+Let's re-evaluate the problem statement carefully: ""A badminton club and a bodybuilding club in the four states are selected at random."" This could be interpreted in two ways:
+1. One badminton club is selected from all badminton clubs, and one bodybuilding club is selected from all bodybuilding clubs.
+2. One club is selected from each state, and then we check if one is badminton and the other is bodybuilding.
+
+Given the phrasing and the data provided (number of clubs by type and state), interpretation 1 seems more likely and directly calculable. If it were interpretation 2, the problem would likely be phrased differently and possibly involve conditional probabilities or a different sample space.
+
+Let's proceed with interpretation 1: We select one badminton club from the total of 33 badminton clubs, and one bodybuilding club from the total of 12 bodybuilding clubs.
+
+Total number of ways to select one badminton club = 33
+Total number of ways to select one bodybuilding club = 12
+Total number of possible pairs of (badminton club, bodybuilding club) = 33 * 12 = 396.
+
+(a) Probability that both clubs selected are from Kedah.
+This means we select one badminton club from Kedah AND one bodybuilding club from Kedah.
+Number of badminton clubs in Kedah = 14
+Number of bodybuilding clubs in Kedah = 6
+Number of ways to select one badminton club from Kedah = 14
+Number of ways to select one bodybuilding club from Kedah = 6
+Number of ways to select both clubs from Kedah = 14 * 6 = 84
+
+The probability is the number of favorable outcomes divided by the total number of possible outcomes.
+P(both from Kedah) = (Number of ways to select badminton from Kedah * Number of ways to select bodybuilding from Kedah) / (Total ways to select badminton * Total ways to select bodybuilding)
+P(both from Kedah) = (14 * 6) / (33 * 12)
+P(both from Kedah) = 84 / 396
+
+Let's simplify this fraction.
+84 / 396
+Divide by 12: 7 / 33
+
+(b) Probability that a club is selected each from the Federal Territories and Negeri Sembilan respectively.
+This phrasing is a bit ambiguous: ""a club is selected each from the Federal Territories and Negeri Sembilan respectively.""
+It could mean:
+   i. One club from *any* Federal Territory (Labuan or Putrajaya) AND one club from Negeri Sembilan.
+   ii. One club from F.T. Labuan AND one club from Negeri Sembilan, OR one club from F.T. Putrajaya AND one club from Negeri Sembilan.
+   iii. The order matters: (Federal Territory, Negeri Sembilan) OR (Negeri Sembilan, Federal Territory).
+
+Let's consider the most likely interpretation: one club is from the combined Federal Territories (Labuan + Putrajaya) and the other is from Negeri Sembilan.
+
+Federal Territories (Labuan + Putrajaya):
+Total Badminton clubs = 3 (Labuan) + 5 (Putrajaya) = 8
+Total Bodybuilding clubs = 2 (Labuan) + 2 (Putrajaya) = 4
+Total clubs in Federal Territories = 5 + 7 = 12
+
+Negeri Sembilan:
+Total Badminton clubs = 11
+Total Bodybuilding clubs = 2
+Total clubs in Negeri Sembilan = 13
+
+We need to select one badminton club AND one bodybuilding club.
+There are two scenarios for part (b):
+Scenario 1: Badminton club is from Federal Territories, Bodybuilding club is from Negeri Sembilan.
+   - Number of ways = (Badminton clubs in FT) * (Bodybuilding clubs in NS) = 8 * 2 = 16
+
+Scenario 2: Badminton club is from Negeri Sembilan, Bodybuilding club is from Federal Territories.
+   - Number of ways = (Badminton clubs in NS) * (Bodybuilding clubs in FT) = 11 * 4 = 44
+
+Total favorable outcomes for part (b) = Scenario 1 + Scenario 2 = 16 + 44 = 60
+
+The total number of ways to select one badminton club and one bodybuilding club is 33 * 12 = 396.
+
+P(one from FT and one from NS) = (Favorable outcomes) / (Total outcomes)
+P(one from FT and one from NS) = 60 / 396
+
+Let's simplify this fraction.
+60 / 396
+Divide by 12: 5 / 33
+
+Let's double check the interpretation of ""a club is selected each from the Federal Territories and Negeri Sembilan respectively.""
+If ""respectively"" implies order, it could mean the first selection is from FT and the second from NS, or vice-versa. However, since we're selecting a pair of clubs (one badminton, one bodybuilding), the order of selection of the *locations* might not matter as much as ensuring the *types* of clubs are satisfied.
+
+Let's consider the case where ""Federal Territories"" refers to *either* Labuan OR Putrajaya, and the phrasing ""respectively"" implies that the two selected clubs must come from distinct categories of locations: (FT, NS).
+
+Alternative interpretation for (b):
+The problem states ""A badminton club and a bodybuilding club... are selected at random.""
+This means we are picking one badminton and one bodybuilding.
+The question for (b) states: ""a club is selected each from the Federal Territories and Negeri Sembilan respectively.""
+This could imply that one of the *selected clubs* is from the Federal Territories, and the *other selected club* is from Negeri Sembilan.
+
+Let's break down the Federal Territories:
+FT Labuan: 3 Badminton, 2 Bodybuilding
+FT Putrajaya: 5 Badminton, 2 Bodybuilding
+
+Negeri Sembilan: 11 Badminton, 2 Bodybuilding
+
+Total Badminton Clubs = 33
+Total Bodybuilding Clubs = 12
+Total Pairs = 33 * 12 = 396
+
+We need one club from {FT Labuan, FT Putrajaya} and one club from {Negeri Sembilan}.
+The selected pair must be (Badminton, Bodybuilding).
+
+Case 1: Badminton club is from FT, Bodybuilding club is from Negeri Sembilan.
+   - Badminton from FT: 3 (Labuan) + 5 (Putrajaya) = 8 ways.
+   - Bodybuilding from Negeri Sembilan: 2 ways.
+   - Number of pairs = 8 * 2 = 16.
+
+Case 2: Badminton club is from Negeri Sembilan, Bodybuilding club is from FT.
+   - Badminton from Negeri Sembilan: 11 ways.
+   - Bodybuilding from FT: 2 (Labuan) + 2 (Putrajaya) = 4 ways.
+   - Number of pairs = 11 * 4 = 44.
+
+Total favorable outcomes = 16 + 44 = 60.
+Probability = 60 / 396.
+Simplifying: 60/396 = 5/33.
+
+This interpretation seems consistent with how such probability problems are usually structured, ensuring the chosen pair meets the type criteria and the location criteria.
+
+Let's re-read the question very carefully: ""A badminton club and a bodybuilding club in the four states are selected at random.""
+This implies the sample space is the set of all possible pairs of (one badminton club, one bodybuilding club).
+
+Total Badminton Clubs = 33
+Total Bodybuilding Clubs = 12
+Total possible pairs = 33 * 12 = 396.
+
+(a) both clubs selected are from Kedah.
+This means: (Badminton club from Kedah) AND (Bodybuilding club from Kedah).
+Number of Badminton clubs in Kedah = 14.
+Number of Bodybuilding clubs in Kedah = 6.
+Number of favorable pairs = 14 * 6 = 84.
+Probability (a) = 84 / 396 = 7 / 33. (This matches our previous calculation).
+
+(b) a club is selected each from the Federal Territories and Negeri Sembilan respectively.
+This phrasing is tricky. ""a club is selected each from X and Y respectively"".
+Does it mean:
+   i) The badminton club is from FT, and the bodybuilding club is from NS.
+   ii) The badminton club is from NS, and the bodybuilding club is from FT.
+   iii) The first club selected (regardless of type) is from FT, and the second club selected (regardless of type) is from NS. (This contradicts the ""one badminton and one bodybuilding"" constraint if not handled carefully).
+   iv) The pair of selected clubs must include one from FT and one from NS. This is what we calculated.
+
+Let's assume interpretation (iv) as it directly uses the counts of badminton and bodybuilding clubs within the specified regions. ""Federal Territories"" refers to the union of F.T. Labuan and F.T. Putrajaya.
+
+Total Badminton Clubs in Federal Territories = 3 (Labuan) + 5 (Putrajaya) = 8
+Total Bodybuilding Clubs in Federal Territories = 2 (Labuan) + 2 (Putrajaya) = 4
+
+Total Badminton Clubs in Negeri Sembilan = 11
+Total Bodybuilding Clubs in Negeri Sembilan = 2
+
+We are selecting one Badminton club and one Bodybuilding club.
+We want one club from FT and one from NS.
+
+Case 1: Badminton club from FT, Bodybuilding club from NS.
+Number of ways = (Number of Badminton clubs in FT) * (Number of Bodybuilding clubs in NS)
+Number of ways = 8 * 2 = 16.
+
+Case 2: Badminton club from NS, Bodybuilding club from FT.
+Number of ways = (Number of Badminton clubs in NS) * (Number of Bodybuilding clubs in FT)
+Number of ways = 11 * 4 = 44.
+
+Total favorable outcomes for (b) = 16 + 44 = 60.
+Total possible outcomes = 33 * 12 = 396.
+Probability (b) = 60 / 396 = 5 / 33.
+
+This interpretation seems robust. The word ""respectively"" can sometimes imply order, but in the context of a pair of selections where the types are fixed (one badminton, one bodybuilding), it's more likely referring to the distinct origins of the two clubs in the pair.
+
+Let's consider the total number of clubs for each state again for clarity.
+Kedah: B=14, BB=6, T=20
+NS: B=11, BB=2, T=13
+FT Labuan: B=3, BB=2, T=5
+FT Putrajaya: B=5, BB=2, T=7
+
+Total B = 14+11+3+5 = 33
+Total BB = 6+2+2+2 = 12
+Total clubs = 20+13+5+7 = 45.
+
+The problem states ""A badminton club and a bodybuilding club... are selected at random.""
+This means our sample space is pairs (b_i, bb_j) where b_i is any badminton club and bb_j is any bodybuilding club.
+Total sample space size = (Total Badminton Clubs) * (Total Bodybuilding Clubs) = 33 * 12 = 396.
+
+(a) Both clubs selected are from Kedah.
+This means we select a pair (b_k, bb_l) where b_k is a badminton club from Kedah, and bb_l is a bodybuilding club from Kedah.
+Number of badminton clubs in Kedah = 14.
+Number of bodybuilding clubs in Kedah = 6.
+Number of favorable outcomes = 14 * 6 = 84.
+P(a) = 84 / 396.
+Simplify: 84/12 = 7, 396/12 = 33. So, P(a) = 7/33.
+
+(b) A club is selected each from the Federal Territories and Negeri Sembilan respectively.
+This means the selected pair (b_i, bb_j) must satisfy that one club is from FT and the other is from NS.
+
+Let FT_B be the number of badminton clubs in Federal Territories (Labuan + Putrajaya) = 3 + 5 = 8.
+Let FT_BB be the number of bodybuilding clubs in Federal Territories (Labuan + Putrajaya) = 2 + 2 = 4.
+Let NS_B be the number of badminton clubs in Negeri Sembilan = 11.
+Let NS_BB be the number of bodybuilding clubs in Negeri Sembilan = 2.
+
+We need to form a pair (b_i, bb_j) such that one club is from FT and the other is from NS.
+
+Possibility 1: Badminton club is from FT, Bodybuilding club is from NS.
+Number of ways = FT_B * NS_BB = 8 * 2 = 16.
+
+Possibility 2: Badminton club is from NS, Bodybuilding club is from FT.
+Number of ways = NS_B * FT_BB = 11 * 4 = 44.
+
+Total number of favorable outcomes for (b) = 16 + 44 = 60.
+P(b) = 60 / 396.
+Simplify: 60/12 = 5, 396/12 = 33. So, P(b) = 5/33.
+
+The calculations seem consistent and the interpretation of the problem statement leads to these results.
+
+Step 3: Final Answer
+
+FINAL ANSWER:
+(a) The probability that both clubs selected are from Kedah is 7/33.
+(b) The probability that one club is selected from the Federal Territories (Labuan or Putrajaya) and the other from Negeri Sembilan is 5/33.",correct,3.7333061695098877,5,5,"Full marks (5) awarded. The AI correctly interpreted the sample space (one badminton club from 33 and one bodybuilding club from 12, total 33*12=396), computed favorable outcomes for (a) Kedah as 14*6=84 giving 84/396 = 7/33, and for (b) the Federal Territories vs Negeri Sembilan as 8*2 + 11*4 = 60 giving 60/396 = 5/33. Arithmetic and reasoning are correct and the final answers match the ground truth, satisfying the provided marking instruction to give full mark when matching the ground truth.",6.720282316207886,,Probability of Combined Events,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 10_Q1.png,"(a) Personal monthly financial plan for Encik Nabil
+Income and Expenditure RM
+Active income:
+Net salary
+Commissions
+3 800
+450
+Total active income 4 250
+Passive income:
+House rental 600
+Total passive income 600
+Total monthly income 4 850
+Minus fixed monthly savings 380
+Total income after deducting
+savings 4 470
+Minus cash outflow/expenses
+Fixed expenses:
+Housing loan instalments (1)
+Housing loan instalments (2)
+Insurance expenses
+800
+500
+350
+Total fixed expenses 1 650
+Variable expenses:
+Food expenses
+Utility payments
+Toll and petrol expenses
+Internet service subscription
+Eat at a luxury restaurant
+900
+150
+200
+100
+400
+Total variable expenses 1 750
+Surplus/Deficit 1 070
+(b) Encik Nabil’s personal financial plan has a surplus
+where there is a positive cash flow when the total
+income is more than the total expenses. This has
+improved Encik Nabil’s liquidity","Step 1: Problem Understanding
+The problem asks to create a monthly personal financial plan for Encik Nabil and comment on the resulting surplus or deficit.
+
+The income sources are:
+- Net salary: RM3,800
+- Commission: RM450
+- Rental income: RM600
+
+The expenses are listed as:
+- Housing loan instalment (1): RM800
+- Housing loan instalment (2): RM500
+- Food expenses: RM900
+- Utility payments: RM150
+- Toll and petrol expenses: RM200
+- Internet service subscription: RM100
+- Eat at a luxury restaurant: RM400
+- Insurance expenses: RM350
+
+The constraint is that Encik Nabil saves 10% of his salary.
+
+Step 2: Solution Execution
+
+First, calculate Encik Nabil's total monthly income.
+Total Income = Net Salary + Commission + Rental Income
+Total Income = RM3,800 + RM450 + RM600 = RM4,850
+
+Next, calculate the fixed monthly savings.
+Savings = 10% of Net Salary
+Savings = 0.10 * RM3,800 = RM380
+
+Now, calculate the total monthly expenses.
+Total Expenses = Housing loan (1) + Housing loan (2) + Food + Utilities + Toll/Petrol + Internet + Luxury Dining + Insurance
+Total Expenses = RM800 + RM500 + RM900 + RM150 + RM200 + RM100 + RM400 + RM350 = RM3,500
+
+Now, let's create the financial plan and determine the surplus or deficit.
+Financial Plan:
+
+**Income:**
+*   Net Salary: RM3,800
+*   Commission: RM450
+*   Rental Income: RM600
+*   **Total Income: RM4,850**
+
+**Expenses:**
+*   Savings (10% of Salary): RM380
+*   Housing loan instalment (1): RM800
+*   Housing loan instalment (2): RM500
+*   Food expenses: RM900
+*   Utility payments: RM150
+*   Toll and petrol expenses: RM200
+*   Internet service subscription: RM100
+*   Eat at a luxury restaurant: RM400
+*   Insurance expenses: RM350
+*   **Total Expenses (including savings): RM3,780**
+
+Now, calculate the surplus or deficit.
+Surplus/Deficit = Total Income - Total Expenses (including savings)
+Surplus/Deficit = RM4,850 - RM3,780 = RM1,070
+
+This indicates a surplus.
+
+Comments on Surplus/Deficit:
+Encik Nabil is projected to have a monthly surplus of RM1,070 based on this financial plan. This surplus can be allocated towards additional savings, investments, or discretionary spending. However, it's important to note that the ""Eat at a luxury restaurant"" expense of RM400 is a discretionary expense and could be reduced if needed to increase the surplus further or cover unexpected costs. The food expenses (RM900) are also quite high and might be an area for potential reduction.
+
+Step 3: Final Answer
+(a) Monthly Personal Financial Plan for Encik Nabil:
+
+**Income:**
+*   Net Salary: RM3,800
+*   Commission: RM450
+*   Rental Income: RM600
+*   **Total Monthly Income: RM4,850**
+
+**Savings:**
+*   Fixed Monthly Savings (10% of Salary): RM380
+
+**Expenses:**
+*   Housing loan instalment (1): RM800
+*   Housing loan instalment (2): RM500
+*   Food expenses: RM900
+*   Utility payments: RM150
+*   Toll and petrol expenses: RM200
+*   Internet service subscription: RM100
+*   Eat at a luxury restaurant: RM400
+*   Insurance expenses: RM350
+*   **Total Monthly Expenses (including savings): RM3,780**
+
+(b) Comments on Surplus or Deficit:
+Encik Nabil is projected to have a **surplus of RM1,070** per month (RM4,850 - RM3,780 = RM1,070). This indicates a healthy financial situation where his income comfortably covers his planned savings and expenses. The significant surplus provides flexibility for additional financial goals or unexpected events. However, review of high discretionary spending in ""Eat at a luxury restaurant"" (RM400) and potentially high ""Food expenses"" (RM900) could offer opportunities for further optimization if desired.
+
+FINAL ANSWER:
+(a) Monthly Personal Financial Plan for Encik Nabil:
+
+**Income:**
+*   Net Salary: RM3,800
+*   Commission: RM450
+*   Rental Income: RM600
+*   **Total Monthly Income: RM4,850**
+
+**Savings:**
+*   Fixed Monthly Savings (10% of Salary): RM380
+
+**Expenses:**
+*   Housing loan instalment (1): RM800
+*   Housing loan instalment (2): RM500
+*   Food expenses: RM900
+*   Utility payments: RM150
+*   Toll and petrol expenses: RM200
+*   Internet service subscription: RM100
+*   Eat at a luxury restaurant: RM400
+*   Insurance expenses: RM350
+*   **Total Monthly Expenses (including savings): RM3,780**
+
+(b) Comments on Surplus or Deficit:
+Encik Nabil is projected to have a **surplus of RM1,070** per month (RM4,850 - RM3,780 = RM1,070). This indicates a healthy financial situation where his income comfortably covers his planned savings and expenses. The significant surplus provides flexibility for additional financial goals or unexpected events. However, review of high discretionary spending in ""Eat at a luxury restaurant"" (RM400) and potentially high ""Food expenses"" (RM900) could offer opportunities for further optimization if desired.",correct,4.52975606918335,7,7,"Full marks (7/7). The AI's final financial plan matches the ground truth: total income RM4,850, savings (10% of salary) RM380, total expenses including savings RM3,780, and surplus RM1,070. The AI listed the same income and expense items and reached the same surplus conclusion. (There is a minor intermediate typo where it once states 'Total Expenses = RM3,500', but this does not affect the final totals or conclusion.) Therefore, according to the provided marking scheme (give full mark when matching ground truth), award full marks.",11.446086883544922,, Financial Management,English,google_genai:gemini-2.5-flash-lite,0
+Chapter 10_Q2.png,"(a) Mrs Thong does not spend wisely because her
+total monthly savings of RM250 compared to the
+income of RM6 000 which is less than 10%.
+(b) Mrs Thong will not be able to achieve the
+investment goal of RM500 000 with monthly
+savings of RM250",,wrong,2.2247049808502197,0,6,"The AI response is ""nan"" and provides no answers to either part (a) or (b). The ground truth requires (a) that Mrs Thong does not spend wisely because RM250 is less than 10% of RM6,000, and (b) that she will not achieve the RM500,000 goal with monthly savings of RM250. Since the response gives no matching content, it receives 0 out of the maximum 6 marks.",4.735977411270142,, Financial Management,English,google_genai:gemini-2.5-flash-lite,0

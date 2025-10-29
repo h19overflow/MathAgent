@@ -23,11 +23,11 @@ LOG_FILE = os.path.join(LOG_DIR, f"math_agent_test_{datetime.now().strftime('%Y%
 
 # Create logger
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
 
-# File handler (DEBUG level - everything)
+# File handler (INFO level - important stuff and errors)
 file_handler = logging.FileHandler(LOG_FILE)
-file_handler.setLevel(logging.DEBUG)
+file_handler.setLevel(logging.INFO)
 
 # Console handler (INFO level - important stuff)
 console_handler = logging.StreamHandler()
@@ -102,8 +102,7 @@ def process_test_images(
             df = pd.read_excel(input_csv)
         else:
             raise ValueError("Input file must be a CSV or Excel file.")
-        logger.info(f"CSV loaded successfully. Total rows: {len(df)}")
-        logger.debug(f"Columns in CSV: {list(df.columns)}")
+        logger.info(f"✓ CSV loaded. Total rows: {len(df)}")
     except Exception as e:
         logger.error(f"Failed to read input CSV: {str(e)}", exc_info=True)
         raise
@@ -114,10 +113,8 @@ def process_test_images(
     if missing_cols:
         logger.error(f"Missing required columns: {missing_cols}")
         raise ValueError(f"Missing required columns: {missing_cols}")
-    logger.debug(f"All required columns present: {required_cols}")
 
     # Add result columns
-    logger.debug("Adding result columns to DataFrame")
     df['extracted_data'] = ""
     df['llm_answer'] = ""
     df['tokens_used'] = 0
@@ -141,93 +138,49 @@ def process_test_images(
         img_filename = row['image_filename']
         img_path = os.path.join(img_folder, img_filename)
 
-        logger.info(f"\n{'='*80}")
-        logger.info(f"[{idx+1}/{len(df)}] Processing: {img_filename}")
-        logger.debug(f"Image path: {img_path}")
-
         # Check if image exists
         if not os.path.exists(img_path):
             error_msg = f"Image not found at path: {img_path}"
-            logger.warning(error_msg)
-
-            # Save error status
-            logger.debug(f"Saving error status for row {idx}")
+            logger.error(f"[{idx+1}/{len(df)}] ✗ {error_msg}")
             df.at[idx, 'llm_answer'] = error_msg
             df.at[idx, 'status'] = "ERROR"
             df.at[idx, 'model'] = model_name
-            logger.debug(f"Row {idx} status set to ERROR (image not found)")
             failed += 1
             continue
 
         try:
-            # Process image through two-stage pipeline
-            logger.info(f"  Stage 1: Extracting structured data from image...")
-            logger.info(f"  Stage 2: Solving with mathematical tools...")
-
             result = agent.process_image(img_path)
-            logger.debug(f"Agent.process_image returned: {type(result)}")
 
             # Validate result structure
             required_keys = ['extracted_data', 'llm_answer', 'tokens_used', 'status', 'model']
             missing_keys = [k for k in required_keys if k not in result]
             if missing_keys:
-                logger.warning(f"Result missing keys: {missing_keys}")
-            logger.debug(f"Result keys: {list(result.keys())}")
+                logger.warning(f"[{idx+1}/{len(df)}] Result missing keys: {missing_keys}")
 
-            # Store results with detailed logging
-            logger.debug(f"Storing results in DataFrame at row {idx}...")
-
-            # Log extracted data (truncated if very long)
-            extracted_preview = str(result['extracted_data'])[:200]
-            logger.debug(f"  extracted_data (first 200 chars): {extracted_preview}...")
+            # Store results
             df.at[idx, 'extracted_data'] = result['extracted_data']
-            logger.debug(f"  ✓ extracted_data saved")
-
-            # Log answer (truncated if very long)
-            answer_preview = str(result['llm_answer'])[:200]
-            logger.debug(f"  llm_answer (first 200 chars): {answer_preview}...")
             df.at[idx, 'llm_answer'] = result['llm_answer']
-            logger.debug(f"  ✓ llm_answer saved")
-
-            # Log tokens
             tokens = result['tokens_used']
-            logger.debug(f"  tokens_used: {tokens}")
             df.at[idx, 'tokens_used'] = tokens
-            logger.debug(f"  ✓ tokens_used saved")
-
-            # Log status
             status = result['status']
-            logger.debug(f"  status: {status}")
             df.at[idx, 'status'] = status
-            logger.debug(f"  ✓ status saved")
-
-            # Log model
-            result_model = result['model']
-            logger.debug(f"  model: {result_model}")
-            df.at[idx, 'model'] = result_model
-            logger.debug(f"  ✓ model saved")
+            df.at[idx, 'model'] = result['model']
 
             total_tokens += tokens
 
             # Track success/failure
             if status == "SUCCESS":
                 successful += 1
-                logger.info(f"  ✓ SUCCESS | Tokens: {tokens} | Running total: {total_tokens}")
+                logger.info(f"[{idx+1}/{len(df)}] ✓ {img_filename}")
             else:
                 failed += 1
-                logger.warning(f"  ✗ ERROR | Tokens: {tokens} | Running total: {total_tokens}")
-                logger.warning(f"  Error details: {result['llm_answer'][:300]}")
+                logger.warning(f"[{idx+1}/{len(df)}] ✗ {img_filename} - {result['llm_answer'][:100]}")
 
         except Exception as e:
-            error_msg = f"Exception during image processing: {str(e)}"
-            logger.error(error_msg, exc_info=True)
-
-            # Save exception details
-            logger.debug(f"Saving exception details for row {idx}")
+            logger.error(f"[{idx+1}/{len(df)}] Exception processing {img_filename}: {str(e)}", exc_info=True)
             df.at[idx, 'llm_answer'] = f"Exception: {str(e)}"
             df.at[idx, 'status'] = "ERROR"
             df.at[idx, 'model'] = model_name
-            logger.debug(f"Row {idx} status set to ERROR (exception)")
             failed += 1
 
     # Save results to CSV
@@ -235,11 +188,8 @@ def process_test_images(
     logger.info(f"Saving results to CSV: {output_csv}")
     try:
         os.makedirs(os.path.dirname(output_csv) if os.path.dirname(output_csv) else '.', exist_ok=True)
-        logger.debug(f"Output directory created/verified")
-
         df.to_csv(output_csv, index=False)
-        logger.info(f"✓ Results saved successfully to: {output_csv}")
-        logger.debug(f"CSV file size: {os.path.getsize(output_csv)} bytes")
+        logger.info(f"✓ Results saved")
     except Exception as e:
         logger.error(f"Failed to save results to CSV: {str(e)}", exc_info=True)
         raise

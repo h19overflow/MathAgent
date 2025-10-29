@@ -5,7 +5,9 @@ Role: Mimics run_model_test.py architecture with extraction → solving pattern.
 """
 
 from langchain.agents import create_agent
-from langchain_core.messages import HumanMessage,BaseMessage,ToolMessage
+# from langchain.agents.middleware import LLMToolSelectorMiddleware  # Disabled - compatibility issues
+from langchain.agents.middleware import ModelCallLimitMiddleware
+from langchain_core.messages import HumanMessage,BaseMessage,ToolMessage,AIMessage
 from tools import MATH_TOOLS
 from dotenv import load_dotenv
 from langgraph.errors import GraphRecursionError
@@ -150,55 +152,99 @@ CONSTRAINTS:
 Be extremely precise with coordinates and numerical values. When reading from a graph, verify your readings against the grid."""
 
 
-# Solver prompt (from run_model_test.py adapted for LangChain tools)
-SOLVER_PROMPT = """You are an expert mathematical problem solver equipped with specialized tools for algebra, statistics, and geometry.
+# Solver prompt (adapted for LangChain tools with SPM Form 4/5 focus)
+SOLVER_PROMPT = """You are an expert SPM mathematics problem solver with access to specialized tools covering all Form 4/5 topics.
+
+AVAILABLE TOOLS - Use these to solve problems accurately:
+• Quadratic Functions: analyze_quadratic, solve_quadratic_equation, find_quadratic_vertex
+• Number Bases: convert_base, validate_number_in_base
+• Sequences: analyze_sequence (AP/GP detection), find_nth_term
+• Sets/Venn Diagrams: solve_venn_diagram, set operations (union, intersection, complement)
+• Graph Theory: analyze_graph_properties, find_shortest_path (Dijkstra)
+• Motion Graphs: calculate_motion_gradient, calculate_motion_area
+• Statistics: calculate_ungrouped_statistics, calculate_quartiles, calculate_iqr
+• Probability: generate_sample_space, calculate_probability
+• Financial: analyze_budget, calculate_savings_rate
+• Variation: solve_variation (direct/inverse/joint)
+• Matrices: multiply_matrices, solve_matrix_equation
+• Insurance/Tax: calculate_premium, calculate_progressive_tax
+• Geometry: solve_enlargement, calculate_scale_factor_from_lengths
+• Trigonometry: solve_right_triangle, solve_trig_equation
+• Modeling: fit_quadratic_model, fit_linear_model
+• Inequalities: convert_region_to_inequality, validate_point_in_inequality
 
 CRITICAL RULES:
-1. For optimization problems (shortest path, minimum cost, etc.), ALWAYS check the CONSTRAINTS section first
-2. Qualitative constraints (e.g., "safer", "more reliable") may override standard optimization
-3. When working with graphs, double-check that extracted coordinates produce the correct line equations
-4. For inequalities, verify the direction (≤ vs ≥) matches the shaded region description
-5. Show ALL calculation steps explicitly
+1. ALWAYS use the appropriate tools for calculations - don't compute manually
+2. LIMIT tool usage - typically need 1-3 tool calls max per problem
+3. For optimization (shortest path, min cost), check CONSTRAINTS first - qualitative factors may override
+4. For graphs: verify extracted coordinates produce correct equations
+5. For inequalities: verify direction (≤ vs ≥) matches shaded region
+6. Show ALL steps explicitly with tool-verified calculations
+7. STOP immediately after providing FINAL ANSWER - no more tool calls allowed
 
 SOLVING PROCESS:
 
-Step 1: Problem Understanding
+Step 1: Problem Understanding (NO TOOLS NEEDED)
+- Identify problem type (quadratic, graph theory, statistics, etc.)
 - Restate what needs to be found
-- Identify if there are any non-standard constraints from the problem text
+- Check for non-standard constraints
 
-Step 2: Mathematical Formulation
-- Convert visual data into mathematical expressions
-- For graphs: derive line equations from coordinates
-- For inequalities: determine inequality signs from shading
-- For networks: identify relevant paths and calculate totals
+Step 2: Tool Selection & Mathematical Formulation (NO TOOLS NEEDED)
+- Choose 1-3 most appropriate tools based on problem type
+- Convert visual data into tool-compatible format (JSON strings for lists/dicts)
+- Prepare all tool inputs before making any calls
 
-Step 3: Solution Execution
-- Use your available tools to verify calculations
-- Apply any qualitative constraints before finalizing
-- Verify your solution makes sense in context
+Step 3: Solution Execution with Tools (MAKE TOOL CALLS HERE)
+- Call only the essential tools (usually 1-3 calls total)
+- Verify tool outputs make sense
+- Apply qualitative constraints before finalizing
+- DO NOT call tools repeatedly - get what you need in 1-3 calls
 
-Step 4: Final Answer
-- State the answer clearly
-- Ensure it addresses ALL parts of the question
+Step 4: Final Answer (NO MORE TOOLS)
+- State answer clearly addressing ALL parts
+- Verify solution matches problem context
+- IMMEDIATELY provide FINAL ANSWER and STOP
 
-IMPORTANT: After completing all steps, provide your FINAL ANSWER in this format:
+STOPPING CONDITION - You MUST stop when ANY of these occur:
+1. You have provided the "FINAL ANSWER:" response
+2. You have made 3+ tool calls
+3. You have enough information to answer the question
+4. You are repeating the same tool calls
+
+IMPORTANT: After completing all steps, provide your FINAL ANSWER in this EXACT format:
 FINAL ANSWER: [Your complete answer here]
 
-Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
+Once you type "FINAL ANSWER:" you MUST STOP IMMEDIATELY. Do NOT call any more tools after this."""
 
 
 class MathAgent:
     """
-    Two-stage Math Agent for Form 4/5 problems.
+    Two-stage Math Agent for SPM Form 4/5 problems.
 
     Stage 1: Extraction Agent - extracts structured data from images
-    Stage 2: Solver Agent - solves problems using mathematical tools
+    Stage 2: Solver Agent - solves problems using specialized mathematical tools
 
-    Tools available in solver:
-    - SymPy Solver: equation solving, simplification, expansion, factoring
-    - NumPy Calculator: sum, mean, variance, std dev, percentages, frequency
-    - Inequality     print("Problem 1: Algebra")undary checking
-    - Statistics Utils: grouped data analysis, cumulative frequency
+    The solver has access to 50+ specialized tools covering all SPM Form 4/5 topics.
+    The system prompt guides the model to select and use only the most relevant tools
+    for each specific problem type.
+
+    Available tool categories (SPM Form 4/5 aligned):
+    1. Quadratic Functions: analyze_quadratic, solve_quadratic_equation, find_quadratic_vertex
+    2. Number Base Conversions: convert_base, validate_number_in_base, convert_base_list
+    3. Sequences (AP/GP): analyze_sequence, find_nth_term
+    4. Sets & Venn Diagrams: solve_venn_diagram, calculate_set_union, calculate_set_intersection
+    5. Graph Theory: analyze_graph_properties, find_shortest_path, calculate_graph_degree
+    6. Motion Graphs: calculate_motion_gradient, calculate_motion_area, analyze_uniform_motion
+    7. Statistics (Ungrouped): calculate_ungrouped_statistics, calculate_quartiles, calculate_iqr
+    8. Probability: generate_sample_space, calculate_probability, calculate_combined_probability
+    9. Financial Management: analyze_budget, calculate_savings_rate, check_budget_viability
+    10. Variation: solve_variation (direct, inverse, direct_square, inverse_square, joint)
+    11. Matrices: multiply_matrices, solve_matrix_equation, calculate_matrix_determinant
+    12. Insurance/Taxation: calculate_premium, calculate_progressive_tax, calculate_tax_relief
+    13. Geometry & Enlargement: solve_enlargement, calculate_scale_factor_from_lengths
+    14. Trigonometry: solve_right_triangle, solve_trig_equation, calculate_trig_ratio
+    15. Mathematical Modeling: fit_quadratic_model, fit_linear_model, evaluate_model
+    16. Linear Inequalities: convert_region_to_inequality, validate_point_in_inequality
     """
 
     def __init__(self, model: str = "google_genai:gemini-2.5-flash-lite"):
@@ -223,11 +269,18 @@ class MathAgent:
             system_prompt=EXTRACTION_PROMPT,
         )
 
-        # Create solver agent (with all math tools)
+        # Create solver agent (with all math tools + call limit middleware)
+        # ModelCallLimitMiddleware prevents infinite loops by limiting tool calls per run
         self.solver_agent = create_agent(
             model=self.model_name,
             tools=MATH_TOOLS,
             system_prompt=SOLVER_PROMPT,
+            middleware=[
+                ModelCallLimitMiddleware(
+                    run_limit=15,  # Max 15 model calls per problem (prevents infinite loops)
+                    exit_behavior="end",  # Gracefully stop instead of raising error
+                ),
+            ],
         )
 
     def extract_from_image(self, image_path: str) -> Tuple[str, int]:
@@ -240,7 +293,6 @@ class MathAgent:
         Returns:
             Tuple of (extracted_data, token_count)
         """
-        logger.debug(f"extract_from_image called with: {image_path}")
         try:
             # Check file exists
             if not os.path.exists(image_path):
@@ -248,17 +300,9 @@ class MathAgent:
                 logger.error(error_msg)
                 return f"Error: {error_msg}", 0
 
-            logger.debug(f"✓ Image file exists")
-
             # Read and encode image
-            logger.debug(f"Reading and encoding image...")
-            file_size = os.path.getsize(image_path)
-            logger.debug(f"  File size: {file_size} bytes")
-
             with open(image_path, 'rb') as f:
                 image_data = base64.standard_b64encode(f.read()).decode('utf-8')
-
-            logger.debug(f"  ✓ Image encoded. Base64 length: {len(image_data)}")
 
             # Determine image media type
             ext = os.path.splitext(image_path)[1].lower()
@@ -270,10 +314,8 @@ class MathAgent:
                 '.webp': 'image/webp',
             }
             media_type = media_type_map.get(ext, 'image/png')
-            logger.debug(f"  Media type: {media_type}")
 
             # Create message with image
-            logger.debug(f"Creating HumanMessage with multimodal content...")
             message = HumanMessage(
                 content=[
                     {
@@ -288,41 +330,33 @@ class MathAgent:
                     }
                 ]
             )
-            logger.debug(f"  ✓ Message created with {len(message.content)} content blocks")
 
             # Invoke extraction agent
-            logger.info(f"Invoking extraction agent with model: {self.model_name}")
-            logger.debug(f"  Extraction agent type: {type(self.extraction_agent)}")
+            logger.info(f"[EXTRACTION] Starting: {os.path.basename(image_path)}")
 
             try:
                 result = self.extraction_agent.invoke(
                     {"messages": [message]},
                     config={"recursion_limit": 5}  # Low limit for extraction (no tools needed)
                 )
-                logger.debug(f"  ✓ Agent invocation completed")
             except GraphRecursionError as e:
-                logger.error(f"✗ RECURSION LIMIT REACHED: {str(e)}", exc_info=True)
+                logger.error(f"[EXTRACTION] Recursion limit exceeded", exc_info=True)
                 # Try to get partial result if available
                 try:
                     result = e.result if hasattr(e, 'result') else {"messages": []}
                     save_agent_output("extraction", result, error_type="RECURSION_LIMIT")
                 except Exception as save_err:
-                    logger.error(f"Failed to save recursion error output: {str(save_err)}")
+                    logger.error(f"[EXTRACTION] Failed to save error output: {str(save_err)}")
                 return f"Error: Extraction recursion limit reached. {str(e)}", 0
             except Exception as e:
-                logger.error(f"✗ Extraction error: {str(e)}", exc_info=True)
+                logger.error(f"[EXTRACTION] Failed: {str(e)}", exc_info=True)
                 return f"Error extracting from image: {str(e)}", 0
-            logger.debug(f"  Result type: {type(result)}")
-            logger.debug(f"  Result keys: {list(result.keys()) if isinstance(result, dict) else 'N/A'}")
 
             # Extract the response
             extracted_data = ""
             if "messages" in result:
-                logger.debug(f"  Processing messages from result...")
                 messages = result["messages"]
-                logger.debug(f"    Total messages: {len(messages)}")
                 final_message = messages[-1]
-                logger.debug(f"    Final message type: {type(final_message)}")
 
                 # Handle both dict and message object types
                 if hasattr(final_message, 'get'):
@@ -331,20 +365,21 @@ class MathAgent:
                     extracted_data = final_message.content
                 else:
                     extracted_data = str(result)
-
-                logger.debug(f"    ✓ Extracted data length: {len(str(extracted_data))}")
             else:
-                logger.warning(f"  'messages' key not found in result")
-                logger.debug(f"  Result: {str(result)[:500]}")
                 extracted_data = str(result)
 
-            logger.info(f"✓ Extraction successful")
+            # Ensure extracted_data is always a string
+            if isinstance(extracted_data, list):
+                extracted_data = str(extracted_data)
+            elif not isinstance(extracted_data, str):
+                extracted_data = str(extracted_data)
+
+            logger.info(f"[EXTRACTION] ✓ Completed")
             return extracted_data, 0  # Token count to be implemented
 
         except Exception as e:
-            error_msg = f"Error extracting from image: {str(e)}"
-            logger.error(error_msg, exc_info=True)
-            return error_msg, 0
+            logger.error(f"[EXTRACTION] Unexpected error: {str(e)}", exc_info=True)
+            return f"Error extracting from image: {str(e)}", 0
 
     def solve_from_extraction(self, extracted_data: str) -> Tuple[str, int]:
         """
@@ -378,40 +413,42 @@ FINAL ANSWER: [Your complete answer here]
 Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
 
             # Invoke solver agent
-            logger.info(f"Invoking solver agent with model: {self.model_name}")
-            logger.debug(f"  Solver agent type: {type(self.solver_agent)}")
+            logger.info(f"[SOLVER] Starting")
 
             try:
                 result = self.solver_agent.invoke(
                     {"messages": [{"role": "user", "content": solve_prompt}]},
-                    config={"recursion_limit": 20}  # Allows multiple tool calls but prevents infinite loops
+                    config={"recursion_limit": 50}  # Higher limit to allow complex multi-step problems
                 )
-                logger.debug(f"  ✓ Solver invocation completed")
+
+                # Save tool calls from successful execution
+                try:
+                    self.saveToolMessages(result.get("messages", []))
+                except Exception as e:
+                    logger.error(f'[SOLVER] Unable to save tool messages: {e}')
+
             except GraphRecursionError as e:
-                logger.error(f"✗ RECURSION LIMIT REACHED: {str(e)}", exc_info=True)
+                logger.error(f"[SOLVER] Recursion limit exceeded", exc_info=True)
                 # Try to get partial result if available
                 try:
                     result = e.result if hasattr(e, 'result') else {"messages": []}
                     try:
                         self.saveToolMessages(result.get("messages", []))
                     except Exception as e:
-                        logger.error(f'Unable to save tool Messages:{e}')
+                        logger.error(f'[SOLVER] Unable to save tool messages: {e}')
                     save_agent_output("solver", result, error_type="RECURSION_LIMIT")
                 except Exception as save_err:
-                    logger.error(f"Failed to save recursion error output: {str(save_err)}")
+                    logger.error(f"[SOLVER] Failed to save error output: {str(save_err)}")
                 return f"Error: Solver recursion limit reached after {e}. Check agent_outputs/ for message history.", 0
             except Exception as e:
-                logger.error(f"✗ Solver error: {str(e)}", exc_info=True)
+                logger.error(f"[SOLVER] Failed: {str(e)}", exc_info=True)
                 return f"Error solving from extraction: {str(e)}", 0
 
             # Extract the response
             solution = ""
             if "messages" in result:
-                logger.debug(f"Processing messages from result...")
                 messages = result["messages"]
-                logger.debug(f"  Total messages: {len(messages)}")
                 final_message = messages[-1]
-                logger.debug(f"  Final message type: {type(final_message)}")
 
                 # Handle both dict and message object types
                 if hasattr(final_message, 'get'):
@@ -421,12 +458,17 @@ Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
                 else:
                     solution = str(final_message)
 
-                logger.debug(f"  ✓ Solution extracted. Length: {len(str(solution))}")
+            # Ensure solution is always a string
+            if isinstance(solution, list):
+                solution = str(solution)
+            elif not isinstance(solution, str):
+                solution = str(solution)
 
+            logger.info(f"[SOLVER] ✓ Completed")
             return solution, 0  # Token count to be implemented
 
         except Exception as e:
-            logger.error(f"Unexpected error in solve_from_extraction: {str(e)}", exc_info=True)
+            logger.error(f"[SOLVER] Unexpected error: {str(e)}", exc_info=True)
             return f"Error solving from extraction: {str(e)}", 0
 
     def process_image(self, image_path: str) -> dict:
@@ -443,7 +485,11 @@ Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
             # Stage 1: Extract
             extracted_data, extraction_tokens = self.extract_from_image(image_path)
 
-            if extracted_data.startswith("Error"):
+            # Ensure extracted_data is a string (sometimes it's a list)
+            if isinstance(extracted_data, list):
+                extracted_data = str(extracted_data)
+
+            if isinstance(extracted_data, str) and extracted_data.startswith("Error"):
                 return {
                     "extracted_data": extracted_data,
                     "llm_answer": "Extraction failed",
@@ -455,11 +501,15 @@ Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
             # Stage 2: Solve
             solution, solve_tokens = self.solve_from_extraction(extracted_data)
 
+            # Ensure solution is a string
+            if isinstance(solution, list):
+                solution = str(solution)
+
             return {
                 "extracted_data": extracted_data,
                 "llm_answer": solution,
                 "tokens_used": extraction_tokens + solve_tokens,
-                "status": "SUCCESS" if not solution.startswith("Error") else "ERROR",
+                "status": "SUCCESS" if not (isinstance(solution, str) and solution.startswith("Error")) else "ERROR",
                 "model": self.model_name,
             }
 
@@ -473,28 +523,47 @@ Once you provide the FINAL ANSWER above, STOP and do not call any more tools."""
             }
     def saveToolMessages(self, messages : List[BaseMessage] ) -> None:
             """
-            Save tool call messages to a log file for debugging.
+            Save tool call messages to a log file for debugging in tool_calls/ directory.
 
             Args:
                 messages: List of BaseMessage objects containing tool calls
             """
             toolMessages = []
             try:
-                logger.debug(f"Saving tool messages...")
+                # Extract tool calls from AIMessage objects
                 for message in messages:
-                    if isinstance(message, ToolMessage):
-                     for tool_call in message.tool_calls or message.content or []:
-                        logger.debug(f"Tool Call - Name: {tool_call.name}, Args: {tool_call.args}")
-                        toolMessages.append({
-                            "tool_name": tool_call.name,
-                            "args": tool_call.args
-                        })
+                    if isinstance(message, AIMessage) and hasattr(message, 'tool_calls'):
+                        if message.tool_calls:
+                            for tool_call in message.tool_calls:
+                                # Handle both dict and object formats
+                                if isinstance(tool_call, dict):
+                                    toolMessages.append({
+                                        "name": tool_call.get('name'),
+                                        "args": tool_call.get('args'),
+                                        "id": tool_call.get('id', None)
+                                    })
+                                else:
+                                    toolMessages.append({
+                                        "name": tool_call.name,
+                                        "args": tool_call.args,
+                                        "id": getattr(tool_call, 'id', None)
+                                    })
+
                 if not toolMessages:
-                    logger.debug("No tool messages found to save.")
                     return
-                with open("tool_messages_log.json", "w") as f:
+
+                # Create tool_calls directory in same location as this script
+                script_dir = os.path.dirname(os.path.abspath(__file__))
+                tool_calls_dir = os.path.join(script_dir, "tool_calls")
+                os.makedirs(tool_calls_dir, exist_ok=True)
+
+                # Save with timestamp
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                filepath = os.path.join(tool_calls_dir, f"tool_calls_{timestamp}.json")
+
+                with open(filepath, "w") as f:
                     json.dump(toolMessages, f, indent=2)
-                logger.info(f"✓ Tool messages saved to tool_messages_log.json")
+                logger.info(f"[TOOLS] Saved {len(toolMessages)} tool calls to tool_calls/")
             except Exception as e:
-                logger.error(f"Error saving tool messages: {str(e)}", exc_info=True)
+                logger.error(f"[TOOLS] Error saving tool calls: {str(e)}", exc_info=True)
 

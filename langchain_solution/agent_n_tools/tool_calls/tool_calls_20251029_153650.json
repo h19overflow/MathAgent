@@ -1,0 +1,12 @@
+[
+  {
+    "name": "find_shortest_path",
+    "args": {
+      "edges_json": "[{\"from\": \"A\", \"to\": \"B\", \"weights\": {\"distance\": 400}}, {\"from\": \"A\", \"to\": \"C\", \"weights\": {\"distance\": 350}}, {\"from\": \"C\", \"to\": \"D\", \"weights\": {\"distance\": 800}}, {\"from\": \"D\", \"to\": \"E\", \"weights\": {\"distance\": 650}}, {\"from\": \"B\", \"to\": \"E\", \"weights\": {\"distance\": 1100}}]",
+      "start_vertex": "A",
+      "end_vertex": "E",
+      "optimize_for": "distance"
+    },
+    "id": "2830a709-d420-4b46-af98-0e1ffd58845e"
+  }
+]
